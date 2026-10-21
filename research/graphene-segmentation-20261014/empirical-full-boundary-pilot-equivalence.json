@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "checked_at": 1792040919.9260457,
+  "pilot": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\analysis\\graphene\\scan-20261013-221727-131d9ced\\chip001\\operator-empirical-boundary-parallel-v3",
+  "full": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\analysis\\graphene\\scan-20261013-221727-131d9ced\\chip001\\operator-empirical-full-v1-boundaries",
+  "scope": "All per-region geometry, actual display polygons, status, optical-input hashes, quality/artifact metrics and mask archives exactly equal. Only per-region source_field_sha256 excluded because full field payload provenance/memory differs. Outer shard version/plan provenance is independently pinned, not compared for equality.",
+  "fields": [
+    {
+      "tile": "tile_000215",
+      "regions": 37,
+      "masks_sha256": "a7c68784e0b3b89adc8159840fbc97e41626ccf3ebeff37245d215b7247ed71c",
+      "region_records_equal": true
+    },
+    {
+      "tile": "tile_000269",
+      "regions": 25,
+      "masks_sha256": "963922e378954222c98bb174892252bef89ff4c70f527232e7c0a189b35cdddc",
+      "region_records_equal": true
+    },
+    {
+      "tile": "tile_000457",
+      "regions": 41,
+      "masks_sha256": "b1159b6bf25b09c10799617a4dd6bfb42e400babd614d6acad198cb4afcba3cb",
+      "region_records_equal": true
+    },
+    {
+      "tile": "tile_000547",
+      "regions": 59,
+      "masks_sha256": "7960595a544848b581b42d8ca26fb7da7999dbc4b7ef99e12886bbc865053dd6",
+      "region_records_equal": true
+    },
+    {
+      "tile": "tile_000627",
+      "regions": 69,
+      "masks_sha256": "9e902c63a4d70f8b9ec67b47261d1f1d8f5e0201993a5b24d1e0c5984efd6fb3",
+      "region_records_equal": true
+    },
+    {
+      "tile": "tile_000635",
+      "regions": 104,
+      "masks_sha256": "87ddb61968e06e810e4408a89b1d09e9ffb82959cef656ca93b008c7d5769dab",
+      "region_records_equal": true
+    },
+    {
+      "tile": "tile_000639",
+      "regions": 23,
+      "masks_sha256": "54e4f9f655b1d45e8f2e90838282478d204507d0731188794e3c7a5a338c8b6e",
+      "region_records_equal": true
+    },
+    {
+      "tile": "tile_000660",
+      "regions": 68,
+      "masks_sha256": "596a27dd3a4f0e2437881a43d7952cb468005c611e8c02e6052f3c48131ec59a",
+      "region_records_equal": true
+    }
+  ],
+  "examples": {
+    "chip001/tile_000215/38": {
+      "status": "accepted",
+      "flags": [
+        "diffuse_boundary_near_dark_feature_possible_shadow"
+      ],
+      "display_equals_original": false,
+      "display_equals_refined": true
+    },
+    "chip001/tile_000269/32": {
+      "status": "unresolved",
+      "flags": [
+        "foreground_not_separated_from_local_noise",
+        "diffuse_or_weak_boundary"
+      ],
+      "display_equals_original": true,
+      "display_equals_refined": true
+    }
+  },
+  "all_equal": true
+}

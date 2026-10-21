@@ -1,0 +1,409 @@
+{
+  "schema": 1,
+  "state": "complete",
+  "mode": "surface",
+  "centres_um": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      100.0
+    ],
+    [
+      50.0,
+      50.0
+    ],
+    [
+      100.0,
+      0.0
+    ],
+    [
+      100.0,
+      100.0
+    ]
+  ],
+  "seed_points_um": [
+    [
+      20.0,
+      20.0,
+      10.6
+    ],
+    [
+      20.0,
+      40.0,
+      11.0
+    ],
+    [
+      40.0,
+      20.0,
+      10.8
+    ]
+  ],
+  "anchors": [
+    {
+      "index": 0,
+      "requested_xy_um": [
+        0.0,
+        0.0
+      ],
+      "search_seed": {
+        "method": "provisional_measured_plane_search_seed",
+        "z_um": 10.00000000000004,
+        "source_points_um": [
+          [
+            20.0,
+            20.0,
+            10.6
+          ],
+          [
+            20.0,
+            40.0,
+            11.0
+          ],
+          [
+            40.0,
+            20.0,
+            10.8
+          ]
+        ],
+        "fit_origin_xy_um": [
+          26.666666666666668,
+          26.666666666666668
+        ],
+        "fit_coefficients": [
+          0.00999999999999957,
+          0.019999999999998994,
+          10.800000000000002
+        ],
+        "residuals_um": [
+          -1.2434497875801753e-14,
+          8.881784197001252e-15,
+          -3.552713678800501e-15
+        ],
+        "max_residual_um": 1.2434497875801753e-14,
+        "extrapolated_search_seed": true,
+        "prediction_is_focus_evidence": false,
+        "requires_local_autofocus": true,
+        "source_role": "verified_roi_focus"
+      },
+      "local_search_bounds_um": [
+        6.0,
+        14.0
+      ],
+      "local_search_strategy": "quick_plane_seeded_with_full_sweep_fallback",
+      "quick_half_range_um": 2.0,
+      "focus_budget": {
+        "max_seconds": 180.0,
+        "max_captures": 48,
+        "captures_started": 0,
+        "elapsed_seconds": 0.01600000000325963,
+        "completed_actions": 0,
+        "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline"
+      },
+      "local_result": {
+        "success": false,
+        "z_um": 10,
+        "score": 0,
+        "prominence": 0,
+        "reason": "Flat image",
+        "samples": [],
+        "outcome": "non_peak",
+        "budget": null
+      },
+      "status": "autofocus_failed",
+      "reason": "Flat image"
+    },
+    {
+      "index": 1,
+      "requested_xy_um": [
+        100.0,
+        0.0
+      ],
+      "search_seed": {
+        "method": "provisional_measured_plane_search_seed",
+        "z_um": 10.999999999999998,
+        "source_points_um": [
+          [
+            20.0,
+            20.0,
+            10.6
+          ],
+          [
+            20.0,
+            40.0,
+            11.0
+          ],
+          [
+            40.0,
+            20.0,
+            10.8
+          ]
+        ],
+        "fit_origin_xy_um": [
+          26.666666666666668,
+          26.666666666666668
+        ],
+        "fit_coefficients": [
+          0.00999999999999957,
+          0.019999999999998994,
+          10.800000000000002
+        ],
+        "residuals_um": [
+          -1.2434497875801753e-14,
+          8.881784197001252e-15,
+          -3.552713678800501e-15
+        ],
+        "max_residual_um": 1.2434497875801753e-14,
+        "extrapolated_search_seed": true,
+        "prediction_is_focus_evidence": false,
+        "requires_local_autofocus": true,
+        "source_role": "verified_roi_focus"
+      },
+      "local_search_bounds_um": [
+        6.999999999999998,
+        14.999999999999998
+      ],
+      "local_search_strategy": "quick_plane_seeded_with_full_sweep_fallback",
+      "quick_half_range_um": 2.0,
+      "focus_budget": {
+        "max_seconds": 180.0,
+        "max_captures": 48,
+        "captures_started": 0,
+        "elapsed_seconds": 0.01600000000325963,
+        "completed_actions": 0,
+        "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline"
+      },
+      "local_result": {
+        "success": false,
+        "z_um": 10.999999999999998,
+        "score": 0,
+        "prominence": 0,
+        "reason": "Flat image",
+        "samples": [],
+        "outcome": "non_peak",
+        "budget": null
+      },
+      "status": "autofocus_failed",
+      "reason": "Flat image"
+    },
+    {
+      "index": 2,
+      "requested_xy_um": [
+        100.0,
+        100.0
+      ],
+      "search_seed": {
+        "method": "provisional_measured_plane_search_seed",
+        "z_um": 12.999999999999897,
+        "source_points_um": [
+          [
+            20.0,
+            20.0,
+            10.6
+          ],
+          [
+            20.0,
+            40.0,
+            11.0
+          ],
+          [
+            40.0,
+            20.0,
+            10.8
+          ]
+        ],
+        "fit_origin_xy_um": [
+          26.666666666666668,
+          26.666666666666668
+        ],
+        "fit_coefficients": [
+          0.00999999999999957,
+          0.019999999999998994,
+          10.800000000000002
+        ],
+        "residuals_um": [
+          -1.2434497875801753e-14,
+          8.881784197001252e-15,
+          -3.552713678800501e-15
+        ],
+        "max_residual_um": 1.2434497875801753e-14,
+        "extrapolated_search_seed": true,
+        "prediction_is_focus_evidence": false,
+        "requires_local_autofocus": true,
+        "source_role": "verified_roi_focus"
+      },
+      "local_search_bounds_um": [
+        8.999999999999897,
+        16.999999999999897
+      ],
+      "local_search_strategy": "quick_plane_seeded_with_full_sweep_fallback",
+      "quick_half_range_um": 2.0,
+      "focus_budget": {
+        "max_seconds": 180.0,
+        "max_captures": 48,
+        "captures_started": 0,
+        "elapsed_seconds": 0.014999999999417923,
+        "completed_actions": 0,
+        "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline"
+      },
+      "local_result": {
+        "success": false,
+        "z_um": 12.999999999999897,
+        "score": 0,
+        "prominence": 0,
+        "reason": "Flat image",
+        "samples": [],
+        "outcome": "non_peak",
+        "budget": null
+      },
+      "status": "autofocus_failed",
+      "reason": "Flat image"
+    },
+    {
+      "index": 3,
+      "requested_xy_um": [
+        0.0,
+        100.0
+      ],
+      "search_seed": {
+        "method": "provisional_measured_plane_search_seed",
+        "z_um": 11.99999999999994,
+        "source_points_um": [
+          [
+            20.0,
+            20.0,
+            10.6
+          ],
+          [
+            20.0,
+            40.0,
+            11.0
+          ],
+          [
+            40.0,
+            20.0,
+            10.8
+          ]
+        ],
+        "fit_origin_xy_um": [
+          26.666666666666668,
+          26.666666666666668
+        ],
+        "fit_coefficients": [
+          0.00999999999999957,
+          0.019999999999998994,
+          10.800000000000002
+        ],
+        "residuals_um": [
+          -1.2434497875801753e-14,
+          8.881784197001252e-15,
+          -3.552713678800501e-15
+        ],
+        "max_residual_um": 1.2434497875801753e-14,
+        "extrapolated_search_seed": true,
+        "prediction_is_focus_evidence": false,
+        "requires_local_autofocus": true,
+        "source_role": "verified_roi_focus"
+      },
+      "local_search_bounds_um": [
+        7.99999999999994,
+        15.99999999999994
+      ],
+      "local_search_strategy": "quick_plane_seeded_with_full_sweep_fallback",
+      "quick_half_range_um": 2.0,
+      "focus_budget": {
+        "max_seconds": 180.0,
+        "max_captures": 48,
+        "captures_started": 0,
+        "elapsed_seconds": 0.015999999988707714,
+        "completed_actions": 0,
+        "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline"
+      },
+      "local_result": {
+        "success": false,
+        "z_um": 11.99999999999994,
+        "score": 0,
+        "prominence": 0,
+        "reason": "Flat image",
+        "samples": [],
+        "outcome": "non_peak",
+        "budget": null
+      },
+      "status": "autofocus_failed",
+      "reason": "Flat image"
+    }
+  ],
+  "verified_points_um": [
+    [
+      20.0,
+      20.0,
+      10.6
+    ],
+    [
+      20.0,
+      40.0,
+      11.0
+    ],
+    [
+      40.0,
+      20.0,
+      10.8
+    ]
+  ],
+  "search_seed_points_um": [],
+  "search_seeds_are_focus_evidence": false,
+  "max_residual_um": 1.0,
+  "search_bounds_um": null,
+  "attempt_folder": "attempt-91ac255297514006bc6555ff371d8f0d",
+  "extrapolation_allowed": false,
+  "anchor_centres_um": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      100.0,
+      0.0
+    ],
+    [
+      100.0,
+      100.0
+    ],
+    [
+      0.0,
+      100.0
+    ]
+  ],
+  "fit_origin_xy_um": [
+    26.666666666666668,
+    26.666666666666668
+  ],
+  "fit_coefficients": [
+    0.00999999999999957,
+    0.019999999999998994,
+    10.800000000000002
+  ],
+  "residuals_um": [
+    -1.2434497875801753e-14,
+    8.881784197001252e-15,
+    -3.552713678800501e-15
+  ],
+  "measured_max_residual_um": 1.2434497875801753e-14,
+  "rms_um": 9.057678187205881e-15,
+  "verified_hull_xy_um": [
+    [
+      20.0,
+      20.0
+    ],
+    [
+      40.0,
+      20.0
+    ],
+    [
+      20.0,
+      40.0
+    ]
+  ]
+}

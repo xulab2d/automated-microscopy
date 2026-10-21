@@ -1,0 +1,132 @@
+{
+  "schema": 1,
+  "status": "estimated",
+  "method": "coherent_halfplane_edges_with_robust_line_fit",
+  "polygon_um": [
+    [
+      820.4999860079844,
+      179.5
+    ],
+    [
+      820.5000140269843,
+      820.5
+    ],
+    [
+      179.50001402698422,
+      820.5
+    ],
+    [
+      179.49998600798435,
+      179.5
+    ]
+  ],
+  "uncertainty_um": 20.0,
+  "uncertainty_kind": "planning margin, not a statistical confidence bound",
+  "lines": [
+    {
+      "normal": [
+        1.0,
+        -4.371138828673793e-08
+      ],
+      "offset_um": 800.4999781617902,
+      "expanded_offset_um": 820.4999781617902,
+      "residual_um_p95": 2.487614904111979e-06,
+      "margin_um": 20.0,
+      "source_images": [
+        "frames/probe_000004.tiff"
+      ],
+      "edge_point_count": 120
+    },
+    {
+      "normal": [
+        -0.0,
+        1.0
+      ],
+      "offset_um": 800.5,
+      "expanded_offset_um": 820.5,
+      "residual_um_p95": 0.0,
+      "margin_um": 20.0,
+      "source_images": [
+        "frames/probe_000007.tiff"
+      ],
+      "edge_point_count": 152
+    },
+    {
+      "normal": [
+        -1.0,
+        4.371138828673793e-08
+      ],
+      "offset_um": -199.49997816179015,
+      "expanded_offset_um": -179.49997816179015,
+      "residual_um_p95": 2.4876148785324403e-06,
+      "margin_um": 20.0,
+      "source_images": [
+        "frames/probe_000010.tiff"
+      ],
+      "edge_point_count": 120
+    },
+    {
+      "normal": [
+        0.0,
+        -1.0
+      ],
+      "offset_um": -199.5,
+      "expanded_offset_um": -179.5,
+      "residual_um_p95": 0.0,
+      "margin_um": 20.0,
+      "source_images": [
+        "frames/probe_000013.tiff"
+      ],
+      "edge_point_count": 152
+    }
+  ],
+  "assumption": "Convex chip with approximately straight edges; unobserved corners are inferred.",
+  "coverage_requirement": "Check substrate at raster perimeter and expand/replan if it reaches that perimeter.",
+  "algorithm": "sparse_photometric_halfplanes_v2",
+  "registered_consistency": {
+    "accepted": true,
+    "observation_count": 14,
+    "line_checks": [
+      {
+        "accepted": true,
+        "violations": [],
+        "margin_um": 20.0,
+        "patch_diameter_um": 40.0,
+        "hypothesis": "Same separated convex chip across the supplied registered observations."
+      },
+      {
+        "accepted": true,
+        "violations": [],
+        "margin_um": 20.0,
+        "patch_diameter_um": 40.0,
+        "hypothesis": "Same separated convex chip across the supplied registered observations."
+      },
+      {
+        "accepted": true,
+        "violations": [],
+        "margin_um": 20.0,
+        "patch_diameter_um": 40.0,
+        "hypothesis": "Same separated convex chip across the supplied registered observations."
+      },
+      {
+        "accepted": true,
+        "violations": [],
+        "margin_um": 20.0,
+        "patch_diameter_um": 40.0,
+        "hypothesis": "Same separated convex chip across the supplied registered observations."
+      }
+    ],
+    "qualification": "Same separated convex chip hypothesis; not proof of unsampled gaps or complete coverage."
+  },
+  "outcome": "estimated_boundary",
+  "evidence": {
+    "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\ut-edge-guide-03\\test_rejected_label_proposal_g0",
+    "images": 14,
+    "new_probe_images": 14,
+    "imported_probe_images": 0,
+    "coherent_edge_images": 4,
+    "discovery_sha256": "ac43689bfeddb545d432f8f872e046b032c1d2da57377cd5f1c63a6ca56d626a"
+  },
+  "acquisition_assumption": "One separated convex chip with approximately straight edges. Coarse hops may cross unobserved gaps.",
+  "all_chips_found": false
+}

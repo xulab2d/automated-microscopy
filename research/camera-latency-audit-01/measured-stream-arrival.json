@@ -1,0 +1,937 @@
+{
+  "qualification": "60 saved continuation seed captures,200ms exposure. Direct measured client arrival/completion split; early return alone can overlap about0.11s median, not the full0.54s vendor finalization interval. Persistent snapshots remain unmeasured.",
+  "stats": {
+    "job_load": {
+      "n": 60,
+      "median_s": 0.10324514999956591,
+      "p90_s": 0.11714666999832844
+    },
+    "resource_setup": {
+      "n": 60,
+      "median_s": 0.005408049997640774,
+      "p90_s": 0.006320080001023598
+    },
+    "request_to_first_image": {
+      "n": 60,
+      "median_s": 1.0578871500001696,
+      "p90_s": 1.1840570700042008
+    },
+    "completion_after_image": {
+      "n": 60,
+      "median_s": 0.11074009999720147,
+      "p90_s": 0.22963103999863962
+    },
+    "image_decode": {
+      "n": 60,
+      "median_s": 0.07953070000075968,
+      "p90_s": 0.08610322000167799
+    },
+    "capture_total_including_cleanup": {
+      "n": 60,
+      "median_s": 1.5079741000008653,
+      "p90_s": 1.6262292100022022
+    }
+  },
+  "rows": [
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000016.json",
+      "timings": {
+        "job_load": 0.10204540000268025,
+        "resource_setup": 0.005660299997543916,
+        "subscription_ready_wait": 0.10072500000387663,
+        "request_to_first_image": 1.0444247999985237,
+        "image_decode": 0.09091540000372333,
+        "completion_after_image": 0.14470170000276994,
+        "camera_job_and_transfer": 1.3807808000055957,
+        "capture_total_before_cleanup": 1.49641210000118,
+        "job_cleanup": 0.0018540000019129366,
+        "capture_total_including_cleanup": 1.520547300002363
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000017.json",
+      "timings": {
+        "job_load": 0.10447559999738587,
+        "resource_setup": 0.005212399999436457,
+        "subscription_ready_wait": 0.10055279999505728,
+        "request_to_first_image": 1.0583546999987448,
+        "image_decode": 0.08069240000622813,
+        "completion_after_image": 0.021745099998952355,
+        "camera_job_and_transfer": 1.2613606999948388,
+        "capture_total_before_cleanup": 1.3776119999965886,
+        "job_cleanup": 0.0020973999999114312,
+        "capture_total_including_cleanup": 1.400444199993217
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000018.json",
+      "timings": {
+        "job_load": 0.11156820000178413,
+        "resource_setup": 0.005368799997086171,
+        "subscription_ready_wait": 0.10047990000020945,
+        "request_to_first_image": 1.0640113999979803,
+        "image_decode": 0.07039870000153314,
+        "completion_after_image": 0.1459776999981841,
+        "camera_job_and_transfer": 1.3808810999980778,
+        "capture_total_before_cleanup": 1.5041611999986344,
+        "job_cleanup": 0.0017584000015631318,
+        "capture_total_including_cleanup": 1.5277495999980601
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000019.json",
+      "timings": {
+        "job_load": 0.09120180000172695,
+        "resource_setup": 0.004433200003404636,
+        "subscription_ready_wait": 0.10019979999924544,
+        "request_to_first_image": 1.038983599995845,
+        "image_decode": 0.08183129999815719,
+        "completion_after_image": 0.1851066000017454,
+        "camera_job_and_transfer": 1.4061344000001554,
+        "capture_total_before_cleanup": 1.5089517000014894,
+        "job_cleanup": 0.0022573000023839995,
+        "capture_total_including_cleanup": 1.5415332000047783
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000020.json",
+      "timings": {
+        "job_load": 0.10263080000004265,
+        "resource_setup": 0.006136600000900216,
+        "subscription_ready_wait": 0.10049690000596456,
+        "request_to_first_image": 1.2757917999988422,
+        "image_decode": 0.07931929999904241,
+        "completion_after_image": 0.21350070000335108,
+        "camera_job_and_transfer": 1.6691274000040721,
+        "capture_total_before_cleanup": 1.7862623000037274,
+        "job_cleanup": 0.001998800005821977,
+        "capture_total_including_cleanup": 1.8087928000022657
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000021.json",
+      "timings": {
+        "job_load": 0.10134839999955148,
+        "resource_setup": 0.0062605999992229044,
+        "subscription_ready_wait": 0.10052970000106143,
+        "request_to_first_image": 1.0501827000043704,
+        "image_decode": 0.07754999999451684,
+        "completion_after_image": 0.028632699999434408,
+        "camera_job_and_transfer": 1.2569087999945623,
+        "capture_total_before_cleanup": 1.3711389000018244,
+        "job_cleanup": 0.0017976000017370097,
+        "capture_total_including_cleanup": 1.3948190000010072
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000022.json",
+      "timings": {
+        "job_load": 0.10226730000431417,
+        "resource_setup": 0.005239899997832254,
+        "subscription_ready_wait": 0.10055049999937182,
+        "request_to_first_image": 1.0613889000014751,
+        "image_decode": 0.07586699999956181,
+        "completion_after_image": 0.04056020000280114,
+        "camera_job_and_transfer": 1.2783798999953433,
+        "capture_total_before_cleanup": 1.3928802000009455,
+        "job_cleanup": 0.0018444000015733764,
+        "capture_total_including_cleanup": 1.4160088000062387
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000023.json",
+      "timings": {
+        "job_load": 0.12040169999818318,
+        "resource_setup": 0.005585999999311753,
+        "subscription_ready_wait": 0.10274260000005597,
+        "request_to_first_image": 1.1745329999976093,
+        "image_decode": 0.07525100000202656,
+        "completion_after_image": 0.02680819999659434,
+        "camera_job_and_transfer": 1.3793473999976413,
+        "capture_total_before_cleanup": 1.5131898999970872,
+        "job_cleanup": 0.0015262999950209633,
+        "capture_total_including_cleanup": 1.5427662999936729
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000024.json",
+      "timings": {
+        "job_load": 0.13214650000008987,
+        "resource_setup": 0.011315000003378373,
+        "subscription_ready_wait": 0.10051479999674484,
+        "request_to_first_image": 1.0660557000010158,
+        "image_decode": 0.06843700000172248,
+        "completion_after_image": 0.02930509999714559,
+        "camera_job_and_transfer": 1.2643252999987453,
+        "capture_total_before_cleanup": 1.414139399996202,
+        "job_cleanup": 0.0018312000029254705,
+        "capture_total_including_cleanup": 1.4380776999969385
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000025.json",
+      "timings": {
+        "job_load": 0.1136807000002591,
+        "resource_setup": 0.005389300000388175,
+        "subscription_ready_wait": 0.10011500000109663,
+        "request_to_first_image": 1.0266355999992811,
+        "image_decode": 0.07659559999592602,
+        "completion_after_image": 0.05786880000232486,
+        "camera_job_and_transfer": 1.2612297000014223,
+        "capture_total_before_cleanup": 1.386959299998125,
+        "job_cleanup": 0.0017678000003797933,
+        "capture_total_including_cleanup": 1.4093304999987595
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000026.json",
+      "timings": {
+        "job_load": 0.1051143000004231,
+        "resource_setup": 0.00407140000606887,
+        "subscription_ready_wait": 0.10027480000280775,
+        "request_to_first_image": 1.0533401000066078,
+        "image_decode": 0.08482769999682205,
+        "completion_after_image": 0.1612877999941702,
+        "camera_job_and_transfer": 1.3997425999987172,
+        "capture_total_before_cleanup": 1.5153293000039412,
+        "job_cleanup": 0.0018688000054680742,
+        "capture_total_including_cleanup": 1.5402035000006435
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000027.json",
+      "timings": {
+        "job_load": 0.10599560000264319,
+        "resource_setup": 0.005426799994893372,
+        "subscription_ready_wait": 0.10052129999530734,
+        "request_to_first_image": 1.2380661999995937,
+        "image_decode": 0.08290810000471538,
+        "completion_after_image": 0.13917509999737376,
+        "camera_job_and_transfer": 1.560683899995638,
+        "capture_total_before_cleanup": 1.678242499998305,
+        "job_cleanup": 0.0021543999973800965,
+        "capture_total_including_cleanup": 1.7012176999996882
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000028.json",
+      "timings": {
+        "job_load": 0.09534060000441968,
+        "resource_setup": 0.005616499998723157,
+        "subscription_ready_wait": 0.10069080000539543,
+        "request_to_first_image": 1.0289313000030234,
+        "image_decode": 0.0761689999999362,
+        "completion_after_image": 0.14195810000092024,
+        "camera_job_and_transfer": 1.3477624000006472,
+        "capture_total_before_cleanup": 1.4557107000000542,
+        "job_cleanup": 0.0019742000004043803,
+        "capture_total_including_cleanup": 1.4844001000019489
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000029.json",
+      "timings": {
+        "job_load": 0.09887159999925643,
+        "resource_setup": 0.007437100000970531,
+        "subscription_ready_wait": 0.10052179999911459,
+        "request_to_first_image": 1.0683210999995936,
+        "image_decode": 0.07579329999862239,
+        "completion_after_image": 0.025018400003318675,
+        "camera_job_and_transfer": 1.2696693999969284,
+        "capture_total_before_cleanup": 1.3825836999967578,
+        "job_cleanup": 0.0017173000014736317,
+        "capture_total_including_cleanup": 1.4099904999966384
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000030.json",
+      "timings": {
+        "job_load": 0.09133950000250479,
+        "resource_setup": 0.005529900001420174,
+        "subscription_ready_wait": 0.10049759999674279,
+        "request_to_first_image": 1.0181588000050397,
+        "image_decode": 0.08012309999321587,
+        "completion_after_image": 0.14627180000388762,
+        "camera_job_and_transfer": 1.3450680000023567,
+        "capture_total_before_cleanup": 1.4485446000035154,
+        "job_cleanup": 0.001857499999459833,
+        "capture_total_including_cleanup": 1.4739561000023969
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000031.json",
+      "timings": {
+        "job_load": 0.11220339999999851,
+        "resource_setup": 0.005534099997021258,
+        "subscription_ready_wait": 0.10042759999487316,
+        "request_to_first_image": 1.0340732999975444,
+        "image_decode": 0.07596580000245012,
+        "completion_after_image": 0.04963230000430485,
+        "camera_job_and_transfer": 1.260111899995536,
+        "capture_total_before_cleanup": 1.3854360000041197,
+        "job_cleanup": 0.0020457999999052845,
+        "capture_total_including_cleanup": 1.4091601000036462
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000032.json",
+      "timings": {
+        "job_load": 0.09192309999343706,
+        "resource_setup": 0.004089699999894947,
+        "subscription_ready_wait": 0.10021169999527046,
+        "request_to_first_image": 1.0362878000014462,
+        "image_decode": 0.07353579999471549,
+        "completion_after_image": 0.24503280000499217,
+        "camera_job_and_transfer": 1.4550831999949878,
+        "capture_total_before_cleanup": 1.5572828999938793,
+        "job_cleanup": 0.0018772000039462,
+        "capture_total_including_cleanup": 1.5795436999978847
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000033.json",
+      "timings": {
+        "job_load": 0.09341239999776008,
+        "resource_setup": 0.0060140000059618615,
+        "subscription_ready_wait": 0.10068139999930281,
+        "request_to_first_image": 1.0215568999992684,
+        "image_decode": 0.08603520000178833,
+        "completion_after_image": 0.05121419999341015,
+        "camera_job_and_transfer": 1.2594993000020622,
+        "capture_total_before_cleanup": 1.366077899998345,
+        "job_cleanup": 0.001890400002594106,
+        "capture_total_including_cleanup": 1.3897922999967705
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000034.json",
+      "timings": {
+        "job_load": 0.10725269999966258,
+        "resource_setup": 0.004027099996164907,
+        "subscription_ready_wait": 0.10008570000354666,
+        "request_to_first_image": 1.0451025000002119,
+        "image_decode": 0.08247599999594968,
+        "completion_after_image": 0.06495730000460753,
+        "camera_job_and_transfer": 1.292634999997972,
+        "capture_total_before_cleanup": 1.4106365999978152,
+        "job_cleanup": 0.0018588999955682084,
+        "capture_total_including_cleanup": 1.4350462000002153
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000035.json",
+      "timings": {
+        "job_load": 0.1046582999988459,
+        "resource_setup": 0.005759399995440617,
+        "subscription_ready_wait": 0.1011071000029915,
+        "request_to_first_image": 1.075497699996049,
+        "image_decode": 0.08195500000147149,
+        "completion_after_image": 0.08836920000612736,
+        "camera_job_and_transfer": 1.3469442999994499,
+        "capture_total_before_cleanup": 1.4644106999985524,
+        "job_cleanup": 0.0020032000029459596,
+        "capture_total_including_cleanup": 1.488242999999784
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000036.json",
+      "timings": {
+        "job_load": 0.10236529999383492,
+        "resource_setup": 0.004112100003112573,
+        "subscription_ready_wait": 0.10046149999834597,
+        "request_to_first_image": 1.0971824000007473,
+        "image_decode": 0.07469539999874542,
+        "completion_after_image": 0.10526989999925718,
+        "camera_job_and_transfer": 1.3776223000022583,
+        "capture_total_before_cleanup": 1.490868799999589,
+        "job_cleanup": 0.0020504999993136153,
+        "capture_total_including_cleanup": 1.51580439999816
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000037.json",
+      "timings": {
+        "job_load": 0.10243059999629622,
+        "resource_setup": 0.004821700000320561,
+        "subscription_ready_wait": 0.10034489999816287,
+        "request_to_first_image": 1.1611448999974527,
+        "image_decode": 0.08692770000197925,
+        "completion_after_image": 0.15378829999826849,
+        "camera_job_and_transfer": 1.5022219000020414,
+        "capture_total_before_cleanup": 1.6169802000003983,
+        "job_cleanup": 0.001776300006895326,
+        "capture_total_including_cleanup": 1.642619400001422
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000038.json",
+      "timings": {
+        "job_load": 0.10353899999608984,
+        "resource_setup": 0.008032900004764087,
+        "subscription_ready_wait": 0.10051089999615215,
+        "request_to_first_image": 1.0730803000042215,
+        "image_decode": 0.07530489999771817,
+        "completion_after_image": 0.029376099999353755,
+        "camera_job_and_transfer": 1.2782860000006622,
+        "capture_total_before_cleanup": 1.396722099998442,
+        "job_cleanup": 0.0021994999988237396,
+        "capture_total_including_cleanup": 1.421649999996589
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000039.json",
+      "timings": {
+        "job_load": 0.11225400000694208,
+        "resource_setup": 0.005201400002988521,
+        "subscription_ready_wait": 0.10023879999789642,
+        "request_to_first_image": 1.1826928000009502,
+        "image_decode": 0.08067600000504171,
+        "completion_after_image": 0.11393390000012005,
+        "camera_job_and_transfer": 1.4775517999951262,
+        "capture_total_before_cleanup": 1.6019656000062241,
+        "job_cleanup": 0.002502199997252319,
+        "capture_total_including_cleanup": 1.6256951000032132
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000040.json",
+      "timings": {
+        "job_load": 0.11485150000225985,
+        "resource_setup": 0.005166900002222974,
+        "subscription_ready_wait": 0.10045679999893764,
+        "request_to_first_image": 1.143077099994116,
+        "image_decode": 0.07956380000541685,
+        "completion_after_image": 0.22883069999807049,
+        "camera_job_and_transfer": 1.5519413000001805,
+        "capture_total_before_cleanup": 1.6786135000002105,
+        "job_cleanup": 0.0017324000000371598,
+        "capture_total_including_cleanup": 1.7021478000024217
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000041.json",
+      "timings": {
+        "job_load": 0.1157904000065173,
+        "resource_setup": 0.005353300002752803,
+        "subscription_ready_wait": 0.10034230000019306,
+        "request_to_first_image": 1.0842862999998033,
+        "image_decode": 0.07445159999770112,
+        "completion_after_image": 0.055736200003593694,
+        "camera_job_and_transfer": 1.3148269999946933,
+        "capture_total_before_cleanup": 1.441794200000004,
+        "job_cleanup": 0.003029799998330418,
+        "capture_total_including_cleanup": 1.4674300000042422
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000042.json",
+      "timings": {
+        "job_load": 0.12041650000173831,
+        "resource_setup": 0.006077099998947233,
+        "subscription_ready_wait": 0.10022319999552565,
+        "request_to_first_image": 1.027951199997915,
+        "image_decode": 0.09229990000312682,
+        "completion_after_image": 0.16206619999866234,
+        "camera_job_and_transfer": 1.3825537000011536,
+        "capture_total_before_cleanup": 1.5153024000028381,
+        "job_cleanup": 0.0019468000027700327,
+        "capture_total_including_cleanup": 1.53863740000088
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000043.json",
+      "timings": {
+        "job_load": 0.1030179000008502,
+        "resource_setup": 0.005000700002710801,
+        "subscription_ready_wait": 0.10054749999835622,
+        "request_to_first_image": 1.0574196000015945,
+        "image_decode": 0.07949759999610251,
+        "completion_after_image": 0.12945699999545468,
+        "camera_job_and_transfer": 1.3669364000015776,
+        "capture_total_before_cleanup": 1.483335500000976,
+        "job_cleanup": 0.0019174000044586137,
+        "capture_total_including_cleanup": 1.5069527000014205
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000044.json",
+      "timings": {
+        "job_load": 0.10506139999779407,
+        "resource_setup": 0.005282400001306087,
+        "subscription_ready_wait": 0.10033150000526803,
+        "request_to_first_image": 1.0666047999984585,
+        "image_decode": 0.07989720000477973,
+        "completion_after_image": 0.017562000000907574,
+        "camera_job_and_transfer": 1.2644091000038316,
+        "capture_total_before_cleanup": 1.3808847999971476,
+        "job_cleanup": 0.0019035000004805624,
+        "capture_total_including_cleanup": 1.407051700000011
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000045.json",
+      "timings": {
+        "job_load": 0.10646809999889228,
+        "resource_setup": 0.005387700002756901,
+        "subscription_ready_wait": 0.10020709999662358,
+        "request_to_first_image": 1.2542410000023665,
+        "image_decode": 0.08566810000047553,
+        "completion_after_image": 0.04625349999696482,
+        "camera_job_and_transfer": 1.4863817000004929,
+        "capture_total_before_cleanup": 1.604057799995644,
+        "job_cleanup": 0.0018672000005608425,
+        "capture_total_including_cleanup": 1.6310361999931047
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000046.json",
+      "timings": {
+        "job_load": 0.10252329999639187,
+        "resource_setup": 0.0043194000027142465,
+        "subscription_ready_wait": 0.10067890000209445,
+        "request_to_first_image": 1.0323265999977593,
+        "image_decode": 0.07159039999532979,
+        "completion_after_image": 0.1893281000011484,
+        "camera_job_and_transfer": 1.3939447000011569,
+        "capture_total_before_cleanup": 1.507114799998817,
+        "job_cleanup": 0.002039099999819882,
+        "capture_total_including_cleanup": 1.5308844999963185
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000048.json",
+      "timings": {
+        "job_load": 0.09322220000467496,
+        "resource_setup": 0.005796899997221772,
+        "subscription_ready_wait": 0.10007250000489876,
+        "request_to_first_image": 1.1518742000043858,
+        "image_decode": 0.07342760000028647,
+        "completion_after_image": 0.05702780000137864,
+        "camera_job_and_transfer": 1.3824131000001216,
+        "capture_total_before_cleanup": 1.4874213000002783,
+        "job_cleanup": 0.0025700999976834282,
+        "capture_total_including_cleanup": 1.5121692000029725
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000050.json",
+      "timings": {
+        "job_load": 0.09284719999413937,
+        "resource_setup": 0.005432400001154747,
+        "subscription_ready_wait": 0.10059960000216961,
+        "request_to_first_image": 1.0600367000006372,
+        "image_decode": 0.0812891999958083,
+        "completion_after_image": 0.028967999998712912,
+        "camera_job_and_transfer": 1.2709060999986832,
+        "capture_total_before_cleanup": 1.3753515999997035,
+        "job_cleanup": 0.0019501999995554797,
+        "capture_total_including_cleanup": 1.3984569999956875
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000051.json",
+      "timings": {
+        "job_load": 0.10419150000234367,
+        "resource_setup": 0.005612599998130463,
+        "subscription_ready_wait": 0.10022279999975581,
+        "request_to_first_image": 1.0287477999954717,
+        "image_decode": 0.0796967999995104,
+        "completion_after_image": 0.10604060000332538,
+        "camera_job_and_transfer": 1.31471959999908,
+        "capture_total_before_cleanup": 1.4305052000054275,
+        "job_cleanup": 0.0018529000008129515,
+        "capture_total_including_cleanup": 1.4535815000053844
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000052.json",
+      "timings": {
+        "job_load": 0.10778379999828758,
+        "resource_setup": 0.004936400000588037,
+        "subscription_ready_wait": 0.10034009999799309,
+        "request_to_first_image": 1.1907410999992862,
+        "image_decode": 0.06480729999748291,
+        "completion_after_image": 0.114985300002445,
+        "camera_job_and_transfer": 1.4708869999958551,
+        "capture_total_before_cleanup": 1.5908940999943297,
+        "job_cleanup": 0.002169999999750871,
+        "capture_total_including_cleanup": 1.6156601999973645
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000053.json",
+      "timings": {
+        "job_load": 0.1284187999990536,
+        "resource_setup": 0.005248999994364567,
+        "subscription_ready_wait": 0.10040719999960857,
+        "request_to_first_image": 1.1833144000047469,
+        "image_decode": 0.0867154000006849,
+        "completion_after_image": 0.016655100000207312,
+        "camera_job_and_transfer": 1.3871037999997498,
+        "capture_total_before_cleanup": 1.5262191000001621,
+        "job_cleanup": 0.001840299999457784,
+        "capture_total_including_cleanup": 1.5529313000006368
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000055.json",
+      "timings": {
+        "job_load": 0.10645160000422038,
+        "resource_setup": 0.005213799995544832,
+        "subscription_ready_wait": 0.10014049999881536,
+        "request_to_first_image": 1.0686996999938856,
+        "image_decode": 0.07599770000524586,
+        "completion_after_image": 0.03474699999787845,
+        "camera_job_and_transfer": 1.2795999000009033,
+        "capture_total_before_cleanup": 1.397376600005373,
+        "job_cleanup": 0.0019097999975201674,
+        "capture_total_including_cleanup": 1.423816700000316
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000057.json",
+      "timings": {
+        "job_load": 0.09525399999984074,
+        "resource_setup": 0.005125499999849126,
+        "subscription_ready_wait": 0.10032379999756813,
+        "request_to_first_image": 1.0679616999987047,
+        "image_decode": 0.08146440000564326,
+        "completion_after_image": 0.03740670000115642,
+        "camera_job_and_transfer": 1.2871709000028204,
+        "capture_total_before_cleanup": 1.3938197999959812,
+        "job_cleanup": 0.0017747000019880943,
+        "capture_total_including_cleanup": 1.417763899997226
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000058.json",
+      "timings": {
+        "job_load": 0.09300350000557955,
+        "resource_setup": 0.004309999996621627,
+        "subscription_ready_wait": 0.100339199998416,
+        "request_to_first_image": 1.0338128000003053,
+        "image_decode": 0.08206869999412447,
+        "completion_after_image": 0.15109639999718638,
+        "camera_job_and_transfer": 1.3673297999994247,
+        "capture_total_before_cleanup": 1.4707666000031168,
+        "job_cleanup": 0.0023715000061201863,
+        "capture_total_including_cleanup": 1.4968316000013147
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000059.json",
+      "timings": {
+        "job_load": 0.10226479999982985,
+        "resource_setup": 0.005158299994945992,
+        "subscription_ready_wait": 0.10017749999678927,
+        "request_to_first_image": 1.0598784999965574,
+        "image_decode": 0.07825169999705395,
+        "completion_after_image": 0.05118509999738308,
+        "camera_job_and_transfer": 1.2895065999982762,
+        "capture_total_before_cleanup": 1.4035365999952774,
+        "job_cleanup": 0.002296400001796428,
+        "capture_total_including_cleanup": 1.426450400002068
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000060.json",
+      "timings": {
+        "job_load": 0.11678499999834457,
+        "resource_setup": 0.005586700004641898,
+        "subscription_ready_wait": 0.10009290000016335,
+        "request_to_first_image": 1.0648221999945235,
+        "image_decode": 0.08445380000193836,
+        "completion_after_image": 0.05049180000060005,
+        "camera_job_and_transfer": 1.2998762000061106,
+        "capture_total_before_cleanup": 1.429845500002557,
+        "job_cleanup": 0.0018601999981910922,
+        "capture_total_including_cleanup": 1.4589768000005279
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000061.json",
+      "timings": {
+        "job_load": 0.11306999999942491,
+        "resource_setup": 0.00513630000205012,
+        "subscription_ready_wait": 0.10016090000135591,
+        "request_to_first_image": 1.0228150000039022,
+        "image_decode": 0.08372609999787528,
+        "completion_after_image": 0.2185782999949879,
+        "camera_job_and_transfer": 1.4252921000006609,
+        "capture_total_before_cleanup": 1.5498427000056836,
+        "job_cleanup": 0.001924900003359653,
+        "capture_total_including_cleanup": 1.5765548000053968
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000062.json",
+      "timings": {
+        "job_load": 0.19080339999345597,
+        "resource_setup": 0.004005700000561774,
+        "subscription_ready_wait": 0.10032150000188267,
+        "request_to_first_image": 1.0496105999991414,
+        "image_decode": 0.08395400000154041,
+        "completion_after_image": 0.0915307999966899,
+        "camera_job_and_transfer": 1.3254281000045012,
+        "capture_total_before_cleanup": 1.527618000000075,
+        "job_cleanup": 0.002391500005614944,
+        "capture_total_including_cleanup": 1.553473899999517
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000063.json",
+      "timings": {
+        "job_load": 0.10448580000229413,
+        "resource_setup": 0.005499600003531668,
+        "subscription_ready_wait": 0.1002541999987443,
+        "request_to_first_image": 1.2319893999956548,
+        "image_decode": 0.08513800000218907,
+        "completion_after_image": 0.06307820000074571,
+        "camera_job_and_transfer": 1.480471299997589,
+        "capture_total_before_cleanup": 1.597561800001131,
+        "job_cleanup": 0.0017986999955610372,
+        "capture_total_including_cleanup": 1.6217298999981722
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000064.json",
+      "timings": {
+        "job_load": 0.0952532999945106,
+        "resource_setup": 0.006313400001090486,
+        "subscription_ready_wait": 0.10038470000290545,
+        "request_to_first_image": 1.0771161999946344,
+        "image_decode": 0.06985350000468316,
+        "completion_after_image": 0.10754629999428289,
+        "camera_job_and_transfer": 1.354913100003614,
+        "capture_total_before_cleanup": 1.4623893999960274,
+        "job_cleanup": 0.0018093000035150908,
+        "capture_total_including_cleanup": 1.487027199997101
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000065.json",
+      "timings": {
+        "job_load": 0.09916309999971418,
+        "resource_setup": 0.008750699998927303,
+        "subscription_ready_wait": 0.1001073000006727,
+        "request_to_first_image": 1.058702499998617,
+        "image_decode": 0.08264720000443049,
+        "completion_after_image": 0.051182899995183107,
+        "camera_job_and_transfer": 1.2926520999972126,
+        "capture_total_before_cleanup": 1.4070928000001004,
+        "job_cleanup": 0.0019108999986201525,
+        "capture_total_including_cleanup": 1.4313039000044228
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000066.json",
+      "timings": {
+        "job_load": 0.08935710000514518,
+        "resource_setup": 0.005724099995859433,
+        "subscription_ready_wait": 0.10025429999950575,
+        "request_to_first_image": 1.00708129999839,
+        "image_decode": 0.061158399999840185,
+        "completion_after_image": 0.23890019999817014,
+        "camera_job_and_transfer": 1.4074075000025914,
+        "capture_total_before_cleanup": 1.5088611000028322,
+        "job_cleanup": 0.0019797000059043057,
+        "capture_total_including_cleanup": 1.5312115000051563
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000067.json",
+      "timings": {
+        "job_load": 0.10232839999662247,
+        "resource_setup": 0.004929199996695388,
+        "subscription_ready_wait": 0.1000994999994873,
+        "request_to_first_image": 1.0080173999958788,
+        "image_decode": 0.066284500004258,
+        "completion_after_image": 0.14958610000030603,
+        "camera_job_and_transfer": 1.3239993999959552,
+        "capture_total_before_cleanup": 1.4378236999982619,
+        "job_cleanup": 0.0022181000022101216,
+        "capture_total_including_cleanup": 1.4617399999988265
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000068.json",
+      "timings": {
+        "job_load": 0.09484130000055302,
+        "resource_setup": 0.0048720999984652735,
+        "subscription_ready_wait": 0.10042350000003353,
+        "request_to_first_image": 1.023957799996424,
+        "image_decode": 0.07318720000330359,
+        "completion_after_image": 0.17473299999983283,
+        "camera_job_and_transfer": 1.3723205999995116,
+        "capture_total_before_cleanup": 1.4793036999981268,
+        "job_cleanup": 0.001842899997427594,
+        "capture_total_including_cleanup": 1.5044405000007828
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000069.json",
+      "timings": {
+        "job_load": 0.10347239999828162,
+        "resource_setup": 0.00638020000042161,
+        "subscription_ready_wait": 0.10050549999868963,
+        "request_to_first_image": 1.0715322000032756,
+        "image_decode": 0.0872250999964308,
+        "completion_after_image": 0.07651700000133133,
+        "camera_job_and_transfer": 1.3357978999993065,
+        "capture_total_before_cleanup": 1.4533342999930028,
+        "job_cleanup": 0.0022079999980633147,
+        "capture_total_including_cleanup": 1.477949099993566
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000070.json",
+      "timings": {
+        "job_load": 0.10521329999755835,
+        "resource_setup": 0.006638600003498141,
+        "subscription_ready_wait": 0.10052960000029998,
+        "request_to_first_image": 1.0248778000022867,
+        "image_decode": 0.08079610000277171,
+        "completion_after_image": 0.2368341000037617,
+        "camera_job_and_transfer": 1.4430509000012535,
+        "capture_total_before_cleanup": 1.560746900002414,
+        "job_cleanup": 0.0018057000052067451,
+        "capture_total_including_cleanup": 1.5826362000007066
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000071.json",
+      "timings": {
+        "job_load": 0.1022201999949175,
+        "resource_setup": 0.006276299995079171,
+        "subscription_ready_wait": 0.1006684000021778,
+        "request_to_first_image": 1.0193928000007872,
+        "image_decode": 0.07777720000012778,
+        "completion_after_image": 0.09926439999981085,
+        "camera_job_and_transfer": 1.2971164999980829,
+        "capture_total_before_cleanup": 1.4118404999971972,
+        "job_cleanup": 0.0020883999968646094,
+        "capture_total_including_cleanup": 1.4408261999997194
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000072.json",
+      "timings": {
+        "job_load": 0.09954410000500502,
+        "resource_setup": 0.005167600000277162,
+        "subscription_ready_wait": 0.10075960000540363,
+        "request_to_first_image": 1.0146715000009863,
+        "image_decode": 0.06838330000027781,
+        "completion_after_image": 0.29697419999865815,
+        "camera_job_and_transfer": 1.4808046000034665,
+        "capture_total_before_cleanup": 1.5919467999992776,
+        "job_cleanup": 0.0018658999979379587,
+        "capture_total_including_cleanup": 1.6180017000006046
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000073.json",
+      "timings": {
+        "job_load": 0.10005800000362797,
+        "resource_setup": 0.005705600000510458,
+        "subscription_ready_wait": 0.10016729999915697,
+        "request_to_first_image": 1.0355363999988185,
+        "image_decode": 0.0700010000000475,
+        "completion_after_image": 0.18901239999831887,
+        "camera_job_and_transfer": 1.39472950000345,
+        "capture_total_before_cleanup": 1.50638489999983,
+        "job_cleanup": 0.0022074000007705763,
+        "capture_total_including_cleanup": 1.5289544000042952
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000074.json",
+      "timings": {
+        "job_load": 0.09904359999927692,
+        "resource_setup": 0.004985899999155663,
+        "subscription_ready_wait": 0.10021460000280058,
+        "request_to_first_image": 1.026826000001165,
+        "image_decode": 0.08298009999998612,
+        "completion_after_image": 0.17669480000040494,
+        "camera_job_and_transfer": 1.386728999998013,
+        "capture_total_before_cleanup": 1.4975810000032652,
+        "job_cleanup": 0.0019017000013263896,
+        "capture_total_including_cleanup": 1.5206795999984024
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000075.json",
+      "timings": {
+        "job_load": 0.09515169999940554,
+        "resource_setup": 0.005319600000802893,
+        "subscription_ready_wait": 0.10042419999808772,
+        "request_to_first_image": 1.0302317000023322,
+        "image_decode": 0.0827179999978398,
+        "completion_after_image": 0.22043359999952372,
+        "camera_job_and_transfer": 1.433831000002101,
+        "capture_total_before_cleanup": 1.5400518999958877,
+        "job_cleanup": 0.002226399999926798,
+        "capture_total_including_cleanup": 1.5624710999982199
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000076.json",
+      "timings": {
+        "job_load": 0.11260889999539359,
+        "resource_setup": 0.005790499999420717,
+        "subscription_ready_wait": 0.10038899999926798,
+        "request_to_first_image": 1.0157393999979831,
+        "image_decode": 0.08822710000094958,
+        "completion_after_image": 0.156142899999395,
+        "camera_job_and_transfer": 1.3605094000013196,
+        "capture_total_before_cleanup": 1.4857515999974567,
+        "job_cleanup": 0.0021377000011852942,
+        "capture_total_including_cleanup": 1.5089955000003101
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000077.json",
+      "timings": {
+        "job_load": 0.1638712999993004,
+        "resource_setup": 0.005759899999247864,
+        "subscription_ready_wait": 0.10020490000169957,
+        "request_to_first_image": 1.2218706000057864,
+        "image_decode": 0.06219699999928707,
+        "completion_after_image": 0.2605681999993976,
+        "camera_job_and_transfer": 1.6448578999988968,
+        "capture_total_before_cleanup": 1.8211711999974796,
+        "job_cleanup": 0.0018487999986973591,
+        "capture_total_including_cleanup": 1.844314599999052
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000078.json",
+      "timings": {
+        "job_load": 0.11019790000136709,
+        "resource_setup": 0.006140999998024199,
+        "subscription_ready_wait": 0.10008689999813214,
+        "request_to_first_image": 1.0226846000005025,
+        "image_decode": 0.07069999999657739,
+        "completion_after_image": 0.12166520000027958,
+        "camera_job_and_transfer": 1.3151503999979468,
+        "capture_total_before_cleanup": 1.4401689000005717,
+        "job_cleanup": 0.0020523999992292374,
+        "capture_total_including_cleanup": 1.4654521999982535
+      }
+    },
+    {
+      "source": "data\\whole-chip-standardized-01\\search\\frames\\seed_000079.json",
+      "timings": {
+        "job_load": 0.0924278000020422,
+        "resource_setup": 0.005477400001836941,
+        "subscription_ready_wait": 0.1003735999984201,
+        "request_to_first_image": 1.0475959000032162,
+        "image_decode": 0.07688030000281287,
+        "completion_after_image": 0.2640971000000718,
+        "camera_job_and_transfer": 1.4889600000024075,
+        "capture_total_before_cleanup": 1.5953562000067905,
+        "job_cleanup": 0.0024553999974159524,
+        "capture_total_including_cleanup": 1.6222364000059315
+      }
+    }
+  ]
+}

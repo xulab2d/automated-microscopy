@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "recorded_at_utc": "2026-10-09T18:49:17.768707+00:00",
+  "correction": "Earlier broad wording that temporary test outputs were excluded was inaccurate. Only explicit exclusion patterns apply. Ordinary data/test-* outputs are included.",
+  "included_data_test_files": 28792,
+  "included_data_test_bytes": 265185356,
+  "excluded_patterns_examples": [
+    ".venv*",
+    ".git",
+    "__pycache__",
+    ".pytest_cache",
+    ".test-*",
+    "credential patterns",
+    "live relocation journals"
+  ],
+  "inventory_changed": false,
+  "files_removed_from_transfer": 0,
+  "source_originals_retained": true
+}

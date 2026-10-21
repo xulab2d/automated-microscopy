@@ -1,0 +1,50 @@
+[
+  {
+    "tile": "tile_000215",
+    "masks_byte_identical": true,
+    "regions_identical": true,
+    "region_count": 307
+  },
+  {
+    "tile": "tile_000627",
+    "masks_byte_identical": true,
+    "regions_identical": true,
+    "region_count": 260
+  },
+  {
+    "tile": "tile_000639",
+    "masks_byte_identical": true,
+    "regions_identical": true,
+    "region_count": 160
+  },
+  {
+    "tile": "tile_000547",
+    "masks_byte_identical": true,
+    "regions_identical": true,
+    "region_count": 428
+  },
+  {
+    "tile": "tile_000660",
+    "masks_byte_identical": true,
+    "regions_identical": true,
+    "region_count": 1665
+  },
+  {
+    "tile": "tile_000635",
+    "masks_byte_identical": true,
+    "regions_identical": true,
+    "region_count": 1509
+  },
+  {
+    "tile": "tile_000269",
+    "masks_byte_identical": true,
+    "regions_identical": true,
+    "region_count": 280
+  },
+  {
+    "tile": "tile_000457",
+    "masks_byte_identical": true,
+    "regions_identical": true,
+    "region_count": 465
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "tile": "tile_000215",
+    "parent_masks_identical": true,
+    "foreground_pixels_before": 720557,
+    "foreground_pixels_after": 720557
+  },
+  {
+    "tile": "tile_000627",
+    "parent_masks_identical": true,
+    "foreground_pixels_before": 109965,
+    "foreground_pixels_after": 109965
+  },
+  {
+    "tile": "tile_000639",
+    "parent_masks_identical": true,
+    "foreground_pixels_before": 51512,
+    "foreground_pixels_after": 51512
+  },
+  {
+    "tile": "tile_000547",
+    "parent_masks_identical": true,
+    "foreground_pixels_before": 126324,
+    "foreground_pixels_after": 126324
+  },
+  {
+    "tile": "tile_000660",
+    "parent_masks_identical": true,
+    "foreground_pixels_before": 167766,
+    "foreground_pixels_after": 167766
+  },
+  {
+    "tile": "tile_000635",
+    "parent_masks_identical": true,
+    "foreground_pixels_before": 171346,
+    "foreground_pixels_after": 171346
+  },
+  {
+    "tile": "tile_000269",
+    "parent_masks_identical": true,
+    "foreground_pixels_before": 693441,
+    "foreground_pixels_after": 693441
+  },
+  {
+    "tile": "tile_000457",
+    "parent_masks_identical": true,
+    "foreground_pixels_before": 533344,
+    "foreground_pixels_after": 533344
+  }
+]

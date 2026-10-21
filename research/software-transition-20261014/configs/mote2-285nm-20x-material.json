@@ -1,0 +1,761 @@
+{
+  "schema": 1,
+  "kind": "local_multibranch_optical_reference",
+  "optical_context": {
+    "context": {
+      "sample_id": "MoTe2-2026-10-08",
+      "material": "MoTe2",
+      "substrate": "SiO2/Si",
+      "oxide_nm": 285,
+      "oxide_process": "wet",
+      "objective": "EC Epiplan 20x/0.4 HD M27",
+      "camera": "Axiocam 305 color",
+      "exposure_ms": 266.6015625,
+      "illumination": "reflected brightfield",
+      "illumination_percent": 93.44422700587084,
+      "white_balance": "0.25007564,1,2.61244442",
+      "white_level": 4095,
+      "color_profile_kind": "fixed acquisition channel balance; not a neutral-reference color calibration"
+    },
+    "acquisition_settings": {
+      "camera_job_template": "FlakeFinder Quantitative Camera",
+      "camera_resources": {
+        "ff_exposure_ms": 266.6015625,
+        "ff_white_balance": "0.25007564,1,2.61244442"
+      },
+      "objective_position": 2,
+      "illumination_percent": 93.44422700587084
+    }
+  },
+  "normalization": "Raw linear RGB; same robust fitted quadratic substrate as saved analysis; no display gamma.",
+  "components": [
+    {
+      "name": "bright_bulk_reference",
+      "role": "positive",
+      "mean": [
+        -0.781526505947113,
+        -0.6196567416191101,
+        -0.8006350994110107
+      ],
+      "covariance": [
+        [
+          0.00038551686532989186,
+          0.0003714544087524363,
+          -8.204139759682895e-05
+        ],
+        [
+          0.0003714544087524363,
+          0.0014075404078925141,
+          -0.0007356857751269554
+        ],
+        [
+          -8.204139759682895e-05,
+          -0.0007356857751269554,
+          0.01284373489854234
+        ]
+      ],
+      "sample_pixels": 23298,
+      "fit_pixels": 22133
+    },
+    {
+      "name": "cyan_P1",
+      "role": "positive",
+      "mean": [
+        0.32317298650741577,
+        -0.6160956025123596,
+        -0.36839160323143005
+      ],
+      "covariance": [
+        [
+          0.009346812062706027,
+          0.0011302262119698976,
+          0.0024903698327373345
+        ],
+        [
+          0.0011302262119698976,
+          0.001304542172543463,
+          0.0009207715868181634
+        ],
+        [
+          0.0024903698327373345,
+          0.0009207715868181634,
+          0.002226770708818778
+        ]
+      ],
+      "sample_pixels": 450,
+      "fit_pixels": 427
+    },
+    {
+      "name": "cyan_P2",
+      "role": "positive",
+      "mean": [
+        -0.07908038049936295,
+        -0.6132006645202637,
+        -0.545188307762146
+      ],
+      "covariance": [
+        [
+          0.022042188727348106,
+          3.5741917885875924e-05,
+          0.0078121668111821255
+        ],
+        [
+          3.5741917885875924e-05,
+          2.5756826759064325e-05,
+          1.8375247497618147e-05
+        ],
+        [
+          0.0078121668111821255,
+          1.8375247497618147e-05,
+          0.005174307330921265
+        ]
+      ],
+      "sample_pixels": 730,
+      "fit_pixels": 693
+    },
+    {
+      "name": "dust_haze_1",
+      "role": "negative",
+      "mean": [
+        0.06821469057302204,
+        0.03057521221188739,
+        0.057545094264620046
+      ],
+      "covariance": [
+        [
+          0.004389099300251709,
+          0.0013621234221075668,
+          0.002072469561482868
+        ],
+        [
+          0.0013621234221075668,
+          0.0011397036421594454,
+          0.001368652219689274
+        ],
+        [
+          0.0020724695614828684,
+          0.001368652219689274,
+          0.0023898388166159012
+        ]
+      ],
+      "sample_pixels": 18629
+    },
+    {
+      "name": "dust_haze_2",
+      "role": "negative",
+      "mean": [
+        0.336501063755783,
+        0.23998129442451863,
+        0.2740005044399071
+      ],
+      "covariance": [
+        [
+          0.02461412510250255,
+          0.015164963071115823,
+          0.011418863898956638
+        ],
+        [
+          0.015164963071115823,
+          0.036050225637614494,
+          0.024474020234045348
+        ],
+        [
+          0.011418863898956638,
+          0.024474020234045348,
+          0.02707608280894844
+        ]
+      ],
+      "sample_pixels": 18629
+    },
+    {
+      "name": "dust_haze_3",
+      "role": "negative",
+      "mean": [
+        0.6039435365830496,
+        0.6910394612444233,
+        0.6057971894739136
+      ],
+      "covariance": [
+        [
+          0.014908719485868359,
+          0.010672869831315164,
+          0.011446964766536453
+        ],
+        [
+          0.010672869831315164,
+          0.01366343996279169,
+          0.011392764448311315
+        ],
+        [
+          0.011446964766536453,
+          0.011392764448311315,
+          0.012857803585465255
+        ]
+      ],
+      "sample_pixels": 18629
+    },
+    {
+      "name": "substrate",
+      "role": "background",
+      "mean": [
+        0.00911917444318533,
+        3.755110446945764e-05,
+        -0.0007830890826880932
+      ],
+      "covariance": [
+        [
+          0.0005995420560727687,
+          1.89320956255746e-05,
+          5.593167827377976e-05
+        ],
+        [
+          1.89320956255746e-05,
+          0.00025595515185326465,
+          0.00012110685101843147
+        ],
+        [
+          5.593167827377976e-05,
+          0.00012110685101843147,
+          0.00039251969309049095
+        ]
+      ],
+      "sample_pixels": 12839,
+      "fit_pixels": 12197
+    }
+  ],
+  "references": [
+    {
+      "id": "f-039275ce78b9b4",
+      "tile_key": "R2C1/tile_000000",
+      "branch": "bright_bulk_reference",
+      "role": "positive",
+      "source_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\chip-batch-01\\R2C1\\tiles\\tile_000000.tiff",
+      "source_sha256": "08c706deae0b8144b9184bb09026317d578234e367e1544fb89f0b65d23b7928",
+      "interior_sample_pixels": 3059,
+      "interior_median_rgb": [
+        -0.7516759037971497,
+        -0.6362383365631104,
+        -0.748632550239563
+      ],
+      "interior_covariance": [
+        [
+          1.0262424378981391e-05,
+          1.906677936859633e-06,
+          3.718445117642255e-05
+        ],
+        [
+          1.906677936859633e-06,
+          5.8330473176286885e-06,
+          -5.258351614196673e-05
+        ],
+        [
+          3.718445117642255e-05,
+          -5.258351614196673e-05,
+          0.0092201932252395
+        ]
+      ],
+      "annulus_median_rgb": [
+        0.0038864349480718374,
+        -0.005212434567511082,
+        -0.008378420025110245
+      ],
+      "qualification": "User-selected optical bulk population",
+      "mask_source_analysis": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\chip-batch-01\\R2C1\\analysis-bulk-reference",
+      "instance_label": 21,
+      "mask_file": "R2C1__tile_000000.instances.png",
+      "mask_sha256": "db60e0f811fe909fc6f4815d453026aa41bd6871115d52d207226affebc861d6"
+    },
+    {
+      "id": "f-8475b5c5df0792",
+      "tile_key": "R2C1/tile_000016",
+      "branch": "bright_bulk_reference",
+      "role": "positive",
+      "source_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\chip-batch-01\\R2C1\\tiles\\tile_000016.tiff",
+      "source_sha256": "e975ec84cffdabb6fcc28c10267c0acdaf896580908e05047131464330239429",
+      "interior_sample_pixels": 5840,
+      "interior_median_rgb": [
+        -0.7827441096305847,
+        -0.6901278495788574,
+        -0.809523344039917
+      ],
+      "interior_covariance": [
+        [
+          4.980328035551447e-06,
+          2.8042896150782016e-06,
+          1.9818461070995983e-06
+        ],
+        [
+          2.8042896150782016e-06,
+          1.2128894040138567e-05,
+          -8.350906486365992e-05
+        ],
+        [
+          1.9818461070995983e-06,
+          -8.350906486365992e-05,
+          0.009122479356255738
+        ]
+      ],
+      "annulus_median_rgb": [
+        0.0051627447828650475,
+        -0.01280208956450224,
+        -0.016521446406841278
+      ],
+      "qualification": "User-selected optical bulk population",
+      "mask_source_analysis": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\chip-batch-01\\R2C1\\analysis-bulk-reference",
+      "instance_label": 30,
+      "mask_file": "R2C1__tile_000016.instances.png",
+      "mask_sha256": "26a74118089ba3c73fd4d4ad9c8defc4ddb32ae5fec8f422dced9d09106262e8"
+    },
+    {
+      "id": "f-75d359c1b23c62",
+      "tile_key": "R2C1/tile_000019",
+      "branch": "bright_bulk_reference",
+      "role": "positive",
+      "source_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\chip-batch-01\\R2C1\\tiles\\tile_000019.tiff",
+      "source_sha256": "902a510ee0250e6822161dc26fe03df3d65e82d32eddfad06d37b0ed99906109",
+      "interior_sample_pixels": 3120,
+      "interior_median_rgb": [
+        -0.7693549990653992,
+        -0.5992392301559448,
+        -0.9820541143417358
+      ],
+      "interior_covariance": [
+        [
+          1.4546697007856401e-05,
+          5.110804752770817e-06,
+          6.017759311339622e-05
+        ],
+        [
+          5.110804752770817e-06,
+          5.017937606310076e-06,
+          2.2835116582825883e-05
+        ],
+        [
+          6.017759311339622e-05,
+          2.2835116582825883e-05,
+          0.010084301591116117
+        ]
+      ],
+      "annulus_median_rgb": [
+        -0.004661772400140762,
+        -0.002109149005264044,
+        -0.007293412461876869
+      ],
+      "qualification": "User-selected optical bulk population",
+      "mask_source_analysis": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\chip-batch-01\\R2C1\\analysis-bulk-reference",
+      "instance_label": 32,
+      "mask_file": "R2C1__tile_000019.instances.png",
+      "mask_sha256": "1dcbe7c7b872c2f107ba4b7580320917e0f9e852eb4dcb0fe6a29d2574cd2cc9"
+    },
+    {
+      "id": "f-be1bcc45bf4862",
+      "tile_key": "R2C1/tile_000019",
+      "branch": "bright_bulk_reference",
+      "role": "positive",
+      "source_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\chip-batch-01\\R2C1\\tiles\\tile_000019.tiff",
+      "source_sha256": "902a510ee0250e6822161dc26fe03df3d65e82d32eddfad06d37b0ed99906109",
+      "interior_sample_pixels": 6255,
+      "interior_median_rgb": [
+        -0.785958468914032,
+        -0.6188901662826538,
+        -0.7703628540039062
+      ],
+      "interior_covariance": [
+        [
+          1.960903227593219e-05,
+          3.234943874527967e-06,
+          8.364709594051021e-05
+        ],
+        [
+          3.234943874527967e-06,
+          5.133787242106995e-06,
+          -2.055964679057082e-05
+        ],
+        [
+          8.364709594051021e-05,
+          -2.055964679057082e-05,
+          0.013936770836157854
+        ]
+      ],
+      "annulus_median_rgb": [
+        0.024910178035497665,
+        -0.0013227281160652637,
+        0.007534039206802845
+      ],
+      "qualification": "User-selected optical bulk population",
+      "mask_source_analysis": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\chip-batch-01\\R2C1\\analysis-bulk-reference",
+      "instance_label": 12,
+      "mask_file": "R2C1__tile_000019.instances.png",
+      "mask_sha256": "1dcbe7c7b872c2f107ba4b7580320917e0f9e852eb4dcb0fe6a29d2574cd2cc9"
+    },
+    {
+      "id": "f-4862d7ed5ff738",
+      "tile_key": "R2C1/tile_000003",
+      "branch": "bright_bulk_reference",
+      "role": "positive",
+      "source_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\chip-batch-01\\R2C1\\tiles\\tile_000003.tiff",
+      "source_sha256": "b10263d5a51d5b20e8d186d80e4129cf13274c9a1c416ebb878bd22bc375a007",
+      "interior_sample_pixels": 5024,
+      "interior_median_rgb": [
+        -0.7366872429847717,
+        -0.5927735567092896,
+        -0.7833070755004883
+      ],
+      "interior_covariance": [
+        [
+          1.1734639604362086e-06,
+          2.0292607516169846e-07,
+          1.0102792542582153e-05
+        ],
+        [
+          2.0292607516169846e-07,
+          5.580449235154334e-07,
+          -7.854216746122906e-06
+        ],
+        [
+          1.0102792542582153e-05,
+          -7.854216746122906e-06,
+          0.0066673634210176365
+        ]
+      ],
+      "annulus_median_rgb": [
+        0.01815253496170044,
+        -0.010368880815804005,
+        -0.02039661444723606
+      ],
+      "qualification": "User-selected optical bulk population",
+      "mask_source_analysis": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\chip-batch-01\\R2C1\\analysis-bulk-reference",
+      "instance_label": 4,
+      "mask_file": "R2C1__tile_000003.instances.png",
+      "mask_sha256": "4cb7b22dbbfa8dc60b8d3084be0f6f18c9858279edbd9929955126aabed239cf"
+    },
+    {
+      "id": "P1",
+      "tile_key": "R2C1/tile_000000",
+      "branch": "cyan_P1",
+      "role": "positive",
+      "source_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\chip-batch-01\\R2C1\\tiles\\tile_000000.tiff",
+      "source_sha256": "08c706deae0b8144b9184bb09026317d578234e367e1544fb89f0b65d23b7928",
+      "interior_sample_pixels": 450,
+      "interior_median_rgb": [
+        0.3316066265106201,
+        -0.6160134077072144,
+        -0.3649349808692932
+      ],
+      "interior_covariance": [
+        [
+          0.010222679328509916,
+          0.0036985472597420494,
+          0.003561644151725099
+        ],
+        [
+          0.0036985472597420494,
+          0.006937445839238668,
+          0.003426771361057717
+        ],
+        [
+          0.003561644151725099,
+          0.003426771361057717,
+          0.0032955127149304837
+        ]
+      ],
+      "annulus_median_rgb": [
+        0.013982738368213177,
+        -0.0005467270384542644,
+        -0.005427315831184387
+      ],
+      "qualification": "Independent morphology-selected platelet; material/layer unconfirmed",
+      "polygon_px": [
+        [
+          1374,
+          1798
+        ],
+        [
+          1384,
+          1790
+        ],
+        [
+          1390,
+          1797
+        ],
+        [
+          1393,
+          1805
+        ],
+        [
+          1392,
+          1817
+        ],
+        [
+          1389,
+          1826
+        ],
+        [
+          1387,
+          1832
+        ],
+        [
+          1374,
+          1834
+        ],
+        [
+          1374,
+          1829
+        ],
+        [
+          1378,
+          1826
+        ],
+        [
+          1374,
+          1825
+        ]
+      ]
+    },
+    {
+      "id": "P2",
+      "tile_key": "R2C1/tile_000000",
+      "branch": "cyan_P2",
+      "role": "positive",
+      "source_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\chip-batch-01\\R2C1\\tiles\\tile_000000.tiff",
+      "source_sha256": "08c706deae0b8144b9184bb09026317d578234e367e1544fb89f0b65d23b7928",
+      "interior_sample_pixels": 730,
+      "interior_median_rgb": [
+        -0.06863810867071152,
+        -0.6131718158721924,
+        -0.5411809682846069
+      ],
+      "interior_covariance": [
+        [
+          0.027256425464086836,
+          0.002242225865659343,
+          0.010850637260573748
+        ],
+        [
+          0.002242225865659343,
+          0.0012287584537297232,
+          0.0014764716968942988
+        ],
+        [
+          0.010850637260573748,
+          0.0014764716968942988,
+          0.007132567616349803
+        ]
+      ],
+      "annulus_median_rgb": [
+        0.0009804100263863802,
+        -0.004437436815351248,
+        -0.02369578741490841
+      ],
+      "qualification": "Independent morphology-selected platelet; material/layer unconfirmed",
+      "polygon_px": [
+        [
+          687,
+          1064
+        ],
+        [
+          692,
+          1066
+        ],
+        [
+          697,
+          1087
+        ],
+        [
+          700,
+          1130
+        ],
+        [
+          697,
+          1133
+        ],
+        [
+          676,
+          1100
+        ],
+        [
+          674,
+          1085
+        ]
+      ]
+    },
+    {
+      "id": "f-00294d4ef77cf1",
+      "tile_key": "R2C1/tile_000005",
+      "branch": "reviewed_dust_haze",
+      "role": "negative",
+      "source_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\chip-batch-01\\R2C1\\tiles\\tile_000005.tiff",
+      "source_sha256": "ca2e2c42629a3ad1fca1ba2e384cbc5dcc29d864357f2052e6718b34d7c7b091",
+      "interior_sample_pixels": 14181,
+      "interior_median_rgb": [
+        0.21153412759304047,
+        0.0828474760055542,
+        0.13430339097976685
+      ],
+      "interior_covariance": [
+        [
+          0.038176188208918965,
+          0.041197553976247955,
+          0.033315592664436816
+        ],
+        [
+          0.041197553976247955,
+          0.06366507109358731,
+          0.048152620516197085
+        ],
+        [
+          0.033315592664436816,
+          0.048152620516197085,
+          0.04083657513100203
+        ]
+      ],
+      "annulus_median_rgb": [
+        0.02634318917989731,
+        0.011319799348711967,
+        0.023844629526138306
+      ],
+      "qualification": "Reviewed false thin proposal containing dust/haze; constituents not individually labeled",
+      "mask_source_analysis": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\chip-batch-01\\R2C1\\analysis-component-repair",
+      "instance_label": 175,
+      "mask_file": "R2C1__tile_000005.instances.png",
+      "mask_sha256": "8b9b82130f18766f2eb54798c7bceef6ddf83f02576937fb0994f5ce19130a9d"
+    },
+    {
+      "id": "f-54179251249ed9",
+      "tile_key": "R2C1/tile_000010",
+      "branch": "reviewed_dust_haze",
+      "role": "negative",
+      "source_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\chip-batch-01\\R2C1\\tiles\\tile_000010.tiff",
+      "source_sha256": "f6e5297dc96d6091acb557a4bcd69a91aba28d8f2a85d8a52e60c2d895ba3d0b",
+      "interior_sample_pixels": 5120,
+      "interior_median_rgb": [
+        0.3927348256111145,
+        0.30812522768974304,
+        0.3542789816856384
+      ],
+      "interior_covariance": [
+        [
+          0.047097088894987295,
+          0.05271422089449534,
+          0.04157370757394657
+        ],
+        [
+          0.05271422089449534,
+          0.07846330366230767,
+          0.057241266503091984
+        ],
+        [
+          0.04157370757394657,
+          0.057241266503091984,
+          0.04738372894449473
+        ]
+      ],
+      "annulus_median_rgb": [
+        0.03271927312016487,
+        0.01271554920822382,
+        0.024411609396338463
+      ],
+      "qualification": "Reviewed false thin proposal containing dust/haze; constituents not individually labeled",
+      "mask_source_analysis": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\chip-batch-01\\R2C1\\analysis-component-repair",
+      "instance_label": 25,
+      "mask_file": "R2C1__tile_000010.instances.png",
+      "mask_sha256": "75f30e1c200bf00a89e6e8d9422cd1c670715943fa1ef066635b256f1ea674db"
+    },
+    {
+      "id": "f-e8244fcd73d146",
+      "tile_key": "R2C1/tile_000009",
+      "branch": "reviewed_dust_haze",
+      "role": "negative",
+      "source_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\chip-batch-01\\R2C1\\tiles\\tile_000009.tiff",
+      "source_sha256": "a1d606d97873fbf1a0eb7beafdf2b9088bddc732242dba39d5e38f58e6a011d4",
+      "interior_sample_pixels": 9450,
+      "interior_median_rgb": [
+        0.10929031670093536,
+        0.05139923095703125,
+        0.08400404453277588
+      ],
+      "interior_covariance": [
+        [
+          0.05637760105915672,
+          0.05137433924306883,
+          0.043617919845306045
+        ],
+        [
+          0.05137433924306883,
+          0.06483320474271456,
+          0.05345088226759583
+        ],
+        [
+          0.043617919845306045,
+          0.05345088226759583,
+          0.04937962013441776
+        ]
+      ],
+      "annulus_median_rgb": [
+        0.004415479488670826,
+        0.0041482048109173775,
+        0.006960766855627298
+      ],
+      "qualification": "Reviewed false thin proposal containing dust/haze; constituents not individually labeled",
+      "mask_source_analysis": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\chip-batch-01\\R2C1\\analysis-component-repair",
+      "instance_label": 5,
+      "mask_file": "R2C1__tile_000009.instances.png",
+      "mask_sha256": "d32cfe89edf05977e2cd16fa40d287722bf418e309066a0a692e9d7dcecf5166"
+    },
+    {
+      "id": "f-caa9c3c8650d56",
+      "tile_key": "R2C1/tile_000003",
+      "branch": "reviewed_dust_haze",
+      "role": "negative",
+      "source_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\chip-batch-01\\R2C1\\tiles\\tile_000003.tiff",
+      "source_sha256": "b10263d5a51d5b20e8d186d80e4129cf13274c9a1c416ebb878bd22bc375a007",
+      "interior_sample_pixels": 36513,
+      "interior_median_rgb": [
+        0.05727323517203331,
+        0.029461966827511787,
+        0.04500708356499672
+      ],
+      "interior_covariance": [
+        [
+          0.048252695613787054,
+          0.04961905651081058,
+          0.04435141393893845
+        ],
+        [
+          0.04961905651081058,
+          0.05665693805865454,
+          0.04968625502899159
+        ],
+        [
+          0.04435141393893845,
+          0.04968625502899159,
+          0.04561513435540968
+        ]
+      ],
+      "annulus_median_rgb": [
+        0.012964356690645218,
+        0.0012524289777502418,
+        0.0033286933321505785
+      ],
+      "qualification": "Reviewed false thin proposal containing dust/haze; constituents not individually labeled",
+      "mask_source_analysis": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\chip-batch-01\\R2C1\\analysis-component-repair",
+      "instance_label": 30,
+      "mask_file": "R2C1__tile_000003.instances.png",
+      "mask_sha256": "3098fd526ffbbab14e28bb632e7d9f22ec160134c6a618402c645032918e6427"
+    }
+  ],
+  "parameters": {
+    "interior_erosion_um": 0.5,
+    "max_mahalanobis_squared": 11.345,
+    "likelihood_ratio": 3.0,
+    "minimum_interior_occupancy": 0.6,
+    "maximum_positive_occupancy_for_exclusion": 0.1,
+    "minimum_debris_occupancy_for_exclusion": 0.6,
+    "catalog_supported_area_um2": 100.0,
+    "source_min_area_um2": 0.25
+  },
+  "parameter_interpretation": "99% Gaussian reference ellipsoid in 3D; 3:1 likelihood ratio and occupancy thresholds are explicit engineering selection settings, not calibrated probabilities.",
+  "qualification": "Optical reference resemblance, not chemical identity or layer calibration. Positive references are bulk/cyan branches; unmatched faint colors remain unknown. Debris colors may overlap unknown thin material.",
+  "training_notes": "Compact reviewed local examples only. Reference covariance is descriptive; source pixels are spatially correlated.",
+  "model_id": "rgb-80a60e8f785a1439"
+}

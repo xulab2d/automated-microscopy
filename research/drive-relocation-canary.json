@@ -1,0 +1,9 @@
+{
+  "source": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000015.tiff",
+  "destination": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\transfer-verification\\chip001-tile_000015.tiff",
+  "bytes": 22227066,
+  "sha256": "E59E412C6634DE26C879692018CA48211D7C0A6251BB1DA07428D98DBCF6A0AA",
+  "copy_and_verify_seconds": 1.6016208,
+  "verification": "Mounted destination readback matches; cloud upload pending separate confirmation",
+  "original_retained": true
+}

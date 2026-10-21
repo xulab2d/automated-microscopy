@@ -1,0 +1,217 @@
+SEGMENTATION V3 — OFFLINE AUDIT AND IMPLEMENTATION HOOKS
+9 October 2026. Audit only: no production, analysis, acquisition or UI edits.
+
+The current staged pipeline preserves source objects but is not a precision
+flake classifier. It does not execute most of the older geometric-quality or
+terrace code. Lowering the catalog size alone will expose more objects without
+solving mixed-thickness regions, tape, dust, or bad substrate support.
+
+CURRENT SAVED EVIDENCE
+
+The portable snapshot contains 1,386 raster fields: 1,235 primary successes,
+31 isolated recoveries, 13 explicit exclusions, five unresolved recoveries and
+102 other recorded analysis failures. These are analysis statuses, not physical
+absence/presence labels. There are 112,325 source objects, 14,334 measured objects,
+4,301 selected observations and 4,296 measured useful-review observations.
+
+Saved object areas (without rerunning segmentation):
+  below20 um2:   95,515 objects, zero measured
+  20–25 um2:      2,466 objects, zero measured; seven pass old width>=5 um
+  25–50 um2:      6,085 objects, 6,081 measured; 1,978 pass old width>=5 um
+  50–100 um2:     3,941 objects, 3,940 measured; 3,445 pass old width>=5 um
+  >=100 um2:      4,318 objects, 4,313 measured; 4,301 selected
+Thus the user's 20–25 um2 ranking floor requires harmonizing the measurement
+floor (currently25), catalog area (currently100), and width criterion. Silently
+keeping the old5 um width gate would exclude most small objects. A device-usable
+interior rectangle should be measured and exposed, not substituted by a parent
+bounding box or an unexplained size veto.
+
+Existing compact visual controls, inspected in saved contact sheets:
+- chip001/tile199: label1 / f-4cfca13e01ea8f is the obvious large dark aggregate,
+  bbox[114,0,2313,993], area47,802.70 um2, solidity0.9595. It is selected by the
+  current broad review sieve. Its local RGB is[.8602,.8732,.9046]. High solidity
+  alone cannot distinguish this dust/aggregate morphology from a platelet.
+- chip001/tile239: label141 / f-1bdd1476734f29, bbox[0,1621,363,435], area2901.56,
+  selected, lies in the streak/tape control. Label83 / f-ce3873df4551a2,
+  bbox[528,1104,176,239], area427.33, is also selected. A single mean and area
+  cannot represent this field's elongated heterogeneous contamination.
+- chip001/tile141: label32 / f-8df76b1f0e96d5, bbox[1093,742,154,140], area383.32,
+  selected, has patch RGB spread[.2588,.2066,.1906]. This is a useful mixed-color
+  parent for checking subdivision, not a known thin-flake positive.
+- chip001/tile369: mostly bare substrate; seven saved objects, zero selected.
+  Keep it as a current-profile negative/control field when lowering area gates.
+- Earlier R2C1 P2/P3 manual controls are distinct cyan/bright faceted regions
+  merged into the SAME168.21 um2 component(label108). P2 manual raster area32.61,
+  dominant IoU0.1658; P3 visual polygon area56.28. Whole-object mean-color
+  classification loses the internal interface. P1, a standalone cyan platelet,
+  is already recovered by component repair with IoU0.8917 and area19.64 um2.
+  These are morphology controls, not material/thickness labels; edge uncertainty
+  is three pixels. Do not advertise exhaustive recall from these examples.
+- The 12 human-confirmed bare-substrate regions in thin-shortlist-feedback.json
+  are true negative labels. The other14 similar sensor-position examples were
+  NOT manually confirmed. Keep those categories distinct.
+- Existing raw-local diagnostic of chip001 tiles69/70/107/111 shows large pixel
+  spread despite apparently thin-compatible regional means. Tile69 patch spread
+  [.2426,.1676,.1564], only25.3% of patches in the directional cone; tile70 only
+  17.7%. Tiles69/70 overlap the same physical feature. These illustrate why
+  region mean uncertainty must not replace actual plateau uniformity.
+
+Exact source metadata and compact examples are in saved-data-audit.json; the
+script verifies the immutable portable shard hashes before reading them.
+
+EXACT CURRENT CODE HOOKS
+
+1. analysis.py:tile_region (line27) projects plan.polygon_um into each raw field.
+   It uses the planned polygon, not the acquired raster's observed enclosure.
+   colors.py:prepare_contrast(line89) erodes that domain by edge_margin_um12 and
+   calls imaging.py:background_surface(line43) on all valid pixels. Large
+   contamination or mislocated edge/holder support can dominate that fit.
+   background_surface checks positivity over the whole field; old failure logs
+   show a positive fit on support but negative extrapolation outside it.
+
+2. analysis.py:_refine_objects(line158) constructs binary foreground envelopes,
+   picks a strongest seed and GrabCuts each. The repaired implementation retains
+   all supported disconnected pieces, which fixed earlier disappearing objects.
+   It does not separate connected different-color terraces inside one parent.
+   Its foreground is made from median3 + Gaussian0.6 um smoothing, Mahalanobis
+   substrate_sigma5 and contrast norm>.015. Source floor is.25 um2, so expensive
+   graph cuts and bookkeeping also cover tens of thousands of sub20 um2 objects.
+
+3. staged_features.py:analyze_feature_frame(line141) calls prepare_contrast,
+   _refine_objects, measure_existing_regions, _geometry and apply_sieves.
+   It does NOT call analysis.py:extract_regions, _boundary_evidence,
+   _facet_fraction, published_shape_score or ColorGroups/coherent_region_labels.
+   Consequently options such as max_uniformity/min_boundary_support do not
+   govern current staged selection. They are present in config but inactive in
+   this path. Do not pretend changing those numbers repairs the staged pipeline.
+
+4. staged_features.py:_geometry(line65) preserves exact instance area, holes,
+   polygon and stage projection. usable_width is twice the largest distance-
+   transform radius. It is not a largest clean rectangular device region.
+   apply_sieves(line96) selects area>=100, width>=5 and non-rejected mean local
+   signal. Five useful objects with unavailable measurements still remain
+   selected for broad review, with explicit warnings. quality_score is the
+   Mahalanobis signal capped at50, not flatness, cleanliness, or crystalline
+   morphology. Thin prior compatibility uses regional mean/covariance only.
+
+5. measure_existing_regions.py:_measure_one(line52) already erodes interiors
+   by0.5 um and excludes every other foreground object plus1 um clearance from
+   local substrate annuli(7 um). It measures spatial1 um patches, records
+   interior covariance and background sector-systematic covariance separately.
+   Preserve this measured uncertainty work. However, it falls back to the FULL
+   mask if too little eroded interior remains. That fallback must not silently
+   qualify an edge-dominated small terrace as a clean usable region. There is no
+   connected uniform-region choice and no inscribed rectangle measurement.
+
+6. thin_contrast.py:thin_contrast_evidence(line21) implements a descriptive
+   +R,+G-R directional search prior and broad G interval. It does not establish
+   MoTe2 chemistry or layer count. Use pixel/plateau populations for ranking;
+   report approximate optical thickness groups, never calibrated layer labels.
+
+7. Useful reusable experiments, with limitations:
+   - research/staged-analysis-audit/observed_normalization_v2.py:
+     normalize_observed(line22) separates geometry-valid domain from recorded
+     SUBSTRATE-only background support, verifies raw/context/labels, selects
+     constant/affine/quadratic by spatial held-out error, and leaves off-domain
+     values invalid. This recovered31 fields while preserving source geometry.
+     It is research-local with chip001 assumptions; refactor the actual helper
+     interface rather than importing its script/star-import side effects.
+   - coherent_regions.py:coherent_region_labels(line13) already demonstrates
+     local RGB GMM + spatial connected components with substrate anchors. Its
+     prior full-field output fragmented real features and generated many small
+     regions. Reuse connectivity/background concepts, not its output as truth.
+   - thin_regions.py proposes block-based plateaus independently of parents;
+     its earlier real-data shortlist partitioned bare substrate. Do not restore
+     that backend as the detector, even though idealized synthetic tests pass.
+
+PROPOSED COHERENT IMPLEMENTATION BOUNDARY (AWAITING PARENT GO)
+
+A. Build one versioned chip support atlas from raw registered acquisition
+   evidence, recorded boundary labels and measured enclosure. Keep separate
+   masks for on-chip domain, observed bare-substrate fit support, off-chip,
+   edge margin, unknown and contamination evidence. Color-selected substrate
+   support must NEVER be the allowed flake domain: it would delete differently
+   colored flakes. A preview mosaic can display these masks, but radiometric
+   estimates must come from raw linear RGB, not gamma/JPEG/blended preview.
+   Preserve source-to-stage transforms and overlap confidence; present residual
+   registration uncertainty rather than claiming pixel-perfect stitching.
+
+B. Normalize against that substrate support, with validated fit and explicit
+   insufficient-support states. Hard-veto confirmed off-chip/margin, keep unknown
+   separate. Reuse the successful observed-normalization invariants. Do not
+   clamp negative fitted values or infer substrate through unsampled holes.
+
+C. Retain broad connected physical parents, then subdivide their pixels into
+   connected locally consistent contrast plateaus using RGB covariance and
+   image edges. Preserve weak, thin-looking plateaus attached to a thick parent
+   even when the parent's global average is bulk-like. Represent parent-child
+   ownership explicitly. A plateau must stay connected; do not pool disjoint
+   same-color patches or fill substrate gaps. Save parent labels and child
+   labels separately with stable versioned IDs and exact pixel masks/holes.
+
+D. Compute independent region evidence: supported boundary fraction/localized
+   step, straight-edge/facet evidence, low-frequency slope versus flat plateau,
+   spatial texture, saturation, heterogeneous patch spread, debris/halo context,
+   clipping/focus evidence, and eroded usable area. Shape and texture should
+   improve a transparent ranking with explicit reasons; no single solidity or
+   mean-color threshold is a material classifier. Neighboring thin terraces
+   must not inherit rejection solely from a dirty/heterogeneous bulk parent.
+
+E. For each connected uniform plateau, measure the eroded interior and its
+   largest INSCRIBED all-valid uniform rectangle. The ordinary axis-aligned
+   histogram/stack algorithm is O(pixels) and exact for its orientation; if
+   optional rotation is used, state sampled orientations/approximation. Save
+   rectangle pixel vertices, physical dimensions, area, erosion and uniformity
+   criteria. Never use a minimum-area bounding rectangle that includes outside
+   pixels, holes or a dirt island. Report no usable rectangle when erosion or
+   contamination removes it; do not silently revert to the whole outline.
+
+F. Rank from20–25 um2 upward with a distinct small-region tier(<50 um2), requiring
+   stronger local boundary/clean-interior/coherence evidence for that tier.
+   Keep broad parent, rejected child and below-priority observations reviewable.
+   Keep magnitude/size/quality evidence separate from descriptive material or
+   thickness compatibility. Show parent area, plateau area and clean rectangle
+   area separately. Avoid claiming probability without real calibration.
+
+MINIMAL INFORMATIVE CHECKS, NOT AN EXHAUSTIVE RETEST
+
+- Observed chip domain: off-chip tile0/7 excluded; recovered strip tile1/32
+  retained; every object pixel lies inside permitted domain; every background
+  sample lies inside independent substrate support; unresolved support stays
+  unresolved. Existing v2 fixed a real fold-assignment orientation bug: old
+  (ix+2*iy)%4 offered only two folds on vertical strips; current(ix+iy)%4 does not.
+- Touching unlike plateaus: preserve P2 versus P3 and a synthetic thin region
+  attached to bulk; cannot use bulk parent mean or solidity to reject the child.
+- Holes and touching debris: disconnected components remain distinct; a hole
+  inside a rectangle breaks eligibility. Test a notch/rotated synthetic shape,
+  anisotropic pixel scale and erosion when computing physical usable area.
+- Bare-substrate control: reuse ONLY12 human-confirmed older negatives plus
+  current tile369. Fixed sensor-position artifacts must not become populations
+  of real flakes. Keep optical profile distinctions for older controls.
+- Contamination: current tile199 aggregate, tile239 streaks and heterogeneous
+  tile69/70/107/111 must not become thin successes by their regional mean. They
+  can remain broad physical-feature observations.
+- Small tier: synthetic20/25/50 um2 connected plateaus versus textured dust at
+  comparable area; test area/width/measurement gates are explicit and consistent.
+
+Existing tests preserve important invariants but are not precision validation:
+  tests/test_supported_components.py: all supported disconnected pieces retained
+  tests/test_staged_features.py: masks unchanged by sieves, holes, overlap dedup
+  tests/test_measure_existing_regions.py: foreground exclusion, local ratio,
+      unmeasurable record preservation
+  tests/test_coherent_regions.py and test_thin_regions.py: idealized plateau
+      separation and no area pooling; those passing did not prevent real-data
+      substrate/debris failures.
+Do not erase old test expectations for the v1 dataset; add explicit v3 options/
+module identities. Archive outputs and raw source hashes before comparisons.
+
+PORTABLE HANDOFF COMPLETED
+
+Laptop Review.zip:1,071,927,557 bytes,4,050 entries, all CRCs checked.
+SHA256:906f58f1a180a8df4e2977a11dc973495e14a1704051fee82882da7c095c1ae5
+Adjacent manifest has every input path/size/hash. There are no TIFF/CZI copies.
+Launcher and export run with Python -S/stdlib only. Two focused relocation,
+read-only-route, path-escape, checksum and preserved-contrast-tail tests passed;
+both copied browser scripts pass node syntax checking. Parent owns browser QA
+and priority Drive transfer. No portable or production files were changed after
+the archive was declared finalized.

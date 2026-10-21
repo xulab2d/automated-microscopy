@@ -1,0 +1,232 @@
+MoTe2 optical model / terrace-classification research, 2026-10-09
+Scope: offline only. No microscope connection, acquisition, or motion.
+
+DELIVERED
+flakefinder/mote2_optics.py
+configs/materials/mote2-optics-285nm.json
+configs/materials/data/MoTe2_Munkhbat_tensor_nm.txt
+configs/materials/data/Si_Aspnes_nm_n_k.txt
+configs/materials/data/Axiocam305_vendor_response.json
+tests/test_mote2_optics.py
+
+Seven focused tests passed in 0.66s. They test Fresnel limits, angular averaging,
+anisotropy, zero-thickness identity, dark-positive contrast, scalar gain
+cancellation, rejected extrapolation, covariance intervals, ambiguous branches,
+response fitting with held-out spectra, and ensemble/KD-tree agreement with
+brute-force distance. This is numerical validation, not flake-detection validation.
+
+QUICK USE
+from flakefinder.mote2_optics import load_optical_model, conditional_ensemble, make_optical_provider
+model = load_optical_model('configs/materials/mote2-optics-285nm.json')
+grid = np.r_[np.arange(0, 5, .1), np.arange(5, 81, 1)]
+curve = conditional_ensemble(model, grid, 'configs/materials/data/Axiocam305_vendor_response.json')
+provider = make_optical_provider(curve)
+result = provider(terrace_contrast_rgb, terrace_covariance_rgb)
+pixel_labels = provider.classify_pixels(contrast_map, shared_noise_covariance,
+                                        max_mahalanobis=explicit_match_limit)
+
+The pixel method is the intended optical-first path BEFORE spatial connected
+terrace grouping: cached whitenedKDTree nearest matching in65536pixel chunks,
+no per-pixel intervals. It returns conditional_thickness_index into the supplied
+physical-nm grid, best conditional nm, nuisance index, distance, out_of_model,
+substrate distance and likelihood improvement over substrate. Pixels outside
+the caller's explicit distance limit get index=-1 and must remain available as
+unclassified source geometry. Pixel ambiguity is explicitly unassessed; compute
+branch-aware intervals on the resulting terrace summaries. These simulation
+grid bins are not validated atomic-layer classes. With33984modelpoints,262144
+synthetic test pixels took0.22s (cached0.21s),1CPUthread. See pixel-timing.json.
+
+provider.provenance is JSON-serializable and includes model/config/table/code
+hashes, responsehash, full curvehash, nuisance scenarios, thicknessgrid and
+optional model covariance. Use it to invalidate analysis checkpoints properly.
+
+Scores are descriptive conditional compatibility, not material probabilities.
+There is no monolayer assignment. Keep geometric masks and all useful plateaus
+independent of model acceptance. Return the scores to the UI for ranking and
+comparisons, with model/uncertainty status visible. Use terrace means first;
+pixel terraces can first receive conditional model-bin labels, then spatial
+grouping; the observed color distribution provides the independent unmatched
+branch and the evidence for boundaries. The model must not erase off-model
+features or manufacture calibrated layer identities.
+
+MODEL EQUATIONS AND UNITS
+Stack: air / MoTe2 / SiO2 / semi-infinite Si. Wavelengths and thicknesses are nm.
+The crystal c-axis is normal to the surface. epsilon_parallel=epsilon_xx=epsilon_yy,
+epsilon_perpendicular=epsilon_zz. With exp(-i omega t), positive imaginary epsilon
+represents absorption; choose the decaying kz branch. For q=sin(theta_air):
+  kz_s/k0 = sqrt(epsilon_parallel - q^2)
+  kz_p/k0 = sqrt(epsilon_parallel * (1-q^2/epsilon_perpendicular))
+  Y_s = kz_s/k0; Y_p = epsilon_parallel/(kz_p/k0)
+  r_ij = (Y_i-Y_j)/(Y_i+Y_j)
+Bottom-up recursion:
+  r_eff_j = (r_j,j+1 + r_eff_j+1 exp(2i kz_j+1 d_j+1)) /
+            (1 + r_j,j+1 r_eff_j+1 exp(2i kz_j+1 d_j+1)).
+R=abs(r_eff)^2; average s/p intensities. Uniform filled-pupil averaging integrates
+u=sin(theta)^2 uniformly from 0 to NA_illumination^2. That angular distribution is
+an assumption, not a measured aperture. At NA=0 the model reduces to normal
+incidence. The 20x objective accepts NA<=0.4; its maximum is not the actual
+illumination NA. The model is not an image diffraction/defocus simulation.
+
+For effective spectral weight W_c(lambda)=lamp*objective*camera response:
+  I_c(t) proportional to integral W_c(lambda)*R(t,lambda) d lambda
+  C_c(t) = 1 - I_c(t)/I_c(substrate).
+If the manufacturer curve means QE per incident photon, energy irradiance needs
+an additional lambda/(hc); if it is responsivity per radiant power, it does not.
+The vendor plot does not define that convention, so both interpretations are
+explicit nuisance cases. Channelwise gains cancel this ratio only for linear,
+unclipped, offset-corrected independent channels. A power response produces
+C_observed=1-(1-C_linear)^gamma; color mixing requires separate calibration.
+
+DATA PROVENANCE
+1. Munkhbat et al., ACS Photonics 9,2398-2407 (2022):
+   https://doi.org/10.1021/acsphotonics.2c00433
+   Primary data: https://zenodo.org/records/6205431 (CC-BY4.0)
+   Tensor file MD5 d32de83c300a5ef4dd7655cfaed0d71c matches the repository.
+   Columns are wavelength_nm, Re/Im epsilon_xx, Re/Im epsilon_yy, Re/Im epsilon_zz.
+   Table spans193-1690nm, but the authors exclude the ultraviolet below300nm
+   from their reported reliable range. The code uses the intersection300-826.6nm
+   with the Si table; vendor-camera examples use400-720nm. These are mechanically
+   exfoliated semiconducting2H thick flakes; supplementary TableS1's MoTe2 fitted
+   thicknesses are253-1535nm. This is not a measured1L tensor. Source PDF,
+   supplement, metadata and extracted text are preserved here.
+
+2. Si: Aspnes/Studna, Phys.Rev.B27,985 (1983):
+   https://doi.org/10.1103/PhysRevB.27.985
+   Existing refractiveindex.info transcription has46 n,k rows,206.6-826.6nm.
+   Only the wavelength column was converted from micrometres to nanometres.
+   The source was room-temperature n-type<111>Si. Original YAML hash and output
+   table hash are in the config. This is a substrate model, not a measurement
+   of the user's wafer doping/oxide.
+
+3. SiO2: Malitson fused silica,20C, Sellmeier formula:
+   https://doi.org/10.1364/JOSA.55.001205
+   n^2=1+sum B_i lambda_um^2/(lambda_um^2-C_i^2),
+   B=(.6961663,.4079426,.8974794), C=(.0684043,.1162414,9.896161).
+   It is an explicit approximation to wet thermal oxide. Nominal285nm is user
+   supplied; the model does not claim ellipsometric thickness/index calibration.
+
+4. ZEISS Axiocam305color, manufacturer flyer EN_40_012_109,CZ07-2017,p2:
+   https://asset-downloads.zeiss.com/catalogs/download/mic/29e65723-e381-4197-aece-157ee2d598e2/EN_product-flyer_Axiocam_305_color.pdf
+   The RGB sensitivity plot includes the Hoya5000 IR filter,400-720nm. Three
+   vector Bezier traces with33 nodes were extracted reproducibly, with PDF hash,
+   original paths, axis anchors and source crop retained. Half the plotted line
+   width corresponds to about0.00364 relative response or0.67nm. This only
+   describes drawing precision: device variation, incident-power convention,
+   actual illumination spectrum and acquisition color processing remain unknown.
+
+PUBLISHED THIN-FLAKE EVIDENCE / WHY BULK PREDICTION IS CONDITIONAL
+Yamamoto et al., ACS Nano (2014), supporting FigureS4:
+https://doi.org/10.1021/nn5007607.s001
+Their (flake-substrate)/substrate sign is opposite ours. Caption says285nm while
+the inset says300nm; do not silently resolve that inconsistency. Approximate
+visually read dark-positive(R,G) for1-4L are(.085,.135),(.17,.27),(.22,.285),
+(.25,.275), with roughly.015 reading precision. Blue was not plotted. Camera
+response/processing and oxide uncertainty prevent transferring those as an exact
+local calibration. The supplement and publisher metadata are already preserved
+under external/optical-contrast-references/yamamoto2014/.
+
+Biswas et al., ACS Nano (2023), supporting methods:
+https://pubs.acs.org/doi/suppl/10.1021/acsnano.3c00145/suppl_file/nn3c00145_si_001.pdf
+The authors report initial identification on285nmSiO2 using approximately7%
+contrast per layer followed by independent characterization. This is a useful
+order of magnitude, not an RGB vector or a universal threshold.
+
+Fang et al., Applied Surface Science605,154813 (2022):
+https://www.sciencedirect.com/science/article/pii/S0169433222023418
+Spectroscopic ellipsometry covers0.75-5.91eV and100-450K on5-25nm CVD2H polycrystalline
+films on sapphire. The thickness dependence is evidence against treating all
+MoTe2 thicknesses as one exact bulk dielectric function. This study does not
+supply a verified exfoliated monolayer calibration here.
+
+Ruppert, Aslan and Heinz, Nano Letters14,6231-6236 (2014):
+https://doi.org/10.1021/nl502557g
+Single/few-layer spectroscopy confirms strong thickness dependence and a1.10eV
+monolayer optical gap. Near-infrared bandgap evidence alone does not specify
+visible RGB optical constants. Phase identity of the current batch is unconfirmed.
+
+An important actual diagnostic: our nominal0.7nm bulk-tensor model with vendor
+response/scenario ensemble gives R~.26-.37 and G~.17-.37, appreciably larger than
+the above empirical thin-flake reports. Thus neither0.7nm nor a minimum curve
+distance can be advertised as1L. Small inferred thickness can reflect model
+mismatch, rather than a physically sub-monolayer object. Preserve this discrepancy
+instead of tuning spectra to force agreement with an unconfirmed sample.
+
+WHAT THE WORKING IMPLEMENTATIONS ACTUALLY ESTABLISH
+2DMatGMM, https://github.com/Jaluus/2DMatGMM and
+https://arxiv.org/html/2306.14845v2 : local checkout e30c4d60fdb8f1dbbe79c53099261d7f2b67aca9.
+The code uses BGR and I_flake/I_sub-1 (opposite our sign), per-class Gaussian
+means/covariances, pixel Mahalanobis assignments and connected components. The
+paper subtracts dark counts, applies flatfield correction and fits material/
+layer examples. The example200um2 threshold is not a requirement for our20-25um2
+objects. Hole filling and fixed morphology in the original code should not be
+copied into exact terrace masks without checking narrow terraces and overlaps.
+
+MaskTerial, https://github.com/Jaluus/MaskTerial and
+https://doi.org/10.1039/D5DD00156K : checkout289c7597887001f88f5d6d85d92c4653f5ca60f1.
+The shape network and contrast-classification head are separate. AMM embeds3D
+contrast then applies a learned multivariate distribution; that trained
+material catalog is not a universal MoTe2 classifier. Its synthetic generator,
+https://github.com/Jaluus/MaskTerial-Synthetic-Data at
+dca3a5d1889f6f0e39486326844a99f37a0fe9ed, uses transfer-matrix optics, camera/lamp
+spectra and nuisance augmentation. The listed materials omitMoTe2. Synthetic
+pretraining using extracted unlabeled contours is not evidence that unvalidated
+self-supervised training on our images will recover or label thinMoTe2.
+
+RADIOMETRY AND MODEL FITTING
+The saved whole-chip calibration response ladder fits exponents(R,G,B)=
+(.99657,.99765,.99147), with small affine residuals. Its actual result is
+indeterminate_without_dark_reference, linearity_confirmed=false. This narrows
+plausible power-response behavior around1 for that profile; it does not justify
+an arbitrary gamma range or prove zero offset/current camera processing. Config
+records its path/hash. TIFF12-bit values alone never establish linearity.
+
+The current144-case ensemble uses vendor curves, four smooth lamp examples,
+oxide280/285/290nm, NA0/.267/.4, gamma.99/1 and the two response-unit conventions.
+These are sensitivity scenarios, not measured95% bounds. Blackbody examples do
+not bracket all phosphor-LED spectra. Pass a measured lamp spectrum to replace
+them. Angular/profile/oxide choices must stay attached to every result.
+
+fit_effective_response_basis accepts known sample/substrate reflectance spectra,
+observed RGB contrasts, a small nonnegative spectral basis, separate training
+and validation indices and reference provenance. It fits normalized spectral
+weights, reports held-out residuals and rejects rank-deficient reference sets.
+It does not claim unique cameraQE. Fitting against guessed layer numbers would
+be circular. Prefer independently measured spectra or independently confirmed
+terraces, then compare held-out residuals to the actual noise covariance.
+
+RANKING / UNCERTAINTY CONTRACT
+For covariance Sigma, d2=(C-observed-C-model)^T Sigma^-1 (C-observed-C-model).
+The single curve returns a profile likelihood-ratio interval using supplied
+deltaChi2; the ensemble minimizes over explicit nuisance scenarios. Multiple
+disjoint compatible thickness branches are flagged, as are grid-edge intervals.
+exp(-d2/2) is a compatibility score, not a calibrated posterior probability.
+No invented noise floor is inserted; singular covariance is rejected. Unknown
+model discrepancy is not magically quantified by camera covariance. Optional
+model covariance must come from independent residual evidence.
+
+For this instrument, use area_px*abs(det(camera_transform.matrix)) for actual
+area and retain20-25um2 plateaus individually. A20um2 disk has diameter5.05um;
+at550nm/NA.4 the Rayleigh scale is about.84um. Pixels are correlated and edge
+mixing is material at this size. Preserve an interior color estimate and full
+mask separately; do not add disconnected terrace areas to pass the area floor.
+
+Next empirical step is retrospective annotation/held-out comparison on actual
+saved images, including user-confirmed substrate artifacts, tape and thick
+material. Demonstrate terrace recall and outline accuracy before treating SSL
+or theoretical optical matching as a performance improvement. No hardware is
+needed for that evaluation. All acquisition remains stopped.
+
+COMPLETED EXISTING-REFERENCE CHECK
+known-reference-check.json and extended-bulk-check.json score the existing local
+catalog without changing the model. reference-profile-audit.json verifies all7
+source sidecars:20x/NA.4,objectiveposition2,whitelevel4095,266.6016ms,fixedWB
+0.25007564,1,2.61244442. The contrast is dark-positive. These are not the earlier
+10x observations. Expanding the physical-thickness grid through1000nm leaves
+the bright-reference mismatch at25.27 within-reference SD (best model11nm),
+while cyanP1/P2 distances are.93/2.34SD. Haze negative groups1/2 also approach
+the curve within1.25/1.93SD. Covariance is descriptive within-region variation,
+not mean-estimate uncertainty or a validated acceptance threshold. References
+are optical populations, not independent phase/thickness measurements. Thus
+this is a concrete applicability diagnostic, not proof of model failure against
+chemically certifiedMoTe2. It does demonstrate why curve proximity cannot
+replace spatial artifact/debris evidence or unclassified-source retention.

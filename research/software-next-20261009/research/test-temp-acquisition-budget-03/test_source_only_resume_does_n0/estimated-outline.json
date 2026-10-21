@@ -1,0 +1,46 @@
+{
+  "status": "unresolved",
+  "reason": "Fewer than three coherent edge directions.",
+  "lines": [
+    {
+      "normal": [
+        1.0,
+        -4.371138828673793e-08
+      ],
+      "offset_um": 800.4999781617902,
+      "expanded_offset_um": 820.4999781617902,
+      "residual_um_p95": 2.487614904111979e-06,
+      "margin_um": 20.0,
+      "source_images": [
+        "frames/probe_000003.tiff"
+      ],
+      "edge_point_count": 120
+    }
+  ],
+  "algorithm": "sparse_photometric_halfplanes_v2",
+  "registered_consistency": {
+    "accepted": true,
+    "observation_count": 4,
+    "line_checks": [
+      {
+        "accepted": true,
+        "violations": [],
+        "margin_um": 20.0,
+        "patch_diameter_um": 40.0,
+        "hypothesis": "Same separated convex chip across the supplied registered observations."
+      }
+    ],
+    "qualification": "Same separated convex chip hypothesis; not proof of unsampled gaps or complete coverage."
+  },
+  "outcome": "edge_not_found",
+  "evidence": {
+    "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\software-next-20261009\\research\\test-temp-acquisition-budget-03\\test_source_only_resume_does_n0",
+    "images": 4,
+    "new_probe_images": 4,
+    "imported_probe_images": 0,
+    "coherent_edge_images": 1,
+    "discovery_sha256": "919feecf49fd88c569a91abd654a4e0e031bf4d898f4b44f293bb2e7228236f5"
+  },
+  "acquisition_assumption": "One separated convex chip with approximately straight edges. Coarse hops may cross unobserved gaps.",
+  "all_chips_found": false
+}

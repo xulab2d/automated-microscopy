@@ -1,0 +1,10 @@
+{
+  "outcome": "capture_budget_exhausted",
+  "max_seconds": 60.0,
+  "max_captures": 1,
+  "captures_started": 1,
+  "elapsed_seconds": 2.0,
+  "completed_actions": 1,
+  "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline",
+  "shared_with_parent": true
+}

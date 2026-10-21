@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "status": "estimated",
+  "method": "coherent_halfplane_edges_with_robust_line_fit",
+  "polygon_um": [
+    [
+      11981.537849999724,
+      -7137.240586036174
+    ],
+    [
+      11637.953052742858,
+      -1036.5133312667822
+    ],
+    [
+      6236.681895909194,
+      -1353.7728059145459
+    ],
+    [
+      6696.2083101178505,
+      -7373.281589553623
+    ]
+  ],
+  "uncertainty_um": 75.0,
+  "uncertainty_kind": "planning margin, not a statistical confidence bound",
+  "lines": [
+    {
+      "normal": [
+        0.998417854309082,
+        0.05622955784201622
+      ],
+      "offset_um": 11486.257429154868,
+      "expanded_offset_um": 11561.257429154868,
+      "residual_um_p95": 3.3403743006409052,
+      "margin_um": 75.0,
+      "source_images": [
+        "frames/probe_000006.tiff",
+        "frames/probe_000009.tiff",
+        "frames/probe_000010.tiff"
+      ],
+      "edge_point_count": 265
+    },
+    {
+      "normal": [
+        -0.0586368627846241,
+        0.9982793927192688
+      ],
+      "offset_um": -1792.1429551300098,
+      "expanded_offset_um": -1717.1429551300098,
+      "residual_um_p95": 3.352392013454232,
+      "margin_um": 75.0,
+      "source_images": [
+        "frames/probe_000012.tiff"
+      ],
+      "edge_point_count": 80
+    },
+    {
+      "normal": [
+        -0.9970988035202026,
+        -0.07611804455518723
+      ],
+      "offset_um": -6190.541517588963,
+      "expanded_offset_um": -6115.541517588963,
+      "residual_um_p95": 1.0896240626758298,
+      "margin_um": 75.0,
+      "source_images": [
+        "frames/probe_000017.tiff"
+      ],
+      "edge_point_count": 83
+    },
+    {
+      "normal": [
+        0.044615186750888824,
+        -0.9990042448043823
+      ],
+      "offset_um": 7589.692190380836,
+      "expanded_offset_um": 7664.692190380836,
+      "residual_um_p95": 2.7236716037956286,
+      "margin_um": 75.0,
+      "source_images": [
+        "frames/probe_000025.tiff"
+      ],
+      "edge_point_count": 100
+    }
+  ],
+  "assumption": "Convex chip with approximately straight edges; unobserved corners are inferred.",
+  "coverage_requirement": "Check substrate at raster perimeter and expand/replan if it reaches that perimeter.",
+  "algorithm": "sparse_photometric_halfplanes_v2",
+  "registered_consistency": {
+    "accepted": true,
+    "observation_count": 26,
+    "line_checks": [
+      {
+        "accepted": true,
+        "violations": [],
+        "margin_um": 75.0,
+        "patch_diameter_um": 40.0,
+        "hypothesis": "Same separated convex chip across the supplied registered observations."
+      },
+      {
+        "accepted": true,
+        "violations": [],
+        "margin_um": 75.0,
+        "patch_diameter_um": 40.0,
+        "hypothesis": "Same separated convex chip across the supplied registered observations."
+      },
+      {
+        "accepted": true,
+        "violations": [],
+        "margin_um": 75.0,
+        "patch_diameter_um": 40.0,
+        "hypothesis": "Same separated convex chip across the supplied registered observations."
+      },
+      {
+        "accepted": true,
+        "violations": [],
+        "margin_um": 75.0,
+        "patch_diameter_um": 40.0,
+        "hypothesis": "Same separated convex chip across the supplied registered observations."
+      }
+    ],
+    "qualification": "Same separated convex chip hypothesis; not proof of unsampled gaps or complete coverage."
+  }
+}

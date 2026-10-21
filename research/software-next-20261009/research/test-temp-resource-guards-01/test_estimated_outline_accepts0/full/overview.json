@@ -1,0 +1,14 @@
+{
+  "origin_um": [
+    170.0,
+    170.0
+  ],
+  "pixel_size_um": 4.0,
+  "coverage_fraction": 1.0,
+  "bounds_um": [
+    170.0,
+    830.0,
+    170.0,
+    830.0
+  ]
+}

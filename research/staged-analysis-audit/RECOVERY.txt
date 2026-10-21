@@ -1,0 +1,48 @@
+Isolated chip001 failed-field recovery -- completed 2026-10-09 08:03 UTC
+
+Master index: recovery-result.json
+Recovered review catalog: recovery-catalog.json
+Original attempts and provenance: recovery-v1/
+Supplementary narrow-strip validation correction: recovery-v2/
+
+All 49 original failed fields have an explicit outcome:
+- 31 fields recovered, retaining 505 source masks.
+- 44 observations pass the existing useful-size/local-signal review sieves;
+  existing overlap dedup yields 39 catalog entries.
+- 11 fields are off-chip and remain excluded.
+- Two chip slivers contain no usable interior after the unchanged 12 um margin.
+- Five narrow/interrupted substrate supports remain unresolved by the spatial
+  holdout normalization validation. These are not negative flake findings.
+- Zero recovered catalog entries match the descriptive mean-color prior.
+  No object is assigned a credible thin-flake or monolayer classification.
+
+The first four on-chip fields plus off-chip/sliver controls were visually
+reviewed before the full retry. Raw/overlay pairs are under each version's
+validation/ directory. Tile354 retains obvious bright platelets; tile180 retains
+its large dark aggregate as broad feature review, not a thin-material success.
+
+The source component extractor and existing geometry/sieves were reused without
+editing production modules. The observed chip footprint controls where objects
+may exist. Independently recorded substrate labels supply background/noise
+samples. Local annuli additionally exclude all source objects and foreground.
+Every saved mask is inside the measured domain; every local-background sample
+is inside recorded substrate support. Saved label areas match every source row.
+These invariants and artifact checksums were verified for all recovered fields.
+
+Version1's holdout fold assignment accidentally offered only two groups on a
+narrow vertical strip. Version2 corrects that orientation bias and retries only
+the 14 corresponding exclusions. It recovers nine additional fields. Successful
+version1 masks are preserved without rerunning or replacing them. The master
+index explicitly chooses the later outcome only for those original exclusions.
+Each version archives the exact source code and checksums used for its outputs.
+
+Boundaries remain broad optical features and can include residue/dust. Mean RGB
+compatibility is explicitly descriptive, with interior color spread and mean
+uncertainty recorded separately. Source geometry is never removed by a new
+uniformity/shape veto. The observed raster enclosure plus the existing edge
+margin still loses some real chip-edge objects. Full-field focus on the tilted
+chip remains a limitation. No measured thin-flake recall or absence claim follows.
+
+No production code, options, raw files, acquisition sidecars, original analysis
+shards, running worker, or microscope hardware were changed. Both isolated retry
+processes have completed; they used one native thread and below-normal priority.

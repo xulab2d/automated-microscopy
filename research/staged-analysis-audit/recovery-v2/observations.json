@@ -1,0 +1,55 @@
+{
+  "schema": 2,
+  "storage": "per_tile_shards",
+  "source_folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\chip001",
+  "shards": [
+    {
+      "tile_key": "chip001/tile_000018",
+      "file": "fields/chip001__tile_000018.json",
+      "count": 14
+    },
+    {
+      "tile_key": "chip001/tile_000130",
+      "file": "fields/chip001__tile_000130.json",
+      "count": 5
+    },
+    {
+      "tile_key": "chip001/tile_000169",
+      "file": "fields/chip001__tile_000169.json",
+      "count": 17
+    },
+    {
+      "tile_key": "chip001/tile_000189",
+      "file": "fields/chip001__tile_000189.json",
+      "count": 34
+    },
+    {
+      "tile_key": "chip001/tile_000190",
+      "file": "fields/chip001__tile_000190.json",
+      "count": 8
+    },
+    {
+      "tile_key": "chip001/tile_000292",
+      "file": "fields/chip001__tile_000292.json",
+      "count": 4
+    },
+    {
+      "tile_key": "chip001/tile_000293",
+      "file": "fields/chip001__tile_000293.json",
+      "count": 7
+    },
+    {
+      "tile_key": "chip001/tile_000393",
+      "file": "fields/chip001__tile_000393.json",
+      "count": 12
+    },
+    {
+      "tile_key": "chip001/tile_000394",
+      "file": "fields/chip001__tile_000394.json",
+      "count": 7
+    }
+  ],
+  "observation_count": 108,
+  "physical_unique_count": 7,
+  "physical_unique_count_scope": "Existing centroid-pair dedup; extended-object duplicates remain possible."
+}

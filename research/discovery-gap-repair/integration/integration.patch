@@ -1,0 +1,1039 @@
+--- a/flakefinder/sparse_edges.py
++++ b/flakefinder/sparse_edges.py
+@@ -18,7 +18,48 @@
+ from .model import atomic_json
+ 
+ 
+-def coherent_edge(labels, position_um, source_shape, matrix):
++def _standard_hough_candidate(edges, s, b):
++    h, w = edges.shape
++    # Hough sorts peaks by votes. Evaluate only the strongest twelve; this is a
++    # bounded proposal fallback, not a search over arbitrary weak separators.
++    lines = cv2.HoughLines(edges, 1, np.pi/720, threshold=35)
++    if lines is None:
++        return None
++    yy, xx = np.mgrid[:h, :w]
++    best = None
++    for offset, angle in lines.reshape(-1, 2)[:12]:
++        normal = np.array([np.cos(angle), np.sin(angle)], float)
++        distance = xx*normal[0]+yy*normal[1]-offset
++        if np.median(distance[b]) < np.median(distance[s]):
++            normal, distance = -normal, -distance
++        inside, outside = distance < -4, distance > 4
++        if min(inside.mean(), outside.mean()) < .07:
++            continue
++        substrate_purity = float(s[inside].mean())
++        holder_purity = float(b[outside].mean())
++        if substrate_purity < .78 or holder_purity < .78:
++            continue
++        near = (edges > 0) & (abs(distance) < 3)
++        points = np.column_stack([xx[near], yy[near]]).astype(float)
++        if len(points) < .4*min(h, w):
++            continue
++        tangent = np.array([-normal[1], normal[0]])
++        measured_span = float(np.ptp(points @ tangent))
++        if measured_span < .45*min(h, w):
++            continue
++        centre = points.mean(axis=0)
++        _, _, vt = np.linalg.svd(points-centre, full_matrices=False)
++        fitted_normal = vt[-1]
++        if fitted_normal @ normal < 0:
++            fitted_normal = -fitted_normal
++        residual = np.abs((points-centre) @ fitted_normal)
++        score = min(substrate_purity, holder_purity)*measured_span
++        if best is None or score > best[0]:
++            best = (score, points, fitted_normal, substrate_purity, holder_purity, residual)
++    return best
++
++
++def _label_edge(labels, position_um, source_shape, matrix, *, standard_fallback=False):
+     """Return an outward stage-space half-plane normal and its edge samples."""
+     # Geometry only needs a few hundred pixels, not a full-resolution TIFF.
+     h0, w0 = labels.shape
+@@ -36,11 +77,9 @@
+     edges[:, :4] = edges[:, -4:] = 0
+     lines = cv2.HoughLinesP(edges, 1, np.pi/720, threshold=35,
+                             minLineLength=.45*min(h, w), maxLineGap=12)
+-    if lines is None:
+-        return None
+     yy, xx = np.mgrid[:h, :w]
+     best = None
+-    for x1, y1, x2, y2 in lines.reshape(-1, 4):
++    for x1, y1, x2, y2 in (() if lines is None else lines.reshape(-1, 4)):
+         tangent = np.array([x2-x1, y2-y1], float)
+         normal = np.array([-tangent[1], tangent[0]]) / np.linalg.norm(tangent)
+         offset = normal @ [x1, y1]
+@@ -67,6 +106,8 @@
+         score = min(substrate_purity, holder_purity)*np.linalg.norm(tangent)
+         if best is None or score > best[0]:
+             best = (score, points, fitted_normal, substrate_purity, holder_purity, residual)
++    if best is None and standard_fallback:
++        best = _standard_hough_candidate(edges, s, b)
+     if best is None:
+         return None
+     _, points, normal, ps, ph, residual = best
+@@ -80,6 +121,56 @@
+             'points_um': stage_points[::max(1, len(stage_points)//80)].tolist(),
+             'substrate_purity': ps, 'holder_purity': ph,
+             'local_residual_px_p95': float(np.quantile(residual, .95))}
++
++
++def coherent_edge(labels, position_um, source_shape, matrix):
++    """Legacy label-only API: its proposal behavior is deliberately unchanged."""
++    return _label_edge(labels, position_um, source_shape, matrix)
++
++
++def validated_coherent_edge(frame, labels, matrix, profile):
++    """Propose from labels, then require independent raw photometric support.
++
++    Only when the original HoughP path yields no label candidate are up to 12
++    standard Hough peaks considered. Only a new fallback proposal may be refined
++    to measured raw coordinates. A previously accepted fast-path candidate is
++    either retained at exactly its original coordinates or rejected.
++    """
++    from .photometric_edges import assess_edge_profile, supported_edge
++    contract = assess_edge_profile(profile, frame)
++    if not contract['supported']:
++        return None, {'accepted': False, 'reason': contract['reason'], 'profile': contract}
++    position = [frame.position.x, frame.position.y]
++    candidate = _label_edge(labels, position, frame.rgb.shape, matrix)
++    fallback = candidate is None
++    if fallback:
++        candidate = _label_edge(labels, position, frame.rgb.shape, matrix, standard_fallback=True)
++    if candidate is None:
++        return None, {'accepted': False, 'reason': 'No label-side-supported line proposal.', 'profile': contract}
++    edge, report = supported_edge(frame, labels, candidate, matrix, allow_raw_refinement=fallback)
++    report.update(profile=contract, proposal_path='bounded_standard_hough' if fallback else 'legacy_hough_p',
++                  original_label_proposal=candidate, raw_refinement_permitted=fallback)
++    return edge, report
++
++
++def fit_validated_outline(edges, seed, bounds, margin, observations, matrix, source_shape):
++    """Reject a fitted polygon contradicting registered substrate observations.
++
++    Rejection retains the measured lines and their diagnostics for further
++    probing, but removes the polygon. No line is discarded just to force closure.
++    """
++    from .photometric_edges import registered_substrate_consistency, ALGORITHM_VERSION
++    result = fit_outline(edges, seed, bounds, margin)
++    checks = [registered_substrate_consistency(line, observations, matrix, source_shape,
++              margin_um=max(float(margin), float(line.get('margin_um', margin))))
++              for line in result.get('lines', [])]
++    result['algorithm'] = ALGORITHM_VERSION
++    result['registered_consistency'] = {'accepted': all(item['accepted'] for item in checks),
++        'observation_count': len(observations), 'line_checks': checks,
++        'qualification': 'Same separated convex chip hypothesis; not proof of unsampled gaps or complete coverage.'}
++    if not result['registered_consistency']['accepted']:
++        result.update(status='unresolved', reason='registered_substrate_contradicts_halfplanes', polygon_um=[])
++    return result
+ 
+ 
+ def _clip(poly, normal, offset):
+--- a/flakefinder/sparse_acquisition.py
++++ b/flakefinder/sparse_acquisition.py
+@@ -16,7 +16,8 @@
+ from .layout import SubstrateReference,SUBSTRATE,NON_SUBSTRATE,classify_seed_patch
+ from .model import AcquisitionError,Cancelled,SafetyError,atomic_json
+ from .motion import move_z_bounded
+-from .sparse_edges import coherent_edge,fit_outline
++from .sparse_edges import validated_coherent_edge,fit_validated_outline
++from .photometric_edges import ALGORITHM_VERSION,assess_edge_profile,spatial_bracket_evidence
+ 
+ 
+ @dataclass
+@@ -50,22 +51,93 @@
+ 
+ 
+ def _bracket_side(record,allow_fraction=False):
+-    """A mostly-substrate field can bracket an edge despite a dirty centre.
+-
+-    This advances an INSIDE search bound only; it never invents a measured edge
+-    or declares an enclosure. Original per-frame classification is retained.
++    # The legacy aggregate-only switch no longer bypasses spatial evidence.
++    # Original classifications remain intact; inference advances brackets only.
++    if record['classification']!='unknown':return record['classification']
++    spatial=record.get('spatial_bracket_evidence',{'side':'unknown'})
++    if spatial['side'] in ('substrate','holder'):record['bracket_inference']=spatial.copy()
++    return spatial['side']
++
++
++def _gap_probe_direction(lines, seed, bounds, previous=()):
++    if len(lines) < 2:
++        return None
++    angles = sorted(np.mod([np.arctan2(line['normal'][1], line['normal'][0]) for line in lines], 2*np.pi))
++    gaps = sorted(((angles[(i+1)%len(angles)] + (2*np.pi if i+1==len(angles) else 0) - a, a)
++                   for i, a in enumerate(angles)), reverse=True)
++    seed = np.asarray(seed, float)
++    for gap, start in gaps:
++        # Retry a poorly observed sector with bounded subdivisions, rather than
++        # repeating the same ray. These are search directions, not fitted lines.
++        for fraction in (.5, .25, .75):
++            angle = start + fraction*gap
++            direction = np.array([np.cos(angle), np.sin(angle)])
++            if any(direction @ np.asarray(old) > np.cos(np.deg2rad(15)) for old in previous):
++                continue
++            distance = min(((bounds[2*i+(1 if direction[i]>0 else 0)]-seed[i])/direction[i]
++                            for i in range(2) if abs(direction[i])>1e-9), default=0)
++            if distance > 0:
++                return dict(direction=direction.tolist(), maximum_um=float(distance),
++                            angular_gap_deg=float(np.degrees(gap)), sector_fraction=fraction)
++    return None
++
++
++def _complete_missing_edge_directions(edges, seed, bounds, field, step, margin,
++        acquire, ray_edge, bracket_side, check, save_ray, remaining, fit_model, max_attempts=3):
++    """Use spare geometric-probe budget after a failed four-ray outline fit.
++
++    The same live ``edges`` list is extended only by the supplied acquire
++    callback. No estimated line, rectangle, moved seed or new safety envelope is
++    introduced. A failed ray consumes a direction attempt, not unbounded retries.
+     """
+-    side=record['classification'];fractions=record.get('fractions',{})
+-    if (allow_fraction and side=='unknown' and fractions.get('substrate',0)>=.90
+-            and fractions.get('holder',1)<=.05):
+-        record['bracket_inference']={'side':'substrate','method':'whole_field_substrate_fraction_at_least_90_percent_and_holder_at_most_5_percent',
+-            'qualification':'Search bracket only; centre may contain contamination and no edge is inferred.'}
+-        return 'substrate'
+-    return side
++    previous = []
++    for attempt in range(max_attempts):
++        check()
++        result = fit_model()
++        if result['status']=='estimated' or remaining() <= 0:
++            return result
++        request = _gap_probe_direction(result.get('lines', []), seed, bounds, previous)
++        if request is None:
++            return result
++        direction = np.asarray(request['direction']); previous.append(direction.tolist())
++        maximum = request['maximum_um']; name = 'gap_%03d' % attempt
++        ray = dict(status='searching', purpose='missing_measured_halfplane', **request)
++        save_ray(name, ray)
++        width = min(field[i]/abs(direction[i]) for i in range(2) if abs(direction[i])>1e-9)
++        inside = last = 0.; outside = None; found = None
++        while last < maximum and remaining() > 0:
++            check(); distance = min(last+step, maximum)
++            record = acquire(np.asarray(seed)+direction*distance, 'coarse_'+name); last=distance
++            if ray_edge(record, direction):found=record;break
++            if record is None:break
++            side=bracket_side(record)
++            if side=='holder':outside=distance;break
++            if side=='substrate':inside=distance
++        if found is None and outside is not None:
++            while outside-inside > width/3 and remaining() > 0:
++                check(); midpoint=(inside+outside)/2
++                record=acquire(np.asarray(seed)+direction*midpoint, 'bisect_'+name)
++                if ray_edge(record,direction):found=record;break
++                if record is None:break
++                side=bracket_side(record)
++                if side=='substrate':inside=midpoint
++                elif side=='holder':outside=midpoint
++                else:break
++            if found is None:
++                middle=np.asarray(seed)+direction*((inside+outside)/2)
++                tangent=np.array([-direction[1],direction[0]])
++                for sign in (-1,1):
++                    if remaining() <= 0:break
++                    check(); record=acquire(middle+sign*tangent*min(field)*.6,'lateral_'+name)
++                    if ray_edge(record,direction):found=record;break
++        ray.update(status='coherent_edge' if found else 'unresolved', last_substrate_distance_um=inside,
++                   first_holder_distance_um=outside, edge_image=found['image'] if found else None)
++        save_ray(name,ray)
++    return fit_model()
+ 
+ 
+ def discover_sparse_outline(scope,seed_xy,transform,reference_frame,folder,options,*,context=None,resume=False,continue_unresolved=False,before_capture=None,callback=None,
+-                            focus_search_bounds_um=None,allow_source_change=False):
++                            focus_search_bounds_um=None,allow_source_change=False,edge_validation_profile=None):
+     """Save an estimated outline with <=32 geometric probe frames.
+ 
+     Successful edge frames stop their rays immediately. Holder observations
+@@ -94,8 +166,11 @@
+     field=contained_field_size(reference_frame,transform)
+     boundary_options=BoundaryOptions(options.search_bounds_um,options.cell_um,max_probes=options.max_probes,dark_holder_ratio=options.dark_holder_ratio)
+     evidence=EvidenceMap(options.search_bounds_um,options.cell_um)
+-    payload={'schema':1,'algorithm':'sparse_coarse_bracket_halfplanes_v1','algorithm_source_sha256':file_hash(__file__),
+-        'edge_model_sha256':file_hash(Path(__file__).with_name('sparse_edges.py')),'seed_xy_um':seed.tolist(),
++    profile_report=assess_edge_profile(edge_validation_profile,reference_frame)
++    payload={'schema':2,'algorithm':ALGORITHM_VERSION,'algorithm_source_sha256':file_hash(__file__),
++        'edge_model_sha256':file_hash(Path(__file__).with_name('sparse_edges.py')),
++        'photometric_model_sha256':file_hash(Path(__file__).with_name('photometric_edges.py')),
++        'edge_validation_profile':edge_validation_profile,'seed_xy_um':seed.tolist(),
+         'options':asdict(options),'context':context or {},'transform':asdict(transform),'source_shape':list(reference_frame.rgb.shape),
+         'reference':reference.to_dict(),'reference_rgb':reference_rgb,
+         'reference_pixels_sha256':hashlib.sha256(np.ascontiguousarray(reference_frame.rgb).tobytes()).hexdigest(),
+@@ -124,6 +199,11 @@
+             state.setdefault('continuations',[]).append({'at':time.time(),'existing_frames':len(state['records']),
+                 'maximum_total_frames':options.max_probes,'method':'reuse saved rays; advance high-substrate ambiguous bracket; acquire only new bisection/lateral points'})
+         state.update(state='running');state.pop('error',None)
++    if not profile_report['supported']:
++        state.update(state='unresolved',reason='unsupported_edge_profile',profile_validation=profile_report,
++                     estimated_outline={'status':'unresolved','reason':'unsupported_edge_profile','polygon_um':[]})
++        atomic_json(destination,state);atomic_json(folder/'estimated-outline.json',state['estimated_outline'])
++        return state
+     if focus_search_bounds_um is not None:
+         policy={'max_attempts':1,'roi_um':64.,'search_bounds_um':focus_search_bounds_um,
+                 'trigger':'Observed mixed substrate/holder without a coherent line, with a localized green transition.',
+@@ -131,18 +211,21 @@
+                 'probe_budget':'Focused full-field recapture counts toward max_probes; bounded autofocus images are recorded separately.'}
+         if state.get('edge_focus_policy') not in (None,policy):raise SafetyError('Saved discovery autofocus policy differs.')
+         state['edge_focus_policy']=policy
+-    by_xy={};edges=[]
++    by_xy={};edges=[];observations=[]
+     for record in state['records']:
+         for relative,digest in record['hashes'].items():
+             if file_hash(folder/relative)!=digest:raise AcquisitionError('Saved sparse edge evidence changed: '+relative)
+         with np.load(folder/record['labels_file']) as stored:labels=stored['labels'].copy()
++        observations.append((record['image'],labels,record['position_um'][:2]))
+         evidence.add(labels,record['position_um'],payload['source_shape'],transform)
++        record['spatial_bracket_evidence']=spatial_bracket_evidence(labels,record['classification'])
+         by_xy[tuple(np.round(record['requested_xy_um'],3))]=record
+         if record.get('edge'):edges.append(record['edge'])
+     for record in state.get('support_records',[]):
+         for relative,digest in record['hashes'].items():
+             if file_hash(folder/relative)!=digest:raise AcquisitionError('Saved interior support evidence changed: '+relative)
+         with np.load(folder/record['labels_file']) as stored:labels=stored['labels'].copy()
++        observations.append((record['image'],labels,record['position_um'][:2]))
+         evidence.add(labels,record['position_um'],payload['source_shape'],transform)
+     original_check=scope.check_cancel
+     def check():
+@@ -150,13 +233,18 @@
+         if (folder/'STOP').exists():raise Cancelled('Sparse edge STOP requested.')
+     scope.check_cancel=check
+     def save():state['updated_at']=time.time();atomic_json(destination,state)
++    def fit_model():
++        return fit_validated_outline(edges,seed,options.search_bounds_um,options.margin_um,observations,transform.matrix,payload['source_shape'])
++    def save_ray(name,ray):state['rays'][name]=ray;save()
+     def store_frame(frame,xy,phase,**extra):
+         transform.validate_frame(frame);key=tuple(np.round(xy,3))
+         if list(frame.rgb.shape)!=payload['source_shape'] or np.linalg.norm(np.array([frame.position.x,frame.position.y])-xy)>.5:
+             raise AcquisitionError('Sparse edge frame size or stage position differs from the plan.')
++        capture_profile=assess_edge_profile(edge_validation_profile,frame)
++        if not capture_profile['supported']:raise AcquisitionError('Sparse edge capture profile changed: '+capture_profile['reason'])
+         labels=classify_boundary(frame,reference,reference_rgb,boundary_options);side,fractions=_side(labels)
+         name=f'probe_{len(state["records"]):06d}';image=f'frames/{name}.tiff'
+-        edge=coherent_edge(labels,[frame.position.x,frame.position.y],frame.rgb.shape,transform.matrix)
++        edge,edge_validation=validated_coherent_edge(frame,labels,transform.matrix,edge_validation_profile)
+         if edge:
+             edge.update(image=image,phase=phase,position_um=[frame.position.x,frame.position.y,frame.position.z])
+             edges.append(edge)
+@@ -166,7 +254,9 @@
+         paths=[Path('frames')/(name+suffix) for suffix in ('.tiff','.json')]+[relative]
+         record={'name':name,'phase':phase,'requested_xy_um':list(map(float,xy)),
+                 'position_um':[frame.position.x,frame.position.y,frame.position.z],'image':image,'labels_file':relative.as_posix(),
+-                'classification':side,'fractions':fractions,'edge':edge,'hashes':{p.as_posix():file_hash(folder/p) for p in paths},**extra}
++                'classification':side,'fractions':fractions,'edge':edge,'edge_validation':edge_validation,
++                'spatial_bracket_evidence':spatial_bracket_evidence(labels,side),'hashes':{p.as_posix():file_hash(folder/p) for p in paths},**extra}
++        observations.append((image,labels,record['position_um'][:2]))
+         evidence.add(labels,record['position_um'],frame.rgb.shape,transform)
+         state['records'].append(record);by_xy[key]=record;save()
+         if callback:callback('sparse_edge_probe',frame,record)
+@@ -281,6 +371,9 @@
+             ray.update(status='coherent_edge' if found else 'unresolved',last_substrate_distance_um=inside,
+                 first_holder_distance_um=outside,edge_image=found['image'] if found else None)
+             save()
++        _complete_missing_edge_directions(edges,seed,options.search_bounds_um,field,
++            options.coarse_step_um,options.margin_um,acquire,ray_edge,_bracket_side,check,save_ray,
++            lambda:options.max_probes-len(state['records']),fit_model)
+     except _Budget:
+         state.update(budget_exhausted=True)
+     except _FocusUnresolved as exc:
+@@ -289,7 +382,7 @@
+         state.update(state='stopped' if isinstance(exc,Cancelled) else 'failed',error=str(exc));scope.stop();raise
+     finally:
+         scope.check_cancel=original_check
+-        result=fit_outline(edges,seed,options.search_bounds_um,options.margin_um)
++        result=fit_model()
+         if state.get('reason')=='edge_focus_unresolved':
+             result.update(status='unresolved',reason='edge_focus_unresolved',polygon_um=[])
+         result.update(evidence={'folder':str(folder.resolve()),'images':len(state['records']),'coherent_edge_images':len(edges)},
+--- a/flakefinder/chip_campaign.py
++++ b/flakefinder/chip_campaign.py
+@@ -17,6 +17,7 @@
+ from .model import AcquisitionError,FocusSupportError,SafetyError,Cancelled,Limits,atomic_json
+ from .motion import move_z_bounded
+ from .sparse_acquisition import SparseEdgeOptions,discover_sparse_outline,acquire_interior_support
++from .photometric_edges import ALGORITHM_VERSION,assess_edge_profile
+ 
+ 
+ class CampaignBudgetReached(Cancelled):
+@@ -599,6 +600,13 @@
+     return state
+ 
+ 
++def _require_discovery_contract(saved,contract):
++    if (saved.get('algorithm')!=contract['algorithm'] or saved.get('edge_validation_profile')!=contract['profile']
++            or saved.get('edge_model_sha256')!=contract['edge_model_sha256']
++            or saved.get('photometric_model_sha256')!=contract['photometric_model_sha256']):
++        raise SafetyError('Saved discovery has a different algorithm/profile; preserve its identity and reanalyse separately.')
++
++
+ def run_chip_campaign(config,reference_tiff,output,search_bounds_um,options,*,full_chip_options=None,initial_discovery=None,
+                       seed_focus_z_um=None,seed_focus_evidence=None,seed_focus_frame=None,seed_focus_results=None,scope=None,callback=None,
+                       resume=False,allow_source_change=False,continue_discovery=False,continuation_max_chips=None,continuation_walltime_s=None,
+@@ -616,6 +624,7 @@
+     bounds=envelope['search_bounds_um'];out=Path(output).resolve()
+     if resume and continue_discovery:raise ValueError('Choose resume or continue_discovery, not both.')
+     if recover_seed_rejection and not continue_discovery:raise ValueError('Seed rejection recovery requires explicit continue_discovery.')
++    if recover_seed_rejection:raise SafetyError('Legacy seed-rejection recovery is not compatible with the v2 discovery contract; preserve the recorded lineage.')
+     if not continue_discovery and (continuation_max_chips is not None or continuation_walltime_s is not None):
+         raise ValueError('Continuation budget overrides require continue_discovery.')
+     if resume:
+@@ -630,8 +639,16 @@
+     transform=transform_from_config(config);transform.validate_frame(reference_frame)
+     if not transform.calibrated:raise SafetyError('Measured camera transform required.')
+     reference=SubstrateReference.from_frame(reference_frame)
++    edge_profile=config.get('chip_discovery',{}).get('edge_validation_profile')
++    edge_contract=assess_edge_profile(edge_profile,reference_frame)
++    if not edge_contract['supported']:raise SafetyError('Discovery unresolved before connection: '+edge_contract['reason'])
++    discovery_contract={'algorithm':ALGORITHM_VERSION,'profile':edge_profile,
++        'edge_model_sha256':file_hash(Path(__file__).with_name('sparse_edges.py')),
++        'photometric_model_sha256':file_hash(Path(__file__).with_name('photometric_edges.py'))}
+     continuation_saved=json.loads((out/'batch.json').read_text(encoding='utf-8')) if continue_discovery else None
+     if continue_discovery:
++        if continuation_saved.get('discovery_contract')!=discovery_contract:
++            raise SafetyError('Discovery algorithm/profile transition requires a separate reviewed campaign lineage; legacy identities are not rewritten.')
+         saved_focus=continuation_saved.get('seed_focus',{})
+         if seed_focus_z_um is not None and abs(float(seed_focus_z_um)-saved_focus.get('z_um',float('inf')))>.5:
+             raise SafetyError('Continuation cannot replace the saved discovery focus height.')
+@@ -654,6 +671,7 @@
+     if initial_discovery is not None and not continue_discovery:
+         initial_discovery=Path(initial_discovery).resolve()
+         initial_state=json.loads((initial_discovery/'discovery.json').read_text(encoding='utf-8'))
++        _require_discovery_contract(initial_state,discovery_contract)
+         expected_pixels=hashlib.sha256(np.ascontiguousarray(reference_frame.rgb).tobytes()).hexdigest()
+         if (initial_state.get('state') not in ('estimated','unresolved') or initial_state.get('reference_pixels_sha256')!=expected_pixels
+                 or initial_state.get('reference',{}).get('context')!=reference.context
+@@ -705,7 +723,7 @@
+         state={'schema':1,'state':'running','coverage_kind':'interleaved_discovery_and_full_planned_chip_rasters',
+             'coverage_note':'Individual planned raster coverage and measured chip-extent validation are separate. Remaining/uncertain search points do not imply absent chips.',
+             'coordinate_frame_id':str(uuid.uuid4()),'coordinate_policy':'Fresh supplied reference and explicit native envelope; no old layout/focus positions reused.',
+-            'algorithm_source_sha256':file_hash(__file__),
++            'algorithm_source_sha256':file_hash(__file__),'discovery_contract':discovery_contract,
+             'started_at':time.time(),'options':asdict(options),'full_chip_options':asdict(full_options),
+             'search_bounds_um':bounds,'envelope_preflight':envelope,'storage_options':asdict(storage_options),
+             'reference_path':str(reference_path),'reference_sha256':hashlib.sha256(reference_path.read_bytes()).hexdigest(),
+@@ -838,6 +856,7 @@
+             move_z_bounded(scope,seed_focus_z);check()
+             if resuming_attempt and (discovery_folder/'discovery.json').exists():
+                 saved_discovery=json.loads((discovery_folder/'discovery.json').read_text(encoding='utf-8'))
++                _require_discovery_contract(saved_discovery,discovery_contract)
+                 if saved_discovery['state']=='estimated':
+                     for evidence_record in saved_discovery.get('records',[])+saved_discovery.get('support_records',[]):
+                         for relative,digest in evidence_record.get('hashes',{}).items():
+@@ -846,17 +865,17 @@
+                 else:
+                     discovery=discover_sparse_outline(scope,xy,transform,reference_frame,discovery_folder,SparseEdgeOptions(**saved_discovery['options']),
+                         context=config.get('context'),resume=True,continue_unresolved=bool(attempt_record.get('seed_rejection_recovery')),callback=progress,
+-                        allow_source_change=allow_source_change,focus_search_bounds_um=full_options.focus_search_bounds_um)
++                        allow_source_change=allow_source_change,focus_search_bounds_um=full_options.focus_search_bounds_um,edge_validation_profile=edge_profile)
+             elif reuse_initial:
+                 attempt_record['reused_fresh_discovery']=True
+                 if initial_state['state']=='unresolved':
+                     discovery=discover_sparse_outline(scope,xy,transform,reference_frame,discovery_folder,SparseEdgeOptions(**initial_state['options']),
+                         context=config.get('context'),resume=True,continue_unresolved=True,callback=progress,
+-                        focus_search_bounds_um=full_options.focus_search_bounds_um)
++                        focus_search_bounds_um=full_options.focus_search_bounds_um,edge_validation_profile=edge_profile)
+                 else:discovery=initial_state
+             else:
+                 discovery=discover_sparse_outline(scope,xy,transform,reference_frame,discovery_folder,edge_options,
+-                    context=config.get('context'),callback=progress,focus_search_bounds_um=full_options.focus_search_bounds_um)
++                    context=config.get('context'),callback=progress,focus_search_bounds_um=full_options.focus_search_bounds_um,edge_validation_profile=edge_profile)
+             attempt_record.update(state=discovery['state'],probe_count=len(discovery['records']))
+             focus_attempts=discovery.get('edge_focus_attempts',[])
+             if focus_attempts and focus_attempts[-1].get('state')=='focused' and focus_attempts[-1].get('focused_image'):
+--- a/scripts/scan_chip_campaign.py
++++ b/scripts/scan_chip_campaign.py
+@@ -31,7 +31,10 @@
+     p.add_argument('--allow-source-change',action='store_true',help='With --resume or --continue-discovery, audit a source-code transition while requiring unchanged geometry/profile')
+     p.add_argument('--recover-seed-rejection',action='store_true',help='Narrow audited recovery of the historical seed-only classification failure; requires continuation/source flag and forbids budget renewal')
+     p.add_argument('--full-chip-options',type=Path,help='Optional JSON containing fresh FullChipOptions only; no old coordinate priors.')
++    p.add_argument('--edge-validation-profile',type=Path,help='Explicit JSON dark-holder/manual-20x profile for new v2 discovery; legacy campaign migration is not implicit.')
+     args=p.parse_args();cfg=load_config(args.config)
++    if args.edge_validation_profile:
++        cfg.setdefault('chip_discovery',{})['edge_validation_profile']=json.loads(args.edge_validation_profile.read_text(encoding='utf-8-sig'))
+     if args.resume and args.continue_discovery:p.error('Choose --resume or --continue-discovery')
+     continuing=args.resume or args.continue_discovery
+     if args.command=='plan' and continuing:p.error('Continuation/resume applies only to run')
+--- a/scripts/discover_chip_boundaries.py
++++ b/scripts/discover_chip_boundaries.py
+@@ -11,7 +11,9 @@
+ from flakefinder.sparse_acquisition import SparseEdgeOptions,discover_sparse_outline
+ from flakefinder.config import connect,arm,load_config,transform_from_config
+ from flakefinder.imaging import load_frame
+-from flakefinder.model import atomic_json
++from flakefinder.model import atomic_json,SafetyError,Cancelled
++from flakefinder.photometric_edges import assess_edge_profile,ALGORITHM_VERSION
++from flakefinder.chip_discovery import file_hash
+ from flakefinder.motion import move_z_bounded
+ 
+ 
+@@ -32,6 +34,7 @@
+         sub.add_argument('--resume',action='store_true')
+         sub.add_argument('--use-reference-height',action='store_true',help='Reuse saved reference Z once; geometric evidence only, not a focus-plane extrapolation')
+         if name=='edges':
++            sub.add_argument('--edge-validation-profile',type=Path,help='Explicit dark-holder/manual-20x JSON profile; required for sparse edges unless supplied in config.chip_discovery.')
+             sub.add_argument('--continue-unresolved',action='store_true',help='With --resume, reuse saved rays and refine ambiguous high-substrate brackets; preserve the total frame budget')
+             sub.add_argument('--seed-xy',nargs=2,type=float,help='Verified substrate seed; defaults to reference frame XY')
+             sub.add_argument('--bounds',nargs=4,type=float,required=True)
+@@ -49,6 +52,23 @@
+         atomic_json(args.output,plan)
+         print(json.dumps({'plan':str(args.output),'probes':plan['probe_count'],'expected_chip_count':None,'limits':plan['limits']}));return
+     cfg=load_config(args.config);reference=load_frame(args.reference);transform=transform_from_config(cfg)
++    transform.validate_frame(reference)
++    if not transform.calibrated:raise SafetyError('A measured camera transform is required before connection.')
++    if (args.output/'STOP').exists():raise Cancelled('Boundary STOP exists; no hardware connection opened.')
++    edge_profile=None
++    if args.command=='edges' and args.method=='sparse':
++        edge_profile=(json.loads(args.edge_validation_profile.read_text(encoding='utf-8-sig'))
++            if args.edge_validation_profile else cfg.get('chip_discovery',{}).get('edge_validation_profile'))
++        report=assess_edge_profile(edge_profile,reference)
++        if not report['supported']:raise SafetyError('Sparse discovery unresolved before connection: '+report['reason'])
++        if args.resume and (args.output/'discovery.json').exists():
++            saved=json.loads((args.output/'discovery.json').read_text(encoding='utf-8'))
++            import flakefinder.sparse_edges as edge_module
++            import flakefinder.photometric_edges as photo_module
++            if (saved.get('algorithm')!=ALGORITHM_VERSION or saved.get('edge_validation_profile')!=edge_profile
++                    or saved.get('edge_model_sha256')!=file_hash(edge_module.__file__)
++                    or saved.get('photometric_model_sha256')!=file_hash(photo_module.__file__)):
++                raise SafetyError('Legacy/different sparse discovery cannot resume under this profile; preserve its identity.')
+     policy=f'fixed saved reference height {reference.position.z:.6f} um; geometric evidence only' if args.use_reference_height else 'unchanged current height; geometric evidence only'
+     fixed_applied=False
+     def focus(scope,xy):
+@@ -59,18 +79,21 @@
+         print(json.dumps({'phase':phase,'position_um':record['position_um'],
+                           'classification':record.get('classification'),'fractions':record.get('fractions'),
+                           'image':record['image']}),flush=True)
++    # Validate options before opening an adapter, including the hard32 budget.
++    if args.command=='edges':
++        seed=args.seed_xy or [reference.position.x,reference.position.y]
++        options=(SparseEdgeOptions(args.bounds,args.coarse_step_um,args.max_probes,args.cell_um,args.dark_holder_ratio,args.margin_um,policy)
++            if args.method=='sparse' else BoundaryOptions(args.bounds,args.cell_um,args.overlap,args.max_probes,
++                dark_holder_ratio=args.dark_holder_ratio,focus_policy_id=policy))
+     scope=None
+     try:
+         scope=connect(cfg);arm(scope,cfg)
+         if args.command=='edges':
+-            seed=args.seed_xy or [reference.position.x,reference.position.y]
+             if args.method=='sparse':
+-                options=SparseEdgeOptions(args.bounds,args.coarse_step_um,args.max_probes,args.cell_um,args.dark_holder_ratio,args.margin_um,policy)
+                 result=discover_sparse_outline(scope,seed,transform,reference,args.output,options,context=cfg.get('context'),
+-                                               resume=args.resume,continue_unresolved=args.continue_unresolved,before_capture=focus,callback=progress)
++                                               resume=args.resume,continue_unresolved=args.continue_unresolved,before_capture=focus,callback=progress,
++                                               edge_validation_profile=edge_profile)
+             else:
+-                options=BoundaryOptions(args.bounds,args.cell_um,args.overlap,args.max_probes,
+-                                        dark_holder_ratio=args.dark_holder_ratio,focus_policy_id=policy)
+                 result=discover_seed_enclosure(scope,seed,transform,reference,args.output,options,context=cfg.get('context'),
+                                                resume=args.resume,before_capture=focus,callback=progress)
+             print(json.dumps({'state':result['state'],'probes':len(result['records']),
+--- a/tests/test_sparse_acquisition.py
++++ b/tests/test_sparse_acquisition.py
+@@ -2,20 +2,21 @@
+ import numpy as np,pytest
+ from flakefinder.sparse_acquisition import SparseEdgeOptions,discover_sparse_outline
+ from flakefinder.full_chip import _anchor_points
+-from test_chip_discovery import ImageStage,RECT
++from test_chip_discovery import RECT
++from sparse_profile_fixture import ImageStage,profile_for
+ 
+ 
+ def test_sparse_brackets_find_four_edges_with_budget_and_no_frontier(tmp_path):
+     scope=ImageStage([RECT]);reference=scope.capture()
+     options=SparseEdgeOptions([20,1200,20,1100],coarse_step_um=400,cell_um=5,margin_um=20)
+-    result=discover_sparse_outline(scope,[500,500],scope.transform,reference,tmp_path,options)
++    result=discover_sparse_outline(scope,[500,500],scope.transform,reference,tmp_path,options,edge_validation_profile=profile_for(reference))
+     assert result['state']=='estimated' and len(result['records'])<=17
+     assert len(result['estimated_outline']['lines'])==4
+     assert any(r['phase'].startswith('bisect_') for r in result['records'])
+     assert not any('frontier' in r['phase'] for r in result['records'])
+     assert result['all_chips_found'] is False
+     before=scope.sequence
+-    replay=discover_sparse_outline(scope,[500,500],scope.transform,reference,tmp_path,options,resume=True)
++    replay=discover_sparse_outline(scope,[500,500],scope.transform,reference,tmp_path,options,edge_validation_profile=profile_for(reference),resume=True)
+     assert replay['state']=='estimated' and scope.sequence==before
+ 
+ 
+@@ -30,7 +31,7 @@
+ def test_corner_seed_uses_local_support_not_whole_field_fraction(tmp_path):
+     scope=ImageStage([RECT]);reference=scope.capture()
+     options=SparseEdgeOptions([20,1200,20,1100],coarse_step_um=400,cell_um=5,margin_um=20)
+-    result=discover_sparse_outline(scope,[220,220],scope.transform,reference,tmp_path,options)
++    result=discover_sparse_outline(scope,[220,220],scope.transform,reference,tmp_path,options,edge_validation_profile=profile_for(reference))
+     first=result['records'][0]
+     assert first['fractions']['substrate']<.55 and first['classification']=='unknown'
+     assert result['seed_verification']['classification']=='substrate_seed'
+@@ -41,7 +42,7 @@
+ def test_unverified_seed_is_unresolved_and_does_not_stop_hardware(tmp_path):
+     scope=ImageStage([RECT]);reference=scope.capture()
+     result=discover_sparse_outline(scope,[100,100],scope.transform,reference,tmp_path,
+-        SparseEdgeOptions([20,1200,20,1100],coarse_step_um=400,cell_um=5,margin_um=20))
++        SparseEdgeOptions([20,1200,20,1100],coarse_step_um=400,cell_um=5,margin_um=20),edge_validation_profile=profile_for(reference))
+     assert result['state']=='unresolved' and result['reason']=='seed_not_verified'
+     assert result['estimated_outline']['status']=='unresolved'
+     assert len(result['records'])==1 and not result['rays']
+@@ -55,5 +56,5 @@
+     monkeypatch.setattr(scope,'capture',fail)
+     with pytest.raises(AcquisitionError,match='camera transport failure'):
+         discover_sparse_outline(scope,[500,500],scope.transform,reference,tmp_path,
+-            SparseEdgeOptions([20,1200,20,1100],coarse_step_um=400,cell_um=5,margin_um=20))
++            SparseEdgeOptions([20,1200,20,1100],coarse_step_um=400,cell_um=5,margin_um=20),edge_validation_profile=profile_for(reference))
+     assert scope.stopped
+--- a/tests/test_sparse_edge_focus.py
++++ b/tests/test_sparse_edge_focus.py
+@@ -5,14 +5,15 @@
+ import flakefinder.focus_recovery as recovery
+ from flakefinder.autofocus import FocusResult
+ from flakefinder.model import AcquisitionError,Cancelled,Position,SafetyError
+-from test_chip_discovery import ImageStage,RECT
++from test_chip_discovery import RECT
++from sparse_profile_fixture import ImageStage,profile_for
+ 
+ 
+ def prepare(monkeypatch):
+     scope=ImageStage([RECT]);reference=scope.capture();scope.did_focus=False
+     scope.move_z=lambda z:setattr(scope,'p',Position(scope.p.x,scope.p.y,z))
+-    original=sparse.coherent_edge
+-    monkeypatch.setattr(sparse,'coherent_edge',lambda *args,**kwargs:original(*args,**kwargs) if scope.did_focus else None)
++    original=sparse.validated_coherent_edge
++    monkeypatch.setattr(sparse,'validated_coherent_edge',lambda *args,**kwargs:original(*args,**kwargs) if scope.did_focus else (None,{'accepted':False,'reason':'synthetic defocus'}))
+     options=sparse.SparseEdgeOptions([20,1200,20,1100],coarse_step_um=400,cell_um=5,margin_um=20)
+     return scope,reference,options
+ 
+@@ -26,7 +27,7 @@
+         callback(adapter.capture(),{'phase':'confirmation','score':1.,'z_um':105})
+         return FocusResult(True,105,1,1,'Synthetic verified focus',[])
+     monkeypatch.setattr(recovery,'recover_focus',focus)
+-    result=sparse.discover_sparse_outline(scope,[500,500],scope.transform,reference,tmp_path,options,focus_search_bounds_um=[60,140])
++    result=sparse.discover_sparse_outline(scope,[500,500],scope.transform,reference,tmp_path,options,edge_validation_profile=profile_for(reference),focus_search_bounds_um=[60,140])
+     assert result['state']=='estimated' and len(calls)==1
+     measured=result['edge_focus_attempts'][0]
+     assert measured['state']=='focused' and measured['result_sha256']
+@@ -36,7 +37,7 @@
+     assert fresh['position_um'][2]==105 and fresh['edge']
+     assert original['requested_xy_um']==fresh['requested_xy_um']
+     before=scope.sequence
+-    replay=sparse.discover_sparse_outline(scope,[500,500],scope.transform,reference,tmp_path,options,
++    replay=sparse.discover_sparse_outline(scope,[500,500],scope.transform,reference,tmp_path,options,edge_validation_profile=profile_for(reference),
+         resume=True,focus_search_bounds_um=[60,140])
+     assert replay['state']=='estimated' and len(calls)==1 and scope.sequence==before
+ 
+@@ -44,7 +45,7 @@
+ def test_unresolved_focus_stays_unresolved_without_hardware_stop(monkeypatch,tmp_path):
+     scope,reference,options=prepare(monkeypatch)
+     monkeypatch.setattr(recovery,'recover_focus',lambda *a,**k:FocusResult(False,100,0,0,'No peak',[]))
+-    result=sparse.discover_sparse_outline(scope,[500,500],scope.transform,reference,tmp_path,options,focus_search_bounds_um=[60,140])
++    result=sparse.discover_sparse_outline(scope,[500,500],scope.transform,reference,tmp_path,options,edge_validation_profile=profile_for(reference),focus_search_bounds_um=[60,140])
+     assert result['state']=='unresolved' and result['reason']=='edge_focus_unresolved'
+     assert result['estimated_outline']['status']=='unresolved' and not result['estimated_outline']['polygon_um']
+     assert len(result['edge_focus_attempts'])==1 and not scope.stopped
+@@ -59,7 +60,7 @@
+         raise AcquisitionError('Camera transfer failed')
+     monkeypatch.setattr(recovery,'recover_focus',focus)
+     with pytest.raises(Cancelled if cancel else AcquisitionError):
+-        sparse.discover_sparse_outline(scope,[500,500],scope.transform,reference,tmp_path,options,focus_search_bounds_um=[60,140])
++        sparse.discover_sparse_outline(scope,[500,500],scope.transform,reference,tmp_path,options,edge_validation_profile=profile_for(reference),focus_search_bounds_um=[60,140])
+     assert scope.stopped
+ 
+ 
+@@ -68,12 +69,12 @@
+     options=sparse.SparseEdgeOptions([20,1200,20,1100],coarse_step_um=400,max_probes=4,cell_um=5,margin_um=20)
+     original=sparse.file_hash;version=['old']
+     monkeypatch.setattr(sparse,'file_hash',lambda path:version[0] if Path(path)==Path(sparse.__file__) else original(path))
+-    sparse.discover_sparse_outline(scope,[500,500],scope.transform,reference,tmp_path,options)
++    sparse.discover_sparse_outline(scope,[500,500],scope.transform,reference,tmp_path,options,edge_validation_profile=profile_for(reference))
+     version[0]='new'
+     with pytest.raises(SafetyError,match='resume configuration'):
+-        sparse.discover_sparse_outline(scope,[500,500],scope.transform,reference,tmp_path,options,resume=True)
+-    result=sparse.discover_sparse_outline(scope,[500,500],scope.transform,reference,tmp_path,options,resume=True,allow_source_change=True)
++        sparse.discover_sparse_outline(scope,[500,500],scope.transform,reference,tmp_path,options,edge_validation_profile=profile_for(reference),resume=True)
++    result=sparse.discover_sparse_outline(scope,[500,500],scope.transform,reference,tmp_path,options,edge_validation_profile=profile_for(reference),resume=True,allow_source_change=True)
+     assert result['execution_changes'][-1]['kind']=='explicit_source_transition'
+     options.margin_um+=1
+     with pytest.raises(SafetyError,match='resume configuration'):
+-        sparse.discover_sparse_outline(scope,[500,500],scope.transform,reference,tmp_path,options,resume=True,allow_source_change=True)
++        sparse.discover_sparse_outline(scope,[500,500],scope.transform,reference,tmp_path,options,edge_validation_profile=profile_for(reference),resume=True,allow_source_change=True)
+--- a/tests/test_chip_campaign_continuation.py
++++ b/tests/test_chip_campaign_continuation.py
+@@ -7,6 +7,7 @@
+ import pytest
+ 
+ import flakefinder.chip_campaign as campaign
++from sparse_profile_fixture import profile_for,campaign_contract,discovery_contract
+ from flakefinder.full_chip import FullChipOptions
+ from flakefinder.imaging import save_frame
+ from flakefinder.layout import SubstrateReference,SUBSTRATE
+@@ -18,20 +19,22 @@
+     transform=CameraTransform([[1,0],[0,1]],(1,1),True)
+     limits=Limits(0,100,0,100,0,100)
+     frame=Frame(np.full((64,64,3),[1800,1500,1950],np.uint16),Position(50,50,20),(1,1),0,
+-                metadata={'white_level':4095,'source':'TEST'})
++                metadata={'white_level':4095,'source':'TEST','objective_position':2,'objective':{'magnification':20},
++                          'camera_resources':{'fixed':1},'camera_job_template':'synthetic fixed20x','illumination_percent':90})
+     save_frame(tmp_path/'reference','raw',frame);reference=(tmp_path/'reference/raw.tiff').resolve()
+     out=tmp_path/'campaign';out.mkdir()
+     options=campaign.CampaignOptions(60,detectable_patch_diameter_um=10,walltime_budget_s=3600)
+     full=asdict(FullChipOptions());bounds=[0.,100.,0.,100.]
+     cfg={'backend':'zen','zen':{'job_template':'camera','job_output_dir':str(tmp_path/'vendor')},
+          'limits':asdict(limits),'camera_transform':asdict(transform),'full_chip':full,'context':{'sample_id':'test'}}
++    cfg['chip_discovery']={'edge_validation_profile':profile_for(frame)}
+     search=campaign.plan_campaign_search(bounds,60,[50,50],10)
+     state={'state':'chip_complete_discovery_pending','current_chip':None,'coordinate_frame_id':'fresh-test',
+         'options':asdict(options),'full_chip_options':full,'search_bounds_um':bounds,'reference_path':str(reference),
+         'reference_sha256':campaign.file_hash(reference),'reference_position_um':asdict(frame.position),
+         'reference_context':SubstrateReference.from_frame(frame).context,'seed_focus_bundle_provenance':None,
+         'seed_focus':{'z_um':20},'elapsed_seconds':120.,'started_at':time.time()-86400,
+-        'algorithm_source_sha256':'old-code','chip_states':{},'seed_records':[],'boundary_attempts':[]}
++        'algorithm_source_sha256':'old-code','discovery_contract':campaign_contract(frame),'chip_states':{},'seed_records':[],'boundary_attempts':[]}
+     for name,value in [('batch.json',state),('configuration.json',cfg),('search-plan.json',search),
+                        ('layout.json',{'coordinate_frame_id':'fresh-test','chips':[]})]:atomic_json(out/name,value)
+     return cfg,reference,out,options,frame,transform,search
+@@ -191,7 +194,7 @@
+     seed=Frame(frame.rgb.copy(),Position(*xy,20),frame.pixel_size_um,0,metadata=frame.metadata.copy())
+     save_frame(out/'search/frames','seed_000000',seed)
+     discovery=out/'discovery/candidate001';discovery.mkdir(parents=True)
+-    atomic_json(discovery/'discovery.json',{'state':'estimated','records':[],
++    atomic_json(discovery/'discovery.json',{**discovery_contract(frame),'state':'estimated','records':[],
+         'estimated_outline':{'status':'estimated','polygon_um':[[1,1],[99,1],[99,99],[1,99]]}})
+     record={'index':index,'requested_xy_um':xy,'position_um':asdict(seed.position),'classification':'substrate_seed',
+         'image':'search/frames/seed_000000.tiff','hashes':{r:campaign.file_hash(out/r) for r in
+@@ -243,20 +246,14 @@
+     return saved_campaign,folder
+ 
+ 
+-def test_explicit_seed_only_failure_recovery_replays_and_keeps_budget(failed_seed_campaign,monkeypatch):
++def test_legacy_seed_only_recovery_is_rejected_without_connection_or_identity_rewrite(failed_seed_campaign,monkeypatch):
+     saved,folder=failed_seed_campaign;cfg,reference,out,options,frame,transform,search=saved
+-    scope=install_fake(monkeypatch,frame);original_discovery=(folder/'discovery.json').read_bytes();calls=[]
+-    def replay(scope,xy,transform,reference,output,edge_options,**kwargs):
+-        assert output==folder and kwargs['resume'] and kwargs['continue_unresolved'];calls.append(output)
+-        return {'state':'unresolved','reason':'seed_not_verified','records':json.loads(original_discovery)['records']}
+-    monkeypatch.setattr(campaign,'discover_sparse_outline',replay)
+-    result=campaign.run_chip_campaign(cfg,reference,out,[0,100,0,100],options,continue_discovery=True,
+-        allow_source_change=True,recover_seed_rejection=True)
+-    assert len(calls)==1 and result['state']=='search_sampling_complete'
+-    assert result['options']['walltime_budget_s']==3600 and 120<=result['elapsed_seconds']<150
+-    assert not result.get('budget_transitions') and result['classification_recoveries'][0]['attempt_id']=='candidate001'
+-    assert result['boundary_attempts'][0]['state']=='unresolved'
+-    assert (folder/'discovery.json').read_bytes()==original_discovery
++    before=(out/'batch.json').read_bytes();original=(folder/'discovery.json').read_bytes()
++    monkeypatch.setattr(campaign,'connect',lambda config:pytest.fail('Legacy migration connected hardware'))
++    with pytest.raises(SafetyError,match='Legacy seed-rejection recovery'):
++        campaign.run_chip_campaign(cfg,reference,out,[0,100,0,100],options,continue_discovery=True,
++            allow_source_change=True,recover_seed_rejection=True)
++    assert (out/'batch.json').read_bytes()==before and (folder/'discovery.json').read_bytes()==original
+ 
+ 
+ @pytest.mark.parametrize('change',['generic_error','second_frame','tampered_evidence','missing_flag','missing_source_flag','renew_budget'])
+@@ -274,3 +271,13 @@
+             allow_source_change=change!='missing_source_flag',recover_seed_rejection=change!='missing_flag',
+             continuation_walltime_s=9*3600 if change=='renew_budget' else None)
+     assert (out/'batch.json').read_bytes()==before
++
++
++def test_legacy_campaign_discovery_identity_requires_separate_reviewed_migration(saved_campaign,monkeypatch):
++    cfg,reference,out,options,frame,transform,search=saved_campaign
++    state=json.loads((out/'batch.json').read_text());state.pop('discovery_contract')
++    atomic_json(out/'batch.json',state);before=(out/'batch.json').read_bytes()
++    monkeypatch.setattr(campaign,'connect',lambda cfg:pytest.fail('Legacy algorithm transition opened hardware'))
++    with pytest.raises(SafetyError,match='separate reviewed campaign lineage'):
++        campaign.run_chip_campaign(cfg,reference,out,[0,100,0,100],options,continue_discovery=True,allow_source_change=True)
++    assert (out/'batch.json').read_bytes()==before
+--- /dev/null
++++ b/flakefinder/photometric_edges.py
+@@ -0,0 +1,206 @@
++"""Offline research: independently validate a label-derived boundary in raw RGB.
++
++Specific to the recorded dark-holder profile. These checks do not support bright
++holders or infer unobserved edges. All returned coordinates are image pixels;
++the original candidate remains unchanged when it passes validation.
++"""
++import cv2
++import numpy as np
++
++
++def validate_photometric_edge(frame, edge, matrix):
++    sh, sw = frame.rgb.shape[:2]
++    scale = min(1., 512/max(sh, sw)); w, h = round(sw*scale), round(sh*scale)
++    rgb = cv2.resize(frame.rgb.astype(np.float32), (w,h), interpolation=cv2.INTER_AREA)
++    rgb = cv2.GaussianBlur(rgb, (0,0), 1)
++    linear = np.asarray(matrix) @ np.diag([sw/w,sh/h])
++    origin = np.array([frame.position.x,frame.position.y]) + np.asarray(matrix) @ [(sw/w-sw)/2,(sh/h-sh)/2]
++    ns = np.asarray(edge['normal']); image_normal = linear.T @ ns
++    factor = np.linalg.norm(image_normal); image_normal /= factor
++    offset = (edge['offset_um']-origin@ns)/factor
++    tangent = np.array([-image_normal[1],image_normal[0]])
++    middle = np.array([(w-1)/2,(h-1)/2]); middle += image_normal*(offset-middle@image_normal)
++    # Intersect the proposed line with the field, then test independent normal
++    # profiles along it. The 50um search does not count as geometric evidence.
++    intersections=[]
++    for axis,upper in enumerate([w-1,h-1]):
++        if abs(tangent[axis])<1e-9:continue
++        for limit in (0,upper):
++            t=(limit-middle[axis])/tangent[axis];point=middle+t*tangent
++            if 0<=point[1-axis]<=[h-1,w-1][axis]:intersections.append(t)
++    base={'accepted':False,'candidate_unchanged':True,'method':'raw_RGB_dark_step_profiles',
++          'profile_assumption':'Holder is darker than exposed substrate in each recorded camera channel.'}
++    if len(intersections)<2:return dict(base,reason='Candidate does not cross the camera field.')
++    t0,t1=min(intersections),max(intersections)
++    offsets=np.arange(-int(np.ceil(50/factor)),int(np.ceil(50/factor))+1,dtype=float)
++    points=[];widths=[];deltas=[];tested=0
++    for t in np.linspace(t0,t1,64)[2:-2]:
++        centre=middle+t*tangent;coords=centre+offsets[:,None]*image_normal
++        valid=(coords[:,0]>=1)&(coords[:,0]<w-2)&(coords[:,1]>=1)&(coords[:,1]<h-2)
++        if valid.sum()<25:continue
++        coords=coords[valid];q=offsets[valid];tested+=1
++        profile=cv2.remap(rgb,coords[:,0].astype(np.float32)[None,:],coords[:,1].astype(np.float32)[None,:],cv2.INTER_LINEAR)[0]
++        g=cv2.GaussianBlur(profile[:,1,None],(0,0),1.5)[:,0]
++        derivative=-np.gradient(g)
++        noise=1.4826*np.median(abs(derivative-np.median(derivative)))
++        valid_peak=np.arange(len(q));valid_peak=valid_peak[(valid_peak>=10)&(valid_peak<len(q)-10)]
++        if not len(valid_peak):continue
++        peak=int(valid_peak[np.argmax(derivative[valid_peak])])
++        if derivative[peak]<=6*max(noise,.25):continue
++        left=np.median(profile[peak-10:peak-5],axis=0);right=np.median(profile[peak+5:peak+10],axis=0)
++        delta=left-right
++        if not np.all(delta>0):continue
++        # Transition width is measured, not a guessed alignment tolerance.
++        half=derivative[peak]/2;lo=hi=peak
++        while lo>0 and derivative[lo-1]>=half:lo-=1
++        while hi<len(q)-1 and derivative[hi+1]>=half:hi+=1
++        widths.append(float(q[hi]-q[lo]+1));points.append(coords[peak]);deltas.append(delta)
++    base.update(tested_profiles=tested,supported_profiles=len(points))
++    if len(points)<12:return dict(base,reason='Insufficient independent dark-step profiles.')
++    points=np.asarray(points);span=float(np.ptp(points@tangent))
++    if len(points)<.5*tested or span<.45*min(h,w):
++        return dict(base,reason='Raw edge support does not span enough of the field.',raw_span_px=span)
++    vx,vy,cx,cy=cv2.fitLine(points.astype(np.float32),cv2.DIST_HUBER,0,.01,.001).ravel()
++    normal=np.array([-vy,vx]);normal*=1 if normal@image_normal>=0 else -1
++    residual=(points-[cx,cy])@normal
++    scatter=max(1.,1.4826*float(np.median(abs(residual-np.median(residual)))))
++    inliers=abs(residual-np.median(residual))<=3*scatter
++    raw_span=float(np.ptp(points[inliers]@np.array([-normal[1],normal[0]])))
++    agreement_drift=raw_span*abs(float(normal@tangent))
++    # Both orientations must agree within the measured raw-line scatter over
++    # its observed support. A long wrong-angle line cannot pass on purity alone.
++    allowed_drift=6*scatter
++    displacement=abs(float(np.median(points@image_normal-offset)))
++    transition_width=float(np.quantile(widths,.9))
++    base.update(raw_normal_image=normal.tolist(),candidate_normal_image=image_normal.tolist(),
++        raw_working_shape=[h,w],
++        raw_span_px=raw_span,raw_scatter_px=scatter,orientation_drift_px=agreement_drift,
++        allowed_orientation_drift_px=allowed_drift,median_candidate_displacement_px=displacement,
++        raw_transition_width_px_p90=transition_width,inlier_profiles=int(inliers.sum()),
++        median_inside_minus_outside_RGB=np.median(deltas,axis=0).tolist(),
++        measured_raw_points_image=points[inliers].tolist())
++    if inliers.sum()<.5*tested:return dict(base,reason='Raw transition points are not a coherent line.')
++    if scatter>transition_width:
++        return dict(base,reason='Raw line scatter exceeds its measured transition width; possible occlusion or multiple edges.')
++    if agreement_drift>allowed_drift:return dict(base,reason='Candidate direction disagrees with the measured raw edge.')
++    if displacement>transition_width+3*scatter:return dict(base,reason='Candidate lies outside the measured raw transition.')
++    return dict(base,accepted=True,reason='Label line independently supported by a broadband dark edge.')
++
++
++def supported_edge(frame, labels, edge, matrix, *, allow_raw_refinement=False):
++    """Keep agreeing candidates; refine only coherent independently measured data.
++
++    Callers must explicitly opt in for newly recovered proposals. Previously
++    measured edges are never silently replaced. Raw refinement cannot rescue
++    insufficient dark-step support, large scatter, or a contradictory profile.
++    """
++    validation=validate_photometric_edge(frame,edge,matrix)
++    if validation['accepted']:
++        return edge,validation
++    refinable=validation['reason'] in (
++        'Candidate direction disagrees with the measured raw edge.',
++        'Candidate lies outside the measured raw transition.')
++    if not allow_raw_refinement or not refinable:return None,validation
++    points=np.asarray(validation['measured_raw_points_image']);h,w=validation['raw_working_shape']
++    sh,sw=frame.rgb.shape[:2];matrix=np.asarray(matrix)
++    linear=matrix@np.diag([sw/w,sh/h]);origin=np.array([frame.position.x,frame.position.y])+matrix@[(sw/w-sw)/2,(sh/h-sh)/2]
++    stage=points@linear.T+origin
++    normal=np.linalg.solve(linear.T,np.asarray(validation['raw_normal_image']));normal/=np.linalg.norm(normal)
++    offset=float(np.median(stage@normal))
++    lh0,lw0=labels.shape;scale=min(1.,320/max(lh0,lw0));lh,lw=round(lh0*scale),round(lw0*scale)
++    a=cv2.resize(labels,(lw,lh),interpolation=cv2.INTER_NEAREST);yy,xx=np.mgrid[:lh,:lw]
++    label_linear=matrix@np.diag([sw/lw,sh/lh]);label_origin=np.array([frame.position.x,frame.position.y])+matrix@[(sw/lw-sw)/2,(sh/lh-sh)/2]
++    image_normal=label_linear.T@normal;norm=np.linalg.norm(image_normal)
++    distance=(xx*image_normal[0]+yy*image_normal[1]+label_origin@normal-offset)/norm
++    inside,outside=distance< -4,distance>4
++    ps=float(np.mean(a[inside]==1))if inside.any()else 0.
++    ph=float(np.mean(a[outside]==2))if outside.any()else 0.
++    if min(inside.mean(),outside.mean())<.07 or min(ps,ph)<.78:
++        return None,dict(validation,reason='Raw-refined line fails unchanged label-side support gates.',refined_substrate_purity=ps,refined_holder_purity=ph)
++    refined=dict(normal=normal.tolist(),offset_um=offset,points_um=stage.tolist(),substrate_purity=ps,holder_purity=ph,
++        local_residual_px_p95=float(np.quantile(abs((points-points.mean(axis=0))@np.asarray(validation['raw_normal_image'])),.95)),
++        proposal_method='label_proposal_refined_from_independent_raw_RGB_dark_steps',raw_working_shape=[h,w])
++    return refined,dict(validation,accepted=True,candidate_unchanged=False,
++        reason='Replaced label proposal by coherent raw edge points; unchanged label-side gates passed.',
++        refined_substrate_purity=ps,refined_holder_purity=ph)
++
++
++def spatial_bracket_evidence(labels, original_side):
++    """Search-bracket evidence only; no seed, chip-boundary or focus acceptance."""
++    if original_side in ('substrate','holder'):
++        return {'side':original_side,'method':'original_classification','inferred':False}
++    h,w=labels.shape;sf=float(np.mean(labels==1));hf=float(np.mean(labels==2))
++    result={'side':'unknown','method':'whole_field_connected_support','inferred':False,
++            'substrate_fraction':sf,'holder_fraction':hf,
++            'qualification':'Search bracket only; does not relabel the centre, establish an edge, or verify focus.'}
++    # Reuse existing90%-substrate /95%-holder reference-patch standards; require
++    # spatially connected support rather than a mere aggregate colour fraction.
++    for value,name,enough in ((1,'substrate',sf>=.9 and hf<=.05),(2,'holder',hf>=.95 and sf<=.05)):
++        if not enough:continue
++        n,components,stats,_=cv2.connectedComponentsWithStats(np.uint8(labels==value),8)
++        if n<2:continue
++        index=1+int(np.argmax(stats[1:,cv2.CC_STAT_AREA]));mask=components==index
++        fractions=[float(mask[ys,xs].mean())for ys,xs in
++            [(slice(0,h//2),slice(0,w//2)),(slice(0,h//2),slice(w//2,None)),
++             (slice(h//2,None),slice(0,w//2)),(slice(h//2,None),slice(w//2,None))]]
++        if min(fractions)>=.8:
++            return dict(result,side=name,inferred=True,connected_quadrant_fractions=fractions)
++    return result
++
++
++def registered_substrate_consistency(line, observations, matrix, source_shape, margin_um=75.,patch_diameter_um=40.):
++    """Reject a half-plane that excludes independently observed substrate patches.
++
++    Observations are (name, labels, actual_xy); only >=90% substrate circular
++    patches count, using the campaign's recorded40um detectable-patch scale.
++    This tests the separated-convex-chip hypothesis; it does not establish it.
++    """
++    sh,sw=source_shape[:2];matrix=np.asarray(matrix);violations=[]
++    for name,labels,xy in observations:
++        h,w=labels.shape;linear=matrix@np.diag([sw/w,sh/h])
++        radius=max(1,int(np.ceil(patch_diameter_um/2/max(np.linalg.norm(linear,axis=0)))))
++        kernel=cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(2*radius+1,2*radius+1)).astype(np.float32);kernel/=kernel.sum()
++        support=cv2.filter2D(np.float32(labels==1),-1,kernel,borderType=cv2.BORDER_CONSTANT)
++        step=max(1,2*radius+1);yy,xx=np.mgrid[radius:h-radius:step,radius:w-radius:step]
++        good=support[yy,xx]>=.9
++        pixel=np.column_stack([xx[good],yy[good]])
++        if not len(pixel):continue
++        origin=np.asarray(xy)+matrix@[(sw/w-sw)/2,(sh/h-sh)/2]
++        stage=pixel@linear.T+origin
++        excess=stage@np.asarray(line['normal'])-line['offset_um']-margin_um
++        if np.count_nonzero(excess>0)>=3:
++            violations.append({'image':name,'excluded_substrate_patches':int(np.count_nonzero(excess>0)),
++                               'tested_patches':len(pixel),'max_excess_beyond_margin_um':float(excess.max())})
++    return {'accepted':not violations,'violations':violations,'margin_um':margin_um,
++            'patch_diameter_um':patch_diameter_um,'hypothesis':'Same separated convex chip across the supplied registered observations.'}
++
++
++ALGORITHM_VERSION = 'sparse_photometric_halfplanes_v2'
++PROFILE_MODEL = 'dark_holder_all_rgb_v1'
++
++
++def assess_edge_profile(profile, frame):
++    """An explicit measured optical contract, never an inferred holder model.
++
++    This first implementation is qualified only for the manually selected 20x
++    objective. Supporting another objective/holder requires a reviewed profile
++    and representative replay, not changing a magnification field at runtime.
++    """
++    from .layout import _context
++    report = {'supported': False, 'algorithm': ALGORITHM_VERSION,
++              'profile_assumption': 'Manual encoded objective at 20x; holder darker than substrate in all recorded RGB channels.'}
++    if not isinstance(profile, dict) or profile.get('schema') != 1 or not profile.get('profile_id'):
++        return dict(report, reason='An explicit versioned edge-validation profile is required.')
++    if profile.get('holder_model') != PROFILE_MODEL:
++        return dict(report, reason='Unsupported holder model; bright/unknown holders remain unresolved.')
++    if profile.get('manual_objective') is not True or profile.get('objective_magnification') != 20:
++        return dict(report, reason='This validator is qualified only for an explicitly selected manual 20x profile.')
++    context = _context(frame)
++    objective = context.get('objective') or {}
++    if objective.get('magnification') != 20 or context.get('objective_position') != profile.get('objective_position'):
++        return dict(report, reason='Measured objective does not match the declared manual 20x profile.')
++    if any(context.get(key) is None for key in ('camera_resources', 'camera_job_template', 'white_level', 'illumination_percent')):
++        return dict(report, reason='Camera, white-level and illumination metadata are required.')
++    if context != profile.get('optical_context'):
++        return dict(report, reason='Recorded camera/illumination/objective context differs from the declared profile.')
++    return dict(report, supported=True, profile_id=profile['profile_id'], reason='Explicit optical contract matches recorded metadata; individual raw edges still require validation.')
+--- /dev/null
++++ b/tests/sparse_profile_fixture.py
+@@ -0,0 +1,24 @@
++"""Explicit simulator optical contract; never supplies real hardware settings."""
++from test_chip_discovery import ImageStage as BaseStage
++from flakefinder.layout import _context
++from flakefinder.chip_discovery import file_hash
++from flakefinder.photometric_edges import ALGORITHM_VERSION
++import flakefinder.sparse_edges as edges
++import flakefinder.photometric_edges as photo
++
++class ImageStage(BaseStage):
++    def capture(self):
++        frame=super().capture()
++        frame.metadata.update(objective={'magnification':20},camera_job_template='synthetic fixed20x',illumination_percent=90)
++        return frame
++
++def profile_for(frame):
++    return {'schema':1,'profile_id':'synthetic20x-dark-holder','holder_model':'dark_holder_all_rgb_v1',
++        'manual_objective':True,'objective_position':2,'objective_magnification':20,'optical_context':_context(frame)}
++
++def campaign_contract(frame):
++    return {'algorithm':ALGORITHM_VERSION,'profile':profile_for(frame),
++        'edge_model_sha256':file_hash(edges.__file__),'photometric_model_sha256':file_hash(photo.__file__)}
++
++def discovery_contract(frame):
++    result=campaign_contract(frame);result['edge_validation_profile']=result.pop('profile');return result
+--- /dev/null
++++ b/tests/test_sparse_cli_profile.py
+@@ -0,0 +1,60 @@
++"""Standalone sparse preflight must not open hardware on invalid contracts."""
++from dataclasses import asdict
++import importlib.util,json,sys
++from pathlib import Path
++from types import SimpleNamespace
++import pytest
++from sparse_profile_fixture import ImageStage,profile_for
++from test_chip_discovery import RECT
++from flakefinder.imaging import save_frame
++from flakefinder.model import SafetyError,Cancelled
++
++@pytest.fixture
++def cli_case(tmp_path,monkeypatch):
++    path=Path(__file__).resolve().parents[1]/'scripts/discover_chip_boundaries.py'
++    spec=importlib.util.spec_from_file_location('isolated_boundary_cli',path)
++    cli=importlib.util.module_from_spec(spec);spec.loader.exec_module(cli)
++    scope=ImageStage([RECT]);frame=scope.capture();save_frame(tmp_path/'reference','raw',frame)
++    cfg={'schema':1,'backend':'simulator','limits':asdict(scope.limits),'camera_transform':asdict(scope.transform)}
++    cfgpath=tmp_path/'config.json';cfgpath.write_text(json.dumps(cfg))
++    args=['discover_chip_boundaries.py','edges','--config',str(cfgpath),'--reference',str(tmp_path/'reference/raw.tiff'),
++        '--output',str(tmp_path/'output'),'--bounds','20','1200','20','1100']
++    monkeypatch.setattr(sys,'argv',args)
++    monkeypatch.setattr(cli,'connect',lambda cfg:pytest.fail('Rejected standalone request opened hardware'))
++    return cli,cfg,cfgpath,frame,args,tmp_path/'output'
++
++@pytest.mark.parametrize('kind',['missing','bright','wrong_objective','context_drift'])
++def test_invalid_profile_precedes_hardware_connection(cli_case,kind):
++    cli,cfg,path,frame,args,out=cli_case
++    if kind!='missing':
++        profile=profile_for(frame)
++        if kind=='bright':profile['holder_model']='bright_holder'
++        if kind=='wrong_objective':profile['objective_magnification']=10
++        if kind=='context_drift':profile['optical_context']['illumination_percent']=20
++        cfg['chip_discovery']={'edge_validation_profile':profile};path.write_text(json.dumps(cfg))
++    with pytest.raises(SafetyError,match='before connection'):cli.main()
++    assert not out.exists()
++
++@pytest.mark.parametrize('kind',['stop','legacy','budget'])
++def test_stop_legacy_identity_and_budget_precede_connection(cli_case,kind):
++    cli,cfg,path,frame,args,out=cli_case
++    cfg['chip_discovery']={'edge_validation_profile':profile_for(frame)};path.write_text(json.dumps(cfg))
++    if kind=='stop':out.mkdir();(out/'STOP').write_text('operator')
++    if kind=='legacy':
++        out.mkdir();(out/'discovery.json').write_text(json.dumps({'algorithm':'sparse_coarse_bracket_halfplanes_v1'}));args.append('--resume')
++    if kind=='budget':args.extend(['--max-probes','33'])
++    exception,match={'stop':(Cancelled,'STOP'),'legacy':(SafetyError,'cannot resume'),'budget':(ValueError,'32')}[kind]
++    with pytest.raises(exception,match=match):cli.main()
++    if kind=='stop':assert (out/'STOP').read_text()=='operator'
++
++def test_explicit_profile_file_passes_to_discovery_and_adapter_closes(cli_case,monkeypatch):
++    cli,cfg,path,frame,args,out=cli_case;profile=profile_for(frame)
++    profilepath=path.with_name('profile.json');profilepath.write_text(json.dumps(profile))
++    args.extend(['--edge-validation-profile',str(profilepath)]);closed=[];calls=[]
++    scope=SimpleNamespace(close=lambda:closed.append(True))
++    monkeypatch.setattr(cli,'connect',lambda cfg:scope);monkeypatch.setattr(cli,'arm',lambda *args:None)
++    def discover(*args,**kwargs):
++        calls.append(kwargs);return {'state':'unresolved','records':[]}
++    monkeypatch.setattr(cli,'discover_sparse_outline',discover)
++    cli.main()
++    assert calls[0]['edge_validation_profile']==profile and closed==[True]

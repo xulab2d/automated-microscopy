@@ -1,0 +1,472 @@
+[
+  {
+    "tile_id": "tile_000000",
+    "status": "excluded",
+    "reason": "No sufficient measured on-chip interior; keep excluded."
+  },
+  {
+    "tile_id": "tile_000001",
+    "status": "normalized",
+    "raw_source_hashes_verified": true,
+    "method": "experimental_observed_enclosure_and_recorded_substrate_normalization",
+    "label_sha256": "cc9e7ac68c0598ef500fd2647de3bd7ad131b40833b58ee8f750baa7fd14ce26",
+    "enclosure_sha256": "1a5b2084ef76ae7762fa37c7d95d3485198bb2a481d57b5a3f4296250fcbfdab",
+    "source_position": {
+      "x": -13159.047,
+      "y": -8312.082,
+      "z": 15603.827999999998
+    },
+    "source_optics": {
+      "sample_id": "MoTe2-2026-10-08",
+      "material": "MoTe2",
+      "substrate": "SiO2/Si",
+      "oxide_nm": 285,
+      "oxide_process": "wet",
+      "objective": "EC Epiplan 20x/0.4 HD M27",
+      "camera": "Axiocam 305 color",
+      "exposure_ms": 200.0,
+      "illumination": "reflected brightfield",
+      "illumination_percent": 93.44422700587084,
+      "white_balance": "0.25007564,1,2.61244442",
+      "white_level": 4095,
+      "color_profile_kind": "fixed acquisition channel balance; not a neutral-reference color calibration",
+      "coordinate_frame": "XY re-zeroed by operator; new measured positions 2026-10-08"
+    },
+    "edge_margin_um": 12,
+    "background_support_clearance_um": 1.0,
+    "domain_fraction": 0.3815497640734752,
+    "background_support_fraction": 0.32960427826064986,
+    "background_samples": 11664,
+    "retained_background_samples": 10909,
+    "model_selection": "four spatial block groups, simplest within one standard error of lowest validation error",
+    "models": [
+      {
+        "degree": 0,
+        "columns": 1,
+        "fold_scores": [
+          0.0629813418300954,
+          0.0683511019653458,
+          0.07097916770746593,
+          0.06356064894038244
+        ],
+        "mean": 0.0664680651108224,
+        "standard_error": 0.0019258371006187756
+      },
+      {
+        "degree": 1,
+        "columns": 3,
+        "fold_scores": [
+          0.05987234499236317,
+          0.0615261117544922,
+          0.06273093619296592,
+          0.06382880729447157
+        ],
+        "mean": 0.06198955005857321,
+        "standard_error": 0.0008480297230516743
+      },
+      {
+        "degree": 2,
+        "columns": 6,
+        "fold_scores": [
+          0.05809394202777875,
+          0.05915254282665138,
+          0.05927125642011253,
+          0.058765426129523374
+        ],
+        "mean": 0.058820791851016505,
+        "standard_error": 0.0002652597887767723
+      }
+    ],
+    "chosen_degree": 2,
+    "coefficients": [
+      [
+        1481.2636181008259,
+        1817.265874166604,
+        1422.110246362312
+      ],
+      [
+        -18.250688515143807,
+        29.461012178711005,
+        33.4791747021294
+      ],
+      [
+        -45.21859971686759,
+        -5.497365102238357,
+        -15.069522828899807
+      ],
+      [
+        -21.715654765641844,
+        -82.25312908822431,
+        -108.28704698300142
+      ],
+      [
+        26.094045380551737,
+        -1.692883006584105,
+        12.705029412894463
+      ],
+      [
+        6.343517965732666,
+        -59.26977242990802,
+        -68.38146030888245
+      ]
+    ],
+    "minimum_background_inside_domain_rgb": [
+      1428.51611328125,
+      1698.0137939453125,
+      1276.5562744140625
+    ],
+    "domain_does_not_require_substrate_color": true,
+    "outside_domain": "invalid / NaN; never clamp or interpret",
+    "qualification": "Isolated normalization check; not a validated flake or thin-layer detector."
+  },
+  {
+    "tile_id": "tile_000007",
+    "status": "excluded",
+    "reason": "No sufficient measured on-chip interior; keep excluded."
+  },
+  {
+    "tile_id": "tile_000032",
+    "status": "normalized",
+    "raw_source_hashes_verified": true,
+    "method": "experimental_observed_enclosure_and_recorded_substrate_normalization",
+    "label_sha256": "fc3f1e66e26b9c53f96529eea46c5c8097bd59564ef31aafc5cffe1dfae2b8c6",
+    "enclosure_sha256": "1a5b2084ef76ae7762fa37c7d95d3485198bb2a481d57b5a3f4296250fcbfdab",
+    "source_position": {
+      "x": -8858.027,
+      "y": -7746.347,
+      "z": 15576.015
+    },
+    "source_optics": {
+      "sample_id": "MoTe2-2026-10-08",
+      "material": "MoTe2",
+      "substrate": "SiO2/Si",
+      "oxide_nm": 285,
+      "oxide_process": "wet",
+      "objective": "EC Epiplan 20x/0.4 HD M27",
+      "camera": "Axiocam 305 color",
+      "exposure_ms": 200.0,
+      "illumination": "reflected brightfield",
+      "illumination_percent": 93.44422700587084,
+      "white_balance": "0.25007564,1,2.61244442",
+      "white_level": 4095,
+      "color_profile_kind": "fixed acquisition channel balance; not a neutral-reference color calibration",
+      "coordinate_frame": "XY re-zeroed by operator; new measured positions 2026-10-08"
+    },
+    "edge_margin_um": 12,
+    "background_support_clearance_um": 1.0,
+    "domain_fraction": 0.1247236469755925,
+    "background_support_fraction": 0.1051469961215827,
+    "background_samples": 3724,
+    "retained_background_samples": 3490,
+    "model_selection": "four spatial block groups, simplest within one standard error of lowest validation error",
+    "models": [
+      {
+        "degree": 0,
+        "columns": 1,
+        "fold_scores": [
+          0.07092829621778918,
+          0.059940141075186845,
+          0.08058520305570947,
+          0.06217690655648489
+        ],
+        "mean": 0.0684076367262926,
+        "standard_error": 0.004700774112046744
+      },
+      {
+        "degree": 1,
+        "columns": 3,
+        "fold_scores": [
+          0.06502496297217512,
+          0.09072672517414732,
+          0.08248712939532178,
+          0.0636130146424091
+        ],
+        "mean": 0.07546295804601333,
+        "standard_error": 0.006656415889428557
+      },
+      {
+        "degree": 2,
+        "columns": 6,
+        "fold_scores": [
+          0.05886279500290748,
+          0.058258144990029084,
+          0.05947947092137324,
+          0.058552123579412516
+        ],
+        "mean": 0.05878813362343058,
+        "standard_error": 0.0002614240287228534
+      }
+    ],
+    "chosen_degree": 2,
+    "coefficients": [
+      [
+        1576.16729791416,
+        1798.9862353674575,
+        1498.9159056307508
+      ],
+      [
+        51.39176068961679,
+        -27.574568831860567,
+        13.7625714276611
+      ],
+      [
+        -269.77471959875265,
+        -34.90411722806837,
+        -266.49302932107594
+      ],
+      [
+        -16.123336115961294,
+        -86.94834265611091,
+        -94.8707063026452
+      ],
+      [
+        -51.895036569396,
+        66.40850012036107,
+        30.66743633340571
+      ],
+      [
+        159.29589038472443,
+        -31.987222300674183,
+        91.3986415654749
+      ]
+    ],
+    "minimum_background_inside_domain_rgb": [
+      1434.150146484375,
+      1606.3126220703125,
+      1184.520751953125
+    ],
+    "domain_does_not_require_substrate_color": true,
+    "outside_domain": "invalid / NaN; never clamp or interpret",
+    "qualification": "Isolated normalization check; not a validated flake or thin-layer detector."
+  },
+  {
+    "tile_id": "tile_000180",
+    "status": "normalized",
+    "raw_source_hashes_verified": true,
+    "method": "experimental_observed_enclosure_and_recorded_substrate_normalization",
+    "label_sha256": "16f0cdb76af368ae803e9b9189cf42d36adec59a9ff8f69757850ff38449a5a5",
+    "enclosure_sha256": "1a5b2084ef76ae7762fa37c7d95d3485198bb2a481d57b5a3f4296250fcbfdab",
+    "source_position": {
+      "x": -10512.266,
+      "y": -5483.407,
+      "z": 15481.639999999998
+    },
+    "source_optics": {
+      "sample_id": "MoTe2-2026-10-08",
+      "material": "MoTe2",
+      "substrate": "SiO2/Si",
+      "oxide_nm": 285,
+      "oxide_process": "wet",
+      "objective": "EC Epiplan 20x/0.4 HD M27",
+      "camera": "Axiocam 305 color",
+      "exposure_ms": 200.0,
+      "illumination": "reflected brightfield",
+      "illumination_percent": 93.44422700587084,
+      "white_balance": "0.25007564,1,2.61244442",
+      "white_level": 4095,
+      "color_profile_kind": "fixed acquisition channel balance; not a neutral-reference color calibration",
+      "coordinate_frame": "XY re-zeroed by operator; new measured positions 2026-10-08"
+    },
+    "edge_margin_um": 12,
+    "background_support_clearance_um": 1.0,
+    "domain_fraction": 1.0,
+    "background_support_fraction": 0.214864673871848,
+    "background_samples": 7729,
+    "retained_background_samples": 7269,
+    "model_selection": "four spatial block groups, simplest within one standard error of lowest validation error",
+    "models": [
+      {
+        "degree": 0,
+        "columns": 1,
+        "fold_scores": [
+          0.07838238379310566,
+          0.07266307770999687,
+          0.07970203111581803,
+          0.06634918742723526
+        ],
+        "mean": 0.07427417001153896,
+        "standard_error": 0.0030515032362209782
+      },
+      {
+        "degree": 1,
+        "columns": 3,
+        "fold_scores": [
+          0.07008843286253323,
+          0.06716038391562239,
+          0.06891667323755613,
+          0.08682637544203564
+        ],
+        "mean": 0.07324796636443684,
+        "standard_error": 0.004565948288237857
+      },
+      {
+        "degree": 2,
+        "columns": 6,
+        "fold_scores": [
+          0.05882447913665642,
+          0.06100522136224294,
+          0.060311294816938865,
+          0.06141546288137589
+        ],
+        "mean": 0.06038911454930353,
+        "standard_error": 0.0005691454404743409
+      }
+    ],
+    "chosen_degree": 2,
+    "coefficients": [
+      [
+        1435.598886352225,
+        1833.854193945355,
+        1427.6162831052366
+      ],
+      [
+        -3.012973070377912,
+        37.974917682766645,
+        41.06966515057138
+      ],
+      [
+        -27.480766596374437,
+        -11.964291245578835,
+        -12.08807859844714
+      ],
+      [
+        -16.28489545982271,
+        -92.33763468102961,
+        -110.86516973399917
+      ],
+      [
+        -20.57086350615458,
+        5.08621681153941,
+        1.490326617278651
+      ],
+      [
+        -6.677315280487346,
+        -70.85221769318156,
+        -79.62074933691558
+      ]
+    ],
+    "minimum_background_inside_domain_rgb": [
+      1361.572021484375,
+      1615.6390380859375,
+      1182.482177734375
+    ],
+    "domain_does_not_require_substrate_color": true,
+    "outside_domain": "invalid / NaN; never clamp or interpret",
+    "qualification": "Isolated normalization check; not a validated flake or thin-layer detector."
+  },
+  {
+    "tile_id": "tile_000354",
+    "status": "normalized",
+    "raw_source_hashes_verified": true,
+    "method": "experimental_observed_enclosure_and_recorded_substrate_normalization",
+    "label_sha256": "7636ef58657b94f7287f7676f8c5a35428e4f54c12ca38c6174cd7105397eab8",
+    "enclosure_sha256": "1a5b2084ef76ae7762fa37c7d95d3485198bb2a481d57b5a3f4296250fcbfdab",
+    "source_position": {
+      "x": -7865.484,
+      "y": -2937.6,
+      "z": 15371.327999999998
+    },
+    "source_optics": {
+      "sample_id": "MoTe2-2026-10-08",
+      "material": "MoTe2",
+      "substrate": "SiO2/Si",
+      "oxide_nm": 285,
+      "oxide_process": "wet",
+      "objective": "EC Epiplan 20x/0.4 HD M27",
+      "camera": "Axiocam 305 color",
+      "exposure_ms": 200.0,
+      "illumination": "reflected brightfield",
+      "illumination_percent": 93.44422700587084,
+      "white_balance": "0.25007564,1,2.61244442",
+      "white_level": 4095,
+      "color_profile_kind": "fixed acquisition channel balance; not a neutral-reference color calibration",
+      "coordinate_frame": "XY re-zeroed by operator; new measured positions 2026-10-08"
+    },
+    "edge_margin_um": 12,
+    "background_support_clearance_um": 1.0,
+    "domain_fraction": 0.2875510463515084,
+    "background_support_fraction": 0.18253452833644954,
+    "background_samples": 6498,
+    "retained_background_samples": 6151,
+    "model_selection": "four spatial block groups, simplest within one standard error of lowest validation error",
+    "models": [
+      {
+        "degree": 0,
+        "columns": 1,
+        "fold_scores": [
+          0.06912286091010929,
+          0.0805909462524359,
+          0.07338789890193015,
+          0.08462387958772148
+        ],
+        "mean": 0.0769313964130492,
+        "standard_error": 0.0034892239315205817
+      },
+      {
+        "degree": 1,
+        "columns": 3,
+        "fold_scores": [
+          0.06554077052008746,
+          0.06007397090910217,
+          0.06477960274635453,
+          0.0606869384697183
+        ],
+        "mean": 0.06277032066131562,
+        "standard_error": 0.001394136239748276
+      },
+      {
+        "degree": 2,
+        "columns": 6,
+        "fold_scores": [
+          0.06075714950142824,
+          0.05896363293785767,
+          0.06065861715372223,
+          0.06055690747867422
+        ],
+        "mean": 0.060234076767920586,
+        "standard_error": 0.000425449450274492
+      }
+    ],
+    "chosen_degree": 2,
+    "coefficients": [
+      [
+        1435.6252322919922,
+        1836.862988066362,
+        1447.8867907136316
+      ],
+      [
+        -110.06370624454838,
+        91.08663168331269,
+        137.9457863648578
+      ],
+      [
+        65.05839441521881,
+        -63.616364401056934,
+        -50.89813279359315
+      ],
+      [
+        -85.93905865462906,
+        -67.73114493650306,
+        -50.758038498913194
+      ],
+      [
+        45.68776640316853,
+        -37.04957248758794,
+        -27.728252072301657
+      ],
+      [
+        -53.00712689447634,
+        -36.88340034793405,
+        -51.63140521329676
+      ]
+    ],
+    "minimum_background_inside_domain_rgb": [
+      1364.740234375,
+      1614.594970703125,
+      1184.3818359375
+    ],
+    "domain_does_not_require_substrate_color": true,
+    "outside_domain": "invalid / NaN; never clamp or interpret",
+    "qualification": "Isolated normalization check; not a validated flake or thin-layer detector."
+  }
+]

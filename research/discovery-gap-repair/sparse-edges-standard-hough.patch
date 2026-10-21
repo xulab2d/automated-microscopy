@@ -1,0 +1,72 @@
+--- a/flakefinder/sparse_edges.py
++++ b/flakefinder/sparse_edges.py
+@@ -16,6 +16,47 @@
+ 
+ from .layout import SUBSTRATE, NON_SUBSTRATE
+ from .model import atomic_json
++
++
++def _standard_hough_candidate(edges, s, b):
++    h, w = edges.shape
++    # Hough sorts peaks by votes. Evaluate only the strongest twelve; this is a
++    # bounded proposal fallback, not a search over arbitrary weak separators.
++    lines = cv2.HoughLines(edges, 1, np.pi/720, threshold=35)
++    if lines is None:
++        return None
++    yy, xx = np.mgrid[:h, :w]
++    best = None
++    for offset, angle in lines.reshape(-1, 2)[:12]:
++        normal = np.array([np.cos(angle), np.sin(angle)], float)
++        distance = xx*normal[0]+yy*normal[1]-offset
++        if np.median(distance[b]) < np.median(distance[s]):
++            normal, distance = -normal, -distance
++        inside, outside = distance < -4, distance > 4
++        if min(inside.mean(), outside.mean()) < .07:
++            continue
++        substrate_purity = float(s[inside].mean())
++        holder_purity = float(b[outside].mean())
++        if substrate_purity < .78 or holder_purity < .78:
++            continue
++        near = (edges > 0) & (abs(distance) < 3)
++        points = np.column_stack([xx[near], yy[near]]).astype(float)
++        if len(points) < .4*min(h, w):
++            continue
++        tangent = np.array([-normal[1], normal[0]])
++        measured_span = float(np.ptp(points @ tangent))
++        if measured_span < .45*min(h, w):
++            continue
++        centre = points.mean(axis=0)
++        _, _, vt = np.linalg.svd(points-centre, full_matrices=False)
++        fitted_normal = vt[-1]
++        if fitted_normal @ normal < 0:
++            fitted_normal = -fitted_normal
++        residual = np.abs((points-centre) @ fitted_normal)
++        score = min(substrate_purity, holder_purity)*measured_span
++        if best is None or score > best[0]:
++            best = (score, points, fitted_normal, substrate_purity, holder_purity, residual)
++    return best
+ 
+ 
+ def coherent_edge(labels, position_um, source_shape, matrix):
+@@ -36,11 +77,9 @@
+     edges[:, :4] = edges[:, -4:] = 0
+     lines = cv2.HoughLinesP(edges, 1, np.pi/720, threshold=35,
+                             minLineLength=.45*min(h, w), maxLineGap=12)
+-    if lines is None:
+-        return None
+     yy, xx = np.mgrid[:h, :w]
+     best = None
+-    for x1, y1, x2, y2 in lines.reshape(-1, 4):
++    for x1, y1, x2, y2 in (() if lines is None else lines.reshape(-1, 4)):
+         tangent = np.array([x2-x1, y2-y1], float)
+         normal = np.array([-tangent[1], tangent[0]]) / np.linalg.norm(tangent)
+         offset = normal @ [x1, y1]
+@@ -67,6 +106,8 @@
+         score = min(substrate_purity, holder_purity)*np.linalg.norm(tangent)
+         if best is None or score > best[0]:
+             best = (score, points, fitted_normal, substrate_purity, holder_purity, residual)
++    if best is None:
++        best = _standard_hough_candidate(edges, s, b)
+     if best is None:
+         return None
+     _, points, normal, ps, ph, residual = best

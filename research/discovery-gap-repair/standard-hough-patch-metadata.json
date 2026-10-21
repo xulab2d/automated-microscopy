@@ -1,0 +1,23 @@
+{
+  "baseline_source_sha256": "a87c6fa01fc2b1bcbff0dc7fbc0728391c621763f758ad39288b6e1c079904ac",
+  "candidate_source_sha256": "1bb15a5fca29cbf67ffd31009de5352bca04c9ee095436ffc2fb3853e35b4a0f",
+  "changed_production_file": false,
+  "separate_gap_patch_target": "flakefinder/sparse_acquisition.py",
+  "fallback_max_proposals": 12,
+  "production_source": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\flakefinder\\sparse_edges.py",
+  "tests_passed": 6,
+  "accepted_existing_edges_unchanged": 7,
+  "missed_saved_edges_recovered": 3,
+  "negative_controls_rejected": 6,
+  "full_saved_candidate010_replay": {
+    "status": "estimated",
+    "line_count": 4,
+    "inspected_images": 26,
+    "processing_seconds": 0.31181730000389507
+  },
+  "production_edge_source_still_matches": true,
+  "production_acquisition_source_still_matches_gap_patch": true,
+  "deployment_blocked_by_counterexamples": true,
+  "blocking_evidence": "candidates013-016-conclusions.json",
+  "qualification": "Initial6 tests did not cover blurred contamination/edge-orientation errors found in later saved images."
+}

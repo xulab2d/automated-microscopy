@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "run_id": "test_missing_cleanup_runtime_i0",
+  "worker_pid": 25484,
+  "state": "unavailable",
+  "error": "PowerShell 7 or run-scoped cleanup script is unavailable"
+}

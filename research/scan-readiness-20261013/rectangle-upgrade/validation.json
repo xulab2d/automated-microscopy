@@ -1,0 +1,34 @@
+{
+  "donor_run": "scan-20261013-212016-7f8d2797",
+  "isolated_source": "research/software-rectangle-20261013",
+  "combined_suite": {
+    "passed": 176,
+    "skipped": 1,
+    "seconds": 33.13
+  },
+  "actual_saved_data_replay": {
+    "candidate": "candidate001",
+    "reanalyzed_image": "frames/probe_000006.tiff",
+    "new_captures": 0,
+    "new_motion": 0,
+    "approximate_dimensions_mm": [
+      8.41,
+      9.89
+    ],
+    "planning_uncertainty_um": 235.01,
+    "observed_focus_anchors": 4,
+    "planned_tiles": 999
+  },
+  "fresh_synthetic_rectangle": {
+    "minimum_chip_mm": 5,
+    "maximum_geometry_frames": 17,
+    "autofocus_calls": 0
+  },
+  "deployment_state": "deployed_and_running",
+  "run_id": "scan-20261013-215137-c4f3127d",
+  "live_verification": "First recovered outline accepted; chip001 measuring_focus_surface, 999 planned tiles, zero raster tiles at verification.",
+  "final_focus_integration": {
+    "passed": 35,
+    "actual_saved_anchor_rois_registered": 4
+  }
+}

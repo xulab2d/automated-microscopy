@@ -1,0 +1,364 @@
+{
+  "schema": 1,
+  "state": "complete",
+  "mode": "per_tile_autofocus",
+  "centres_um": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      100.0
+    ],
+    [
+      50.0,
+      50.0
+    ],
+    [
+      100.0,
+      0.0
+    ],
+    [
+      100.0,
+      100.0
+    ]
+  ],
+  "seed_points_um": [],
+  "anchors": [
+    {
+      "index": 0,
+      "requested_xy_um": [
+        0.0,
+        0.0
+      ],
+      "search_seed": {
+        "method": "provisional_search_only_plane_seed",
+        "z_um": 10.000000000000004,
+        "source_points_um": [
+          [
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            100.0,
+            12.0
+          ],
+          [
+            100.0,
+            0.0,
+            11.0
+          ]
+        ],
+        "fit_origin_xy_um": [
+          33.333333333333336,
+          33.333333333333336
+        ],
+        "fit_coefficients": [
+          0.009999999999999962,
+          0.019999999999999903,
+          10.999999999999998
+        ],
+        "residuals_um": [
+          -3.552713678800501e-15,
+          7.105427357601002e-15,
+          1.7763568394002505e-15
+        ],
+        "max_residual_um": 7.105427357601002e-15,
+        "extrapolated_search_seed": false,
+        "prediction_is_focus_evidence": false,
+        "requires_local_autofocus": true,
+        "source_role": "search_only_approximate_xy"
+      },
+      "local_search_bounds_um": [
+        6.0,
+        14.0
+      ],
+      "local_search_strategy": "quick_plane_seeded_with_full_sweep_fallback",
+      "quick_half_range_um": 2.0,
+      "focus_budget": {
+        "max_seconds": 180.0,
+        "max_captures": 48,
+        "captures_started": 0,
+        "elapsed_seconds": 0.031000000002677552,
+        "completed_actions": 0,
+        "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline"
+      },
+      "local_result": {
+        "success": false,
+        "z_um": 10,
+        "score": 0,
+        "prominence": 0,
+        "reason": "Unresolved",
+        "samples": [],
+        "outcome": "non_peak",
+        "budget": null
+      },
+      "status": "autofocus_failed",
+      "reason": "Unresolved"
+    },
+    {
+      "index": 1,
+      "requested_xy_um": [
+        100.0,
+        0.0
+      ],
+      "search_seed": {
+        "method": "provisional_search_only_plane_seed",
+        "z_um": 10.999999999999998,
+        "source_points_um": [
+          [
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            100.0,
+            12.0
+          ],
+          [
+            100.0,
+            0.0,
+            11.0
+          ]
+        ],
+        "fit_origin_xy_um": [
+          33.333333333333336,
+          33.333333333333336
+        ],
+        "fit_coefficients": [
+          0.009999999999999962,
+          0.019999999999999903,
+          10.999999999999998
+        ],
+        "residuals_um": [
+          -3.552713678800501e-15,
+          7.105427357601002e-15,
+          1.7763568394002505e-15
+        ],
+        "max_residual_um": 7.105427357601002e-15,
+        "extrapolated_search_seed": false,
+        "prediction_is_focus_evidence": false,
+        "requires_local_autofocus": true,
+        "source_role": "search_only_approximate_xy"
+      },
+      "local_search_bounds_um": [
+        6.999999999999998,
+        14.999999999999998
+      ],
+      "local_search_strategy": "quick_plane_seeded_with_full_sweep_fallback",
+      "quick_half_range_um": 2.0,
+      "focus_budget": {
+        "max_seconds": 180.0,
+        "max_captures": 48,
+        "captures_started": 0,
+        "elapsed_seconds": 0.030999999988125637,
+        "completed_actions": 0,
+        "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline"
+      },
+      "local_result": {
+        "success": false,
+        "z_um": 10.999999999999998,
+        "score": 0,
+        "prominence": 0,
+        "reason": "Unresolved",
+        "samples": [],
+        "outcome": "non_peak",
+        "budget": null
+      },
+      "status": "autofocus_failed",
+      "reason": "Unresolved"
+    },
+    {
+      "index": 2,
+      "requested_xy_um": [
+        100.0,
+        100.0
+      ],
+      "search_seed": {
+        "method": "provisional_search_only_plane_seed",
+        "z_um": 12.99999999999999,
+        "source_points_um": [
+          [
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            100.0,
+            12.0
+          ],
+          [
+            100.0,
+            0.0,
+            11.0
+          ]
+        ],
+        "fit_origin_xy_um": [
+          33.333333333333336,
+          33.333333333333336
+        ],
+        "fit_coefficients": [
+          0.009999999999999962,
+          0.019999999999999903,
+          10.999999999999998
+        ],
+        "residuals_um": [
+          -3.552713678800501e-15,
+          7.105427357601002e-15,
+          1.7763568394002505e-15
+        ],
+        "max_residual_um": 7.105427357601002e-15,
+        "extrapolated_search_seed": true,
+        "prediction_is_focus_evidence": false,
+        "requires_local_autofocus": true,
+        "source_role": "search_only_approximate_xy"
+      },
+      "local_search_bounds_um": [
+        8.99999999999999,
+        16.99999999999999
+      ],
+      "local_search_strategy": "quick_plane_seeded_with_full_sweep_fallback",
+      "quick_half_range_um": 2.0,
+      "focus_budget": {
+        "max_seconds": 180.0,
+        "max_captures": 48,
+        "captures_started": 0,
+        "elapsed_seconds": 0.031000000002677552,
+        "completed_actions": 0,
+        "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline"
+      },
+      "local_result": {
+        "success": false,
+        "z_um": 12.99999999999999,
+        "score": 0,
+        "prominence": 0,
+        "reason": "Unresolved",
+        "samples": [],
+        "outcome": "non_peak",
+        "budget": null
+      },
+      "status": "autofocus_failed",
+      "reason": "Unresolved"
+    },
+    {
+      "index": 3,
+      "requested_xy_um": [
+        0.0,
+        100.0
+      ],
+      "search_seed": {
+        "method": "provisional_search_only_plane_seed",
+        "z_um": 11.999999999999993,
+        "source_points_um": [
+          [
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            0.0,
+            100.0,
+            12.0
+          ],
+          [
+            100.0,
+            0.0,
+            11.0
+          ]
+        ],
+        "fit_origin_xy_um": [
+          33.333333333333336,
+          33.333333333333336
+        ],
+        "fit_coefficients": [
+          0.009999999999999962,
+          0.019999999999999903,
+          10.999999999999998
+        ],
+        "residuals_um": [
+          -3.552713678800501e-15,
+          7.105427357601002e-15,
+          1.7763568394002505e-15
+        ],
+        "max_residual_um": 7.105427357601002e-15,
+        "extrapolated_search_seed": false,
+        "prediction_is_focus_evidence": false,
+        "requires_local_autofocus": true,
+        "source_role": "search_only_approximate_xy"
+      },
+      "local_search_bounds_um": [
+        7.999999999999993,
+        15.999999999999993
+      ],
+      "local_search_strategy": "quick_plane_seeded_with_full_sweep_fallback",
+      "quick_half_range_um": 2.0,
+      "focus_budget": {
+        "max_seconds": 180.0,
+        "max_captures": 48,
+        "captures_started": 0,
+        "elapsed_seconds": 0.030999999988125637,
+        "completed_actions": 0,
+        "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline"
+      },
+      "local_result": {
+        "success": false,
+        "z_um": 11.999999999999993,
+        "score": 0,
+        "prominence": 0,
+        "reason": "Unresolved",
+        "samples": [],
+        "outcome": "non_peak",
+        "budget": null
+      },
+      "status": "autofocus_failed",
+      "reason": "Unresolved"
+    }
+  ],
+  "verified_points_um": [],
+  "search_seed_points_um": [
+    [
+      0.0,
+      0.0,
+      10.0
+    ],
+    [
+      0.0,
+      100.0,
+      12.0
+    ],
+    [
+      100.0,
+      0.0,
+      11.0
+    ]
+  ],
+  "search_seeds_are_focus_evidence": false,
+  "max_residual_um": 1.0,
+  "search_bounds_um": null,
+  "attempt_folder": "attempt-4d24ad07444a44878c68d694287d257a",
+  "extrapolation_allowed": false,
+  "anchor_centres_um": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      100.0,
+      0.0
+    ],
+    [
+      100.0,
+      100.0
+    ],
+    [
+      0.0,
+      100.0
+    ]
+  ],
+  "reason": "Fewer than three noncollinear verified focus anchors."
+}

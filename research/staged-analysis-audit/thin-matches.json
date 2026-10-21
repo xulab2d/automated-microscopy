@@ -1,0 +1,788 @@
+[
+  {
+    "instance_label": 3,
+    "bbox_px": [
+      1876,
+      91,
+      420,
+      655
+    ],
+    "centroid_px": [
+      2099.6732378198194,
+      456.1952802490121
+    ],
+    "area_um2": 1347.9283687499997,
+    "usable_width_um": 16.422003421783447,
+    "stage_xy_um": [
+      -7711.309786562583,
+      -7272.225262283019
+    ],
+    "touches_border": false,
+    "solidity": 0.6127094181180338,
+    "mask_area_pixels": 45299,
+    "geometry_method": "accepted component-repair graph cut; disconnected pieces separate; holes retained",
+    "id": "f-747c06935c43d9",
+    "source_image": "tiles/tile_000069.tiff",
+    "source_tile": "tile_000069",
+    "tile_key": "chip001/tile_000069",
+    "tile_id": "tile_000069",
+    "chip_id": "chip001",
+    "contrast_rgb": [
+      0.09365670280589175,
+      0.13514183768527024,
+      0.3839332109293653
+    ],
+    "source_contrast_rgb": [
+      0.06685643643140793,
+      0.1458783894777298,
+      0.4053651690483093
+    ],
+    "focus_limited": false,
+    "saturated_fraction": 0.0,
+    "proposal_stage": "thin_contrast_candidate",
+    "color_group": "thin_reference_compatible",
+    "label": "thin reference compatible",
+    "disposition": "candidate",
+    "selected_for_review": true,
+    "filter_reasons": [],
+    "evidence_warnings": [],
+    "local_contrast_measurement": {
+      "instance_label": 3,
+      "measurement_status": "measured",
+      "mask_modified": false,
+      "mask_area_pixels": 45299,
+      "mask_area_um2": 1347.92836875,
+      "layer_number": null,
+      "chemical_identity_confirmed": false,
+      "interior_pixels": 39930,
+      "interior_fallback_to_full_mask": false,
+      "interior_spatial_patches": 1288,
+      "background_spatial_patches": 1026,
+      "background_pixels": 25737,
+      "background_excludes_all_source_instances": true,
+      "reason": "exact_existing_mask_with_clear_local_substrate",
+      "contrast_rgb": [
+        0.09365670280589175,
+        0.13514183768527024,
+        0.3839332109293653
+      ],
+      "contrast_covariance": [
+        [
+          7.17405291328779e-05,
+          2.556039238945598e-05,
+          8.727758874450194e-06
+        ],
+        [
+          2.556039238945598e-05,
+          3.0152730926534347e-05,
+          1.8105337916837866e-05
+        ],
+        [
+          8.727758874450192e-06,
+          1.8105337916837863e-05,
+          2.2426836311844926e-05
+        ]
+      ],
+      "standard_error_rgb": [
+        0.008469978106989292,
+        0.005491150237111925,
+        0.004735698080731597
+      ],
+      "global_interior_contrast_rgb": [
+        0.08909608922828952,
+        0.13686008978809275,
+        0.38576438036973165
+      ],
+      "local_substrate_contrast_rgb": [
+        -0.005031883163610473,
+        0.001986744390807063,
+        0.002972355388818768
+      ],
+      "interior_patch_covariance": [
+        [
+          0.058278495565423236,
+          0.02448733346492384,
+          0.014055659800885596
+        ],
+        [
+          0.02448733346492384,
+          0.027855867539978606,
+          0.021014311362700516
+        ],
+        [
+          0.014055659800885596,
+          0.021014311362700516,
+          0.023756512200124317
+        ]
+      ],
+      "background_patch_covariance": [
+        [
+          0.0005411530945982474,
+          -1.987393065292458e-05,
+          -1.0501133650809437e-05
+        ],
+        [
+          -1.987393065292458e-05,
+          6.226065236982598e-05,
+          1.3289193183975116e-05
+        ],
+        [
+          -1.050113365080944e-05,
+          1.3289193183975116e-05,
+          6.419186677668165e-05
+        ]
+      ],
+      "background_systematic_covariance": [
+        [
+          2.6636763424073402e-05,
+          5.908673180158257e-06,
+          -5.938345177300148e-06
+        ],
+        [
+          5.908673180158257e-06,
+          8.099524572499074e-06,
+          -6.840175910829345e-08
+        ],
+        [
+          -5.938345177300148e-06,
+          -6.840175910829345e-08,
+          4.916337782213703e-06
+        ]
+      ],
+      "background_sector_count": 8,
+      "effective_interior_patches": 1164.6510075252108,
+      "effective_background_patches": 817.3263737307801,
+      "interior_patch_spread_rgb": [
+        0.2414093941117935,
+        0.16690077153799682,
+        0.15413147699326155
+      ],
+      "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+      "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated."
+    },
+    "thin_reference_evidence": {
+      "status": "thin_contrast_candidate",
+      "compatible": true,
+      "score": 5.822082270038538,
+      "red_z": 11.057490541635252,
+      "green_minus_red_z": 5.822082270038538,
+      "green_minus_red_contrast": 0.041485134879378494,
+      "within_search_interval": true,
+      "reason": "Resolved darkening in red with stronger darkening in green, within the broad search interval.",
+      "reference": "https://doi.org/10.1021/nn5007607.s001",
+      "model_id": "mote2-rg-direction-yamamoto2014-v1",
+      "layer_number": null,
+      "chemical_identity_confirmed": false,
+      "uncertainty_scope": "Regional spatial/color uncertainty only; optical transfer and selection bias are uncalibrated."
+    },
+    "local_contrast_signal_z": 95.09232751439934,
+    "review_role": "faint_unvalidated",
+    "priority": "thin_screen",
+    "quality_score": 1.0,
+    "useful_area_um2": 1347.9283687499997,
+    "layer_number": null,
+    "chemical_identity_confirmed": false,
+    "source_hash_matches_manifest": true,
+    "crop_bbox_xyxy": [
+      1806,
+      21,
+      2366,
+      816
+    ],
+    "source_position": {
+      "x": -7865.484,
+      "y": -7180.611999999999,
+      "z": 15551.093999999997
+    }
+  },
+  {
+    "instance_label": 95,
+    "bbox_px": [
+      800,
+      1900,
+      119,
+      101
+    ],
+    "centroid_px": [
+      860.6380271449345,
+      1948.1634755210857
+    ],
+    "area_um2": 245.54857499999994,
+    "usable_width_um": 13.308441066741942,
+    "stage_xy_um": [
+      -7936.582718647875,
+      -6176.319016721464
+    ],
+    "touches_border": false,
+    "solidity": 0.9512352941176471,
+    "mask_area_pixels": 8252,
+    "geometry_method": "accepted component-repair graph cut; disconnected pieces separate; holes retained",
+    "id": "f-cbd1e4fc5d3302",
+    "source_image": "tiles/tile_000111.tiff",
+    "source_tile": "tile_000111",
+    "tile_key": "chip001/tile_000111",
+    "tile_id": "tile_000111",
+    "chip_id": "chip001",
+    "contrast_rgb": [
+      0.3798363493197912,
+      0.40148623925447463,
+      0.4061496769447552
+    ],
+    "source_contrast_rgb": [
+      0.33260494470596313,
+      0.35662126541137695,
+      0.34420156478881836
+    ],
+    "focus_limited": false,
+    "saturated_fraction": 0.0,
+    "proposal_stage": "thin_contrast_candidate",
+    "color_group": "thin_reference_compatible",
+    "label": "thin reference compatible",
+    "disposition": "candidate",
+    "selected_for_review": true,
+    "filter_reasons": [],
+    "evidence_warnings": [],
+    "local_contrast_measurement": {
+      "instance_label": 95,
+      "measurement_status": "measured",
+      "mask_modified": false,
+      "mask_area_pixels": 8252,
+      "mask_area_um2": 245.54857499999994,
+      "layer_number": null,
+      "chemical_identity_confirmed": false,
+      "interior_pixels": 7364,
+      "interior_fallback_to_full_mask": false,
+      "interior_spatial_patches": 231,
+      "background_spatial_patches": 390,
+      "background_pixels": 10401,
+      "background_excludes_all_source_instances": true,
+      "reason": "exact_existing_mask_with_clear_local_substrate",
+      "contrast_rgb": [
+        0.3798363493197912,
+        0.40148623925447463,
+        0.4061496769447552
+      ],
+      "contrast_covariance": [
+        [
+          0.00015216815542826365,
+          0.00017366698713006608,
+          0.0001596064290874778
+        ],
+        [
+          0.0001736669871300661,
+          0.0002321183833099926,
+          0.00020186993673948462
+        ],
+        [
+          0.0001596064290874778,
+          0.00020186993673948462,
+          0.0001906014649167916
+        ]
+      ],
+      "standard_error_rgb": [
+        0.012335645724009086,
+        0.01523543183864483,
+        0.01380584893864885
+      ],
+      "global_interior_contrast_rgb": [
+        0.3816069435671104,
+        0.4009118378268894,
+        0.40715499275515993
+      ],
+      "local_substrate_contrast_rgb": [
+        0.0028550435766062166,
+        -0.0009597129844931058,
+        0.0016928774328732743
+      ],
+      "interior_patch_covariance": [
+        [
+          0.03060539911367071,
+          0.03733279144633341,
+          0.034381514272191535
+        ],
+        [
+          0.03733279144633341,
+          0.04945138749947057,
+          0.0429139539825057
+        ],
+        [
+          0.034381514272191535,
+          0.0429139539825057,
+          0.039708282354348264
+        ]
+      ],
+      "background_patch_covariance": [
+        [
+          0.0005045687401914902,
+          -2.071607054698468e-05,
+          -2.203528888719125e-05
+        ],
+        [
+          -2.071607054698468e-05,
+          5.9402026363188506e-05,
+          9.860282300650398e-06
+        ],
+        [
+          -2.2035288887191253e-05,
+          9.8602823006504e-06,
+          6.806610903589393e-05
+        ]
+      ],
+      "background_systematic_covariance": [
+        [
+          1.9876034830342197e-05,
+          -3.080639092402297e-06,
+          -4.895783165949459e-06
+        ],
+        [
+          -3.080639092402297e-06,
+          3.7637202594067024e-06,
+          3.1464213606277307e-06
+        ],
+        [
+          -4.895783165949459e-06,
+          3.1464213606277307e-06,
+          1.2120929170242728e-05
+        ]
+      ],
+      "background_sector_count": 8,
+      "effective_interior_patches": 213.9359949502919,
+      "effective_background_patches": 324.8116718759851,
+      "interior_patch_spread_rgb": [
+        0.1749439885039515,
+        0.22237667930669028,
+        0.19926937134027461
+      ],
+      "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+      "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated."
+    },
+    "thin_reference_evidence": {
+      "status": "thin_contrast_candidate",
+      "compatible": true,
+      "score": 3.5615037098513964,
+      "red_z": 30.791768653059563,
+      "green_minus_red_z": 3.5615037098513964,
+      "green_minus_red_contrast": 0.02164988993468342,
+      "within_search_interval": true,
+      "reason": "Resolved darkening in red with stronger darkening in green, within the broad search interval.",
+      "reference": "https://doi.org/10.1021/nn5007607.s001",
+      "model_id": "mote2-rg-direction-yamamoto2014-v1",
+      "layer_number": null,
+      "chemical_identity_confirmed": false,
+      "uncertainty_scope": "Regional spatial/color uncertainty only; optical transfer and selection bias are uncalibrated."
+    },
+    "local_contrast_signal_z": 32.210997699417405,
+    "review_role": "faint_unvalidated",
+    "priority": "thin_screen",
+    "quality_score": 0.6442199539883481,
+    "useful_area_um2": 245.54857499999994,
+    "layer_number": null,
+    "chemical_identity_confirmed": false,
+    "source_hash_matches_manifest": true,
+    "crop_bbox_xyxy": [
+      730,
+      1830,
+      989,
+      2056
+    ],
+    "source_position": {
+      "x": -7865.484,
+      "y": -6332.01,
+      "z": 15515.156
+    }
+  },
+  {
+    "instance_label": 42,
+    "bbox_px": [
+      794,
+      1799,
+      63,
+      82
+    ],
+    "centroid_px": [
+      825.7595101615425,
+      1837.8256904637833
+    ],
+    "area_um2": 114.20448749999998,
+    "usable_width_um": 8.968928718566893,
+    "stage_xy_um": [
+      -8272.592486065192,
+      -6478.466402036237
+    ],
+    "touches_border": false,
+    "solidity": 0.9301337332833396,
+    "mask_area_pixels": 3838,
+    "geometry_method": "accepted component-repair graph cut; disconnected pieces separate; holes retained",
+    "id": "f-6a923fecfda7c0",
+    "source_image": "tiles/tile_000107.tiff",
+    "source_tile": "tile_000107",
+    "tile_key": "chip001/tile_000107",
+    "tile_id": "tile_000107",
+    "chip_id": "chip001",
+    "contrast_rgb": [
+      0.3726064817637016,
+      0.4116804242117862,
+      0.36360914752972157
+    ],
+    "source_contrast_rgb": [
+      0.32141566276550293,
+      0.31716084480285645,
+      0.3028259873390198
+    ],
+    "focus_limited": false,
+    "saturated_fraction": 0.0,
+    "proposal_stage": "thin_contrast_candidate",
+    "color_group": "thin_reference_compatible",
+    "label": "thin reference compatible",
+    "disposition": "candidate",
+    "selected_for_review": true,
+    "filter_reasons": [],
+    "evidence_warnings": [],
+    "local_contrast_measurement": {
+      "instance_label": 42,
+      "measurement_status": "measured",
+      "mask_modified": false,
+      "mask_area_pixels": 3838,
+      "mask_area_um2": 114.20448749999998,
+      "layer_number": null,
+      "chemical_identity_confirmed": false,
+      "interior_pixels": 3245,
+      "interior_fallback_to_full_mask": false,
+      "interior_spatial_patches": 114,
+      "background_spatial_patches": 269,
+      "background_pixels": 6754,
+      "background_excludes_all_source_instances": true,
+      "reason": "exact_existing_mask_with_clear_local_substrate",
+      "contrast_rgb": [
+        0.3726064817637016,
+        0.4116804242117862,
+        0.36360914752972157
+      ],
+      "contrast_covariance": [
+        [
+          0.0002098754196726294,
+          0.0002663126667612314,
+          0.0001935814333354754
+        ],
+        [
+          0.00026631266676123134,
+          0.0004278434722427226,
+          0.0002838403018733473
+        ],
+        [
+          0.00019358143333547537,
+          0.0002838403018733473,
+          0.00020531130419256804
+        ]
+      ],
+      "standard_error_rgb": [
+        0.014487077678836039,
+        0.020684377492269923,
+        0.014328688153231895
+      ],
+      "global_interior_contrast_rgb": [
+        0.3757875978688384,
+        0.41106990222770373,
+        0.36539942813213505
+      ],
+      "local_substrate_contrast_rgb": [
+        0.005070368138452371,
+        -0.0010377386869448754,
+        0.00281317777504834
+      ],
+      "interior_patch_covariance": [
+        [
+          0.018501109891705902,
+          0.025775085393550057,
+          0.018699173611513617
+        ],
+        [
+          0.025775085393550057,
+          0.04163763306088633,
+          0.027525316451893093
+        ],
+        [
+          0.018699173611513617,
+          0.027525316451893093,
+          0.019752145759703285
+        ]
+      ],
+      "background_patch_covariance": [
+        [
+          0.00046353223133562373,
+          -5.367872746159874e-07,
+          -1.1297339766774935e-05
+        ],
+        [
+          -5.3678727461599e-07,
+          6.070520283532962e-05,
+          1.0830063609642037e-05
+        ],
+        [
+          -1.1297339766774937e-05,
+          1.0830063609642035e-05,
+          6.096553948212356e-05
+        ]
+      ],
+      "background_systematic_covariance": [
+        [
+          4.25549128386855e-05,
+          8.761129808271749e-07,
+          -2.754575307933333e-07
+        ],
+        [
+          8.761129808271749e-07,
+          1.978963958115482e-06,
+          1.1031790988806077e-06
+        ],
+        [
+          -2.754575307933333e-07,
+          1.1031790988806077e-06,
+          2.546971662637285e-06
+        ]
+      ],
+      "background_sector_count": 8,
+      "effective_interior_patches": 97.29573027063488,
+      "effective_background_patches": 215.0120004902007,
+      "interior_patch_spread_rgb": [
+        0.1360187850692172,
+        0.20405301531927023,
+        0.14054232728862606
+      ],
+      "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+      "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated."
+    },
+    "thin_reference_evidence": {
+      "status": "thin_contrast_candidate",
+      "compatible": true,
+      "score": 3.8115286090670377,
+      "red_z": 25.71992019536397,
+      "green_minus_red_z": 3.8115286090670377,
+      "green_minus_red_contrast": 0.0390739424480846,
+      "within_search_interval": true,
+      "reason": "Resolved darkening in red with stronger darkening in green, within the broad search interval.",
+      "reference": "https://doi.org/10.1021/nn5007607.s001",
+      "model_id": "mote2-rg-direction-yamamoto2014-v1",
+      "layer_number": null,
+      "chemical_identity_confirmed": false,
+      "uncertainty_scope": "Regional spatial/color uncertainty only; optical transfer and selection bias are uncalibrated."
+    },
+    "local_contrast_signal_z": 30.053117877749965,
+    "review_role": "faint_unvalidated",
+    "priority": "thin_screen",
+    "quality_score": 0.6010623575549993,
+    "useful_area_um2": 114.20448749999998,
+    "layer_number": null,
+    "chemical_identity_confirmed": false,
+    "source_hash_matches_manifest": true,
+    "crop_bbox_xyxy": [
+      724,
+      1729,
+      927,
+      1951
+    ],
+    "source_position": {
+      "x": -8196.332,
+      "y": -6614.8769999999995,
+      "z": 15527.421999999999
+    }
+  },
+  {
+    "instance_label": 1,
+    "bbox_px": [
+      0,
+      186,
+      371,
+      646
+    ],
+    "centroid_px": [
+      167.36690464911686,
+      511.57240982608107
+    ],
+    "area_um2": 1758.8324249999996,
+    "usable_width_um": 20.26353572845459,
+    "stage_xy_um": [
+      -7714.193221283096,
+      -7277.824033773504
+    ],
+    "touches_border": true,
+    "solidity": 0.6651082340046581,
+    "mask_area_pixels": 59108,
+    "geometry_method": "accepted component-repair graph cut; disconnected pieces separate; holes retained",
+    "id": "f-ad5a0b9feb5bcf",
+    "source_image": "tiles/tile_000070.tiff",
+    "source_tile": "tile_000070",
+    "tile_key": "chip001/tile_000070",
+    "tile_id": "tile_000070",
+    "chip_id": "chip001",
+    "contrast_rgb": [
+      0.06913051035513369,
+      0.0959195622959566,
+      0.2916423388742506
+    ],
+    "source_contrast_rgb": [
+      0.03377344459295273,
+      0.0917273461818695,
+      0.3234257698059082
+    ],
+    "focus_limited": false,
+    "saturated_fraction": 0.0,
+    "proposal_stage": "thin_contrast_candidate",
+    "color_group": "thin_reference_compatible",
+    "label": "thin reference compatible",
+    "disposition": "candidate",
+    "selected_for_review": true,
+    "filter_reasons": [],
+    "evidence_warnings": [
+      "source_field_clips_object"
+    ],
+    "local_contrast_measurement": {
+      "instance_label": 1,
+      "measurement_status": "measured",
+      "mask_modified": false,
+      "mask_area_pixels": 59108,
+      "mask_area_um2": 1758.8324249999998,
+      "layer_number": null,
+      "chemical_identity_confirmed": false,
+      "interior_pixels": 54341,
+      "interior_fallback_to_full_mask": false,
+      "interior_spatial_patches": 1669,
+      "background_spatial_patches": 1013,
+      "background_pixels": 26423,
+      "background_excludes_all_source_instances": true,
+      "reason": "exact_existing_mask_with_clear_local_substrate",
+      "contrast_rgb": [
+        0.06913051035513369,
+        0.0959195622959566,
+        0.2916423388742506
+      ],
+      "contrast_covariance": [
+        [
+          4.785671945139803e-05,
+          9.261012927338982e-06,
+          6.0126373018274e-06
+        ],
+        [
+          9.261012927338982e-06,
+          2.2740754504174585e-05,
+          1.3513931438999266e-05
+        ],
+        [
+          6.012637301827402e-06,
+          1.3513931438999266e-05,
+          2.6857115122977246e-05
+        ]
+      ],
+      "standard_error_rgb": [
+        0.00691785511928358,
+        0.004768726717287812,
+        0.005182385080537459
+      ],
+      "global_interior_contrast_rgb": [
+        0.06138006801004841,
+        0.09868460445826474,
+        0.2930118473928354
+      ],
+      "local_substrate_contrast_rgb": [
+        -0.008326024680476015,
+        0.0030584028223529457,
+        0.0019333573895542382
+      ],
+      "interior_patch_covariance": [
+        [
+          0.04602968151942129,
+          0.017608574990706283,
+          0.012087214015731831
+        ],
+        [
+          0.01760857499070628,
+          0.023063657030302637,
+          0.021214168532276246
+        ],
+        [
+          0.01208721401573183,
+          0.021214168532276246,
+          0.03693300529184072
+        ]
+      ],
+      "background_patch_covariance": [
+        [
+          0.0005951960933151699,
+          -4.334844837755348e-05,
+          -2.4739320539158765e-05
+        ],
+        [
+          -4.334844837755348e-05,
+          7.879234160175827e-05,
+          1.844659519435915e-05
+        ],
+        [
+          -2.4739320539158772e-05,
+          1.8446595194359157e-05,
+          8.240246683525047e-05
+        ]
+      ],
+      "background_systematic_covariance": [
+        [
+          2.144661247591234e-05,
+          -2.2720847258219245e-06,
+          -2.52141873442465e-06
+        ],
+        [
+          -2.2720847258219245e-06,
+          9.503817573323127e-06,
+          -2.1920187057749868e-07
+        ],
+        [
+          -2.52141873442465e-06,
+          -2.1920187057749868e-07,
+          6.1261870566445e-06
+        ]
+      ],
+      "background_sector_count": 8,
+      "effective_interior_patches": 1563.0089103245753,
+      "effective_background_patches": 826.9579115187223,
+      "interior_patch_spread_rgb": [
+        0.21454529013572235,
+        0.15186723488067674,
+        0.1921796172642685
+      ],
+      "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+      "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated."
+    },
+    "thin_reference_evidence": {
+      "status": "thin_contrast_candidate",
+      "compatible": true,
+      "score": 3.7122809475876912,
+      "red_z": 9.993055529947686,
+      "green_minus_red_z": 3.7122809475876912,
+      "green_minus_red_contrast": 0.026789051940822914,
+      "within_search_interval": true,
+      "reason": "Resolved darkening in red with stronger darkening in green, within the broad search interval.",
+      "reference": "https://doi.org/10.1021/nn5007607.s001",
+      "model_id": "mote2-rg-direction-yamamoto2014-v1",
+      "layer_number": null,
+      "chemical_identity_confirmed": false,
+      "uncertainty_scope": "Regional spatial/color uncertainty only; optical transfer and selection bias are uncalibrated."
+    },
+    "local_contrast_signal_z": 57.808253349192654,
+    "review_role": "faint_unvalidated",
+    "priority": "thin_screen",
+    "quality_score": 1.0,
+    "useful_area_um2": 1758.8324249999996,
+    "layer_number": null,
+    "chemical_identity_confirmed": false,
+    "source_hash_matches_manifest": true,
+    "crop_bbox_xyxy": [
+      0,
+      116,
+      441,
+      902
+    ],
+    "source_position": {
+      "x": -7534.637,
+      "y": -7180.611999999999,
+      "z": 15550.780999999999
+    }
+  }
+]

@@ -1,0 +1,1020 @@
+{
+  "schema": 1,
+  "kind": "same_coordinate_frame_restart",
+  "restart_id": "052833c8-2274-46c9-81cb-58af84f9511c",
+  "created_at": 1791562719.1934767,
+  "parent": {
+    "campaign": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01",
+    "batch_sha256": "ba3e2ea63bd59ea871893a47cd991ac10844331581777a074f4bd8ab4d374293",
+    "layout_sha256": "77ed35d8f1e5b6d3bac66f6e5eab6ce37e6a2063da2f6af72ef45fb6b01b0e57",
+    "coordinate_frame_id": "21dc3cbb-8f50-4097-ab27-091bf6b35113",
+    "state": "failed",
+    "error": "Capture storage reserve exhausted: 11271856128 bytes free; 11274289152 required before another ZEN job. No new result folder was created.",
+    "configuration_sha256": "68cd47cd2694c47100537dbfce2c991f2dec98e7c0d5d91eb4d402d64dec6200",
+    "source_reference_sha256": "e506521cc42db43c6491cb30b89e92e0c7e08a68461eb2d1f907eb80c28f1bc0"
+  },
+  "coordinate_frame_id": "21dc3cbb-8f50-4097-ab27-091bf6b35113",
+  "reference_path": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\calibration\\response\\exposure_200_0.tiff",
+  "reference_sha256": "e506521cc42db43c6491cb30b89e92e0c7e08a68461eb2d1f907eb80c28f1bc0",
+  "transform": {
+    "matrix": [
+      [
+        0.17248901979656125,
+        -0.0077434379225809
+      ],
+      [
+        0.007834271193644623,
+        0.17226317842089725
+      ]
+    ],
+    "pixel_size_um": [
+      0.1725,
+      0.1725
+    ],
+    "calibrated": true
+  },
+  "optical_context": {
+    "camera_resources": {
+      "ff_exposure_ms": 200.0,
+      "ff_white_balance": "0.25007564,1,2.61244442"
+    },
+    "camera_job_template": "FlakeFinder Quantitative Camera",
+    "objective_position": 2,
+    "objective": {
+      "position": 2,
+      "name": "EC Epiplan 20x/0.4 HD M27",
+      "magnification": 20.0,
+      "na": 0.4,
+      "working_distance_um": 3300.0
+    },
+    "white_level": 4095.0,
+    "illumination_percent": 93.44422700587084
+  },
+  "search_bounds_um": [
+    -39636.256,
+    16333.744,
+    -30892.552,
+    25077.448
+  ],
+  "completed_chip_exclusions": [
+    {
+      "chip_id": "chip001",
+      "source_folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\chip001",
+      "manifest_sha256": "62311d3c14e1d7f87d0b147580b141a3f0ede9b0ab3e277e5173d1625d616a23",
+      "plan_sha256": "a4b4f8941d2f105b9d7e4ad6e67a954a3feaed84ac7a2c054de915682203f971",
+      "polygon_um": [
+        [
+          -8115.4111328125,
+          -789.3216552734375
+        ],
+        [
+          -14353.17578125,
+          -2431.058349609375
+        ],
+        [
+          -13265.732421875,
+          -8480.2880859375
+        ],
+        [
+          -7333.05126953125,
+          -7265.87646484375
+        ]
+      ],
+      "completed_tiles": 474,
+      "chip_extent_validated": true,
+      "policy": "Do not rediscover this already scanned chip interior. Extent gaps remain separate explicit tasks; no new completeness claim."
+    },
+    {
+      "chip_id": "chip002",
+      "source_folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\chip002",
+      "manifest_sha256": "0a02fc2286c48663de1b1d55f6dd6105a914d9d058ac285fd75a0b3665857559",
+      "plan_sha256": "7b4aa10fde6878c374f00973b9ccc50b77610965ef835cfb912d16f347f7e2de",
+      "polygon_um": [
+        [
+          2578.621826171875,
+          -5564.427734375
+        ],
+        [
+          64.0538558959961,
+          8.715088844299316
+        ],
+        [
+          -6147.93115234375,
+          -2246.5595703125
+        ],
+        [
+          -3507.09423828125,
+          -8050.04638671875
+        ]
+      ],
+      "completed_tiles": 511,
+      "chip_extent_validated": false,
+      "policy": "Do not rediscover this already scanned chip interior. Extent gaps remain separate explicit tasks; no new completeness claim."
+    },
+    {
+      "chip_id": "chip003",
+      "source_folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\chip003",
+      "manifest_sha256": "8879e69e2ffdf580b4fe7e06b8ec1e579681d21a78a2876e735538584b7acbcd",
+      "plan_sha256": "6b6d9b1f0ed191ed411d32686ccfe390a786329d196a743d788abc366f1e7d58",
+      "polygon_um": [
+        [
+          222.1403045654297,
+          -29824.947265625
+        ],
+        [
+          -658.1150512695312,
+          -24267.41015625
+        ],
+        [
+          -6465.654296875,
+          -25234.693359375
+        ],
+        [
+          -5577.7138671875,
+          -30733.30078125
+        ]
+      ],
+      "completed_tiles": 401,
+      "chip_extent_validated": true,
+      "policy": "Do not rediscover this already scanned chip interior. Extent gaps remain separate explicit tasks; no new completeness claim."
+    }
+  ],
+  "tasks": [
+    {
+      "id": "repair-chip002",
+      "kind": "perimeter_validation_required",
+      "source_chip": {
+        "chip_id": "chip002",
+        "source_folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\chip002",
+        "manifest_sha256": "0a02fc2286c48663de1b1d55f6dd6105a914d9d058ac285fd75a0b3665857559",
+        "plan_sha256": "7b4aa10fde6878c374f00973b9ccc50b77610965ef835cfb912d16f347f7e2de",
+        "polygon_um": [
+          [
+            2578.621826171875,
+            -5564.427734375
+          ],
+          [
+            64.0538558959961,
+            8.715088844299316
+          ],
+          [
+            -6147.93115234375,
+            -2246.5595703125
+          ],
+          [
+            -3507.09423828125,
+            -8050.04638671875
+          ]
+        ],
+        "completed_tiles": 511,
+        "chip_extent_validated": false,
+        "policy": "Do not rediscover this already scanned chip interior. Extent gaps remain separate explicit tasks; no new completeness claim."
+      },
+      "status": "requires_bounded_perimeter_plan",
+      "reason": "No closed observed non-substrate collar; unknown perimeter or search-limit contact remains.",
+      "coverage_complete": false
+    },
+    {
+      "id": "remaining-candidate010",
+      "kind": "scan_imported_outline",
+      "plan": "plans/remaining-candidate010.json",
+      "plan_fingerprint": "aed1024a323a755db08d088980e1cb49d7d64aec8e61a2859a11c9b62bb252a4",
+      "status": "ready_after_coordinate_and_storage_preflight",
+      "lineage": {
+        "source_discovery": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate010\\discovery.json",
+        "source_discovery_sha256": "e7ff4857b6a9425f7c36993468409ad36532cd780f706376cb6eef32f9dc01ed",
+        "source_fingerprint": "b4d054aba6d486613c48ffcbb47e822a93d61ab2ad2205d72ae3bc01f916c0da",
+        "replay": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\discovery-gap-repair\\integration\\replay-results.json",
+        "replay_sha256": "1a16c5aa882e21c47409644118ffb9f054fc4c6b7762d7e03b8579450d7c996d",
+        "source_algorithm_hashes": {
+          "flakefinder/sparse_edges.py": "5dfa5dfdcb312ffbdff87745025c8d8ddd8b6cc571da717c0d2c91f56304df57",
+          "flakefinder/sparse_acquisition.py": "78fb0f0eab9683a24a7ed3494f96f9b53440e4adca18e497c2a089a264a7d529",
+          "flakefinder/chip_campaign.py": "1d1aa6ba480451bf764dfe6ea65ab402d751f2c721475a274723ec47d28974a1",
+          "scripts/scan_chip_campaign.py": "4d397d1f15aa2eb38d4a6529f1fe4073795b49b4c5f14f61d0003ec0525fec89",
+          "flakefinder/photometric_edges.py": "fa9f296ab7c812678971ee197f7ece7d21e3ce931f10bc0c3adf488a63d3112b"
+        },
+        "original_evidence_unchanged": true
+      },
+      "tile_count": 372,
+      "coverage_complete": false,
+      "discovery_capture_count_required": 0
+    },
+    {
+      "id": "alias-candidate015",
+      "kind": "duplicate_saved_geometry",
+      "source_attempt": "candidate015",
+      "same_chip": "remaining-candidate010",
+      "status": "no_acquisition"
+    }
+  ],
+  "registered_coverage_replay": [
+    {
+      "chip_id": "chip001",
+      "plan_fingerprint": "28e57fa76ded834229785374e7d0c7e3a6a4f19664b8611d4d67e7620d4743c3",
+      "manifest_sha256": "62311d3c14e1d7f87d0b147580b141a3f0ede9b0ab3e277e5173d1625d616a23",
+      "registered_fields_verified": 474,
+      "coverage_sha256": "68bbea1c5a631ea9c68bc74780859d783a96845a2ec224239a42aa61abd1c3ea",
+      "eligible_observed_cells": 269907
+    },
+    {
+      "chip_id": "chip002",
+      "plan_fingerprint": "afaa2e76a2106ae2e9f928dac64dbc16b24ece1054d72a7e12367be32f30a62e",
+      "manifest_sha256": "0a02fc2286c48663de1b1d55f6dd6105a914d9d058ac285fd75a0b3665857559",
+      "registered_fields_verified": 511,
+      "coverage_sha256": "43b153b849ff5329de9dcf22130f9183c3aaf5e2b3f9c629d6bd8e98454cc043",
+      "eligible_observed_cells": 227873
+    },
+    {
+      "chip_id": "chip003",
+      "plan_fingerprint": "f8d4c3eceda91f6bbdfc5fb6c82398de84c9cf258ce188d62fdb2738d1deadb2",
+      "manifest_sha256": "8879e69e2ffdf580b4fe7e06b8ec1e579681d21a78a2876e735538584b7acbcd",
+      "registered_fields_verified": 401,
+      "coverage_sha256": "f89b98757d7dd35f55d60033d92b11e94d8f232aba6df4200e9c848ce29c29f7",
+      "eligible_observed_cells": 179967
+    }
+  ],
+  "remaining_search": {
+    "indices": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      195,
+      196,
+      251,
+      368,
+      372,
+      376,
+      377,
+      757
+    ],
+    "points_um": [
+      [
+        3895.966222222225,
+        -30892.552
+      ],
+      [
+        5968.9291851851885,
+        -30892.552
+      ],
+      [
+        8041.892148148152,
+        -30892.552
+      ],
+      [
+        10114.855111111108,
+        -30892.552
+      ],
+      [
+        12187.818074074072,
+        -30892.552
+      ],
+      [
+        14260.781037037035,
+        -30892.552
+      ],
+      [
+        16333.744,
+        -30892.552
+      ],
+      [
+        16333.744,
+        -28819.589037037036
+      ],
+      [
+        14260.781037037035,
+        -28819.589037037036
+      ],
+      [
+        12187.818074074072,
+        -28819.589037037036
+      ],
+      [
+        10114.855111111108,
+        -28819.589037037036
+      ],
+      [
+        8041.892148148152,
+        -28819.589037037036
+      ],
+      [
+        5968.9291851851885,
+        -28819.589037037036
+      ],
+      [
+        3895.966222222225,
+        -28819.589037037036
+      ],
+      [
+        3895.966222222225,
+        -26746.626074074073
+      ],
+      [
+        5968.9291851851885,
+        -26746.626074074073
+      ],
+      [
+        8041.892148148152,
+        -26746.626074074073
+      ],
+      [
+        10114.855111111108,
+        -26746.626074074073
+      ],
+      [
+        12187.818074074072,
+        -26746.626074074073
+      ],
+      [
+        14260.781037037035,
+        -26746.626074074073
+      ],
+      [
+        16333.744,
+        -26746.626074074073
+      ],
+      [
+        16333.744,
+        -24673.663111111113
+      ],
+      [
+        14260.781037037035,
+        -24673.663111111113
+      ],
+      [
+        12187.818074074072,
+        -24673.663111111113
+      ],
+      [
+        10114.855111111108,
+        -24673.663111111113
+      ],
+      [
+        8041.892148148152,
+        -24673.663111111113
+      ],
+      [
+        5968.9291851851885,
+        -24673.663111111113
+      ],
+      [
+        8041.892148148152,
+        -22600.70014814815
+      ],
+      [
+        10114.855111111108,
+        -22600.70014814815
+      ],
+      [
+        12187.818074074072,
+        -22600.70014814815
+      ],
+      [
+        14260.781037037035,
+        -22600.70014814815
+      ],
+      [
+        16333.744,
+        -22600.70014814815
+      ],
+      [
+        16333.744,
+        -20527.737185185186
+      ],
+      [
+        16333.744,
+        -18454.774222222222
+      ],
+      [
+        16333.744,
+        -16381.811259259259
+      ],
+      [
+        16333.744,
+        -14308.848296296295
+      ],
+      [
+        8041.892148148152,
+        -3944.0334814814814
+      ],
+      [
+        -249.95970370370196,
+        -3944.0334814814814
+      ],
+      [
+        -8541.811555555556,
+        -3944.0334814814814
+      ],
+      [
+        -10614.77451851852,
+        -3944.0334814814814
+      ],
+      [
+        14260.781037037035,
+        25077.448
+      ]
+    ],
+    "previous_observations": 743,
+    "uncertain_prior_observations_remain_unknown": true,
+    "repeated_empty_search_frames_required": 0,
+    "source_search_plan_sha256": "ae59bcc5d89314faf3ebe5c9db61e8a95e71a8e1df1e722fcb94f4c2bb9cb945"
+  },
+  "unresolved_discoveries": [
+    {
+      "id": "candidate002",
+      "seed_record_index": 65,
+      "seed_xy_um": [
+        -12687.737481481483,
+        -18454.774222222222
+      ],
+      "state": "unresolved",
+      "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate002",
+      "probe_count": 30
+    },
+    {
+      "id": "candidate003",
+      "seed_record_index": 79,
+      "seed_xy_um": [
+        -4395.885629629629,
+        -1871.070518518518
+      ],
+      "state": "unresolved",
+      "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate003",
+      "seed_rejection_recovery": {
+        "at": 1791522072.149754,
+        "attempt_id": "candidate003",
+        "seed_record_index": 79,
+        "previous_error": "Seed centre is not verified substrate under this profile.",
+        "discovery_sha256": "5a1ef02185c886ec1531b09f2cd740897aeed78bf9325371fc03c00b0c899b37",
+        "discovery_fingerprint": "cf9cc13df391746da0475cc956c903b6df3459c8d2a925e4874b03b15b9a1d37",
+        "verified_seed_hashes": {
+          "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\search\\frames\\seed_000079.tiff": "83b485f64253085ca1fd95bffc525688fc8070806c4a28b337febba6c0b605ed",
+          "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\search\\frames\\seed_000079.json": "267c350eb9f1d6e185e11d94e055b3d8acf3e44fd0c14f934c83230719f96d90",
+          "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate003\\frames\\probe_000000.tiff": "5fe788e07c93e4d5fd165b98d87e1b2210cd79fefb3da0791adfa45776fefcea",
+          "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate003\\frames\\probe_000000.json": "6fd40aaeaaa3bd3407961876f29e809cba7355da8f4f9ed6759722213ce67eea",
+          "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate003\\labels\\probe_000000.npz": "142115d9d9170f184ed1e14cf06eb9dea8a08c00da671afa6791d025ee39e866"
+        },
+        "authorization": "explicit recover_seed_rejection with continue_discovery and allow_source_change",
+        "scope": "Replay this exact saved seed under repaired classification; preserve all files and original active-time budget.",
+        "historical_stop_success_recorded": false
+      },
+      "continuations": [
+        {
+          "at": 1791522076.3440526,
+          "reason": "explicit campaign continuation"
+        }
+      ],
+      "probe_count": 29,
+      "seed_verification": {
+        "classification": "substrate_seed",
+        "patch_substrate_fraction": 0.9500487329434698,
+        "patch_non_substrate_fraction": 0.0,
+        "patch_diameter_um": 40.0,
+        "image": "frames/probe_000000.tiff",
+        "qualification": "Local centre patch only; whole-field substrate fraction is not an interior-seed requirement."
+      }
+    },
+    {
+      "id": "candidate004",
+      "seed_record_index": 81,
+      "seed_xy_um": [
+        -4395.885629629629,
+        -3944.0334814814814
+      ],
+      "state": "unresolved",
+      "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate004",
+      "continuations": [
+        {
+          "at": 1791522769.0262327,
+          "reason": "explicit campaign continuation"
+        }
+      ],
+      "probe_count": 32,
+      "edge_focus_starting_height": {
+        "z_um": 15605.859,
+        "attempt_id": "candidate004",
+        "result_path": "discovery\\candidate004\\edge-focus\\attempt_000\\focus-result.json",
+        "result_sha256": "254ce137d71321c8cbc755dd8a0a4300058c0eb010f74656b2ea036590da2752",
+        "focused_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate004\\frames\\probe_000029.tiff",
+        "qualification": "Measured chip-edge height seeds later geometric searches only; no focus plane is transferred between chips."
+      },
+      "seed_verification": {
+        "classification": "substrate_seed",
+        "patch_substrate_fraction": 0.9641812865497076,
+        "patch_non_substrate_fraction": 0.0,
+        "patch_diameter_um": 40.0,
+        "image": "frames/probe_000000.tiff",
+        "qualification": "Local centre patch only; whole-field substrate fraction is not an interior-seed requirement."
+      }
+    },
+    {
+      "id": "candidate006",
+      "seed_record_index": 86,
+      "seed_xy_um": [
+        -2322.9226666666655,
+        -1871.070518518518
+      ],
+      "state": "unresolved",
+      "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate006",
+      "probe_count": 14,
+      "seed_verification": {
+        "classification": "substrate_seed",
+        "patch_substrate_fraction": 0.9442007797270955,
+        "patch_non_substrate_fraction": 0.005116959064327485,
+        "patch_diameter_um": 40.0,
+        "image": "frames/probe_000000.tiff",
+        "qualification": "Local centre patch only; whole-field substrate fraction is not an interior-seed requirement."
+      }
+    },
+    {
+      "id": "candidate007",
+      "seed_record_index": 88,
+      "seed_xy_um": [
+        -2322.9226666666655,
+        -6016.996444444445
+      ],
+      "state": "unresolved",
+      "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate007",
+      "probe_count": 15,
+      "seed_verification": {
+        "classification": "substrate_seed",
+        "patch_substrate_fraction": 0.9683235867446394,
+        "patch_non_substrate_fraction": 0.012426900584795321,
+        "patch_diameter_um": 40.0,
+        "image": "frames/probe_000000.tiff",
+        "qualification": "Local centre patch only; whole-field substrate fraction is not an interior-seed requirement."
+      }
+    },
+    {
+      "id": "candidate008",
+      "seed_record_index": 103,
+      "seed_xy_um": [
+        -10614.77451851852,
+        -26746.626074074073
+      ],
+      "state": "unresolved",
+      "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate008",
+      "probe_count": 28,
+      "edge_focus_starting_height": {
+        "z_um": 15597.812,
+        "attempt_id": "candidate008",
+        "result_path": "discovery\\candidate008\\edge-focus\\attempt_000\\focus-result.json",
+        "result_sha256": "f102f641ef60e1d87f4a1acdac43360598d867545a27b488dd52132ebce26690",
+        "focused_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate008\\frames\\probe_000005.tiff",
+        "qualification": "Measured chip-edge height seeds later geometric searches only; no focus plane is transferred between chips."
+      },
+      "seed_verification": {
+        "classification": "substrate_seed",
+        "patch_substrate_fraction": 0.928849902534113,
+        "patch_non_substrate_fraction": 0.0012183235867446393,
+        "patch_diameter_um": 40.0,
+        "image": "frames/probe_000000.tiff",
+        "qualification": "Local centre patch only; whole-field substrate fraction is not an interior-seed requirement."
+      }
+    },
+    {
+      "id": "candidate009",
+      "seed_record_index": 108,
+      "seed_xy_um": [
+        -14760.700444444446,
+        -24673.663111111113
+      ],
+      "state": "unresolved",
+      "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate009",
+      "probe_count": 17,
+      "edge_focus_starting_height": {
+        "z_um": 15586.172,
+        "attempt_id": "candidate009",
+        "result_path": "discovery\\candidate009\\edge-focus\\attempt_000\\focus-result.json",
+        "result_sha256": "3b5ca726fecba8d1b57431c222efb298c115cc222ca04cf952d780d6919a5353",
+        "focused_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate009\\frames\\probe_000003.tiff",
+        "qualification": "Measured chip-edge height seeds later geometric searches only; no focus plane is transferred between chips."
+      },
+      "seed_verification": {
+        "classification": "substrate_seed",
+        "patch_substrate_fraction": 0.9181286549707602,
+        "patch_non_substrate_fraction": 0.030458089668615983,
+        "patch_diameter_um": 40.0,
+        "image": "frames/probe_000000.tiff",
+        "qualification": "Local centre patch only; whole-field substrate fraction is not an interior-seed requirement."
+      }
+    },
+    {
+      "id": "candidate011",
+      "seed_record_index": 139,
+      "seed_xy_um": [
+        8041.892148148152,
+        -6016.996444444445
+      ],
+      "state": "unresolved",
+      "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate011",
+      "probe_count": 24,
+      "edge_focus_starting_height": {
+        "z_um": 15619.452999999996,
+        "attempt_id": "candidate011",
+        "result_path": "discovery\\candidate011\\edge-focus\\attempt_000\\focus-result.json",
+        "result_sha256": "9f63827af350fa862ea34fff4ac55a94aa137564cf017c04d0693b7bb1e417a2",
+        "focused_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate011\\frames\\probe_000012.tiff",
+        "qualification": "Measured chip-edge height seeds later geometric searches only; no focus plane is transferred between chips."
+      },
+      "seed_verification": {
+        "classification": "substrate_seed",
+        "patch_substrate_fraction": 0.9985380116959064,
+        "patch_non_substrate_fraction": 0.0,
+        "patch_diameter_um": 40.0,
+        "image": "frames/probe_000000.tiff",
+        "qualification": "Local centre patch only; whole-field substrate fraction is not an interior-seed requirement."
+      }
+    },
+    {
+      "id": "candidate013",
+      "seed_record_index": 171,
+      "seed_xy_um": [
+        10114.855111111108,
+        -6016.996444444445
+      ],
+      "state": "unresolved",
+      "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate013",
+      "probe_count": 30,
+      "edge_focus_starting_height": {
+        "z_um": 15641.406,
+        "attempt_id": "candidate013",
+        "result_path": "discovery\\candidate013\\edge-focus\\attempt_000\\focus-result.json",
+        "result_sha256": "2979df65075fea5b37250ed1e6539bb28606f92bcab1bc49e588e104a16f66e8",
+        "focused_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate013\\frames\\probe_000005.tiff",
+        "qualification": "Measured chip-edge height seeds later geometric searches only; no focus plane is transferred between chips."
+      },
+      "seed_verification": {
+        "classification": "substrate_seed",
+        "patch_substrate_fraction": 0.9975633528265108,
+        "patch_non_substrate_fraction": 0.0,
+        "patch_diameter_um": 40.0,
+        "image": "frames/probe_000000.tiff",
+        "qualification": "Local centre patch only; whole-field substrate fraction is not an interior-seed requirement."
+      }
+    },
+    {
+      "id": "candidate014",
+      "seed_record_index": 176,
+      "seed_xy_um": [
+        10114.855111111108,
+        -1871.070518518518
+      ],
+      "state": "unresolved",
+      "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate014",
+      "probe_count": 23,
+      "edge_focus_starting_height": {
+        "z_um": 15608.514999999996,
+        "attempt_id": "candidate014",
+        "result_path": "discovery\\candidate014\\edge-focus\\attempt_000\\focus-result.json",
+        "result_sha256": "44d30e14dc57c32620f22b66984dc60c37ef7dfd587c321999a24a18884422c5",
+        "focused_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate014\\frames\\probe_000014.tiff",
+        "qualification": "Measured chip-edge height seeds later geometric searches only; no focus plane is transferred between chips."
+      },
+      "seed_verification": {
+        "classification": "substrate_seed",
+        "patch_substrate_fraction": 0.9032651072124757,
+        "patch_non_substrate_fraction": 0.018518518518518517,
+        "patch_diameter_um": 40.0,
+        "image": "frames/probe_000000.tiff",
+        "qualification": "Local centre patch only; whole-field substrate fraction is not an interior-seed requirement."
+      }
+    },
+    {
+      "id": "candidate016",
+      "seed_record_index": 194,
+      "seed_xy_um": [
+        8041.892148148152,
+        -14308.848296296295
+      ],
+      "state": "unresolved",
+      "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate016",
+      "probe_count": 32,
+      "edge_focus_starting_height": {
+        "z_um": 15632.108999999999,
+        "attempt_id": "candidate016",
+        "result_path": "discovery\\candidate016\\edge-focus\\attempt_000\\focus-result.json",
+        "result_sha256": "d09a24eba73fccb108e12f36535f458143e3266bcf3436d1c1a5147b805dae35",
+        "focused_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate016\\frames\\probe_000006.tiff",
+        "qualification": "Measured chip-edge height seeds later geometric searches only; no focus plane is transferred between chips."
+      },
+      "seed_verification": {
+        "classification": "substrate_seed",
+        "patch_substrate_fraction": 0.9929337231968811,
+        "patch_non_substrate_fraction": 0.0,
+        "patch_diameter_um": 40.0,
+        "image": "frames/probe_000000.tiff",
+        "qualification": "Local centre patch only; whole-field substrate fraction is not an interior-seed requirement."
+      }
+    },
+    {
+      "id": "candidate017",
+      "seed_record_index": 196,
+      "seed_xy_um": [
+        8041.892148148152,
+        -18454.774222222222
+      ],
+      "state": "unresolved",
+      "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate017",
+      "probe_count": 27,
+      "edge_focus_starting_height": {
+        "z_um": 15618.983999999997,
+        "attempt_id": "candidate017",
+        "result_path": "discovery\\candidate017\\edge-focus\\attempt_000\\focus-result.json",
+        "result_sha256": "26af60f3f6a1403c2a3d8d05028eb9d2c3f5766e0d22e8199a3f69b5dfffe743",
+        "focused_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate017\\frames\\probe_000012.tiff",
+        "qualification": "Measured chip-edge height seeds later geometric searches only; no focus plane is transferred between chips."
+      },
+      "seed_verification": {
+        "classification": "substrate_seed",
+        "patch_substrate_fraction": 0.9856237816764133,
+        "patch_non_substrate_fraction": 0.0,
+        "patch_diameter_um": 40.0,
+        "image": "frames/probe_000000.tiff",
+        "qualification": "Local centre patch only; whole-field substrate fraction is not an interior-seed requirement."
+      }
+    },
+    {
+      "id": "candidate018",
+      "seed_record_index": 198,
+      "seed_xy_um": [
+        10114.855111111108,
+        -18454.774222222222
+      ],
+      "state": "unresolved",
+      "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate018",
+      "probe_count": 26,
+      "edge_focus_starting_height": {
+        "z_um": 15628.515,
+        "attempt_id": "candidate018",
+        "result_path": "discovery\\candidate018\\edge-focus\\attempt_000\\focus-result.json",
+        "result_sha256": "39bb6d144079476f801ea72e3e9a5443b553a62bf722f5c8d5f95ec070dcdf16",
+        "focused_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate018\\frames\\probe_000012.tiff",
+        "qualification": "Measured chip-edge height seeds later geometric searches only; no focus plane is transferred between chips."
+      },
+      "seed_verification": {
+        "classification": "substrate_seed",
+        "patch_substrate_fraction": 0.9826998050682261,
+        "patch_non_substrate_fraction": 0.0,
+        "patch_diameter_um": 40.0,
+        "image": "frames/probe_000000.tiff",
+        "qualification": "Local centre patch only; whole-field substrate fraction is not an interior-seed requirement."
+      }
+    },
+    {
+      "id": "candidate019",
+      "seed_record_index": 199,
+      "seed_xy_um": [
+        12187.818074074072,
+        -18454.774222222222
+      ],
+      "state": "unresolved",
+      "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate019",
+      "probe_count": 29,
+      "edge_focus_starting_height": {
+        "z_um": 15632.89,
+        "attempt_id": "candidate019",
+        "result_path": "discovery\\candidate019\\edge-focus\\attempt_000\\focus-result.json",
+        "result_sha256": "e055def89e53e258bdbd72ffae2e1ec95fbbc04b36f11752f964ab1e5a324cd2",
+        "focused_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate019\\frames\\probe_000003.tiff",
+        "qualification": "Measured chip-edge height seeds later geometric searches only; no focus plane is transferred between chips."
+      },
+      "seed_verification": {
+        "classification": "substrate_seed",
+        "patch_substrate_fraction": 0.908625730994152,
+        "patch_non_substrate_fraction": 0.02607212475633528,
+        "patch_diameter_um": 40.0,
+        "image": "frames/probe_000000.tiff",
+        "qualification": "Local centre patch only; whole-field substrate fraction is not an interior-seed requirement."
+      }
+    },
+    {
+      "id": "candidate020",
+      "seed_record_index": 207,
+      "seed_xy_um": [
+        10114.855111111108,
+        -16381.811259259259
+      ],
+      "state": "unresolved",
+      "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate020",
+      "probe_count": 30,
+      "edge_focus_starting_height": {
+        "z_um": 15632.265,
+        "attempt_id": "candidate020",
+        "result_path": "discovery\\candidate020\\edge-focus\\attempt_000\\focus-result.json",
+        "result_sha256": "aadfd803fecd450f215b8f5b5e1b6b8de96bbaeaf4cc30a965ddecf4491518b8",
+        "focused_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate020\\frames\\probe_000003.tiff",
+        "qualification": "Measured chip-edge height seeds later geometric searches only; no focus plane is transferred between chips."
+      },
+      "seed_verification": {
+        "classification": "substrate_seed",
+        "patch_substrate_fraction": 0.9812378167641326,
+        "patch_non_substrate_fraction": 0.0,
+        "patch_diameter_um": 40.0,
+        "image": "frames/probe_000000.tiff",
+        "qualification": "Local centre patch only; whole-field substrate fraction is not an interior-seed requirement."
+      }
+    },
+    {
+      "id": "candidate021",
+      "seed_record_index": 209,
+      "seed_xy_um": [
+        8041.892148148152,
+        -16381.811259259259
+      ],
+      "state": "unresolved",
+      "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate021",
+      "probe_count": 32,
+      "edge_focus_starting_height": {
+        "z_um": 15632.89,
+        "attempt_id": "candidate021",
+        "result_path": "discovery\\candidate021\\edge-focus\\attempt_000\\focus-result.json",
+        "result_sha256": "a355c742c65fbeb27e29e0c89f4acddf887438efb12d55b844722cef7354d844",
+        "focused_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate021\\frames\\probe_000005.tiff",
+        "qualification": "Measured chip-edge height seeds later geometric searches only; no focus plane is transferred between chips."
+      },
+      "seed_verification": {
+        "classification": "substrate_seed",
+        "patch_substrate_fraction": 0.9946393762183235,
+        "patch_non_substrate_fraction": 0.0,
+        "patch_diameter_um": 40.0,
+        "image": "frames/probe_000000.tiff",
+        "qualification": "Local centre patch only; whole-field substrate fraction is not an interior-seed requirement."
+      }
+    },
+    {
+      "id": "candidate022",
+      "seed_record_index": 215,
+      "seed_xy_um": [
+        5968.9291851851885,
+        -14308.848296296295
+      ],
+      "state": "unresolved",
+      "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate022",
+      "probe_count": 21,
+      "edge_focus_starting_height": {
+        "z_um": 15608.672,
+        "attempt_id": "candidate022",
+        "result_path": "discovery\\candidate022\\edge-focus\\attempt_000\\focus-result.json",
+        "result_sha256": "4936f6c1e0dba7d5f55935aa978a64e85643427554dcc7347826c658cabf46fc",
+        "focused_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate022\\frames\\probe_000011.tiff",
+        "qualification": "Measured chip-edge height seeds later geometric searches only; no focus plane is transferred between chips."
+      },
+      "seed_verification": {
+        "classification": "substrate_seed",
+        "patch_substrate_fraction": 0.9980506822612085,
+        "patch_non_substrate_fraction": 0.0,
+        "patch_diameter_um": 40.0,
+        "image": "frames/probe_000000.tiff",
+        "qualification": "Local centre patch only; whole-field substrate fraction is not an interior-seed requirement."
+      }
+    },
+    {
+      "id": "candidate023",
+      "seed_record_index": 242,
+      "seed_xy_um": [
+        -14760.700444444446,
+        -18454.774222222222
+      ],
+      "state": "unresolved",
+      "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate023",
+      "probe_count": 29,
+      "edge_focus_starting_height": {
+        "z_um": 15573.749999999998,
+        "attempt_id": "candidate023",
+        "result_path": "discovery\\candidate023\\edge-focus\\attempt_000\\focus-result.json",
+        "result_sha256": "18ffa02e71e528082f092c783ec610ecc0c27bcb5dc35e4c60c1125e4705f8ad",
+        "focused_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate023\\frames\\probe_000006.tiff",
+        "qualification": "Measured chip-edge height seeds later geometric searches only; no focus plane is transferred between chips."
+      },
+      "seed_verification": {
+        "classification": "substrate_seed",
+        "patch_substrate_fraction": 0.9602826510721247,
+        "patch_non_substrate_fraction": 0.0,
+        "patch_diameter_um": 40.0,
+        "image": "frames/probe_000000.tiff",
+        "qualification": "Local centre patch only; whole-field substrate fraction is not an interior-seed requirement."
+      }
+    },
+    {
+      "id": "candidate024",
+      "seed_record_index": 243,
+      "seed_xy_um": [
+        -16833.663407407406,
+        -18454.774222222222
+      ],
+      "state": "unresolved",
+      "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate024",
+      "probe_count": 31,
+      "edge_focus_starting_height": {
+        "z_um": 15589.139999999996,
+        "attempt_id": "candidate024",
+        "result_path": "discovery\\candidate024\\edge-focus\\attempt_000\\focus-result.json",
+        "result_sha256": "3d7d3a92932529906528f3cda1d1434607f493849ce24ebc6fa09f7d10b8b536",
+        "focused_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate024\\frames\\probe_000018.tiff",
+        "qualification": "Measured chip-edge height seeds later geometric searches only; no focus plane is transferred between chips."
+      },
+      "seed_verification": {
+        "classification": "substrate_seed",
+        "patch_substrate_fraction": 0.9780701754385965,
+        "patch_non_substrate_fraction": 0.0,
+        "patch_diameter_um": 40.0,
+        "image": "frames/probe_000000.tiff",
+        "qualification": "Local centre patch only; whole-field substrate fraction is not an interior-seed requirement."
+      }
+    },
+    {
+      "id": "candidate025",
+      "seed_record_index": 248,
+      "seed_xy_um": [
+        -16833.663407407406,
+        -16381.811259259259
+      ],
+      "state": "unresolved",
+      "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate025",
+      "probe_count": 22,
+      "edge_focus_starting_height": {
+        "z_um": 15589.062,
+        "attempt_id": "candidate025",
+        "result_path": "discovery\\candidate025\\edge-focus\\attempt_000\\focus-result.json",
+        "result_sha256": "600c7ca5ee8eaf11654f28c19c3d707ca6499fc14c549e42bd5b0ce0965727ba",
+        "focused_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate025\\frames\\probe_000013.tiff",
+        "qualification": "Measured chip-edge height seeds later geometric searches only; no focus plane is transferred between chips."
+      },
+      "seed_verification": {
+        "classification": "substrate_seed",
+        "patch_substrate_fraction": 0.9173976608187134,
+        "patch_non_substrate_fraction": 0.0,
+        "patch_diameter_um": 40.0,
+        "image": "frames/probe_000000.tiff",
+        "qualification": "Local centre patch only; whole-field substrate fraction is not an interior-seed requirement."
+      }
+    },
+    {
+      "id": "candidate026",
+      "seed_record_index": 249,
+      "seed_xy_um": [
+        -14760.700444444446,
+        -16381.811259259259
+      ],
+      "state": "unresolved",
+      "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate026",
+      "probe_count": 23,
+      "edge_focus_starting_height": {
+        "z_um": 15585.859,
+        "attempt_id": "candidate026",
+        "result_path": "discovery\\candidate026\\edge-focus\\attempt_000\\focus-result.json",
+        "result_sha256": "84a1a2ab71b0c60906d91197012bbd5a6744cb22f7351a538b0e907c1be0c890",
+        "focused_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate026\\frames\\probe_000011.tiff",
+        "qualification": "Measured chip-edge height seeds later geometric searches only; no focus plane is transferred between chips."
+      },
+      "seed_verification": {
+        "classification": "substrate_seed",
+        "patch_substrate_fraction": 0.9203216374269005,
+        "patch_non_substrate_fraction": 0.0,
+        "patch_diameter_um": 40.0,
+        "image": "frames/probe_000000.tiff",
+        "qualification": "Local centre patch only; whole-field substrate fraction is not an interior-seed requirement."
+      }
+    }
+  ],
+  "execution_policy": {
+    "caller_owns_adapter": true,
+    "coordinate_frame_must_be_reconfirmed": true,
+    "no_automatic_restart": true,
+    "fresh_storage_preflight_required": true,
+    "task_order": "Verified saved outline first; explicit perimeter repair; unresolved geometry; only then remaining search.",
+    "limits_or_budget_extension_implied": false
+  },
+  "all_chips_found": false,
+  "fingerprint": "5b8311659f4b022682714eeec9502c114a53f59b414b818213d9b9e7d042efb3"
+}

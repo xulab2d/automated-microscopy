@@ -1,0 +1,29 @@
+ALGORITHM_VERSION = 'sparse_photometric_halfplanes_v2'
+PROFILE_MODEL = 'dark_holder_all_rgb_v1'
+
+
+def assess_edge_profile(profile, frame):
+    """An explicit measured optical contract, never an inferred holder model.
+
+    This first implementation is qualified only for the manually selected 20x
+    objective. Supporting another objective/holder requires a reviewed profile
+    and representative replay, not changing a magnification field at runtime.
+    """
+    from .layout import _context
+    report = {'supported': False, 'algorithm': ALGORITHM_VERSION,
+              'profile_assumption': 'Manual encoded objective at 20x; holder darker than substrate in all recorded RGB channels.'}
+    if not isinstance(profile, dict) or profile.get('schema') != 1 or not profile.get('profile_id'):
+        return dict(report, reason='An explicit versioned edge-validation profile is required.')
+    if profile.get('holder_model') != PROFILE_MODEL:
+        return dict(report, reason='Unsupported holder model; bright/unknown holders remain unresolved.')
+    if profile.get('manual_objective') is not True or profile.get('objective_magnification') != 20:
+        return dict(report, reason='This validator is qualified only for an explicitly selected manual 20x profile.')
+    context = _context(frame)
+    objective = context.get('objective') or {}
+    if objective.get('magnification') != 20 or context.get('objective_position') != profile.get('objective_position'):
+        return dict(report, reason='Measured objective does not match the declared manual 20x profile.')
+    if any(context.get(key) is None for key in ('camera_resources', 'camera_job_template', 'white_level', 'illumination_percent')):
+        return dict(report, reason='Camera, white-level and illumination metadata are required.')
+    if context != profile.get('optical_context'):
+        return dict(report, reason='Recorded camera/illumination/objective context differs from the declared profile.')
+    return dict(report, supported=True, profile_id=profile['profile_id'], reason='Explicit optical contract matches recorded metadata; individual raw edges still require validation.')

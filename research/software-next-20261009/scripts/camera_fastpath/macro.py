@@ -1,0 +1,168 @@
+# This file is packaged into a ZEN Python3 macro by build_bundle.py.
+# Adapted packaging/API usage from the installed ZEISS snap macro example:
+# Copyright (c) 2019 by Carl Zeiss Microscopy GmbH.
+# Permission is granted to use, modify and distribute this code,
+# as long as this copyright notice remains part of the code.
+# It is not a CPython hardware entry point. All Zen members below were verified
+# in the installed ZEN core scripting interfaces or the installed snap sample.
+import json
+import os
+import re
+import time
+
+TRANSPORT_ROOT = __TRANSPORT_ROOT__
+
+
+def read_json(path):
+    with open(path, 'r') as stream:
+        return json.load(stream)
+
+
+def publish(path, value):
+    # Each response name is written once. Rename exposes a complete document.
+    temporary = path + '.tmp'
+    with open(temporary, 'w') as stream:
+        json.dump(value, stream)
+        stream.flush()
+    os.rename(temporary, path)
+
+
+def equal_value(actual, expected, kind):
+    if kind == 'number':
+        return abs(float(actual) - float(expected)) <= 0.000001
+    if kind == 'rgb':
+        a = [float(x.strip()) for x in str(actual).split(',')]
+        b = [float(x.strip()) for x in str(expected).split(',')]
+        return len(a) == len(b) == 3 and max(abs(x-y) for x,y in zip(a,b)) <= 0.000001
+    if kind == 'boolean':
+        values = {'false': False, '0': False, 'true': True, '1': True}
+        return values.get(str(actual).strip().lower(), None) == bool(expected)
+    return str(actual) == str(expected)
+
+
+def camera_inventory(camera):
+    parameters = {}
+    for name in camera.GetAllParameterNames():
+        name = str(name)
+        try:
+            parameters[name] = {'value': str(camera.GetParameterValue(name))}
+        except Exception as error:
+            parameters[name] = {'error': str(error)}
+    return {'name': str(camera.Name), 'exposure_ms': float(camera.ExposureTime),
+            'binning': str(camera.Binning), 'frame': str(camera.Frame),
+            'parameters': parameters}
+
+
+def verify_profile(camera, profile, initial=None):
+    names = [str(name) for name in camera.GetAllParameterNames()]
+    actual = {'name': str(camera.Name), 'exposure_ms': float(camera.ExposureTime),
+              'binning': str(camera.Binning), 'frame': str(camera.Frame), 'parameters': {}}
+    if profile.get('enabled') is not True:
+        raise RuntimeError('Prototype profile is disabled.')
+    if not profile.get('camera_name') or actual['name'] != profile['camera_name']:
+        raise RuntimeError('Camera name is missing or differs from the approved inventory.')
+    if not equal_value(actual['exposure_ms'], profile['exposure_ms'], 'number'):
+        raise RuntimeError('Exposure readback differs from the fixed profile.')
+    for role in ('white_balance', 'auto_exposure', 'auto_white_balance', 'hdr'):
+        gate = profile.get('readback_gates', {}).get(role, {})
+        name = gate.get('parameter_name')
+        if not name or name not in names:
+            raise RuntimeError('No verified camera parameter binding for ' + role)
+        item = {'value': str(camera.GetParameterValue(name))}
+        actual['parameters'][name] = item
+        if 'error' in item or not equal_value(item['value'], gate['expected'], gate['kind']):
+            raise RuntimeError('Fixed camera readback mismatch: ' + role)
+    if initial is not None:
+        for key in ('name', 'exposure_ms', 'binning', 'frame'):
+            if actual[key] != initial[key]:
+                raise RuntimeError('Camera context changed: ' + key)
+    if Zen.Acquisition.IsLiveRunning or Zen.Acquisition.IsContinuousRunning:
+        raise RuntimeError('Live/continuous acquisition must already be stopped for request-driven snaps.')
+    return actual
+
+
+def run():
+    active = read_json(os.path.join(TRANSPORT_ROOT, 'active.json'))
+    session_id = active.get('session_id', '')
+    if not re.match(r'^[a-f0-9]{32}$', session_id):
+        raise RuntimeError('Invalid session identity.')
+    folder = os.path.join(TRANSPORT_ROOT, session_id)
+    deadline = float(active['deadline_unix_s'])
+    if not time.time() < deadline <= time.time()+125:
+        raise RuntimeError('Session is expired or exceeds the 120-second prototype limit.')
+    image = None
+    def cancelled():
+        return os.path.exists(os.path.join(folder, 'STOP')) or time.time() >= deadline
+    try:
+        camera = Zen.Acquisition.ActiveCamera
+        inventory = camera_inventory(camera)
+        publish(os.path.join(folder, 'inventory.json'), inventory)
+        if active['mode'] == 'inventory':
+            publish(os.path.join(folder, 'done.json'), {'session_id': session_id, 'state': 'inventory_complete'})
+            return
+        if active['mode'] != 'benchmark':
+            raise RuntimeError('Unknown session mode.')
+        profile = read_json(os.path.join(folder, 'profile.json'))
+        initial = verify_profile(camera, profile)
+        count = int(active['count'])
+        if not 1 <= count <= 12:
+            raise RuntimeError('Prototype supports 1–12 stationary snapshots.')
+        publish(os.path.join(folder, 'ready.json'), {'session_id': session_id, 'profile': initial})
+        for sequence in range(1, count+1):
+            request_path = os.path.join(folder, 'request-%04d.json' % sequence)
+            while not os.path.exists(request_path):
+                if cancelled():
+                    raise RuntimeError('Request wait cancelled or timed out.')
+                time.sleep(0.01)
+            request = read_json(request_path)
+            identifier = request.get('request_id', '')
+            if (request.get('session_id') != session_id or request.get('sequence') != sequence
+                    or not re.match(r'^[a-f0-9]{32}$', identifier)):
+                raise RuntimeError('Request identity or sequence mismatch.')
+            if cancelled() or time.time() > float(request['deadline_unix_s']):
+                raise RuntimeError('Snapshot request expired.')
+            verify_started = time.time()
+            before = verify_profile(camera, profile, initial)
+            started = time.time()
+            image = Zen.Acquisition.AcquireImage()
+            snap_done = time.time()
+            after = verify_profile(camera, profile, initial)
+            verify_done = time.time()
+            czi_name = identifier + '.czi'
+            Zen.Application.Save(image, os.path.join(folder, czi_name))
+            czi_done = time.time()
+            tiff_name = None
+            if sequence == 1 and active.get('comparison_tiff', False):
+                tiff_name = identifier + '.tiff'
+                Zen.Application.Save(image, os.path.join(folder, tiff_name))
+            save_done = time.time()
+            publish(os.path.join(folder, 'reply-%04d.json' % sequence), {
+                'session_id': session_id, 'request_id': identifier, 'sequence': sequence,
+                'czi': czi_name, 'comparison_tiff': tiff_name,
+                'profile_before': before, 'profile_after': after,
+                'snap_s': snap_done-started, 'czi_save_s': czi_done-verify_done,
+                'profile_before_s': started-verify_started, 'profile_after_s': verify_done-snap_done,
+                'comparison_tiff_save_s': save_done-czi_done,
+                'finished_unix_s': save_done,
+                'correlation': 'CZI is saved directly from the ZenImage returned by this request AcquireImage call.'})
+            ack_path = os.path.join(folder, 'ack-%04d.json' % sequence)
+            ack_deadline = min(deadline, time.time()+20)
+            while not os.path.exists(ack_path):
+                if cancelled() or time.time() >= ack_deadline:
+                    raise RuntimeError('Image acknowledgement cancelled or timed out.')
+                time.sleep(0.01)
+            ack = read_json(ack_path)
+            if ack.get('request_id') != identifier or ack.get('session_id') != session_id:
+                raise RuntimeError('Acknowledgement identity mismatch.')
+            image.Close()
+            image = None
+        publish(os.path.join(folder, 'done.json'), {'session_id': session_id, 'state': 'complete', 'count': count})
+    except Exception as error:
+        publish(os.path.join(folder, 'error.json'), {'session_id': session_id, 'error': str(error)})
+        raise
+    finally:
+        if image is not None:
+            image.Close()
+
+
+run()

@@ -1,0 +1,8 @@
+{
+  "id": "scan-20261015-223250-f43d96e7",
+  "state": "queued",
+  "phase": "starting",
+  "pid": null,
+  "process_alive": true,
+  "operator_instruction": "ok make the run start"
+}

@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "run_id": "run",
+  "worker_pid": 12,
+  "worker_start_utc": "2026-10-11T19:44:33.8590181Z",
+  "guard_pid": 19760,
+  "state": "worker_exited_or_unreadable",
+  "deadline_utc": "1970-01-01T00:03:20+00:00",
+  "watcher_implementation": "stdlib-native-v1",
+  "poll_seconds": 10,
+  "cleanup_minimum_interval_seconds": 60,
+  "hardware_access": false,
+  "automatic_restart": false,
+  "actions": 0,
+  "access_denials": 0,
+  "renderer_trims": 0,
+  "updated_at": "2026-10-11T19:58:48.800967+00:00",
+  "available_bytes": 1
+}

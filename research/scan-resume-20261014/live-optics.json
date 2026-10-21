@@ -1,0 +1,39 @@
+{
+  "version": "3.11.9.0",
+  "configuration_changed": false,
+  "position": 6,
+  "motorization": "Coded",
+  "accessibility": "Configured, HardwareConnected",
+  "objectives": [
+    {
+      "position": 1,
+      "name": "EC Epiplan 10x/0.25 HD M27",
+      "magnification": "10"
+    },
+    {
+      "position": 2,
+      "name": "EC Epiplan 20x/0.4 HD M27",
+      "magnification": "20"
+    },
+    {
+      "position": 3,
+      "name": "EC Epiplan-Neofluar 50x/0.8 HD DIC",
+      "magnification": "50"
+    },
+    {
+      "position": 4,
+      "name": "EC Epiplan-Neofluar 100x/0.90 HD DIC",
+      "magnification": "100"
+    },
+    {
+      "position": 5,
+      "name": null,
+      "magnification": null
+    },
+    {
+      "position": 6,
+      "name": null,
+      "magnification": null
+    }
+  ]
+}

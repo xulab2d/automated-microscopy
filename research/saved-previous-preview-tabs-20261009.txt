@@ -1,0 +1,8 @@
+http://127.0.0.1:8766/contrast
+http://127.0.0.1:8766/gallery?chip=chip001&tile=tile_000002
+http://127.0.0.1:8766/
+http://127.0.0.1:8766/gallery?chip=chip002&tile=tile_000047
+http://127.0.0.1:8768/analysis-dinov2-appearance/review.html
+http://127.0.0.1:8768/chip001/analysis-terraces-v3-accepted-parents-qc-01/review.html
+http://127.0.0.1:8768/analysis-topology-review-01/review.html
+http://127.0.0.1:8768/analysis-residue-sieves-02/review.html

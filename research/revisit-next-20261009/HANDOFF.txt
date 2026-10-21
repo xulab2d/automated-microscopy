@@ -1,0 +1,55 @@
+OFFLINE100x REVISIT READINESS PATCH
+
+This separate source stage was not imported into the running scanner. No hardware
+was accessed and no100x calibration, offset or autofocus was physically tested.
+Integrate only after the live worker has exited and source versions are reviewed.
+
+Implemented
+- calibrate_camera now acknowledges each of its six full raw captures after the
+  TIFF+sidecar save; retention=false with no output fails before capture/motion.
+- optimize_exposure persists and acknowledges every measured attempt, including
+  a poor image that subsequently fails quality checks.
+- save_objective_profile saves its full verification frame and hashes/receipt;
+  it never overwrites an existing profile and records objective offset unmeasured.
+- objective-profile CLI gives autofocus a durable output destination.
+- revisit_queue.py is an offline exporter. It validates project/request/frame
+  identities, immutable analysis commits, raw+sidecar+boundary-label SHA256,
+  source geometry, exact instance mask SHA and target-point membership, and
+  independently recomputes source stageXY from the measured camera transform.
+  Only one full-frame instance-label array is held at a time. No TIFF pixel
+  decoding is needed; raw files are streamed for SHA verification.
+
+API
+  export_graphene_revisit_queue(project, run_id, output,
+      candidate_ids=None, max_candidates=25, profile_path=None)
+
+CLI (from this stage, using the installed project Python)
+  python scripts/export_revisit_queue.py --project "G:/Shared drives/Xu Lab - Microscopy and Instruments/Automated Microscopy" --run-id RUN_ID --output "G:/Shared drives/Xu Lab - Microscopy and Instruments/Automated Microscopy/data/RUN_ID/revisit-queue-01"
+  Optional: --candidate-id chip001/tile_000123/7 (repeat for explicit selection,
+  including uncertain observations preserved in committed field shards).
+  Optional: --profile ABSOLUTE_MEASURED_100X_PROFILE
+
+Outputs
+  revisit-queue.json: verified source evidence, sourceXY, targetXY=null,
+    readiness blockers and false motion_authorized/hardware_accessed flags.
+  targets.csv: a compact human-review table with blank target coordinates.
+  READINESS.txt: outstanding physical handoff requirements.
+  Outputs use the managed Drive policy; choose a new output directory each time.
+
+Not implemented / required before100x travel
+- Browser handoff/revisit service and run-scoped authorization integration.
+- Measured100x pixel/stage transform, appropriate focus settings and live limits.
+- Measured20x-to100x parcentric offset; no zero offset is assumed.
+- Current fiducial evidence that the holder and stage coordinate origin have not
+  changed. A saved coordinate-frame UUID cannot prove physical immobility.
+-100x focus-plane seeding and bounded localization when field registration fails.
+- Runtime revalidation of this queue immediately before any travel.
+The exported JSON is deliberately not a legacy flakes.json acquisition queue.
+A registration match identifies the source field, not chemical or layer identity.
+
+Validation
+14 focused offline tests passed in2.67s, plus CLI help/import. Tests include
+simulated image registration during six-frame calibration, vendor pending limit,
+ack failure, autofocus output forwarding, valid queue export, explicit uncertain
+selection, modified TIFF/mask/request/geometry/frame/coordinates and a saved-mask
+hole. These tests do not establish real100x acquisition performance.

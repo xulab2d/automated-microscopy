@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "recorded_at_utc": "2026-10-09T22:38:00.782713+00:00",
+  "diagnosis": "DriveFS temporary-path overflow, not missing scientific source",
+  "failed_batch": 276,
+  "first_uncommitted_sequence": 46339,
+  "relative_path": "data/test-temp-precision-01/test_recovery_requires_both_bo0/attempt-f9af52413a6f4936acf043fa31f04bb0/anchor_000/recovery/focus-curve.json",
+  "canonical_destination_characters": 211,
+  "old_staging_characters": 261,
+  "preceding_successful_staging_characters": 258,
+  "source_present": true,
+  "destination_parent_present": true,
+  "pending_file_count": 53044,
+  "old_temp_overflow_count": 399,
+  "new_temp_overflow_count": 0,
+  "maximum_new_temp_characters": 247,
+  "repair": "Same-directory .t plus full UUID; exclusive create, mounted hash readback and exclusive rename unchanged. Fail explicitly if new staging path reaches260 characters.",
+  "validation": {
+    "focused_tests": 10,
+    "seconds": 0.088,
+    "simulated_drivefs_max_path": true,
+    "scientific_input_and_journal_mutations": false
+  },
+  "source_sha256": {
+    "bounded_transfer.py": "b181a9e5728f02f72cc388a20983b0f0f22fd2372d1ad14c08af8b0866d2b221",
+    "test_bounded_transfer.py": "21adf3b27a5a29317ec86fb27d2f010f7bf47559f53def78f73005a3747a040f"
+  },
+  "journal_mutated": false,
+  "transfer_restarted_by_auditor": false
+}

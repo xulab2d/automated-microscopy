@@ -1,0 +1,33 @@
+OFFLINE INVENTORY FINALIZATION AUDIT — 9 October 2026
+
+Established cause: the macro succeeded, then ZEN failed to finalize an empty
+workflow result set. The saved log explicitly says:
+  RunJobAsync(): The job execution has completed successfully
+  System.ArgumentException: itemsToBeFinalized must not be empty
+Inventory and done JSON were published before the failure. The JSON files are
+external macro outputs, not registered workflow result items. The generated
+job has empty Tool/Task Outputs. No vendor-result folder remains because ZEN
+then discarded results and deleted its sandbox.
+
+This is NOT evidence of a camera readback or profile-verification failure.
+Inventory mode returns before verify_profile and never acquires an image.
+EasyHDR=true still needs independent semantic clarification before any benchmark;
+AxioCamHDR=false and AxioCamNativeHDR=false do not prove EasyHDR is harmless.
+Auto-white-balance binding remains unresolved. All benchmark gates stay enabled.
+
+Minimal defensible change proposal, NOT applied:
+- In inventory-only client handling, report the saved matching-session
+  inventory/done files as collected, separately record RunJob finalization as
+  failed, and preserve the original gRPC error. Do not relabel the vendor job
+  successful and do not swallow benchmark-mode failures.
+- A clean-success job repair requires a documented non-image result registration
+  or a supported execution path without result finalization. Neither binding
+  has been established. Do not invent an output parameter or take a dummy camera
+  image just to hide the finalization failure.
+- Benchmark images saved by Zen.Application.Save may also be external to the
+  workflow result store. Therefore benchmark finalization success remains
+  unproven even if future frame saves succeed.
+
+No prototype, camera profile, production code, job registration, hardware,
+service or server was changed by this audit. Further work was superseded by
+portable laptop data handoff. Relevant log evidence is alongside this note.

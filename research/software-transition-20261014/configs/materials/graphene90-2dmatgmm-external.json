@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "kind": "empirical_material_populations",
+  "model_id": "2dmatgmm-graphene90-external-rgb-converted-v1",
+  "contrast_convention": "(substrate-flake)/substrate",
+  "components": [
+    {
+      "label": "external_1L",
+      "role": "material",
+      "mean_rgb": [
+        0.137,
+        0.14,
+        0.071
+      ],
+      "covariance_rgb": [
+        [
+          0.0003320244165912582,
+          9.354030315496936e-05,
+          3.640871553385172e-05
+        ],
+        [
+          9.354030315496938e-05,
+          0.00023107833499992487,
+          0.00013442550316341518
+        ],
+        [
+          3.640871553385172e-05,
+          0.00013442550316341518,
+          0.00043690708813418295
+        ]
+      ],
+      "source_label": "1",
+      "layer_assignment_allowed": false
+    },
+    {
+      "label": "external_2L",
+      "role": "material",
+      "mean_rgb": [
+        0.248,
+        0.264,
+        0.152
+      ],
+      "covariance_rgb": [
+        [
+          0.00031832333867950097,
+          2.030565474167504e-05,
+          -0.00011751135771427775
+        ],
+        [
+          2.030565474167504e-05,
+          0.0002369906495868485,
+          0.00025254658263370265
+        ],
+        [
+          -0.00011751135771427775,
+          0.00025254658263370265,
+          0.0008328732295338676
+        ]
+      ],
+      "source_label": "2",
+      "layer_assignment_allowed": false
+    },
+    {
+      "label": "external_3L",
+      "role": "material",
+      "mean_rgb": [
+        0.347,
+        0.368,
+        0.216
+      ],
+      "covariance_rgb": [
+        [
+          0.0003016258829573738,
+          1.5671356060739976e-06,
+          -0.00017056175302890137
+        ],
+        [
+          1.567135606074001e-06,
+          0.00027824710350493256,
+          0.0003876553710589909
+        ],
+        [
+          -0.00017056175302890137,
+          0.0003876553710589909,
+          0.0013438145132320882
+        ]
+      ],
+      "source_label": "3",
+      "layer_assignment_allowed": false
+    },
+    {
+      "label": "external_4L",
+      "role": "material",
+      "mean_rgb": [
+        0.436,
+        0.465,
+        0.272
+      ],
+      "covariance_rgb": [
+        [
+          0.0002183833746245863,
+          4.883854391652727e-05,
+          4.529938289991866e-05
+        ],
+        [
+          4.883854391652727e-05,
+          0.0002952529548842852,
+          0.00038128261246451735
+        ],
+        [
+          4.529938289991867e-05,
+          0.00038128261246451735,
+          0.0010399285512173939
+        ]
+      ],
+      "source_label": "4",
+      "layer_assignment_allowed": false
+    }
+  ],
+  "applicability_context": {
+    "material": "graphene",
+    "oxide_nm": 90.0,
+    "optical_profile_id": "external_2dmatgmm"
+  },
+  "calibration_status": "external_domain_prior_requires_local_calibration",
+  "source": {
+    "url": "https://github.com/Jaluus/2DMatGMM",
+    "publication": "https://doi.org/10.1088/2632-2153/ad2287",
+    "file_sha256": "21e0ae82d0684ea912091a7459973e979bebfa0b53e6995331a2c55ca6ec62c8",
+    "license": "MIT; see adjacent 2DMatGMM-LICENSE.txt",
+    "conversion": "mean sign negated; BGR covariance permuted to RGB on both axes; covariance unchanged by global sign inversion"
+  },
+  "layer_assignment_allowed": false,
+  "chemical_identity_confirmed": false,
+  "caveats": [
+    "External90nm-oxide camera population; do not apply to285/300nm as a calibrated threshold.",
+    "Explicit context-mismatch override is required for descriptive foreign-domain exploration."
+  ]
+}

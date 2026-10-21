@@ -1,0 +1,23 @@
+{
+  "pid": 36580,
+  "command": [
+    "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\software-next-20261009\\scripts\\run_hbn_offline.py",
+    "--project",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy",
+    "--run-id",
+    "scan-20261015-223549-98fae566",
+    "--chip",
+    "chip001",
+    "--model",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\analysis\\hbn\\scan-20261015-223549-98fae566\\chip001\\models\\hbn90-image-thin-v3.json",
+    "--version",
+    "hbn-image-full-v6",
+    "--refinement-version",
+    "hbn-image-full-review-v6",
+    "--defer-selection"
+  ],
+  "log": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\hbn-segmentation-20261016\\full-image-v6.log",
+  "started_at": 1792174286.059327,
+  "no_acquisition_performed": true
+}

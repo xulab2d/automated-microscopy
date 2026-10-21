@@ -1,0 +1,22 @@
+OFFLINE FOLLOWUP: candidate013-016; active scanner untouched
+
+013 |30images|1->9 coherent observations,3groups, remains unbounded.
+Only east and south have trustworthy measurements. North search hit a93.4%-substrate but centre-contaminated field; ambiguity stopped bisection early and lateral checks stayed630-1000um inside the later measured north edge. West is strongly defocused after using the east focus height. The proposed fallback accepts a false diagonal line through green contamination in probe21: outside green is1.28x inside rather than dark holder, raw edge selector rejects it, and it excludes98.6% of substrate samples in the neighboring field beyond its75um margin. Only2probes remain; no credible automatic rescue under the unchanged budget.
+
+014 |23images|3->4 observations but still3groups; east missing.
+East coarse field is94.6% substrate yet centre classification unknown, leaving inside=0. Bisection repeats the same unknown field and aborts; lateral checks remain300+um inside the east edge. Nearest inside/holder FOVs leave a~572um unimaged normal gap around the missing boundary (using015 independently observed east-line model). This is insufficient evidence/early bracket exit, not duplicate cardinal sides.9probes remain; a later guarded east-bracket continuation is appropriate.
+
+015 |30images|2->13 coherent observations,4groups, bounded estimate.
+This is the known Hough segment-proposal failure. The recovered4lines are consistent with sampled registered substrate and the visible raw east edge. Its polygon overlaps prior candidate010 estimate with IoU=0.9843, supporting repeated observations of the same physical chip. An estimated outline can be reconstructed with no new frames; that does not establish complete chip acquisition.
+
+016 |32images|2->11 observations,5groups, algebraically bounded BUT NOT TRUSTWORTHY.
+A recovered northern line in probe13 is nearly horizontal in camera space although the visible dark/bright chip edge is clearly slanted. A green ribbon/blurred label boundary supplies a spurious extra half-plane. It can cut unobserved corners from the plan. Existing0.78 purity gates and point-span tests alone do not prevent this. There is no remaining probe allowance. Saved raw photometric edge direction must adjudicate the disputed line; do not mark this recovered/full or enlarge budget silently.
+
+DEPLOYMENT STATUS
+The standard-Hough patch is now explicitly blocked in DEPLOYMENT.txt and its metadata pending real blurred-contamination and orientation checks. Do not deploy it unchanged based on the initial6 passing tests. The angular-gap patch is independently useful for actual duplicate-ray failures, but these four attempts are mainly missed-proposal/ambiguous-bracket/defocus cases, not repeated cardinal sides. No production modules, configs, manifests, STOPs, leases, or hardware clients were changed.
+
+Artifacts
+candidates013-016-replay.json: complete derived fits and source hashes.
+candidates013-016-substrate-consistency.json: observed-label contradiction checks.
+blurred-counterexamples.json: raw RGB side medians and raw-edge selector diagnostics.
+candidates013-016-conclusions.json: compact actionable classification.

@@ -1,0 +1,107 @@
+{
+  "run_id": "scan-20261015-223250-f43d96e7",
+  "prior_run_id": "scan-20261015-215627-bb0a2529",
+  "deadline_at": 1792212990.733343,
+  "preflight": {
+    "ok": true,
+    "blockers": [],
+    "warnings": [
+      "The full search-area storage estimate exceeds available headroom. Actual free space is checked before each capture; saved progress is retained if storage runs low.",
+      "The displayed operator hold needs explicit authorization for this run; hold files stay unchanged",
+      "Drive writes consume local upload cache; cloud synchronization is not confirmed by a successful write"
+    ],
+    "estimates": {
+      "tile_upper_bound": 93465,
+      "raw_bytes_per_frame": 30395904,
+      "estimated_bytes": 4717368311040,
+      "max_seed_probes": 256,
+      "assumptions": "Whole search rectangle at measured 20\u00d7 scale, 15% overlap, plus 100 focus/search-frame equivalents per chip; not a measured chip plan"
+    },
+    "settings": {
+      "sample_id": "hBN 1",
+      "material": "hBN",
+      "oxide_nm": 90,
+      "width_mm": 100,
+      "height_mm": 100,
+      "z_below_um": 25,
+      "z_above_um": 25,
+      "focus_travel_policy": "controller",
+      "min_chip_mm": 10,
+      "max_chips": 100,
+      "hours": 24,
+      "max_tiles": 10000,
+      "exposure_ms": 200,
+      "light_percent": 90,
+      "auto_exposure": true,
+      "dark_holder": true,
+      "operator_ready": true,
+      "autonomous_reference": true,
+      "grid_4x4": false,
+      "grid_spacing_mm": 10,
+      "operator_name": "Christiano",
+      "substrate": "SiO2/Si",
+      "expected_chips": 1,
+      "layout": "scattered",
+      "grid_rows": 4,
+      "grid_columns": 4,
+      "analysis_after_scan": false
+    },
+    "resources": {
+      "project_root": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy",
+      "reserve_bytes": 10737418240,
+      "ram_reserve_bytes": 0,
+      "cloud_sync": "unverified",
+      "storage_ok": true,
+      "error": null,
+      "project_free_bytes": 129074487296,
+      "cache_free_bytes": 135867883520,
+      "memory_capacity": {
+        "physical_available_bytes": 1224310784,
+        "physical_total_bytes": 16851456000,
+        "commit_available_bytes": 22243028992,
+        "address_available_bytes": 140732256075776,
+        "policy": "windows_commit_and_address_capacity_v1"
+      },
+      "ram_available_bytes": 1224310784,
+      "ram_total_bytes": 16851456000,
+      "memory_admission": {
+        "physical_available_bytes": 1224310784,
+        "physical_total_bytes": 16851456000,
+        "commit_available_bytes": 22243028992,
+        "address_available_bytes": 140732256075776,
+        "policy": "windows_commit_and_address_capacity_v1",
+        "purpose": "worker startup and first capture",
+        "working_allowance_bytes": 1409286144,
+        "uncertainty_allowance_bytes": 352321536,
+        "required_capacity_bytes": 1761607680,
+        "adequate": true,
+        "physical_free_floor_bytes": 0,
+        "qualification": "Estimated incremental allocation plus 25% uncertainty; Windows paging remains enabled and unchanged."
+      }
+    },
+    "hold": {
+      "active": true,
+      "records": [
+        {
+          "path": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\OPERATOR-HOLD.json",
+          "sha256": "0091059e3da96760c9095147c6de6f0339d08b4512534892b44c0dc293baeb46",
+          "active": true,
+          "reason": "User paused acquisition after manual takeover by another lab member; focus on offline graphene segmentation."
+        },
+        {
+          "path": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\software-next-20261009\\OPERATOR-HOLD.json",
+          "sha256": "0091059e3da96760c9095147c6de6f0339d08b4512534892b44c0dc293baeb46",
+          "active": true,
+          "reason": "User paused acquisition after manual takeover by another lab member; focus on offline graphene segmentation."
+        },
+        {
+          "path": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\OPERATOR-HOLD.json",
+          "sha256": "0091059e3da96760c9095147c6de6f0339d08b4512534892b44c0dc293baeb46",
+          "active": true,
+          "reason": "User paused acquisition after manual takeover by another lab member; focus on offline graphene segmentation."
+        }
+      ],
+      "reason": "User paused acquisition after manual takeover by another lab member; focus on offline graphene segmentation.; User paused acquisition after manual takeover by another lab member; focus on offline graphene segmentation.; User paused acquisition after manual takeover by another lab member; focus on offline graphene segmentation."
+    }
+  }
+}

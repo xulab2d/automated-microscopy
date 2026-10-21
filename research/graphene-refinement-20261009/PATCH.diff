@@ -1,0 +1,150 @@
+--- before/flakefinder/material_terraces.py
++++ after/flakefinder/material_terraces.py
+@@ -107,6 +107,8 @@
+     null_distance=np.zeros(valid.shape,np.float32);null_distance[candidate]=maps['substrate_distance']
+     seeds=candidate&(null_distance**2>chi2.ppf(options.seed_quantile,3))
+     growth=candidate&(null_distance**2>chi2.ppf(options.growth_quantile,3))
++    # Full-frame classifier scratch is not needed during per-region work.
++    del maps,normalized,smooth
+     if parent_labels is None:
+         foreground=binary_propagation(seeds,mask=growth,structure=np.array([[0,1,0],[1,1,1],[0,1,0]],bool))
+         _,parents=cv2.connectedComponents(np.uint8(foreground),connectivity=4)
+@@ -119,6 +121,8 @@
+     timing_classify=time.perf_counter()-started-timing_normalize
+     gx=cv2.Sobel(contrast,cv2.CV_32F,1,0,ksize=3)/8;gy=cv2.Sobel(contrast,cv2.CV_32F,0,1,ksize=3)/8
+     raw_gradient=np.sqrt((gx*gx+gy*gy).sum(axis=2))
++    del gx,gy
++    inverse_raw_cov=np.linalg.inv(raw_cov)
+     labels=np.zeros(valid.shape,np.int32);regions=[];next_label=1;area_pixel=float(np.prod(pixel))
+     rectangle_seconds=0.
+     for parent,section in enumerate(find_objects(parents),1):
+@@ -135,25 +139,33 @@
+                 check()
+                 pixels=int(stats[part,cv2.CC_STAT_AREA]);area=pixels*area_pixel
+                 if area<options.source_floor_um2:continue
+-                mask=parts==part;labels[section][mask]=next_label
+-                geometry=_geometry(mask,(section[1].start,section[0].start),pixel)
++                # Work within the component rectangle, not the entire parent ROI.
++                px,py,pw,ph=map(int,stats[part,:4])
++                component_section=(slice(section[0].start+py,section[0].start+py+ph),
++                                   slice(section[1].start+px,section[1].start+px+pw))
++                mask=parts[py:py+ph,px:px+pw]==part
++                labels[component_section][mask]=next_label
++                geometry=_geometry(mask,(component_section[1].start,component_section[0].start),pixel)
++                rx,ry=np.ceil(options.interior_erosion_um/pixel).astype(int)
++                core=cv2.erode(np.uint8(mask),cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(2*rx+1,2*ry+1)),
++                               borderType=cv2.BORDER_CONSTANT,borderValue=0)>0
++                core_pixels=int(core.sum())
++                # Keep an unresolved thin/filamentary source visible. Its full-mask
++                # color is diagnostic only and cannot qualify a material proposal.
++                measured_mask=core if core_pixels else mask
+                 usable={'available':False,'reason':'Unknown contrast population; uniform usable terrace not established.'}
+                 geometry['usable_width_um']=0.
+                 if class_index>0:
+                     from .terrace_analysis import largest_uniform_rectangle
+                     rectangle_started=time.perf_counter()
+-                    yy,xx=np.nonzero(mask);x0,x1=int(xx.min()),int(xx.max())+1;y0,y1=int(yy.min()),int(yy.max())+1
+-                    rx,ry=np.ceil(options.interior_erosion_um/pixel).astype(int)
+-                    # Operate only on this connected component's bounding ROI.
+-                    uniform=mask[y0:y1,x0:x1]
+-                    interior=cv2.erode(np.uint8(uniform),cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(2*rx+1,2*ry+1)),borderType=cv2.BORDER_CONSTANT,borderValue=0)>0
+-                    usable=largest_uniform_rectangle(interior,pixel,origin_xy=(section[1].start+x0,section[0].start+y0))
++                    usable=largest_uniform_rectangle(core,pixel,
++                        origin_xy=(component_section[1].start,component_section[0].start))
+                     usable.update(available=True,uniformity_basis='same pixelwise contrast-reference class; material/thickness unconfirmed',erosion_um=options.interior_erosion_um)
+                     geometry['usable_width_um']=min(usable['width_um'],usable['height_um'])
+                     rectangle_seconds+=time.perf_counter()-rectangle_started
+                 geometry['usable_rectangle']=usable
+-                values=contrast[section][mask].astype(float)
+-                patch_means,patch_counts=_patch_statistics(values,mask,section,pixel,options.patch_um)
++                values=contrast[component_section][measured_mask].astype(float)
++                patch_means,patch_counts=_patch_statistics(values,measured_mask,component_section,pixel,options.patch_um)
+                 mean=np.average(patch_means,axis=0,weights=patch_counts)
+                 random_cov=np.cov(patch_means.T)/len(patch_means) if len(patch_means)>1 else raw_cov
+                 local_mean=(mean-centre)/(1-centre)
+@@ -161,14 +173,15 @@
+                 mean_cov=J@random_cov@J.T+Jbackground@systematic@Jbackground.T+numeric
+                 evidence=classifier.classify(local_mean,mean_cov)
+                 median=np.median(values,axis=0);residual=values-median
+-                texture=float(np.median(np.einsum('nc,cd,nd->n',residual,np.linalg.inv(raw_cov),residual)))
+-                inner=cv2.erode(np.uint8(mask),np.ones((3,3),np.uint8))>0;boundary=mask&~inner
++                texture=float(np.median(np.einsum('nc,cd,nd->n',residual,inverse_raw_cov,residual)))
++                inner=cv2.erode(np.uint8(mask),np.ones((3,3),np.uint8),borderType=cv2.BORDER_CONSTANT,borderValue=0)>0;boundary=mask&~inner
+                 # A descriptive raw neighboring-step statistic, not a shape veto.
+-                edge=float(np.median(raw_gradient[section][boundary])) if boundary.any() else 0.
+-                occupancy=float(material_map[section][mask].mean());debris_fraction=float(debris_map[section][mask].mean())
++                edge=float(np.median(raw_gradient[component_section][boundary])) if boundary.any() else 0.
++                occupancy=float(material_map[component_section][mask].mean());debris_fraction=float(debris_map[component_section][mask].mean())
+                 size_ok=area>=options.useful_area_um2 and geometry['usable_width_um']>=options.useful_width_um
+-                color_ok=bool(evidence['material_compatible']) and occupancy>=.5
++                color_ok=bool(core_pixels) and bool(evidence['material_compatible']) and occupancy>=.5
+                 reason=[]
++                if not core_pixels:reason.append('no_blur_free_interior')
+                 if not size_ok:reason.append('below_useful_size')
+                 if not color_ok:reason.append('color_unclassified_or_not_coherent_material_population')
+                 class_name=('unknown' if class_index<0 else classifier.components[int(class_index)-1]['label'] if classifier.components is not None else f"conditional_{classifier.model['thickness_nm'][int(class_index)-1]:g}nm")
+@@ -185,7 +198,11 @@
+                          'log_likelihood_ratio_vs_substrate':float(evidence['log_likelihood_ratio_vs_substrate'])},
+                         {'name':'edge','status':'descriptive_only','median_raw_contrast_gradient':edge},
+                         {'name':'texture','status':'descriptive_only','median_raw_noise_normalized_residual2':texture}],
+-                    'measurement':{'spatial_patch_count':len(patch_means),'patch_um':options.patch_um,'background_sample_count':int(noise_support.sum()),
++                    'measurement':{'contrast_basis':'eroded_interior' if core_pixels else 'whole_region_diagnostic_only',
++                        'interior_erosion_um':options.interior_erosion_um,'interior_pixels':core_pixels,
++                        'contrast_measurement_pixels':int(measured_mask.sum()),'edge_pixels_excluded':pixels-int(measured_mask.sum()),
++                        'non_interior_pixels':pixels-core_pixels,
++                        'interior_measurement_available':bool(core_pixels),'spatial_patch_count':len(patch_means),'patch_um':options.patch_um,'background_sample_count':int(noise_support.sum()),
+                         'background_systematic_supplied':background_systematic_covariance is not None,'background_uncertainty_not_divided_by_region_area':True,
+                         'qualification':'Patch means account for spatially correlated variation but are not validated independent samples; missing normalization systematic uncertainty is unquantified.'}})
+                 next_label+=1
+--- before/scripts/watch_graphene_scan.py
++++ after/scripts/watch_graphene_scan.py
+@@ -10,7 +10,7 @@
+     os.environ[key]='2'
+ WORKSPACE=Path(__file__).resolve().parents[1]
+ sys.path.insert(0,str(WORKSPACE))
+-VERSION='graphene-committed-terraces-v1'
++VERSION='graphene-committed-terraces-v2-interior'
+ TERMINAL={'complete','complete_with_boundary_limits','search_sampling_complete','chip_budget_reached',
+           'time_budget_reached','storage_budget_reached','stopped','failed','failed_closed','focus_unresolved'}
+ QUALITY_MESSAGES={
+@@ -186,6 +186,22 @@
+     return payload
+ 
+ 
++
++def background_priority():
++    """Use pointer-sized Windows handles; a ctypes default int can truncate one."""
++    if os.name!='nt':return 'not_applicable'
++    import ctypes
++    from ctypes import wintypes
++    kernel=ctypes.WinDLL('kernel32',use_last_error=True)
++    kernel.GetCurrentProcess.argtypes=[]
++    kernel.GetCurrentProcess.restype=wintypes.HANDLE
++    kernel.SetPriorityClass.argtypes=[wintypes.HANDLE,wintypes.DWORD]
++    kernel.SetPriorityClass.restype=wintypes.BOOL
++    if not kernel.SetPriorityClass(kernel.GetCurrentProcess(),0x4000):
++        raise ctypes.WinError(ctypes.get_last_error())
++    return 'below_normal'
++
++
+ def run(args):
+     import cv2,numpy as np
+     from threadpoolctl import threadpool_limits
+@@ -193,9 +209,6 @@
+     from flakefinder.terrace_domain import DomainExclusion
+     from flakefinder.storage import resolve_output_path
+     cv2.setNumThreads(2);threadpool_limits(2)
+-    if os.name=='nt':
+-        import ctypes
+-        ctypes.windll.kernel32.SetPriorityClass(ctypes.windll.kernel32.GetCurrentProcess(),0x4000)
+     run_folder,identity=request_identity(args.project,args.run_id)
+     output=resolve_output_path(run_folder/'analysis-graphene-incremental');output.mkdir(parents=True,exist_ok=True)
+     import msvcrt
+@@ -226,6 +239,7 @@
+                 if args.once or time.monotonic()-waiting>7200:raise
+                 for _ in range(15):time.sleep(1);check()
+     try:
++        state['process_priority']=background_priority()
+         wait_resources()
+         if plan_path.exists():
+             plan=read(plan_path)

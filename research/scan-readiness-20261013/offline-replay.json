@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "historical_run": "scan-20261011-155805-5c2c4a02",
+  "no_hardware": true,
+  "old_anchor_count": 3,
+  "new_anchor_count": 4,
+  "substrate_fallback": true,
+  "edge_evidence": {
+    "available_edge_images": 4,
+    "reason": "Observed edge-image centres are collinear or insufficiently separated."
+  },
+  "anchor_xy_um": [
+    [
+      1508.4289629629602,
+      -8613.78903703704
+    ],
+    [
+      -6391.57103703704,
+      -16223.78903703704
+    ],
+    [
+      2238.42896296296,
+      -16243.78903703704
+    ],
+    [
+      -1681.5710370370398,
+      -16143.78903703704
+    ]
+  ],
+  "old_east_probe_xy_um": [
+    2173.429,
+    -14114.715
+  ],
+  "proposed_east_probe_xy_um": [
+    2341.4671538476045,
+    -14114.715
+  ],
+  "qualification": "Offline search proposals only. No live focus, edge acceptance, or new coverage is asserted.",
+  "source_hashes": {
+    "full_chip.py": "af9d7526ffe4c86b165c4ae030802a064c1f70eec6a5bdaa73778c6fc7dd1f1e",
+    "sparse_acquisition.py": "6194160c6831f6c6365916212039e1017021b7f2e7860e727842b21d8bb86937",
+    "coverage-plan.json": "69435dc7284c5f614cb819707af6e8f3a5c02aaab6b5692875ad8d41f68d3b7c",
+    "discovery.json": "caa7569d1dab7b58f321ddc6d6dcef531e73b33712a70b78494c488a1d0cfe75"
+  }
+}

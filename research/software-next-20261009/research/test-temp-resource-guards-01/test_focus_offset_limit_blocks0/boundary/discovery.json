@@ -1,0 +1,2059 @@
+{
+  "schema": 1,
+  "algorithm": "overlapping_cardinal_frontier_collar_v1",
+  "algorithm_source_sha256": "83ed6734c4c41c370f6e564dcbb8aea6e328e4ea984ce5ce79c42aa5d5b9ee60",
+  "seed_xy_um": [
+    500.0,
+    500.0
+  ],
+  "options": {
+    "search_bounds_um": [
+      20.0,
+      1400.0,
+      20.0,
+      1100.0
+    ],
+    "cell_um": 5,
+    "overlap": 0.2,
+    "max_evidence_cells": 12000000,
+    "dark_holder_ratio": 0.15,
+    "mixed_min_fraction": 0.015,
+    "holder_stop_fraction": 0.65,
+    "focus_policy_id": "unchanged_height; geometric edge evidence only"
+  },
+  "context": {},
+  "transform": {
+    "matrix": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "pixel_size_um": [
+      1.0,
+      1.0
+    ],
+    "calibrated": true
+  },
+  "limits": {
+    "x_min": 0,
+    "x_max": 1600,
+    "y_min": 0,
+    "y_max": 1200,
+    "z_min": 50,
+    "z_max": 150,
+    "max_xy_step_um": 300,
+    "max_z_step_um": 10
+  },
+  "reference": {
+    "features": [
+      "log(R/G)",
+      "log(B/G)"
+    ],
+    "centre": [
+      0.18232160806655884,
+      0.2623642086982727
+    ],
+    "covariance": [
+      [
+        0.0006250001000000002,
+        0.0
+      ],
+      [
+        0.0,
+        0.0001440001
+      ]
+    ],
+    "white_level": 4095.0,
+    "context": {
+      "camera_resources": {
+        "fixed": 1
+      },
+      "camera_job_template": null,
+      "objective_position": 2,
+      "objective": null,
+      "white_level": 4095,
+      "illumination_percent": null
+    },
+    "pixel_size_um": [
+      1.0,
+      1.0
+    ],
+    "working_max_dimension": 768,
+    "substrate_mahalanobis_max": 3.5,
+    "mismatch_mahalanobis_min": 6.0,
+    "interpretation": "Reference colour match; neither chemical identity nor proof of chip continuity."
+  },
+  "reference_rgb": [
+    1800.0,
+    1500.0,
+    1950.0
+  ],
+  "reference_pixels_sha256": "28112d13480d9ad3c329b5ea22c5d0c803e078aa2eef90c53687a9b0eaeae018",
+  "source_shape": [
+    128,
+    160,
+    3
+  ],
+  "pitch_um": [
+    127.0,
+    101.60000000000001
+  ],
+  "field_rectangle_um": [
+    158.75,
+    127.0
+  ],
+  "fingerprint": "9eb169869291213e6fe155badaacaf3d2e7927ed6d89898bf0dd26a89afd8f3a",
+  "state": "complete",
+  "started_at": 1791598428.0647557,
+  "records": [
+    {
+      "name": "probe_000000",
+      "grid_ij": [
+        0,
+        0
+      ],
+      "phase": "seed",
+      "requested_xy_um": [
+        500.0,
+        500.0
+      ],
+      "position_um": [
+        500.0,
+        500.0,
+        100
+      ],
+      "labels_file": "labels/probe_000000.npz",
+      "image": "frames/probe_000000.tiff",
+      "hashes": {
+        "frames/probe_000000.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "frames/probe_000000.json": "0b39e6e56be94620160f97dc60f9852323f641fd3c531dac0ed38649887712bf",
+        "labels/probe_000000.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      },
+      "fractions": {
+        "substrate": 1.0,
+        "holder": 0.0,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": true,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000001",
+      "grid_ij": [
+        1,
+        0
+      ],
+      "phase": "cardinal_east",
+      "requested_xy_um": [
+        627.0,
+        500.0
+      ],
+      "position_um": [
+        627.0,
+        500.0,
+        100
+      ],
+      "labels_file": "labels/probe_000001.npz",
+      "image": "frames/probe_000001.tiff",
+      "hashes": {
+        "frames/probe_000001.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "frames/probe_000001.json": "27850b9bbdd2c2cb10c87b916cb0c10d4ed19874e253b9edb4d29c0db9cc0d7b",
+        "labels/probe_000001.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      },
+      "fractions": {
+        "substrate": 1.0,
+        "holder": 0.0,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": true,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000002",
+      "grid_ij": [
+        2,
+        0
+      ],
+      "phase": "cardinal_east",
+      "requested_xy_um": [
+        754.0,
+        500.0
+      ],
+      "position_um": [
+        754.0,
+        500.0,
+        100
+      ],
+      "labels_file": "labels/probe_000002.npz",
+      "image": "frames/probe_000002.tiff",
+      "hashes": {
+        "frames/probe_000002.tiff": "460793ced21606a9b19747e25f4b2426eaf15fd1e8da7f76d1f0215c7b19c2e3",
+        "frames/probe_000002.json": "ada087e324cce6e643110c18ab231a707a0ede856a718be12be89827b3532b1a",
+        "labels/probe_000002.npz": "99bebd918ce217d22f3054243d2a43c75b8a98583aa779bad424aa858603c1d3"
+      },
+      "fractions": {
+        "substrate": 0.79375,
+        "holder": 0.20625,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": true,
+        "boundary_frontier": true
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000003",
+      "grid_ij": [
+        3,
+        0
+      ],
+      "phase": "cardinal_east",
+      "requested_xy_um": [
+        881.0,
+        500.0
+      ],
+      "position_um": [
+        881.0,
+        500.0,
+        100
+      ],
+      "labels_file": "labels/probe_000003.npz",
+      "image": "frames/probe_000003.tiff",
+      "hashes": {
+        "frames/probe_000003.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000003.json": "f0e7a499fc31a60c5aa419ff0f622bb6bdd96f5e9da35a8822902b66c92a1bec",
+        "labels/probe_000003.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      },
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0,
+        "unknown": 0.0,
+        "holder_stop": true,
+        "seed_supported": false,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000004",
+      "grid_ij": [
+        0,
+        1
+      ],
+      "phase": "cardinal_north",
+      "requested_xy_um": [
+        500.0,
+        601.6
+      ],
+      "position_um": [
+        500.0,
+        601.6,
+        100
+      ],
+      "labels_file": "labels/probe_000004.npz",
+      "image": "frames/probe_000004.tiff",
+      "hashes": {
+        "frames/probe_000004.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "frames/probe_000004.json": "024a9df702dc84f2447344412e2800061cf88586fbacd955838d7cbdc285f1c1",
+        "labels/probe_000004.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      },
+      "fractions": {
+        "substrate": 1.0,
+        "holder": 0.0,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": true,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000005",
+      "grid_ij": [
+        0,
+        2
+      ],
+      "phase": "cardinal_north",
+      "requested_xy_um": [
+        500.0,
+        703.2
+      ],
+      "position_um": [
+        500.0,
+        703.2,
+        100
+      ],
+      "labels_file": "labels/probe_000005.npz",
+      "image": "frames/probe_000005.tiff",
+      "hashes": {
+        "frames/probe_000005.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "frames/probe_000005.json": "0cdfc76bc05dcf96d7ae340633d0486b2c2ff469e4aec434beaf66b5bd4e8827",
+        "labels/probe_000005.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      },
+      "fractions": {
+        "substrate": 1.0,
+        "holder": 0.0,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": true,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000006",
+      "grid_ij": [
+        0,
+        3
+      ],
+      "phase": "cardinal_north",
+      "requested_xy_um": [
+        500.0,
+        804.8
+      ],
+      "position_um": [
+        500.0,
+        804.8,
+        100
+      ],
+      "labels_file": "labels/probe_000006.npz",
+      "image": "frames/probe_000006.tiff",
+      "hashes": {
+        "frames/probe_000006.tiff": "d3e6d641b978f4884ce64557de26931a22575c532abd38e8bc36b5194cd34951",
+        "frames/probe_000006.json": "54d1757d3a38715eac3073e2df41986ae840eb1545741472166f0d1ff9cb6c15",
+        "labels/probe_000006.npz": "e92c1ee69eba9eb9cff3798bf0ab05bf78ba36ed0fc2014ef86da8d805656d93"
+      },
+      "fractions": {
+        "substrate": 0.46875,
+        "holder": 0.53125,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": false,
+        "boundary_frontier": true
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000007",
+      "grid_ij": [
+        0,
+        4
+      ],
+      "phase": "cardinal_north",
+      "requested_xy_um": [
+        500.0,
+        906.4000000000001
+      ],
+      "position_um": [
+        500.0,
+        906.4000000000001,
+        100
+      ],
+      "labels_file": "labels/probe_000007.npz",
+      "image": "frames/probe_000007.tiff",
+      "hashes": {
+        "frames/probe_000007.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000007.json": "658b45bfe49ec3f5f657796498d3814885946bae7ac70f8e892ee21353c05ea8",
+        "labels/probe_000007.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      },
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0,
+        "unknown": 0.0,
+        "holder_stop": true,
+        "seed_supported": false,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000008",
+      "grid_ij": [
+        -1,
+        0
+      ],
+      "phase": "cardinal_west",
+      "requested_xy_um": [
+        373.0,
+        500.0
+      ],
+      "position_um": [
+        373.0,
+        500.0,
+        100
+      ],
+      "labels_file": "labels/probe_000008.npz",
+      "image": "frames/probe_000008.tiff",
+      "hashes": {
+        "frames/probe_000008.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "frames/probe_000008.json": "68ced62a6293b9032423ddf7e6e6dbf1e9132f7134e2c8c212d7e855275a81dc",
+        "labels/probe_000008.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      },
+      "fractions": {
+        "substrate": 1.0,
+        "holder": 0.0,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": true,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000009",
+      "grid_ij": [
+        -2,
+        0
+      ],
+      "phase": "cardinal_west",
+      "requested_xy_um": [
+        246.0,
+        500.0
+      ],
+      "position_um": [
+        246.0,
+        500.0,
+        100
+      ],
+      "labels_file": "labels/probe_000009.npz",
+      "image": "frames/probe_000009.tiff",
+      "hashes": {
+        "frames/probe_000009.tiff": "b714efea49e277edeecc45af09e336c81e6a127478884590f513f84addae7ead",
+        "frames/probe_000009.json": "c14bc6ca3e8264fc51acf59a769429593201240123fa6956caa22e766a3ece4c",
+        "labels/probe_000009.npz": "7a94b4ab3347b9209cb08c611f0b57e995ff93f8684a1e2e1906539f6aac74f6"
+      },
+      "fractions": {
+        "substrate": 0.7875,
+        "holder": 0.2125,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": true,
+        "boundary_frontier": true
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000010",
+      "grid_ij": [
+        -3,
+        0
+      ],
+      "phase": "cardinal_west",
+      "requested_xy_um": [
+        119.0,
+        500.0
+      ],
+      "position_um": [
+        119.0,
+        500.0,
+        100
+      ],
+      "labels_file": "labels/probe_000010.npz",
+      "image": "frames/probe_000010.tiff",
+      "hashes": {
+        "frames/probe_000010.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000010.json": "623dc6f75b96c113337e78aada1fd75a84659a6d304f68344dc01df602ae2dfd",
+        "labels/probe_000010.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      },
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0,
+        "unknown": 0.0,
+        "holder_stop": true,
+        "seed_supported": false,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000011",
+      "grid_ij": [
+        0,
+        -1
+      ],
+      "phase": "cardinal_south",
+      "requested_xy_um": [
+        500.0,
+        398.4
+      ],
+      "position_um": [
+        500.0,
+        398.4,
+        100
+      ],
+      "labels_file": "labels/probe_000011.npz",
+      "image": "frames/probe_000011.tiff",
+      "hashes": {
+        "frames/probe_000011.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "frames/probe_000011.json": "79837fc3adaf972d886c1f12c4ef08146e7f8d3dc743367ae4b6aea3ee73f0fb",
+        "labels/probe_000011.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      },
+      "fractions": {
+        "substrate": 1.0,
+        "holder": 0.0,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": true,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000012",
+      "grid_ij": [
+        0,
+        -2
+      ],
+      "phase": "cardinal_south",
+      "requested_xy_um": [
+        500.0,
+        296.79999999999995
+      ],
+      "position_um": [
+        500.0,
+        296.79999999999995,
+        100
+      ],
+      "labels_file": "labels/probe_000012.npz",
+      "image": "frames/probe_000012.tiff",
+      "hashes": {
+        "frames/probe_000012.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "frames/probe_000012.json": "432a4105e280fea581b70ff6edb5ed88e43940c2048fb8ad23092c7911cf4d04",
+        "labels/probe_000012.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      },
+      "fractions": {
+        "substrate": 1.0,
+        "holder": 0.0,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": true,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000013",
+      "grid_ij": [
+        0,
+        -3
+      ],
+      "phase": "cardinal_south",
+      "requested_xy_um": [
+        500.0,
+        195.2
+      ],
+      "position_um": [
+        500.0,
+        195.2,
+        100
+      ],
+      "labels_file": "labels/probe_000013.npz",
+      "image": "frames/probe_000013.tiff",
+      "hashes": {
+        "frames/probe_000013.tiff": "47d3d84e70b3e16ecba6b798372e45562507d5b059cfdf23040fc5454ac30cfc",
+        "frames/probe_000013.json": "c1767a075772ae604258c373ef69aeb749cea849882a1e2027dfc57e76e32fd0",
+        "labels/probe_000013.npz": "f766a4b9331d762d94d91c707cecebac003d9f95b54acd794a0ac24d75f720c6"
+      },
+      "fractions": {
+        "substrate": 0.46875,
+        "holder": 0.53125,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": false,
+        "boundary_frontier": true
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000014",
+      "grid_ij": [
+        0,
+        -4
+      ],
+      "phase": "cardinal_south",
+      "requested_xy_um": [
+        500.0,
+        93.59999999999997
+      ],
+      "position_um": [
+        500.0,
+        93.59999999999997,
+        100
+      ],
+      "labels_file": "labels/probe_000014.npz",
+      "image": "frames/probe_000014.tiff",
+      "hashes": {
+        "frames/probe_000014.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000014.json": "9d35e969ced3c1aa9b3500d6004dcdc0640eac7cfcb5de71e1e33ab76156ce01",
+        "labels/probe_000014.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      },
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0,
+        "unknown": 0.0,
+        "holder_stop": true,
+        "seed_supported": false,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000015",
+      "grid_ij": [
+        -1,
+        -4
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        373.0,
+        93.59999999999997
+      ],
+      "position_um": [
+        373.0,
+        93.59999999999997,
+        100
+      ],
+      "labels_file": "labels/probe_000015.npz",
+      "image": "frames/probe_000015.tiff",
+      "hashes": {
+        "frames/probe_000015.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000015.json": "5c08c7df6ea8cba5bf6758b2e17cda16301b1bde788f282bd93dbb454c0266c0",
+        "labels/probe_000015.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      },
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0,
+        "unknown": 0.0,
+        "holder_stop": true,
+        "seed_supported": false,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000016",
+      "grid_ij": [
+        -1,
+        -3
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        373.0,
+        195.2
+      ],
+      "position_um": [
+        373.0,
+        195.2,
+        100
+      ],
+      "labels_file": "labels/probe_000016.npz",
+      "image": "frames/probe_000016.tiff",
+      "hashes": {
+        "frames/probe_000016.tiff": "47d3d84e70b3e16ecba6b798372e45562507d5b059cfdf23040fc5454ac30cfc",
+        "frames/probe_000016.json": "6e5b9b4d3989ea23644d4c78bcbbbde8f5d15c0e5ab81e5a0a4379efaa4027c1",
+        "labels/probe_000016.npz": "f766a4b9331d762d94d91c707cecebac003d9f95b54acd794a0ac24d75f720c6"
+      },
+      "fractions": {
+        "substrate": 0.46875,
+        "holder": 0.53125,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": false,
+        "boundary_frontier": true
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000017",
+      "grid_ij": [
+        -1,
+        -2
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        373.0,
+        296.79999999999995
+      ],
+      "position_um": [
+        373.0,
+        296.79999999999995,
+        100
+      ],
+      "labels_file": "labels/probe_000017.npz",
+      "image": "frames/probe_000017.tiff",
+      "hashes": {
+        "frames/probe_000017.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "frames/probe_000017.json": "aff92bfa99ade42a64dfe333b92e64c9a01b36d0a9ce9cf9c6eca507cdc6e984",
+        "labels/probe_000017.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      },
+      "fractions": {
+        "substrate": 1.0,
+        "holder": 0.0,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": true,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000018",
+      "grid_ij": [
+        -1,
+        -1
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        373.0,
+        398.4
+      ],
+      "position_um": [
+        373.0,
+        398.4,
+        100
+      ],
+      "labels_file": "labels/probe_000018.npz",
+      "image": "frames/probe_000018.tiff",
+      "hashes": {
+        "frames/probe_000018.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "frames/probe_000018.json": "9220c0ba69e4a42e63eeae16e3fdb00979c2cf2af7509e0cac57db2c2ad85e21",
+        "labels/probe_000018.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      },
+      "fractions": {
+        "substrate": 1.0,
+        "holder": 0.0,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": true,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000019",
+      "grid_ij": [
+        -2,
+        -1
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        246.0,
+        398.4
+      ],
+      "position_um": [
+        246.0,
+        398.4,
+        100
+      ],
+      "labels_file": "labels/probe_000019.npz",
+      "image": "frames/probe_000019.tiff",
+      "hashes": {
+        "frames/probe_000019.tiff": "b714efea49e277edeecc45af09e336c81e6a127478884590f513f84addae7ead",
+        "frames/probe_000019.json": "48ba7d0e4da5405fc03648f696f4995c4629e764520371221fdb14cc140826d0",
+        "labels/probe_000019.npz": "7a94b4ab3347b9209cb08c611f0b57e995ff93f8684a1e2e1906539f6aac74f6"
+      },
+      "fractions": {
+        "substrate": 0.7875,
+        "holder": 0.2125,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": true,
+        "boundary_frontier": true
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000020",
+      "grid_ij": [
+        -2,
+        -2
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        246.0,
+        296.79999999999995
+      ],
+      "position_um": [
+        246.0,
+        296.79999999999995,
+        100
+      ],
+      "labels_file": "labels/probe_000020.npz",
+      "image": "frames/probe_000020.tiff",
+      "hashes": {
+        "frames/probe_000020.tiff": "b714efea49e277edeecc45af09e336c81e6a127478884590f513f84addae7ead",
+        "frames/probe_000020.json": "f0491c7d30304552681a17b19c84d33c435b8426e0eb3c0b4351e1eb8a736adf",
+        "labels/probe_000020.npz": "7a94b4ab3347b9209cb08c611f0b57e995ff93f8684a1e2e1906539f6aac74f6"
+      },
+      "fractions": {
+        "substrate": 0.7875,
+        "holder": 0.2125,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": true,
+        "boundary_frontier": true
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000021",
+      "grid_ij": [
+        -2,
+        -3
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        246.0,
+        195.2
+      ],
+      "position_um": [
+        246.0,
+        195.2,
+        100
+      ],
+      "labels_file": "labels/probe_000021.npz",
+      "image": "frames/probe_000021.tiff",
+      "hashes": {
+        "frames/probe_000021.tiff": "df1afa5b773bf40279dbf2a9ae1e92a8407a61444d23bfd8e3ed2b129855b97b",
+        "frames/probe_000021.json": "6f432a7643257fc5d8936a9b4c411b99fc086634e461ecabb28e7d05b8fec90f",
+        "labels/probe_000021.npz": "beb0ff7b2901b2daea3b8b964b6bfbe42eab29b963668f20e6fdae0f38ddbe45"
+      },
+      "fractions": {
+        "substrate": 0.369140625,
+        "holder": 0.630859375,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": false,
+        "boundary_frontier": true
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000022",
+      "grid_ij": [
+        -2,
+        -4
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        246.0,
+        93.59999999999997
+      ],
+      "position_um": [
+        246.0,
+        93.59999999999997,
+        100
+      ],
+      "labels_file": "labels/probe_000022.npz",
+      "image": "frames/probe_000022.tiff",
+      "hashes": {
+        "frames/probe_000022.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000022.json": "f0eee85da918868e62a722a4af7c4535ca814642a3c92a4f5d461478661796e0",
+        "labels/probe_000022.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      },
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0,
+        "unknown": 0.0,
+        "holder_stop": true,
+        "seed_supported": false,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000023",
+      "grid_ij": [
+        -3,
+        -4
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        119.0,
+        93.59999999999997
+      ],
+      "position_um": [
+        119.0,
+        93.59999999999997,
+        100
+      ],
+      "labels_file": "labels/probe_000023.npz",
+      "image": "frames/probe_000023.tiff",
+      "hashes": {
+        "frames/probe_000023.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000023.json": "84ab9826512d2c2f513beb5d0a0eea680d95e5eb5f991377cb8f5277cf755481",
+        "labels/probe_000023.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      },
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0,
+        "unknown": 0.0,
+        "holder_stop": true,
+        "seed_supported": false,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000024",
+      "grid_ij": [
+        -3,
+        -3
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        119.0,
+        195.2
+      ],
+      "position_um": [
+        119.0,
+        195.2,
+        100
+      ],
+      "labels_file": "labels/probe_000024.npz",
+      "image": "frames/probe_000024.tiff",
+      "hashes": {
+        "frames/probe_000024.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000024.json": "b627b3955596713094d9a52a45bea55c921b2b13704255dd426695e135e75beb",
+        "labels/probe_000024.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      },
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0,
+        "unknown": 0.0,
+        "holder_stop": true,
+        "seed_supported": false,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000025",
+      "grid_ij": [
+        -3,
+        -2
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        119.0,
+        296.79999999999995
+      ],
+      "position_um": [
+        119.0,
+        296.79999999999995,
+        100
+      ],
+      "labels_file": "labels/probe_000025.npz",
+      "image": "frames/probe_000025.tiff",
+      "hashes": {
+        "frames/probe_000025.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000025.json": "d6e89d0a8c01cbbfd28c9a5e7683718873e0f17c4b487c377448ed0d19781083",
+        "labels/probe_000025.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      },
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0,
+        "unknown": 0.0,
+        "holder_stop": true,
+        "seed_supported": false,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000026",
+      "grid_ij": [
+        -3,
+        -1
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        119.0,
+        398.4
+      ],
+      "position_um": [
+        119.0,
+        398.4,
+        100
+      ],
+      "labels_file": "labels/probe_000026.npz",
+      "image": "frames/probe_000026.tiff",
+      "hashes": {
+        "frames/probe_000026.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000026.json": "80a188b8af76dc273f2b46f71710cec32bdfe4ee951cc3befaf6ef2bb502dbc4",
+        "labels/probe_000026.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      },
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0,
+        "unknown": 0.0,
+        "holder_stop": true,
+        "seed_supported": false,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000027",
+      "grid_ij": [
+        -3,
+        1
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        119.0,
+        601.6
+      ],
+      "position_um": [
+        119.0,
+        601.6,
+        100
+      ],
+      "labels_file": "labels/probe_000027.npz",
+      "image": "frames/probe_000027.tiff",
+      "hashes": {
+        "frames/probe_000027.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000027.json": "98779bdf78225f2e935c23f4f46b75697c4fc564a2c0022e5bb920105559968a",
+        "labels/probe_000027.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      },
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0,
+        "unknown": 0.0,
+        "holder_stop": true,
+        "seed_supported": false,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000028",
+      "grid_ij": [
+        -2,
+        1
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        246.0,
+        601.6
+      ],
+      "position_um": [
+        246.0,
+        601.6,
+        100
+      ],
+      "labels_file": "labels/probe_000028.npz",
+      "image": "frames/probe_000028.tiff",
+      "hashes": {
+        "frames/probe_000028.tiff": "b714efea49e277edeecc45af09e336c81e6a127478884590f513f84addae7ead",
+        "frames/probe_000028.json": "dd18157a6f5964fe7e0cde5129269c98a3cfdcde10531a2899de5f65f4b18250",
+        "labels/probe_000028.npz": "7a94b4ab3347b9209cb08c611f0b57e995ff93f8684a1e2e1906539f6aac74f6"
+      },
+      "fractions": {
+        "substrate": 0.7875,
+        "holder": 0.2125,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": true,
+        "boundary_frontier": true
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000029",
+      "grid_ij": [
+        -2,
+        2
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        246.0,
+        703.2
+      ],
+      "position_um": [
+        246.0,
+        703.2,
+        100
+      ],
+      "labels_file": "labels/probe_000029.npz",
+      "image": "frames/probe_000029.tiff",
+      "hashes": {
+        "frames/probe_000029.tiff": "b714efea49e277edeecc45af09e336c81e6a127478884590f513f84addae7ead",
+        "frames/probe_000029.json": "692d3951836ed1416ece65ae1bb43d611363b5098b71238c95db398894dcaec8",
+        "labels/probe_000029.npz": "7a94b4ab3347b9209cb08c611f0b57e995ff93f8684a1e2e1906539f6aac74f6"
+      },
+      "fractions": {
+        "substrate": 0.7875,
+        "holder": 0.2125,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": true,
+        "boundary_frontier": true
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000030",
+      "grid_ij": [
+        -2,
+        3
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        246.0,
+        804.8
+      ],
+      "position_um": [
+        246.0,
+        804.8,
+        100
+      ],
+      "labels_file": "labels/probe_000030.npz",
+      "image": "frames/probe_000030.tiff",
+      "hashes": {
+        "frames/probe_000030.tiff": "91f6f70552775779951445898b09584ecc054142dffba0b35b0e2545051ea455",
+        "frames/probe_000030.json": "f01cd30c38d5bde6358ec095a976c2a2986b3fc1b8197b4a84f3905ac075097c",
+        "labels/probe_000030.npz": "c962eaf552ee8bd7cd4f67e96b076c33fb7105895005944d05591c358de6466e"
+      },
+      "fractions": {
+        "substrate": 0.369140625,
+        "holder": 0.630859375,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": false,
+        "boundary_frontier": true
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000031",
+      "grid_ij": [
+        -2,
+        4
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        246.0,
+        906.4000000000001
+      ],
+      "position_um": [
+        246.0,
+        906.4000000000001,
+        100
+      ],
+      "labels_file": "labels/probe_000031.npz",
+      "image": "frames/probe_000031.tiff",
+      "hashes": {
+        "frames/probe_000031.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000031.json": "c45aef9c4dcac3e87fad9c06e46a3e5f8b7b12b0629f1607e4a4540ed8c0d750",
+        "labels/probe_000031.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      },
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0,
+        "unknown": 0.0,
+        "holder_stop": true,
+        "seed_supported": false,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000032",
+      "grid_ij": [
+        -3,
+        4
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        119.0,
+        906.4000000000001
+      ],
+      "position_um": [
+        119.0,
+        906.4000000000001,
+        100
+      ],
+      "labels_file": "labels/probe_000032.npz",
+      "image": "frames/probe_000032.tiff",
+      "hashes": {
+        "frames/probe_000032.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000032.json": "fcf3e3a2ad525aaab609bd400a10a5fb07a757e29e021efbfd6b8439daa5bff9",
+        "labels/probe_000032.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      },
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0,
+        "unknown": 0.0,
+        "holder_stop": true,
+        "seed_supported": false,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000033",
+      "grid_ij": [
+        -3,
+        3
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        119.0,
+        804.8
+      ],
+      "position_um": [
+        119.0,
+        804.8,
+        100
+      ],
+      "labels_file": "labels/probe_000033.npz",
+      "image": "frames/probe_000033.tiff",
+      "hashes": {
+        "frames/probe_000033.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000033.json": "fb19c26abb797e4e6075cefb996ed55c3010cb14534c82af1220ada5179aff45",
+        "labels/probe_000033.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      },
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0,
+        "unknown": 0.0,
+        "holder_stop": true,
+        "seed_supported": false,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000034",
+      "grid_ij": [
+        -3,
+        2
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        119.0,
+        703.2
+      ],
+      "position_um": [
+        119.0,
+        703.2,
+        100
+      ],
+      "labels_file": "labels/probe_000034.npz",
+      "image": "frames/probe_000034.tiff",
+      "hashes": {
+        "frames/probe_000034.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000034.json": "466d3b2660971abd3c4783470296106dd3b9d3deae596a74bdadce6d880e115d",
+        "labels/probe_000034.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      },
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0,
+        "unknown": 0.0,
+        "holder_stop": true,
+        "seed_supported": false,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000035",
+      "grid_ij": [
+        -1,
+        2
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        373.0,
+        703.2
+      ],
+      "position_um": [
+        373.0,
+        703.2,
+        100
+      ],
+      "labels_file": "labels/probe_000035.npz",
+      "image": "frames/probe_000035.tiff",
+      "hashes": {
+        "frames/probe_000035.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "frames/probe_000035.json": "17732573ff9b7cc2a793cb16ba61815ab9c84c0312c7325f8c2cd66c72e8817a",
+        "labels/probe_000035.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      },
+      "fractions": {
+        "substrate": 1.0,
+        "holder": 0.0,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": true,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000036",
+      "grid_ij": [
+        -1,
+        3
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        373.0,
+        804.8
+      ],
+      "position_um": [
+        373.0,
+        804.8,
+        100
+      ],
+      "labels_file": "labels/probe_000036.npz",
+      "image": "frames/probe_000036.tiff",
+      "hashes": {
+        "frames/probe_000036.tiff": "d3e6d641b978f4884ce64557de26931a22575c532abd38e8bc36b5194cd34951",
+        "frames/probe_000036.json": "6da8fefb0186a8554a2dc45d36950f19730b503625a7cb47e598f4570c32762e",
+        "labels/probe_000036.npz": "e92c1ee69eba9eb9cff3798bf0ab05bf78ba36ed0fc2014ef86da8d805656d93"
+      },
+      "fractions": {
+        "substrate": 0.46875,
+        "holder": 0.53125,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": false,
+        "boundary_frontier": true
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000037",
+      "grid_ij": [
+        -1,
+        4
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        373.0,
+        906.4000000000001
+      ],
+      "position_um": [
+        373.0,
+        906.4000000000001,
+        100
+      ],
+      "labels_file": "labels/probe_000037.npz",
+      "image": "frames/probe_000037.tiff",
+      "hashes": {
+        "frames/probe_000037.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000037.json": "db87b4da8df5c49bb711c4c836c5591915fff0b2b3d335fd75a4be44dfc56c1a",
+        "labels/probe_000037.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      },
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0,
+        "unknown": 0.0,
+        "holder_stop": true,
+        "seed_supported": false,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000038",
+      "grid_ij": [
+        1,
+        4
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        627.0,
+        906.4000000000001
+      ],
+      "position_um": [
+        627.0,
+        906.4000000000001,
+        100
+      ],
+      "labels_file": "labels/probe_000038.npz",
+      "image": "frames/probe_000038.tiff",
+      "hashes": {
+        "frames/probe_000038.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000038.json": "a677d16fc0e8b4ba8b80eec23c51d16e1c8b36044c3fcfd769492f7d7f865e0e",
+        "labels/probe_000038.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      },
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0,
+        "unknown": 0.0,
+        "holder_stop": true,
+        "seed_supported": false,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000039",
+      "grid_ij": [
+        1,
+        3
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        627.0,
+        804.8
+      ],
+      "position_um": [
+        627.0,
+        804.8,
+        100
+      ],
+      "labels_file": "labels/probe_000039.npz",
+      "image": "frames/probe_000039.tiff",
+      "hashes": {
+        "frames/probe_000039.tiff": "d3e6d641b978f4884ce64557de26931a22575c532abd38e8bc36b5194cd34951",
+        "frames/probe_000039.json": "7415ae0b1d4ef0df6dd3729434d62b7b88f28166a3305fdd59c06de68bca3892",
+        "labels/probe_000039.npz": "e92c1ee69eba9eb9cff3798bf0ab05bf78ba36ed0fc2014ef86da8d805656d93"
+      },
+      "fractions": {
+        "substrate": 0.46875,
+        "holder": 0.53125,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": false,
+        "boundary_frontier": true
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000040",
+      "grid_ij": [
+        1,
+        2
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        627.0,
+        703.2
+      ],
+      "position_um": [
+        627.0,
+        703.2,
+        100
+      ],
+      "labels_file": "labels/probe_000040.npz",
+      "image": "frames/probe_000040.tiff",
+      "hashes": {
+        "frames/probe_000040.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "frames/probe_000040.json": "91382d8f269d92d57e514f240cb9a29dc695086dcc509c66585db2facd8bdcdc",
+        "labels/probe_000040.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      },
+      "fractions": {
+        "substrate": 1.0,
+        "holder": 0.0,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": true,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000041",
+      "grid_ij": [
+        1,
+        1
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        627.0,
+        601.6
+      ],
+      "position_um": [
+        627.0,
+        601.6,
+        100
+      ],
+      "labels_file": "labels/probe_000041.npz",
+      "image": "frames/probe_000041.tiff",
+      "hashes": {
+        "frames/probe_000041.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "frames/probe_000041.json": "5203143ec9f7df2e37619bd0ac9a3eded23683e63177977811e3ec59c1375f79",
+        "labels/probe_000041.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      },
+      "fractions": {
+        "substrate": 1.0,
+        "holder": 0.0,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": true,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000042",
+      "grid_ij": [
+        2,
+        1
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        754.0,
+        601.6
+      ],
+      "position_um": [
+        754.0,
+        601.6,
+        100
+      ],
+      "labels_file": "labels/probe_000042.npz",
+      "image": "frames/probe_000042.tiff",
+      "hashes": {
+        "frames/probe_000042.tiff": "460793ced21606a9b19747e25f4b2426eaf15fd1e8da7f76d1f0215c7b19c2e3",
+        "frames/probe_000042.json": "2de7e3f4e4413f1da208733200f91768ba60206bebf9c6d5c3b750eb493b7b51",
+        "labels/probe_000042.npz": "99bebd918ce217d22f3054243d2a43c75b8a98583aa779bad424aa858603c1d3"
+      },
+      "fractions": {
+        "substrate": 0.79375,
+        "holder": 0.20625,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": true,
+        "boundary_frontier": true
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000043",
+      "grid_ij": [
+        2,
+        2
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        754.0,
+        703.2
+      ],
+      "position_um": [
+        754.0,
+        703.2,
+        100
+      ],
+      "labels_file": "labels/probe_000043.npz",
+      "image": "frames/probe_000043.tiff",
+      "hashes": {
+        "frames/probe_000043.tiff": "460793ced21606a9b19747e25f4b2426eaf15fd1e8da7f76d1f0215c7b19c2e3",
+        "frames/probe_000043.json": "45b418e83d74c303db7bb5e1f5e87546a776b5dee4b28a5b9c2d9cf696b82b3d",
+        "labels/probe_000043.npz": "99bebd918ce217d22f3054243d2a43c75b8a98583aa779bad424aa858603c1d3"
+      },
+      "fractions": {
+        "substrate": 0.79375,
+        "holder": 0.20625,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": true,
+        "boundary_frontier": true
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000044",
+      "grid_ij": [
+        2,
+        3
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        754.0,
+        804.8
+      ],
+      "position_um": [
+        754.0,
+        804.8,
+        100
+      ],
+      "labels_file": "labels/probe_000044.npz",
+      "image": "frames/probe_000044.tiff",
+      "hashes": {
+        "frames/probe_000044.tiff": "e7642af985773b7c56bb32f079f5a05c50c94eb9dc3b4f1fa5120c3db31b2670",
+        "frames/probe_000044.json": "0df0d231552581438a920caea0dc656d70b047198edba227b5883aa6d5dda708",
+        "labels/probe_000044.npz": "f957402481e4b6a679c7671ce08d69b830667fa6e188b8699a2d3229a188d43a"
+      },
+      "fractions": {
+        "substrate": 0.3720703125,
+        "holder": 0.6279296875,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": false,
+        "boundary_frontier": true
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000045",
+      "grid_ij": [
+        2,
+        4
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        754.0,
+        906.4000000000001
+      ],
+      "position_um": [
+        754.0,
+        906.4000000000001,
+        100
+      ],
+      "labels_file": "labels/probe_000045.npz",
+      "image": "frames/probe_000045.tiff",
+      "hashes": {
+        "frames/probe_000045.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000045.json": "b31b2e03cdc167628b23aed49bb3886b822a23a2bd5c5c59346c0a8ee7514358",
+        "labels/probe_000045.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      },
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0,
+        "unknown": 0.0,
+        "holder_stop": true,
+        "seed_supported": false,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000046",
+      "grid_ij": [
+        3,
+        4
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        881.0,
+        906.4000000000001
+      ],
+      "position_um": [
+        881.0,
+        906.4000000000001,
+        100
+      ],
+      "labels_file": "labels/probe_000046.npz",
+      "image": "frames/probe_000046.tiff",
+      "hashes": {
+        "frames/probe_000046.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000046.json": "4e7e877fee28c418ccf6ec49e7c04fe535f8a82cbab1c89f57f4be58a4dade16",
+        "labels/probe_000046.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      },
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0,
+        "unknown": 0.0,
+        "holder_stop": true,
+        "seed_supported": false,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000047",
+      "grid_ij": [
+        3,
+        3
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        881.0,
+        804.8
+      ],
+      "position_um": [
+        881.0,
+        804.8,
+        100
+      ],
+      "labels_file": "labels/probe_000047.npz",
+      "image": "frames/probe_000047.tiff",
+      "hashes": {
+        "frames/probe_000047.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000047.json": "e96e73366c1859691582d3e3615fc61b5c3a97b48a3fbae1c873d308b4ac0955",
+        "labels/probe_000047.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      },
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0,
+        "unknown": 0.0,
+        "holder_stop": true,
+        "seed_supported": false,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000048",
+      "grid_ij": [
+        3,
+        2
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        881.0,
+        703.2
+      ],
+      "position_um": [
+        881.0,
+        703.2,
+        100
+      ],
+      "labels_file": "labels/probe_000048.npz",
+      "image": "frames/probe_000048.tiff",
+      "hashes": {
+        "frames/probe_000048.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000048.json": "aa0eeea08eb8c2752561a426395f07c6395e0a12106924e179bf1ebb7bbeb6d5",
+        "labels/probe_000048.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      },
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0,
+        "unknown": 0.0,
+        "holder_stop": true,
+        "seed_supported": false,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000049",
+      "grid_ij": [
+        3,
+        1
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        881.0,
+        601.6
+      ],
+      "position_um": [
+        881.0,
+        601.6,
+        100
+      ],
+      "labels_file": "labels/probe_000049.npz",
+      "image": "frames/probe_000049.tiff",
+      "hashes": {
+        "frames/probe_000049.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000049.json": "77fd3a334271e14dfc061d4755fc8d2fcca4d5479854bc62099369971fb30311",
+        "labels/probe_000049.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      },
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0,
+        "unknown": 0.0,
+        "holder_stop": true,
+        "seed_supported": false,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000050",
+      "grid_ij": [
+        3,
+        -1
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        881.0,
+        398.4
+      ],
+      "position_um": [
+        881.0,
+        398.4,
+        100
+      ],
+      "labels_file": "labels/probe_000050.npz",
+      "image": "frames/probe_000050.tiff",
+      "hashes": {
+        "frames/probe_000050.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000050.json": "a88fc4b4b5da2cd6d96a4564a6abc1e6b57c45adc5adc0cc7dba574636f1eaa3",
+        "labels/probe_000050.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      },
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0,
+        "unknown": 0.0,
+        "holder_stop": true,
+        "seed_supported": false,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000051",
+      "grid_ij": [
+        2,
+        -1
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        754.0,
+        398.4
+      ],
+      "position_um": [
+        754.0,
+        398.4,
+        100
+      ],
+      "labels_file": "labels/probe_000051.npz",
+      "image": "frames/probe_000051.tiff",
+      "hashes": {
+        "frames/probe_000051.tiff": "460793ced21606a9b19747e25f4b2426eaf15fd1e8da7f76d1f0215c7b19c2e3",
+        "frames/probe_000051.json": "1eb79fd5e33a084bfd2a29180d6c9005c9b33dc229309bd9bcc9498530c91c58",
+        "labels/probe_000051.npz": "99bebd918ce217d22f3054243d2a43c75b8a98583aa779bad424aa858603c1d3"
+      },
+      "fractions": {
+        "substrate": 0.79375,
+        "holder": 0.20625,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": true,
+        "boundary_frontier": true
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000052",
+      "grid_ij": [
+        2,
+        -2
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        754.0,
+        296.79999999999995
+      ],
+      "position_um": [
+        754.0,
+        296.79999999999995,
+        100
+      ],
+      "labels_file": "labels/probe_000052.npz",
+      "image": "frames/probe_000052.tiff",
+      "hashes": {
+        "frames/probe_000052.tiff": "460793ced21606a9b19747e25f4b2426eaf15fd1e8da7f76d1f0215c7b19c2e3",
+        "frames/probe_000052.json": "a9faee5622508a89bd6c48415905db3276d7d1f9539ed8b7bd1cbe0a21f6fc61",
+        "labels/probe_000052.npz": "99bebd918ce217d22f3054243d2a43c75b8a98583aa779bad424aa858603c1d3"
+      },
+      "fractions": {
+        "substrate": 0.79375,
+        "holder": 0.20625,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": true,
+        "boundary_frontier": true
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000053",
+      "grid_ij": [
+        2,
+        -3
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        754.0,
+        195.2
+      ],
+      "position_um": [
+        754.0,
+        195.2,
+        100
+      ],
+      "labels_file": "labels/probe_000053.npz",
+      "image": "frames/probe_000053.tiff",
+      "hashes": {
+        "frames/probe_000053.tiff": "32373334867a0bec1a900245c8863e43b70760f9e0c08b8b95ed19a792c87248",
+        "frames/probe_000053.json": "f3b28387c6093b7df582c809e6a7f1c32bb5890401da9ea9edd095772daedbf1",
+        "labels/probe_000053.npz": "cfe9f3306795cf0027efb8edd9284e7ede10c0c475edec3d097b94c8da25c6fb"
+      },
+      "fractions": {
+        "substrate": 0.3720703125,
+        "holder": 0.6279296875,
+        "unknown": 0.0,
+        "holder_stop": false,
+        "seed_supported": false,
+        "boundary_frontier": true
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000054",
+      "grid_ij": [
+        2,
+        -4
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        754.0,
+        93.59999999999997
+      ],
+      "position_um": [
+        754.0,
+        93.59999999999997,
+        100
+      ],
+      "labels_file": "labels/probe_000054.npz",
+      "image": "frames/probe_000054.tiff",
+      "hashes": {
+        "frames/probe_000054.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000054.json": "5e74f54c4eee3b9dc7a7fbb3dd81f488bfadd8077b8422176a22a38afbd10f68",
+        "labels/probe_000054.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      },
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0,
+        "unknown": 0.0,
+        "holder_stop": true,
+        "seed_supported": false,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    },
+    {
+      "name": "probe_000055",
+      "grid_ij": [
+        1,
+        -4
+      ],
+      "phase": "boundary_frontier",
+      "requested_xy_um": [
+        627.0,
+        93.59999999999997
+      ],
+      "position_um": [
+        627.0,
+        93.59999999999997,
+        100
+      ],
+      "labels_file": "labels/probe_000055.npz",
+      "image": "frames/probe_000055.tiff",
+      "hashes": {
+        "frames/probe_000055.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000055.json": "5c6771afe3e0e064df310f2164155800f5d00be30eaf7fde1d3babca575fc832",
+        "labels/probe_000055.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      },
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0,
+        "unknown": 0.0,
+        "holder_stop": true,
+        "seed_supported": false,
+        "boundary_frontier": false
+      },
+      "focus_policy_id": "unchanged_height; geometric edge evidence only"
+    }
+  ],
+  "probe_budget": 250,
+  "ray_status": {
+    "east": "observed_non_substrate_field",
+    "north": "observed_non_substrate_field",
+    "west": "observed_non_substrate_field",
+    "south": "observed_non_substrate_field"
+  },
+  "coverage_kind": "boundary_evidence_not_full_interior_acquisition",
+  "updated_at": 1791598429.8357463,
+  "enclosure": {
+    "status": "enclosed",
+    "kind": "observed_non_substrate_collar",
+    "seed_xy_um": [
+      500.0,
+      500.0
+    ],
+    "scan_bounds_um": [
+      190.0,
+      810.0,
+      150.0,
+      810.0
+    ],
+    "outline_um": [
+      [
+        582.5,
+        162.5
+      ],
+      [
+        582.5,
+        197.5
+      ],
+      [
+        577.5,
+        202.5
+      ],
+      [
+        202.5,
+        202.5
+      ],
+      [
+        202.5,
+        797.5
+      ],
+      [
+        797.5,
+        797.5
+      ],
+      [
+        797.5,
+        202.5
+      ],
+      [
+        677.5,
+        202.5
+      ],
+      [
+        672.5,
+        197.5
+      ],
+      [
+        672.5,
+        162.5
+      ]
+    ],
+    "planning_polygon_um": [
+      [
+        682.5,
+        152.5
+      ],
+      [
+        807.5,
+        192.5
+      ],
+      [
+        807.5,
+        807.5
+      ],
+      [
+        192.5,
+        807.5
+      ],
+      [
+        192.5,
+        192.5
+      ],
+      [
+        572.5,
+        152.5
+      ]
+    ],
+    "edge_sampling_uncertainty_um": 10.0,
+    "interior_observed_fraction": 0.9086036283672347,
+    "interior_fully_acquired": false,
+    "physical_chip_identity": "not established; occlusions, holes and unobserved interior require full raster review",
+    "classification_assumption": "Reference-colour substrate and non-substrate labels are correct at this evidence resolution."
+  }
+}

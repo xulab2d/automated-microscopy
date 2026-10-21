@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "checked_at": 1792041863.4235868,
+  "scope": "Future invocations only; full empirical pipeline was already complete and all workers closed before this dispatcher update. Exact executed source stays in the existing pinned segmentation archive.",
+  "cpu_policy": {
+    "threads": 1,
+    "priority": "below_normal",
+    "windows_affinity": "physical cores preferred within allowed mask",
+    "cpu_masks": [
+      1,
+      4
+    ],
+    "cpu_topology": {
+      "processor_masks": [
+        1,
+        4
+      ],
+      "affinity_mask": 5,
+      "allowed_mask": 1048575,
+      "physical_core_masks": [
+        3,
+        12,
+        48,
+        192,
+        768,
+        3072,
+        4096,
+        8192,
+        16384,
+        32768,
+        65536,
+        131072,
+        262144,
+        524288
+      ],
+      "topology_source": "Windows GetLogicalProcessorInformation",
+      "worker_masks_reused": false
+    }
+  },
+  "source_sha256": {
+    "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\software-next-20261009\\scripts\\analyze_graphene_run.py": "ad762273a032b8203a7b8893e66e28359466dc3b2a66d5bc6c8f97d6fd82964f",
+    "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\software-next-20261009\\flakefinder\\cpu_topology.py": "044d253156a03215eb68be8679eadfde667ebe3e9945c5d318f34bc618a64839"
+  },
+  "tests": "16 focused CPU topology/dispatch/parallel-commit tests passed"
+}

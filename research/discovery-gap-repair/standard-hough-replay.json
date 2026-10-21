@@ -1,0 +1,38 @@
+[
+  {
+    "image": "probe_000006",
+    "substrate_purity": 0.9396385585978692,
+    "holder_purity": 1.0,
+    "points": 253,
+    "span_px": 258.0,
+    "source_height_px": 267,
+    "normal_image": [
+      1.0,
+      0.0
+    ]
+  },
+  {
+    "image": "probe_000009",
+    "substrate_purity": 0.9507923824743642,
+    "holder_purity": 1.0,
+    "points": 238,
+    "span_px": 258.0171706052497,
+    "source_height_px": 267,
+    "normal_image": [
+      0.9999143481254578,
+      0.013089596293866634
+    ]
+  },
+  {
+    "image": "probe_000010",
+    "substrate_purity": 0.9330617581975458,
+    "holder_purity": 0.998208338118755,
+    "points": 234,
+    "span_px": 258.19183181226254,
+    "source_height_px": 267,
+    "normal_image": [
+      0.9993908405303955,
+      0.03489949554204941
+    ]
+  }
+]

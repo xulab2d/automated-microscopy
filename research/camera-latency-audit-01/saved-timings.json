@@ -1,0 +1,1951 @@
+{
+  "qualification": "Offline file reads and in-memory protobuf only. No connection, RPC, camera interaction or acquisition. Existing timers combine acquisition, transfer and vendor job finalization; decoding benchmark does not measure transport.",
+  "capture_count": 182,
+  "acquisition_timings": {
+    "camera_job_and_transfer": {
+      "n": 182,
+      "median_s": 1.5435306499985018,
+      "p90_s": 1.801099409996823
+    },
+    "capture_total_before_cleanup": {
+      "n": 182,
+      "median_s": 1.70175339999696,
+      "p90_s": 2.0316577400037206
+    },
+    "job_load": {
+      "n": 182,
+      "median_s": 0.13590770000155317,
+      "p90_s": 0.22674769000150263
+    },
+    "resource_setup": {
+      "n": 182,
+      "median_s": 0.008765000002313172,
+      "p90_s": 0.014416610002081144
+    }
+  },
+  "by_exposure_ms": {
+    "100.0": {
+      "camera_job_and_transfer": {
+        "n": 2,
+        "median_s": 1.3363796500016178,
+        "p90_s": 1.4422816900005273
+      },
+      "capture_total_before_cleanup": {
+        "n": 2,
+        "median_s": 1.9042595500013704,
+        "p90_s": 2.1229474300012954
+      },
+      "job_load": {
+        "n": 2,
+        "median_s": 0.5378783500000281,
+        "p90_s": 0.8541732700006832
+      },
+      "resource_setup": {
+        "n": 2,
+        "median_s": 0.012594049998369883,
+        "p90_s": 0.013305449997642427
+      }
+    },
+    "200.0": {
+      "camera_job_and_transfer": {
+        "n": 177,
+        "median_s": 1.542369199996756,
+        "p90_s": 1.797030959998665
+      },
+      "capture_total_before_cleanup": {
+        "n": 177,
+        "median_s": 1.701266600000963,
+        "p90_s": 2.0231961800003773
+      },
+      "job_load": {
+        "n": 177,
+        "median_s": 0.13351229999534553,
+        "p90_s": 0.22494525999791223
+      },
+      "resource_setup": {
+        "n": 177,
+        "median_s": 0.008685100001457613,
+        "p90_s": 0.014259660003881437
+      }
+    },
+    "266.6015625": {
+      "camera_job_and_transfer": {
+        "n": 1,
+        "median_s": 2.064002499999333,
+        "p90_s": 2.064002499999333
+      },
+      "capture_total_before_cleanup": {
+        "n": 1,
+        "median_s": 3.5802498999983072,
+        "p90_s": 3.5802498999983072
+      },
+      "job_load": {
+        "n": 1,
+        "median_s": 1.4411408999985724,
+        "p90_s": 1.4411408999985724
+      },
+      "resource_setup": {
+        "n": 1,
+        "median_s": 0.02715650000027381,
+        "p90_s": 0.02715650000027381
+      }
+    },
+    "400.0": {
+      "camera_job_and_transfer": {
+        "n": 2,
+        "median_s": 1.6122751000002609,
+        "p90_s": 1.632215659999929
+      },
+      "capture_total_before_cleanup": {
+        "n": 2,
+        "median_s": 1.7658127499998955,
+        "p90_s": 1.7737735900002007
+      },
+      "job_load": {
+        "n": 2,
+        "median_s": 0.13222114999916812,
+        "p90_s": 0.14239799000024506
+      },
+      "resource_setup": {
+        "n": 2,
+        "median_s": 0.008562250000977656,
+        "p90_s": 0.00873117000082857
+      }
+    }
+  },
+  "decode_benchmark": {
+    "source": "data\\whole-chip-standardized-01\\discovery\\chip-001\\support-frames\\support_003.tiff",
+    "payload_bytes": 30396013,
+    "decode_s": [
+      0.04783280000265222,
+      0.05682689999957802
+    ],
+    "protobuf_parse_and_decode_s": [
+      0.07298720000108005,
+      0.06559679999918444
+    ],
+    "exact_rgb_equal": true
+  },
+  "captures": [
+    {
+      "file": "data\\whole-chip-standardized-01\\reference\\substrate.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.1220857000007527,
+        "resource_setup": 0.010782500001369044,
+        "camera_job_and_transfer": 1.5063702000006742,
+        "capture_total_before_cleanup": 1.6533742999999959
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\calibration\\baseline\\frame.json",
+      "exposure_ms": 266.6015625,
+      "timings": {
+        "job_load": 1.4411408999985724,
+        "resource_setup": 0.02715650000027381,
+        "camera_job_and_transfer": 2.064002499999333,
+        "capture_total_before_cleanup": 3.5802498999983072
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\calibration\\edge-registration\\south-current.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 1.1820103999998537,
+        "resource_setup": 0.01547450000362005,
+        "camera_job_and_transfer": 1.5022672999984934,
+        "capture_total_before_cleanup": 2.7268840999968234
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\calibration\\focus-01\\best-observed.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.10551900000064052,
+        "resource_setup": 0.004890600001090206,
+        "camera_job_and_transfer": 1.3553726999998617,
+        "capture_total_before_cleanup": 1.476758200002223
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\calibration\\focus-02\\best-observed.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.1076100000027509,
+        "resource_setup": 0.0090680000030261,
+        "camera_job_and_transfer": 1.5999327999998059,
+        "capture_total_before_cleanup": 1.7265721000003396
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\calibration\\focus-02\\focused.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.1268746000023384,
+        "resource_setup": 0.010490199998457683,
+        "camera_job_and_transfer": 1.4296372999997402,
+        "capture_total_before_cleanup": 1.578451400000631
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\calibration\\focus-03\\best-observed.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11824800000249525,
+        "resource_setup": 0.0052235000002838206,
+        "camera_job_and_transfer": 1.6437970000006317,
+        "capture_total_before_cleanup": 1.7816052000016498
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\calibration\\focus-03\\focused.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.12025240000002668,
+        "resource_setup": 0.007224400000268361,
+        "camera_job_and_transfer": 1.583344800001214,
+        "capture_total_before_cleanup": 1.7219237999997858
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\calibration\\focus-04\\best-observed.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.12481820000175503,
+        "resource_setup": 0.009195700000418583,
+        "camera_job_and_transfer": 1.4069888000012725,
+        "capture_total_before_cleanup": 1.554266600000119
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\calibration\\focus-05\\best-observed.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.190338199998223,
+        "resource_setup": 0.0072469000006094575,
+        "camera_job_and_transfer": 1.4971513999989838,
+        "capture_total_before_cleanup": 1.7014801999976044
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\calibration\\focus-05\\focused.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.19948529999965103,
+        "resource_setup": 0.02548939999905997,
+        "camera_job_and_transfer": 1.4250152999993588,
+        "capture_total_before_cleanup": 1.6569137000005867
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\calibration\\response\\exposure_100_0.json",
+      "exposure_ms": 100.0,
+      "timings": {
+        "job_load": 0.933247000000847,
+        "resource_setup": 0.013483299997460563,
+        "camera_job_and_transfer": 1.204002100002981,
+        "capture_total_before_cleanup": 2.1776194000012765
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\calibration\\response\\exposure_100_1.json",
+      "exposure_ms": 100.0,
+      "timings": {
+        "job_load": 0.14250969999920926,
+        "resource_setup": 0.011704799999279203,
+        "camera_job_and_transfer": 1.4687572000002547,
+        "capture_total_before_cleanup": 1.6308997000014642
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\calibration\\response\\exposure_200_0.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.1220857000007527,
+        "resource_setup": 0.010782500001369044,
+        "camera_job_and_transfer": 1.5063702000006742,
+        "capture_total_before_cleanup": 1.6533742999999959
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\calibration\\response\\exposure_200_1.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.15486710000186577,
+        "resource_setup": 0.01775909999923897,
+        "camera_job_and_transfer": 1.3807412999994995,
+        "capture_total_before_cleanup": 1.5608739000017522
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\calibration\\response\\exposure_400_0.json",
+      "exposure_ms": 400.0,
+      "timings": {
+        "job_load": 0.11950009999782196,
+        "resource_setup": 0.008351100001164014,
+        "camera_job_and_transfer": 1.637200799999846,
+        "capture_total_before_cleanup": 1.7757638000002771
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\calibration\\response\\exposure_400_1.json",
+      "exposure_ms": 400.0,
+      "timings": {
+        "job_load": 0.14494220000051428,
+        "resource_setup": 0.008773400000791298,
+        "camera_job_and_transfer": 1.5873494000006758,
+        "capture_total_before_cleanup": 1.7558616999995138
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\campaign-attempts\\interior-focus-01\\chip001\\focus-surface\\attempt-d75ac09fd6c84ceb9bd229d9bd6916b1\\anchor_000\\recovery\\best_observed.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.10026190000280621,
+        "resource_setup": 0.007767200000671437,
+        "camera_job_and_transfer": 1.6253982999987784,
+        "capture_total_before_cleanup": 1.7427129999996396
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000000.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.22465809999994235,
+        "resource_setup": 0.007655699999304488,
+        "camera_job_and_transfer": 1.6059515999950236,
+        "capture_total_before_cleanup": 1.8422782999987248
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000001.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.20688700000027893,
+        "resource_setup": 0.009729500001412816,
+        "camera_job_and_transfer": 1.955624499998521,
+        "capture_total_before_cleanup": 2.177069700002903
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000002.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.16395319999719504,
+        "resource_setup": 0.005763799999840558,
+        "camera_job_and_transfer": 1.6098399000038626,
+        "capture_total_before_cleanup": 1.7859804999970947
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000003.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.2672296999953687,
+        "resource_setup": 0.009853399998974055,
+        "camera_job_and_transfer": 1.6418801999971038,
+        "capture_total_before_cleanup": 1.9243386000016471
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000004.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.21193099999800324,
+        "resource_setup": 0.006039300002157688,
+        "camera_job_and_transfer": 1.5344050000057905,
+        "capture_total_before_cleanup": 1.7594718000036664
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000005.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.22537599999486702,
+        "resource_setup": 0.00652049999916926,
+        "camera_job_and_transfer": 1.7849919000000227,
+        "capture_total_before_cleanup": 2.0229435000001104
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000006.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.20239389999915147,
+        "resource_setup": 0.008763800004089717,
+        "camera_job_and_transfer": 1.6287318000031519,
+        "capture_total_before_cleanup": 1.8470926000009058
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000007.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.213050900005328,
+        "resource_setup": 0.011991599996690638,
+        "camera_job_and_transfer": 1.6559669000052963,
+        "capture_total_before_cleanup": 1.8880925999983447
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000008.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.1761079999996582,
+        "resource_setup": 0.006016899998940062,
+        "camera_job_and_transfer": 1.6290286000003107,
+        "capture_total_before_cleanup": 1.8229008999987855
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000009.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.22690010000223992,
+        "resource_setup": 0.010664200002793223,
+        "camera_job_and_transfer": 1.655186699994374,
+        "capture_total_before_cleanup": 1.9002982000019983
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000010.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.23728880000271602,
+        "resource_setup": 0.011466299998573959,
+        "camera_job_and_transfer": 1.9297495999999228,
+        "capture_total_before_cleanup": 2.182800499998848
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000011.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.23228039999958128,
+        "resource_setup": 0.01119019999896409,
+        "camera_job_and_transfer": 1.7240362000011373,
+        "capture_total_before_cleanup": 1.9717961999995168
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000012.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.2593445000020438,
+        "resource_setup": 0.010052500001620501,
+        "camera_job_and_transfer": 1.688356799997564,
+        "capture_total_before_cleanup": 1.9639785999970627
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000013.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.2333481000023312,
+        "resource_setup": 0.007561099999293219,
+        "camera_job_and_transfer": 1.8525415000040084,
+        "capture_total_before_cleanup": 2.1006064000030165
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000014.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.19192069999553496,
+        "resource_setup": 0.008548699996026698,
+        "camera_job_and_transfer": 1.9549327999993693,
+        "capture_total_before_cleanup": 2.1633289999954286
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000015.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.21081959999719402,
+        "resource_setup": 0.02474179999990156,
+        "camera_job_and_transfer": 1.67041259999678,
+        "capture_total_before_cleanup": 1.9111391999977059
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000016.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.1996387000035611,
+        "resource_setup": 0.030745200005185325,
+        "camera_job_and_transfer": 1.6815086999995401,
+        "capture_total_before_cleanup": 1.9190130999995745
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000017.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.19226049999997485,
+        "resource_setup": 0.011333800001011696,
+        "camera_job_and_transfer": 1.6635834999979124,
+        "capture_total_before_cleanup": 1.8729298999969615
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000018.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.21331050000299,
+        "resource_setup": 0.006030500000633765,
+        "camera_job_and_transfer": 1.7093640000020969,
+        "capture_total_before_cleanup": 1.9350529000003007
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000019.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.21940490000270074,
+        "resource_setup": 0.009666199999628589,
+        "camera_job_and_transfer": 1.778922400000738,
+        "capture_total_before_cleanup": 2.0126674999992247
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000020.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.1726087000060943,
+        "resource_setup": 0.006545299998833798,
+        "camera_job_and_transfer": 1.662689999997383,
+        "capture_total_before_cleanup": 1.8474518000002718
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000021.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.217739799998526,
+        "resource_setup": 0.007691999999224208,
+        "camera_job_and_transfer": 1.8282328999994206,
+        "capture_total_before_cleanup": 2.0608309999952326
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000022.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.2079539000042132,
+        "resource_setup": 0.007612300003529526,
+        "camera_job_and_transfer": 1.7660860999967554,
+        "capture_total_before_cleanup": 1.9876519000026747
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000023.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.22919959999853745,
+        "resource_setup": 0.010358900006394833,
+        "camera_job_and_transfer": 1.6829833000010694,
+        "capture_total_before_cleanup": 1.927320700000564
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000024.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.19919669999944745,
+        "resource_setup": 0.009581999998772517,
+        "camera_job_and_transfer": 1.6345550999976695,
+        "capture_total_before_cleanup": 1.8470893999983673
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000025.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.22068250000302214,
+        "resource_setup": 0.010201800003414974,
+        "camera_job_and_transfer": 1.647319299998344,
+        "capture_total_before_cleanup": 1.8862915999998222
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000026.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.2326284000009764,
+        "resource_setup": 0.00849970000126632,
+        "camera_job_and_transfer": 1.8073870000007446,
+        "capture_total_before_cleanup": 2.0550714999990305
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000027.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.2157766000018455,
+        "resource_setup": 0.011289599999145139,
+        "camera_job_and_transfer": 1.6698531999936677,
+        "capture_total_before_cleanup": 1.904280499999004
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000028.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.22936949999711942,
+        "resource_setup": 0.012239199997566175,
+        "camera_job_and_transfer": 1.581324600003427,
+        "capture_total_before_cleanup": 1.8281092999968678
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000029.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.20287010000174632,
+        "resource_setup": 0.010961399995721877,
+        "camera_job_and_transfer": 1.635568300000159,
+        "capture_total_before_cleanup": 1.8572739000010188
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000030.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.18234909999591764,
+        "resource_setup": 0.005961900002148468,
+        "camera_job_and_transfer": 1.75161030000163,
+        "capture_total_before_cleanup": 1.9457889999976032
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000031.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.2111778000034974,
+        "resource_setup": 0.007277000004251022,
+        "camera_job_and_transfer": 1.656554999994114,
+        "capture_total_before_cleanup": 1.8794094000040786
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000032.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.2132904999962193,
+        "resource_setup": 0.006992099995841272,
+        "camera_job_and_transfer": 1.5947268000018084,
+        "capture_total_before_cleanup": 1.819796399999177
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000033.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.2285688999982085,
+        "resource_setup": 0.00969039999472443,
+        "camera_job_and_transfer": 1.777022999995097,
+        "capture_total_before_cleanup": 2.023575200000778
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000034.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.20401899999706075,
+        "resource_setup": 0.011565300002985168,
+        "camera_job_and_transfer": 1.7450912999993307,
+        "capture_total_before_cleanup": 1.967707399999199
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000035.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.24173670000163838,
+        "resource_setup": 0.011820899999293033,
+        "camera_job_and_transfer": 1.937055499998678,
+        "capture_total_before_cleanup": 2.1946810000008554
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000036.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.19727969999803463,
+        "resource_setup": 0.01152400000137277,
+        "camera_job_and_transfer": 1.7118617999949493,
+        "capture_total_before_cleanup": 1.9312009999994189
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000037.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.1985899999999674,
+        "resource_setup": 0.011181499998201616,
+        "camera_job_and_transfer": 1.6849021000016364,
+        "capture_total_before_cleanup": 1.9000373000017134
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000038.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.22282690000429284,
+        "resource_setup": 0.035911499995563645,
+        "camera_job_and_transfer": 1.616352299999562,
+        "capture_total_before_cleanup": 1.8825921000025119
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000039.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.23815160000231117,
+        "resource_setup": 0.012262700001883786,
+        "camera_job_and_transfer": 1.7479729000042425,
+        "capture_total_before_cleanup": 2.0059888000032515
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000040.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.16924009999638656,
+        "resource_setup": 0.006678899997496046,
+        "camera_job_and_transfer": 1.9694527999963611,
+        "capture_total_before_cleanup": 2.1525849999961792
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000041.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.17529840000497643,
+        "resource_setup": 0.007437100000970531,
+        "camera_job_and_transfer": 1.8117627000028733,
+        "capture_total_before_cleanup": 2.0018559000018286
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000042.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.17518919999565696,
+        "resource_setup": 0.007370399995124899,
+        "camera_job_and_transfer": 1.7466174000001047,
+        "capture_total_before_cleanup": 1.934706099993491
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000043.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.20841919999656966,
+        "resource_setup": 0.011509800002386328,
+        "camera_job_and_transfer": 1.751026300000376,
+        "capture_total_before_cleanup": 1.9751818000004278
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000044.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.17333920000237413,
+        "resource_setup": 0.004529899997578468,
+        "camera_job_and_transfer": 1.846594800001185,
+        "capture_total_before_cleanup": 2.0325558000040473
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000045.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.22914640000090003,
+        "resource_setup": 0.008777499999268912,
+        "camera_job_and_transfer": 1.8300737000026857,
+        "capture_total_before_cleanup": 2.0736285999955726
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000046.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.21180579999781912,
+        "resource_setup": 0.006460999997216277,
+        "camera_job_and_transfer": 1.7790580000000773,
+        "capture_total_before_cleanup": 2.003197199999704
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000047.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.20379910000337986,
+        "resource_setup": 0.007547499997599516,
+        "camera_job_and_transfer": 1.8019130999964545,
+        "capture_total_before_cleanup": 2.0201770000057877
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000048.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.20006560000183526,
+        "resource_setup": 0.02931729999545496,
+        "camera_job_and_transfer": 1.7056059999958961,
+        "capture_total_before_cleanup": 1.9424938000011025
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000049.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.19972630000120262,
+        "resource_setup": 0.01413410000532167,
+        "camera_job_and_transfer": 2.1276775000005728,
+        "capture_total_before_cleanup": 2.347966900000756
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000050.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.2075916999965557,
+        "resource_setup": 0.02551600000151666,
+        "camera_job_and_transfer": 2.0012420999992173,
+        "capture_total_before_cleanup": 2.240533599993796
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000051.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.16322370000125375,
+        "resource_setup": 0.007868799999414477,
+        "camera_job_and_transfer": 1.689046800005599,
+        "capture_total_before_cleanup": 1.8643386000039754
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000052.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.1533424000008381,
+        "resource_setup": 0.0111685999945621,
+        "camera_job_and_transfer": 1.6898609999989276,
+        "capture_total_before_cleanup": 1.8589034999968135
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000053.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.17172229999414412,
+        "resource_setup": 0.008100499995634891,
+        "camera_job_and_transfer": 1.9654914999991888,
+        "capture_total_before_cleanup": 2.159943499995279
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000054.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.22873229999822797,
+        "resource_setup": 0.00963479999336414,
+        "camera_job_and_transfer": 1.8561493000015616,
+        "capture_total_before_cleanup": 2.101613399994676
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000055.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.18652580000343733,
+        "resource_setup": 0.018369699995673727,
+        "camera_job_and_transfer": 1.5616758999967715,
+        "capture_total_before_cleanup": 1.7786820999972406
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000056.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.19778889999724925,
+        "resource_setup": 0.008110099995974451,
+        "camera_job_and_transfer": 1.505602600002021,
+        "capture_total_before_cleanup": 1.7228882999988855
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000057.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11177830000087852,
+        "resource_setup": 0.007620899996254593,
+        "camera_job_and_transfer": 1.368742699996801,
+        "capture_total_before_cleanup": 1.500879300001543
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000058.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.10373520000575809,
+        "resource_setup": 0.00835739999456564,
+        "camera_job_and_transfer": 1.5071486999950139,
+        "capture_total_before_cleanup": 1.6256420999998227
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000059.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.1147175999940373,
+        "resource_setup": 0.00931029999628663,
+        "camera_job_and_transfer": 1.3264554999987013,
+        "capture_total_before_cleanup": 1.4574290999953519
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000060.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.16006029999698512,
+        "resource_setup": 0.019226100004743785,
+        "camera_job_and_transfer": 1.4880278000055114,
+        "capture_total_before_cleanup": 1.6778112000029068
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000061.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11243899999681162,
+        "resource_setup": 0.005301299999700859,
+        "camera_job_and_transfer": 1.4260020000001532,
+        "capture_total_before_cleanup": 1.5519387000022107
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000062.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11018460000195773,
+        "resource_setup": 0.007844799998565577,
+        "camera_job_and_transfer": 1.3635540000032051,
+        "capture_total_before_cleanup": 1.4892317999983788
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000063.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.10051540000131354,
+        "resource_setup": 0.005885099999431986,
+        "camera_job_and_transfer": 1.4276367999991635,
+        "capture_total_before_cleanup": 1.5469978000037372
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000064.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.13351229999534553,
+        "resource_setup": 0.008273800005554222,
+        "camera_job_and_transfer": 1.695726999998442,
+        "capture_total_before_cleanup": 1.8483119999946211
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000065.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.12231140000221785,
+        "resource_setup": 0.00600500000291504,
+        "camera_job_and_transfer": 1.556415899998683,
+        "capture_total_before_cleanup": 1.6924160000053234
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000066.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.12231509999401169,
+        "resource_setup": 0.0071409000011044554,
+        "camera_job_and_transfer": 1.5530788999967626,
+        "capture_total_before_cleanup": 1.6961849999934202
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000067.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11392409999825759,
+        "resource_setup": 0.007438799999363255,
+        "camera_job_and_transfer": 1.5690009999962058,
+        "capture_total_before_cleanup": 1.6977025000014692
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000068.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.13725889999477658,
+        "resource_setup": 0.009509199997410178,
+        "camera_job_and_transfer": 1.3634454000057303,
+        "capture_total_before_cleanup": 1.5193311999973957
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000069.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11643029999686405,
+        "resource_setup": 0.010693600001104642,
+        "camera_job_and_transfer": 1.3937858999997843,
+        "capture_total_before_cleanup": 1.5317527000006521
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000070.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11164949999511009,
+        "resource_setup": 0.006885499999043532,
+        "camera_job_and_transfer": 1.542369199996756,
+        "capture_total_before_cleanup": 1.67202620000171
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000071.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11300340000161668,
+        "resource_setup": 0.007980400005180854,
+        "camera_job_and_transfer": 1.4885267999998177,
+        "capture_total_before_cleanup": 1.6165270999990753
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000072.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.12388120000105118,
+        "resource_setup": 0.007597100004204549,
+        "camera_job_and_transfer": 1.378095599997323,
+        "capture_total_before_cleanup": 1.5181249000015669
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000073.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.2522058999966248,
+        "resource_setup": 0.01234130000375444,
+        "camera_job_and_transfer": 1.5523176999995485,
+        "capture_total_before_cleanup": 1.827504200002295
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000074.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.12993419999838807,
+        "resource_setup": 0.008173100002750289,
+        "camera_job_and_transfer": 1.4163138000003528,
+        "capture_total_before_cleanup": 1.5653304000006756
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000075.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11120629999641096,
+        "resource_setup": 0.007359000002907123,
+        "camera_job_and_transfer": 1.3932658000048832,
+        "capture_total_before_cleanup": 1.5207510999971419
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000076.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.1074289999960456,
+        "resource_setup": 0.007726400006504264,
+        "camera_job_and_transfer": 1.4178021999978228,
+        "capture_total_before_cleanup": 1.5418548000016017
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000077.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.10886369999934686,
+        "resource_setup": 0.00911439999617869,
+        "camera_job_and_transfer": 1.3754456999959075,
+        "capture_total_before_cleanup": 1.5071716000020388
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000078.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.10932889999821782,
+        "resource_setup": 0.005670600003213622,
+        "camera_job_and_transfer": 1.422233099998266,
+        "capture_total_before_cleanup": 1.5469144999951823
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000079.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11919499999930849,
+        "resource_setup": 0.00517010000476148,
+        "camera_job_and_transfer": 1.4032141999996384,
+        "capture_total_before_cleanup": 1.5393069999990985
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000080.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11368090000178199,
+        "resource_setup": 0.010719300000346266,
+        "camera_job_and_transfer": 1.3436056999998982,
+        "capture_total_before_cleanup": 1.4771619999955874
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000081.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.10966199999529636,
+        "resource_setup": 0.0063765999948373064,
+        "camera_job_and_transfer": 1.3401984000010998,
+        "capture_total_before_cleanup": 1.4654907999938587
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000082.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.19227590000082273,
+        "resource_setup": 0.0070866000023670495,
+        "camera_job_and_transfer": 1.6040983999992022,
+        "capture_total_before_cleanup": 1.8135821000032593
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000083.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.09738099999958649,
+        "resource_setup": 0.00602229999640258,
+        "camera_job_and_transfer": 1.3663021999964258,
+        "capture_total_before_cleanup": 1.4807454999972833
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000084.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.10391349999554222,
+        "resource_setup": 0.0068472999992081895,
+        "camera_job_and_transfer": 1.3762439000056474,
+        "capture_total_before_cleanup": 1.495036300002539
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000085.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.10652679999475367,
+        "resource_setup": 0.006288099997618701,
+        "camera_job_and_transfer": 1.372461300001305,
+        "capture_total_before_cleanup": 1.4909310999937588
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000086.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.10189510000054725,
+        "resource_setup": 0.008035900005779695,
+        "camera_job_and_transfer": 1.3419192000001203,
+        "capture_total_before_cleanup": 1.4579622000019299
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000087.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11392209999758052,
+        "resource_setup": 0.007620500000484753,
+        "camera_job_and_transfer": 1.57562749999488,
+        "capture_total_before_cleanup": 1.7069965999980923
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000088.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.10417330000200309,
+        "resource_setup": 0.008788300001469906,
+        "camera_job_and_transfer": 1.4044813000000431,
+        "capture_total_before_cleanup": 1.5242923999976483
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000089.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.10983829999895534,
+        "resource_setup": 0.004559599998174235,
+        "camera_job_and_transfer": 1.4222187000050326,
+        "capture_total_before_cleanup": 1.5472340999986045
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000090.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.12425350000557955,
+        "resource_setup": 0.0056838000018615276,
+        "camera_job_and_transfer": 1.4734669999961625,
+        "capture_total_before_cleanup": 1.6123207000055118
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000091.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11596470000222325,
+        "resource_setup": 0.007914200003142469,
+        "camera_job_and_transfer": 1.4927525000020978,
+        "capture_total_before_cleanup": 1.6226855000059004
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000092.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.16415290000441018,
+        "resource_setup": 0.008583299997553695,
+        "camera_job_and_transfer": 1.4232408000025316,
+        "capture_total_before_cleanup": 1.6063426000036998
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000093.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.1671314999985043,
+        "resource_setup": 0.008389300004637334,
+        "camera_job_and_transfer": 1.5681385999996564,
+        "capture_total_before_cleanup": 1.7528163000024506
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000094.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.13564530000439845,
+        "resource_setup": 0.010864500000025146,
+        "camera_job_and_transfer": 1.5000953000053414,
+        "capture_total_before_cleanup": 1.6585229000047548
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000095.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11664830000518123,
+        "resource_setup": 0.010166000000026543,
+        "camera_job_and_transfer": 1.5636158000052092,
+        "capture_total_before_cleanup": 1.701266600000963
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000096.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11432330000388902,
+        "resource_setup": 0.0059188000013818964,
+        "camera_job_and_transfer": 1.3660095000013825,
+        "capture_total_before_cleanup": 1.4959065000002738
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000097.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.10627979999844683,
+        "resource_setup": 0.007548199995653704,
+        "camera_job_and_transfer": 1.4243089000010514,
+        "capture_total_before_cleanup": 1.5448916999957873
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000098.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.10948389999975916,
+        "resource_setup": 0.006731599998602178,
+        "camera_job_and_transfer": 1.5855851999949664,
+        "capture_total_before_cleanup": 1.7087776999978814
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000099.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11627910000242991,
+        "resource_setup": 0.008571799997298513,
+        "camera_job_and_transfer": 1.4047148999961792,
+        "capture_total_before_cleanup": 1.5402585999981966
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000100.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.12106179999682354,
+        "resource_setup": 0.007143599999835715,
+        "camera_job_and_transfer": 1.4400119999991148,
+        "capture_total_before_cleanup": 1.5779861999981222
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000101.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11535410000215052,
+        "resource_setup": 0.007363299999269657,
+        "camera_job_and_transfer": 1.4666425000032177,
+        "capture_total_before_cleanup": 1.6018397000007099
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000102.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.10808069999620784,
+        "resource_setup": 0.005080900002212729,
+        "camera_job_and_transfer": 1.5009331999972346,
+        "capture_total_before_cleanup": 1.627318099999684
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000103.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.12266239999735262,
+        "resource_setup": 0.011744499999622349,
+        "camera_job_and_transfer": 1.4550672999976086,
+        "capture_total_before_cleanup": 1.6018289999992703
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000104.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11187490000156686,
+        "resource_setup": 0.0069917000000714324,
+        "camera_job_and_transfer": 1.4479777999949874,
+        "capture_total_before_cleanup": 1.5781062000023667
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000105.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.15919819999544416,
+        "resource_setup": 0.015082600002642721,
+        "camera_job_and_transfer": 1.516378899999836,
+        "capture_total_before_cleanup": 1.7020265999963158
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000106.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.1178488000005018,
+        "resource_setup": 0.010300500005541835,
+        "camera_job_and_transfer": 1.7081940999996732,
+        "capture_total_before_cleanup": 1.8456941000040388
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000107.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.12390560000494588,
+        "resource_setup": 0.011266300003626384,
+        "camera_job_and_transfer": 1.3939769999997225,
+        "capture_total_before_cleanup": 1.5433420000044862
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000108.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.13257769999472657,
+        "resource_setup": 0.007486100003006868,
+        "camera_job_and_transfer": 1.4376699999993434,
+        "capture_total_before_cleanup": 1.5913175999958185
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000109.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11993020000227261,
+        "resource_setup": 0.011365500002284534,
+        "camera_job_and_transfer": 1.4128283000027295,
+        "capture_total_before_cleanup": 1.554156600002898
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000110.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.12629989999550162,
+        "resource_setup": 0.01672559999860823,
+        "camera_job_and_transfer": 1.4268767000030493,
+        "capture_total_before_cleanup": 1.5799537999992026
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000111.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11699370000133058,
+        "resource_setup": 0.00717609999992419,
+        "camera_job_and_transfer": 1.4185735999999451,
+        "capture_total_before_cleanup": 1.5521948999958113
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000112.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.1021889999974519,
+        "resource_setup": 0.0060032999972463585,
+        "camera_job_and_transfer": 1.4496958000017912,
+        "capture_total_before_cleanup": 1.5690561999945203
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000113.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11246009999740636,
+        "resource_setup": 0.0070548000003327616,
+        "camera_job_and_transfer": 1.3857669999997597,
+        "capture_total_before_cleanup": 1.5140625999993063
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000114.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11856570000236388,
+        "resource_setup": 0.007883199999923818,
+        "camera_job_and_transfer": 1.4454248000038206,
+        "capture_total_before_cleanup": 1.5821670000004815
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000115.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11245119999512099,
+        "resource_setup": 0.005040399999415968,
+        "camera_job_and_transfer": 1.3961960999949952,
+        "capture_total_before_cleanup": 1.5240517999991425
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000116.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.12097750000248197,
+        "resource_setup": 0.006939700004295446,
+        "camera_job_and_transfer": 1.3741729999965173,
+        "capture_total_before_cleanup": 1.5160159000006388
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000117.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11588889999984531,
+        "resource_setup": 0.008155199997418094,
+        "camera_job_and_transfer": 1.364072500000475,
+        "capture_total_before_cleanup": 1.497107800001686
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000118.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11865660000330536,
+        "resource_setup": 0.006023699999786913,
+        "camera_job_and_transfer": 1.4163562999965507,
+        "capture_total_before_cleanup": 1.550671400000283
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000119.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.12029830000392394,
+        "resource_setup": 0.009209799995005596,
+        "camera_job_and_transfer": 1.4588809000051697,
+        "capture_total_before_cleanup": 1.5979168000048958
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000120.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11813919999985956,
+        "resource_setup": 0.007954900000186171,
+        "camera_job_and_transfer": 1.4618860999980825,
+        "capture_total_before_cleanup": 1.598124000003736
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\focus-surface\\attempt-1766dd68b1d34c0bbbf30c39bc9ba47c\\anchor_003\\anchor.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.18214300000545336,
+        "resource_setup": 0.009972100000595674,
+        "camera_job_and_transfer": 1.7937762000001385,
+        "capture_total_before_cleanup": 1.993160900005023
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\focus-surface\\attempt-1766dd68b1d34c0bbbf30c39bc9ba47c\\anchor_003\\selection\\full-field.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.21858780000184197,
+        "resource_setup": 0.00964659999590367,
+        "camera_job_and_transfer": 1.7190651999990223,
+        "capture_total_before_cleanup": 1.9541421000030823
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\focus-surface\\attempt-1c1b5f7709d040c8b032a11ea99ca4db\\anchor_000\\anchor.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.17677860000549117,
+        "resource_setup": 0.014513399997667875,
+        "camera_job_and_transfer": 1.649622000004456,
+        "capture_total_before_cleanup": 1.8480326999997487
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\focus-surface\\attempt-1c1b5f7709d040c8b032a11ea99ca4db\\anchor_002\\anchor.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.20781829999759793,
+        "resource_setup": 0.006187899998622015,
+        "camera_job_and_transfer": 1.6656874000036623,
+        "capture_total_before_cleanup": 1.8872578000009526
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\focus-surface\\attempt-1c1b5f7709d040c8b032a11ea99ca4db\\anchor_000\\recovery\\best_observed.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.21187459999782732,
+        "resource_setup": 0.009071300002688076,
+        "camera_job_and_transfer": 1.7833346000043093,
+        "capture_total_before_cleanup": 2.011244799999986
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\focus-surface\\attempt-1c1b5f7709d040c8b032a11ea99ca4db\\anchor_000\\recovery\\verified_focus.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.21780130000115605,
+        "resource_setup": 0.010196200004429556,
+        "camera_job_and_transfer": 1.5791569000066374,
+        "capture_total_before_cleanup": 1.8146368000016082
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\focus-surface\\attempt-1c1b5f7709d040c8b032a11ea99ca4db\\anchor_000\\selection\\full-field.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.21034949999739183,
+        "resource_setup": 0.010528300001169555,
+        "camera_job_and_transfer": 1.527219999996305,
+        "capture_total_before_cleanup": 1.7547015000018291
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\focus-surface\\attempt-1c1b5f7709d040c8b032a11ea99ca4db\\anchor_001\\selection\\full-field.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.19910710000112886,
+        "resource_setup": 0.007056800001009833,
+        "camera_job_and_transfer": 1.7454447999989497,
+        "capture_total_before_cleanup": 1.9559358999977121
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\focus-surface\\attempt-1c1b5f7709d040c8b032a11ea99ca4db\\anchor_002\\recovery\\best_observed.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.2601194000017131,
+        "resource_setup": 0.007629700005054474,
+        "camera_job_and_transfer": 1.8779642000008607,
+        "capture_total_before_cleanup": 2.149796099998639
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\focus-surface\\attempt-1c1b5f7709d040c8b032a11ea99ca4db\\anchor_002\\recovery\\verified_focus.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.20840150000003632,
+        "resource_setup": 0.007383400006801821,
+        "camera_job_and_transfer": 1.9350544000044465,
+        "capture_total_before_cleanup": 2.155062600002566
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\focus-surface\\attempt-1c1b5f7709d040c8b032a11ea99ca4db\\anchor_002\\selection\\full-field.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.17931189999944763,
+        "resource_setup": 0.042019600005005486,
+        "camera_job_and_transfer": 1.750459700000647,
+        "capture_total_before_cleanup": 1.979619099998672
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\focus-surface\\attempt-93e3ff1f2564410fb2286e6b86015b1b\\anchor_000\\anchor.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.17630820000340464,
+        "resource_setup": 0.0065420000028098,
+        "camera_job_and_transfer": 1.4479168000034406,
+        "capture_total_before_cleanup": 1.6347651000032783
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\focus-surface\\attempt-93e3ff1f2564410fb2286e6b86015b1b\\anchor_000\\recovery\\best_observed.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.2212331999980961,
+        "resource_setup": 0.00887220000004163,
+        "camera_job_and_transfer": 1.547402799998963,
+        "capture_total_before_cleanup": 1.7844770000010612
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\focus-surface\\attempt-93e3ff1f2564410fb2286e6b86015b1b\\anchor_000\\recovery\\verified_focus.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.18178009999974165,
+        "resource_setup": 0.006869899996672757,
+        "camera_job_and_transfer": 1.5991075999991153,
+        "capture_total_before_cleanup": 1.792426100000739
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\chip001\\focus-surface\\attempt-93e3ff1f2564410fb2286e6b86015b1b\\anchor_001\\recovery\\best_observed.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.19134179999673506,
+        "resource_setup": 0.005813100004161242,
+        "camera_job_and_transfer": 1.435144200004288,
+        "capture_total_before_cleanup": 1.6401028999971459
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\frames\\probe_000000.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.12217919999966398,
+        "resource_setup": 0.01387590000013006,
+        "camera_job_and_transfer": 1.5446921000002476,
+        "capture_total_before_cleanup": 1.695995199999743
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\frames\\probe_000001.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.13220079999882728,
+        "resource_setup": 0.00918689999889466,
+        "camera_job_and_transfer": 1.444546700000501,
+        "capture_total_before_cleanup": 1.5988270999987435
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\frames\\probe_000002.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11678010000105132,
+        "resource_setup": 0.007474500001990236,
+        "camera_job_and_transfer": 1.359591399999772,
+        "capture_total_before_cleanup": 1.4953778000017337
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\frames\\probe_000003.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.13617009999870788,
+        "resource_setup": 0.006879500000650296,
+        "camera_job_and_transfer": 1.4003601000003982,
+        "capture_total_before_cleanup": 1.551004600001761
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\frames\\probe_000004.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.12499820000084583,
+        "resource_setup": 0.008815099998173537,
+        "camera_job_and_transfer": 1.3756170999986352,
+        "capture_total_before_cleanup": 1.5203111000009812
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\frames\\probe_000005.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.13311179999800515,
+        "resource_setup": 0.016842500001075678,
+        "camera_job_and_transfer": 1.526281200000085,
+        "capture_total_before_cleanup": 1.69000589999996
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\frames\\probe_000006.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.14096629999767174,
+        "resource_setup": 0.011121399998955894,
+        "camera_job_and_transfer": 1.6065956999991613,
+        "capture_total_before_cleanup": 1.7706249999973807
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\frames\\probe_000007.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.1262075000013283,
+        "resource_setup": 0.011706799999956274,
+        "camera_job_and_transfer": 1.3957989000009547,
+        "capture_total_before_cleanup": 1.5445160000017495
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\frames\\probe_000008.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.12929850000000442,
+        "resource_setup": 0.00926679999975022,
+        "camera_job_and_transfer": 1.3998723000004247,
+        "capture_total_before_cleanup": 1.551639700002852
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\frames\\probe_000009.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11148769999999786,
+        "resource_setup": 0.008766200000536628,
+        "camera_job_and_transfer": 1.4112934000004316,
+        "capture_total_before_cleanup": 1.5425833000008424
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\frames\\probe_000010.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.12297529999705148,
+        "resource_setup": 0.008685100001457613,
+        "camera_job_and_transfer": 1.5829374999993888,
+        "capture_total_before_cleanup": 1.7239656999990984
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\frames\\probe_000011.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11622210000132327,
+        "resource_setup": 0.015069199998833938,
+        "camera_job_and_transfer": 1.4076319999985571,
+        "capture_total_before_cleanup": 1.5520697000029031
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\frames\\probe_000012.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.1229209000011906,
+        "resource_setup": 0.010959800001728581,
+        "camera_job_and_transfer": 1.371484600000258,
+        "capture_total_before_cleanup": 1.5166963999981817
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\frames\\probe_000013.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.12401989999852958,
+        "resource_setup": 0.010264299999107607,
+        "camera_job_and_transfer": 1.3958225999995193,
+        "capture_total_before_cleanup": 1.538339900002029
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\frames\\probe_000014.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.10718979999728617,
+        "resource_setup": 0.009616699997422984,
+        "camera_job_and_transfer": 1.3857275000009395,
+        "capture_total_before_cleanup": 1.51298069999757
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\frames\\probe_000015.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.12412160000167205,
+        "resource_setup": 0.008920900003431598,
+        "camera_job_and_transfer": 1.502812200000335,
+        "capture_total_before_cleanup": 1.644666000000143
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\frames\\probe_000016.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11536900000282913,
+        "resource_setup": 0.00826009999946109,
+        "camera_job_and_transfer": 1.5493065000009665,
+        "capture_total_before_cleanup": 1.6830985000015062
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\frames\\probe_000017.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.12156879999747616,
+        "resource_setup": 0.008631400000012945,
+        "camera_job_and_transfer": 1.414098400000512,
+        "capture_total_before_cleanup": 1.5545688999991398
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\frames\\probe_000018.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.14093700000012177,
+        "resource_setup": 0.014448000001721084,
+        "camera_job_and_transfer": 1.395599299998139,
+        "capture_total_before_cleanup": 1.562016500000027
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\frames\\probe_000019.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.13068619999830844,
+        "resource_setup": 0.012642400000913767,
+        "camera_job_and_transfer": 1.4165618000006361,
+        "capture_total_before_cleanup": 1.5711198999997578
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\frames\\probe_000020.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.11169990000053076,
+        "resource_setup": 0.01300220000121044,
+        "camera_job_and_transfer": 1.494233900000836,
+        "capture_total_before_cleanup": 1.627837100000761
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\frames\\probe_000021.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.13947320000079344,
+        "resource_setup": 0.019830999997793697,
+        "camera_job_and_transfer": 1.5072822000001906,
+        "capture_total_before_cleanup": 1.6783084999988205
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\frames\\probe_000022.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.12438789999941946,
+        "resource_setup": 0.009547999998176238,
+        "camera_job_and_transfer": 1.5139792999980273,
+        "capture_total_before_cleanup": 1.6588635999978578
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\support-frames\\support_000.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.13308449999749428,
+        "resource_setup": 0.012993699998332886,
+        "camera_job_and_transfer": 1.5532910999972955,
+        "capture_total_before_cleanup": 1.7103806999984954
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\support-frames\\support_001.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.12082419999933336,
+        "resource_setup": 0.0090490000002319,
+        "camera_job_and_transfer": 1.6687810000003083,
+        "capture_total_before_cleanup": 1.8109201999977813
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\support-frames\\support_002.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.10676969999985886,
+        "resource_setup": 0.007787499998812564,
+        "camera_job_and_transfer": 1.3586838000010175,
+        "capture_total_before_cleanup": 1.483040200000687
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\discovery\\chip-001\\support-frames\\support_003.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.12138010000126087,
+        "resource_setup": 0.010030499997810693,
+        "camera_job_and_transfer": 1.524970000002213,
+        "capture_total_before_cleanup": 1.6681303000004846
+      }
+    },
+    {
+      "file": "data\\whole-chip-standardized-01\\search\\frames\\seed_000000.json",
+      "exposure_ms": 200.0,
+      "timings": {
+        "job_load": 0.1220857000007527,
+        "resource_setup": 0.010782500001369044,
+        "camera_job_and_transfer": 1.5063702000006742,
+        "capture_total_before_cleanup": 1.6533742999999959
+      }
+    }
+  ]
+}

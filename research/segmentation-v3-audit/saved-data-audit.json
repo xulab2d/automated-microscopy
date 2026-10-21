@@ -1,0 +1,3007 @@
+{
+  "scope": "Read-only saved metadata audit; existing independent visual controls, not a new recall benchmark.",
+  "snapshot_created_at": 1791563552.8346362,
+  "image_count": 1386,
+  "field_statuses": {
+    "excluded": 13,
+    "recovered": 31,
+    "ready": 1235,
+    "unresolved": 5,
+    "failed": 102
+  },
+  "object_counts": {
+    "total": 112325,
+    "rejected": 108024,
+    "unmeasured": 97991,
+    "measured": 14334,
+    "useful_measured": 4296,
+    "selected": 4301
+  },
+  "area_bins_um2": {
+    "below20": {
+      "source_objects": 95515,
+      "selected": 0,
+      "measured": 0,
+      "width_ge5": 0
+    },
+    "20to25": {
+      "source_objects": 2466,
+      "selected": 0,
+      "measured": 0,
+      "width_ge5": 7
+    },
+    "25to50": {
+      "source_objects": 6085,
+      "selected": 0,
+      "measured": 6081,
+      "width_ge5": 1978
+    },
+    "50to100": {
+      "source_objects": 3941,
+      "selected": 0,
+      "measured": 3940,
+      "width_ge5": 3445
+    },
+    "100plus": {
+      "source_objects": 4318,
+      "selected": 4301,
+      "measured": 4313,
+      "width_ge5": 4305
+    }
+  },
+  "measurement_reasons": {
+    "below_measurement_area_floor": 97981,
+    "exact_existing_mask_with_clear_local_substrate": 14334,
+    "insufficient_clear_local_substrate": 10
+  },
+  "evidence_warnings": {
+    "local_color_measurement_unavailable": 97991,
+    "source_field_clips_object": 5688,
+    "very_large_mixed_region_review_required": 111,
+    "some_object_pixels_saturated": 9006
+  },
+  "selected_unmeasured": [
+    {
+      "tile_key": "chip001/tile_000058",
+      "id": "f-0a5027bac443dc",
+      "area_um2": 878.6723062499998,
+      "reason": "insufficient_clear_local_substrate"
+    },
+    {
+      "tile_key": "chip002/tile_000262",
+      "id": "f-7422568a1c444d",
+      "area_um2": 2593.0488937499995,
+      "reason": "insufficient_clear_local_substrate"
+    },
+    {
+      "tile_key": "chip002/tile_000285",
+      "id": "f-2920afbdbb6188",
+      "area_um2": 4731.362774999999,
+      "reason": "insufficient_clear_local_substrate"
+    },
+    {
+      "tile_key": "chip002/tile_000444",
+      "id": "f-16e8e396fea859",
+      "area_um2": 2285.5180499999997,
+      "reason": "insufficient_clear_local_substrate"
+    },
+    {
+      "tile_key": "chip002/tile_000488",
+      "id": "f-5712fed2cf5126",
+      "area_um2": 7637.417662499998,
+      "reason": "insufficient_clear_local_substrate"
+    }
+  ],
+  "representative_fields": [
+    {
+      "key": "chip001/tile_000139",
+      "status": "ready",
+      "counts": {
+        "proposal_count": 160,
+        "selected_count": 14,
+        "rejected_count": 146
+      },
+      "source_sha256": "d054c180ca4a5acfcbc4c8fc4a96459d4ce4b821bcd75158916ccd980a749e92",
+      "top_area_objects": [
+        {
+          "id": "f-7c159c80c4c2b8",
+          "instance_label": 103,
+          "bbox_px": [
+            0,
+            1290,
+            175,
+            303
+          ],
+          "area_um2": 1075.3016062499998,
+          "usable_width_um": 24.15,
+          "solidity": 0.8405445509574393,
+          "gallery_selected": true,
+          "evidence_warnings": [
+            "source_field_clips_object",
+            "some_object_pixels_saturated"
+          ],
+          "filter_reasons": [],
+          "local_contrast_measurement": {
+            "instance_label": 103,
+            "measurement_status": "measured",
+            "mask_modified": false,
+            "mask_area_pixels": 36137,
+            "mask_area_um2": 1075.3016062499998,
+            "layer_number": null,
+            "chemical_identity_confirmed": false,
+            "interior_pixels": 33971,
+            "interior_fallback_to_full_mask": false,
+            "interior_spatial_patches": 1013,
+            "background_spatial_patches": 306,
+            "background_pixels": 6831,
+            "background_excludes_all_source_instances": true,
+            "reason": "exact_existing_mask_with_clear_local_substrate",
+            "contrast_rgb": [
+              -0.13107763595898694,
+              -0.44625973009149167,
+              -0.1756597558668535
+            ],
+            "contrast_covariance": [
+              [
+                0.0002918734265099579,
+                0.00010818262489855523,
+                -6.263998434690506e-06
+              ],
+              [
+                0.00010818262489855523,
+                0.00023523679832552325,
+                9.228517094712172e-05
+              ],
+              [
+                -6.263998434690502e-06,
+                9.228517094712171e-05,
+                7.250777950631302e-05
+              ]
+            ],
+            "standard_error_rgb": [
+              0.017084303512580133,
+              0.015337431281851705,
+              0.008515149999049518
+            ],
+            "global_interior_contrast_rgb": [
+              -0.13425721650097788,
+              -0.44574374110644477,
+              -0.1771554332189882
+            ],
+            "local_substrate_contrast_rgb": [
+              -0.002811107249322554,
+              0.00035677477171702776,
+              -0.0012722025608776935
+            ],
+            "interior_patch_covariance": [
+              [
+                0.17633940883616575,
+                0.14582218848110642,
+                0.04722588051414073
+              ],
+              [
+                0.14582218848110642,
+                0.20115755771421076,
+                0.05986036994697194
+              ],
+              [
+                0.04722588051414073,
+                0.05986036994697194,
+                0.025073742630172726
+              ]
+            ],
+            "background_patch_covariance": [
+              [
+                0.0006478524785187561,
+                -4.496491478104506e-05,
+                -1.19778105390927e-05
+              ],
+              [
+                -4.496491478104507e-05,
+                9.368697305452592e-05,
+                2.8248774115608646e-05
+              ],
+              [
+                -1.1977810539092701e-05,
+                2.8248774115608646e-05,
+                7.886639557987986e-05
+              ]
+            ],
+            "background_systematic_covariance": [
+              [
+                8.463137741449653e-05,
+                -2.5320826730348657e-05,
+                -4.125584351989747e-05
+              ],
+              [
+                -2.5320826730348657e-05,
+                1.292234255074339e-05,
+                1.79415552891934e-05
+              ],
+              [
+                -4.125584351989747e-05,
+                1.79415552891934e-05,
+                3.3563787384977365e-05
+              ]
+            ],
+            "background_sector_count": 6,
+            "effective_interior_patches": 970.9168380872575,
+            "effective_background_patches": 228.75710720991452,
+            "interior_patch_spread_rgb": [
+              0.41992786146690214,
+              0.4485059171451484,
+              0.15834690596968645
+            ],
+            "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+            "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated."
+          }
+        },
+        {
+          "id": "f-b3afdaeadea600",
+          "instance_label": 159,
+          "bbox_px": [
+            1947,
+            1908,
+            268,
+            148
+          ],
+          "area_um2": 903.0129187499998,
+          "usable_width_um": 24.88653625488281,
+          "solidity": 0.8911145810097405,
+          "gallery_selected": true,
+          "evidence_warnings": [
+            "source_field_clips_object",
+            "some_object_pixels_saturated"
+          ],
+          "filter_reasons": [],
+          "local_contrast_measurement": {
+            "instance_label": 159,
+            "measurement_status": "measured",
+            "mask_modified": false,
+            "mask_area_pixels": 30347,
+            "mask_area_um2": 903.0129187499998,
+            "layer_number": null,
+            "chemical_identity_confirmed": false,
+            "interior_pixels": 28565,
+            "interior_fallback_to_full_mask": false,
+            "interior_spatial_patches": 867,
+            "background_spatial_patches": 520,
+            "background_pixels": 14350,
+            "background_excludes_all_source_instances": true,
+            "reason": "exact_existing_mask_with_clear_local_substrate",
+            "contrast_rgb": [
+              0.04272585019370588,
+              -0.43793547355701923,
+              -0.12407622665465542
+            ],
+            "contrast_covariance": [
+              [
+                0.0001123042326170127,
+                6.902479032382369e-05,
+                3.841826768517587e-05
+              ],
+              [
+                6.902479032382369e-05,
+                0.00018451090204327938,
+                7.153015888216777e-05
+              ],
+              [
+                3.8418267685175875e-05,
+                7.153015888216777e-05,
+                4.875855703630473e-05
+              ]
+            ],
+            "standard_error_rgb": [
+              0.010597369136583509,
+              0.013583479011036877,
+              0.006982732777094131
+            ],
+            "global_interior_contrast_rgb": [
+              0.03207997980170575,
+              -0.42768359255042276,
+              -0.12299196743043742
+            ],
+            "local_substrate_contrast_rgb": [
+              -0.011121025668722318,
+              0.007129583486271763,
+              0.0009645780228311196
+            ],
+            "interior_patch_covariance": [
+              [
+                0.07102005345910582,
+                0.04130521449438179,
+                0.01688446127051343
+              ],
+              [
+                0.04130521449438179,
+                0.10420386176718711,
+                0.02306171744883228
+              ],
+              [
+                0.01688446127051343,
+                0.023061717448832283,
+                0.011092146955467461
+              ]
+            ],
+            "background_patch_covariance": [
+              [
+                0.0006030600226654831,
+                -3.6654511516900267e-05,
+                -2.0964279635493578e-05
+              ],
+              [
+                -3.665451151690027e-05,
+                8.03810394379337e-05,
+                2.828529426835901e-05
+              ],
+              [
+                -2.0964279635493578e-05,
+                2.8285294268359006e-05,
+                7.729352579923729e-05
+              ]
+            ],
+            "background_systematic_covariance": [
+              [
+                2.9203079025028883e-05,
+                1.3751095630316468e-05,
+                1.6936024054368925e-05
+              ],
+              [
+                1.3751095630316468e-05,
+                2.6192915999125044e-05,
+                2.6394470790897418e-05
+              ],
+              [
+                1.6936024054368925e-05,
+                2.6394470790897418e-05,
+                2.7609548068824454e-05
+              ]
+            ],
+            "background_sector_count": 6,
+            "effective_interior_patches": 818.2281717201795,
+            "effective_background_patches": 439.3988212851488,
+            "interior_patch_spread_rgb": [
+              0.266495878878278,
+              0.32280622944296955,
+              0.10531926203438505
+            ],
+            "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+            "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated."
+          }
+        },
+        {
+          "id": "f-7932b8a94f284b",
+          "instance_label": 152,
+          "bbox_px": [
+            1754,
+            1631,
+            264,
+            160
+          ],
+          "area_um2": 725.4573749999998,
+          "usable_width_um": 22.06930429458618,
+          "solidity": 0.8358429545138406,
+          "gallery_selected": true,
+          "evidence_warnings": [],
+          "filter_reasons": [],
+          "local_contrast_measurement": {
+            "instance_label": 152,
+            "measurement_status": "measured",
+            "mask_modified": false,
+            "mask_area_pixels": 24380,
+            "mask_area_um2": 725.4573749999998,
+            "layer_number": null,
+            "chemical_identity_confirmed": false,
+            "interior_pixels": 22522,
+            "interior_fallback_to_full_mask": false,
+            "interior_spatial_patches": 688,
+            "background_spatial_patches": 749,
+            "background_pixels": 20748,
+            "background_excludes_all_source_instances": true,
+            "reason": "exact_existing_mask_with_clear_local_substrate",
+            "contrast_rgb": [
+              0.09959460885380245,
+              -0.1024696301603776,
+              -0.05594128430611958
+            ],
+            "contrast_covariance": [
+              [
+                8.256473847970945e-05,
+                -4.7963140167333274e-05,
+                -3.144430232013983e-05
+              ],
+              [
+                -4.7963140167333274e-05,
+                3.966413026534829e-05,
+                2.2728493938329128e-05
+              ],
+              [
+                -3.144430232013983e-05,
+                2.272849393832913e-05,
+                1.7485197183929886e-05
+              ]
+            ],
+            "standard_error_rgb": [
+              0.009086514099461325,
+              0.006297946511788449,
+              0.004181530483439035
+            ],
+            "global_interior_contrast_rgb": [
+              0.0939516034981343,
+              -0.0947168095220214,
+              -0.0536713695192147
+            ],
+            "local_substrate_contrast_rgb": [
+              -0.006267182994633913,
+              0.00703223057239989,
+              0.002149660043263187
+            ],
+            "interior_patch_covariance": [
+              [
+                0.006245139833876305,
+                -0.007027258693311327,
+                -0.0026635987242231663
+              ],
+              [
+                -0.007027258693311327,
+                0.009547555194135889,
+                0.0032741850521801896
+              ],
+              [
+                -0.0026635987242231663,
+                0.003274185052180189,
+                0.0013644062784319638
+              ]
+            ],
+            "background_patch_covariance": [
+              [
+                0.0006556945608990934,
+                -8.879908598956347e-05,
+                -6.74789814022017e-05
+              ],
+              [
+                -8.879908598956347e-05,
+                9.535827657000826e-05,
+                3.88352187092218e-05
+              ],
+              [
+                -6.747898140220169e-05,
+                3.88352187092218e-05,
+                8.08959580582268e-05
+              ]
+            ],
+            "background_systematic_covariance": [
+              [
+                9.011654306735415e-05,
+                -3.7140686785664316e-05,
+                -2.8749262296024126e-05
+              ],
+              [
+                -3.7140686785664316e-05,
+                1.982270295103221e-05,
+                1.491428245480421e-05
+              ],
+              [
+                -2.8749262296024126e-05,
+                1.491428245480421e-05,
+                1.3585358561139758e-05
+              ]
+            ],
+            "background_sector_count": 8,
+            "effective_interior_patches": 643.7339732932634,
+            "effective_background_patches": 631.8872442239382,
+            "interior_patch_spread_rgb": [
+              0.07902619713662239,
+              0.09771159191281191,
+              0.0369378705183713
+            ],
+            "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+            "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated."
+          }
+        },
+        {
+          "id": "f-bb2dd4f45fcef8",
+          "instance_label": 121,
+          "bbox_px": [
+            465,
+            1529,
+            154,
+            281
+          ],
+          "area_um2": 597.4459874999999,
+          "usable_width_um": 15.87,
+          "solidity": 0.6574538523274478,
+          "gallery_selected": true,
+          "evidence_warnings": [
+            "some_object_pixels_saturated"
+          ],
+          "filter_reasons": [],
+          "local_contrast_measurement": {
+            "instance_label": 121,
+            "measurement_status": "measured",
+            "mask_modified": false,
+            "mask_area_pixels": 20078,
+            "mask_area_um2": 597.4459874999999,
+            "layer_number": null,
+            "chemical_identity_confirmed": false,
+            "interior_pixels": 17873,
+            "interior_fallback_to_full_mask": false,
+            "interior_spatial_patches": 572,
+            "background_spatial_patches": 362,
+            "background_pixels": 8690,
+            "background_excludes_all_source_instances": true,
+            "reason": "exact_existing_mask_with_clear_local_substrate",
+            "contrast_rgb": [
+              -0.37198290690222013,
+              -0.8122290532897112,
+              -0.3287688353724692
+            ],
+            "contrast_covariance": [
+              [
+                0.00040620111732524216,
+                9.419839857336334e-05,
+                2.186005560671088e-05
+              ],
+              [
+                9.419839857336337e-05,
+                0.00037507681550253666,
+                0.00011865060799813408
+              ],
+              [
+                2.1860055606710877e-05,
+                0.00011865060799813408,
+                6.327260254985781e-05
+              ]
+            ],
+            "standard_error_rgb": [
+              0.020154431704348354,
+              0.019366899997225594,
+              0.007954407743500317
+            ],
+            "global_interior_contrast_rgb": [
+              -0.38134442375528393,
+              -0.8078445342165849,
+              -0.3273933386026933
+            ],
+            "local_substrate_contrast_rgb": [
+              -0.006823348021296422,
+              0.0024194066777415415,
+              0.0010351663383121974
+            ],
+            "interior_patch_covariance": [
+              [
+                0.1090500200816169,
+                0.0994223422276199,
+                0.02459294639053088
+              ],
+              [
+                0.0994223422276199,
+                0.16393985532972255,
+                0.0461181360744073
+              ],
+              [
+                0.024592946390530876,
+                0.0461181360744073,
+                0.018017013469015155
+              ]
+            ],
+            "background_patch_covariance": [
+              [
+                0.0006848461068273506,
+                -8.678298949698864e-05,
+                -2.8513854779643635e-05
+              ],
+              [
+                -8.678298949698864e-05,
+                9.086207916155505e-05,
+                2.868612247176282e-05
+              ],
+              [
+                -2.8513854779643635e-05,
+                2.868612247176282e-05,
+                8.013572224109365e-05
+              ]
+            ],
+            "background_systematic_covariance": [
+              [
+                0.0001053624209709504,
+                -3.821284089217328e-05,
+                -1.367113856865554e-05
+              ],
+              [
+                -3.821284089217328e-05,
+                1.7737909507486248e-05,
+                1.2324723438716507e-05
+              ],
+              [
+                -1.367113856865554e-05,
+                1.2324723438716507e-05,
+                1.5934123934242904e-05
+              ]
+            ],
+            "background_sector_count": 7,
+            "effective_interior_patches": 522.1953515667782,
+            "effective_background_patches": 279.8882909328115,
+            "interior_patch_spread_rgb": [
+              0.33022722492492484,
+              0.4048948694781431,
+              0.13422746912988845
+            ],
+            "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+            "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated."
+          }
+        }
+      ]
+    },
+    {
+      "key": "chip001/tile_000141",
+      "status": "ready",
+      "counts": {
+        "proposal_count": 81,
+        "selected_count": 9,
+        "rejected_count": 72
+      },
+      "source_sha256": "0866cd319b2457c7aee86ed3a4ae255b2097d0d4690206881ac4d20430569e52",
+      "top_area_objects": [
+        {
+          "id": "f-8df76b1f0e96d5",
+          "instance_label": 32,
+          "bbox_px": [
+            1093,
+            742,
+            154,
+            140
+          ],
+          "area_um2": 383.3200124999999,
+          "usable_width_um": 16.132092819213867,
+          "solidity": 0.7977037669608122,
+          "gallery_selected": true,
+          "evidence_warnings": [],
+          "filter_reasons": [],
+          "local_contrast_measurement": {
+            "instance_label": 32,
+            "measurement_status": "measured",
+            "mask_modified": false,
+            "mask_area_pixels": 12882,
+            "mask_area_um2": 383.32001249999996,
+            "layer_number": null,
+            "chemical_identity_confirmed": false,
+            "interior_pixels": 11423,
+            "interior_fallback_to_full_mask": false,
+            "interior_spatial_patches": 366,
+            "background_spatial_patches": 288,
+            "background_pixels": 7171,
+            "background_excludes_all_source_instances": true,
+            "reason": "exact_existing_mask_with_clear_local_substrate",
+            "contrast_rgb": [
+              0.19839240950212084,
+              -0.44017109538624943,
+              -0.06368730359548067
+            ],
+            "contrast_covariance": [
+              [
+                0.0002426557771611585,
+                -6.892056660048896e-05,
+                -0.00010253541896937399
+              ],
+              [
+                -6.892056660048898e-05,
+                0.00015624028295964035,
+                6.381013029561569e-05
+              ],
+              [
+                -0.00010253541896937399,
+                6.381013029561567e-05,
+                0.00012165579017517806
+              ]
+            ],
+            "standard_error_rgb": [
+              0.015577412402615478,
+              0.01249961131234249,
+              0.011029768364529603
+            ],
+            "global_interior_contrast_rgb": [
+              0.1969307214005222,
+              -0.43789358240597576,
+              -0.06421530659139348
+            ],
+            "local_substrate_contrast_rgb": [
+              -0.0018234459340520618,
+              0.0015814183381196389,
+              -0.000496389299870417
+            ],
+            "interior_patch_covariance": [
+              [
+                0.06700176305972032,
+                -0.023397370376618966,
+                -0.04032230013833531
+              ],
+              [
+                -0.02339737037661897,
+                0.04269800733036897,
+                0.0194492080990492
+              ],
+              [
+                -0.0403223001383353,
+                0.0194492080990492,
+                0.036332839200396705
+              ]
+            ],
+            "background_patch_covariance": [
+              [
+                0.000728835076790974,
+                -4.967667280083016e-05,
+                -1.837321333881286e-05
+              ],
+              [
+                -4.967667280083017e-05,
+                6.288191333215448e-05,
+                1.2348168193159542e-05
+              ],
+              [
+                -1.837321333881286e-05,
+                1.2348168193159539e-05,
+                5.870238282310943e-05
+              ]
+            ],
+            "background_systematic_covariance": [
+              [
+                6.302097662905243e-05,
+                1.3076500420185609e-06,
+                2.1431193348628414e-05
+              ],
+              [
+                1.3076500420185609e-06,
+                1.3054777625852112e-05,
+                3.4634574552871343e-06
+              ],
+              [
+                2.1431193348628414e-05,
+                3.4634574552871343e-06,
+                1.1030658225651869e-05
+              ]
+            ],
+            "background_sector_count": 8,
+            "effective_interior_patches": 333.2990944967371,
+            "effective_background_patches": 231.85867972423992,
+            "interior_patch_spread_rgb": [
+              0.25884698773545795,
+              0.20663496153935076,
+              0.1906117499011976
+            ],
+            "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+            "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated."
+          }
+        },
+        {
+          "id": "f-4734c200465b33",
+          "instance_label": 68,
+          "bbox_px": [
+            1334,
+            1422,
+            146,
+            181
+          ],
+          "area_um2": 347.9993437499999,
+          "usable_width_um": 13.026024169921874,
+          "solidity": 0.8669240376972862,
+          "gallery_selected": true,
+          "evidence_warnings": [],
+          "filter_reasons": [],
+          "local_contrast_measurement": {
+            "instance_label": 68,
+            "measurement_status": "measured",
+            "mask_modified": false,
+            "mask_area_pixels": 11695,
+            "mask_area_um2": 347.9993437499999,
+            "layer_number": null,
+            "chemical_identity_confirmed": false,
+            "interior_pixels": 10362,
+            "interior_fallback_to_full_mask": false,
+            "interior_spatial_patches": 334,
+            "background_spatial_patches": 588,
+            "background_pixels": 16387,
+            "background_excludes_all_source_instances": true,
+            "reason": "exact_existing_mask_with_clear_local_substrate",
+            "contrast_rgb": [
+              0.1031661448042996,
+              -0.10898400571511344,
+              -0.037573306624683826
+            ],
+            "contrast_covariance": [
+              [
+                3.412846055969448e-05,
+                -2.1374007667342058e-05,
+                -1.0120624147475898e-05
+              ],
+              [
+                -2.1374007667342055e-05,
+                3.3241638965942645e-05,
+                6.167840729202639e-06
+              ],
+              [
+                -1.0120624147475897e-05,
+                6.167840729202639e-06,
+                9.970010659628593e-06
+              ]
+            ],
+            "standard_error_rgb": [
+              0.005841956911831384,
+              0.005765556258154337,
+              0.0031575323687380616
+            ],
+            "global_interior_contrast_rgb": [
+              0.09896383996164006,
+              -0.10568987741144667,
+              -0.034918459564805424
+            ],
+            "local_substrate_contrast_rgb": [
+              -0.004685711649168904,
+              0.0029704019956019083,
+              0.002558707941817475
+            ],
+            "interior_patch_covariance": [
+              [
+                0.0044564993890134075,
+                -0.004327711732422544,
+                -0.001401225183178709
+              ],
+              [
+                -0.004327711732422545,
+                0.00876221437021836,
+                0.000998675136256863
+              ],
+              [
+                -0.001401225183178709,
+                0.000998675136256863,
+                0.001746200806356591
+              ]
+            ],
+            "background_patch_covariance": [
+              [
+                0.0005378878608836714,
+                -3.847528375343116e-05,
+                -8.654345632248717e-06
+              ],
+              [
+                -3.8475283753431166e-05,
+                6.220029371315858e-05,
+                1.57871706573856e-05
+              ],
+              [
+                -8.654345632248718e-06,
+                1.5787170657385602e-05,
+                5.490207358452619e-05
+              ]
+            ],
+            "background_systematic_covariance": [
+              [
+                2.3418485479521918e-05,
+                -7.0468102415042635e-06,
+                -5.897337879434606e-06
+              ],
+              [
+                -7.0468102415042635e-06,
+                3.160909660118008e-06,
+                2.4262752027515855e-06
+              ],
+              [
+                -5.897337879434606e-06,
+                2.4262752027515855e-06,
+                3.735138746544586e-06
+              ]
+            ],
+            "background_sector_count": 8,
+            "effective_interior_patches": 302.0962354397616,
+            "effective_background_patches": 502.25240573898503,
+            "interior_patch_spread_rgb": [
+              0.06675701752635005,
+              0.09360670045578126,
+              0.04178756760516925
+            ],
+            "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+            "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated."
+          }
+        },
+        {
+          "id": "f-890316f801bff6",
+          "instance_label": 10,
+          "bbox_px": [
+            102,
+            388,
+            116,
+            103
+          ],
+          "area_um2": 222.16016249999996,
+          "usable_width_um": 13.574815063476562,
+          "solidity": 0.9152468053119519,
+          "gallery_selected": true,
+          "evidence_warnings": [],
+          "filter_reasons": [],
+          "local_contrast_measurement": {
+            "instance_label": 10,
+            "measurement_status": "measured",
+            "mask_modified": false,
+            "mask_area_pixels": 7466,
+            "mask_area_um2": 222.16016249999998,
+            "layer_number": null,
+            "chemical_identity_confirmed": false,
+            "interior_pixels": 6569,
+            "interior_fallback_to_full_mask": false,
+            "interior_spatial_patches": 216,
+            "background_spatial_patches": 433,
+            "background_pixels": 12297,
+            "background_excludes_all_source_instances": true,
+            "reason": "exact_existing_mask_with_clear_local_substrate",
+            "contrast_rgb": [
+              0.21021776094903283,
+              -0.23758820016851576,
+              -0.11747405979544628
+            ],
+            "contrast_covariance": [
+              [
+                8.690631411599348e-05,
+                -5.137544357211022e-05,
+                -5.69226364191962e-05
+              ],
+              [
+                -5.137544357211021e-05,
+                6.818518848663263e-05,
+                3.8778690555052296e-05
+              ],
+              [
+                -5.69226364191962e-05,
+                3.8778690555052296e-05,
+                5.783485878887565e-05
+              ]
+            ],
+            "standard_error_rgb": [
+              0.009322355609822738,
+              0.008257432318017063,
+              0.007604923325640808
+            ],
+            "global_interior_contrast_rgb": [
+              0.207657513868948,
+              -0.23234519989595437,
+              -0.11325688491970395
+            ],
+            "local_substrate_contrast_rgb": [
+              -0.0032417126563410014,
+              0.004236465951960001,
+              0.0037738458792629993
+            ],
+            "interior_patch_covariance": [
+              [
+                0.013695263582901084,
+                -0.009224512407743614,
+                -0.010685167360182221
+              ],
+              [
+                -0.009224512407743614,
+                0.011261670308733901,
+                0.007338928962087232
+              ],
+              [
+                -0.010685167360182221,
+                0.007338928962087231,
+                0.010596663676290561
+              ]
+            ],
+            "background_patch_covariance": [
+              [
+                0.00045854402986577296,
+                -3.168284750583965e-05,
+                -8.999130402234136e-06
+              ],
+              [
+                -3.168284750583964e-05,
+                5.388236624965414e-05,
+                4.835950879278536e-06
+              ],
+              [
+                -8.999130402234136e-06,
+                4.835950879278537e-06,
+                5.729234420507311e-05
+              ]
+            ],
+            "background_systematic_covariance": [
+              [
+                2.5195048866378143e-05,
+                -3.505344810960527e-06,
+                -1.68239187586631e-06
+              ],
+              [
+                -3.505344810960527e-06,
+                5.884980642129955e-06,
+                2.9654500073412744e-07
+              ],
+              [
+                -1.68239187586631e-06,
+                2.9654500073412744e-07,
+                1.8262397131318444e-06
+              ]
+            ],
+            "background_sector_count": 8,
+            "effective_interior_patches": 192.92342392689324,
+            "effective_background_patches": 372.88997965600146,
+            "interior_patch_spread_rgb": [
+              0.1170267643870456,
+              0.10612101728090388,
+              0.10294009751447956
+            ],
+            "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+            "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated."
+          }
+        },
+        {
+          "id": "f-0fbbe4d3684735",
+          "instance_label": 27,
+          "bbox_px": [
+            1754,
+            739,
+            118,
+            166
+          ],
+          "area_um2": 219.83917499999995,
+          "usable_width_um": 8.274651489257812,
+          "solidity": 0.7901908860200817,
+          "gallery_selected": true,
+          "evidence_warnings": [],
+          "filter_reasons": [],
+          "local_contrast_measurement": {
+            "instance_label": 27,
+            "measurement_status": "measured",
+            "mask_modified": false,
+            "mask_area_pixels": 7388,
+            "mask_area_um2": 219.83917499999995,
+            "layer_number": null,
+            "chemical_identity_confirmed": false,
+            "interior_pixels": 6187,
+            "interior_fallback_to_full_mask": false,
+            "interior_spatial_patches": 218,
+            "background_spatial_patches": 331,
+            "background_pixels": 8227,
+            "background_excludes_all_source_instances": true,
+            "reason": "exact_existing_mask_with_clear_local_substrate",
+            "contrast_rgb": [
+              0.0775692552992588,
+              -0.36171486927523605,
+              0.08621268533830748
+            ],
+            "contrast_covariance": [
+              [
+                0.00042876200153148356,
+                -0.00013031974581741718,
+                -0.0001818701311736462
+              ],
+              [
+                -0.00013031974581741718,
+                0.0002217608466293675,
+                0.00016541455401079596
+              ],
+              [
+                -0.00018187013117364618,
+                0.00016541455401079596,
+                0.00021716114789400596
+              ]
+            ],
+            "standard_error_rgb": [
+              0.02070656904297483,
+              0.014891636801552994,
+              0.014736388563484812
+            ],
+            "global_interior_contrast_rgb": [
+              0.07478206645456642,
+              -0.3561708884752514,
+              0.0883770450631846
+            ],
+            "local_substrate_contrast_rgb": [
+              -0.003021569760878467,
+              0.004071322804116385,
+              0.002368559609167278
+            ],
+            "interior_patch_covariance": [
+              [
+                0.06862804809423183,
+                -0.02077273621206855,
+                -0.030977856384210405
+              ],
+              [
+                -0.020772736212068554,
+                0.039378154212428254,
+                0.029846452802518478
+              ],
+              [
+                -0.030977856384210405,
+                0.029846452802518478,
+                0.038626724245342275
+              ]
+            ],
+            "background_patch_covariance": [
+              [
+                0.0005104156306830164,
+                -3.2681162425915634e-05,
+                8.479553292394505e-06
+              ],
+              [
+                -3.2681162425915634e-05,
+                4.608703559030323e-05,
+                6.649449040518285e-06
+              ],
+              [
+                8.479553292394504e-06,
+                6.649449040518285e-06,
+                4.864021530584568e-05
+              ]
+            ],
+            "background_systematic_covariance": [
+              [
+                6.965432073671035e-05,
+                -1.4248486220890396e-05,
+                -1.7558465368250327e-05
+              ],
+              [
+                -1.4248486220890396e-05,
+                3.8166119927759765e-06,
+                2.581514225383786e-06
+              ],
+              [
+                -1.7558465368250327e-05,
+                2.581514225383786e-06,
+                8.95531304735483e-06
+              ]
+            ],
+            "background_sector_count": 8,
+            "effective_interior_patches": 185.2581681790683,
+            "effective_background_patches": 264.148368867398,
+            "interior_patch_spread_rgb": [
+              0.2619695556629278,
+              0.19843929603893543,
+              0.1965368266899165
+            ],
+            "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+            "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated."
+          }
+        }
+      ]
+    },
+    {
+      "key": "chip001/tile_000199",
+      "status": "ready",
+      "counts": {
+        "proposal_count": 12,
+        "selected_count": 1,
+        "rejected_count": 11
+      },
+      "source_sha256": "bb1648add9e7e33954987dc0c9933728dd4f40ba3dc0f14326b2397e5dcb153d",
+      "top_area_objects": [
+        {
+          "id": "f-4cfca13e01ea8f",
+          "instance_label": 1,
+          "bbox_px": [
+            114,
+            0,
+            2313,
+            993
+          ],
+          "area_um2": 47802.701474999994,
+          "usable_width_um": 152.00968688964844,
+          "solidity": 0.9595153123201076,
+          "gallery_selected": true,
+          "evidence_warnings": [
+            "source_field_clips_object",
+            "very_large_mixed_region_review_required"
+          ],
+          "filter_reasons": [],
+          "local_contrast_measurement": {
+            "instance_label": 1,
+            "measurement_status": "measured",
+            "mask_modified": false,
+            "mask_area_pixels": 1606476,
+            "mask_area_um2": 47802.701474999994,
+            "layer_number": null,
+            "chemical_identity_confirmed": false,
+            "interior_pixels": 1592013,
+            "interior_fallback_to_full_mask": false,
+            "interior_spatial_patches": 44681,
+            "background_spatial_patches": 1680,
+            "background_pixels": 41764,
+            "background_excludes_all_source_instances": true,
+            "reason": "exact_existing_mask_with_clear_local_substrate",
+            "contrast_rgb": [
+              0.8602318653536458,
+              0.8732279695518465,
+              0.9046333017983607
+            ],
+            "contrast_covariance": [
+              [
+                4.628828983820635e-06,
+                1.8736110218526995e-08,
+                2.0647225266265288e-06
+              ],
+              [
+                1.8736110218526978e-08,
+                6.084801527932054e-07,
+                1.824963161268931e-07
+              ],
+              [
+                2.0647225266265288e-06,
+                1.824963161268931e-07,
+                1.0781122497225324e-06
+              ]
+            ],
+            "standard_error_rgb": [
+              0.002151471353241924,
+              0.0007800513783035098,
+              0.0010383218430344862
+            ],
+            "global_interior_contrast_rgb": [
+              0.8567730463395319,
+              0.8721209879525774,
+              0.9044011427072751
+            ],
+            "local_substrate_contrast_rgb": [
+              -0.024746835341728807,
+              -0.008732064914915502,
+              -0.0024343832329678764
+            ],
+            "interior_patch_covariance": [
+              [
+                0.014084852914716346,
+                0.014147639052052357,
+                0.014311974212865088
+              ],
+              [
+                0.014147639052052357,
+                0.014510604380244535,
+                0.014721190561711893
+              ],
+              [
+                0.014311974212865088,
+                0.014721190561711894,
+                0.015207842939898844
+              ]
+            ],
+            "background_patch_covariance": [
+              [
+                0.0007018360042334403,
+                2.451172141689973e-05,
+                6.254258344262177e-05
+              ],
+              [
+                2.451172141689973e-05,
+                7.626537975737144e-05,
+                3.500280093444867e-05
+              ],
+              [
+                6.254258344262177e-05,
+                3.500280093444867e-05,
+                0.00011940634445160538
+              ]
+            ],
+            "background_systematic_covariance": [
+              [
+                0.00023205733182096573,
+                -1.6904438310267495e-05,
+                0.00013489719460429845
+              ],
+              [
+                -1.6904438310267495e-05,
+                1.8137560770838845e-05,
+                -1.218050527049729e-05
+              ],
+              [
+                0.00013489719460429845,
+                -1.218050527049729e-05,
+                8.137737687700876e-05
+              ]
+            ],
+            "background_sector_count": 5,
+            "effective_interior_patches": 44410.613228554204,
+            "effective_background_patches": 1325.9178678667251,
+            "interior_patch_spread_rgb": [
+              0.11867962299702652,
+              0.12045997003255703,
+              0.12332008327883517
+            ],
+            "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+            "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated."
+          }
+        },
+        {
+          "id": "f-a90f781293201d",
+          "instance_label": 3,
+          "bbox_px": [
+            87,
+            626,
+            37,
+            41
+          ],
+          "area_um2": 33.892368749999996,
+          "usable_width_um": 5.79599907875061,
+          "solidity": 0.9553886925795053,
+          "gallery_selected": false,
+          "evidence_warnings": [],
+          "filter_reasons": [
+            "below_useful_area"
+          ],
+          "local_contrast_measurement": {
+            "instance_label": 3,
+            "measurement_status": "measured",
+            "mask_modified": false,
+            "mask_area_pixels": 1139,
+            "mask_area_um2": 33.892368749999996,
+            "layer_number": null,
+            "chemical_identity_confirmed": false,
+            "interior_pixels": 845,
+            "interior_fallback_to_full_mask": false,
+            "interior_spatial_patches": 35,
+            "background_spatial_patches": 265,
+            "background_pixels": 7382,
+            "background_excludes_all_source_instances": true,
+            "reason": "exact_existing_mask_with_clear_local_substrate",
+            "contrast_rgb": [
+              0.7736667664829472,
+              0.7656710781934953,
+              0.7749473203222452
+            ],
+            "contrast_covariance": [
+              [
+                0.0003233770133115203,
+                0.00038344948576542545,
+                0.000329571413618257
+              ],
+              [
+                0.00038344948576542545,
+                0.0006272749308000382,
+                0.0005388426722387655
+              ],
+              [
+                0.00032957141361825696,
+                0.0005388426722387655,
+                0.0004834860192112797
+              ]
+            ],
+            "standard_error_rgb": [
+              0.0179826864876058,
+              0.025045457288698846,
+              0.02198831551554779
+            ],
+            "global_interior_contrast_rgb": [
+              0.7670503408245785,
+              0.7621394814471519,
+              0.7713006668894956
+            ],
+            "local_substrate_contrast_rgb": [
+              -0.029233115948348615,
+              -0.015071109102185195,
+              -0.016203554820903163
+            ],
+            "interior_patch_covariance": [
+              [
+                0.009050719223487467,
+                0.010669549842017562,
+                0.009157982505521956
+              ],
+              [
+                0.010669549842017564,
+                0.017213707077728835,
+                0.014802761697000873
+              ],
+              [
+                0.009157982505521956,
+                0.014802761697000871,
+                0.013287241387530131
+              ]
+            ],
+            "background_patch_covariance": [
+              [
+                0.0005987500762108477,
+                -1.9895670227827273e-05,
+                -1.3453199179727712e-05
+              ],
+              [
+                -1.989567022782727e-05,
+                5.7548445807580744e-05,
+                1.5798890699850024e-05
+              ],
+              [
+                -1.3453199179727704e-05,
+                1.5798890699850024e-05,
+                9.894190274805856e-05
+              ]
+            ],
+            "background_systematic_covariance": [
+              [
+                5.723708005355366e-05,
+                7.502345175268797e-06,
+                2.3367629518659675e-05
+              ],
+              [
+                7.502345175268797e-06,
+                1.1410157256720049e-05,
+                1.0859653478995378e-05
+              ],
+              [
+                2.3367629518659675e-05,
+                1.0859653478995378e-05,
+                1.6902232593035447e-05
+              ]
+            ],
+            "background_sector_count": 8,
+            "effective_interior_patches": 26.659634842997423,
+            "effective_background_patches": 224.8062078183529,
+            "interior_patch_spread_rgb": [
+              0.09513526803182648,
+              0.13120101782276247,
+              0.11527029707400832
+            ],
+            "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+            "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated."
+          }
+        },
+        {
+          "id": "f-b7cad88aa77eec",
+          "instance_label": 6,
+          "bbox_px": [
+            1084,
+            755,
+            15,
+            20
+          ],
+          "area_um2": 6.040518749999999,
+          "usable_width_um": 1.998860957622528,
+          "solidity": 0.9649595687331537,
+          "gallery_selected": false,
+          "evidence_warnings": [
+            "local_color_measurement_unavailable",
+            "some_object_pixels_saturated"
+          ],
+          "filter_reasons": [
+            "below_useful_area",
+            "below_useful_width"
+          ],
+          "local_contrast_measurement": {
+            "instance_label": 6,
+            "measurement_status": "unmeasurable",
+            "mask_modified": false,
+            "mask_area_pixels": 203,
+            "mask_area_um2": 6.0405187499999995,
+            "layer_number": null,
+            "chemical_identity_confirmed": false,
+            "reason": "below_measurement_area_floor"
+          }
+        },
+        {
+          "id": "f-6ace981e8aa622",
+          "instance_label": 12,
+          "bbox_px": [
+            2443,
+            1156,
+            14,
+            17
+          ],
+          "area_um2": 5.475149999999999,
+          "usable_width_um": 2.205860924720764,
+          "solidity": 0.9610778443113772,
+          "gallery_selected": false,
+          "evidence_warnings": [
+            "local_color_measurement_unavailable"
+          ],
+          "filter_reasons": [
+            "below_useful_area",
+            "below_useful_width"
+          ],
+          "local_contrast_measurement": {
+            "instance_label": 12,
+            "measurement_status": "unmeasurable",
+            "mask_modified": false,
+            "mask_area_pixels": 184,
+            "mask_area_um2": 5.475149999999999,
+            "layer_number": null,
+            "chemical_identity_confirmed": false,
+            "reason": "below_measurement_area_floor"
+          }
+        }
+      ]
+    },
+    {
+      "key": "chip001/tile_000219",
+      "status": "ready",
+      "counts": {
+        "proposal_count": 175,
+        "selected_count": 8,
+        "rejected_count": 167
+      },
+      "source_sha256": "2b4570573dcee19e263eafc1783563d96eafc945a957923e55949882ce4fee5e",
+      "top_area_objects": [
+        {
+          "id": "f-45c248046734d5",
+          "instance_label": 171,
+          "bbox_px": [
+            0,
+            1794,
+            237,
+            262
+          ],
+          "area_um2": 1144.6931812499997,
+          "usable_width_um": 28.29,
+          "solidity": 0.8321045723036534,
+          "gallery_selected": true,
+          "evidence_warnings": [
+            "source_field_clips_object",
+            "some_object_pixels_saturated"
+          ],
+          "filter_reasons": [],
+          "local_contrast_measurement": {
+            "instance_label": 171,
+            "measurement_status": "measured",
+            "mask_modified": false,
+            "mask_area_pixels": 38469,
+            "mask_area_um2": 1144.6931812499997,
+            "layer_number": null,
+            "chemical_identity_confirmed": false,
+            "interior_pixels": 36374,
+            "interior_fallback_to_full_mask": false,
+            "interior_spatial_patches": 1084,
+            "background_spatial_patches": 530,
+            "background_pixels": 14175,
+            "background_excludes_all_source_instances": true,
+            "reason": "exact_existing_mask_with_clear_local_substrate",
+            "contrast_rgb": [
+              -0.03570021262846117,
+              -0.2023675867461691,
+              -0.09362917337163107
+            ],
+            "contrast_covariance": [
+              [
+                0.00011344573427815584,
+                7.993572637496294e-05,
+                2.2894829172091703e-05
+              ],
+              [
+                7.993572637496296e-05,
+                0.00013835727988429787,
+                4.78868460033845e-05
+              ],
+              [
+                2.2894829172091703e-05,
+                4.7886846003384496e-05,
+                2.0257156856697755e-05
+              ]
+            ],
+            "standard_error_rgb": [
+              0.01065109075532435,
+              0.011762537136362116,
+              0.0045007951360507125
+            ],
+            "global_interior_contrast_rgb": [
+              -0.04315830936641058,
+              -0.19567214741307662,
+              -0.08919143180958845
+            ],
+            "local_substrate_contrast_rgb": [
+              -0.007201018834419099,
+              0.005568546097630234,
+              0.0040578119806014
+            ],
+            "interior_patch_covariance": [
+              [
+                0.08800676605424478,
+                0.07256688924384891,
+                0.018106221770862272
+              ],
+              [
+                0.07256688924384891,
+                0.10771775524745127,
+                0.03226436931240271
+              ],
+              [
+                0.018106221770862272,
+                0.03226436931240271,
+                0.01114814519432796
+              ]
+            ],
+            "background_patch_covariance": [
+              [
+                0.0005137951231186303,
+                -3.596579588302968e-05,
+                -3.043410645528089e-05
+              ],
+              [
+                -3.596579588302968e-05,
+                8.119463017934405e-05,
+                2.588749362386491e-05
+              ],
+              [
+                -3.0434106455280894e-05,
+                2.5887493623864916e-05,
+                8.114482005588857e-05
+              ]
+            ],
+            "background_systematic_covariance": [
+              [
+                2.7116229123755284e-05,
+                8.254907012606341e-06,
+                4.950311729951106e-06
+              ],
+              [
+                8.254907012606341e-06,
+                2.270171457545059e-05,
+                1.2379500886571785e-05
+              ],
+              [
+                4.950311729951106e-06,
+                1.2379500886571785e-05,
+                7.64014574962131e-06
+              ]
+            ],
+            "background_sector_count": 6,
+            "effective_interior_patches": 1038.3844069818558,
+            "effective_background_patches": 442.67304908758047,
+            "interior_patch_spread_rgb": [
+              0.2966593434467298,
+              0.32820383185979296,
+              0.10558477728502325
+            ],
+            "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+            "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated."
+          }
+        },
+        {
+          "id": "f-aaae236179cd2a",
+          "instance_label": 12,
+          "bbox_px": [
+            317,
+            224,
+            123,
+            106
+          ],
+          "area_um2": 247.75053749999995,
+          "usable_width_um": 13.3084423828125,
+          "solidity": 0.898269591094456,
+          "gallery_selected": true,
+          "evidence_warnings": [
+            "some_object_pixels_saturated"
+          ],
+          "filter_reasons": [],
+          "local_contrast_measurement": {
+            "instance_label": 12,
+            "measurement_status": "measured",
+            "mask_modified": false,
+            "mask_area_pixels": 8326,
+            "mask_area_um2": 247.75053749999995,
+            "layer_number": null,
+            "chemical_identity_confirmed": false,
+            "interior_pixels": 7360,
+            "interior_fallback_to_full_mask": false,
+            "interior_spatial_patches": 238,
+            "background_spatial_patches": 376,
+            "background_pixels": 9897,
+            "background_excludes_all_source_instances": true,
+            "reason": "exact_existing_mask_with_clear_local_substrate",
+            "contrast_rgb": [
+              -1.1161278646203436,
+              -1.293431704810311,
+              -0.7932710983615214
+            ],
+            "contrast_covariance": [
+              [
+                0.001029510137035804,
+                0.00022319197010166233,
+                0.00038280961011759925
+              ],
+              [
+                0.00022319197010166233,
+                0.0001670885676374237,
+                0.00013505927744508065
+              ],
+              [
+                0.00038280961011759925,
+                0.00013505927744508065,
+                0.00026935205268697977
+              ]
+            ],
+            "standard_error_rgb": [
+              0.0320859803814034,
+              0.012926274313870324,
+              0.016411948473200242
+            ],
+            "global_interior_contrast_rgb": [
+              -1.12969430151983,
+              -1.2960473303075721,
+              -0.7892605482327306
+            ],
+            "local_substrate_contrast_rgb": [
+              -0.006410972194215801,
+              -0.0011404854532075762,
+              0.0022364438552849317
+            ],
+            "interior_patch_covariance": [
+              [
+                0.20480258982760388,
+                0.050024446670325795,
+                0.08328428700679827
+              ],
+              [
+                0.050024446670325795,
+                0.024719742301484413,
+                0.028345255441041634
+              ],
+              [
+                0.08328428700679827,
+                0.028345255441041637,
+                0.05582464514836538
+              ]
+            ],
+            "background_patch_covariance": [
+              [
+                0.000602770517685633,
+                -5.23811953569678e-05,
+                -2.93835597395943e-05
+              ],
+              [
+                -5.23811953569678e-05,
+                7.781379936154632e-05,
+                1.8156469378820354e-05
+              ],
+              [
+                -2.93835597395943e-05,
+                1.8156469378820354e-05,
+                7.339171111181989e-05
+              ]
+            ],
+            "background_systematic_covariance": [
+              [
+                1.8686225399820743e-05,
+                -1.32874662484381e-06,
+                -4.5581222355520275e-07
+              ],
+              [
+                -1.32874662484381e-06,
+                9.779982184146688e-06,
+                7.61501867218545e-07
+              ],
+              [
+                -4.5581222355520275e-07,
+                7.61501867218545e-07,
+                2.5904351213202895e-06
+              ]
+            ],
+            "background_sector_count": 8,
+            "effective_interior_patches": 215.48890126501698,
+            "effective_background_patches": 311.4377843700219,
+            "interior_patch_spread_rgb": [
+              0.452551201332627,
+              0.1572251325376589,
+              0.23627239607784356
+            ],
+            "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+            "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated."
+          }
+        },
+        {
+          "id": "f-62f22571254f8b",
+          "instance_label": 169,
+          "bbox_px": [
+            1148,
+            1979,
+            127,
+            77
+          ],
+          "area_um2": 212.75718749999996,
+          "usable_width_um": 12.419999999999998,
+          "solidity": 0.9287709497206704,
+          "gallery_selected": true,
+          "evidence_warnings": [
+            "source_field_clips_object",
+            "some_object_pixels_saturated"
+          ],
+          "filter_reasons": [],
+          "local_contrast_measurement": {
+            "instance_label": 169,
+            "measurement_status": "measured",
+            "mask_modified": false,
+            "mask_area_pixels": 7150,
+            "mask_area_um2": 212.7571875,
+            "layer_number": null,
+            "chemical_identity_confirmed": false,
+            "interior_pixels": 6326,
+            "interior_fallback_to_full_mask": false,
+            "interior_spatial_patches": 208,
+            "background_spatial_patches": 156,
+            "background_pixels": 3526,
+            "background_excludes_all_source_instances": true,
+            "reason": "exact_existing_mask_with_clear_local_substrate",
+            "contrast_rgb": [
+              -0.5677810791626164,
+              -1.091944856165679,
+              -0.5063340363938086
+            ],
+            "contrast_covariance": [
+              [
+                0.00048648307535307107,
+                0.00016061496483767775,
+                0.0001076698169164924
+              ],
+              [
+                0.0001606149648376778,
+                0.0005555569330455978,
+                0.00018139147861090472
+              ],
+              [
+                0.0001076698169164924,
+                0.0001813914786109047,
+                0.00010694884484994543
+              ]
+            ],
+            "standard_error_rgb": [
+              0.02205636133529443,
+              0.02357025526050997,
+              0.010341607459672091
+            ],
+            "global_interior_contrast_rgb": [
+              -0.5675167821707227,
+              -1.0887051510694958,
+              -0.504474406359394
+            ],
+            "local_substrate_contrast_rgb": [
+              0.00016858029185742553,
+              0.0015486570244118208,
+              0.0012345402742585526
+            ],
+            "interior_patch_covariance": [
+              [
+                0.05582445300599189,
+                0.04989043783368069,
+                0.024928790143511136
+              ],
+              [
+                0.04989043783368069,
+                0.07133603871629758,
+                0.02695519799886935
+              ],
+              [
+                0.024928790143511136,
+                0.02695519799886935,
+                0.014617010728122052
+              ]
+            ],
+            "background_patch_covariance": [
+              [
+                0.0007182205037374714,
+                -6.0981060158664526e-05,
+                -2.8724357436269566e-05
+              ],
+              [
+                -6.098106015866451e-05,
+                8.07209094286916e-05,
+                2.2757934592752356e-05
+              ],
+              [
+                -2.8724357436269562e-05,
+                2.2757934592752356e-05,
+                7.23273706402325e-05
+              ]
+            ],
+            "background_systematic_covariance": [
+              [
+                7.001624466376752e-05,
+                -3.227372717976839e-05,
+                -1.0904327716890227e-05
+              ],
+              [
+                -3.227372717976839e-05,
+                3.838133468996612e-05,
+                1.1293923244903219e-05
+              ],
+              [
+                -1.0904327716890227e-05,
+                1.1293923244903219e-05,
+                1.1839026899401704e-05
+              ]
+            ],
+            "background_sector_count": 6,
+            "effective_interior_patches": 186.27360405146257,
+            "effective_background_patches": 121.47216414264771,
+            "interior_patch_spread_rgb": [
+              0.23627198946551387,
+              0.2670880729577747,
+              0.12090083013826684
+            ],
+            "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+            "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated."
+          }
+        },
+        {
+          "id": "f-e1f37a6900f274",
+          "instance_label": 172,
+          "bbox_px": [
+            1681,
+            1980,
+            112,
+            76
+          ],
+          "area_um2": 164.19498749999997,
+          "usable_width_um": 9.304303636550902,
+          "solidity": 0.8524616241151675,
+          "gallery_selected": true,
+          "evidence_warnings": [
+            "source_field_clips_object"
+          ],
+          "filter_reasons": [],
+          "local_contrast_measurement": {
+            "instance_label": 172,
+            "measurement_status": "measured",
+            "mask_modified": false,
+            "mask_area_pixels": 5518,
+            "mask_area_um2": 164.19498749999997,
+            "layer_number": null,
+            "chemical_identity_confirmed": false,
+            "interior_pixels": 4745,
+            "interior_fallback_to_full_mask": false,
+            "interior_spatial_patches": 166,
+            "background_spatial_patches": 256,
+            "background_pixels": 6409,
+            "background_excludes_all_source_instances": true,
+            "reason": "exact_existing_mask_with_clear_local_substrate",
+            "contrast_rgb": [
+              -0.019962779296130023,
+              -0.2345318392400403,
+              -0.06708178650311816
+            ],
+            "contrast_covariance": [
+              [
+                0.0002941010356664608,
+                0.00018973953458782292,
+                7.059049155837099e-05
+              ],
+              [
+                0.00018973953458782292,
+                0.0002914369278232344,
+                5.693519136854251e-05
+              ],
+              [
+                7.059049155837099e-05,
+                5.693519136854251e-05,
+                3.648085210106289e-05
+              ]
+            ],
+            "standard_error_rgb": [
+              0.017149374206263644,
+              0.017071523886965524,
+              0.006039938087519018
+            ],
+            "global_interior_contrast_rgb": [
+              -0.02722255279762721,
+              -0.23386287267692288,
+              -0.06798550391507047
+            ],
+            "local_substrate_contrast_rgb": [
+              -0.007117684732091019,
+              0.00054187874452004,
+              -0.0008469054793951929
+            ],
+            "interior_patch_covariance": [
+              [
+                0.039500440457412134,
+                0.027305960980795435,
+                0.007891214691643722
+              ],
+              [
+                0.02730596098079543,
+                0.03964149473422486,
+                0.008463161394043999
+              ],
+              [
+                0.007891214691643722,
+                0.008463161394043999,
+                0.0023815787369526435
+              ]
+            ],
+            "background_patch_covariance": [
+              [
+                0.0006209397808116812,
+                -3.053535501929134e-05,
+                -2.7081723916532002e-05
+              ],
+              [
+                -3.053535501929134e-05,
+                5.881326906863531e-05,
+                1.3955290360962637e-05
+              ],
+              [
+                -2.7081723916532002e-05,
+                1.3955290360962637e-05,
+                5.786924588320916e-05
+              ]
+            ],
+            "background_systematic_covariance": [
+              [
+                1.6599608058551543e-05,
+                -7.081548104520574e-07,
+                1.4510053132405561e-05
+              ],
+              [
+                -7.081548104520574e-07,
+                7.770748003567201e-06,
+                -2.0249108381575176e-06
+              ],
+              [
+                1.4510053132405561e-05,
+                -2.0249108381575176e-06,
+                1.7094933815812903e-05
+              ]
+            ],
+            "background_sector_count": 6,
+            "effective_interior_patches": 142.1681326522236,
+            "effective_background_patches": 202.47194494969662,
+            "interior_patch_spread_rgb": [
+              0.19874717723130594,
+              0.19910171956621786,
+              0.04880142146446806
+            ],
+            "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+            "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated."
+          }
+        }
+      ]
+    },
+    {
+      "key": "chip001/tile_000239",
+      "status": "ready",
+      "counts": {
+        "proposal_count": 158,
+        "selected_count": 7,
+        "rejected_count": 151
+      },
+      "source_sha256": "b2fcf6d9e50396fd1bb469315fdcdae1ebe791d50dfa1c0ac974e46c2375acd7",
+      "top_area_objects": [
+        {
+          "id": "f-1bdd1476734f29",
+          "instance_label": 141,
+          "bbox_px": [
+            0,
+            1621,
+            363,
+            435
+          ],
+          "area_um2": 2901.5616937499994,
+          "usable_width_um": 46.574999999999996,
+          "solidity": 0.938478167092387,
+          "gallery_selected": true,
+          "evidence_warnings": [
+            "source_field_clips_object"
+          ],
+          "filter_reasons": [],
+          "local_contrast_measurement": {
+            "instance_label": 141,
+            "measurement_status": "measured",
+            "mask_modified": false,
+            "mask_area_pixels": 97511,
+            "mask_area_um2": 2901.5616937499994,
+            "layer_number": null,
+            "chemical_identity_confirmed": false,
+            "interior_pixels": 94274,
+            "interior_fallback_to_full_mask": false,
+            "interior_spatial_patches": 2738,
+            "background_spatial_patches": 300,
+            "background_pixels": 6706,
+            "background_excludes_all_source_instances": true,
+            "reason": "exact_existing_mask_with_clear_local_substrate",
+            "contrast_rgb": [
+              0.264530814037453,
+              -0.029815227392450946,
+              -0.02910541524247102
+            ],
+            "contrast_covariance": [
+              [
+                2.9455660320834082e-05,
+                -2.4954558083265323e-06,
+                -1.4395237213544403e-05
+              ],
+              [
+                -2.495455808326532e-06,
+                8.473211308059189e-06,
+                3.3297570259256433e-06
+              ],
+              [
+                -1.4395237213544403e-05,
+                3.329757025925643e-06,
+                1.725858192462001e-05
+              ]
+            ],
+            "standard_error_rgb": [
+              0.005427306912349262,
+              0.0029108780991410803,
+              0.004154344945309671
+            ],
+            "global_interior_contrast_rgb": [
+              0.25149283972951175,
+              -0.0230025944280517,
+              -0.021419211537821614
+            ],
+            "local_substrate_contrast_rgb": [
+              -0.017727424284781922,
+              0.006615393502822068,
+              0.007468820580288593
+            ],
+            "interior_patch_covariance": [
+              [
+                0.03703141317578297,
+                -0.007935392831536896,
+                -0.00620503811498418
+              ],
+              [
+                -0.007935392831536896,
+                0.01602005786117726,
+                0.012468037351859126
+              ],
+              [
+                -0.00620503811498418,
+                0.012468037351859128,
+                0.01206641169472742
+              ]
+            ],
+            "background_patch_covariance": [
+              [
+                0.0005883166510183612,
+                -2.2649560073982607e-05,
+                -2.591215501814989e-06
+              ],
+              [
+                -2.2649560073982607e-05,
+                8.227873783498198e-05,
+                1.4057690012104138e-05
+              ],
+              [
+                -2.5912155018149923e-06,
+                1.4057690012104138e-05,
+                7.41031361677419e-05
+              ]
+            ],
+            "background_systematic_covariance": [
+              [
+                2.8090616304603696e-05,
+                7.016590025738741e-07,
+                -1.6123821861073596e-05
+              ],
+              [
+                7.016590025738741e-07,
+                1.8489743531309818e-06,
+                -1.3797083821393607e-06
+              ],
+              [
+                -1.6123821861073596e-05,
+                -1.3797083821393607e-06,
+                1.144784247170842e-05
+              ]
+            ],
+            "background_sector_count": 4,
+            "effective_interior_patches": 2664.771060105248,
+            "effective_background_patches": 224.42577103503336,
+            "interior_patch_spread_rgb": [
+              0.19243547795503554,
+              0.12657036723173895,
+              0.10984721978606204
+            ],
+            "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+            "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated."
+          }
+        },
+        {
+          "id": "f-ce3873df4551a2",
+          "instance_label": 83,
+          "bbox_px": [
+            528,
+            1104,
+            176,
+            239
+          ],
+          "area_um2": 427.3295062499999,
+          "usable_width_um": 9.927441987991331,
+          "solidity": 0.7635155377617997,
+          "gallery_selected": true,
+          "evidence_warnings": [],
+          "filter_reasons": [],
+          "local_contrast_measurement": {
+            "instance_label": 83,
+            "measurement_status": "measured",
+            "mask_modified": false,
+            "mask_area_pixels": 14361,
+            "mask_area_um2": 427.3295062499999,
+            "layer_number": null,
+            "chemical_identity_confirmed": false,
+            "interior_pixels": 12542,
+            "interior_fallback_to_full_mask": false,
+            "interior_spatial_patches": 409,
+            "background_spatial_patches": 440,
+            "background_pixels": 10830,
+            "background_excludes_all_source_instances": true,
+            "reason": "exact_existing_mask_with_clear_local_substrate",
+            "contrast_rgb": [
+              0.2736764439281762,
+              -0.010200525626640143,
+              0.047051609639204434
+            ],
+            "contrast_covariance": [
+              [
+                3.513308538357771e-05,
+                7.644558712696552e-06,
+                1.3783860202351928e-05
+              ],
+              [
+                7.644558712696552e-06,
+                9.79518428760663e-05,
+                6.814170213114222e-05
+              ],
+              [
+                1.3783860202351928e-05,
+                6.814170213114222e-05,
+                8.507102195350864e-05
+              ]
+            ],
+            "standard_error_rgb": [
+              0.005927316878957772,
+              0.009897062335666392,
+              0.009223395359275707
+            ],
+            "global_interior_contrast_rgb": [
+              0.2634817875854461,
+              -0.004966999987757781,
+              0.05370948802753341
+            ],
+            "local_substrate_contrast_rgb": [
+              -0.01403597096294915,
+              0.005180679979983122,
+              0.0069866096167162245
+            ],
+            "interior_patch_covariance": [
+              [
+                0.0062556163677522465,
+                0.005352927903944375,
+                0.006214053240209951
+              ],
+              [
+                0.005352927903944375,
+                0.03458406639556843,
+                0.024940228171696815
+              ],
+              [
+                0.006214053240209951,
+                0.024940228171696815,
+                0.02139167368242106
+              ]
+            ],
+            "background_patch_covariance": [
+              [
+                0.0006009100159367071,
+                -4.6751260791267e-05,
+                -2.5280524354779308e-05
+              ],
+              [
+                -4.6751260791267007e-05,
+                6.24121566428068e-05,
+                2.3353513651259352e-05
+              ],
+              [
+                -2.5280524354779308e-05,
+                2.3353513651259352e-05,
+                7.5063298876983e-05
+              ]
+            ],
+            "background_systematic_covariance": [
+              [
+                3.46469142517826e-05,
+                -9.104394575660361e-06,
+                -4.177996863994792e-06
+              ],
+              [
+                -9.104394575660361e-06,
+                3.0712137815274396e-06,
+                -2.751412452474056e-07
+              ],
+              [
+                -4.177996863994792e-06,
+                -2.751412452474056e-07,
+                2.8389729529539255e-05
+              ]
+            ],
+            "background_sector_count": 8,
+            "effective_interior_patches": 369.4021154080992,
+            "effective_background_patches": 346.8402905099301,
+            "interior_patch_spread_rgb": [
+              0.07909245455637501,
+              0.18596791765132079,
+              0.1462589268469486
+            ],
+            "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+            "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated."
+          }
+        },
+        {
+          "id": "f-b6feb5aaf0dc3a",
+          "instance_label": 62,
+          "bbox_px": [
+            1108,
+            1094,
+            142,
+            212
+          ],
+          "area_um2": 394.3000687499999,
+          "usable_width_um": 15.939002895355223,
+          "solidity": 0.7320274351519941,
+          "gallery_selected": true,
+          "evidence_warnings": [
+            "some_object_pixels_saturated"
+          ],
+          "filter_reasons": [],
+          "local_contrast_measurement": {
+            "instance_label": 62,
+            "measurement_status": "measured",
+            "mask_modified": false,
+            "mask_area_pixels": 13251,
+            "mask_area_um2": 394.3000687499999,
+            "layer_number": null,
+            "chemical_identity_confirmed": false,
+            "interior_pixels": 11699,
+            "interior_fallback_to_full_mask": false,
+            "interior_spatial_patches": 373,
+            "background_spatial_patches": 358,
+            "background_pixels": 8663,
+            "background_excludes_all_source_instances": true,
+            "reason": "exact_existing_mask_with_clear_local_substrate",
+            "contrast_rgb": [
+              0.0637911174309434,
+              -0.4986920619659456,
+              -0.28656382363011723
+            ],
+            "contrast_covariance": [
+              [
+                0.00034592607238742833,
+                0.00023557108692660465,
+                7.323670257691874e-05
+              ],
+              [
+                0.00023557108692660465,
+                0.0007455954376792216,
+                0.0002886209638698324
+              ],
+              [
+                7.323670257691874e-05,
+                0.0002886209638698324,
+                0.0001446280929451962
+              ]
+            ],
+            "standard_error_rgb": [
+              0.018599087945042583,
+              0.027305593523657776,
+              0.012026142064070098
+            ],
+            "global_interior_contrast_rgb": [
+              0.05420867596547089,
+              -0.5005646503278603,
+              -0.28974507327236565
+            ],
+            "local_substrate_contrast_rgb": [
+              -0.01023536696124615,
+              -0.001249481737734944,
+              -0.00247267145540617
+            ],
+            "interior_patch_covariance": [
+              [
+                0.07524258467263151,
+                0.09189799852633107,
+                0.0331192994623947
+              ],
+              [
+                0.09189799852633107,
+                0.24554551222706947,
+                0.09324687562187686
+              ],
+              [
+                0.0331192994623947,
+                0.09324687562187686,
+                0.03775752053084086
+              ]
+            ],
+            "background_patch_covariance": [
+              [
+                0.0005998568617829207,
+                -2.9733400910776434e-05,
+                -1.6430083246023336e-05
+              ],
+              [
+                -2.9733400910776445e-05,
+                7.406864560529154e-05,
+                2.5011355777972555e-05
+              ],
+              [
+                -1.6430083246023343e-05,
+                2.5011355777972555e-05,
+                6.879823576301004e-05
+              ]
+            ],
+            "background_systematic_covariance": [
+              [
+                0.00014976607142624105,
+                -2.1489751045317403e-05,
+                -1.872524351525961e-05
+              ],
+              [
+                -2.1489751045317403e-05,
+                1.3017544240034633e-05,
+                8.817712671585752e-06
+              ],
+              [
+                -1.872524351525961e-05,
+                8.817712671585752e-06,
+                2.0896524612519358e-05
+              ]
+            ],
+            "background_sector_count": 8,
+            "effective_interior_patches": 342.1622254721817,
+            "effective_background_patches": 280.7983424690849,
+            "interior_patch_spread_rgb": [
+              0.2743038181882117,
+              0.49552549099624477,
+              0.1943129448360064
+            ],
+            "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+            "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated."
+          }
+        },
+        {
+          "id": "f-57dc734fa2faae",
+          "instance_label": 155,
+          "bbox_px": [
+            2284,
+            1971,
+            153,
+            85
+          ],
+          "area_um2": 194.57611874999998,
+          "usable_width_um": 9.585650568008422,
+          "solidity": 0.8566315505132361,
+          "gallery_selected": true,
+          "evidence_warnings": [
+            "source_field_clips_object"
+          ],
+          "filter_reasons": [],
+          "local_contrast_measurement": {
+            "instance_label": 155,
+            "measurement_status": "measured",
+            "mask_modified": false,
+            "mask_area_pixels": 6539,
+            "mask_area_um2": 194.57611874999998,
+            "layer_number": null,
+            "chemical_identity_confirmed": false,
+            "interior_pixels": 5582,
+            "interior_fallback_to_full_mask": false,
+            "interior_spatial_patches": 192,
+            "background_spatial_patches": 254,
+            "background_pixels": 6844,
+            "background_excludes_all_source_instances": true,
+            "reason": "exact_existing_mask_with_clear_local_substrate",
+            "contrast_rgb": [
+              -0.07415232253196985,
+              -0.3153503169428544,
+              -0.13428564785920422
+            ],
+            "contrast_covariance": [
+              [
+                0.00019099806583501252,
+                1.8116287791303115e-05,
+                1.1727166754759169e-05
+              ],
+              [
+                1.811628779130311e-05,
+                0.0002473206608708,
+                5.7465267058326916e-05
+              ],
+              [
+                1.1727166754759167e-05,
+                5.746526705832691e-05,
+                2.2669946838996333e-05
+              ]
+            ],
+            "standard_error_rgb": [
+              0.01382020498527473,
+              0.01572643191797809,
+              0.004761296760232062
+            ],
+            "global_interior_contrast_rgb": [
+              -0.07176459259071515,
+              -0.31944963474308663,
+              -0.14298648023520932
+            ],
+            "local_substrate_contrast_rgb": [
+              0.0022228969683055766,
+              -0.0031165216957257753,
+              -0.00767075947088516
+            ],
+            "interior_patch_covariance": [
+              [
+                0.005754568769085211,
+                0.007866145089800138,
+                0.0016092419696774841
+              ],
+              [
+                0.007866145089800138,
+                0.04002018410511157,
+                0.0100357756117168
+              ],
+              [
+                0.0016092419696774841,
+                0.0100357756117168,
+                0.0029493746808659602
+              ]
+            ],
+            "background_patch_covariance": [
+              [
+                0.0005576164248012787,
+                -2.905444963685665e-05,
+                -1.8977876624943464e-05
+              ],
+              [
+                -2.905444963685665e-05,
+                6.0938933430368744e-05,
+                5.872370081732575e-06
+              ],
+              [
+                -1.897787662494347e-05,
+                5.872370081732575e-06,
+                5.3250006458631203e-05
+              ]
+            ],
+            "background_systematic_covariance": [
+              [
+                0.00013253278024678543,
+                -2.0148414727519797e-05,
+                1.909288268045618e-06
+              ],
+              [
+                -2.0148414727519797e-05,
+                5.961744096435502e-06,
+                -1.1069996953523342e-06
+              ],
+              [
+                1.909288268045618e-06,
+                -1.1069996953523342e-06,
+                4.006796407502897e-06
+              ]
+            ],
+            "background_sector_count": 6,
+            "effective_interior_patches": 168.11112190174055,
+            "effective_background_patches": 214.28986568092813,
+            "interior_patch_spread_rgb": [
+              0.07585887402990642,
+              0.20005045389878917,
+              0.05430814562168331
+            ],
+            "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+            "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated."
+          }
+        }
+      ]
+    },
+    {
+      "key": "chip001/tile_000369",
+      "status": "ready",
+      "counts": {
+        "proposal_count": 7,
+        "selected_count": 0,
+        "rejected_count": 7
+      },
+      "source_sha256": "490ba29be9000f44e417e8c1400e1be59ff6e59ee3109e92c2756567ca1c2a89",
+      "top_area_objects": [
+        {
+          "id": "f-3e1cfcb8a8c820",
+          "instance_label": 5,
+          "bbox_px": [
+            508,
+            578,
+            39,
+            31
+          ],
+          "area_um2": 20.859131249999997,
+          "usable_width_um": 3.5147217178344725,
+          "solidity": 0.9199149539333806,
+          "gallery_selected": false,
+          "evidence_warnings": [
+            "local_color_measurement_unavailable"
+          ],
+          "filter_reasons": [
+            "below_useful_area",
+            "below_useful_width"
+          ],
+          "local_contrast_measurement": {
+            "instance_label": 5,
+            "measurement_status": "unmeasurable",
+            "mask_modified": false,
+            "mask_area_pixels": 701,
+            "mask_area_um2": 20.859131249999997,
+            "layer_number": null,
+            "chemical_identity_confirmed": false,
+            "reason": "below_measurement_area_floor"
+          }
+        },
+        {
+          "id": "f-84906ef7d5c916",
+          "instance_label": 1,
+          "bbox_px": [
+            2433,
+            44,
+            31,
+            27
+          ],
+          "area_um2": 19.460587499999995,
+          "usable_width_um": 4.066721849441528,
+          "solidity": 0.9236058059587471,
+          "gallery_selected": false,
+          "evidence_warnings": [
+            "local_color_measurement_unavailable",
+            "source_field_clips_object"
+          ],
+          "filter_reasons": [
+            "below_useful_area",
+            "below_useful_width"
+          ],
+          "local_contrast_measurement": {
+            "instance_label": 1,
+            "measurement_status": "unmeasurable",
+            "mask_modified": false,
+            "mask_area_pixels": 654,
+            "mask_area_um2": 19.4605875,
+            "layer_number": null,
+            "chemical_identity_confirmed": false,
+            "reason": "below_measurement_area_floor"
+          }
+        },
+        {
+          "id": "f-52c5626c817842",
+          "instance_label": 2,
+          "bbox_px": [
+            1902,
+            152,
+            12,
+            13
+          ],
+          "area_um2": 3.8087999999999993,
+          "usable_width_um": 1.998860957622528,
+          "solidity": 0.9432314410480349,
+          "gallery_selected": false,
+          "evidence_warnings": [
+            "local_color_measurement_unavailable"
+          ],
+          "filter_reasons": [
+            "below_useful_area",
+            "below_useful_width"
+          ],
+          "local_contrast_measurement": {
+            "instance_label": 2,
+            "measurement_status": "unmeasurable",
+            "mask_modified": false,
+            "mask_area_pixels": 128,
+            "mask_area_um2": 3.8087999999999993,
+            "layer_number": null,
+            "chemical_identity_confirmed": false,
+            "reason": "below_measurement_area_floor"
+          }
+        },
+        {
+          "id": "f-78ba09e49a818e",
+          "instance_label": 6,
+          "bbox_px": [
+            2088,
+            1034,
+            9,
+            6
+          ],
+          "area_um2": 1.3390312499999997,
+          "usable_width_um": 1.035,
+          "solidity": 0.9428571428571428,
+          "gallery_selected": false,
+          "evidence_warnings": [
+            "local_color_measurement_unavailable"
+          ],
+          "filter_reasons": [
+            "below_useful_area",
+            "below_useful_width"
+          ],
+          "local_contrast_measurement": {
+            "instance_label": 6,
+            "measurement_status": "unmeasurable",
+            "mask_modified": false,
+            "mask_area_pixels": 45,
+            "mask_area_um2": 1.3390312499999997,
+            "layer_number": null,
+            "chemical_identity_confirmed": false,
+            "reason": "below_measurement_area_floor"
+          }
+        }
+      ]
+    }
+  ],
+  "earlier_independent_controls": [
+    {
+      "id": "P1",
+      "label": "coherent_crystal_like",
+      "tile_id": "tile_000000",
+      "source_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\chip-batch-01\\R2C1\\tiles\\tile_000000.tiff",
+      "source_file_sha256": "08c706deae0b8144b9184bb09026317d578234e367e1544fb89f0b65d23b7928",
+      "polygon_px": [
+        [
+          1374,
+          1798
+        ],
+        [
+          1384,
+          1790
+        ],
+        [
+          1390,
+          1797
+        ],
+        [
+          1393,
+          1805
+        ],
+        [
+          1392,
+          1817
+        ],
+        [
+          1389,
+          1826
+        ],
+        [
+          1387,
+          1832
+        ],
+        [
+          1374,
+          1834
+        ],
+        [
+          1374,
+          1829
+        ],
+        [
+          1378,
+          1826
+        ],
+        [
+          1374,
+          1825
+        ]
+      ],
+      "polygon_area_um2": 19.356440624999998,
+      "crop_bounds_px": [
+        1354,
+        1776,
+        1414,
+        1849
+      ],
+      "edge_uncertainty_px": 3,
+      "description": "Standalone cyan platelet: filled interior, straight long edges and oblique top. Material and layer count unassigned.",
+      "existing_component_repair": {
+        "provenance": "final deterministic per-envelope RNG; all supported components",
+        "pooled_coverage": 0.9145299145299145,
+        "overlapping_instance_count": 1,
+        "dominant_label": 198,
+        "dominant_coverage": 0.9145299145299145,
+        "dominant_iou": 0.8916666666666667,
+        "dominant_area_um2": 19.639124999999996
+      }
+    },
+    {
+      "id": "P2",
+      "label": "coherent_crystal_like",
+      "tile_id": "tile_000000",
+      "source_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\chip-batch-01\\R2C1\\tiles\\tile_000000.tiff",
+      "source_file_sha256": "08c706deae0b8144b9184bb09026317d578234e367e1544fb89f0b65d23b7928",
+      "polygon_px": [
+        [
+          687,
+          1064
+        ],
+        [
+          692,
+          1066
+        ],
+        [
+          697,
+          1087
+        ],
+        [
+          700,
+          1130
+        ],
+        [
+          697,
+          1133
+        ],
+        [
+          676,
+          1100
+        ],
+        [
+          674,
+          1085
+        ]
+      ],
+      "polygon_area_um2": 30.485278124999994,
+      "crop_bounds_px": [
+        649,
+        1046,
+        719,
+        1147
+      ],
+      "edge_uncertainty_px": 3,
+      "description": "Long cyan triangular platelet next to bright faceted fragments; visually distinct from the white central region.",
+      "existing_component_repair": {
+        "provenance": "final deterministic per-envelope RNG; all supported components",
+        "pooled_coverage": 0.8759124087591241,
+        "overlapping_instance_count": 1,
+        "dominant_label": 108,
+        "dominant_coverage": 0.8759124087591241,
+        "dominant_iou": 0.16583174987044394,
+        "dominant_area_um2": 168.21208124999998
+      }
+    },
+    {
+      "id": "P3",
+      "label": "coherent_crystal_like",
+      "tile_id": "tile_000000",
+      "source_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\chip-batch-01\\R2C1\\tiles\\tile_000000.tiff",
+      "source_file_sha256": "08c706deae0b8144b9184bb09026317d578234e367e1544fb89f0b65d23b7928",
+      "polygon_px": [
+        [
+          623,
+          1037
+        ],
+        [
+          664,
+          1036
+        ],
+        [
+          666,
+          1058
+        ],
+        [
+          677,
+          1078
+        ],
+        [
+          654,
+          1090
+        ],
+        [
+          640,
+          1075
+        ],
+        [
+          621,
+          1055
+        ]
+      ],
+      "polygon_area_um2": 56.28394687499999,
+      "crop_bounds_px": [
+        597,
+        1015,
+        701,
+        1110
+      ],
+      "edge_uncertainty_px": 4,
+      "description": "Bright central faceted piece. Positive morphology control, without assuming thickness; distinct neighboring pieces should not be fused.",
+      "existing_component_repair": {
+        "provenance": "final deterministic per-envelope RNG; all supported components",
+        "pooled_coverage": 0.9741379310344828,
+        "overlapping_instance_count": 1,
+        "dominant_label": 108,
+        "dominant_coverage": 0.9741379310344828,
+        "dominant_iou": 0.336781206171108,
+        "dominant_area_um2": 168.21208124999998
+      }
+    },
+    {
+      "id": "U1",
+      "label": "ambiguous",
+      "tile_id": "tile_000003",
+      "source_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\chip-batch-01\\R2C1\\tiles\\tile_000003.tiff",
+      "source_file_sha256": "b10263d5a51d5b20e8d186d80e4129cf13274c9a1c416ebb878bd22bc375a007",
+      "polygon_px": [
+        [
+          716,
+          815
+        ],
+        [
+          726,
+          807
+        ],
+        [
+          765,
+          809
+        ],
+        [
+          824,
+          821
+        ],
+        [
+          824,
+          829
+        ],
+        [
+          767,
+          825
+        ],
+        [
+          721,
+          827
+        ]
+      ],
+      "polygon_area_um2": 45.616331249999995,
+      "crop_bounds_px": [
+        694,
+        794,
+        841,
+        853
+      ],
+      "edge_uncertainty_px": 5,
+      "description": "Elongated reflective object. Plausible layered fragment, but blurred seams prevent reliable one-object versus multiple-piece classification.",
+      "existing_component_repair": {
+        "provenance": "final deterministic per-envelope RNG; all supported components",
+        "pooled_coverage": 0.5969696969696969,
+        "overlapping_instance_count": 1,
+        "dominant_label": 32,
+        "dominant_coverage": 0.5969696969696969,
+        "dominant_iou": 0.5214399152991,
+        "dominant_area_um2": 36.42164999999999
+      }
+    },
+    {
+      "id": "N1",
+      "label": "disconnected_aggregate",
+      "tile_id": "tile_000005",
+      "source_image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\chip-batch-01\\R2C1\\tiles\\tile_000005.tiff",
+      "source_file_sha256": "ca2e2c42629a3ad1fca1ba2e384cbc5dcc29d864357f2052e6718b34d7c7b091",
+      "polygon_px": [
+        [
+          956,
+          1734
+        ],
+        [
+          1138,
+          1734
+        ],
+        [
+          1138,
+          1869
+        ],
+        [
+          956,
+          1869
+        ]
+      ],
+      "polygon_area_um2": 731.1110624999999,
+      "crop_bounds_px": [
+        929,
+        1707,
+        1165,
+        1896
+      ],
+      "edge_uncertainty_px": 0,
+      "description": "Dispersed dark granules and substrate gaps. This whole ROI is not one coherent platelet; individual constituents remain unclassified.",
+      "existing_component_repair": {
+        "provenance": "final deterministic per-envelope RNG; all supported components",
+        "pooled_coverage": 0.6340806814529091,
+        "overlapping_instance_count": 1,
+        "dominant_label": 175,
+        "dominant_coverage": 0.6340806814529091,
+        "dominant_iou": 0.6330378274299009,
+        "dominant_area_um2": 470.80338749999993
+      }
+    }
+  ]
+}

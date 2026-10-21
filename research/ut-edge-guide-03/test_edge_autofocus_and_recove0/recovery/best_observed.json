@@ -1,0 +1,17 @@
+{
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 99.5
+  },
+  "pixel_size_um": [
+    0.17,
+    0.17
+  ],
+  "sequence": 0,
+  "acquired_at": 1791696038.2145548,
+  "metadata": {
+    "white_level": 4095,
+    "focus_mask_policy": "include_chip_edge"
+  }
+}

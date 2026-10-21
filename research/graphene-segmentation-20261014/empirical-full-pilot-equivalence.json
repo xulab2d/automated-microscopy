@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "checked_at": 1792039440.9650445,
+  "full_plan_sha256": "2bad76bc9db4db71ae31eaa4726883f485520b6c8ee56f37e5365f772219f83c",
+  "pilot": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\analysis\\graphene\\scan-20261013-221727-131d9ced\\chip001\\operator-empirical-pilot-v2",
+  "full": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\analysis\\graphene\\scan-20261013-221727-131d9ced\\chip001\\operator-empirical-full-v1",
+  "fields": [
+    {
+      "tile": "tile_000215",
+      "masks_sha256": "a402c1e13f5a365c5f0b62344fb7485333b23f33917e864769514df386fd0558",
+      "regions": 307,
+      "regions_exact": true
+    },
+    {
+      "tile": "tile_000627",
+      "masks_sha256": "4493bad378d6a50ca8a9e6aad025a069151f91f7dc5ac561a59cfef2f55b8b40",
+      "regions": 260,
+      "regions_exact": true
+    },
+    {
+      "tile": "tile_000639",
+      "masks_sha256": "640d13173ebdcd2ebd5aeca48b4739ebaacb60638632dcfb2fb290a5318ade54",
+      "regions": 160,
+      "regions_exact": true
+    },
+    {
+      "tile": "tile_000547",
+      "masks_sha256": "65c39265fb6976d6c475f424f07f6f239f804cf231bf2ce2ed358c4486156a1a",
+      "regions": 428,
+      "regions_exact": true
+    },
+    {
+      "tile": "tile_000660",
+      "masks_sha256": "932c71e30b9aeee4c4fca3cf2e5e0711823819619ef272cda9b3731bfc10a3ea",
+      "regions": 1665,
+      "regions_exact": true
+    },
+    {
+      "tile": "tile_000635",
+      "masks_sha256": "6d43177210c608425a7569748623f81bf989481353af2c64a0be9a8865d03033",
+      "regions": 1509,
+      "regions_exact": true
+    },
+    {
+      "tile": "tile_000269",
+      "masks_sha256": "d720713339f500dcf9386388ea6ab2b35cea2a027a8ec2fa56ac6384525ad21f",
+      "regions": 280,
+      "regions_exact": true
+    },
+    {
+      "tile": "tile_000457",
+      "masks_sha256": "4dae8bd9c5c3c4b437787fba0fe78c3c347fcfdf070042edf538493130791aef",
+      "regions": 465,
+      "regions_exact": true
+    }
+  ],
+  "all_equal": true
+}

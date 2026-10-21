@@ -1,0 +1,38 @@
+DO NOT APPLY THE STAGED STANDARD-HOUGH PATCH UNCHANGED.
+Later saved-image audit found a false blurred-contamination edge (candidate013/probe21) and a wrong northern line orientation (candidate016/probe13). See candidates013-016-conclusions.json and FOLLOWUP-013-016.txt. Initial simple negative controls were insufficient. The angular-gap scheduling repair is a separate issue, but must receive trustworthy measured normals. All instructions below are historical staging notes, not current deployment approval.
+
+UNIFIED DEPLOYMENT HANDOFF — BOTH PATCHES UNAPPLIED
+
+Do not deploy while the current microscope owner is running. Neither source file nor the live campaign/configuration has been changed by this audit. No STOP was created or removed.
+
+Files and baseline hashes (SHA256)
+flakefinder/sparse_acquisition.py
+  9949bce2f33e058ca0f96f200b3ad0c1f8203ec40651f375415acd3b41c994cd
+flakefinder/sparse_edges.py
+  a87c6fa01fc2b1bcbff0dc7fbc0728391c621763f758ad39288b6e1c079904ac
+
+Patches modify different files, so they compose in either order:
+  research/discovery-gap-repair/sparse-acquisition-gap.patch
+  research/discovery-gap-repair/sparse-edges-standard-hough.patch
+
+Read-only combined compatibility check, already passed:
+  git apply --check --ignore-space-change research/discovery-gap-repair/sparse-acquisition-gap.patch research/discovery-gap-repair/sparse-edges-standard-hough.patch
+The whitespace option accommodates the Windows LF/CRLF patch context. Verify exact source hashes above as well, rather than accepting arbitrary source drift.
+
+Only after a naturally safe acquisition-owner exit and explicit root review, the corresponding apply command is:
+  git apply --ignore-space-change research/discovery-gap-repair/sparse-acquisition-gap.patch research/discovery-gap-repair/sparse-edges-standard-hough.patch
+Do not launch a second owner, clear an operator STOP, modify active limits, or bypass lease/continuation validation.
+
+IMPORTANT RESUME COMPATIBILITY
+The current sparse-discovery resume exception permits algorithm_source_sha256 changes only. sparse_edges.py also contributes edge_model_sha256 to the discovery fingerprint, so --allow-source-change alone does NOT permit this edge-model change for a discovery already started under the old model. Prefer a clean between-discovery checkpoint and a fresh discovery attempt. If an old pending discovery must be resumed, implement a separately reviewed source-transition rule that records both hashes and preserves every saved edge/label/frame and all profile/bounds/reference checks; do not edit saved hashes to manufacture compatibility. The existing candidate010-proposed-outline.json is derived offline evidence, not a replacement acquisition record.
+The campaign source-transition mechanism must also be honored. Previously saved outlines retain their original source provenance.
+
+FALLBACK CONTRACT
+HoughLinesP remains first. Standard Hough is consulted only if no fast proposal survives the existing acceptance checks, including the case of zero fast proposals. At most12 highest-vote standard lines are evaluated. Original .07 side areas, .78 substrate and holder purities, .4*short-dimension edge-point support,3px proposal band, SVD/refit and downstream40um fit-residual ceiling remain. A standard-line proposal additionally requires actual observed edge support spanning the same .45*short-dimension minimum required of fast segments. No estimated infinite line is treated as measured support. Existing accepted fast outputs remain identical.
+
+VALIDATION COMPLETED OFFLINE
+6 focused tests passed in0.60s:3 saved false negatives recovered;7 previously accepted edge outputs unchanged;6 negative label controls rejected; invalid-fast-proposal fallback and top12 cap checked. Two earlier angular-gap tests passed, covering a25-degree rotated rectangle with off-center seed and STOP/exhausted-budget behavior. These are bounded algorithm checks, not a claim of new live validation.
+Saved candidate010 replay: all26 original label maps inspected;9 coherent image observations group into4 physical lines, giving an estimated polygon in0.31s. See candidate010-proposed-outline.json and standard-hough-patch-metadata.json.
+
+CHIP002 NORTH TIP STILL REQUIRES A MEASUREMENT
+511/511 planned images and100% planned-polygon observed cells are complete. The true northern tip reaches the acquired field boundary around(-50,+15)um; a full chip enclosure is not established. Neither patch fills that unobserved area or upgrades chip_extent_validated. Plan a small measured north-tip extension at a later authorized hardware checkpoint, preserving the original511-field provenance.

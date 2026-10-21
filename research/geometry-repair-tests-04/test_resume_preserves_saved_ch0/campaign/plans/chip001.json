@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "kind": "test_coverage",
+  "chip_id": "chip001",
+  "scan_plan": {
+    "bounds_um": [
+      10,
+      90,
+      10,
+      90
+    ],
+    "polygon_um": [
+      [
+        10,
+        10
+      ],
+      [
+        90,
+        10
+      ],
+      [
+        90,
+        90
+      ],
+      [
+        10,
+        90
+      ]
+    ]
+  },
+  "tile_centres_um": [
+    [
+      40,
+      40
+    ],
+    [
+      60,
+      60
+    ]
+  ],
+  "tile_count": 2,
+  "options": {
+    "overlap": 0.15,
+    "focus_roi_um": 160.0,
+    "minimum_substrate_fraction": 0.9,
+    "anchor_count": 4,
+    "focus_half_range_um": 9.0,
+    "focus_step_um": 3.0,
+    "focus_fine_step_um": 0.5,
+    "focus_max_residual_um": 1.0,
+    "max_local_focus_offset_um": 600.0,
+    "focus_search_bounds_um": null,
+    "max_tiles": 10000,
+    "focus_max_extrapolation_um": 1500.0,
+    "focus_max_extrapolation_fraction": 0.25,
+    "focus_max_prediction_sigma_um": 2.0,
+    "focus_measurement_floor_um": 0.5,
+    "adaptive_focus_recovery": true,
+    "focus_anchor_mode": "chip_edges",
+    "edge_focus_roi_um": 64.0,
+    "max_local_focus_attempts": 2
+  },
+  "transform": {
+    "matrix": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "pixel_size_um": [
+      1,
+      1
+    ],
+    "calibrated": true
+  },
+  "camera_shape": [
+    64,
+    64,
+    3
+  ],
+  "acquisition_settings": {
+    "camera_job_template": null,
+    "camera_resources": null,
+    "objective_position": null,
+    "illumination_percent": null
+  },
+  "focus_reference_pixels_sha256": "6bf196d1ac122163624575660df36336205c4cf955fbf70d61f86be1d882d7f2",
+  "discovery_folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\geometry-repair-tests-04\\test_resume_preserves_saved_ch0\\discovery",
+  "discovery_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "evidence_sha256": "f46f0073bcc0e9ddc860ea91f9045b8bf8cde26b81fdb08e27ebe6783527cda3",
+  "anchor_xy_um": [
+    [
+      20,
+      20
+    ],
+    [
+      80,
+      20
+    ],
+    [
+      80,
+      80
+    ],
+    [
+      20,
+      80
+    ]
+  ],
+  "fingerprint": "9c2d048555c62cc2558c1c0f317053fac30a372e92a53ce630c6e99d942981a3"
+}

@@ -1,0 +1,47 @@
+{
+  "source": "C:\\ProgramData\\Carl Zeiss\\Logging\\ZENService.log.xml",
+  "evidence": [
+    {
+      "timestamp": "2026-10-13T20:14:33.6838269-07:00",
+      "message": "[MTBStage] Initialize(): The component is not available. Please check power or cabling."
+    },
+    {
+      "timestamp": "2026-10-13T20:14:33.6938602-07:00",
+      "message": "[MTBStageAxisX] Initialize(): The component is not available. Please check power or cabling."
+    },
+    {
+      "timestamp": "2026-10-13T20:14:33.7267941-07:00",
+      "message": "Initialization of MTB component 'MTBStageAxisX' failed with exception: Component cannot access the connected hardware nor the simulated hardware. Check MTB configuration, cabling or whether hardware is switched on."
+    },
+    {
+      "timestamp": "2026-10-13T20:14:33.7310879-07:00",
+      "message": "[MTBStageAxisY] Initialize(): The component is not available. Please check power or cabling."
+    },
+    {
+      "timestamp": "2026-10-13T20:14:33.744849-07:00",
+      "message": "Initialization of MTB component 'MTBStageAxisY' failed with exception: Component cannot access the connected hardware nor the simulated hardware. Check MTB configuration, cabling or whether hardware is switched on."
+    },
+    {
+      "timestamp": "2026-10-13T20:14:50.5592982-07:00",
+      "message": "[MTBStage] FillConfiguration(): The component is broken: The component is not available. Check power or cabling."
+    },
+    {
+      "timestamp": "2026-10-13T20:14:50.5658642-07:00",
+      "message": "[MTBStageAxisX] FillConfiguration(): The component is broken: The component is not available. Check power or cabling."
+    },
+    {
+      "timestamp": "2026-10-13T20:14:50.5739495-07:00",
+      "message": "[MTBStageAxisY] FillConfiguration(): The component is broken: The component is not available. Check power or cabling."
+    },
+    {
+      "timestamp": "2026-10-13T20:14:50.5811254-07:00",
+      "message": "[MTBStageAxisX] FillConfiguration(): The component is broken: The component is not available. Check power or cabling."
+    },
+    {
+      "timestamp": "2026-10-13T20:14:50.5868822-07:00",
+      "message": "[MTBStageAxisY] FillConfiguration(): The component is broken: The component is not available. Check power or cabling."
+    }
+  ],
+  "conclusion": "XY components unavailable; calibration error does not establish a calibration-only fault. Physical power/cabling/controller check pending.",
+  "hardware_commands_issued": false
+}

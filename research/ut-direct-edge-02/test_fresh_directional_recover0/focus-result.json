@@ -1,0 +1,243 @@
+{
+  "success": true,
+  "z_um": 60.001637736634784,
+  "score": 0.0016699999860303057,
+  "prominence": 0.010753724036788582,
+  "reason": "Quick quadratic focus verified by a confirmation image.",
+  "samples": [
+    {
+      "z_um": 100,
+      "requested_z_um": 100.0,
+      "phase": "initial",
+      "score": 0.00017579888020920922,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 100,
+      "requested_z_um": 100.0,
+      "phase": "initial_repeat",
+      "score": 0.00017579888020920922,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 90.0,
+      "requested_z_um": 90.0,
+      "phase": "direction_probe",
+      "score": 0.00023590540043511113,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 110.0,
+      "requested_z_um": 110.0,
+      "phase": "direction_probe",
+      "score": 0.00017025478501484214,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 80.0,
+      "requested_z_um": 80.0,
+      "phase": "direction_probe",
+      "score": 0.0005440283131659442,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 120.0,
+      "requested_z_um": 120.0,
+      "phase": "direction_probe",
+      "score": 0.00017000558997975812,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 60.0,
+      "requested_z_um": 60.0,
+      "phase": "exponential_bracket",
+      "score": 0.00167,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 20.0,
+      "requested_z_um": 20.0,
+      "phase": "exponential_bracket",
+      "score": 0.00017579888020920922,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 40.0,
+      "requested_z_um": 40.0,
+      "phase": "tighten_bracket",
+      "score": 0.0005440283131659442,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 50.0,
+      "requested_z_um": 50.0,
+      "phase": "tighten_bracket",
+      "score": 0.0012299724167865744,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 70.0,
+      "requested_z_um": 70.0,
+      "phase": "tighten_bracket",
+      "score": 0.0012299724167865744,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 55.0,
+      "requested_z_um": 55.0,
+      "phase": "tighten_bracket",
+      "score": 0.0015452830335980433,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 65.0,
+      "requested_z_um": 65.0,
+      "phase": "tighten_bracket",
+      "score": 0.0015452830335980433,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 57.5,
+      "requested_z_um": 57.5,
+      "phase": "tighten_bracket",
+      "score": 0.0016377985881098418,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 62.5,
+      "requested_z_um": 62.5,
+      "phase": "tighten_bracket",
+      "score": 0.0016377985881098418,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 57.5,
+      "phase": "verification_coarse",
+      "score": 0.0016377985881098418,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0,
+      "recovery_mask_score": 0.0016377985881098418
+    },
+    {
+      "z_um": 59.166666666666664,
+      "phase": "verification_coarse",
+      "score": 0.0016663874589998063,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0,
+      "recovery_mask_score": 0.0016663874589998063
+    },
+    {
+      "z_um": 60.833333333333336,
+      "phase": "verification_coarse",
+      "score": 0.0016663874589998063,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0,
+      "recovery_mask_score": 0.0016663874589998063
+    },
+    {
+      "z_um": 62.5,
+      "phase": "verification_coarse",
+      "score": 0.0016377985881098418,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0,
+      "recovery_mask_score": 0.0016377985881098418
+    },
+    {
+      "z_um": 57.5,
+      "phase": "verification_adaptive_fine_quick",
+      "score": 0.0016377985881098418,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0,
+      "recovery_mask_score": 0.0016377985881098418
+    },
+    {
+      "z_um": 58.33333333333333,
+      "phase": "verification_adaptive_fine_quick",
+      "score": 0.0016556019540457435,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0,
+      "recovery_mask_score": 0.0016556019540457435
+    },
+    {
+      "z_um": 59.166666666666664,
+      "phase": "verification_adaptive_fine_quick",
+      "score": 0.0016663874589998063,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0,
+      "recovery_mask_score": 0.0016663874589998063
+    },
+    {
+      "z_um": 60.0,
+      "phase": "verification_adaptive_fine_quick",
+      "score": 0.00167,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0,
+      "recovery_mask_score": 0.00167
+    },
+    {
+      "z_um": 60.83333333333333,
+      "phase": "verification_adaptive_fine_quick",
+      "score": 0.0016663874589998063,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0,
+      "recovery_mask_score": 0.0016663874589998063
+    },
+    {
+      "z_um": 60.001637736634784,
+      "phase": "verification_adaptive_fine_confirmation",
+      "score": 0.0016699999860303057,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0,
+      "recovery_mask_score": 0.0016699999860303057
+    }
+  ],
+  "outcome": "resolved_peak",
+  "budget": {
+    "max_seconds": 180.0,
+    "max_captures": 48,
+    "captures_started": 27,
+    "elapsed_seconds": 0.21899999998277053,
+    "completed_actions": 78,
+    "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline"
+  }
+}

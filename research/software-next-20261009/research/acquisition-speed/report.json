@@ -1,0 +1,332 @@
+{
+  "schema": 1,
+  "kind": "offline_replay_and_conditional_time_model",
+  "source_sha256": {
+    "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\restart-speed-audit\\timing.json": "be58d1c1dd7bbc3281cc647cb6c4de75b1404fe4ceb97df386665cdc66f2a658",
+    "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\camera-latency-audit-01\\measured-stream-arrival.json": "a7eed8528b9a952e43e40d30537cccd679532c2c9e231dcf3359f3f6eba7f2ed"
+  },
+  "measured": {
+    "active_campaign_seconds": 18902.780999999988,
+    "chips": [
+      {
+        "chip_id": "chip001",
+        "tiles": 474,
+        "raster_capture_span_s": 2445.390268802643,
+        "interfield_intervals": {
+          "count": 473,
+          "sum_s": 2445.390268802643,
+          "median_s": 5.137235403060913
+        },
+        "camera_calls": {
+          "count": 474,
+          "sum_s": 755.9222979000697,
+          "median_s": 1.5788070500020694
+        },
+        "pre_raster_elapsed_including_any_pauses_s": 1390.648503780365,
+        "recorded_final_surface_samples": 22,
+        "planned_area_acquired": true,
+        "chip_extent_validated": true,
+        "modeled_focus_frames_saved_across_recorded_attempts": 13,
+        "modeled_camera_time_saved_s": 20.524491650026903,
+        "raster_policy": "No raster frame reduction or motion-time speedup claimed; LZW and all tiles retained."
+      },
+      {
+        "chip_id": "chip002",
+        "tiles": 511,
+        "raster_capture_span_s": 2886.360874414444,
+        "interfield_intervals": {
+          "count": 510,
+          "sum_s": 2886.360874414444,
+          "median_s": 5.6804622411727905
+        },
+        "camera_calls": {
+          "count": 511,
+          "sum_s": 1020.6183354999594,
+          "median_s": 1.94248620000144
+        },
+        "pre_raster_elapsed_including_any_pauses_s": 317.5036985874176,
+        "recorded_final_surface_samples": 88,
+        "planned_area_acquired": true,
+        "chip_extent_validated": false,
+        "modeled_focus_frames_saved_across_recorded_attempts": 28,
+        "modeled_camera_time_saved_s": 54.38961360004032,
+        "raster_policy": "No raster frame reduction or motion-time speedup claimed; LZW and all tiles retained."
+      },
+      {
+        "chip_id": "chip003",
+        "tiles": 401,
+        "raster_capture_span_s": 2441.050935268402,
+        "interfield_intervals": {
+          "count": 400,
+          "sum_s": 2441.050935268402,
+          "median_s": 6.079843044281006
+        },
+        "camera_calls": {
+          "count": 401,
+          "sum_s": 989.6811671000105,
+          "median_s": 2.337744399999792
+        },
+        "pre_raster_elapsed_including_any_pauses_s": 394.71730303764343,
+        "recorded_final_surface_samples": 92,
+        "planned_area_acquired": true,
+        "chip_extent_validated": true,
+        "modeled_focus_frames_saved_across_recorded_attempts": 7,
+        "modeled_camera_time_saved_s": 16.364210799998546,
+        "raster_policy": "No raster frame reduction or motion-time speedup claimed; LZW and all tiles retained."
+      }
+    ],
+    "raster_capture_span_seconds": 7772.802078485489,
+    "camera_first_frame_tail": {
+      "n": 60,
+      "median_s": 0.11074009999720147,
+      "p90_s": 0.22963103999863962
+    },
+    "failed_discovery_attempts": 23,
+    "failed_discovery_saved_elapsed_s": 6123.402463436127,
+    "search": {
+      "frames": 730,
+      "classifications": {
+        "non_substrate_sample": 218,
+        "uncertain": 487,
+        "substrate_seed": 25
+      },
+      "camera_calls": {
+        "count": 730,
+        "sum_s": 2177.3507250000184,
+        "median_s": 2.9415936500008684
+      },
+      "within_search_intervals_under30s": {
+        "count": 704,
+        "sum_s": 3818.5447323322296,
+        "median_s": 5.3708837032318115
+      },
+      "remaining_lattice_probes": 41
+    }
+  },
+  "adaptive_fine_replay": {
+    "curves": 15,
+    "fit_and_modeled_confirmation_passes": 15,
+    "dense_fine_frames": 159,
+    "modeled_new_fine_frames": 90,
+    "modeled_frames_saved": 69,
+    "rows": [
+      {
+        "source": "data\\whole-chip-standardized-01\\chip001\\focus-surface\\attempt-1766dd68b1d34c0bbbf30c39bc9ba47c\\anchor_003\\local\\focus-curve.json",
+        "source_sha256": "9e21ae2322a113a9a907a7d33915b604f1318304f2ee16f0ed28b7818cd79d9a",
+        "dense_fine_frames": 13,
+        "modeled_new_fine_frames": 6,
+        "modeled_frames_saved": 7,
+        "fit_accepted": true,
+        "modeled_confirmation_pass": true,
+        "fitted_peak_um": 15368.654224328962,
+        "dense_peak_um": 15368.515,
+        "peak_difference_um": 0.13922432896288228,
+        "reason": "Quick quadratic focus peak; confirmation image still required."
+      },
+      {
+        "source": "data\\whole-chip-standardized-01\\chip001\\focus-surface\\attempt-1c1b5f7709d040c8b032a11ea99ca4db\\anchor_000\\recovery\\verification\\focus-curve.json",
+        "source_sha256": "983c9ffb9015b7772d5f5a6396151c6f51166be678164f8b0c85c3fe0dc23152",
+        "dense_fine_frames": 9,
+        "modeled_new_fine_frames": 6,
+        "modeled_frames_saved": 3,
+        "fit_accepted": true,
+        "modeled_confirmation_pass": true,
+        "fitted_peak_um": 15594.32467848575,
+        "dense_peak_um": 15594.453,
+        "peak_difference_um": 0.12832151425027405,
+        "reason": "Quick quadratic focus peak; confirmation image still required."
+      },
+      {
+        "source": "data\\whole-chip-standardized-01\\chip001\\focus-surface\\attempt-1c1b5f7709d040c8b032a11ea99ca4db\\anchor_002\\recovery\\verification\\focus-curve.json",
+        "source_sha256": "70541b473b05e061511bd4f83b670d87962f6bbf00351d5eb6302e6c0b514e27",
+        "dense_fine_frames": 9,
+        "modeled_new_fine_frames": 6,
+        "modeled_frames_saved": 3,
+        "fit_accepted": true,
+        "modeled_confirmation_pass": true,
+        "fitted_peak_um": 15326.382289649606,
+        "dense_peak_um": 15326.484,
+        "peak_difference_um": 0.1017103503945691,
+        "reason": "Quick quadratic focus peak; confirmation image still required."
+      },
+      {
+        "source": "data\\whole-chip-standardized-01\\chip002\\focus-surface\\attempt-fbbb20176e2247d490916cab9d1771c9\\anchor_000\\local\\focus-curve.json",
+        "source_sha256": "bebeb7599b909c541c68b19108dda2877363aeeb70152dff44224ebee8d4cb25",
+        "dense_fine_frames": 13,
+        "modeled_new_fine_frames": 6,
+        "modeled_frames_saved": 7,
+        "fit_accepted": true,
+        "modeled_confirmation_pass": true,
+        "fitted_peak_um": 15596.489942939636,
+        "dense_peak_um": 15596.406,
+        "peak_difference_um": 0.08394293963465316,
+        "reason": "Quick quadratic focus peak; confirmation image still required."
+      },
+      {
+        "source": "data\\whole-chip-standardized-01\\chip002\\focus-surface\\attempt-fbbb20176e2247d490916cab9d1771c9\\anchor_001\\local\\focus-curve.json",
+        "source_sha256": "3b7429b04544b547a5d0ded492c8f053833f158eceec2f11d3c1fa80a546c4db",
+        "dense_fine_frames": 13,
+        "modeled_new_fine_frames": 6,
+        "modeled_frames_saved": 7,
+        "fit_accepted": true,
+        "modeled_confirmation_pass": true,
+        "fitted_peak_um": 15605.767352609117,
+        "dense_peak_um": 15606.015,
+        "peak_difference_um": 0.24764739088277565,
+        "reason": "Quick quadratic focus peak; confirmation image still required."
+      },
+      {
+        "source": "data\\whole-chip-standardized-01\\chip002\\focus-surface\\attempt-fbbb20176e2247d490916cab9d1771c9\\anchor_002\\local\\focus-curve.json",
+        "source_sha256": "0ec4b7b3e4ed199ec4ed15d42bd62e176cd6f5d684ae4b2ba16f2ac178cf96e3",
+        "dense_fine_frames": 13,
+        "modeled_new_fine_frames": 6,
+        "modeled_frames_saved": 7,
+        "fit_accepted": true,
+        "modeled_confirmation_pass": true,
+        "fitted_peak_um": 15602.38713309156,
+        "dense_peak_um": 15602.578,
+        "peak_difference_um": 0.19086690843869292,
+        "reason": "Quick quadratic focus peak; confirmation image still required."
+      },
+      {
+        "source": "data\\whole-chip-standardized-01\\chip002\\focus-surface\\attempt-fbbb20176e2247d490916cab9d1771c9\\anchor_003\\local\\fallback\\focus-curve.json",
+        "source_sha256": "a8427669bbe4b1eed6ef1418db4adb7d3b30af911d052a8991c5ad32debb0c3a",
+        "dense_fine_frames": 13,
+        "modeled_new_fine_frames": 6,
+        "modeled_frames_saved": 7,
+        "fit_accepted": true,
+        "modeled_confirmation_pass": true,
+        "fitted_peak_um": 15597.466740355247,
+        "dense_peak_um": 15597.734,
+        "peak_difference_um": 0.26725964475372166,
+        "reason": "Quick quadratic focus peak; confirmation image still required."
+      },
+      {
+        "source": "data\\whole-chip-standardized-01\\chip003\\focus-surface\\attempt-8d9135637d164c7cbd3d0ef3dc4f19c7\\anchor_001\\local\\focus-curve.json",
+        "source_sha256": "2ea8696db797121856e443afdc2b7b75163f584a4309970171d47baf12486c48",
+        "dense_fine_frames": 13,
+        "modeled_new_fine_frames": 6,
+        "modeled_frames_saved": 7,
+        "fit_accepted": true,
+        "modeled_confirmation_pass": true,
+        "fitted_peak_um": 15604.802628553705,
+        "dense_peak_um": 15604.922,
+        "peak_difference_um": 0.11937144629519025,
+        "reason": "Quick quadratic focus peak; confirmation image still required."
+      },
+      {
+        "source": "data\\whole-chip-standardized-01\\discovery\\candidate008\\edge-focus\\attempt_000\\verification\\focus-curve.json",
+        "source_sha256": "533cfe4c3c541fab816f6742760d7a2d7ad9b0267173bbf694e0b1070b7971dc",
+        "dense_fine_frames": 9,
+        "modeled_new_fine_frames": 6,
+        "modeled_frames_saved": 3,
+        "fit_accepted": true,
+        "modeled_confirmation_pass": true,
+        "fitted_peak_um": 15597.298207360438,
+        "dense_peak_um": 15597.734,
+        "peak_difference_um": 0.4357926395623508,
+        "reason": "Quick quadratic focus peak; confirmation image still required."
+      },
+      {
+        "source": "data\\whole-chip-standardized-01\\discovery\\candidate010\\edge-focus\\attempt_000\\verification\\focus-curve.json",
+        "source_sha256": "5cd717236982418c907b4e078bdfecd4714b16686a4ddabdd0244c1bc018a5c9",
+        "dense_fine_frames": 9,
+        "modeled_new_fine_frames": 6,
+        "modeled_frames_saved": 3,
+        "fit_accepted": true,
+        "modeled_confirmation_pass": true,
+        "fitted_peak_um": 15641.745378395422,
+        "dense_peak_um": 15641.639999999998,
+        "peak_difference_um": 0.10537839542485017,
+        "reason": "Quick quadratic focus peak; confirmation image still required."
+      },
+      {
+        "source": "data\\whole-chip-standardized-01\\discovery\\candidate012\\edge-focus\\attempt_000\\verification\\focus-curve.json",
+        "source_sha256": "b0325c23ae6e36933d02488d93b6f66b21f9f1c2487703bd3173047f0fd23b04",
+        "dense_fine_frames": 9,
+        "modeled_new_fine_frames": 6,
+        "modeled_frames_saved": 3,
+        "fit_accepted": true,
+        "modeled_confirmation_pass": true,
+        "fitted_peak_um": 15595.570317756972,
+        "dense_peak_um": 15595.703,
+        "peak_difference_um": 0.13268224302737508,
+        "reason": "Quick quadratic focus peak; confirmation image still required."
+      },
+      {
+        "source": "data\\whole-chip-standardized-01\\discovery\\candidate013\\edge-focus\\attempt_000\\verification\\focus-curve.json",
+        "source_sha256": "0b82d8d27c3c9f94a976297794fcc2b1eae6c073bf1c7ff16566bc18ad246004",
+        "dense_fine_frames": 9,
+        "modeled_new_fine_frames": 6,
+        "modeled_frames_saved": 3,
+        "fit_accepted": true,
+        "modeled_confirmation_pass": true,
+        "fitted_peak_um": 15641.573649121723,
+        "dense_peak_um": 15641.328,
+        "peak_difference_um": 0.24564912172354525,
+        "reason": "Quick quadratic focus peak; confirmation image still required."
+      },
+      {
+        "source": "data\\whole-chip-standardized-01\\discovery\\candidate020\\edge-focus\\attempt_000\\verification\\focus-curve.json",
+        "source_sha256": "09cfc1a3c729a532fea39f72648d8f33e25f09d37b86fc1868a30a62293480ed",
+        "dense_fine_frames": 9,
+        "modeled_new_fine_frames": 6,
+        "modeled_frames_saved": 3,
+        "fit_accepted": true,
+        "modeled_confirmation_pass": true,
+        "fitted_peak_um": 15632.34966929586,
+        "dense_peak_um": 15632.265,
+        "peak_difference_um": 0.08466929586029437,
+        "reason": "Quick quadratic focus peak; confirmation image still required."
+      },
+      {
+        "source": "data\\whole-chip-standardized-01\\discovery\\candidate021\\edge-focus\\attempt_000\\verification\\focus-curve.json",
+        "source_sha256": "e80a713cbe52a9e4efd5ad7232b0818a92ee74168d28324be641de418e2c293a",
+        "dense_fine_frames": 9,
+        "modeled_new_fine_frames": 6,
+        "modeled_frames_saved": 3,
+        "fit_accepted": true,
+        "modeled_confirmation_pass": true,
+        "fitted_peak_um": 15632.50088860615,
+        "dense_peak_um": 15632.89,
+        "peak_difference_um": 0.3891113938498165,
+        "reason": "Quick quadratic focus peak; confirmation image still required."
+      },
+      {
+        "source": "data\\whole-chip-standardized-01\\discovery\\candidate025\\edge-focus\\attempt_000\\verification\\focus-curve.json",
+        "source_sha256": "9f3670ac1b908fbccc0877f85550aba0dfb14d784fd47a558be27744b5e6fecf",
+        "dense_fine_frames": 9,
+        "modeled_new_fine_frames": 6,
+        "modeled_frames_saved": 3,
+        "fit_accepted": true,
+        "modeled_confirmation_pass": true,
+        "fitted_peak_um": 15588.650657381739,
+        "dense_peak_um": 15588.984,
+        "peak_difference_um": 0.33334261826166767,
+        "reason": "Quick quadratic focus peak; confirmation image still required."
+      }
+    ],
+    "historical_elapsed_per_recorded_edge_focus_sample_s": 4.460126751945133,
+    "modeled_elapsed_saved_s": 307.74874588421415,
+    "time_estimate_qualification": "Historical elapsed/sample includes motion and other overhead; applying it to saved fine samples is a conditional estimate, not measured optimized acquisition."
+  },
+  "future_bounds": {
+    "anchor_focus": {
+      "captures": 48,
+      "seconds": 180,
+      "additional_selection_and_final_anchor_frames": 2
+    },
+    "discovery": {
+      "geometric_frames": 32,
+      "total_captures_including_focus": 64,
+      "seconds": 240
+    },
+    "time_semantics": "Cooperative: in-flight call/cleanup may overrun; late focus cannot be accepted."
+  },
+  "limitations": [
+    "Fine replay subsamples measured curves; confirmation is interpolated, not a new independent capture. Live confirmation remains mandatory.",
+    "Saved attempt durations may include pauses. Capping them at240s is not a measured time saving and may leave a chip unresolved.",
+    "Processor overlap can hide at most the remaining measured tail, median0.111s; actual benefit is bounded by CPU work supplied. No frame is returned before final job success/unload.",
+    "No overall speed multiplier promised. Failed/repeated discovery and empty-space search dominate additional work; corrected geometry must be validated on fresh placement."
+  ]
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "category": "uncertain",
+    "seconds": 113.3283179999562,
+    "bytes": 70853,
+    "rows": 48,
+    "source_regions": 309825
+  },
+  {
+    "category": "shortlist",
+    "seconds": 2.269554500002414,
+    "bytes": 59774,
+    "rows": 35,
+    "source_regions": 309825
+  },
+  {
+    "category": "uncertain",
+    "seconds": 1.2473120000213385,
+    "bytes": 91042,
+    "rows": 48,
+    "source_regions": 309825
+  },
+  {
+    "category": "all",
+    "seconds": 1.0650867000222206,
+    "bytes": 90477,
+    "rows": 48,
+    "source_regions": 309825
+  },
+  {
+    "category": "uncertain",
+    "seconds": 1.2075994999613613,
+    "bytes": 91042,
+    "rows": 48,
+    "source_regions": 309825
+  }
+]

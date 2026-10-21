@@ -1,0 +1,408 @@
+{
+  "schema": 2,
+  "algorithm": "sparse_photometric_halfplanes_v2",
+  "algorithm_source_sha256": "58d571fb3df5e9966f099d2b069b7c96f7264bca72daef2ba07ccdbd32e1a9af",
+  "edge_model_sha256": "2349d03f2d34e06c02c47175d9f6411c875fc67f3fdea90d5d7e6aa9b13eb760",
+  "photometric_model_sha256": "fa9f296ab7c812678971ee197f7ece7d21e3ce931f10bc0c3adf488a63d3112b",
+  "edge_validation_profile": {
+    "schema": 1,
+    "profile_id": "synthetic20x-dark-holder",
+    "holder_model": "dark_holder_all_rgb_v1",
+    "manual_objective": true,
+    "objective_position": 2,
+    "objective_magnification": 20,
+    "optical_context": {
+      "camera_resources": {
+        "fixed": 1
+      },
+      "camera_job_template": "synthetic fixed20x",
+      "objective_position": 2,
+      "objective": {
+        "magnification": 20
+      },
+      "white_level": 4095,
+      "illumination_percent": 90
+    }
+  },
+  "seed_xy_um": [
+    500.0,
+    500.0
+  ],
+  "options": {
+    "search_bounds_um": [
+      20.0,
+      1200.0,
+      20.0,
+      1100.0
+    ],
+    "coarse_step_um": 400,
+    "max_probes": 32,
+    "cell_um": 5,
+    "dark_holder_ratio": 0.15,
+    "margin_um": 20,
+    "focus_policy_id": "unchanged height; geometric evidence only"
+  },
+  "context": {},
+  "transform": {
+    "matrix": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "pixel_size_um": [
+      1.0,
+      1.0
+    ],
+    "calibrated": true
+  },
+  "source_shape": [
+    128,
+    160,
+    3
+  ],
+  "reference": {
+    "features": [
+      "log(R/G)",
+      "log(B/G)"
+    ],
+    "centre": [
+      0.18232160806655884,
+      0.2623642086982727
+    ],
+    "covariance": [
+      [
+        0.0006250001000000002,
+        0.0
+      ],
+      [
+        0.0,
+        0.0001440001
+      ]
+    ],
+    "white_level": 4095.0,
+    "context": {
+      "camera_resources": {
+        "fixed": 1
+      },
+      "camera_job_template": "synthetic fixed20x",
+      "objective_position": 2,
+      "objective": {
+        "magnification": 20
+      },
+      "white_level": 4095,
+      "illumination_percent": 90
+    },
+    "pixel_size_um": [
+      1.0,
+      1.0
+    ],
+    "working_max_dimension": 768,
+    "substrate_mahalanobis_max": 3.5,
+    "mismatch_mahalanobis_min": 6.0,
+    "interpretation": "Reference colour match; neither chemical identity nor proof of chip continuity."
+  },
+  "reference_rgb": [
+    1800.0,
+    1500.0,
+    1950.0
+  ],
+  "reference_pixels_sha256": "28112d13480d9ad3c329b5ea22c5d0c803e078aa2eef90c53687a9b0eaeae018",
+  "limits": {
+    "x_min": 0,
+    "x_max": 1600,
+    "y_min": 0,
+    "y_max": 1200,
+    "z_min": 50,
+    "z_max": 150,
+    "max_xy_step_um": 300,
+    "max_z_step_um": 10
+  },
+  "field_rectangle_um": [
+    158.75,
+    127.0
+  ],
+  "assumption": "One separated convex chip with approximately straight edges. Coarse hops may cross unobserved gaps.",
+  "coverage_kind": "estimated_boundary_not_full_interior_acquisition",
+  "all_chips_found": false,
+  "coverage_requirement": "Validate extent from scientific-raster border images; expand or replan if substrate reaches its perimeter.",
+  "fingerprint": "a76ef9e19999bdbad355b788ad000ae84b030da225fc95c42ed271415a470d4b",
+  "state": "unresolved",
+  "started_at": 1791585139.367643,
+  "records": [
+    {
+      "name": "probe_000000",
+      "phase": "seed",
+      "requested_xy_um": [
+        500.0,
+        500.0
+      ],
+      "position_um": [
+        500.0,
+        500.0,
+        100
+      ],
+      "image": "frames/probe_000000.tiff",
+      "labels_file": "labels/probe_000000.npz",
+      "classification": "substrate",
+      "fractions": {
+        "substrate": 1.0,
+        "holder": 0.0
+      },
+      "edge": null,
+      "edge_validation": {
+        "accepted": false,
+        "reason": "synthetic defocus"
+      },
+      "spatial_bracket_evidence": {
+        "side": "substrate",
+        "method": "original_classification",
+        "inferred": false
+      },
+      "hashes": {
+        "frames/probe_000000.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "frames/probe_000000.json": "9fb3d532ea99036eef68b593fecae16dcc695f4326e4caf34c562c7f861e88e2",
+        "labels/probe_000000.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      }
+    },
+    {
+      "name": "probe_000001",
+      "phase": "coarse_east",
+      "requested_xy_um": [
+        900.0,
+        500.0
+      ],
+      "position_um": [
+        900.0,
+        500.0,
+        100
+      ],
+      "image": "frames/probe_000001.tiff",
+      "labels_file": "labels/probe_000001.npz",
+      "classification": "holder",
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0
+      },
+      "edge": null,
+      "edge_validation": {
+        "accepted": false,
+        "reason": "synthetic defocus"
+      },
+      "spatial_bracket_evidence": {
+        "side": "holder",
+        "method": "original_classification",
+        "inferred": false
+      },
+      "hashes": {
+        "frames/probe_000001.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000001.json": "07a8d4dd3746128559a8afe0caebe5b05b59edeffe8059b41db1c5a20df080f9",
+        "labels/probe_000001.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      }
+    },
+    {
+      "name": "probe_000002",
+      "phase": "bisect_east",
+      "requested_xy_um": [
+        700.0,
+        500.0
+      ],
+      "position_um": [
+        700.0,
+        500.0,
+        100
+      ],
+      "image": "frames/probe_000002.tiff",
+      "labels_file": "labels/probe_000002.npz",
+      "classification": "substrate",
+      "fractions": {
+        "substrate": 1.0,
+        "holder": 0.0
+      },
+      "edge": null,
+      "edge_validation": {
+        "accepted": false,
+        "reason": "synthetic defocus"
+      },
+      "spatial_bracket_evidence": {
+        "side": "substrate",
+        "method": "original_classification",
+        "inferred": false
+      },
+      "hashes": {
+        "frames/probe_000002.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "frames/probe_000002.json": "bef071f44857484d459ef52588a2e8f8157a7183e5d3ee9da35cec5c4d4a448a",
+        "labels/probe_000002.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      }
+    },
+    {
+      "name": "probe_000003",
+      "phase": "bisect_east",
+      "requested_xy_um": [
+        800.0,
+        500.0
+      ],
+      "position_um": [
+        800.0,
+        500.0,
+        100
+      ],
+      "image": "frames/probe_000003.tiff",
+      "labels_file": "labels/probe_000003.npz",
+      "classification": "unknown",
+      "fractions": {
+        "substrate": 0.50625,
+        "holder": 0.49375
+      },
+      "edge": null,
+      "edge_validation": {
+        "accepted": false,
+        "reason": "synthetic defocus"
+      },
+      "spatial_bracket_evidence": {
+        "side": "unknown",
+        "method": "whole_field_connected_support",
+        "inferred": false,
+        "substrate_fraction": 0.50625,
+        "holder_fraction": 0.49375,
+        "qualification": "Search bracket only; does not relabel the centre, establish an edge, or verify focus."
+      },
+      "hashes": {
+        "frames/probe_000003.tiff": "f4aee6e1b04785754564cd5d3884b9e8cd1529391044f992bb7e10628d4e8112",
+        "frames/probe_000003.json": "9c6a6a26de6c545e5c41b56afaabfc624d6e569b1bbedf44db6f060644c72a2a",
+        "labels/probe_000003.npz": "5d298698f79245b7bee8701f78dfc5db6faf1e213f62cda4cb8b63eb9945ea76"
+      }
+    }
+  ],
+  "rays": {
+    "east": {
+      "status": "searching",
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  },
+  "edge_focus_policy": {
+    "max_attempts": 1,
+    "roi_um": 64.0,
+    "search_bounds_um": [
+      60.0,
+      140.0
+    ],
+    "trigger": "Observed mixed substrate/holder without a coherent line, with a localized green transition.",
+    "purpose": "Focus geometric edge evidence before line fitting; not a full-chip focus surface.",
+    "probe_budget": "Focused full-field recapture counts toward max_probes; bounded autofocus images are recorded separately."
+  },
+  "updated_at": 1791585139.562646,
+  "operation_budget": {
+    "max_seconds": 240.0,
+    "max_captures": 64,
+    "captures_started": 4,
+    "elapsed_seconds": 0.20300000000861473,
+    "completed_actions": 9,
+    "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline"
+  },
+  "seed_verification": {
+    "classification": "substrate_seed",
+    "patch_substrate_fraction": 1.0,
+    "patch_non_substrate_fraction": 0.0,
+    "patch_diameter_um": 40.0,
+    "image": "frames/probe_000000.tiff",
+    "qualification": "Local centre patch only; whole-field substrate fraction is not an interior-seed requirement."
+  },
+  "edge_focus_attempts": [
+    {
+      "state": "unresolved",
+      "source_image": "frames/probe_000003.tiff",
+      "requested_xy_um": [
+        800.0,
+        500.0
+      ],
+      "initial_z_um": 100,
+      "search_bounds_um": [
+        60.0,
+        140.0
+      ],
+      "selection": {
+        "box_px": [
+          50,
+          32,
+          114,
+          96
+        ],
+        "edge_centre_px": [
+          81.5,
+          63.5
+        ],
+        "roi_centre_px": [
+          81.5,
+          63.5
+        ],
+        "point_xy_um": [
+          802.0,
+          500.0
+        ],
+        "method": "dominant_green_transition_gradient",
+        "long_line_evidence": null,
+        "relative_full_field_contrast": 1.1495753323980615,
+        "orientation_coherence": 1.0,
+        "normal_working_pixels": [
+          1.0,
+          0.0
+        ],
+        "profile_peak_to_median_slope": 102023743.10554273,
+        "selection_position_um": {
+          "x": 800.0,
+          "y": 500.0,
+          "z": 100
+        },
+        "local_focus_verified": false,
+        "policy": "Fixed ROI after current full-field edge registration; search image is not focus verification."
+      },
+      "folder": "edge-focus/attempt_000",
+      "started_at": 1791585139.5206459,
+      "result": {
+        "success": false,
+        "z_um": 100,
+        "score": 0,
+        "prominence": 0,
+        "reason": "No peak",
+        "samples": [],
+        "outcome": "non_peak",
+        "budget": null
+      },
+      "finished_at": 1791585139.5466442,
+      "result_sha256": "3ffad357b6e0bc9501fd40e8eb9145b830ce8bdc4b79eed0e97e0ec4bd44551c"
+    }
+  ],
+  "reason": "edge_focus_unresolved",
+  "focus_failure_reason": "No peak",
+  "estimated_outline": {
+    "status": "unresolved",
+    "reason": "edge_focus_unresolved",
+    "lines": [],
+    "algorithm": "sparse_photometric_halfplanes_v2",
+    "registered_consistency": {
+      "accepted": true,
+      "observation_count": 4,
+      "line_checks": [],
+      "qualification": "Same separated convex chip hypothesis; not proof of unsampled gaps or complete coverage."
+    },
+    "polygon_um": [],
+    "outcome": "edge_not_found",
+    "evidence": {
+      "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\software-next-20261009\\research\\test-temp-acquisition-final-02\\test_unresolved_focus_stays_un0",
+      "images": 4,
+      "new_probe_images": 4,
+      "imported_probe_images": 0,
+      "coherent_edge_images": 0
+    },
+    "acquisition_assumption": "One separated convex chip with approximately straight edges. Coarse hops may cross unobserved gaps.",
+    "all_chips_found": false
+  }
+}

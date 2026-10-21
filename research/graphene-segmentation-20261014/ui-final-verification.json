@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-10-14T22:24:00.983756-07:00",
+  "run": "scan-20261013-221727-131d9ced",
+  "analysis": "operator-empirical-full-v1",
+  "candidate_groups": 224,
+  "uncertain_groups": 44940,
+  "area_minimum_um2": 25,
+  "group_duplicates": true,
+  "hide_artifacts": true,
+  "source_regions": 330196,
+  "indexed_images": 999,
+  "api_warnings": [],
+  "browser_console_errors_or_warnings": [],
+  "verified": [
+    "Automatic analysis selection refreshes image options and RGB plot",
+    "Tile524 shows assessed",
+    "RGB plot contains fitted trend and first-band cutoff",
+    "Uncertain loads 48 rows of44940",
+    "Tile215 region38 opens accepted refined contour over saved source preview",
+    "Application preview cache retains eight images"
+  ],
+  "screenshots": [
+    "empirical-final-review-ui.png",
+    "empirical-final-flake-ui.png"
+  ],
+  "outline_limit": "Tile269 region32 remains unresolved and fragmented; not all boundary defects are solved."
+}

@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "plan": {
+    "bounds_um": [
+      10,
+      90,
+      10,
+      90
+    ],
+    "polygon_um": [
+      [
+        10,
+        10
+      ],
+      [
+        90,
+        10
+      ],
+      [
+        90,
+        90
+      ],
+      [
+        10,
+        90
+      ]
+    ]
+  },
+  "transform": {
+    "matrix": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "pixel_size_um": [
+      1,
+      1
+    ],
+    "calibrated": true
+  },
+  "limits": {
+    "x_min": 0,
+    "x_max": 100,
+    "y_min": 0,
+    "y_max": 100,
+    "z_min": 0,
+    "z_max": 100,
+    "max_xy_step_um": 1200,
+    "max_z_step_um": 25
+  },
+  "context": {
+    "sample_id": "test"
+  },
+  "acquisition_settings": {
+    "camera_job_template": null,
+    "camera_resources": null,
+    "objective_position": null,
+    "illumination_percent": null
+  },
+  "camera_shape": [
+    64,
+    64,
+    3
+  ],
+  "source": "TEST",
+  "material_model": null,
+  "coverage_plan_fingerprint": "9c2d048555c62cc2558c1c0f317053fac30a372e92a53ce630c6e99d942981a3",
+  "full_chip_options": {
+    "overlap": 0.15,
+    "focus_roi_um": 160.0,
+    "minimum_substrate_fraction": 0.9,
+    "anchor_count": 4,
+    "focus_half_range_um": 9.0,
+    "focus_step_um": 3.0,
+    "focus_fine_step_um": 0.5,
+    "focus_max_residual_um": 1.0,
+    "max_local_focus_offset_um": 600.0,
+    "focus_search_bounds_um": null,
+    "max_tiles": 10000,
+    "focus_max_extrapolation_um": 1500.0,
+    "focus_max_extrapolation_fraction": 0.25,
+    "focus_max_prediction_sigma_um": 2.0,
+    "focus_measurement_floor_um": 0.5,
+    "adaptive_focus_recovery": true,
+    "focus_anchor_mode": "chip_edges",
+    "edge_focus_roi_um": 64.0,
+    "max_local_focus_attempts": 2
+  },
+  "prior_focus_provenance": null,
+  "seed_focus_provenance": null,
+  "coverage_kind": "test_coverage",
+  "algorithm_source_sha256": "old-full-code",
+  "fingerprint": "6452da3937b50ea19a9c7efd9c1a13fd5f9fd0c863c822f7c3f01aad32a2337f",
+  "state": "complete_with_boundary_limits",
+  "tile_count": 2,
+  "completed": {
+    "tile_000000": {
+      "retained": "raw evidence"
+    },
+    "tile_000001": {
+      "new": "acquired"
+    }
+  },
+  "focus_points_um": [
+    [
+      20,
+      20,
+      20
+    ]
+  ],
+  "planned_area_acquired": true,
+  "chip_extent_validated": false
+}

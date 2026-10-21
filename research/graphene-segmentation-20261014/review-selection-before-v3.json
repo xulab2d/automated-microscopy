@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "run_id": "scan-20261013-221727-131d9ced",
+  "plan_sha256": "2515992432f12ae6494c650ad03503f452e288fb05fb4187030ea1fde578174b",
+  "refinement": {
+    "path": "analysis/graphene/scan-20261013-221727-131d9ced/chip001/candidate-refinement-v1/gui-catalog.json",
+    "sha256": "8c792acdaf3029f6e4dd7602da37729a6dcdada20f2019f8a64b46aa9e214335"
+  },
+  "dedup": {
+    "path": "analysis/graphene/scan-20261013-221727-131d9ced/chip001/review-v2/dedup.json",
+    "sha256": "cf9b5b1cd8238c9a3e955dd6c3eeef1c6ef9ee3078baa934432a08a66fef166f"
+  }
+}

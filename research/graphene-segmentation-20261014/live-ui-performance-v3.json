@@ -1,0 +1,41 @@
+[
+  {
+    "seconds": 2.411,
+    "bytes": 90250,
+    "rows": 48,
+    "counts": {
+      "shortlist": 35,
+      "uncertain": 45750,
+      "rejected": 45750,
+      "all": 45782
+    },
+    "progress": 61,
+    "first": "chip001/tile_000329/172"
+  },
+  {
+    "seconds": 1.663,
+    "bytes": 90260,
+    "rows": 48,
+    "counts": {
+      "shortlist": 35,
+      "uncertain": 45750,
+      "rejected": 45750,
+      "all": 45782
+    },
+    "progress": 71,
+    "first": "chip001/tile_000329/172"
+  },
+  {
+    "seconds": 1.096,
+    "bytes": 90260,
+    "rows": 48,
+    "counts": {
+      "shortlist": 35,
+      "uncertain": 45750,
+      "rejected": 45750,
+      "all": 45782
+    },
+    "progress": 71,
+    "first": "chip001/tile_000329/172"
+  }
+]

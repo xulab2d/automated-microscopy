@@ -1,0 +1,29 @@
+Offline useful-region refinement, current version useful-refinement-v3
+
+No hardware access. Acquisition remains paused. The source is the exact frozen
+full-chip-conditional-v1 analysis of scan-20261013-221727-131d9ced/chip001.
+
+Run from the repository root, only when the existing analysis owner has exited:
+
+.venv/Scripts/python.exe research/graphene-segmentation-20261014/refine_useful_regions.py --analysis "G:/Shared drives/Xu Lab - Microscopy and Instruments/Automated Microscopy/analysis/graphene/scan-20261013-221727-131d9ced/chip001/full-chip-conditional-v1" --version useful-refinement-v3 --priority-tiles tile_000079,tile_000269,tile_000329,tile_000368,tile_000457,tile_000500,tile_000632,tile_000639,tile_000660,tile_000943
+
+Repeating this exact command resumes the version's committed ledger after
+checking plan/code/input hashes and its exclusive owner lock. Source changes
+require a new version, never overwrite the plan. An independent STOP file in
+the useful-refinement-v3 directory stops this analysis only. Do not touch any
+acquisition STOP or operator-hold file. Preserve an analysis STOP unless the
+human explicitly authorizes resuming that stopped analysis.
+
+Outputs reside at the sibling useful-refinement-v3 directory under the managed
+project. status.json reports per-field progress and cumulative Windows peak
+working set. latest.json points to an immutable, hash-pinned index generation.
+Field shards contain geometry, corrected size diagnostics, and review ranks;
+packed refined and uncertain masks remain separately stored. Original masks,
+original filter reasons, and frozen acquisition/analysis data are preserved.
+
+Missing source field JSON such as tile000524 is explicitly source_unavailable,
+not a negative finding or a reconstructed result. The final total-region count
+stays unknown when a required source shard is missing.
+
+The prior useful-refinement-v2 is stopped with an independent STOP and preserved
+partial outputs; it should not be resumed with the new script.

@@ -1,0 +1,28 @@
+﻿{
+    "assignments":  [
+                        {
+                            "initial_mask":  2,
+                            "pid":  19232,
+                            "command_line":  "\"C:\\Users\\STM\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" \"-c\" \"from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=27528, pipe_handle=1116)\" \"--multiprocessing-fork\"",
+                            "mask":  1,
+                            "started":  "\/Date(1792036985078)\/"
+                        },
+                        {
+                            "initial_mask":  1,
+                            "pid":  30424,
+                            "command_line":  "\"C:\\Users\\STM\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" \"-c\" \"from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=27528, pipe_handle=848)\" \"--multiprocessing-fork\"",
+                            "mask":  4,
+                            "started":  "\/Date(1792036985059)\/"
+                        }
+                    ],
+    "parent_command_line":  "\"C:\\Users\\STM\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" \"C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\software-next-20261009\\scripts\\analyze_graphene_run.py\" --project \"G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\" --run-id scan-20261013-221727-131d9ced --chip chip001 --version operator-empirical-full-v1 --model \"G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\analysis\\graphene\\scan-20261013-221727-131d9ced\\chip001\\operator-empirical-model-v3\\model.json\" --workers 2",
+    "updated_at":  "2026-10-14T21:57:35.2899185-07:00",
+    "started_at":  "2026-10-14T21:09:53.1595305-07:00",
+    "finished_at":  "2026-10-14T21:57:41.3347087-07:00",
+    "corrections":  767,
+    "policy":  "Runtime affinity only; original immutable code requested logical CPU0/1. Root independently measured Windows topology: CPU0/1 share a core, CPU2/3 share another. Enforce CPU0 andCPU2 on the two exact verified field workers. No scientific/source changes.",
+    "state":  "complete_parent_exited",
+    "parent_pid":  27528,
+    "schema":  1,
+    "parent_started":  "\/Date(1792036983015)\/"
+}

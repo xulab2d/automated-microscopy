@@ -1,0 +1,30 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+generated/
+data/
+research/oad-tree.json
+*.log
+config.local.json
+
+# Local environments, test scratch directories, and credentials
+.venv-*/
+.test-*/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Downloaded model weights and benchmark datasets (retain source manifests)
+external/benchmarks/
+external/maskterial-hf/*.zip
+external/maskterial-hf/**/*.pth
+external/maskterial-hf/**/*.safetensors
+
+# Bulk transfer journals and raw capture-study images remain in local/Drive storage
+research/drive-relocation/*-state/
+research/capture-speed-20261014/**/*.czi
+research/capture-speed-20261014/**/*.tif
+research/capture-speed-20261014/**/*.tiff

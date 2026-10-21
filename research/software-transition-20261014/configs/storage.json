@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "mode": "drive_required",
+  "project_id": "xu-lab-automated-microscopy-20261009",
+  "project_root": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy",
+  "cache_volume": "C:\\",
+  "cache_reserve_bytes": 10737418240,
+  "note": "Scientific run and analysis outputs belong here. Drive Desktop maintains a local upload cache. Never silently fall back to the source checkout. Set FLAKEFINDER_PROJECT_ROOT on another computer to its mounted copy of this shared project. Hardware leases remain host-local.",
+  "installation_root": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy"
+}

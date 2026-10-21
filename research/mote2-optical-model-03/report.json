@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-09T18:15:42.105114+00:00",
+  "hardware_access": false,
+  "implementation_files": [
+    {
+      "path": "flakefinder/mote2_optics.py",
+      "sha256": "26a592e85298e0fa90e21d30439de6ca296c84de5f380e75748bf02aae161f0d"
+    },
+    {
+      "path": "tests/test_mote2_optics.py",
+      "sha256": "e97e77e6145c1dcc55a82f8f628875e18dc3743ebe17053f46e0eb84b3616c42"
+    },
+    {
+      "path": "configs\\materials\\mote2-optics-285nm.json",
+      "sha256": "e1027a72ec087a0b7fe79cb6443ff184fda6fae10938f5b28758a94c531854bd"
+    },
+    {
+      "path": "configs/materials/data/MoTe2_Munkhbat_tensor_nm.txt",
+      "sha256": "02254f768131303bbe6772990eea20122dd26a40999477840221c59ea00aba9e"
+    },
+    {
+      "path": "configs/materials/data/Si_Aspnes_nm_n_k.txt",
+      "sha256": "e751386cde891835f4c83da624c0a413cd3966719d851f36b3dbe8dd826ab6bf"
+    },
+    {
+      "path": "configs/materials/data/Axiocam305_vendor_response.json",
+      "sha256": "f8fab8d39f9a308bcaee6357effa401017fae945bf2d074b3977de15d7dc970b"
+    }
+  ],
+  "primary_sources": [
+    {
+      "id": "MoTe2_tensor",
+      "publication": "https://doi.org/10.1021/acsphotonics.2c00433",
+      "data": "https://zenodo.org/records/6205431",
+      "phase": "2H",
+      "thin_layer_validation": false,
+      "units": "nm and dimensionless complex permittivity",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "camera_response",
+      "url": "https://asset-downloads.zeiss.com/catalogs/download/mic/29e65723-e381-4197-aece-157ee2d598e2/EN_product-flyer_Axiocam_305_color.pdf",
+      "kind": "manufacturer typical graph; vectortrace",
+      "measured_this_camera": false
+    },
+    {
+      "id": "2DMatGMM",
+      "repository": "https://github.com/Jaluus/2DMatGMM",
+      "commit": "e30c4d60fdb8f1dbbe79c53099261d7f2b67aca9",
+      "contrast_sign": "I_flake/I_sub-1"
+    },
+    {
+      "id": "MaskTerial",
+      "repository": "https://github.com/Jaluus/MaskTerial",
+      "commit": "289c7597887001f88f5d6d85d92c4653f5ca60f1",
+      "source_of_our_current_MoTe2_validation": false
+    },
+    {
+      "id": "MaskTerial_synthetic",
+      "repository": "https://github.com/Jaluus/MaskTerial-Synthetic-Data",
+      "commit": "dca3a5d1889f6f0e39486326844a99f37a0fe9ed",
+      "MoTe2_in_supplied_material_catalog": false
+    }
+  ],
+  "radiometry_evidence": {
+    "path": "data\\whole-chip-standardized-01\\calibration\\response\\radiometry.json",
+    "sha256": "8ccf1f272261653febea186df06ce0efe507fa54e75d408bdb2c5eac7590ad2a",
+    "status": "indeterminate_without_dark_reference",
+    "response_power_exponents_rgb": [
+      0.9965661732891606,
+      0.9976528248413953,
+      0.9914695529699967
+    ],
+    "dark_reference_supplied": false,
+    "linearity_confirmed": false,
+    "scope": "These measurements support near-linear response for that optical profile; not an unconstrained gamma prior or universal processing guarantee."
+  },
+  "model_status": "conditional manufacturer response ensemble",
+  "calibrated_thickness": false,
+  "layer_assignment_allowed": false,
+  "minimum_ranked_area_um2_request": [
+    20,
+    25
+  ],
+  "focused_test_result": "7 passed in0.66s; numerical/regression checks only",
+  "timing_report": "model-timing.json",
+  "handoff": "HANDOFF.txt",
+  "pixel_timing_report": "pixel-timing.json",
+  "reference_consistency_reports": [
+    "reference-profile-audit.json",
+    "known-reference-check.json",
+    "extended-bulk-check.json"
+  ]
+}

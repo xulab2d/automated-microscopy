@@ -1,0 +1,4851 @@
+{
+  "run_id": "scan-20261013-221727-131d9ced",
+  "sample_id": "Graphene 90nm 4x4 fresh grid 2026-10-13",
+  "settings": {
+    "sample_id": "Graphene 90nm 4x4 fresh grid 2026-10-13",
+    "material": "graphene",
+    "oxide_nm": 90,
+    "width_mm": 100,
+    "height_mm": 100,
+    "z_below_um": 25,
+    "z_above_um": 25,
+    "focus_travel_policy": "controller",
+    "min_chip_mm": 5,
+    "max_chips": 16,
+    "hours": 24,
+    "max_tiles": 10000,
+    "exposure_ms": 200,
+    "light_percent": 90,
+    "auto_exposure": true,
+    "dark_holder": true,
+    "operator_ready": true,
+    "autonomous_reference": true,
+    "grid_4x4": true,
+    "grid_spacing_mm": 10
+  },
+  "acquisition": {
+    "schema": 1,
+    "id": "scan-20261013-221727-131d9ced",
+    "pid": 20056,
+    "state": "failed",
+    "phase": "finished",
+    "started_at": "2026-10-14T05:18:22.425829Z",
+    "request_sha256": "870686e9147199d8b31b10a068b43919b52432ea25bac1c9f3171ee629ceb1cf",
+    "source_release": {
+      "source_directory": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\software-next-20261009",
+      "scope": "flakefinder-python-v1",
+      "files": {
+        "__init__.py": "5dda99ced1735a051699b897f92b4550884122ba5cf497714a7e3ea5ef6cbb21",
+        "__main__.py": "3262de61b39bd4f426048db41700d79e77667a988b7c56fd234fa4e46ba0962b",
+        "acquisition.py": "4e03f29b00229f3056e1f65deed58385bc6acc3a9b871242fbef7816e6236283",
+        "acquisition_budget.py": "74c22328cb2368c78897ec796c4cfd639901eca3205604c70579bf655e9ac167",
+        "acquisition_resources.py": "2db78e180fe0d88e3c97b745982370379b95babcb7f39b845741bec2bafbc98b",
+        "analysis.py": "7238219eccb67be667bbcc6f6217090549884bbf0fb833ce3238be9e06d951ac",
+        "autofocus.py": "a84b6f012bad516628b04d6a36f76696507ee758a0e2d73faad90d2046402cbf",
+        "autonomous_reference.py": "71e8b49e7bdd310576931445da271c0d1f744fbd87f24752ae874b19e2149406",
+        "batch_viewer.py": "120488a36474ee718a7ac7f8b7192c34b6db52bb3d2de34b1350c84e8cc14642",
+        "calibration.py": "f34eafcde269bee7792fc79b858f6ff701411fd955e1c9e982b0a5840187a465",
+        "campaign_restart.py": "ad83090751e23f31633a1f7d8605b805b8b8094b4e7a6e4766a2196aca9c8047",
+        "candidate_index.py": "f6bf78bb4e6f64193cf192e7f3bb6d587f741cbe25660604c5b83850f04c27e1",
+        "capture_overlap.py": "9ac40d674ecd7f49c5ad069b1866bfaf3188c36100fa46dcdc1d79aa7c26838c",
+        "chip_campaign.py": "877748f27134616de120a0f99bff096f0a29f9b37d7961f8242f9844d7de8505",
+        "chip_discovery.py": "19210b8cff035d6e384cb54b71b430e272eca036e1cd6803f19a696e265ef6db",
+        "chips.py": "8ce05639ab2b55950ca1e0682a8b88ec32d0178c291415055cc5b9bd50568ae2",
+        "coherent_regions.py": "79fdb47a0cff5b34a1a6da3e4828687daa3dedaa8d6d9d92cd7d21c3bf50c85e",
+        "colors.py": "f23f84ce1479d7cf78b7c1dd8911103715c14b232777138657970d99f4a5483e",
+        "config.py": "3970183f910e1208e37d752017e64a3fe337267bee65e189ed7b4b902155cef7",
+        "contrast_plot.py": "0433fee7a68f0aa7fa55f33fdcd7582437da4dd141ebc4b8a8fd467275d9dc7e",
+        "contrast_reference.py": "047d1aa01cdab3d7048ecb393a4b8a0ca8021aaf09aa0c53d8b10e01e389480d",
+        "correspondence_continuation.py": "d5e32724c8b1e0dc1c6c77888f8a4c94c12072bdabd05c28122c20dfe3eb0b12",
+        "dataset_cache.py": "866602fb4cf63a5c0464cb5dec93c5081efeb1a9f646a792870c1deeda774bad",
+        "edge_focus_reuse.py": "e37381eeb2397ec18d405d8b2ef3f20892928c49ffcf3b3d9a039ba39c33c48a",
+        "focus_checkpoint.py": "713593c0eac015424472741a76b19c94534e0023dc2cf7ade7d744d9b90a81a1",
+        "focus_recovery.py": "a3e2afc3c7dbaa8c2d18c492948d769fdbfa517f8382b206a93df00aed5939bc",
+        "focus_surface.py": "5fe4deb3200493bb6fe0ea26f82218c65bcbcbe9eba13ecb7f7bb4d21022f8f9",
+        "full_chip.py": "dfd2ea9ea03ef93c76a1d126b6d9beaf3c34d1ce7fd9b6fe984fb2262a07c8ab",
+        "gallery.py": "fdba30df8548b0efaffd4f97b75bfa9b56a1282a7e9d42650385f9e4fbe01d83",
+        "gallery_supplement.py": "ee30ef85f1a96a3d354db478acd1eec187f3ffa43acfed72c6762d18814e0d62",
+        "global_domains.py": "b30c902d5a90a693fd43c358d85625926f87d050a96aa789d83e064395649c6a",
+        "graphene_review.py": "eda6c30a4b1e1f9d4798df185314d9ba3b7afd6e9545742530e5676e69a7bbb9",
+        "grid_layout.py": "ab2918539d7cecef2f2387a75a0e4872434bb7cb45e4a5fb2f1eddf4c045fabf",
+        "grid_search.py": "117093240411d2ce604ff7d735c989eaf328942509f6b7fb889be88faf8e9f38",
+        "gui.py": "b24bcdfd79c1fdcd513232c82a2b86b70ac4e68128680460f28e9e9d8ec84562",
+        "imaging.py": "e0c6c8a011e1b948ba8bc3ba9d6a65760bb43c2d91a6b5cc12174ec160cdf92d",
+        "initial_edge_focus.py": "272360bf52d493208a935ab153e05544370da5749cc0803f1850f0642c637180",
+        "layout.py": "c087d6af7ebc6ac14b6697acab7f306df2153fb5a9b4b649f243ece005ea8ea1",
+        "learned_analysis.py": "18956effe81c6949345477c1b68f86fa595dc1b158a103a71ec597ab41eac484",
+        "lease.py": "65b2964c58c7d01f0153057d899de8cf0d9c5e6665f83d1b9bec672507091f68",
+        "live_progress.py": "5c73b1f1a690431cbc06634fc737d188a8d555c3404ed10b71cb4e750d757a0b",
+        "material_contrast.py": "4da81f139c8992f78465583711061184237815d58adf01ceb5794bb25ced4782",
+        "material_input.py": "2e3d620839230955f0308e98a0347a1304d175324c2480e6a4d462cd0366bd91",
+        "material_profiles.py": "f316cfc69f5c55d6cde182703187918b317a48b26ed11d1ec30320054e39a74f",
+        "material_selection.py": "3f12c43c0616f432e64bc973cbe3782a2077b3e715aec54c4c895d524e1ba741",
+        "material_terraces.py": "ae4cd3d76d3eb695a2267a2b14f952894e3c448a05e63c57ed303ce01ca9926a",
+        "measure_existing_regions.py": "33be32391bdb6272d9889af68442605b7debee219b79e9c929d321ae13e2f4b1",
+        "memory_capacity.py": "4f85f631b444a3adcc6c7a8a7fca7a9cc549cd50b0555338b597603655e1b1e7",
+        "memory_cleanup.py": "00198c6e3545d638f126152cdcbe303a05483961ee4e28104779f4f624dec8b1",
+        "memory_progress.py": "afe8c948a25744acde4c9c7a1f1b861e06b75fec5c90ef68d711b67081662ef8",
+        "model.py": "ce35abc5343f9489930721fe9438fd493d96be6ccce5df43fcea3b2fe84a7730",
+        "mote2_optics.py": "26a592e85298e0fa90e21d30439de6ca296c84de5f380e75748bf02aae161f0d",
+        "motion.py": "85c9fce9c711f9fd0d92d7b5ecff47ddd285325e76cb6c29af2c7c30b3d94a10",
+        "mtb.py": "5a173b3380d5f55849fc8d5cb8b73a77d074a9cbc567cdaff5ad188a6b0af827",
+        "optics.py": "306338626e52f184615ac80805c8c684c3941f9db6fa87741b5b239aac3d7892",
+        "pending_focus.py": "402790ea98a47afa95bd8fc1b194c702ef74dcaafec3bf80ce6fb2d3667fd1e9",
+        "photometric_edges.py": "ae55b093b5f5b4f68b02c7f8fe8f918de5a150aa1bfab64a70c794e7ead2d361",
+        "project_catalog.py": "abd5e7e43d830547205e74fec9678e622364588985aec8ba83dfc66eb26e3499",
+        "proposal_sheets.py": "0d3af37ba408bcef71190e29f6b21fd82fda9ef854e030b4f0fcddf4323f12a8",
+        "radiometry.py": "bc4a4496affedcaf95e433734af8c9c4137b460551f9763e0d39d8ab2e73ef5c",
+        "rectangle_edges.py": "f5d22a9186cc47cee50a63b3311132fc6ea6cdaf287f43fe48d372449b671660",
+        "rectangle_handoff.py": "8662341e0168fc96e86833b647c4b17bc4b12f281524e7e05c776eb249a648e4",
+        "reference_clusters.py": "b8c11fb10810d8e067e70d6275fe6b5a7c0f266f37b5f2c97f991826045070aa",
+        "reference_correspondence.py": "9ffb0dec4c6737e8916a643ae7273d38de648d54dd084d3b322ebd0a8e97de94",
+        "reference_focus_recovery.py": "acb3d59d9152e7d6b33be762a19d8c794ad80c8285721c319fa2582bf4b51c6c",
+        "reference_repair.py": "0d1b6253a32b2a8f78dbdcab2efdb12edd62f2ccc2b6de93ec212ab6d10ea5a0",
+        "report.py": "4dad476b32a5b2d2e91e286c6f5784295577ef5ac3f9baf359f4db52728f705e",
+        "retained_reference.py": "a86070378d8819c12cc13c44b1d821716df350508460ff53f5a636f62df1e6eb",
+        "review.py": "036ba29d4b597da12de09180495f8d87a2f8e6affaf28c788809b24e93018082",
+        "revisit.py": "4c18a79d8bb54dc27fa9d0aa862692165561495375bd93d58a26e0fb745dce0d",
+        "scan.py": "3b06148710463b872af5a5c7fd553b7a4149cc9538dc9a26319279facb4144ef",
+        "scan_continuation.py": "9cb04dad841589a87d0551b4c51afd47435992afc4292af53f90676e987d0adc",
+        "scan_service.py": "a18739d69a8a5908bc316cfefb407ba73c5d28e7db04585a6fad5529b5b10347",
+        "scan_worker.py": "9a20fe232250ca95acd70818a6e5685e6e2933088e0f054ae4623224227d82d1",
+        "segmentation.py": "325ffee507d4141ef131cd87107bb12bee768af9a62031515b6252a01e241a8b",
+        "simulator.py": "c79f79eb13adfb7f35a5b22a5d9c16302c53a7516764c4c28e7a1c4955d97bca",
+        "sparse_acquisition.py": "a0f4dfd783544597b6f2e20662dd48be153dedbd2e611dffb97283c11035ae59",
+        "sparse_edges.py": "f40b469916bab2edf5c24134865955dd5d4154c6c742a30ab172ed89f9adc1a3",
+        "sparse_import.py": "912164d8d05ef2e395b433087693edabc585a790fbf75f04d00067930c1aa5e1",
+        "staged_features.py": "16a293c05d9b2c11eb00a526fcee8b9cebf886e3a5443aa19943e8864d4e8c95",
+        "startup_continuation.py": "cef7b7d03908523d4af50061d07e2e38ebcb46ab5112afa936cdb2b2f51751f6",
+        "storage.py": "f40048af49fb216bae3be1aaf22f8e4f82052134569b5775416d2afd6dda7542",
+        "suite_labels.py": "014bd778a2da7a9701e530009ee5b12000b2d6b8bc3f1b7aba7d4efc0f06d47c",
+        "suite_server.py": "ce7d0a1168338c372694ac97b61e0653c521349abc98edb7f8d85d39266ea20c",
+        "terrace_analysis.py": "319500146d5bccba3ae67e64c8bc86df3ea7ee744b60bf7229171b89beb6bc85",
+        "terrace_domain.py": "0f764531397d202db5f83cc498650fa07705f5e8e028c8311a40ef011db5aea4",
+        "terrace_parents.py": "29ba356a46aace07363843f07a89e6f742afa5731bc3b39b1d46be0f4858b512",
+        "terrace_substrate.py": "4fcda1c42e427ebb66618a18567b7491d0d6d5d5cd1c29c31ee776e7cdad1516",
+        "thin_analysis.py": "ccc07499bcbe4e047e5787fdb8c00053f5b773440c24c59b0045964e346a7a8b",
+        "thin_contrast.py": "763d3baa8ed383ccbab1385d70487e2164ae963490f51264d8c7c4e58b889e2b",
+        "thin_existing.py": "1ecf17f477bd5af76c3055720b04737e81c977edfbe59ce07dbe9e05d9a9c185",
+        "thin_regions.py": "50dfd1b87a5a31cc455a9c10fb474e616a5a0053105c11793c93c043dfa8c271",
+        "training_bundle.py": "3af528197ab3783b48e82149c328e03d1f14b06ad53a4f983449048d7440bb98",
+        "vendor_backlog.py": "65e3630df2d0aed3795a4fe755ef741ad03e4e98444e853a48457aad7d97e224",
+        "vendor_lifecycle.py": "1d552d66394757a4f3092e38cd2d51ce8fb6646099e8560dea131c5002a0958f",
+        "workflow.py": "f528d0b6d41d2b9ec540d0ae9e276b6c0230e63a529450be426329c574f596e0",
+        "zen.py": "4578eeab329da18ab67613841a476f74cb2d0a6d78e4767b64effeb749fbf777"
+      }
+    },
+    "hardware_closed": true,
+    "automatic_restart": false,
+    "updated_at": "2026-10-14T07:48:46.968800Z",
+    "prior_run_id": "scan-20261013-215137-c4f3127d",
+    "progress": {
+      "index": 999,
+      "total": 999
+    },
+    "error_type": "FileNotFoundError",
+    "error": "[Errno 2] No such file or directory: 'G:\\\\Shared drives\\\\Xu Lab - Microscopy and Instruments\\\\Automated Microscopy\\\\data\\\\scan-20261013-221727-131d9ced\\\\chip001\\\\boundary-labels\\\\tile_000025.npz'",
+    "finished_at": "2026-10-14T07:48:46.926671Z",
+    "failed_phase": "tile",
+    "stop_errors": [],
+    "watchdog_reason": null,
+    "recovery_state": "needs_repair",
+    "repair_required": true
+  },
+  "status": {
+    "state": "complete",
+    "pid": 12264,
+    "output": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\analysis\\graphene\\scan-20261013-221727-131d9ced\\chip001\\full-chip-conditional-v1",
+    "updated_at": 1792014844.4347422,
+    "no_acquisition_performed": true,
+    "cpu": {
+      "threads": 1,
+      "priority": "below_normal",
+      "windows_affinity": "one allowed logical CPU"
+    },
+    "current_field": null,
+    "finished_fields": 999,
+    "selected_fields": 999,
+    "counts": {
+      "assessed": 942,
+      "unassessable": 57,
+      "budget_exhausted": 0,
+      "invalid_source": 0,
+      "failed": 0
+    },
+    "run_id": "scan-20261013-221727-131d9ced",
+    "scan_request_sha256": "870686e9147199d8b31b10a068b43919b52432ea25bac1c9f3171ee629ceb1cf",
+    "processed_fields": 999,
+    "assessed_fields": 942,
+    "unassessable_fields": 57,
+    "failed_fields": 0,
+    "budget_exhausted_fields": 0,
+    "available_fields": 999,
+    "total_fields": 999
+  },
+  "analysis_source": {
+    "kind": "offline_selected",
+    "analysis_relative_path": "analysis/graphene/scan-20261013-221727-131d9ced/chip001/full-chip-conditional-v1",
+    "plan_sha256": "2515992432f12ae6494c650ad03503f452e288fb05fb4187030ea1fde578174b",
+    "model_sha256": "3845f90cf159edfa9246afe030faabc0130a40151c3ef8923ff8718ae4936244",
+    "config_sha256": "54784251677b8fe51522cf140e2e056e844e2925e2cac8279a2941a7fb0813ab",
+    "chip": "chip001",
+    "version": "full-chip-conditional-v1"
+  },
+  "related_analysis": null,
+  "stale": false,
+  "rows": [
+    {
+      "id": "chip001/tile_000940/75",
+      "field": "chip001/tile_000940",
+      "instance_label": 75,
+      "disposition": "uncertain",
+      "area_um2": 124.50014999999998,
+      "rank": 124.50014999999998,
+      "contrast_rgb": [
+        0.13389789302475605,
+        0.11736553730733403,
+        0.07921508036367214
+      ],
+      "bbox_px": [
+        918.5,
+        262.5,
+        91.0,
+        217.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000940.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        49509.10096686701,
+        31118.487924214493
+      ],
+      "source_tiff_sha256": "adc7185e5bd891718c0d2721323e0ceff662ab6c2a6e864425702fc39f6f47f8",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 0.69,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 0.8074353337287903,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 1821.7193071047752,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.9796099099798139,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 124.50014999999998,
+      "boundary_quality_rank": 0.9796099099798139,
+      "review_rank": 0.2521780115190664,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.9559736073245109,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.2637918134840966,
+        "area_utility": 0.48159064619787845,
+        "boundary_quality_factor": 0.54775111511553,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.2521780115190664,
+        "evidence_missing": [],
+        "reference_distance": 0.8074353337287903,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 1821.7193071047752,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000940.jpg",
+      "source_field_reference": "fields/tile_000940-94ab8de8/field.json"
+    },
+    {
+      "id": "chip001/tile_000912/71",
+      "field": "chip001/tile_000912",
+      "instance_label": 71,
+      "disposition": "uncertain",
+      "area_um2": 3057.9902999999995,
+      "rank": 0.0,
+      "contrast_rgb": [
+        -0.5311918598455656,
+        -1.0368954920860978,
+        -0.8170926152013034
+      ],
+      "bbox_px": [
+        606.5,
+        400.5,
+        357.0,
+        565.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000912.jpg",
+      "filter_reasons": [
+        "below_useful_size",
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "stage_xy_um": [
+        43796.20803080546,
+        30878.867719400234
+      ],
+      "source_tiff_sha256": "ee4a284a6123c85a15e2658e5bb730174ba0cbac9bd4181ce68192390df14123",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 0.0,
+      "class_name": "unknown",
+      "proposal_stage": "unknown_optical_feature",
+      "optical_evidence": {
+        "reference_distance": 1.7654809951782227,
+        "support_fraction": 0.0,
+        "log_likelihood_ratio": 1376.9141481479785,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size",
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "display_filter_reasons": [
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 1.679147045318003,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 0.0,
+      "boundary_quality_rank": 1.679147045318003,
+      "review_rank": 0.18528616338507425,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.8195512389605073,
+        "material_support": 0.5,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.4521649277721435,
+        "area_utility": 1.0,
+        "boundary_quality_factor": 0.4521649277721435,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.18528616338507425,
+        "evidence_missing": [],
+        "reference_distance": 1.7654809951782227,
+        "support_fraction": 0.0,
+        "log_likelihood_ratio": 1376.9141481479785,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000912.jpg",
+      "source_field_reference": "fields/tile_000912-9835b10e/field.json"
+    },
+    {
+      "id": "chip001/tile_000456/98",
+      "field": "chip001/tile_000456",
+      "instance_label": 98,
+      "disposition": "uncertain",
+      "area_um2": 115.33522499999998,
+      "rank": 115.33522499999998,
+      "contrast_rgb": [
+        0.13193215933196034,
+        0.10295990216403055,
+        0.06147781506955142
+      ],
+      "bbox_px": [
+        518.5,
+        440.5,
+        65.0,
+        133.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000456.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        50114.48197979099,
+        26027.92349867291
+      ],
+      "source_tiff_sha256": "86b6dc9b42bd44be8ac1a4f1ee36d5935982d6eb7d3135680d4dc82f112fd901",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 2.07,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 1.470915675163269,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 500.18303359923544,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.7496469967674341,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 115.33522499999998,
+      "boundary_quality_rank": 0.7496469967674341,
+      "review_rank": 0.17510446024666262,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.867425648513703,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.20186682345247306,
+        "area_utility": 0.46455492686754973,
+        "boundary_quality_factor": 0.43453811762075606,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.17510446024666262,
+        "evidence_missing": [],
+        "reference_distance": 1.470915675163269,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 500.18303359923544,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000456.jpg",
+      "source_field_reference": "fields/tile_000456-fc7573d3/field.json"
+    },
+    {
+      "id": "chip001/tile_000690/358",
+      "field": "chip001/tile_000690",
+      "instance_label": 358,
+      "disposition": "uncertain",
+      "area_um2": 185.79802499999997,
+      "rank": 185.79802499999997,
+      "contrast_rgb": [
+        0.13482186421226408,
+        0.10780323437908641,
+        0.06774334688104901
+      ],
+      "bbox_px": [
+        92.5,
+        1506.5,
+        179.0,
+        121.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000690.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        45691.35409470588,
+        28764.14137030314
+      ],
+      "source_tiff_sha256": "6b590468942d771020409c30fe9eaee58cc6b59e6fb25dfb7620211a04b7b50f",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 1.38,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 1.4077587127685547,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 1375.117268692547,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.7309750912057545,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 185.79802499999997,
+      "boundary_quality_rank": 0.7309750912057545,
+      "review_rank": 0.17266659023663583,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.8771979155926698,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.19683880589248257,
+        "area_utility": 0.5741169376516289,
+        "boundary_quality_factor": 0.3428549011245568,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.17266659023663583,
+        "evidence_missing": [],
+        "reference_distance": 1.4077587127685547,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 1375.117268692547,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000690.jpg",
+      "source_field_reference": "fields/tile_000690-66da3515/field.json"
+    },
+    {
+      "id": "chip001/tile_000691/187",
+      "field": "chip001/tile_000691",
+      "instance_label": 187,
+      "disposition": "uncertain",
+      "area_um2": 191.51122499999997,
+      "rank": 191.51122499999997,
+      "contrast_rgb": [
+        0.13508715851074785,
+        0.10884462775899999,
+        0.07322891831073913
+      ],
+      "bbox_px": [
+        2044.5,
+        1418.5,
+        179.0,
+        123.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000691.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        45689.33041329206,
+        28764.039679836285
+      ],
+      "source_tiff_sha256": "39e894f6bec530344c47080eaf7892ae10c4cb3bce48bc4f6193d6700db7bde1",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 1.38,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 1.5018372535705566,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 1775.5086730483117,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.737767555585526,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 191.51122499999997,
+      "boundary_quality_rank": 0.737767555585526,
+      "review_rank": 0.17136441280175238,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.8625672026234851,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.19866789773660545,
+        "area_utility": 0.5813180759734677,
+        "boundary_quality_factor": 0.3417542064280708,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.17136441280175238,
+        "evidence_missing": [],
+        "reference_distance": 1.5018372535705566,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 1775.5086730483117,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000691.jpg",
+      "source_field_reference": "fields/tile_000691-737eab82/field.json"
+    },
+    {
+      "id": "chip001/tile_000649/268",
+      "field": "chip001/tile_000649",
+      "instance_label": 268,
+      "disposition": "uncertain",
+      "area_um2": 66.41594999999998,
+      "rank": 66.41594999999998,
+      "contrast_rgb": [
+        0.13723097311541138,
+        0.1197622477964752,
+        0.07675513125518903
+      ],
+      "bbox_px": [
+        632.5,
+        1576.5,
+        139.0,
+        73.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000649.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        42434.78178405443,
+        28488.740153639672
+      ],
+      "source_tiff_sha256": "47415601c8a066e6a3b3fb88dab3b27c265435aaab84c56fac0a902a4cffdd6c",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 1.035,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 1.0425671339035034,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 593.5910602640921,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.6663312129501884,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 66.41594999999998,
+      "boundary_quality_rank": 0.6663312129501884,
+      "review_rank": 0.16663663604024503,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.928693035628343,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.17943134022481455,
+        "area_utility": 0.3491366594580466,
+        "boundary_quality_factor": 0.5139286733834824,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.16663663604024503,
+        "evidence_missing": [],
+        "reference_distance": 1.0425671339035034,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 593.5910602640921,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000649.jpg",
+      "source_field_reference": "fields/tile_000649-bcbf4855/field.json"
+    },
+    {
+      "id": "chip001/tile_000932/234",
+      "field": "chip001/tile_000932",
+      "instance_label": 234,
+      "disposition": "uncertain",
+      "area_um2": 51.65684999999999,
+      "rank": 51.65684999999999,
+      "contrast_rgb": [
+        0.14149103282883485,
+        0.1132894486234538,
+        0.07274434665875591
+      ],
+      "bbox_px": [
+        690.5,
+        1012.5,
+        57.0,
+        95.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000932.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        46795.01999842713,
+        31229.549851578256
+      ],
+      "source_tiff_sha256": "5e1bb9cd38baff500b0ef411a2bf03b63b55a77520a3205c1ae1f6ee8439f5fb",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 1.38,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 1.6741034984588623,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 503.751652083962,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.7394070938079597,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 51.65684999999999,
+      "boundary_quality_rank": 0.7394070938079597,
+      "review_rank": 0.16620459145599617,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.8347400685735005,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.1991093967012098,
+        "area_utility": 0.30172112553203734,
+        "boundary_quality_factor": 0.6599120175960896,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.16620459145599617,
+        "evidence_missing": [],
+        "reference_distance": 1.6741034984588623,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 503.751652083962,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000932.jpg",
+      "source_field_reference": "fields/tile_000932-492befb5/field.json"
+    },
+    {
+      "id": "chip001/tile_000662/141",
+      "field": "chip001/tile_000662",
+      "instance_label": 141,
+      "disposition": "uncertain",
+      "area_um2": 78.79454999999999,
+      "rank": 78.79454999999999,
+      "contrast_rgb": [
+        0.136298859478393,
+        0.11324731860629432,
+        0.0762554465425918
+      ],
+      "bbox_px": [
+        1124.5,
+        722.5,
+        169.0,
+        91.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000662.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        46888.73123654439,
+        28348.3481144983
+      ],
+      "source_tiff_sha256": "380a6c1da76208b942d8e812ea5343f87b71d6f94127eae99ce208d7711d693b",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 1.7249999999999999,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 1.1216411590576172,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 541.6770100459182,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.6333858604048577,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 78.79454999999999,
+      "boundary_quality_rank": 0.6333858604048577,
+      "review_rank": 0.1566390773968479,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.9183825196278527,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.17055973306234232,
+        "area_utility": 0.38333378593391765,
+        "boundary_quality_factor": 0.44493790873874306,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.1566390773968479,
+        "evidence_missing": [],
+        "reference_distance": 1.1216411590576172,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 541.6770100459182,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000662.jpg",
+      "source_field_reference": "fields/tile_000662-3633bfea/field.json"
+    },
+    {
+      "id": "chip001/tile_000737/145",
+      "field": "chip001/tile_000737",
+      "instance_label": 145,
+      "disposition": "uncertain",
+      "area_um2": 268.52039999999994,
+      "rank": 268.52039999999994,
+      "contrast_rgb": [
+        0.13290272853682816,
+        0.10209399983243757,
+        0.06363605512034379
+      ],
+      "bbox_px": [
+        356.5,
+        430.5,
+        171.0,
+        259.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000737.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        48094.62516889909,
+        29152.65966828555
+      ],
+      "source_tiff_sha256": "8dcb706ca548207840f41d4be86cb8fec100d2247f0a108d8e7b386c55c372aa",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 2.415,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 1.6234365701675415,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 2804.314029265567,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.6848737631134318,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 268.52039999999994,
+      "boundary_quality_rank": 0.6848737631134318,
+      "review_rank": 0.15547828850856601,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.8430456242908753,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.18442452463868253,
+        "area_utility": 0.6632620220382451,
+        "boundary_quality_factor": 0.27805681391486065,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.15547828850856601,
+        "evidence_missing": [],
+        "reference_distance": 1.6234365701675415,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 2804.314029265567,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000737.jpg",
+      "source_field_reference": "fields/tile_000737-355ef958/field.json"
+    },
+    {
+      "id": "chip001/tile_000488/53",
+      "field": "chip001/tile_000488",
+      "instance_label": 53,
+      "disposition": "uncertain",
+      "area_um2": 30.827474999999993,
+      "rank": 30.827474999999993,
+      "contrast_rgb": [
+        0.14130863844942376,
+        0.11433368757359727,
+        0.0669244589430351
+      ],
+      "bbox_px": [
+        1690.5,
+        664.5,
+        61.0,
+        29.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000488.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        42957.98463443631,
+        26636.864772260025
+      ],
+      "source_tiff_sha256": "07004f74cd0379c7df9bc8e116a49524a5225e518c7b3b14fd6a902bd61593e9",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 1.7249999999999999,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 1.4291447401046753,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 144.1574917556772,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.6499083797283698,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 30.827474999999993,
+      "boundary_quality_rank": 0.6499083797283698,
+      "review_rank": 0.15294251433748696,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.8739124879303691,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.17500895850532003,
+        "area_utility": 0.21633895678335677,
+        "boundary_quality_factor": 0.8089572082044156,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.15294251433748696,
+        "evidence_missing": [],
+        "reference_distance": 1.4291447401046753,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 144.1574917556772,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000488.jpg",
+      "source_field_reference": "fields/tile_000488-eb92c65f/field.json"
+    },
+    {
+      "id": "chip001/tile_000497/146",
+      "field": "chip001/tile_000497",
+      "instance_label": 146,
+      "disposition": "uncertain",
+      "area_um2": 330.05632499999996,
+      "rank": 330.05632499999996,
+      "contrast_rgb": [
+        0.5755872532182047,
+        0.4349074092404245,
+        0.2772484930522037
+      ],
+      "bbox_px": [
+        1144.5,
+        466.5,
+        189.0,
+        107.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000497.jpg",
+      "filter_reasons": [
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "stage_xy_um": [
+        45873.4465577346,
+        26605.040820183338
+      ],
+      "source_tiff_sha256": "4fd80afc75910072a9affa5e49fcd47f3a75a2a751fc12276d24a724b2e8f3a3",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 4.14,
+      "class_name": "conditional_1.7nm",
+      "proposal_stage": "unknown_optical_feature",
+      "optical_evidence": {
+        "reference_distance": 5.456272602081299,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 163437.74878938915,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "display_filter_reasons": [
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 1.7391447397138022,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 330.05632499999996,
+      "boundary_quality_rank": 1.7391447397138022,
+      "review_rank": 0.15092424565585932,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.3222664853922682,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.46832125739712516,
+        "area_utility": 0.7145143722357826,
+        "boundary_quality_factor": 0.6554399401816144,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.15092424565585932,
+        "evidence_missing": [],
+        "reference_distance": 5.456272602081299,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 163437.74878938915,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000497.jpg",
+      "source_field_reference": "fields/tile_000497-6f77d4b8/field.json"
+    },
+    {
+      "id": "chip001/tile_000532/12",
+      "field": "chip001/tile_000532",
+      "instance_label": 12,
+      "disposition": "uncertain",
+      "area_um2": 27.018674999999995,
+      "rank": 27.018674999999995,
+      "contrast_rgb": [
+        0.11479865289534064,
+        0.10501524167364218,
+        0.07047439575202177
+      ],
+      "bbox_px": [
+        2314.5,
+        44.5,
+        39.0,
+        41.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000532.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        44743.254630747644,
+        26819.15358228952
+      ],
+      "source_tiff_sha256": "5a7e261c5f03c282c8121ceeb283035cb1fa88bb5010f81a3b0af03f4011361c",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 2.76,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 0.8773915767669678,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 200.8645064761001,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.589299001708061,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 27.018674999999995,
+      "boundary_quality_rank": 0.589299001708061,
+      "review_rank": 0.15050354156145881,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.9484247322034094,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.15868791317978853,
+        "area_utility": 0.19731055455333762,
+        "boundary_quality_factor": 0.8042545597168828,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.15050354156145881,
+        "evidence_missing": [],
+        "reference_distance": 0.8773915767669678,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 200.8645064761001,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000532.jpg",
+      "source_field_reference": "fields/tile_000532-a016009b/field.json"
+    },
+    {
+      "id": "chip001/tile_000779/125",
+      "field": "chip001/tile_000779",
+      "instance_label": 125,
+      "disposition": "uncertain",
+      "area_um2": 47.49097499999999,
+      "rank": 47.49097499999999,
+      "contrast_rgb": [
+        0.13159094905680174,
+        0.11632009700917414,
+        0.07657768679618648
+      ],
+      "bbox_px": [
+        906.5,
+        310.5,
+        51.0,
+        91.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000779.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        49845.863441379915,
+        29407.628144763563
+      ],
+      "source_tiff_sha256": "261e50ee0e08f48fb4b053d0844d8e06a57add249df38a485961450bc32cf1ef",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 1.035,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 0.685143768787384,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 604.2285206635346,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.5704163490509832,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 47.49097499999999,
+      "boundary_quality_rank": 0.5704163490509832,
+      "review_rank": 0.14867313705185103,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.9679042505419291,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.15360314511338186,
+        "area_utility": 0.28667445450438683,
+        "boundary_quality_factor": 0.535810368520406,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.14867313705185103,
+        "evidence_missing": [],
+        "reference_distance": 0.685143768787384,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 604.2285206635346,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000779.jpg",
+      "source_field_reference": "fields/tile_000779-28a11bf5/field.json"
+    },
+    {
+      "id": "chip001/tile_000500/145",
+      "field": "chip001/tile_000500",
+      "instance_label": 145,
+      "disposition": "uncertain",
+      "area_um2": 38.80214999999999,
+      "rank": 38.80214999999999,
+      "contrast_rgb": [
+        0.13129610761129598,
+        0.1147277548189221,
+        0.07668419535730456
+      ],
+      "bbox_px": [
+        1916.5,
+        998.5,
+        91.0,
+        57.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000500.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        47009.07673860916,
+        26700.493557933118
+      ],
+      "source_tiff_sha256": "e31680b885d05a90c677e7700d1340d424978515b1f82a64bbb3d532ba219fca",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 1.035,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 0.7434532046318054,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 824.363453755723,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.5624220622076264,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 38.80214999999999,
+      "boundary_quality_rank": 0.5624220622076264,
+      "review_rank": 0.14575933482232303,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.9624227615341217,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.15145042350201657,
+        "area_utility": 0.25229376114027763,
+        "boundary_quality_factor": 0.6002939700827907,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.14575933482232303,
+        "evidence_missing": [],
+        "reference_distance": 0.7434532046318054,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 824.363453755723,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000500.jpg",
+      "source_field_reference": "fields/tile_000500-ca26f7b5/field.json"
+    },
+    {
+      "id": "chip001/tile_000531/38",
+      "field": "chip001/tile_000531",
+      "instance_label": 38,
+      "disposition": "uncertain",
+      "area_um2": 27.018674999999995,
+      "rank": 27.018674999999995,
+      "contrast_rgb": [
+        0.12066104021082061,
+        0.10246256309337815,
+        0.06585759779567309
+      ],
+      "bbox_px": [
+        370.5,
+        130.5,
+        41.0,
+        43.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000531.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        44739.413685488376,
+        26818.988907535793
+      ],
+      "source_tiff_sha256": "f46bc03e39fc51f9355bd5cccc2bbef7dfb1d8e53451b325ee3b080e591e41f5",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 1.38,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 0.877996563911438,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 276.2171066923474,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.5706432818531616,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 27.018674999999995,
+      "boundary_quality_rank": 0.5706432818531616,
+      "review_rank": 0.14572861052299607,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.9483572567443017,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.15366425414751453,
+        "area_utility": 0.19731055455333762,
+        "boundary_quality_factor": 0.7787938891326541,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.14572861052299607,
+        "evidence_missing": [],
+        "reference_distance": 0.877996563911438,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 276.2171066923474,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000531.jpg",
+      "source_field_reference": "fields/tile_000531-f80d3a4c/field.json"
+    },
+    {
+      "id": "chip001/tile_000494/452",
+      "field": "chip001/tile_000494",
+      "instance_label": 452,
+      "disposition": "uncertain",
+      "area_um2": 26.304524999999995,
+      "rank": 26.304524999999995,
+      "contrast_rgb": [
+        0.12610981651934952,
+        0.09976377912010388,
+        0.0652104102238623
+      ],
+      "bbox_px": [
+        456.5,
+        1778.5,
+        37.0,
+        43.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000494.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        44737.676310183095,
+        26820.28854528667
+      ],
+      "source_tiff_sha256": "23c8fe1c197a7b0f6696d455eed60411b584a850fbe463d6090a7ede92f65dda",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 2.76,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 1.066666603088379,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 161.24871874043043,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.5683428269925772,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 26.304524999999995,
+      "boundary_quality_rank": 0.5683428269925772,
+      "review_rank": 0.14165923279569936,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.9256064208368068,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.15304478189296747,
+        "area_utility": 0.19358803791418921,
+        "boundary_quality_factor": 0.790569415042095,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.14165923279569936,
+        "evidence_missing": [],
+        "reference_distance": 1.066666603088379,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 161.24871874043043,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000494.jpg",
+      "source_field_reference": "fields/tile_000494-0e294623/field.json"
+    },
+    {
+      "id": "chip001/tile_000493/104",
+      "field": "chip001/tile_000493",
+      "instance_label": 104,
+      "disposition": "uncertain",
+      "area_um2": 25.233299999999996,
+      "rank": 25.233299999999996,
+      "contrast_rgb": [
+        0.12694823369705754,
+        0.10175450770376267,
+        0.06564693183842805
+      ],
+      "bbox_px": [
+        2400.5,
+        1692.5,
+        37.0,
+        43.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000493.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        44741.51725544236,
+        26820.4532200404
+      ],
+      "source_tiff_sha256": "afa443baaf91be38c262ebb51990d1cfc0185694422ff17e28384d8cb19070fc",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 2.415,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 1.0232291221618652,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 276.88896885103986,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.5536826692404795,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 25.233299999999996,
+      "boundary_quality_rank": 0.5536826692404795,
+      "review_rank": 0.13882923395700345,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.9311332897088868,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.14909705784486296,
+        "area_utility": 0.18790596115862987,
+        "boundary_quality_factor": 0.793466353731032,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.13882923395700345,
+        "evidence_missing": [],
+        "reference_distance": 1.0232291221618652,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 276.88896885103986,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000493.jpg",
+      "source_field_reference": "fields/tile_000493-bbef5b39/field.json"
+    },
+    {
+      "id": "chip001/tile_000713/38",
+      "field": "chip001/tile_000713",
+      "instance_label": 38,
+      "disposition": "uncertain",
+      "area_um2": 40.70654999999999,
+      "rank": 40.70654999999999,
+      "contrast_rgb": [
+        0.13604915972349216,
+        0.11320402527853184,
+        0.07086017497282718
+      ],
+      "bbox_px": [
+        178.5,
+        4.5,
+        81.0,
+        51.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000713.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        45708.10868166096,
+        28782.511435128377
+      ],
+      "source_tiff_sha256": "d96ca0cbbb68c1b3738634df7af1e0c2be7316e90f63d330f8ffba042a815b24",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 1.035,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 1.1734585762023926,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 537.5060082181952,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.5647748930711533,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 40.70654999999999,
+      "boundary_quality_rank": 0.5647748930711533,
+      "review_rank": 0.13860193180827002,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.9113511749000521,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.1520839996979984,
+        "area_utility": 0.26021382482464406,
+        "boundary_quality_factor": 0.5844578004281155,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.13860193180827002,
+        "evidence_missing": [],
+        "reference_distance": 1.1734585762023926,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 537.5060082181952,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000713.jpg",
+      "source_field_reference": "fields/tile_000713-4dea38c3/field.json"
+    },
+    {
+      "id": "chip001/tile_000118/193",
+      "field": "chip001/tile_000118",
+      "instance_label": 193,
+      "disposition": "uncertain",
+      "area_um2": 31.898699999999995,
+      "rank": 31.898699999999995,
+      "contrast_rgb": [
+        0.12590318709280265,
+        0.1133475964637142,
+        0.06232633265995007
+      ],
+      "bbox_px": [
+        274.5,
+        868.5,
+        97.0,
+        23.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000118.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        45392.58956444798,
+        22692.06825588252
+      ],
+      "source_tiff_sha256": "7e5353269f16434a8c0600ce31b3ce8bb2e8fa4b7e05639a047c5721b915fdcc",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 1.035,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 0.5200541019439697,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 371.53418904672924,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.5167751049149251,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 31.898699999999995,
+      "boundary_quality_rank": 0.5167751049149251,
+      "review_rank": 0.13654970398984193,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.9812530859761497,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.13915849635672983,
+        "area_utility": 0.2214570376259761,
+        "boundary_quality_factor": 0.6283769432144117,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.13654970398984193,
+        "evidence_missing": [],
+        "reference_distance": 0.5200541019439697,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 371.53418904672924,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000118.jpg",
+      "source_field_reference": "fields/tile_000118-e52bcc27/field.json"
+    },
+    {
+      "id": "chip001/tile_000248/210",
+      "field": "chip001/tile_000248",
+      "instance_label": 210,
+      "disposition": "uncertain",
+      "area_um2": 395.40104999999994,
+      "rank": 0.0,
+      "contrast_rgb": [
+        -0.3712400513809823,
+        -0.8249710487102506,
+        -0.6925205028043977
+      ],
+      "bbox_px": [
+        1544.5,
+        1558.5,
+        121.0,
+        195.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000248.jpg",
+      "filter_reasons": [
+        "below_useful_size",
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "stage_xy_um": [
+        49279.194558058945,
+        24257.22950105291
+      ],
+      "source_tiff_sha256": "6ba35e7acc21942776f307cc72725dc34bfb6e8694f49a6213ed7011202abb2d",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 0.0,
+      "class_name": "unknown",
+      "proposal_stage": "unknown_optical_feature",
+      "optical_evidence": {
+        "reference_distance": 3.2845840454101562,
+        "support_fraction": 0.0,
+        "log_likelihood_ratio": 234.15135345901163,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size",
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "display_filter_reasons": [
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 1.77843134796074,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 0.0,
+      "boundary_quality_rank": 1.77843134796074,
+      "review_rank": 0.13588905773248922,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.5675044016118873,
+        "material_support": 0.5,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.47890045379920376,
+        "area_utility": 0.7600049927824698,
+        "boundary_quality_factor": 0.6301280364565652,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.13588905773248922,
+        "evidence_missing": [],
+        "reference_distance": 3.2845840454101562,
+        "support_fraction": 0.0,
+        "log_likelihood_ratio": 234.15135345901163,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000248.jpg",
+      "source_field_reference": "fields/tile_000248-0c3bb677/field.json"
+    },
+    {
+      "id": "chip001/tile_000732/405",
+      "field": "chip001/tile_000732",
+      "instance_label": 405,
+      "disposition": "uncertain",
+      "area_um2": 46.41974999999999,
+      "rank": 46.41974999999999,
+      "contrast_rgb": [
+        0.1472677472336128,
+        0.11468856049750341,
+        0.07573061394449093
+      ],
+      "bbox_px": [
+        970.5,
+        1960.5,
+        51.0,
+        89.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000732.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        49844.126066074634,
+        29408.926782514438
+      ],
+      "source_tiff_sha256": "13c6c497578b97d5aabc5d988e02333d01fae801883e277d5be29bcd3da753cb",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 1.035,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 1.637334942817688,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 1317.443202167623,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.5999096103160115,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 46.41974999999999,
+      "boundary_quality_rank": 0.5999096103160115,
+      "review_rank": 0.13582337008731948,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.8407764511327233,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.16154516447782705,
+        "area_utility": 0.28266547626299415,
+        "boundary_quality_factor": 0.5715065264196756,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.13582337008731948,
+        "evidence_missing": [],
+        "reference_distance": 1.637334942817688,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 1317.443202167623,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000732.jpg",
+      "source_field_reference": "fields/tile_000732-b331db83/field.json"
+    },
+    {
+      "id": "chip001/tile_000374/46",
+      "field": "chip001/tile_000374",
+      "instance_label": 46,
+      "disposition": "uncertain",
+      "area_um2": 1189.0597499999997,
+      "rank": 0.0,
+      "contrast_rgb": [
+        -0.4620458182413051,
+        -0.8771281840268195,
+        -0.7364734367837313
+      ],
+      "bbox_px": [
+        1098.5,
+        976.5,
+        283.0,
+        329.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000374.jpg",
+      "filter_reasons": [
+        "below_useful_size",
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "stage_xy_um": [
+        43186.207662108616,
+        25293.925750887767
+      ],
+      "source_tiff_sha256": "585fd364fa44d9aefbb57719c27b063209cad0c443136996579f52df660c4297",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 0.0,
+      "class_name": "unknown",
+      "proposal_stage": "unknown_optical_feature",
+      "optical_evidence": {
+        "reference_distance": 4.521202087402344,
+        "support_fraction": 0.0,
+        "log_likelihood_ratio": 1020.0583798100123,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size",
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "display_filter_reasons": [
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 2.4356294214916008,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 0.0,
+      "boundary_quality_rank": 2.4356294214916008,
+      "review_rank": 0.13418151177051219,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.40916956379511177,
+        "material_support": 0.5,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.65587239933468,
+        "area_utility": 1.0,
+        "boundary_quality_factor": 0.65587239933468,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.13418151177051219,
+        "evidence_missing": [],
+        "reference_distance": 4.521202087402344,
+        "support_fraction": 0.0,
+        "log_likelihood_ratio": 1020.0583798100123,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000374.jpg",
+      "source_field_reference": "fields/tile_000374-b3312ebf/field.json"
+    },
+    {
+      "id": "chip001/tile_000930/384",
+      "field": "chip001/tile_000930",
+      "instance_label": 384,
+      "disposition": "uncertain",
+      "area_um2": 453.12817499999994,
+      "rank": 0.0,
+      "contrast_rgb": [
+        -0.4340964958771033,
+        -0.8856596200220508,
+        -0.758133219147141
+      ],
+      "bbox_px": [
+        1848.5,
+        1912.5,
+        169.0,
+        143.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000930.jpg",
+      "filter_reasons": [
+        "below_useful_size",
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "stage_xy_um": [
+        46317.270587754676,
+        31401.160035337885
+      ],
+      "source_tiff_sha256": "2641e9351d52dc64508dee838157704c2999b478dbc378199d99b5b587517869",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 0.0,
+      "class_name": "unknown",
+      "proposal_stage": "unknown_optical_feature",
+      "optical_evidence": {
+        "reference_distance": 2.5883548259735107,
+        "support_fraction": 0.0,
+        "log_likelihood_ratio": 666.4987335840248,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size",
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "display_filter_reasons": [
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 1.4580391391323988,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [
+          "candidate_cut_by_crop_or_camera"
+        ],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 0.0,
+      "boundary_quality_rank": 1.4580391391323988,
+      "review_rank": 0.13325026630450817,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.6787670557647463,
+        "material_support": 0.5,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.3926244362416179,
+        "area_utility": 0.7946534945886644,
+        "boundary_quality_factor": 0.4940825641808215,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [
+          "candidate_cut_by_crop_or_camera"
+        ],
+        "area_already_in_geometry": true,
+        "combined_score": 0.13325026630450817,
+        "evidence_missing": [],
+        "reference_distance": 2.5883548259735107,
+        "support_fraction": 0.0,
+        "log_likelihood_ratio": 666.4987335840248,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000930.jpg",
+      "source_field_reference": "fields/tile_000930-a7bdf61c/field.json"
+    },
+    {
+      "id": "chip001/tile_000560/37",
+      "field": "chip001/tile_000560",
+      "instance_label": 37,
+      "disposition": "uncertain",
+      "area_um2": 34.398225,
+      "rank": 34.398225,
+      "contrast_rgb": [
+        0.12643852094683147,
+        0.10791979923767725,
+        0.07067080569889596
+      ],
+      "bbox_px": [
+        796.5,
+        524.5,
+        79.0,
+        41.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000560.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        48819.190694346005,
+        27173.915851549413
+      ],
+      "source_tiff_sha256": "888fbff219db05bdbd354524849e3951b5c657fc5a486d8b38722ae414d22778",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 2.07,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 0.7348023056983948,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 917.8010649908447,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.5064408971896796,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 34.398225,
+      "boundary_quality_rank": 0.5064408971896796,
+      "review_rank": 0.13136526496963677,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.9632602367492891,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.1363756749816173,
+        "area_utility": 0.233033990819261,
+        "boundary_quality_factor": 0.5852179525492013,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.13136526496963677,
+        "evidence_missing": [],
+        "reference_distance": 0.7348023056983948,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 917.8010649908447,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000560.jpg",
+      "source_field_reference": "fields/tile_000560-d0200b1f/field.json"
+    },
+    {
+      "id": "chip001/tile_000157/159",
+      "field": "chip001/tile_000157",
+      "instance_label": 159,
+      "disposition": "uncertain",
+      "area_um2": 36.42164999999999,
+      "rank": 36.42164999999999,
+      "contrast_rgb": [
+        0.12836661701749394,
+        0.10834939256207847,
+        0.058681087289639076
+      ],
+      "bbox_px": [
+        1166.5,
+        850.5,
+        63.0,
+        41.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000157.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        43538.74135820859,
+        22980.66111420633
+      ],
+      "source_tiff_sha256": "bf7e1079bc1fd99c9a2060c1bc6fc122beaf084378eccca8245e493cb02bab0e",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 2.07,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 0.9768444895744324,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 283.2382318557238,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.5188769128947011,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 36.42164999999999,
+      "boundary_quality_rank": 0.5188769128947011,
+      "review_rank": 0.13090088972854821,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.9368500997486601,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.13972447648099365,
+        "area_utility": 0.24205442572573715,
+        "boundary_quality_factor": 0.5772440477469735,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.13090088972854821,
+        "evidence_missing": [],
+        "reference_distance": 0.9768444895744324,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 283.2382318557238,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000157.jpg",
+      "source_field_reference": "fields/tile_000157-f05563e7/field.json"
+    },
+    {
+      "id": "chip001/tile_000068/114",
+      "field": "chip001/tile_000068",
+      "instance_label": 114,
+      "disposition": "uncertain",
+      "area_um2": 76.77112499999998,
+      "rank": 76.77112499999998,
+      "contrast_rgb": [
+        0.24211152941407088,
+        0.19246326825309668,
+        0.1196183319700463
+      ],
+      "bbox_px": [
+        1718.5,
+        518.5,
+        47.0,
+        115.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000068.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        46972.96624550034,
+        22084.46961348497
+      ],
+      "source_tiff_sha256": "b1967f248bad58d5898a7225facda8d46162dc1cc9f43f8521402a396902d9e2",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 2.415,
+      "class_name": "conditional_0.68nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 2.162867784500122,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 971.1375852871114,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.6458358255368519,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 76.77112499999998,
+      "boundary_quality_rank": 0.6458358255368519,
+      "review_rank": 0.13071645333554327,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.7516228592026781,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.17391229089839996,
+        "area_utility": 0.3780324090650091,
+        "boundary_quality_factor": 0.46004598211179504,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.13071645333554327,
+        "evidence_missing": [],
+        "reference_distance": 2.162867784500122,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 971.1375852871114,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000068.jpg",
+      "source_field_reference": "fields/tile_000068-0fbc8a04/field.json"
+    },
+    {
+      "id": "chip001/tile_000511/107",
+      "field": "chip001/tile_000511",
+      "instance_label": 107,
+      "disposition": "uncertain",
+      "area_um2": 84.26969999999999,
+      "rank": 84.26969999999999,
+      "contrast_rgb": [
+        0.09730539027637289,
+        0.10677032801250677,
+        0.10832747236845439
+      ],
+      "bbox_px": [
+        1534.5,
+        1232.5,
+        23.0,
+        253.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000511.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        50611.651656879636,
+        26745.812717431254
+      ],
+      "source_tiff_sha256": "406b3cc29174c1ecc3d54fc8ef94bf3fb87d32d2171effedee290cf3825d4014",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 1.7249999999999999,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 2.7247707843780518,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 1267.3335421672696,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.0,
+        "likely_artifact": false,
+        "refinement_status": "unresolved",
+        "artifact_flags": [
+          "foreground_not_separated_from_local_noise",
+          "diffuse_or_weak_boundary"
+        ],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 84.26969999999999,
+      "boundary_quality_rank": 0.0,
+      "review_rank": 0.13026798410437607,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.6559703584817489,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.1985882173180551,
+        "area_utility": 0.3971764346361102,
+        "boundary_quality_factor": 0.5,
+        "boundary_evidence_status": "unresolved",
+        "boundary_evidence_flags": [
+          "foreground_not_separated_from_local_noise",
+          "diffuse_or_weak_boundary"
+        ],
+        "area_already_in_geometry": true,
+        "combined_score": 0.13026798410437607,
+        "evidence_missing": [
+          "boundary_geometry"
+        ],
+        "reference_distance": 2.7247707843780518,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 1267.3335421672696,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000511.jpg",
+      "source_field_reference": "fields/tile_000511-4861fc2d/field.json"
+    },
+    {
+      "id": "chip001/tile_000475/227",
+      "field": "chip001/tile_000475",
+      "instance_label": 227,
+      "disposition": "uncertain",
+      "area_um2": 45.82462499999999,
+      "rank": 45.82462499999999,
+      "contrast_rgb": [
+        0.1377615914679425,
+        0.11918042783890172,
+        0.08564348794653519
+      ],
+      "bbox_px": [
+        818.5,
+        796.5,
+        147.0,
+        85.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000475.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        45489.44669242342,
+        26375.270499684648
+      ],
+      "source_tiff_sha256": "e2ce99d621aa2886e494d6a1a98707d6974289e15c62b7cafc8ee735e4ec0b14",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 1.035,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 1.0424833297729492,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 247.79072778891617,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": false
+      },
+      "refinement": null,
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 45.82462499999999,
+      "boundary_quality_rank": null,
+      "review_rank": 0.13020992287191013,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.9287036815447263,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.14020610175177736,
+        "area_utility": 0.2804122035035547,
+        "boundary_quality_factor": 0.5,
+        "boundary_evidence_status": "pending",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.13020992287191013,
+        "evidence_missing": [
+          "boundary_geometry"
+        ],
+        "reference_distance": 1.0424833297729492,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 247.79072778891617,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000475.jpg",
+      "source_field_reference": "fields/tile_000475-259a7f3a/field.json"
+    },
+    {
+      "id": "chip001/tile_000546/101",
+      "field": "chip001/tile_000546",
+      "instance_label": 101,
+      "disposition": "uncertain",
+      "area_um2": 103.55174999999998,
+      "rank": 103.55174999999998,
+      "contrast_rgb": [
+        0.34929498946513754,
+        0.26767374178439984,
+        0.17593740096942923
+      ],
+      "bbox_px": [
+        2356.5,
+        1042.5,
+        101.0,
+        79.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000546.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        44414.597954486584,
+        27278.5645710751
+      ],
+      "source_tiff_sha256": "326a2a0466300a0c1d7325cbdc69868a083471d6ce7c63a58b4dc3e03665bab5",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 2.76,
+      "class_name": "conditional_1.02nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 3.6482648849487305,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 30167.240955837067,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.9362335703021445,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": {
+        "id": "graphene-group-e5b4054b33d4e4060b8b",
+        "representative_id": "chip001/tile_000547/176",
+        "observation_ids": [
+          "chip001/tile_000546/101",
+          "chip001/tile_000547/176"
+        ],
+        "observation_count": 2,
+        "status": "possible_same_object"
+      },
+      "detail_loaded": false,
+      "optical_rank": 103.55174999999998,
+      "boundary_quality_rank": 0.9362335703021445,
+      "review_rank": 0.1299402888323152,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.5154083791200177,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.2521113239450408,
+        "area_utility": 0.4409381836998361,
+        "boundary_quality_factor": 0.5717611521633673,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.1299402888323152,
+        "evidence_missing": [],
+        "reference_distance": 3.6482648849487305,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 30167.240955837067,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000546.jpg",
+      "source_field_reference": "fields/tile_000546-480a5dd6/field.json"
+    },
+    {
+      "id": "chip001/tile_000384/28",
+      "field": "chip001/tile_000384",
+      "instance_label": 28,
+      "disposition": "uncertain",
+      "area_um2": 38.326049999999995,
+      "rank": 38.326049999999995,
+      "contrast_rgb": [
+        0.15281287944419447,
+        0.13655597772656244,
+        0.0804441727101019
+      ],
+      "bbox_px": [
+        632.5,
+        134.5,
+        117.0,
+        27.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000384.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        44125.79270690784,
+        25404.642732132208
+      ],
+      "source_tiff_sha256": "b3fc555b7fe60fc52e97d0b6c25e01ba410d0646791049c49cddec74df5f40c8",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 1.035,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 2.220346212387085,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 856.6830050461496,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.6416867671081269,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 38.326049999999995,
+      "boundary_quality_rank": 0.6416867671081269,
+      "review_rank": 0.1281622989193459,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.7417013372683324,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.17279502203860717,
+        "area_utility": 0.2502768050051615,
+        "boundary_quality_factor": 0.6904156461284681,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.1281622989193459,
+        "evidence_missing": [],
+        "reference_distance": 2.220346212387085,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 856.6830050461496,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000384.jpg",
+      "source_field_reference": "fields/tile_000384-5c5eb4b1/field.json"
+    },
+    {
+      "id": "chip001/tile_000744/426",
+      "field": "chip001/tile_000744",
+      "instance_label": 426,
+      "disposition": "uncertain",
+      "area_um2": 27.851849999999995,
+      "rank": 27.851849999999995,
+      "contrast_rgb": [
+        0.12388648552061092,
+        0.11938677592918938,
+        0.0789168324674155
+      ],
+      "bbox_px": [
+        376.5,
+        2012.5,
+        91.0,
+        37.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000744.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        45735.08507843744,
+        29411.711969970125
+      ],
+      "source_tiff_sha256": "1b986df8566474449b9f8b869a30b3107703b1292375b932eb1a7408b3a93369",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 1.035,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 0.1408046931028366,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 127.92961207559041,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.471659080260922,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 27.851849999999995,
+      "boundary_quality_rank": 0.471659080260922,
+      "review_rank": 0.12683191082840822,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.9986014495015156,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.12700954008400497,
+        "area_utility": 0.20158943414019703,
+        "boundary_quality_factor": 0.6300406597484427,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.12683191082840822,
+        "evidence_missing": [],
+        "reference_distance": 0.1408046931028366,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 127.92961207559041,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000744.jpg",
+      "source_field_reference": "fields/tile_000744-ddad3e84/field.json"
+    },
+    {
+      "id": "chip001/tile_000047/120",
+      "field": "chip001/tile_000047",
+      "instance_label": 120,
+      "disposition": "uncertain",
+      "area_um2": 26.780624999999993,
+      "rank": 26.780624999999993,
+      "contrast_rgb": [
+        0.13008654725218985,
+        0.1108797690520917,
+        0.05832180947188507
+      ],
+      "bbox_px": [
+        1820.5,
+        888.5,
+        55.0,
+        49.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000047.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        44320.339935090284,
+        21859.99417085911
+      ],
+      "source_tiff_sha256": "c76eafebde821664b992c9c0eb11e81bf529cfe9a2519459a24f172722c0c231",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 1.38,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 0.8783143758773804,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 318.50013654740974,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.4954403955591423,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 26.780624999999993,
+      "boundary_quality_rank": 0.4954403955591423,
+      "review_rank": 0.12651886570624477,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.9483217957380671,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.13341343231257982,
+        "area_utility": 0.19607542457792168,
+        "boundary_quality_factor": 0.6804189387822054,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.12651886570624477,
+        "evidence_missing": [],
+        "reference_distance": 0.8783143758773804,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 318.50013654740974,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000047.jpg",
+      "source_field_reference": "fields/tile_000047-dea71a0e/field.json"
+    },
+    {
+      "id": "chip001/tile_000157/7",
+      "field": "chip001/tile_000157",
+      "instance_label": 7,
+      "disposition": "uncertain",
+      "area_um2": 32.25577499999999,
+      "rank": 32.25577499999999,
+      "contrast_rgb": [
+        0.13712293943842754,
+        0.13188438575505468,
+        0.08500202933567227
+      ],
+      "bbox_px": [
+        2270.5,
+        4.5,
+        89.0,
+        39.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000157.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        43734.29381176059,
+        22844.54640556101
+      ],
+      "source_tiff_sha256": "bf7e1079bc1fd99c9a2060c1bc6fc122beaf084378eccca8245e493cb02bab0e",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 1.38,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 1.21193528175354,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 434.688475973987,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.5149183809466243,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 32.25577499999999,
+      "boundary_quality_rank": 0.5149183809466243,
+      "review_rank": 0.12562431642639316,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.9059978622674861,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.13865851306976254,
+        "area_utility": 0.22314167355761708,
+        "boundary_quality_factor": 0.6213922789906823,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.12562431642639316,
+        "evidence_missing": [],
+        "reference_distance": 1.21193528175354,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 434.688475973987,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000157.jpg",
+      "source_field_reference": "fields/tile_000157-f05563e7/field.json"
+    },
+    {
+      "id": "chip001/tile_000172/498",
+      "field": "chip001/tile_000172",
+      "instance_label": 498,
+      "disposition": "uncertain",
+      "area_um2": 308.39377499999995,
+      "rank": 0.0,
+      "contrast_rgb": [
+        -0.5401450342727853,
+        -0.9056131968070377,
+        -0.7449125357311283
+      ],
+      "bbox_px": [
+        1364.5,
+        748.5,
+        115.0,
+        127.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000172.jpg",
+      "filter_reasons": [
+        "below_useful_size",
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "stage_xy_um": [
+        45584.877447612955,
+        23256.972648387757
+      ],
+      "source_tiff_sha256": "22607b51f56df7a9165eeb1b5d83851fb180ffef44e3b5be40fb9b2757572db5",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 0.0,
+      "class_name": "unknown",
+      "proposal_stage": "unknown_optical_feature",
+      "optical_evidence": {
+        "reference_distance": 4.1931376457214355,
+        "support_fraction": 0.0,
+        "log_likelihood_ratio": 379.23016237321553,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size",
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "display_filter_reasons": [
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 2.073766153752126,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 0.0,
+      "boundary_quality_rank": 2.073766153752126,
+      "review_rank": 0.12453679954145805,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.4460255841451944,
+        "material_support": 0.5,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.558428951021418,
+        "area_utility": 0.6975624620925659,
+        "boundary_quality_factor": 0.8005432937807869,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.12453679954145805,
+        "evidence_missing": [],
+        "reference_distance": 4.1931376457214355,
+        "support_fraction": 0.0,
+        "log_likelihood_ratio": 379.23016237321553,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000172.jpg",
+      "source_field_reference": "fields/tile_000172-94dec0a2/field.json"
+    },
+    {
+      "id": "chip001/tile_000687/230",
+      "field": "chip001/tile_000687",
+      "instance_label": 230,
+      "disposition": "uncertain",
+      "area_um2": 50.10952499999999,
+      "rank": 50.10952499999999,
+      "contrast_rgb": [
+        0.1468602231705776,
+        0.11819637864218863,
+        0.07609976729715878
+      ],
+      "bbox_px": [
+        1966.5,
+        1462.5,
+        35.0,
+        109.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000687.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        47009.87557667272,
+        28766.7485219125
+      ],
+      "source_tiff_sha256": "a27e966af309d7d4f4077ac72adb6b1ca2adfecf009d0d6f21c35a401c0c3787",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 2.76,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 1.884779930114746,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 845.1742061965297,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.5716595502288291,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 50.10952499999999,
+      "boundary_quality_rank": 0.5716595502288291,
+      "review_rank": 0.1230576181107942,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.7993977062545112,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.1539379174445808,
+        "area_utility": 0.29623002785238994,
+        "boundary_quality_factor": 0.5196566957124528,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.1230576181107942,
+        "evidence_missing": [],
+        "reference_distance": 1.884779930114746,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 845.1742061965297,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000687.jpg",
+      "source_field_reference": "fields/tile_000687-65d0d253/field.json"
+    },
+    {
+      "id": "chip001/tile_000224/163",
+      "field": "chip001/tile_000224",
+      "instance_label": 163,
+      "disposition": "uncertain",
+      "area_um2": 26.661599999999996,
+      "rank": 26.661599999999996,
+      "contrast_rgb": [
+        0.14111757194353922,
+        0.12666679587910754,
+        0.07987235846859378
+      ],
+      "bbox_px": [
+        1152.5,
+        686.5,
+        41.0,
+        43.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000224.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        44870.98322097558,
+        23804.17421950893
+      ],
+      "source_tiff_sha256": "59fdf53bd4d94f6064605ab280317daf6f558e1c99f1b0e1499b27d9bf5e1e51",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 2.07,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 1.5291833877563477,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 464.2447348369519,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.5311036271026962,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 26.661599999999996,
+      "boundary_quality_rank": 0.5311036271026962,
+      "review_rank": 0.1227418013345792,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.8582327470434045,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.1430169167483091,
+        "area_utility": 0.1954557286139676,
+        "boundary_quality_factor": 0.73171002846774,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.1227418013345792,
+        "evidence_missing": [],
+        "reference_distance": 1.5291833877563477,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 464.2447348369519,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000224.jpg",
+      "source_field_reference": "fields/tile_000224-179abeb6/field.json"
+    },
+    {
+      "id": "chip001/tile_000649/1",
+      "field": "chip001/tile_000649",
+      "instance_label": 1,
+      "disposition": "uncertain",
+      "area_um2": 822.1056749999998,
+      "rank": 0.0,
+      "contrast_rgb": [
+        -0.5546605693874803,
+        -0.9536149243799553,
+        -0.7847443239771114
+      ],
+      "bbox_px": [
+        752.5,
+        0.5,
+        329.0,
+        201.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000649.jpg",
+      "filter_reasons": [
+        "below_useful_size",
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "stage_xy_um": [
+        42478.56855310453,
+        28222.14015391639
+      ],
+      "source_tiff_sha256": "47415601c8a066e6a3b3fb88dab3b27c265435aaab84c56fac0a902a4cffdd6c",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 0.0,
+      "class_name": "unknown",
+      "proposal_stage": "unknown_optical_feature",
+      "optical_evidence": {
+        "reference_distance": 3.962109327316284,
+        "support_fraction": 0.0,
+        "log_likelihood_ratio": 805.7545827589596,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size",
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "display_filter_reasons": [
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 1.8701716529821626,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [
+          "candidate_cut_by_crop_or_camera"
+        ],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 0.0,
+      "boundary_quality_rank": 1.8701716529821626,
+      "review_rank": 0.11939804129956953,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.47417383348983716,
+        "material_support": 0.5,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.5036045132259647,
+        "area_utility": 0.9486687110398533,
+        "boundary_quality_factor": 0.5308539296863227,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [
+          "candidate_cut_by_crop_or_camera"
+        ],
+        "area_already_in_geometry": true,
+        "combined_score": 0.11939804129956953,
+        "evidence_missing": [],
+        "reference_distance": 3.962109327316284,
+        "support_fraction": 0.0,
+        "log_likelihood_ratio": 805.7545827589596,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000649.jpg",
+      "source_field_reference": "fields/tile_000649-bcbf4855/field.json"
+    },
+    {
+      "id": "chip001/tile_000590/27",
+      "field": "chip001/tile_000590",
+      "instance_label": 27,
+      "disposition": "uncertain",
+      "area_um2": 720.5773499999999,
+      "rank": 0.0,
+      "contrast_rgb": [
+        -0.42004915963199085,
+        -0.8120950926680762,
+        -0.6880985202314415
+      ],
+      "bbox_px": [
+        1392.5,
+        742.5,
+        307.0,
+        137.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000590.jpg",
+      "filter_reasons": [
+        "below_useful_size",
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "stage_xy_um": [
+        43251.90946474446,
+        27507.092718908905
+      ],
+      "source_tiff_sha256": "65bacf77184ef7a2063366481683791fb1815315a926599f11534e57dcac42e5",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 0.0,
+      "class_name": "unknown",
+      "proposal_stage": "unknown_optical_feature",
+      "optical_evidence": {
+        "reference_distance": 5.015081882476807,
+        "support_fraction": 0.0,
+        "log_likelihood_ratio": 596.3057811627527,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size",
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "display_filter_reasons": [
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 2.4460961996677977,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 0.0,
+      "boundary_quality_rank": 2.4460961996677977,
+      "review_rank": 0.11861149538709274,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.36014310158313045,
+        "material_support": 0.5,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.6586909196133199,
+        "area_utility": 0.9142903379376419,
+        "boundary_quality_factor": 0.7204395499783189,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.11861149538709274,
+        "evidence_missing": [],
+        "reference_distance": 5.015081882476807,
+        "support_fraction": 0.0,
+        "log_likelihood_ratio": 596.3057811627527,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000590.jpg",
+      "source_field_reference": "fields/tile_000590-46701b59/field.json"
+    },
+    {
+      "id": "chip001/tile_000502/221",
+      "field": "chip001/tile_000502",
+      "instance_label": 221,
+      "disposition": "uncertain",
+      "area_um2": 35.231399999999994,
+      "rank": 35.231399999999994,
+      "contrast_rgb": [
+        0.14063164398321368,
+        0.10844687118982027,
+        0.06700849200813384
+      ],
+      "bbox_px": [
+        1596.5,
+        852.5,
+        61.0,
+        51.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000502.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        47620.126421945955,
+        26670.267797179935
+      ],
+      "source_tiff_sha256": "f864800c782755286cc343afacae790391e467c3bf121562800e8fbe89ab07c4",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 1.38,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 1.5573391914367676,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 174.27905042516232,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.5141488127941924,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 35.231399999999994,
+      "boundary_quality_rank": 0.5141488127941924,
+      "review_rank": 0.11820067338613413,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.8537347710031417,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.13845128182754918,
+        "area_utility": 0.23678495269599176,
+        "boundary_quality_factor": 0.5847131764546998,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.11820067338613413,
+        "evidence_missing": [],
+        "reference_distance": 1.5573391914367676,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 174.27905042516232,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000502.jpg",
+      "source_field_reference": "fields/tile_000502-41f096b4/field.json"
+    },
+    {
+      "id": "chip001/tile_000384/38",
+      "field": "chip001/tile_000384",
+      "instance_label": 38,
+      "disposition": "uncertain",
+      "area_um2": 27.732824999999995,
+      "rank": 27.732824999999995,
+      "contrast_rgb": [
+        0.14986529083383787,
+        0.13651192727183645,
+        0.08855496356946295
+      ],
+      "bbox_px": [
+        656.5,
+        206.5,
+        77.0,
+        35.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000384.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        44119.715530743924,
+        25416.794984300315
+      ],
+      "source_tiff_sha256": "b3fc555b7fe60fc52e97d0b6c25e01ba410d0646791049c49cddec74df5f40c8",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 0.345,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 1.9763036966323853,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 1012.4995617577515,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.5560538354382025,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 27.732824999999995,
+      "boundary_quality_rank": 0.5560538354382025,
+      "review_rank": 0.117356393385619,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.7837576086181518,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.14973557142562333,
+        "area_utility": 0.20098231262186597,
+        "boundary_quality_factor": 0.7450186510060726,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.117356393385619,
+        "evidence_missing": [],
+        "reference_distance": 1.9763036966323853,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 1012.4995617577515,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000384.jpg",
+      "source_field_reference": "fields/tile_000384-5c5eb4b1/field.json"
+    },
+    {
+      "id": "chip001/tile_000112/171",
+      "field": "chip001/tile_000112",
+      "instance_label": 171,
+      "disposition": "uncertain",
+      "area_um2": 31.779674999999994,
+      "rank": 31.779674999999994,
+      "contrast_rgb": [
+        0.14153979939833755,
+        0.12613118286774824,
+        0.07915305109799826
+      ],
+      "bbox_px": [
+        2352.5,
+        1652.5,
+        91.0,
+        39.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000112.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        43737.05663784587,
+        22845.70420800608
+      ],
+      "source_tiff_sha256": "7d86cca554af4ebcd03f0b4f64d30f6a41ddc557f91f901959ddfadcbb1b7470",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 1.035,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 1.3415167331695557,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 317.32858980314506,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.4874255294511592,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 31.779674999999994,
+      "boundary_quality_rank": 0.4874255294511592,
+      "review_rank": 0.11645090703149714,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.8872100646461526,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.13125516906522183,
+        "area_utility": 0.2208931421228117,
+        "boundary_quality_factor": 0.5942021006349163,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.11645090703149714,
+        "evidence_missing": [],
+        "reference_distance": 1.3415167331695557,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 317.32858980314506,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000112.jpg",
+      "source_field_reference": "fields/tile_000112-7e4b3756/field.json"
+    },
+    {
+      "id": "chip001/tile_000926/145",
+      "field": "chip001/tile_000926",
+      "instance_label": 145,
+      "disposition": "uncertain",
+      "area_um2": 239.59732499999996,
+      "rank": 0.0,
+      "contrast_rgb": [
+        -0.44668448960234114,
+        -0.851709391680152,
+        -0.7068635810092296
+      ],
+      "bbox_px": [
+        2386.5,
+        518.5,
+        77.0,
+        153.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000926.jpg",
+      "filter_reasons": [
+        "below_useful_size",
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "stage_xy_um": [
+        45082.256116423014,
+        31164.472607095715
+      ],
+      "source_tiff_sha256": "b584bc054c6256d3d6afb21eabe6050a17eb76304ddeec7447dda08295e54b8c",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 0.0,
+      "class_name": "unknown",
+      "proposal_stage": "unknown_optical_feature",
+      "optical_evidence": {
+        "reference_distance": 2.912492275238037,
+        "support_fraction": 0.0,
+        "log_likelihood_ratio": 114.3692885615818,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size",
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "display_filter_reasons": [
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 1.380725053352438,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [
+          "candidate_cut_by_crop_or_camera"
+        ],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 0.0,
+      "boundary_quality_rank": 1.380725053352438,
+      "review_rank": 0.11624627033056077,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.6253075531728433,
+        "material_support": 0.5,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.3718051053140846,
+        "area_utility": 0.6353271930053049,
+        "boundary_quality_factor": 0.5852183086250805,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [
+          "candidate_cut_by_crop_or_camera"
+        ],
+        "area_already_in_geometry": true,
+        "combined_score": 0.11624627033056077,
+        "evidence_missing": [],
+        "reference_distance": 2.912492275238037,
+        "support_fraction": 0.0,
+        "log_likelihood_ratio": 114.3692885615818,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000926.jpg",
+      "source_field_reference": "fields/tile_000926-7e176397/field.json"
+    },
+    {
+      "id": "chip001/tile_000615/261",
+      "field": "chip001/tile_000615",
+      "instance_label": 261,
+      "disposition": "uncertain",
+      "area_um2": 124.14307499999998,
+      "rank": 0.0,
+      "contrast_rgb": [
+        -0.43590738131277723,
+        -0.8508873698490658,
+        -0.7025646059964327
+      ],
+      "bbox_px": [
+        0.5,
+        644.5,
+        63.0,
+        103.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000615.jpg",
+      "filter_reasons": [
+        "below_useful_size",
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "stage_xy_um": [
+        49014.94043202369,
+        27760.736774799247
+      ],
+      "source_tiff_sha256": "24a99c52c475b5b5a1b41819dac1cbe95bb026cb01431889d02b32447f644085",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 0.0,
+      "class_name": "unknown",
+      "proposal_stage": "unknown_optical_feature",
+      "optical_evidence": {
+        "reference_distance": 1.8165467977523804,
+        "support_fraction": 0.0,
+        "log_likelihood_ratio": 95.8185412690913,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size",
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "display_filter_reasons": [
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 1.0635016214551127,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [
+          "candidate_cut_by_crop_or_camera"
+        ],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 0.0,
+      "boundary_quality_rank": 1.0635016214551127,
+      "review_rank": 0.11612280388725213,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.8109633161312164,
+        "material_support": 0.5,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.2863823839559793,
+        "area_utility": 0.4809467066115199,
+        "boundary_quality_factor": 0.5954555463611937,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [
+          "candidate_cut_by_crop_or_camera"
+        ],
+        "area_already_in_geometry": true,
+        "combined_score": 0.11612280388725213,
+        "evidence_missing": [],
+        "reference_distance": 1.8165467977523804,
+        "support_fraction": 0.0,
+        "log_likelihood_ratio": 95.8185412690913,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000615.jpg",
+      "source_field_reference": "fields/tile_000615-55382bef/field.json"
+    },
+    {
+      "id": "chip001/tile_000662/243",
+      "field": "chip001/tile_000662",
+      "instance_label": 243,
+      "disposition": "uncertain",
+      "area_um2": 51.65684999999999,
+      "rank": 51.65684999999999,
+      "contrast_rgb": [
+        0.14995755943025818,
+        0.11643129220396416,
+        0.07586700271942923
+      ],
+      "bbox_px": [
+        1442.5,
+        902.5,
+        117.0,
+        55.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000662.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        46925.36243645279,
+        28379.356394492457
+      ],
+      "source_tiff_sha256": "380a6c1da76208b942d8e812ea5343f87b71d6f94127eae99ce208d7711d693b",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 1.7249999999999999,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 1.7699000835418701,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 552.2258290401782,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.5246119698561896,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 51.65684999999999,
+      "boundary_quality_rank": 0.5246119698561896,
+      "review_rank": 0.11567241934656791,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.8188106449253818,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.14126882700347543,
+        "area_utility": 0.30172112553203734,
+        "boundary_quality_factor": 0.46820992979649756,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.11567241934656791,
+        "evidence_missing": [],
+        "reference_distance": 1.7699000835418701,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 552.2258290401782,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000662.jpg",
+      "source_field_reference": "fields/tile_000662-3633bfea/field.json"
+    },
+    {
+      "id": "chip001/tile_000662/101",
+      "field": "chip001/tile_000662",
+      "instance_label": 101,
+      "disposition": "uncertain",
+      "area_um2": 44.15827499999999,
+      "rank": 44.15827499999999,
+      "contrast_rgb": [
+        0.14289891178516806,
+        0.11437915944492545,
+        0.07628452847462042
+      ],
+      "bbox_px": [
+        1072.5,
+        630.5,
+        133.0,
+        53.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000662.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        46862.25231520879,
+        28329.883981807616
+      ],
+      "source_tiff_sha256": "380a6c1da76208b942d8e812ea5343f87b71d6f94127eae99ce208d7711d693b",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 1.035,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 1.1023762226104736,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 787.4679779406966,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.4662756353114281,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 44.15827499999999,
+      "boundary_quality_rank": 0.4662756353114281,
+      "review_rank": 0.11563340579397173,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.9209423637320662,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.1255598725259787,
+        "area_utility": 0.2740008474847643,
+        "boundary_quality_factor": 0.4582462925884213,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.11563340579397173,
+        "evidence_missing": [],
+        "reference_distance": 1.1023762226104736,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 787.4679779406966,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000662.jpg",
+      "source_field_reference": "fields/tile_000662-3633bfea/field.json"
+    },
+    {
+      "id": "chip001/tile_000291/4",
+      "field": "chip001/tile_000291",
+      "instance_label": 4,
+      "disposition": "uncertain",
+      "area_um2": 279.94679999999994,
+      "rank": 0.0,
+      "contrast_rgb": [
+        -0.4729586055697793,
+        -0.9525510792174122,
+        -0.8012882592877834
+      ],
+      "bbox_px": [
+        1482.5,
+        0.5,
+        119.0,
+        107.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000291.jpg",
+      "filter_reasons": [
+        "below_useful_size",
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "stage_xy_um": [
+        49287.33164735804,
+        24259.67282917581
+      ],
+      "source_tiff_sha256": "7fca9ca11a1462a0f459d07036e3d40d48ec98f33147a214c940a096ff29b9f2",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 0.0,
+      "class_name": "unknown",
+      "proposal_stage": "unknown_optical_feature",
+      "optical_evidence": {
+        "reference_distance": 1.2533444166183472,
+        "support_fraction": 0.0,
+        "log_likelihood_ratio": 332.79932580714586,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size",
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "display_filter_reasons": [
+        "color_unclassified_or_not_coherent_material_population"
+      ],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.9503123137372874,
+        "likely_artifact": false,
+        "refinement_status": "review_required",
+        "artifact_flags": [
+          "near_saved_domain_boundary",
+          "candidate_cut_by_crop_or_camera"
+        ],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 0.0,
+      "boundary_quality_rank": 0.9503123137372874,
+      "review_rank": 0.11517108917779459,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.9001170109657336,
+        "material_support": 0.5,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.2559024832876512,
+        "area_utility": 0.6735459728173468,
+        "boundary_quality_factor": 0.3799332096326663,
+        "boundary_evidence_status": "review_required",
+        "boundary_evidence_flags": [
+          "near_saved_domain_boundary",
+          "candidate_cut_by_crop_or_camera"
+        ],
+        "area_already_in_geometry": true,
+        "combined_score": 0.11517108917779459,
+        "evidence_missing": [],
+        "reference_distance": 1.2533444166183472,
+        "support_fraction": 0.0,
+        "log_likelihood_ratio": 332.79932580714586,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000291.jpg",
+      "source_field_reference": "fields/tile_000291-c630028c/field.json"
+    },
+    {
+      "id": "chip001/tile_000113/416",
+      "field": "chip001/tile_000113",
+      "instance_label": 416,
+      "disposition": "uncertain",
+      "area_um2": 32.612849999999995,
+      "rank": 32.612849999999995,
+      "contrast_rgb": [
+        0.13451260400117315,
+        0.12710689301724631,
+        0.07129392567816557
+      ],
+      "bbox_px": [
+        404.5,
+        1738.5,
+        93.0,
+        39.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000113.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        43736.33498181878,
+        22845.336023776992
+      ],
+      "source_tiff_sha256": "bd0165b8bf041ae32e961783c36c02771ea1021848e3fe9efd6b263216eafb0c",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 1.035,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 1.164069652557373,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 437.97394189489154,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.4666182476417267,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 32.612849999999995,
+      "boundary_quality_rank": 0.4666182476417267,
+      "review_rank": 0.11467524232376441,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.9126406410129376,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.12565213203357528,
+        "area_utility": 0.22481583586754264,
+        "boundary_quality_factor": 0.5589113931796478,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.11467524232376441,
+        "evidence_missing": [],
+        "reference_distance": 1.164069652557373,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 437.97394189489154,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000113.jpg",
+      "source_field_reference": "fields/tile_000113-20158e1a/field.json"
+    },
+    {
+      "id": "chip001/tile_000114/27",
+      "field": "chip001/tile_000114",
+      "instance_label": 27,
+      "disposition": "uncertain",
+      "area_um2": 32.25577499999999,
+      "rank": 32.25577499999999,
+      "contrast_rgb": [
+        0.11497252453433028,
+        0.09657525031752863,
+        0.05796432189249399
+      ],
+      "bbox_px": [
+        490.5,
+        32.5,
+        33.0,
+        83.0
+      ],
+      "source_shape_hw": [
+        2056,
+        2464
+      ],
+      "preview": "chip001/tiles/tile_000114.jpg",
+      "filter_reasons": [
+        "below_useful_size"
+      ],
+      "stage_xy_um": [
+        44089.84450974478,
+        22554.83781236549
+      ],
+      "source_tiff_sha256": "66d0100a0085957b9904f7bc9cab15a27d35abf65ed9caacfd30c73f6268d0d2",
+      "source_transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+      "usable_width_um": 1.38,
+      "class_name": "conditional_0.34nm",
+      "proposal_stage": "material_contrast_candidate",
+      "optical_evidence": {
+        "reference_distance": 1.5767673254013062,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 1271.0562610264737,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics"
+      },
+      "original_filter_reasons": [
+        "below_useful_size"
+      ],
+      "display_filter_reasons": [],
+      "size_assessment": {
+        "area_qualified": true,
+        "minimum_area_um2": 25.0,
+        "width_is_diagnostic_not_rejection": true,
+        "material_color_independent": true,
+        "boundary_refined": true
+      },
+      "refinement": {
+        "rank": 0.4999337549459123,
+        "likely_artifact": false,
+        "refinement_status": "accepted",
+        "artifact_flags": [],
+        "useful_size": true
+      },
+      "dedup": null,
+      "detail_loaded": false,
+      "optical_rank": 32.25577499999999,
+      "boundary_quality_rank": 0.4999337549459123,
+      "review_rank": 0.11451218566682587,
+      "review_score_components": {
+        "version": "joint_evidence_v1",
+        "optical_compatibility": 0.8506112055498024,
+        "material_support": 1.0,
+        "substrate_evidence": 1.0,
+        "geometry_quality": 0.13462341539788392,
+        "area_utility": 0.22314167355761708,
+        "boundary_quality_factor": 0.6033091589371943,
+        "boundary_evidence_status": "accepted",
+        "boundary_evidence_flags": [],
+        "area_already_in_geometry": true,
+        "combined_score": 0.11451218566682587,
+        "evidence_missing": [],
+        "reference_distance": 1.5767673254013062,
+        "support_fraction": 1.0,
+        "log_likelihood_ratio": 1271.0562610264737,
+        "match_radius_squared": 14.1562525005409,
+        "match_quantile": 0.9973,
+        "minimum_log_likelihood_ratio": 2.995732273553991,
+        "interior_measurement_available": true,
+        "threshold_provenance": "saved_field_classifier.statistics",
+        "qualification": "Heuristic review priority, not material probability. No observation is excluded by this score."
+      },
+      "preview_url": "/files/data/scan-20261013-221727-131d9ced/chip001/tiles/tile_000114.jpg",
+      "source_field_reference": "fields/tile_000114-fe85c7fd/field.json"
+    }
+  ],
+  "filtered_count": 45642,
+  "counts": {
+    "shortlist": 31,
+    "uncertain": 45642,
+    "rejected": 45642,
+    "all": 45670
+  },
+  "offset": 0,
+  "limit": 48,
+  "category": "uncertain",
+  "minimum_area_um2": 25.0,
+  "ranking": "joint_evidence_v1",
+  "chip_ids": [
+    "chip001"
+  ],
+  "fields": null,
+  "fields_version": "8e5a9a47dfadb2d39db41811107f57a33bd48edc2caf58737b0bb6367adadb72",
+  "source": null,
+  "indexed_fields": 998,
+  "source_region_count": 309825,
+  "warnings": [
+    "chip001/tile_000524: [WinError 2] The system cannot find the file specified: 'G:\\\\Shared drives\\\\Xu Lab - Microscopy and Instruments\\\\Automated Microscopy\\\\analysis\\\\graphene\\\\scan-20261013-221727-131d9ced\\\\chip001\\\\full-chip-conditional-v1\\\\fields\\\\tile_000524-ddc1d991\\\\field.json'"
+  ],
+  "review_processing": {
+    "dedup_available": true,
+    "group_duplicates": true,
+    "minimum_grouped_area_um2": 25.0,
+    "refinement_available": true,
+    "refined_observations": 53689,
+    "hidden_artifacts": 140,
+    "artifact_observations": 140,
+    "hide_artifacts": true
+  },
+  "refinement_progress": {
+    "state": "complete",
+    "pid": 24020,
+    "version": "useful-refinement-v3",
+    "selected_fields": 999,
+    "completed_fields": 999,
+    "refined_regions": 53689,
+    "no_acquisition_performed": true,
+    "fields_complete": 999,
+    "total_fields": 999,
+    "regions_complete": 53689,
+    "total_regions": null,
+    "current_field": null,
+    "elapsed_seconds": 1379.0320000000065,
+    "updated_at": 1792021022.2291286,
+    "memory": {
+      "rss_bytes": 195137536,
+      "process_peak_rss_bytes": 317562880,
+      "private_bytes": 175579136,
+      "available_host_bytes": 2120863744,
+      "measurement": "Windows GetProcessMemoryInfo; process peak is cumulative"
+    },
+    "current_region": 20,
+    "current_field_regions": 20,
+    "failed_fields": 2,
+    "mean_new_field_seconds": 1.2886238044652867,
+    "estimated_remaining_seconds": 34.79284272056274,
+    "unavailable_fields": 1,
+    "completion_scope": "All selected fields attempted; missing source shards remain explicitly unassessable, never reconstructed."
+  },
+  "qualification": "Saved assessed regions only. Filtered-out regions retain their original uncertain disposition. No material identity or layer assignment is confirmed."
+}

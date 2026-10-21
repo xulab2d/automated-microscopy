@@ -1,0 +1,8 @@
+{
+  "acquisition_authorized": false,
+  "reason": "User paused acquisition after manual takeover by another lab member; focus on offline graphene segmentation.",
+  "recorded_date_local": "2026-10-14",
+  "recorded_at": "2026-10-14T19:54:05.849344+00:00",
+  "allowed_work": "Offline analysis of saved scientific images, segmentation research, code and review UI improvements.",
+  "next_acquisition_requires": "New user start instruction and fresh verification of objective, placement and coordinate frame after manual takeover. Do not automatically resume saved motion plans."
+}

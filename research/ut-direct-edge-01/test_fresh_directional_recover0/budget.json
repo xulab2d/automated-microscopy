@@ -1,0 +1,10 @@
+{
+  "outcome": "resolved_peak",
+  "max_seconds": 180.0,
+  "max_captures": 48,
+  "captures_started": 27,
+  "elapsed_seconds": 0.25,
+  "completed_actions": 78,
+  "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline",
+  "shared_with_parent": false
+}

@@ -1,0 +1,274 @@
+{
+  "files": [
+    {
+      "id": 3941869,
+      "name": "nn5007607_si_001.pdf",
+      "size": 523805,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/3941869",
+      "supplied_md5": "18b9ecc90d7a1dcd48ff5d1e38891efb",
+      "computed_md5": "18b9ecc90d7a1dcd48ff5d1e38891efb",
+      "mimetype": "application/pdf"
+    }
+  ],
+  "folder_structure": {},
+  "authors": [
+    {
+      "id": 1579699,
+      "full_name": "Mahito Yamamoto",
+      "first_name": "Mahito",
+      "last_name": "Yamamoto",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 1818862,
+      "full_name": "Sheng Tsung Wang",
+      "first_name": "Sheng Tsung",
+      "last_name": "Wang",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 1818859,
+      "full_name": "Meiyan Ni",
+      "first_name": "Meiyan",
+      "last_name": "Ni",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 1579705,
+      "full_name": "Yen-Fu Lin",
+      "first_name": "Yen-Fu",
+      "last_name": "Lin",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 1579708,
+      "full_name": "Song-Lin Li",
+      "first_name": "Song-Lin",
+      "last_name": "Li",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 1602190,
+      "full_name": "Shinya Aikawa",
+      "first_name": "Shinya",
+      "last_name": "Aikawa",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 1683553,
+      "full_name": "Wen-Bin Jian",
+      "first_name": "Wen-Bin",
+      "last_name": "Jian",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 1525282,
+      "full_name": "Keiji Ueno",
+      "first_name": "Keiji",
+      "last_name": "Ueno",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 1640641,
+      "full_name": "Katsunori Wakabayashi",
+      "first_name": "Katsunori",
+      "last_name": "Wakabayashi",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 1411633,
+      "full_name": "Kazuhito Tsukagoshi",
+      "first_name": "Kazuhito",
+      "last_name": "Tsukagoshi",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    }
+  ],
+  "custom_fields": [],
+  "figshare_url": "https://acs.figshare.com/articles/journal_contribution/Strong_Enhancement_of_Raman_Scattering_from_a_Bulk_Inactive_Vibrational_Mode_in_Few_Layer_MoTe_sub_2_sub_/2304235",
+  "download_disabled": false,
+  "description": "Two-dimensional layered crystals could show phonon properties that are markedly distinct from those of their bulk counterparts, because of the loss of periodicities along the <i>c</i>-axis directions. Here we investigate the phonon properties of bulk and atomically thin \u03b1-MoTe<sub>2</sub> using Raman spectroscopy. The Raman spectrum of \u03b1-MoTe<sub>2</sub> shows a prominent peak of the in-plane E<sup>1</sup><sub>2g</sub> mode, with its frequency upshifting with decreasing thickness down to the atomic scale, similar to other dichalcogenides. Furthermore, we find large enhancement of the Raman scattering from the out-of-plane B<sup>1</sup><sub>2g</sub> mode in the atomically thin layers. The B<sup>1</sup><sub>2g</sub> mode is Raman inactive in the bulk, but is observed to become active in the few-layer films. The intensity ratio of the B<sup>1</sup><sub>2g</sub> to E<sup>1</sup><sub>2g</sub> peaks evolves significantly with decreasing thickness, in contrast with other dichalcogenides. Our observations point to strong effects of dimensionality on the phonon properties of MoTe<sub>2</sub>.",
+  "funding": null,
+  "funding_list": [],
+  "version": 1,
+  "status": "public",
+  "size": 523805,
+  "created_date": "2016-02-17T20:06:46Z",
+  "modified_date": "2023-06-21T07:58:10Z",
+  "is_public": true,
+  "is_confidential": false,
+  "is_metadata_record": false,
+  "confidential_reason": "",
+  "metadata_reason": "",
+  "license": {
+    "value": 10,
+    "name": "CC BY-NC 4.0",
+    "url": "https://creativecommons.org/licenses/by-nc/4.0/"
+  },
+  "tags": [
+    "Raman",
+    "B 12g mode",
+    "thickness",
+    "atomically",
+    "MoTe",
+    "dichalcogenide",
+    "E 12g peaks",
+    "bulk",
+    "phonon properties"
+  ],
+  "keywords": [
+    "Raman",
+    "B 12g mode",
+    "thickness",
+    "atomically",
+    "MoTe",
+    "dichalcogenide",
+    "E 12g peaks",
+    "bulk",
+    "phonon properties"
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "title": "Biophysics",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 146,
+      "title": "Space Science",
+      "parent_id": 43,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 915,
+      "title": "Physical Sciences not elsewhere classified",
+      "parent_id": 6,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 7,
+      "title": "Medicine",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 15,
+      "title": "Neuroscience",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 873,
+      "title": "Chemical Sciences not elsewhere classified",
+      "parent_id": 38,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 931,
+      "title": "Information Systems not elsewhere classified",
+      "parent_id": 52,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 113,
+      "title": "Plasma Physics",
+      "parent_id": 6,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 132,
+      "title": "Infectious Diseases",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 135,
+      "title": "Computational  Biology",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    }
+  ],
+  "references": [
+    "https://doi.org/10.1021/nn5007607"
+  ],
+  "has_linked_file": false,
+  "citation": "Yamamoto, Mahito; Wang, Sheng Tsung; Ni, Meiyan; Lin, Yen-Fu; Li, Song-Lin; Aikawa, Shinya; et al. (2016). Strong Enhancement of Raman Scattering from a Bulk-Inactive Vibrational Mode in Few-Layer MoTe2. ACS Publications. Journal contribution. https://doi.org/10.1021/nn5007607.s001",
+  "related_materials": [
+    {
+      "id": 101759916,
+      "identifier": "10.1021/nn5007607",
+      "title": "Strong Enhancement of Raman Scattering from a Bulk-Inactive Vibrational Mode in Few-Layer MoTe2",
+      "relation": "IsSupplementTo",
+      "identifier_type": "DOI",
+      "is_linkout": true,
+      "link": "https://doi.org/10.1021/nn5007607"
+    }
+  ],
+  "is_embargoed": false,
+  "embargo_date": null,
+  "embargo_type": null,
+  "embargo_title": "",
+  "embargo_reason": "",
+  "embargo_options": [],
+  "id": 2304235,
+  "title": "Strong Enhancement of Raman Scattering from a Bulk-Inactive Vibrational Mode in Few-Layer MoTe<sub>2</sub>",
+  "doi": "10.1021/nn5007607.s001",
+  "handle": "",
+  "url": "https://api.figshare.com/v2/articles/2304235",
+  "published_date": "2014-04-22T00:00:00Z",
+  "thumb": "https://s3-eu-west-1.amazonaws.com/ppreviews-acs-4898564/3941869/thumb.png",
+  "defined_type": 6,
+  "defined_type_name": "journal contribution",
+  "group_id": 2430,
+  "url_private_api": "https://api.figshare.com/v2/account/articles/2304235",
+  "url_public_api": "https://api.figshare.com/v2/articles/2304235",
+  "url_private_html": "https://figshare.com/account/articles/2304235",
+  "url_public_html": "https://acs.figshare.com/articles/journal_contribution/Strong_Enhancement_of_Raman_Scattering_from_a_Bulk_Inactive_Vibrational_Mode_in_Few_Layer_MoTe_sub_2_sub_/2304235",
+  "timeline": {
+    "posted": "2014-04-22T00:00:00",
+    "firstOnline": "2016-02-17"
+  },
+  "resource_title": "Strong Enhancement of Raman Scattering from a Bulk-Inactive Vibrational Mode in Few-Layer MoTe<sub>2</sub>",
+  "resource_doi": "10.1021/nn5007607"
+}

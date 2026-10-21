@@ -1,0 +1,10 @@
+{
+  "synthetic_dense_equations": "passed; identical retained mask pixels",
+  "public_control": "0023919e-4780-4255-9f00-8cc84fe1f21d",
+  "retained_queries": 6,
+  "public_control_masks": "exact match to saved dense output",
+  "max_score_difference": 2.980232238769531e-07,
+  "seconds": 15.852938099998937,
+  "memory": null,
+  "memory_measurement_note": "Initial ctypes memory query returned zeros and was invalid; corrected query is recorded by subsequent production field rows."
+}

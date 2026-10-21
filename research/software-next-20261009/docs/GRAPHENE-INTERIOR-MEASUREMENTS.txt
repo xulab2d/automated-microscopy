@@ -1,0 +1,27 @@
+GRAPHENE INTERIOR MEASUREMENTS — 2026-10-09
+
+Integrated into software-next-20261009 analysis only. No acquisition source or
+request changed. No instrument client was constructed and no motion occurred.
+
+RGB mean, spatial-patch covariance and interior texture now use the physically
+eroded interior. Full source geometry, holes and separate components remain
+unchanged. A region with no interior remains visible with diagnostic color and
+no_blur_free_interior; it cannot qualify through that blurred color.
+
+Per-component work uses its own rectangle instead of the parent rectangle.
+Full-frame classifier and gradient scratch arrays are released before region
+statistics, and raw covariance inversion is reused. Resource floors remain
+unchanged; no full-camera peak-RAM or throughput claim is made.
+
+The offline watcher now declares pointer-sized Windows HANDLE signatures for
+setting its own below-normal priority and records a startup failure if that
+cannot be set. Analysis version is graphene-committed-terraces-v2-interior.
+
+Validation: 14 patch/material tests passed in1.59s; 15 watcher/interior tests
+passed in2.72s (25 unique tests). Earlier restricted-environment tests encountered
+Windows path/priority access errors. Long fixture paths exceeded MAX_PATH; the
+successful watcher regression used workspace/data/gi07. No scientific acquisition
+data was changed. Real graphene accuracy remains unvalidated.
+
+The pending scan still requires its already-requested travel clearance. This
+software update grants no motion authorization.

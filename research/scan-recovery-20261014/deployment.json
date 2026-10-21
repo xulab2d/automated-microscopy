@@ -1,0 +1,47 @@
+{
+  "donor_run": "scan-20261013-221727-131d9ced",
+  "files": [
+    {
+      "path": "flakefinder/boundary_replay_recovery.py",
+      "before_sha256": null,
+      "after_sha256": "f65537b99deb3cfb37e1cef597f0051fb5982a8854277a34aba7f8aed1f895c6"
+    },
+    {
+      "path": "flakefinder/chip_campaign.py",
+      "before_sha256": "877748f27134616de120a0f99bff096f0a29f9b37d7961f8242f9844d7de8505",
+      "after_sha256": "f72165d7a3d952899c7d1ebf7c6bb33fcfdac40f9f03caf5d845a8b64fecbea1"
+    },
+    {
+      "path": "flakefinder/full_chip.py",
+      "before_sha256": "dfd2ea9ea03ef93c76a1d126b6d9beaf3c34d1ce7fd9b6fe984fb2262a07c8ab",
+      "after_sha256": "d2329dfa495a5cb644ecb4543fdc711d4bf05cae3730952dd37786a400d7da5a"
+    },
+    {
+      "path": "flakefinder/scan_worker.py",
+      "before_sha256": "9a20fe232250ca95acd70818a6e5685e6e2933088e0f054ae4623224227d82d1",
+      "after_sha256": "2c6f53bebd9e0ae178ba01ec5c17477fc328bbf9de10e0b976c7ac16b0d2b872"
+    },
+    {
+      "path": "flakefinder/tile_sidecar_backup.py",
+      "before_sha256": null,
+      "after_sha256": "859e75950cb56fccb1842406a78d4a8e4f5ea15492ff83ff44686cbc780b9d27"
+    },
+    {
+      "path": "tests/test_boundary_replay_recovery.py",
+      "before_sha256": null,
+      "after_sha256": "ad577763a5137ebc55409617beef8c2e4905636c9d8b54e88ca213418f0a7a3a"
+    },
+    {
+      "path": "tests/test_scan_worker.py",
+      "before_sha256": "42f764d216c891cfbc0b6211c574b155e30cc032f10c21f0de2fd87d0de2dc9c",
+      "after_sha256": "941c23cb0adb0307751b88f1f3e731067ac659c0cb74ad50ed03496ea5a63e50"
+    },
+    {
+      "path": "tests/test_tile_sidecar_backup.py",
+      "before_sha256": null,
+      "after_sha256": "2b72dab39f39830e4833db748508a68161cf4c9f7d85a8583a56c886e8a6143d"
+    }
+  ],
+  "deployed": true,
+  "backup": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\scan-recovery-20261014\\production-before"
+}

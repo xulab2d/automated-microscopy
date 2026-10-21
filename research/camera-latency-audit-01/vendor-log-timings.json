@@ -1,0 +1,1939 @@
+{
+  "source_logs": [
+    "C:\\ProgramData\\Carl Zeiss\\Logging\\ZENCore.log.xml.1",
+    "C:\\ProgramData\\Carl Zeiss\\Logging\\ZENCore.log.xml",
+    "C:\\ProgramData\\Carl Zeiss\\Logging\\axcam.log"
+  ],
+  "job_summary": {
+    "job_execution": {
+      "n": 100,
+      "median_s": 0.8580895,
+      "p90_s": 1.0659886
+    },
+    "purge_before_file_finalization": {
+      "n": 100,
+      "median_s": 0.4079935,
+      "p90_s": 0.45418790000000003
+    },
+    "file_finalization": {
+      "n": 100,
+      "median_s": 0.1365345,
+      "p90_s": 0.17519230000000005
+    },
+    "post_execution_finalization": {
+      "n": 100,
+      "median_s": 0.544136,
+      "p90_s": 0.6319913
+    }
+  },
+  "camera_200ms_setup_to_poll_complete": {
+    "n": 100,
+    "median_s": 0.481,
+    "p90_s": 0.5710000000000002
+  },
+  "jobs": [
+    {
+      "start": "2026-10-08T21:05:31.3010435-07:00",
+      "execution_done": "2026-10-08T21:05:32.3713483-07:00",
+      "purge_start": "2026-10-08T21:05:32.372567-07:00",
+      "finalize_start": "2026-10-08T21:05:32.8050216-07:00",
+      "finalize_done": "2026-10-08T21:05:33.0060191-07:00",
+      "seconds": {
+        "job_execution": 1.070305,
+        "purge_before_file_finalization": 0.432454,
+        "file_finalization": 0.200998,
+        "post_execution_finalization": 0.634671
+      }
+    },
+    {
+      "start": "2026-10-08T21:05:36.0317375-07:00",
+      "execution_done": "2026-10-08T21:05:37.0487845-07:00",
+      "purge_start": "2026-10-08T21:05:37.0491269-07:00",
+      "finalize_start": "2026-10-08T21:05:37.4902189-07:00",
+      "finalize_done": "2026-10-08T21:05:37.6804909-07:00",
+      "seconds": {
+        "job_execution": 1.017047,
+        "purge_before_file_finalization": 0.441092,
+        "file_finalization": 0.190272,
+        "post_execution_finalization": 0.631706
+      }
+    },
+    {
+      "start": "2026-10-08T21:05:40.8311501-07:00",
+      "execution_done": "2026-10-08T21:05:41.8022042-07:00",
+      "purge_start": "2026-10-08T21:05:41.8025593-07:00",
+      "finalize_start": "2026-10-08T21:05:42.2184557-07:00",
+      "finalize_done": "2026-10-08T21:05:42.3908275-07:00",
+      "seconds": {
+        "job_execution": 0.971054,
+        "purge_before_file_finalization": 0.415896,
+        "file_finalization": 0.172372,
+        "post_execution_finalization": 0.588623
+      }
+    },
+    {
+      "start": "2026-10-08T21:05:45.4451177-07:00",
+      "execution_done": "2026-10-08T21:05:46.4187714-07:00",
+      "purge_start": "2026-10-08T21:05:46.4194721-07:00",
+      "finalize_start": "2026-10-08T21:05:46.8238886-07:00",
+      "finalize_done": "2026-10-08T21:05:46.9644478-07:00",
+      "seconds": {
+        "job_execution": 0.973654,
+        "purge_before_file_finalization": 0.404416,
+        "file_finalization": 0.140559,
+        "post_execution_finalization": 0.545676
+      }
+    },
+    {
+      "start": "2026-10-08T21:05:50.0091996-07:00",
+      "execution_done": "2026-10-08T21:05:50.9521249-07:00",
+      "purge_start": "2026-10-08T21:05:50.9526937-07:00",
+      "finalize_start": "2026-10-08T21:05:51.3620628-07:00",
+      "finalize_done": "2026-10-08T21:05:51.5410463-07:00",
+      "seconds": {
+        "job_execution": 0.942925,
+        "purge_before_file_finalization": 0.409369,
+        "file_finalization": 0.178984,
+        "post_execution_finalization": 0.588922
+      }
+    },
+    {
+      "start": "2026-10-08T21:05:54.6567496-07:00",
+      "execution_done": "2026-10-08T21:05:55.8267496-07:00",
+      "purge_start": "2026-10-08T21:05:55.8271663-07:00",
+      "finalize_start": "2026-10-08T21:05:56.2210104-07:00",
+      "finalize_done": "2026-10-08T21:05:56.3502784-07:00",
+      "seconds": {
+        "job_execution": 1.17,
+        "purge_before_file_finalization": 0.393844,
+        "file_finalization": 0.129268,
+        "post_execution_finalization": 0.523529
+      }
+    },
+    {
+      "start": "2026-10-08T21:05:59.4121099-07:00",
+      "execution_done": "2026-10-08T21:06:00.4160716-07:00",
+      "purge_start": "2026-10-08T21:06:00.4163721-07:00",
+      "finalize_start": "2026-10-08T21:06:00.8252291-07:00",
+      "finalize_done": "2026-10-08T21:06:00.9682596-07:00",
+      "seconds": {
+        "job_execution": 1.003962,
+        "purge_before_file_finalization": 0.408857,
+        "file_finalization": 0.14303,
+        "post_execution_finalization": 0.552188
+      }
+    },
+    {
+      "start": "2026-10-08T21:06:04.0544557-07:00",
+      "execution_done": "2026-10-08T21:06:04.9506846-07:00",
+      "purge_start": "2026-10-08T21:06:04.9510194-07:00",
+      "finalize_start": "2026-10-08T21:06:05.3934669-07:00",
+      "finalize_done": "2026-10-08T21:06:05.518546-07:00",
+      "seconds": {
+        "job_execution": 0.896229,
+        "purge_before_file_finalization": 0.442447,
+        "file_finalization": 0.12508,
+        "post_execution_finalization": 0.567862
+      }
+    },
+    {
+      "start": "2026-10-08T21:06:08.6309294-07:00",
+      "execution_done": "2026-10-08T21:06:09.599614-07:00",
+      "purge_start": "2026-10-08T21:06:09.5999547-07:00",
+      "finalize_start": "2026-10-08T21:06:10.0193362-07:00",
+      "finalize_done": "2026-10-08T21:06:10.1507367-07:00",
+      "seconds": {
+        "job_execution": 0.968685,
+        "purge_before_file_finalization": 0.419382,
+        "file_finalization": 0.1314,
+        "post_execution_finalization": 0.551122
+      }
+    },
+    {
+      "start": "2026-10-08T21:06:14.017284-07:00",
+      "execution_done": "2026-10-08T21:06:15.0531647-07:00",
+      "purge_start": "2026-10-08T21:06:15.0540452-07:00",
+      "finalize_start": "2026-10-08T21:06:15.4929112-07:00",
+      "finalize_done": "2026-10-08T21:06:15.6523663-07:00",
+      "seconds": {
+        "job_execution": 1.03588,
+        "purge_before_file_finalization": 0.438866,
+        "file_finalization": 0.159455,
+        "post_execution_finalization": 0.599202
+      }
+    },
+    {
+      "start": "2026-10-08T21:06:18.7361772-07:00",
+      "execution_done": "2026-10-08T21:06:19.7262531-07:00",
+      "purge_start": "2026-10-08T21:06:19.7266713-07:00",
+      "finalize_start": "2026-10-08T21:06:20.1415055-07:00",
+      "finalize_done": "2026-10-08T21:06:20.2814147-07:00",
+      "seconds": {
+        "job_execution": 0.990076,
+        "purge_before_file_finalization": 0.414834,
+        "file_finalization": 0.139909,
+        "post_execution_finalization": 0.555161
+      }
+    },
+    {
+      "start": "2026-10-08T21:06:23.3909732-07:00",
+      "execution_done": "2026-10-08T21:06:24.3342672-07:00",
+      "purge_start": "2026-10-08T21:06:24.3351881-07:00",
+      "finalize_start": "2026-10-08T21:06:24.7222541-07:00",
+      "finalize_done": "2026-10-08T21:06:24.8697387-07:00",
+      "seconds": {
+        "job_execution": 0.943294,
+        "purge_before_file_finalization": 0.387066,
+        "file_finalization": 0.147484,
+        "post_execution_finalization": 0.535471
+      }
+    },
+    {
+      "start": "2026-10-08T21:06:30.0644678-07:00",
+      "execution_done": "2026-10-08T21:06:31.129976-07:00",
+      "purge_start": "2026-10-08T21:06:31.1306469-07:00",
+      "finalize_start": "2026-10-08T21:06:31.5532993-07:00",
+      "finalize_done": "2026-10-08T21:06:31.7228149-07:00",
+      "seconds": {
+        "job_execution": 1.065509,
+        "purge_before_file_finalization": 0.422653,
+        "file_finalization": 0.169515,
+        "post_execution_finalization": 0.592838
+      }
+    },
+    {
+      "start": "2026-10-08T21:06:35.7015799-07:00",
+      "execution_done": "2026-10-08T21:06:36.6970231-07:00",
+      "purge_start": "2026-10-08T21:06:36.697677-07:00",
+      "finalize_start": "2026-10-08T21:06:37.1988182-07:00",
+      "finalize_done": "2026-10-08T21:06:37.3315821-07:00",
+      "seconds": {
+        "job_execution": 0.995444,
+        "purge_before_file_finalization": 0.501141,
+        "file_finalization": 0.132764,
+        "post_execution_finalization": 0.634559
+      }
+    },
+    {
+      "start": "2026-10-08T21:06:41.3705832-07:00",
+      "execution_done": "2026-10-08T21:06:42.5978886-07:00",
+      "purge_start": "2026-10-08T21:06:42.5983052-07:00",
+      "finalize_start": "2026-10-08T21:06:43.0202791-07:00",
+      "finalize_done": "2026-10-08T21:06:43.1644976-07:00",
+      "seconds": {
+        "job_execution": 1.227305,
+        "purge_before_file_finalization": 0.421974,
+        "file_finalization": 0.144218,
+        "post_execution_finalization": 0.566609
+      }
+    },
+    {
+      "start": "2026-10-08T21:06:47.1582507-07:00",
+      "execution_done": "2026-10-08T21:06:48.1914295-07:00",
+      "purge_start": "2026-10-08T21:06:48.1922732-07:00",
+      "finalize_start": "2026-10-08T21:06:48.5963596-07:00",
+      "finalize_done": "2026-10-08T21:06:48.7494321-07:00",
+      "seconds": {
+        "job_execution": 1.033179,
+        "purge_before_file_finalization": 0.404086,
+        "file_finalization": 0.153073,
+        "post_execution_finalization": 0.558003
+      }
+    },
+    {
+      "start": "2026-10-08T21:06:52.7972481-07:00",
+      "execution_done": "2026-10-08T21:06:53.8051375-07:00",
+      "purge_start": "2026-10-08T21:06:53.8066847-07:00",
+      "finalize_start": "2026-10-08T21:06:54.220962-07:00",
+      "finalize_done": "2026-10-08T21:06:54.3626038-07:00",
+      "seconds": {
+        "job_execution": 1.007889,
+        "purge_before_file_finalization": 0.414278,
+        "file_finalization": 0.141641,
+        "post_execution_finalization": 0.557466
+      }
+    },
+    {
+      "start": "2026-10-08T21:06:58.2745697-07:00",
+      "execution_done": "2026-10-08T21:06:59.2028078-07:00",
+      "purge_start": "2026-10-08T21:06:59.2036713-07:00",
+      "finalize_start": "2026-10-08T21:06:59.6252898-07:00",
+      "finalize_done": "2026-10-08T21:06:59.7735905-07:00",
+      "seconds": {
+        "job_execution": 0.928238,
+        "purge_before_file_finalization": 0.421618,
+        "file_finalization": 0.148301,
+        "post_execution_finalization": 0.570783
+      }
+    },
+    {
+      "start": "2026-10-08T21:07:03.7776138-07:00",
+      "execution_done": "2026-10-08T21:07:04.7724034-07:00",
+      "purge_start": "2026-10-08T21:07:04.7732475-07:00",
+      "finalize_start": "2026-10-08T21:07:05.2525399-07:00",
+      "finalize_done": "2026-10-08T21:07:05.4085606-07:00",
+      "seconds": {
+        "job_execution": 0.99479,
+        "purge_before_file_finalization": 0.479292,
+        "file_finalization": 0.156021,
+        "post_execution_finalization": 0.636157
+      }
+    },
+    {
+      "start": "2026-10-08T21:07:10.4769684-07:00",
+      "execution_done": "2026-10-08T21:07:11.685496-07:00",
+      "purge_start": "2026-10-08T21:07:11.6860057-07:00",
+      "finalize_start": "2026-10-08T21:07:12.122452-07:00",
+      "finalize_done": "2026-10-08T21:07:12.324839-07:00",
+      "seconds": {
+        "job_execution": 1.208528,
+        "purge_before_file_finalization": 0.436447,
+        "file_finalization": 0.202387,
+        "post_execution_finalization": 0.639343
+      }
+    },
+    {
+      "start": "2026-10-08T21:07:16.0955-07:00",
+      "execution_done": "2026-10-08T21:07:17.1057564-07:00",
+      "purge_start": "2026-10-08T21:07:17.1066552-07:00",
+      "finalize_start": "2026-10-08T21:07:17.5837837-07:00",
+      "finalize_done": "2026-10-08T21:07:17.763004-07:00",
+      "seconds": {
+        "job_execution": 1.010256,
+        "purge_before_file_finalization": 0.477128,
+        "file_finalization": 0.179221,
+        "post_execution_finalization": 0.657248
+      }
+    },
+    {
+      "start": "2026-10-08T21:07:21.7157686-07:00",
+      "execution_done": "2026-10-08T21:07:22.7438562-07:00",
+      "purge_start": "2026-10-08T21:07:22.7441885-07:00",
+      "finalize_start": "2026-10-08T21:07:23.1521139-07:00",
+      "finalize_done": "2026-10-08T21:07:23.3430967-07:00",
+      "seconds": {
+        "job_execution": 1.028088,
+        "purge_before_file_finalization": 0.407925,
+        "file_finalization": 0.190983,
+        "post_execution_finalization": 0.59924
+      }
+    },
+    {
+      "start": "2026-10-08T21:07:27.3031997-07:00",
+      "execution_done": "2026-10-08T21:07:28.3133764-07:00",
+      "purge_start": "2026-10-08T21:07:28.3139284-07:00",
+      "finalize_start": "2026-10-08T21:07:28.7467586-07:00",
+      "finalize_done": "2026-10-08T21:07:28.9353268-07:00",
+      "seconds": {
+        "job_execution": 1.010177,
+        "purge_before_file_finalization": 0.43283,
+        "file_finalization": 0.188568,
+        "post_execution_finalization": 0.62195
+      }
+    },
+    {
+      "start": "2026-10-08T21:07:32.9268635-07:00",
+      "execution_done": "2026-10-08T21:07:34.0106854-07:00",
+      "purge_start": "2026-10-08T21:07:34.0115595-07:00",
+      "finalize_start": "2026-10-08T21:07:34.44746-07:00",
+      "finalize_done": "2026-10-08T21:07:34.6595458-07:00",
+      "seconds": {
+        "job_execution": 1.083822,
+        "purge_before_file_finalization": 0.435901,
+        "file_finalization": 0.212085,
+        "post_execution_finalization": 0.64886
+      }
+    },
+    {
+      "start": "2026-10-08T21:07:38.7854635-07:00",
+      "execution_done": "2026-10-08T21:07:39.8412995-07:00",
+      "purge_start": "2026-10-08T21:07:39.8416483-07:00",
+      "finalize_start": "2026-10-08T21:07:40.302777-07:00",
+      "finalize_done": "2026-10-08T21:07:40.4977621-07:00",
+      "seconds": {
+        "job_execution": 1.055836,
+        "purge_before_file_finalization": 0.461129,
+        "file_finalization": 0.194985,
+        "post_execution_finalization": 0.656463
+      }
+    },
+    {
+      "start": "2026-10-08T21:07:44.5025626-07:00",
+      "execution_done": "2026-10-08T21:07:45.5679001-07:00",
+      "purge_start": "2026-10-08T21:07:45.568222-07:00",
+      "finalize_start": "2026-10-08T21:07:46.0324447-07:00",
+      "finalize_done": "2026-10-08T21:07:46.1650718-07:00",
+      "seconds": {
+        "job_execution": 1.065338,
+        "purge_before_file_finalization": 0.464222,
+        "file_finalization": 0.132627,
+        "post_execution_finalization": 0.597171
+      }
+    },
+    {
+      "start": "2026-10-08T21:07:49.9460902-07:00",
+      "execution_done": "2026-10-08T21:07:51.0304059-07:00",
+      "purge_start": "2026-10-08T21:07:51.0306478-07:00",
+      "finalize_start": "2026-10-08T21:07:51.4802963-07:00",
+      "finalize_done": "2026-10-08T21:07:51.6349633-07:00",
+      "seconds": {
+        "job_execution": 1.084315,
+        "purge_before_file_finalization": 0.449649,
+        "file_finalization": 0.154667,
+        "post_execution_finalization": 0.604558
+      }
+    },
+    {
+      "start": "2026-10-08T21:07:55.6668846-07:00",
+      "execution_done": "2026-10-08T21:07:56.6318686-07:00",
+      "purge_start": "2026-10-08T21:07:56.6322574-07:00",
+      "finalize_start": "2026-10-08T21:07:57.0869754-07:00",
+      "finalize_done": "2026-10-08T21:07:57.2534541-07:00",
+      "seconds": {
+        "job_execution": 0.964984,
+        "purge_before_file_finalization": 0.454718,
+        "file_finalization": 0.166479,
+        "post_execution_finalization": 0.621586
+      }
+    },
+    {
+      "start": "2026-10-08T21:08:01.3620775-07:00",
+      "execution_done": "2026-10-08T21:08:02.7552156-07:00",
+      "purge_start": "2026-10-08T21:08:02.755517-07:00",
+      "finalize_start": "2026-10-08T21:08:03.214983-07:00",
+      "finalize_done": "2026-10-08T21:08:03.3636504-07:00",
+      "seconds": {
+        "job_execution": 1.393138,
+        "purge_before_file_finalization": 0.459466,
+        "file_finalization": 0.148667,
+        "post_execution_finalization": 0.608435
+      }
+    },
+    {
+      "start": "2026-10-08T21:08:08.1808112-07:00",
+      "execution_done": "2026-10-08T21:08:09.4739838-07:00",
+      "purge_start": "2026-10-08T21:08:09.4745014-07:00",
+      "finalize_start": "2026-10-08T21:08:09.9219019-07:00",
+      "finalize_done": "2026-10-08T21:08:10.0689177-07:00",
+      "seconds": {
+        "job_execution": 1.293172,
+        "purge_before_file_finalization": 0.4474,
+        "file_finalization": 0.147016,
+        "post_execution_finalization": 0.594934
+      }
+    },
+    {
+      "start": "2026-10-08T21:08:14.0484699-07:00",
+      "execution_done": "2026-10-08T21:08:15.0176346-07:00",
+      "purge_start": "2026-10-08T21:08:15.0182401-07:00",
+      "finalize_start": "2026-10-08T21:08:15.4551306-07:00",
+      "finalize_done": "2026-10-08T21:08:15.6201752-07:00",
+      "seconds": {
+        "job_execution": 0.969165,
+        "purge_before_file_finalization": 0.43689,
+        "file_finalization": 0.165045,
+        "post_execution_finalization": 0.602541
+      }
+    },
+    {
+      "start": "2026-10-08T21:08:19.5656384-07:00",
+      "execution_done": "2026-10-08T21:08:20.4989499-07:00",
+      "purge_start": "2026-10-08T21:08:20.4995282-07:00",
+      "finalize_start": "2026-10-08T21:08:21.0138795-07:00",
+      "finalize_done": "2026-10-08T21:08:21.1374893-07:00",
+      "seconds": {
+        "job_execution": 0.933311,
+        "purge_before_file_finalization": 0.514351,
+        "file_finalization": 0.12361,
+        "post_execution_finalization": 0.63854
+      }
+    },
+    {
+      "start": "2026-10-08T21:08:24.122621-07:00",
+      "execution_done": "2026-10-08T21:08:25.3142353-07:00",
+      "purge_start": "2026-10-08T21:08:25.3145496-07:00",
+      "finalize_start": "2026-10-08T21:08:25.8201811-07:00",
+      "finalize_done": "2026-10-08T21:08:25.9715043-07:00",
+      "seconds": {
+        "job_execution": 1.191614,
+        "purge_before_file_finalization": 0.505632,
+        "file_finalization": 0.151323,
+        "post_execution_finalization": 0.657269
+      }
+    },
+    {
+      "start": "2026-10-08T21:08:29.1542968-07:00",
+      "execution_done": "2026-10-08T21:08:30.2445895-07:00",
+      "purge_start": "2026-10-08T21:08:30.2452305-07:00",
+      "finalize_start": "2026-10-08T21:08:30.7350673-07:00",
+      "finalize_done": "2026-10-08T21:08:30.8896534-07:00",
+      "seconds": {
+        "job_execution": 1.090293,
+        "purge_before_file_finalization": 0.489837,
+        "file_finalization": 0.154586,
+        "post_execution_finalization": 0.645064
+      }
+    },
+    {
+      "start": "2026-10-08T21:08:34.0782349-07:00",
+      "execution_done": "2026-10-08T21:08:34.998678-07:00",
+      "purge_start": "2026-10-08T21:08:34.9988569-07:00",
+      "finalize_start": "2026-10-08T21:08:35.4069186-07:00",
+      "finalize_done": "2026-10-08T21:08:35.5244282-07:00",
+      "seconds": {
+        "job_execution": 0.920444,
+        "purge_before_file_finalization": 0.408062,
+        "file_finalization": 0.11751,
+        "post_execution_finalization": 0.52575
+      }
+    },
+    {
+      "start": "2026-10-08T21:08:39.01237-07:00",
+      "execution_done": "2026-10-08T21:08:39.8881943-07:00",
+      "purge_start": "2026-10-08T21:08:39.8884198-07:00",
+      "finalize_start": "2026-10-08T21:08:40.2808751-07:00",
+      "finalize_done": "2026-10-08T21:08:40.3980821-07:00",
+      "seconds": {
+        "job_execution": 0.875824,
+        "purge_before_file_finalization": 0.392456,
+        "file_finalization": 0.117207,
+        "post_execution_finalization": 0.509888
+      }
+    },
+    {
+      "start": "2026-10-08T21:08:43.7672309-07:00",
+      "execution_done": "2026-10-08T21:08:44.5119538-07:00",
+      "purge_start": "2026-10-08T21:08:44.5121197-07:00",
+      "finalize_start": "2026-10-08T21:08:44.8565462-07:00",
+      "finalize_done": "2026-10-08T21:08:44.9657204-07:00",
+      "seconds": {
+        "job_execution": 0.744723,
+        "purge_before_file_finalization": 0.344427,
+        "file_finalization": 0.109174,
+        "post_execution_finalization": 0.453767
+      }
+    },
+    {
+      "start": "2026-10-08T21:08:48.2312853-07:00",
+      "execution_done": "2026-10-08T21:08:49.1385906-07:00",
+      "purge_start": "2026-10-08T21:08:49.1389037-07:00",
+      "finalize_start": "2026-10-08T21:08:49.4845464-07:00",
+      "finalize_done": "2026-10-08T21:08:49.612206-07:00",
+      "seconds": {
+        "job_execution": 0.907305,
+        "purge_before_file_finalization": 0.345643,
+        "file_finalization": 0.12766,
+        "post_execution_finalization": 0.473616
+      }
+    },
+    {
+      "start": "2026-10-08T21:08:52.9985302-07:00",
+      "execution_done": "2026-10-08T21:08:53.7228124-07:00",
+      "purge_start": "2026-10-08T21:08:53.723236-07:00",
+      "finalize_start": "2026-10-08T21:08:54.0968677-07:00",
+      "finalize_done": "2026-10-08T21:08:54.2111688-07:00",
+      "seconds": {
+        "job_execution": 0.724282,
+        "purge_before_file_finalization": 0.373631,
+        "file_finalization": 0.114301,
+        "post_execution_finalization": 0.488356
+      }
+    },
+    {
+      "start": "2026-10-08T21:08:58.9003204-07:00",
+      "execution_done": "2026-10-08T21:08:59.7378963-07:00",
+      "purge_start": "2026-10-08T21:08:59.7380693-07:00",
+      "finalize_start": "2026-10-08T21:09:00.1459249-07:00",
+      "finalize_done": "2026-10-08T21:09:00.2781547-07:00",
+      "seconds": {
+        "job_execution": 0.837576,
+        "purge_before_file_finalization": 0.407855,
+        "file_finalization": 0.13223,
+        "post_execution_finalization": 0.540258
+      }
+    },
+    {
+      "start": "2026-10-08T21:09:03.4843372-07:00",
+      "execution_done": "2026-10-08T21:09:04.2989267-07:00",
+      "purge_start": "2026-10-08T21:09:04.2990942-07:00",
+      "finalize_start": "2026-10-08T21:09:04.664581-07:00",
+      "finalize_done": "2026-10-08T21:09:04.7921385-07:00",
+      "seconds": {
+        "job_execution": 0.814589,
+        "purge_before_file_finalization": 0.365487,
+        "file_finalization": 0.127557,
+        "post_execution_finalization": 0.493212
+      }
+    },
+    {
+      "start": "2026-10-08T21:09:08.0513589-07:00",
+      "execution_done": "2026-10-08T21:09:08.7906731-07:00",
+      "purge_start": "2026-10-08T21:09:08.7909259-07:00",
+      "finalize_start": "2026-10-08T21:09:09.1629808-07:00",
+      "finalize_done": "2026-10-08T21:09:09.2822151-07:00",
+      "seconds": {
+        "job_execution": 0.739315,
+        "purge_before_file_finalization": 0.372055,
+        "file_finalization": 0.119235,
+        "post_execution_finalization": 0.491542
+      }
+    },
+    {
+      "start": "2026-10-08T21:09:12.7077426-07:00",
+      "execution_done": "2026-10-08T21:09:13.4914008-07:00",
+      "purge_start": "2026-10-08T21:09:13.4915777-07:00",
+      "finalize_start": "2026-10-08T21:09:13.8454465-07:00",
+      "finalize_done": "2026-10-08T21:09:13.9828239-07:00",
+      "seconds": {
+        "job_execution": 0.783658,
+        "purge_before_file_finalization": 0.353869,
+        "file_finalization": 0.137377,
+        "post_execution_finalization": 0.491423
+      }
+    },
+    {
+      "start": "2026-10-08T21:09:17.3950178-07:00",
+      "execution_done": "2026-10-08T21:09:18.4136371-07:00",
+      "purge_start": "2026-10-08T21:09:18.413871-07:00",
+      "finalize_start": "2026-10-08T21:09:18.8281357-07:00",
+      "finalize_done": "2026-10-08T21:09:18.9744359-07:00",
+      "seconds": {
+        "job_execution": 1.01862,
+        "purge_before_file_finalization": 0.414264,
+        "file_finalization": 0.1463,
+        "post_execution_finalization": 0.560798
+      }
+    },
+    {
+      "start": "2026-10-08T21:09:22.341751-07:00",
+      "execution_done": "2026-10-08T21:09:23.2804839-07:00",
+      "purge_start": "2026-10-08T21:09:23.2806527-07:00",
+      "finalize_start": "2026-10-08T21:09:23.6388493-07:00",
+      "finalize_done": "2026-10-08T21:09:23.7764639-07:00",
+      "seconds": {
+        "job_execution": 0.938732,
+        "purge_before_file_finalization": 0.358197,
+        "file_finalization": 0.137614,
+        "post_execution_finalization": 0.49598
+      }
+    },
+    {
+      "start": "2026-10-08T21:09:27.2915231-07:00",
+      "execution_done": "2026-10-08T21:09:28.1785848-07:00",
+      "purge_start": "2026-10-08T21:09:28.1787678-07:00",
+      "finalize_start": "2026-10-08T21:09:28.5904599-07:00",
+      "finalize_done": "2026-10-08T21:09:28.7310567-07:00",
+      "seconds": {
+        "job_execution": 0.887061,
+        "purge_before_file_finalization": 0.411692,
+        "file_finalization": 0.140597,
+        "post_execution_finalization": 0.552472
+      }
+    },
+    {
+      "start": "2026-10-08T21:09:32.1322858-07:00",
+      "execution_done": "2026-10-08T21:09:33.0566076-07:00",
+      "purge_start": "2026-10-08T21:09:33.0571474-07:00",
+      "finalize_start": "2026-10-08T21:09:33.4469649-07:00",
+      "finalize_done": "2026-10-08T21:09:33.5857447-07:00",
+      "seconds": {
+        "job_execution": 0.924322,
+        "purge_before_file_finalization": 0.389817,
+        "file_finalization": 0.13878,
+        "post_execution_finalization": 0.529137
+      }
+    },
+    {
+      "start": "2026-10-08T21:09:36.9214877-07:00",
+      "execution_done": "2026-10-08T21:09:37.662527-07:00",
+      "purge_start": "2026-10-08T21:09:37.6627035-07:00",
+      "finalize_start": "2026-10-08T21:09:38.0221178-07:00",
+      "finalize_done": "2026-10-08T21:09:38.1459615-07:00",
+      "seconds": {
+        "job_execution": 0.74104,
+        "purge_before_file_finalization": 0.359414,
+        "file_finalization": 0.123844,
+        "post_execution_finalization": 0.483434
+      }
+    },
+    {
+      "start": "2026-10-08T21:09:41.4293849-07:00",
+      "execution_done": "2026-10-08T21:09:42.1761008-07:00",
+      "purge_start": "2026-10-08T21:09:42.1763235-07:00",
+      "finalize_start": "2026-10-08T21:09:42.5706354-07:00",
+      "finalize_done": "2026-10-08T21:09:42.7113154-07:00",
+      "seconds": {
+        "job_execution": 0.746716,
+        "purge_before_file_finalization": 0.394312,
+        "file_finalization": 0.14068,
+        "post_execution_finalization": 0.535215
+      }
+    },
+    {
+      "start": "2026-10-08T21:09:47.3131772-07:00",
+      "execution_done": "2026-10-08T21:09:48.2117726-07:00",
+      "purge_start": "2026-10-08T21:09:48.2124435-07:00",
+      "finalize_start": "2026-10-08T21:09:48.6215684-07:00",
+      "finalize_done": "2026-10-08T21:09:48.7441627-07:00",
+      "seconds": {
+        "job_execution": 0.898595,
+        "purge_before_file_finalization": 0.409125,
+        "file_finalization": 0.122594,
+        "post_execution_finalization": 0.53239
+      }
+    },
+    {
+      "start": "2026-10-08T21:09:52.9881294-07:00",
+      "execution_done": "2026-10-08T21:09:53.7839553-07:00",
+      "purge_start": "2026-10-08T21:09:53.7842834-07:00",
+      "finalize_start": "2026-10-08T21:09:54.1609197-07:00",
+      "finalize_done": "2026-10-08T21:09:54.3355285-07:00",
+      "seconds": {
+        "job_execution": 0.795826,
+        "purge_before_file_finalization": 0.376636,
+        "file_finalization": 0.174609,
+        "post_execution_finalization": 0.551573
+      }
+    },
+    {
+      "start": "2026-10-08T21:09:58.769356-07:00",
+      "execution_done": "2026-10-08T21:09:59.5109067-07:00",
+      "purge_start": "2026-10-08T21:09:59.5112549-07:00",
+      "finalize_start": "2026-10-08T21:09:59.910951-07:00",
+      "finalize_done": "2026-10-08T21:10:00.0357545-07:00",
+      "seconds": {
+        "job_execution": 0.74155,
+        "purge_before_file_finalization": 0.399697,
+        "file_finalization": 0.124803,
+        "post_execution_finalization": 0.524848
+      }
+    },
+    {
+      "start": "2026-10-08T21:10:04.3476002-07:00",
+      "execution_done": "2026-10-08T21:10:05.2582873-07:00",
+      "purge_start": "2026-10-08T21:10:05.2587859-07:00",
+      "finalize_start": "2026-10-08T21:10:05.6444907-07:00",
+      "finalize_done": "2026-10-08T21:10:05.7840731-07:00",
+      "seconds": {
+        "job_execution": 0.910687,
+        "purge_before_file_finalization": 0.385705,
+        "file_finalization": 0.139583,
+        "post_execution_finalization": 0.525786
+      }
+    },
+    {
+      "start": "2026-10-08T21:10:10.1894543-07:00",
+      "execution_done": "2026-10-08T21:10:10.9421781-07:00",
+      "purge_start": "2026-10-08T21:10:10.9429861-07:00",
+      "finalize_start": "2026-10-08T21:10:11.3520614-07:00",
+      "finalize_done": "2026-10-08T21:10:11.487996-07:00",
+      "seconds": {
+        "job_execution": 0.752724,
+        "purge_before_file_finalization": 0.409075,
+        "file_finalization": 0.135935,
+        "post_execution_finalization": 0.545818
+      }
+    },
+    {
+      "start": "2026-10-08T21:10:15.5983747-07:00",
+      "execution_done": "2026-10-08T21:10:16.3320553-07:00",
+      "purge_start": "2026-10-08T21:10:16.3322168-07:00",
+      "finalize_start": "2026-10-08T21:10:16.7314374-07:00",
+      "finalize_done": "2026-10-08T21:10:16.875344-07:00",
+      "seconds": {
+        "job_execution": 0.733681,
+        "purge_before_file_finalization": 0.399221,
+        "file_finalization": 0.143907,
+        "post_execution_finalization": 0.543289
+      }
+    },
+    {
+      "start": "2026-10-08T21:10:21.111197-07:00",
+      "execution_done": "2026-10-08T21:10:21.8767705-07:00",
+      "purge_start": "2026-10-08T21:10:21.8769575-07:00",
+      "finalize_start": "2026-10-08T21:10:22.2690008-07:00",
+      "finalize_done": "2026-10-08T21:10:22.410539-07:00",
+      "seconds": {
+        "job_execution": 0.765573,
+        "purge_before_file_finalization": 0.392043,
+        "file_finalization": 0.141539,
+        "post_execution_finalization": 0.533769
+      }
+    },
+    {
+      "start": "2026-10-08T21:10:26.5651408-07:00",
+      "execution_done": "2026-10-08T21:10:27.3072767-07:00",
+      "purge_start": "2026-10-08T21:10:27.3076774-07:00",
+      "finalize_start": "2026-10-08T21:10:27.6742262-07:00",
+      "finalize_done": "2026-10-08T21:10:27.7992633-07:00",
+      "seconds": {
+        "job_execution": 0.742136,
+        "purge_before_file_finalization": 0.366549,
+        "file_finalization": 0.125037,
+        "post_execution_finalization": 0.491987
+      }
+    },
+    {
+      "start": "2026-10-08T21:10:32.1222898-07:00",
+      "execution_done": "2026-10-08T21:10:32.8742141-07:00",
+      "purge_start": "2026-10-08T21:10:32.8744572-07:00",
+      "finalize_start": "2026-10-08T21:10:33.2842536-07:00",
+      "finalize_done": "2026-10-08T21:10:33.4271564-07:00",
+      "seconds": {
+        "job_execution": 0.751925,
+        "purge_before_file_finalization": 0.409796,
+        "file_finalization": 0.142903,
+        "post_execution_finalization": 0.552942
+      }
+    },
+    {
+      "start": "2026-10-08T21:10:37.71645-07:00",
+      "execution_done": "2026-10-08T21:10:38.4629371-07:00",
+      "purge_start": "2026-10-08T21:10:38.4630517-07:00",
+      "finalize_start": "2026-10-08T21:10:38.840598-07:00",
+      "finalize_done": "2026-10-08T21:10:38.9821883-07:00",
+      "seconds": {
+        "job_execution": 0.746487,
+        "purge_before_file_finalization": 0.377547,
+        "file_finalization": 0.14159,
+        "post_execution_finalization": 0.519251
+      }
+    },
+    {
+      "start": "2026-10-08T21:10:44.765593-07:00",
+      "execution_done": "2026-10-08T21:10:45.4836846-07:00",
+      "purge_start": "2026-10-08T21:10:45.4842564-07:00",
+      "finalize_start": "2026-10-08T21:10:45.8679967-07:00",
+      "finalize_done": "2026-10-08T21:10:45.9962602-07:00",
+      "seconds": {
+        "job_execution": 0.718091,
+        "purge_before_file_finalization": 0.38374,
+        "file_finalization": 0.128264,
+        "post_execution_finalization": 0.512576
+      }
+    },
+    {
+      "start": "2026-10-08T21:10:49.9799922-07:00",
+      "execution_done": "2026-10-08T21:10:50.7046258-07:00",
+      "purge_start": "2026-10-08T21:10:50.7048735-07:00",
+      "finalize_start": "2026-10-08T21:10:51.0854475-07:00",
+      "finalize_done": "2026-10-08T21:10:51.2033043-07:00",
+      "seconds": {
+        "job_execution": 0.724633,
+        "purge_before_file_finalization": 0.380574,
+        "file_finalization": 0.117857,
+        "post_execution_finalization": 0.498679
+      }
+    },
+    {
+      "start": "2026-10-08T21:10:55.4732068-07:00",
+      "execution_done": "2026-10-08T21:10:56.4239302-07:00",
+      "purge_start": "2026-10-08T21:10:56.4241055-07:00",
+      "finalize_start": "2026-10-08T21:10:56.8450883-07:00",
+      "finalize_done": "2026-10-08T21:10:56.9628157-07:00",
+      "seconds": {
+        "job_execution": 0.950724,
+        "purge_before_file_finalization": 0.420983,
+        "file_finalization": 0.117727,
+        "post_execution_finalization": 0.538885
+      }
+    },
+    {
+      "start": "2026-10-08T21:11:01.3540171-07:00",
+      "execution_done": "2026-10-08T21:11:02.0836301-07:00",
+      "purge_start": "2026-10-08T21:11:02.084129-07:00",
+      "finalize_start": "2026-10-08T21:11:02.4271686-07:00",
+      "finalize_done": "2026-10-08T21:11:02.5485622-07:00",
+      "seconds": {
+        "job_execution": 0.729613,
+        "purge_before_file_finalization": 0.343039,
+        "file_finalization": 0.121394,
+        "post_execution_finalization": 0.464932
+      }
+    },
+    {
+      "start": "2026-10-08T21:11:06.9235128-07:00",
+      "execution_done": "2026-10-08T21:11:07.6735049-07:00",
+      "purge_start": "2026-10-08T21:11:07.6736806-07:00",
+      "finalize_start": "2026-10-08T21:11:08.0606356-07:00",
+      "finalize_done": "2026-10-08T21:11:08.1844452-07:00",
+      "seconds": {
+        "job_execution": 0.749992,
+        "purge_before_file_finalization": 0.386955,
+        "file_finalization": 0.12381,
+        "post_execution_finalization": 0.510941
+      }
+    },
+    {
+      "start": "2026-10-08T21:11:12.3996093-07:00",
+      "execution_done": "2026-10-08T21:11:13.1468699-07:00",
+      "purge_start": "2026-10-08T21:11:13.1470305-07:00",
+      "finalize_start": "2026-10-08T21:11:13.5370796-07:00",
+      "finalize_done": "2026-10-08T21:11:13.6517715-07:00",
+      "seconds": {
+        "job_execution": 0.74726,
+        "purge_before_file_finalization": 0.390049,
+        "file_finalization": 0.114692,
+        "post_execution_finalization": 0.504902
+      }
+    },
+    {
+      "start": "2026-10-08T21:11:17.6401443-07:00",
+      "execution_done": "2026-10-08T21:11:18.3612788-07:00",
+      "purge_start": "2026-10-08T21:11:18.3614832-07:00",
+      "finalize_start": "2026-10-08T21:11:18.7116918-07:00",
+      "finalize_done": "2026-10-08T21:11:18.8411931-07:00",
+      "seconds": {
+        "job_execution": 0.721134,
+        "purge_before_file_finalization": 0.350208,
+        "file_finalization": 0.129502,
+        "post_execution_finalization": 0.479915
+      }
+    },
+    {
+      "start": "2026-10-08T21:11:23.0170601-07:00",
+      "execution_done": "2026-10-08T21:11:23.9232758-07:00",
+      "purge_start": "2026-10-08T21:11:23.9234364-07:00",
+      "finalize_start": "2026-10-08T21:11:24.3249919-07:00",
+      "finalize_done": "2026-10-08T21:11:24.4682581-07:00",
+      "seconds": {
+        "job_execution": 0.906215,
+        "purge_before_file_finalization": 0.401555,
+        "file_finalization": 0.143267,
+        "post_execution_finalization": 0.544983
+      }
+    },
+    {
+      "start": "2026-10-08T21:11:28.652162-07:00",
+      "execution_done": "2026-10-08T21:11:29.412449-07:00",
+      "purge_start": "2026-10-08T21:11:29.412647-07:00",
+      "finalize_start": "2026-10-08T21:11:29.7849285-07:00",
+      "finalize_done": "2026-10-08T21:11:29.9268954-07:00",
+      "seconds": {
+        "job_execution": 0.760287,
+        "purge_before_file_finalization": 0.372281,
+        "file_finalization": 0.141967,
+        "post_execution_finalization": 0.514446
+      }
+    },
+    {
+      "start": "2026-10-08T21:11:34.1547868-07:00",
+      "execution_done": "2026-10-08T21:11:34.9197802-07:00",
+      "purge_start": "2026-10-08T21:11:34.9203997-07:00",
+      "finalize_start": "2026-10-08T21:11:35.3285058-07:00",
+      "finalize_done": "2026-10-08T21:11:35.4629281-07:00",
+      "seconds": {
+        "job_execution": 0.764994,
+        "purge_before_file_finalization": 0.408106,
+        "file_finalization": 0.134423,
+        "post_execution_finalization": 0.543148
+      }
+    },
+    {
+      "start": "2026-10-08T21:11:43.061449-07:00",
+      "execution_done": "2026-10-08T21:11:43.9118823-07:00",
+      "purge_start": "2026-10-08T21:11:43.9120614-07:00",
+      "finalize_start": "2026-10-08T21:11:44.2936891-07:00",
+      "finalize_done": "2026-10-08T21:11:44.4158977-07:00",
+      "seconds": {
+        "job_execution": 0.850433,
+        "purge_before_file_finalization": 0.381628,
+        "file_finalization": 0.122208,
+        "post_execution_finalization": 0.504015
+      }
+    },
+    {
+      "start": "2026-10-08T21:11:47.6904973-07:00",
+      "execution_done": "2026-10-08T21:11:48.5275389-07:00",
+      "purge_start": "2026-10-08T21:11:48.5278533-07:00",
+      "finalize_start": "2026-10-08T21:11:48.9506244-07:00",
+      "finalize_done": "2026-10-08T21:11:49.0678179-07:00",
+      "seconds": {
+        "job_execution": 0.837041,
+        "purge_before_file_finalization": 0.422771,
+        "file_finalization": 0.117193,
+        "post_execution_finalization": 0.540279
+      }
+    },
+    {
+      "start": "2026-10-08T21:11:52.4031813-07:00",
+      "execution_done": "2026-10-08T21:11:53.1518922-07:00",
+      "purge_start": "2026-10-08T21:11:53.1526567-07:00",
+      "finalize_start": "2026-10-08T21:11:53.5834104-07:00",
+      "finalize_done": "2026-10-08T21:11:53.7134939-07:00",
+      "seconds": {
+        "job_execution": 0.748711,
+        "purge_before_file_finalization": 0.430754,
+        "file_finalization": 0.130083,
+        "post_execution_finalization": 0.561601
+      }
+    },
+    {
+      "start": "2026-10-08T21:11:57.0602939-07:00",
+      "execution_done": "2026-10-08T21:11:57.9690798-07:00",
+      "purge_start": "2026-10-08T21:11:57.9694748-07:00",
+      "finalize_start": "2026-10-08T21:11:58.3709813-07:00",
+      "finalize_done": "2026-10-08T21:11:58.5157129-07:00",
+      "seconds": {
+        "job_execution": 0.908786,
+        "purge_before_file_finalization": 0.401507,
+        "file_finalization": 0.144731,
+        "post_execution_finalization": 0.546633
+      }
+    },
+    {
+      "start": "2026-10-08T21:12:01.9798702-07:00",
+      "execution_done": "2026-10-08T21:12:02.8456168-07:00",
+      "purge_start": "2026-10-08T21:12:02.8457864-07:00",
+      "finalize_start": "2026-10-08T21:12:03.2369166-07:00",
+      "finalize_done": "2026-10-08T21:12:03.3632803-07:00",
+      "seconds": {
+        "job_execution": 0.865746,
+        "purge_before_file_finalization": 0.39113,
+        "file_finalization": 0.126364,
+        "post_execution_finalization": 0.517664
+      }
+    },
+    {
+      "start": "2026-10-08T21:12:06.8133416-07:00",
+      "execution_done": "2026-10-08T21:12:07.7249254-07:00",
+      "purge_start": "2026-10-08T21:12:07.7255019-07:00",
+      "finalize_start": "2026-10-08T21:12:08.1198227-07:00",
+      "finalize_done": "2026-10-08T21:12:08.2601724-07:00",
+      "seconds": {
+        "job_execution": 0.911584,
+        "purge_before_file_finalization": 0.394321,
+        "file_finalization": 0.14035,
+        "post_execution_finalization": 0.535247
+      }
+    },
+    {
+      "start": "2026-10-08T21:12:11.5702052-07:00",
+      "execution_done": "2026-10-08T21:12:12.3061824-07:00",
+      "purge_start": "2026-10-08T21:12:12.3064118-07:00",
+      "finalize_start": "2026-10-08T21:12:12.7000899-07:00",
+      "finalize_done": "2026-10-08T21:12:12.8186303-07:00",
+      "seconds": {
+        "job_execution": 0.735977,
+        "purge_before_file_finalization": 0.393678,
+        "file_finalization": 0.118541,
+        "post_execution_finalization": 0.512448
+      }
+    },
+    {
+      "start": "2026-10-08T21:12:16.1018687-07:00",
+      "execution_done": "2026-10-08T21:12:16.8606959-07:00",
+      "purge_start": "2026-10-08T21:12:16.860869-07:00",
+      "finalize_start": "2026-10-08T21:12:17.2557865-07:00",
+      "finalize_done": "2026-10-08T21:12:17.3829907-07:00",
+      "seconds": {
+        "job_execution": 0.758827,
+        "purge_before_file_finalization": 0.394917,
+        "file_finalization": 0.127204,
+        "post_execution_finalization": 0.522295
+      }
+    },
+    {
+      "start": "2026-10-08T21:12:20.6743938-07:00",
+      "execution_done": "2026-10-08T21:12:21.6151951-07:00",
+      "purge_start": "2026-10-08T21:12:21.6153853-07:00",
+      "finalize_start": "2026-10-08T21:12:21.9957341-07:00",
+      "finalize_done": "2026-10-08T21:12:22.1308798-07:00",
+      "seconds": {
+        "job_execution": 0.940802,
+        "purge_before_file_finalization": 0.380349,
+        "file_finalization": 0.135145,
+        "post_execution_finalization": 0.515684
+      }
+    },
+    {
+      "start": "2026-10-08T21:12:25.440216-07:00",
+      "execution_done": "2026-10-08T21:12:26.1964573-07:00",
+      "purge_start": "2026-10-08T21:12:26.1966688-07:00",
+      "finalize_start": "2026-10-08T21:12:26.5702639-07:00",
+      "finalize_done": "2026-10-08T21:12:26.7099579-07:00",
+      "seconds": {
+        "job_execution": 0.756241,
+        "purge_before_file_finalization": 0.373595,
+        "file_finalization": 0.139694,
+        "post_execution_finalization": 0.5135
+      }
+    },
+    {
+      "start": "2026-10-08T21:12:31.5863867-07:00",
+      "execution_done": "2026-10-08T21:12:32.3309738-07:00",
+      "purge_start": "2026-10-08T21:12:32.3311378-07:00",
+      "finalize_start": "2026-10-08T21:12:32.7320332-07:00",
+      "finalize_done": "2026-10-08T21:12:32.8691672-07:00",
+      "seconds": {
+        "job_execution": 0.744587,
+        "purge_before_file_finalization": 0.400896,
+        "file_finalization": 0.137134,
+        "post_execution_finalization": 0.538194
+      }
+    },
+    {
+      "start": "2026-10-08T21:12:36.1378053-07:00",
+      "execution_done": "2026-10-08T21:12:36.9320355-07:00",
+      "purge_start": "2026-10-08T21:12:36.9322086-07:00",
+      "finalize_start": "2026-10-08T21:12:37.3289132-07:00",
+      "finalize_done": "2026-10-08T21:12:37.4611054-07:00",
+      "seconds": {
+        "job_execution": 0.79423,
+        "purge_before_file_finalization": 0.396705,
+        "file_finalization": 0.132192,
+        "post_execution_finalization": 0.52907
+      }
+    },
+    {
+      "start": "2026-10-08T21:12:40.7043879-07:00",
+      "execution_done": "2026-10-08T21:12:41.482932-07:00",
+      "purge_start": "2026-10-08T21:12:41.4831399-07:00",
+      "finalize_start": "2026-10-08T21:12:41.8999304-07:00",
+      "finalize_done": "2026-10-08T21:12:42.0919744-07:00",
+      "seconds": {
+        "job_execution": 0.778545,
+        "purge_before_file_finalization": 0.416791,
+        "file_finalization": 0.192044,
+        "post_execution_finalization": 0.609042
+      }
+    },
+    {
+      "start": "2026-10-08T21:12:45.4650071-07:00",
+      "execution_done": "2026-10-08T21:12:46.2714634-07:00",
+      "purge_start": "2026-10-08T21:12:46.2716792-07:00",
+      "finalize_start": "2026-10-08T21:12:46.6736172-07:00",
+      "finalize_done": "2026-10-08T21:12:46.8073383-07:00",
+      "seconds": {
+        "job_execution": 0.806456,
+        "purge_before_file_finalization": 0.401938,
+        "file_finalization": 0.133721,
+        "post_execution_finalization": 0.535875
+      }
+    },
+    {
+      "start": "2026-10-08T21:12:50.241428-07:00",
+      "execution_done": "2026-10-08T21:12:51.0033348-07:00",
+      "purge_start": "2026-10-08T21:12:51.0037659-07:00",
+      "finalize_start": "2026-10-08T21:12:51.4416989-07:00",
+      "finalize_done": "2026-10-08T21:12:51.5754548-07:00",
+      "seconds": {
+        "job_execution": 0.761906,
+        "purge_before_file_finalization": 0.437933,
+        "file_finalization": 0.133756,
+        "post_execution_finalization": 0.57212
+      }
+    },
+    {
+      "start": "2026-10-08T21:12:54.9268128-07:00",
+      "execution_done": "2026-10-08T21:12:55.7218473-07:00",
+      "purge_start": "2026-10-08T21:12:55.7221265-07:00",
+      "finalize_start": "2026-10-08T21:12:56.1762552-07:00",
+      "finalize_done": "2026-10-08T21:12:56.3209036-07:00",
+      "seconds": {
+        "job_execution": 0.795035,
+        "purge_before_file_finalization": 0.454129,
+        "file_finalization": 0.144648,
+        "post_execution_finalization": 0.599056
+      }
+    },
+    {
+      "start": "2026-10-08T21:12:59.729204-07:00",
+      "execution_done": "2026-10-08T21:13:00.6055972-07:00",
+      "purge_start": "2026-10-08T21:13:00.6058419-07:00",
+      "finalize_start": "2026-10-08T21:13:01.0533097-07:00",
+      "finalize_done": "2026-10-08T21:13:01.2280803-07:00",
+      "seconds": {
+        "job_execution": 0.876393,
+        "purge_before_file_finalization": 0.447468,
+        "file_finalization": 0.174771,
+        "post_execution_finalization": 0.622483
+      }
+    },
+    {
+      "start": "2026-10-08T21:13:04.8012808-07:00",
+      "execution_done": "2026-10-08T21:13:05.5309045-07:00",
+      "purge_start": "2026-10-08T21:13:05.5310837-07:00",
+      "finalize_start": "2026-10-08T21:13:05.9530519-07:00",
+      "finalize_done": "2026-10-08T21:13:06.081923-07:00",
+      "seconds": {
+        "job_execution": 0.729624,
+        "purge_before_file_finalization": 0.421968,
+        "file_finalization": 0.128872,
+        "post_execution_finalization": 0.551019
+      }
+    },
+    {
+      "start": "2026-10-08T21:13:09.5490034-07:00",
+      "execution_done": "2026-10-08T21:13:10.3574133-07:00",
+      "purge_start": "2026-10-08T21:13:10.3582358-07:00",
+      "finalize_start": "2026-10-08T21:13:10.7391039-07:00",
+      "finalize_done": "2026-10-08T21:13:10.8720711-07:00",
+      "seconds": {
+        "job_execution": 0.80841,
+        "purge_before_file_finalization": 0.380868,
+        "file_finalization": 0.132968,
+        "post_execution_finalization": 0.514658
+      }
+    },
+    {
+      "start": "2026-10-08T21:13:14.2129656-07:00",
+      "execution_done": "2026-10-08T21:13:14.978818-07:00",
+      "purge_start": "2026-10-08T21:13:14.9789971-07:00",
+      "finalize_start": "2026-10-08T21:13:15.3809486-07:00",
+      "finalize_done": "2026-10-08T21:13:15.5088332-07:00",
+      "seconds": {
+        "job_execution": 0.765853,
+        "purge_before_file_finalization": 0.401951,
+        "file_finalization": 0.127885,
+        "post_execution_finalization": 0.530015
+      }
+    },
+    {
+      "start": "2026-10-08T21:13:21.3036668-07:00",
+      "execution_done": "2026-10-08T21:13:22.0800054-07:00",
+      "purge_start": "2026-10-08T21:13:22.0801706-07:00",
+      "finalize_start": "2026-10-08T21:13:22.4825853-07:00",
+      "finalize_done": "2026-10-08T21:13:22.6141959-07:00",
+      "seconds": {
+        "job_execution": 0.776339,
+        "purge_before_file_finalization": 0.402415,
+        "file_finalization": 0.13161,
+        "post_execution_finalization": 0.53419
+      }
+    },
+    {
+      "start": "2026-10-08T21:13:26.8682084-07:00",
+      "execution_done": "2026-10-08T21:13:27.5966982-07:00",
+      "purge_start": "2026-10-08T21:13:27.5968718-07:00",
+      "finalize_start": "2026-10-08T21:13:28.0408138-07:00",
+      "finalize_done": "2026-10-08T21:13:28.1723389-07:00",
+      "seconds": {
+        "job_execution": 0.72849,
+        "purge_before_file_finalization": 0.443942,
+        "file_finalization": 0.131525,
+        "post_execution_finalization": 0.57564
+      }
+    },
+    {
+      "start": "2026-10-08T21:13:32.4053837-07:00",
+      "execution_done": "2026-10-08T21:13:33.1810406-07:00",
+      "purge_start": "2026-10-08T21:13:33.1812353-07:00",
+      "finalize_start": "2026-10-08T21:13:33.6153782-07:00",
+      "finalize_done": "2026-10-08T21:13:33.7418257-07:00",
+      "seconds": {
+        "job_execution": 0.775657,
+        "purge_before_file_finalization": 0.434143,
+        "file_finalization": 0.126447,
+        "post_execution_finalization": 0.560785
+      }
+    },
+    {
+      "start": "2026-10-08T21:13:37.9505208-07:00",
+      "execution_done": "2026-10-08T21:13:38.6829774-07:00",
+      "purge_start": "2026-10-08T21:13:38.6831533-07:00",
+      "finalize_start": "2026-10-08T21:13:39.0859121-07:00",
+      "finalize_done": "2026-10-08T21:13:39.2199719-07:00",
+      "seconds": {
+        "job_execution": 0.732457,
+        "purge_before_file_finalization": 0.402759,
+        "file_finalization": 0.134059,
+        "post_execution_finalization": 0.536994
+      }
+    },
+    {
+      "start": "2026-10-08T21:13:43.4496726-07:00",
+      "execution_done": "2026-10-08T21:13:44.2078334-07:00",
+      "purge_start": "2026-10-08T21:13:44.2080141-07:00",
+      "finalize_start": "2026-10-08T21:13:44.638573-07:00",
+      "finalize_done": "2026-10-08T21:13:44.7759656-07:00",
+      "seconds": {
+        "job_execution": 0.758161,
+        "purge_before_file_finalization": 0.430559,
+        "file_finalization": 0.137392,
+        "post_execution_finalization": 0.568132
+      }
+    },
+    {
+      "start": "2026-10-08T21:13:48.7568712-07:00",
+      "execution_done": "2026-10-08T21:13:49.489805-07:00",
+      "purge_start": "2026-10-08T21:13:49.4900586-07:00",
+      "finalize_start": "2026-10-08T21:13:49.8973435-07:00",
+      "finalize_done": "2026-10-08T21:13:50.0329598-07:00",
+      "seconds": {
+        "job_execution": 0.732934,
+        "purge_before_file_finalization": 0.407285,
+        "file_finalization": 0.135616,
+        "post_execution_finalization": 0.543154
+      }
+    },
+    {
+      "start": "2026-10-08T21:13:54.2829113-07:00",
+      "execution_done": "2026-10-08T21:13:55.0141629-07:00",
+      "purge_start": "2026-10-08T21:13:55.0143239-07:00",
+      "finalize_start": "2026-10-08T21:13:55.4170192-07:00",
+      "finalize_done": "2026-10-08T21:13:55.5402258-07:00",
+      "seconds": {
+        "job_execution": 0.731251,
+        "purge_before_file_finalization": 0.402696,
+        "file_finalization": 0.123206,
+        "post_execution_finalization": 0.526063
+      }
+    },
+    {
+      "start": "2026-10-08T21:13:59.7218978-07:00",
+      "execution_done": "2026-10-08T21:14:00.4611-07:00",
+      "purge_start": "2026-10-08T21:14:00.4615346-07:00",
+      "finalize_start": "2026-10-08T21:14:00.8461703-07:00",
+      "finalize_done": "2026-10-08T21:14:00.9663534-07:00",
+      "seconds": {
+        "job_execution": 0.739203,
+        "purge_before_file_finalization": 0.384636,
+        "file_finalization": 0.120183,
+        "post_execution_finalization": 0.505253
+      }
+    },
+    {
+      "start": "2026-10-08T21:14:05.2072885-07:00",
+      "execution_done": "2026-10-08T21:14:05.971857-07:00",
+      "purge_start": "2026-10-08T21:14:05.9721172-07:00",
+      "finalize_start": "2026-10-08T21:14:06.3930833-07:00",
+      "finalize_done": "2026-10-08T21:14:06.5114731-07:00",
+      "seconds": {
+        "job_execution": 0.764569,
+        "purge_before_file_finalization": 0.420966,
+        "file_finalization": 0.11839,
+        "post_execution_finalization": 0.539616
+      }
+    },
+    {
+      "start": "2026-10-08T21:14:10.7651558-07:00",
+      "execution_done": "2026-10-08T21:14:11.5272256-07:00",
+      "purge_start": "2026-10-08T21:14:11.5278608-07:00",
+      "finalize_start": "2026-10-08T21:14:11.9773261-07:00",
+      "finalize_done": "2026-10-08T21:14:12.1125188-07:00",
+      "seconds": {
+        "job_execution": 0.76207,
+        "purge_before_file_finalization": 0.449466,
+        "file_finalization": 0.135192,
+        "post_execution_finalization": 0.585293
+      }
+    },
+    {
+      "start": "2026-10-08T21:14:17.9432168-07:00",
+      "execution_done": "2026-10-08T21:14:18.7280669-07:00",
+      "purge_start": "2026-10-08T21:14:18.7282606-07:00",
+      "finalize_start": "2026-10-08T21:14:19.1821379-07:00",
+      "finalize_done": "2026-10-08T21:14:19.2929496-07:00",
+      "seconds": {
+        "job_execution": 0.78485,
+        "purge_before_file_finalization": 0.453877,
+        "file_finalization": 0.110812,
+        "post_execution_finalization": 0.564883
+      }
+    }
+  ],
+  "camera_intervals": [
+    {
+      "start": "2026-10-08 21:05:31.494000",
+      "end": "2026-10-08 21:05:32.103000",
+      "exposure_ms": 200.0,
+      "seconds": 0.609
+    },
+    {
+      "start": "2026-10-08 21:05:36.191000",
+      "end": "2026-10-08 21:05:36.732000",
+      "exposure_ms": 200.0,
+      "seconds": 0.541
+    },
+    {
+      "start": "2026-10-08 21:05:41.018000",
+      "end": "2026-10-08 21:05:41.549000",
+      "exposure_ms": 200.0,
+      "seconds": 0.531
+    },
+    {
+      "start": "2026-10-08 21:05:45.666000",
+      "end": "2026-10-08 21:05:46.187000",
+      "exposure_ms": 200.0,
+      "seconds": 0.521
+    },
+    {
+      "start": "2026-10-08 21:05:50.182000",
+      "end": "2026-10-08 21:05:50.700000",
+      "exposure_ms": 200.0,
+      "seconds": 0.518
+    },
+    {
+      "start": "2026-10-08 21:05:54.850000",
+      "end": "2026-10-08 21:05:55.487000",
+      "exposure_ms": 200.0,
+      "seconds": 0.637
+    },
+    {
+      "start": "2026-10-08 21:05:59.582000",
+      "end": "2026-10-08 21:06:00.100000",
+      "exposure_ms": 200.0,
+      "seconds": 0.518
+    },
+    {
+      "start": "2026-10-08 21:06:04.224000",
+      "end": "2026-10-08 21:06:04.730000",
+      "exposure_ms": 200.0,
+      "seconds": 0.506
+    },
+    {
+      "start": "2026-10-08 21:06:08.807000",
+      "end": "2026-10-08 21:06:09.311000",
+      "exposure_ms": 200.0,
+      "seconds": 0.504
+    },
+    {
+      "start": "2026-10-08 21:06:14.178000",
+      "end": "2026-10-08 21:06:14.733000",
+      "exposure_ms": 200.0,
+      "seconds": 0.555
+    },
+    {
+      "start": "2026-10-08 21:06:18.931000",
+      "end": "2026-10-08 21:06:19.442000",
+      "exposure_ms": 200.0,
+      "seconds": 0.511
+    },
+    {
+      "start": "2026-10-08 21:06:23.549000",
+      "end": "2026-10-08 21:06:24.067000",
+      "exposure_ms": 200.0,
+      "seconds": 0.518
+    },
+    {
+      "start": "2026-10-08 21:06:30.278000",
+      "end": "2026-10-08 21:06:30.801000",
+      "exposure_ms": 200.0,
+      "seconds": 0.523
+    },
+    {
+      "start": "2026-10-08 21:06:35.883000",
+      "end": "2026-10-08 21:06:36.403000",
+      "exposure_ms": 200.0,
+      "seconds": 0.52
+    },
+    {
+      "start": "2026-10-08 21:06:41.537000",
+      "end": "2026-10-08 21:06:42.285000",
+      "exposure_ms": 200.0,
+      "seconds": 0.748
+    },
+    {
+      "start": "2026-10-08 21:06:47.321000",
+      "end": "2026-10-08 21:06:47.850000",
+      "exposure_ms": 200.0,
+      "seconds": 0.529
+    },
+    {
+      "start": "2026-10-08 21:06:52.957000",
+      "end": "2026-10-08 21:06:53.500000",
+      "exposure_ms": 200.0,
+      "seconds": 0.543
+    },
+    {
+      "start": "2026-10-08 21:06:58.416000",
+      "end": "2026-10-08 21:06:58.931000",
+      "exposure_ms": 200.0,
+      "seconds": 0.515
+    },
+    {
+      "start": "2026-10-08 21:07:03.939000",
+      "end": "2026-10-08 21:07:04.453000",
+      "exposure_ms": 200.0,
+      "seconds": 0.514
+    },
+    {
+      "start": "2026-10-08 21:07:10.633000",
+      "end": "2026-10-08 21:07:11.172000",
+      "exposure_ms": 200.0,
+      "seconds": 0.539
+    },
+    {
+      "start": "2026-10-08 21:07:16.237000",
+      "end": "2026-10-08 21:07:16.782000",
+      "exposure_ms": 200.0,
+      "seconds": 0.545
+    },
+    {
+      "start": "2026-10-08 21:07:21.887000",
+      "end": "2026-10-08 21:07:22.404000",
+      "exposure_ms": 200.0,
+      "seconds": 0.517
+    },
+    {
+      "start": "2026-10-08 21:07:27.473000",
+      "end": "2026-10-08 21:07:27.984000",
+      "exposure_ms": 200.0,
+      "seconds": 0.511
+    },
+    {
+      "start": "2026-10-08 21:07:33.099000",
+      "end": "2026-10-08 21:07:33.627000",
+      "exposure_ms": 200.0,
+      "seconds": 0.528
+    },
+    {
+      "start": "2026-10-08 21:07:38.915000",
+      "end": "2026-10-08 21:07:39.467000",
+      "exposure_ms": 200.0,
+      "seconds": 0.552
+    },
+    {
+      "start": "2026-10-08 21:07:44.649000",
+      "end": "2026-10-08 21:07:45.217000",
+      "exposure_ms": 200.0,
+      "seconds": 0.568
+    },
+    {
+      "start": "2026-10-08 21:07:50.130000",
+      "end": "2026-10-08 21:07:50.682000",
+      "exposure_ms": 200.0,
+      "seconds": 0.552
+    },
+    {
+      "start": "2026-10-08 21:07:55.816000",
+      "end": "2026-10-08 21:07:56.350000",
+      "exposure_ms": 200.0,
+      "seconds": 0.534
+    },
+    {
+      "start": "2026-10-08 21:08:01.516000",
+      "end": "2026-10-08 21:08:02.052000",
+      "exposure_ms": 200.0,
+      "seconds": 0.536
+    },
+    {
+      "start": "2026-10-08 21:08:08.482000",
+      "end": "2026-10-08 21:08:09.016000",
+      "exposure_ms": 200.0,
+      "seconds": 0.534
+    },
+    {
+      "start": "2026-10-08 21:08:14.214000",
+      "end": "2026-10-08 21:08:14.734000",
+      "exposure_ms": 200.0,
+      "seconds": 0.52
+    },
+    {
+      "start": "2026-10-08 21:08:19.712000",
+      "end": "2026-10-08 21:08:20.217000",
+      "exposure_ms": 200.0,
+      "seconds": 0.505
+    },
+    {
+      "start": "2026-10-08 21:08:24.447000",
+      "end": "2026-10-08 21:08:24.949000",
+      "exposure_ms": 200.0,
+      "seconds": 0.502
+    },
+    {
+      "start": "2026-10-08 21:08:29.409000",
+      "end": "2026-10-08 21:08:29.926000",
+      "exposure_ms": 200.0,
+      "seconds": 0.517
+    },
+    {
+      "start": "2026-10-08 21:08:34.337000",
+      "end": "2026-10-08 21:08:34.801000",
+      "exposure_ms": 200.0,
+      "seconds": 0.464
+    },
+    {
+      "start": "2026-10-08 21:08:39.237000",
+      "end": "2026-10-08 21:08:39.714000",
+      "exposure_ms": 200.0,
+      "seconds": 0.477
+    },
+    {
+      "start": "2026-10-08 21:08:43.874000",
+      "end": "2026-10-08 21:08:44.341000",
+      "exposure_ms": 200.0,
+      "seconds": 0.467
+    },
+    {
+      "start": "2026-10-08 21:08:48.328000",
+      "end": "2026-10-08 21:08:48.979000",
+      "exposure_ms": 200.0,
+      "seconds": 0.651
+    },
+    {
+      "start": "2026-10-08 21:08:53.090000",
+      "end": "2026-10-08 21:08:53.566000",
+      "exposure_ms": 200.0,
+      "seconds": 0.476
+    },
+    {
+      "start": "2026-10-08 21:08:59.056000",
+      "end": "2026-10-08 21:08:59.539000",
+      "exposure_ms": 200.0,
+      "seconds": 0.483
+    },
+    {
+      "start": "2026-10-08 21:09:03.656000",
+      "end": "2026-10-08 21:09:04.120000",
+      "exposure_ms": 200.0,
+      "seconds": 0.464
+    },
+    {
+      "start": "2026-10-08 21:09:08.154000",
+      "end": "2026-10-08 21:09:08.627000",
+      "exposure_ms": 200.0,
+      "seconds": 0.473
+    },
+    {
+      "start": "2026-10-08 21:09:12.803000",
+      "end": "2026-10-08 21:09:13.326000",
+      "exposure_ms": 200.0,
+      "seconds": 0.523
+    },
+    {
+      "start": "2026-10-08 21:09:17.514000",
+      "end": "2026-10-08 21:09:17.986000",
+      "exposure_ms": 200.0,
+      "seconds": 0.472
+    },
+    {
+      "start": "2026-10-08 21:09:22.445000",
+      "end": "2026-10-08 21:09:23.100000",
+      "exposure_ms": 200.0,
+      "seconds": 0.655
+    },
+    {
+      "start": "2026-10-08 21:09:27.388000",
+      "end": "2026-10-08 21:09:27.986000",
+      "exposure_ms": 200.0,
+      "seconds": 0.598
+    },
+    {
+      "start": "2026-10-08 21:09:32.247000",
+      "end": "2026-10-08 21:09:32.874000",
+      "exposure_ms": 200.0,
+      "seconds": 0.627
+    },
+    {
+      "start": "2026-10-08 21:09:37.021000",
+      "end": "2026-10-08 21:09:37.494000",
+      "exposure_ms": 200.0,
+      "seconds": 0.473
+    },
+    {
+      "start": "2026-10-08 21:09:41.529000",
+      "end": "2026-10-08 21:09:41.999000",
+      "exposure_ms": 200.0,
+      "seconds": 0.47
+    },
+    {
+      "start": "2026-10-08 21:09:47.538000",
+      "end": "2026-10-08 21:09:48.001000",
+      "exposure_ms": 200.0,
+      "seconds": 0.463
+    },
+    {
+      "start": "2026-10-08 21:09:53.080000",
+      "end": "2026-10-08 21:09:53.593000",
+      "exposure_ms": 200.0,
+      "seconds": 0.513
+    },
+    {
+      "start": "2026-10-08 21:09:58.872000",
+      "end": "2026-10-08 21:09:59.334000",
+      "exposure_ms": 200.0,
+      "seconds": 0.462
+    },
+    {
+      "start": "2026-10-08 21:10:04.591000",
+      "end": "2026-10-08 21:10:05.053000",
+      "exposure_ms": 200.0,
+      "seconds": 0.462
+    },
+    {
+      "start": "2026-10-08 21:10:10.296000",
+      "end": "2026-10-08 21:10:10.770000",
+      "exposure_ms": 200.0,
+      "seconds": 0.474
+    },
+    {
+      "start": "2026-10-08 21:10:15.697000",
+      "end": "2026-10-08 21:10:16.172000",
+      "exposure_ms": 200.0,
+      "seconds": 0.475
+    },
+    {
+      "start": "2026-10-08 21:10:21.214000",
+      "end": "2026-10-08 21:10:21.696000",
+      "exposure_ms": 200.0,
+      "seconds": 0.482
+    },
+    {
+      "start": "2026-10-08 21:10:26.669000",
+      "end": "2026-10-08 21:10:27.144000",
+      "exposure_ms": 200.0,
+      "seconds": 0.475
+    },
+    {
+      "start": "2026-10-08 21:10:32.223000",
+      "end": "2026-10-08 21:10:32.691000",
+      "exposure_ms": 200.0,
+      "seconds": 0.468
+    },
+    {
+      "start": "2026-10-08 21:10:37.808000",
+      "end": "2026-10-08 21:10:38.278000",
+      "exposure_ms": 200.0,
+      "seconds": 0.47
+    },
+    {
+      "start": "2026-10-08 21:10:44.853000",
+      "end": "2026-10-08 21:10:45.319000",
+      "exposure_ms": 200.0,
+      "seconds": 0.466
+    },
+    {
+      "start": "2026-10-08 21:10:50.078000",
+      "end": "2026-10-08 21:10:50.546000",
+      "exposure_ms": 200.0,
+      "seconds": 0.468
+    },
+    {
+      "start": "2026-10-08 21:10:55.754000",
+      "end": "2026-10-08 21:10:56.225000",
+      "exposure_ms": 200.0,
+      "seconds": 0.471
+    },
+    {
+      "start": "2026-10-08 21:11:01.454000",
+      "end": "2026-10-08 21:11:01.930000",
+      "exposure_ms": 200.0,
+      "seconds": 0.476
+    },
+    {
+      "start": "2026-10-08 21:11:07.014000",
+      "end": "2026-10-08 21:11:07.475000",
+      "exposure_ms": 200.0,
+      "seconds": 0.461
+    },
+    {
+      "start": "2026-10-08 21:11:12.505000",
+      "end": "2026-10-08 21:11:12.978000",
+      "exposure_ms": 200.0,
+      "seconds": 0.473
+    },
+    {
+      "start": "2026-10-08 21:11:17.728000",
+      "end": "2026-10-08 21:11:18.197000",
+      "exposure_ms": 200.0,
+      "seconds": 0.469
+    },
+    {
+      "start": "2026-10-08 21:11:23.119000",
+      "end": "2026-10-08 21:11:23.768000",
+      "exposure_ms": 200.0,
+      "seconds": 0.649
+    },
+    {
+      "start": "2026-10-08 21:11:28.758000",
+      "end": "2026-10-08 21:11:29.226000",
+      "exposure_ms": 200.0,
+      "seconds": 0.468
+    },
+    {
+      "start": "2026-10-08 21:11:34.255000",
+      "end": "2026-10-08 21:11:34.735000",
+      "exposure_ms": 200.0,
+      "seconds": 0.48
+    },
+    {
+      "start": "2026-10-08 21:11:43.272000",
+      "end": "2026-10-08 21:11:43.733000",
+      "exposure_ms": 200.0,
+      "seconds": 0.461
+    },
+    {
+      "start": "2026-10-08 21:11:47.797000",
+      "end": "2026-10-08 21:11:48.299000",
+      "exposure_ms": 200.0,
+      "seconds": 0.502
+    },
+    {
+      "start": "2026-10-08 21:11:52.495000",
+      "end": "2026-10-08 21:11:52.983000",
+      "exposure_ms": 200.0,
+      "seconds": 0.488
+    },
+    {
+      "start": "2026-10-08 21:11:57.150000",
+      "end": "2026-10-08 21:11:57.799000",
+      "exposure_ms": 200.0,
+      "seconds": 0.649
+    },
+    {
+      "start": "2026-10-08 21:12:02.107000",
+      "end": "2026-10-08 21:12:02.652000",
+      "exposure_ms": 200.0,
+      "seconds": 0.545
+    },
+    {
+      "start": "2026-10-08 21:12:06.906000",
+      "end": "2026-10-08 21:12:07.538000",
+      "exposure_ms": 200.0,
+      "seconds": 0.632
+    },
+    {
+      "start": "2026-10-08 21:12:11.671000",
+      "end": "2026-10-08 21:12:12.133000",
+      "exposure_ms": 200.0,
+      "seconds": 0.462
+    },
+    {
+      "start": "2026-10-08 21:12:16.202000",
+      "end": "2026-10-08 21:12:16.672000",
+      "exposure_ms": 200.0,
+      "seconds": 0.47
+    },
+    {
+      "start": "2026-10-08 21:12:20.983000",
+      "end": "2026-10-08 21:12:21.451000",
+      "exposure_ms": 200.0,
+      "seconds": 0.468
+    },
+    {
+      "start": "2026-10-08 21:12:25.545000",
+      "end": "2026-10-08 21:12:26.019000",
+      "exposure_ms": 200.0,
+      "seconds": 0.474
+    },
+    {
+      "start": "2026-10-08 21:12:31.687000",
+      "end": "2026-10-08 21:12:32.143000",
+      "exposure_ms": 200.0,
+      "seconds": 0.456
+    },
+    {
+      "start": "2026-10-08 21:12:36.306000",
+      "end": "2026-10-08 21:12:36.782000",
+      "exposure_ms": 200.0,
+      "seconds": 0.476
+    },
+    {
+      "start": "2026-10-08 21:12:40.833000",
+      "end": "2026-10-08 21:12:41.295000",
+      "exposure_ms": 200.0,
+      "seconds": 0.462
+    },
+    {
+      "start": "2026-10-08 21:12:45.576000",
+      "end": "2026-10-08 21:12:46.044000",
+      "exposure_ms": 200.0,
+      "seconds": 0.468
+    },
+    {
+      "start": "2026-10-08 21:12:50.354000",
+      "end": "2026-10-08 21:12:50.817000",
+      "exposure_ms": 200.0,
+      "seconds": 0.463
+    },
+    {
+      "start": "2026-10-08 21:12:55.066000",
+      "end": "2026-10-08 21:12:55.536000",
+      "exposure_ms": 200.0,
+      "seconds": 0.47
+    },
+    {
+      "start": "2026-10-08 21:12:59.944000",
+      "end": "2026-10-08 21:13:00.407000",
+      "exposure_ms": 200.0,
+      "seconds": 0.463
+    },
+    {
+      "start": "2026-10-08 21:13:04.897000",
+      "end": "2026-10-08 21:13:05.365000",
+      "exposure_ms": 200.0,
+      "seconds": 0.468
+    },
+    {
+      "start": "2026-10-08 21:13:09.715000",
+      "end": "2026-10-08 21:13:10.176000",
+      "exposure_ms": 200.0,
+      "seconds": 0.461
+    },
+    {
+      "start": "2026-10-08 21:13:14.316000",
+      "end": "2026-10-08 21:13:14.778000",
+      "exposure_ms": 200.0,
+      "seconds": 0.462
+    },
+    {
+      "start": "2026-10-08 21:13:21.426000",
+      "end": "2026-10-08 21:13:21.909000",
+      "exposure_ms": 200.0,
+      "seconds": 0.483
+    },
+    {
+      "start": "2026-10-08 21:13:26.962000",
+      "end": "2026-10-08 21:13:27.425000",
+      "exposure_ms": 200.0,
+      "seconds": 0.463
+    },
+    {
+      "start": "2026-10-08 21:13:32.502000",
+      "end": "2026-10-08 21:13:32.971000",
+      "exposure_ms": 200.0,
+      "seconds": 0.469
+    },
+    {
+      "start": "2026-10-08 21:13:38.056000",
+      "end": "2026-10-08 21:13:38.518000",
+      "exposure_ms": 200.0,
+      "seconds": 0.462
+    },
+    {
+      "start": "2026-10-08 21:13:43.551000",
+      "end": "2026-10-08 21:13:44.020000",
+      "exposure_ms": 200.0,
+      "seconds": 0.469
+    },
+    {
+      "start": "2026-10-08 21:13:48.851000",
+      "end": "2026-10-08 21:13:49.311000",
+      "exposure_ms": 200.0,
+      "seconds": 0.46
+    },
+    {
+      "start": "2026-10-08 21:13:54.379000",
+      "end": "2026-10-08 21:13:54.860000",
+      "exposure_ms": 200.0,
+      "seconds": 0.481
+    },
+    {
+      "start": "2026-10-08 21:13:59.820000",
+      "end": "2026-10-08 21:14:00.296000",
+      "exposure_ms": 200.0,
+      "seconds": 0.476
+    },
+    {
+      "start": "2026-10-08 21:14:05.307000",
+      "end": "2026-10-08 21:14:05.788000",
+      "exposure_ms": 200.0,
+      "seconds": 0.481
+    },
+    {
+      "start": "2026-10-08 21:14:10.887000",
+      "end": "2026-10-08 21:14:11.355000",
+      "exposure_ms": 200.0,
+      "seconds": 0.468
+    },
+    {
+      "start": "2026-10-08 21:14:18.064000",
+      "end": "2026-10-08 21:14:18.535000",
+      "exposure_ms": 200.0,
+      "seconds": 0.471
+    }
+  ],
+  "qualification": "Sequential events paired from saved local logs, most recent 100 complete intervals. AXCAM interval includes exposure and readout/driver completion; not a pure exposure measurement. Job finalization is counted after workflow execution completes."
+}

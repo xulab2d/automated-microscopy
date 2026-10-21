@@ -1,0 +1,77 @@
+FILE ORGANIZATION AND SUPERVISED LEARNING
+
+The shared Drive project is authoritative. Keep acquisition data in data/<unique
+campaign>, analysis in separately named analysis folders, immutable human review
+events in annotations/<dataset-id>/events, exported datasets in training/<export-id>,
+and versioned software in software/releases/<release-id>. Source image hashes and
+chip group IDs follow every label and export. Never modify an old raw image or mask
+in place. The new workbench reads all images from the shared project.
+
+Legacy migration continues under the existing single transfer owner. It checks local
+and destination hashes and two fresh Drive client snapshots, including cloud object
+identity, ancestry and upload queues, before removing eligible old local copies.
+Active analysis inputs remain pinned until their reader is finished. The current
+whole-chip dataset is deliberately protected by that worker while analysis runs.
+Mounted-copy/readback and remote-upload-confirmed are distinct UI states.
+
+Future acquisition and analysis resolve output paths into the marked Drive project
+and fail if it is unavailable. Drive Desktop uses a local cache even in streaming
+mode. Deleting a file via G: deletes the cloud file: never use that as cache eviction.
+The optional DatasetCache is instead a separate bounded, disposable content-addressed
+copy; it verifies hashes, pins active readers, and removes only its own unpinned
+objects under quota pressure. It never touches Drive Desktop's cache databases.
+
+Selected scientific TIFFs and calibration/focus anchors are retained. Completed
+adapter-owned duplicate CZI containers are retired only after durable checkpoints
+and final camera job completion. A capture backlog cap prevents runaway duplication.
+
+SUPERVISION
+
+Start with graphene on 90 nm SiO2/Si. Label clean flakes of interest, bulk, residue,
+dust, substrate, edge and artifacts independently of material/thickness confidence.
+Correct boundaries or draw missed regions. Include negative examples close in color
+to promising flakes, and sample across chips, focus quality and illumination.
+Do not train on machine rejection flags as if they were human labels.
+
+Export a self-contained appearance bundle, optionally including only the reviewed
+JPEGs (full TIFFs are not copied by default):
+  python -m flakefinder.training_bundle export --project-root <project> --output <project>/training/<new-name> --include-previews
+
+The library refuses stale source identities or divergent review histories. Corrected
+boundaries invalidate cached numerical measurements and require remeasurement.
+Entire chips stay in one train/validation/test partition. With fewer than three
+independent groups, the export is explicitly not validation-ready. This is a minimum,
+not a claim that three chips establish broad generalization. A held-out preparation
+and microscope session remain important for deployment evaluation.
+
+The included CPU logistic appearance classifier requires human examples from all
+three partitions, at least two classes and five training examples per class. It
+exports transparent JSON coefficients, source checksum, confusion matrices and
+held-out reports; no executable pickle. It cannot assign chemical identity/layers.
+  python -m flakefinder.training_bundle train --bundle <bundle> --output <new-model.json>
+
+SHERLOCK
+
+Keep microscope control local. Use Sherlock only when CPU segmentation/feature
+extraction or GPU adaptation is measured to benefit from parallel compute.
+Transfer immutable exports once, compute against SCRATCH/GROUP_SCRATCH, and return
+checksummed results to permanent shared storage. Do not stream training minibatches
+from a Drive Desktop mount or submit one scheduler job per tiny flake.
+
+scripts/sherlock_train_cpu.sbatch is a runnable CPU job template; set the three
+FLAKEFINDER_* environment paths, then submit with sbatch. It verifies the exported
+example checksum before training and stores outputs in a job-specific scratch
+directory. No cluster login or job submission was performed during implementation.
+For MaskTerial/DINO GPU adaptation, request a GPU allocation only after measuring
+local throughput and memory. Use a pinned lab environment or Apptainer image and
+the same group split manifest; do not invent a GPU model or account allocation.
+
+Sherlock uses Slurm; heavy work belongs on compute nodes, not login nodes:
+https://www.sherlock.stanford.edu/docs/user-guide/running-jobs/
+Job I/O belongs on scratch, which is temporary and has no backups:
+https://www.sherlock.stanford.edu/docs/storage/filesystems/
+Transfer options (rsync/Globus and site-supported routes):
+https://www.sherlock.stanford.edu/docs/storage/data-transfer/
+GPU requests and container setup:
+https://www.sherlock.stanford.edu/docs/user-guide/gpu/
+https://www.sherlock.stanford.edu/docs/software/containers/apptainer/

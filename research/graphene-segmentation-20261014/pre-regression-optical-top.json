@@ -1,0 +1,158 @@
+[
+  {
+    "id": "chip001/tile_000773/72",
+    "field": "chip001/tile_000773",
+    "disposition": "uncertain",
+    "area_um2": 465.2687249999999,
+    "rank": 465.2687249999999,
+    "contrast_rgb": [
+      0.1298852547773284,
+      0.1375804759844929,
+      0.13724993057197443
+    ],
+    "filtered": true
+  },
+  {
+    "id": "chip001/tile_000773/73",
+    "field": "chip001/tile_000773",
+    "disposition": "uncertain",
+    "area_um2": 422.4197249999999,
+    "rank": 422.4197249999999,
+    "contrast_rgb": [
+      0.22955411896594868,
+      0.23689970332043472,
+      0.22988103595119752
+    ],
+    "filtered": true
+  },
+  {
+    "id": "chip001/tile_000598/275",
+    "field": "chip001/tile_000598",
+    "disposition": "uncertain",
+    "area_um2": 397.18642499999993,
+    "rank": 397.18642499999993,
+    "contrast_rgb": [
+      0.4956844007431616,
+      0.3801454564250074,
+      0.24431686043533027
+    ],
+    "filtered": true
+  },
+  {
+    "id": "chip001/tile_000216/39",
+    "field": "chip001/tile_000216",
+    "disposition": "uncertain",
+    "area_um2": 394.3298249999999,
+    "rank": 394.3298249999999,
+    "contrast_rgb": [
+      0.08890113436357638,
+      0.08049342251131597,
+      0.06992118387097089
+    ],
+    "filtered": true
+  },
+  {
+    "id": "chip001/tile_000041/339",
+    "field": "chip001/tile_000041",
+    "disposition": "uncertain",
+    "area_um2": 373.73849999999993,
+    "rank": 373.73849999999993,
+    "contrast_rgb": [
+      0.11421017900662331,
+      0.1251094768246224,
+      0.12395081035770553
+    ],
+    "filtered": true
+  },
+  {
+    "id": "chip001/tile_000497/146",
+    "field": "chip001/tile_000497",
+    "disposition": "uncertain",
+    "area_um2": 330.05632499999996,
+    "rank": 330.05632499999996,
+    "contrast_rgb": [
+      0.5755872532182047,
+      0.4349074092404245,
+      0.2772484930522037
+    ],
+    "filtered": true
+  },
+  {
+    "id": "chip001/tile_000957/77",
+    "field": "chip001/tile_000957",
+    "disposition": "uncertain",
+    "area_um2": 319.58212499999996,
+    "rank": 319.58212499999996,
+    "contrast_rgb": [
+      0.1185883950377112,
+      0.11096342121859117,
+      0.10980574423624842
+    ],
+    "filtered": true
+  },
+  {
+    "id": "chip001/tile_000773/74",
+    "field": "chip001/tile_000773",
+    "disposition": "uncertain",
+    "area_um2": 296.72932499999996,
+    "rank": 296.72932499999996,
+    "contrast_rgb": [
+      0.3277123645464274,
+      0.3414039472644456,
+      0.3335142054492054
+    ],
+    "filtered": true
+  },
+  {
+    "id": "chip001/tile_000785/75",
+    "field": "chip001/tile_000785",
+    "disposition": "uncertain",
+    "area_um2": 294.82492499999995,
+    "rank": 294.82492499999995,
+    "contrast_rgb": [
+      0.5767963474143547,
+      0.436536517325322,
+      0.278383793842257
+    ],
+    "filtered": true
+  },
+  {
+    "id": "chip001/tile_000743/74",
+    "field": "chip001/tile_000743",
+    "disposition": "uncertain",
+    "area_um2": 292.8014999999999,
+    "rank": 292.8014999999999,
+    "contrast_rgb": [
+      -0.39066140137716915,
+      -0.9630179489518094,
+      -0.8554269682530757
+    ],
+    "filtered": true
+  },
+  {
+    "id": "chip001/tile_000956/97",
+    "field": "chip001/tile_000956",
+    "disposition": "uncertain",
+    "area_um2": 281.61314999999996,
+    "rank": 281.61314999999996,
+    "contrast_rgb": [
+      0.23005577855236384,
+      0.2331538547241531,
+      0.22162158725569606
+    ],
+    "filtered": true
+  },
+  {
+    "id": "chip001/tile_000780/420",
+    "field": "chip001/tile_000780",
+    "disposition": "uncertain",
+    "area_um2": 275.89994999999993,
+    "rank": 275.89994999999993,
+    "contrast_rgb": [
+      0.5813958352089583,
+      0.4362251809987307,
+      0.2790306885525096
+    ],
+    "filtered": true
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "anchors": [
+    {
+      "status": "verified",
+      "position_um": [
+        767.5,
+        762.5,
+        100
+      ],
+      "image": "anchor.tiff"
+    }
+  ]
+}

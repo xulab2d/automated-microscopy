@@ -1,0 +1,29 @@
+{
+  "reviewed_at_utc": "2026-10-09T07:56:48Z",
+  "reviewed_full_field_pairs": [
+    "validation/tile_000001.jpg",
+    "validation/tile_000032.jpg",
+    "validation/tile_000180.jpg",
+    "validation/tile_000354.jpg",
+    "validation/tile_000000.jpg",
+    "validation/tile_000007.jpg"
+  ],
+  "decision": "Proceed to remaining failed fields using the same isolated configuration.",
+  "source_masks": 109,
+  "useful_review_objects": 10,
+  "credible_thin_classifications": 0,
+  "findings": [
+    "Tile354 retains bright platelets and smaller cyan/dark source features within the measured domain.",
+    "Tile32 retains a curved edge-adjacent feature; it is a broad optical proposal, not a thin-flake identification.",
+    "Tile180 retains the large dark aggregate and color regions; this verifies source recall, not material specificity.",
+    "Tile1 remains conservative near the chip corner because the measured enclosure plus12um exclusion removes that margin.",
+    "Off-chip0 and tiny-sliver7 remain excluded.",
+    "Runtime assertions found zero source-mask pixels outside the measured domain and zero local-annulus pixels outside independently recorded substrate support."
+  ],
+  "limits": [
+    "No complete flake-recall ground truth.",
+    "Some visible edge features intentionally lie outside the retained measurement domain.",
+    "Mean color does not establish uniform thin terraces.",
+    "Extended-object overlap deduplication is unchanged."
+  ]
+}

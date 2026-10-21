@@ -1,0 +1,81 @@
+{
+  "status": "offline implementation tested; not promoted or authorized to run",
+  "at": "2026-10-10T10:13:47.315472+00:00",
+  "tests": {
+    "passed": 30,
+    "duration_s": 2.76,
+    "command": ".venv/python -m pytest tests/test_scan_continuation.py tests/test_scan_worker.py tests/test_scan_service.py -q --basetemp=data/ct05"
+  },
+  "source_files": {
+    "flakefinder/scan_continuation.py": {
+      "base_sha256": null,
+      "stage_sha256": "b4890530e70c307cc28c5297765b0452c4ab54c80d7e6eb6ba5e92d9786a0e1b"
+    },
+    "flakefinder/scan_service.py": {
+      "base_sha256": "263178bfdc21811bbbc003fdb6cb16a525bb28fd1f2d0bc08720178f522ca9dd",
+      "stage_sha256": "dc60a450b6086a32e29dabf353c2f14d6d8293ac2d6105c98e7459a18c4ad8c2"
+    },
+    "flakefinder/scan_worker.py": {
+      "base_sha256": "3cd30a2f6d2bab6a57d8c87c16a422ea394eb534f6bcaa139b8a92f1c52c8b53",
+      "stage_sha256": "994a0fb2e6eef6e6dbf2dcbd514525528b49715f18d349c698f180d89706d198"
+    },
+    "tests/test_scan_continuation.py": {
+      "base_sha256": null,
+      "stage_sha256": "3863a697f1ec1c2ab12a82d400e1224c4fb7019bb9b52adf5ee3d9ec8148f0f0"
+    }
+  },
+  "prior_run_id": "scan-20261010-025150-72aa2abf",
+  "bounds_um": [
+    -27660.48,
+    28339.52,
+    -36344.36,
+    19655.64
+  ],
+  "pending_requested_limits": {
+    "x_min": -27690.48,
+    "x_max": 28339.52,
+    "y_min": -36374.36,
+    "y_max": 19655.64,
+    "z_min": 15484.0,
+    "z_max": 15759.218,
+    "max_xy_step_um": 3000.0,
+    "max_z_step_um": 10.0
+  },
+  "last_capture": {
+    "path": "discovery/candidate003/edge-focus/attempt_000/observations/bb206985c2904671ba497630b1f8486e.json",
+    "at": 1791626669.4876199,
+    "position": {
+      "x": 3450.6309999999994,
+      "y": -7506.397,
+      "z": 15739.217999999999
+    },
+    "optics": {
+      "objective_position": 2,
+      "objective": {
+        "magnification": 20.0,
+        "na": 0.4,
+        "name": "EC Epiplan 20x/0.4 HD M27",
+        "position": 2,
+        "working_distance_um": 3300.0
+      },
+      "camera_job_template": "FlakeFinder Quantitative Camera",
+      "camera_resources": {
+        "ff_exposure_ms": 401.774,
+        "ff_white_balance": "0.25007564,1,2.61244442"
+      },
+      "white_level": 4095.0,
+      "illumination_percent": 90.01956947162427
+    },
+    "pixel_size_um": [
+      0.1725,
+      0.1725
+    ],
+    "sha256": "43c15f64c1bd92fa731c3180d0e355c2fd69be8913713ca6f7f5c0208c073a8e"
+  },
+  "preserved_original_deadline_at": 1791647871.97856,
+  "hardware_actions": false,
+  "new_run_created": false,
+  "stop_or_hold_changed": false,
+  "readiness_limitation": "A Z move may have occurred after the last persisted capture; live strict XYZ verification must reject any unrecorded displacement before arming. No relaxed or inferred checkpoint is supplied.",
+  "integration": "Selective reviewed patch only; current viewer STOP-reason block is preserved. Other copied sources are not an integration payload."
+}

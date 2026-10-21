@@ -1,0 +1,1482 @@
+{
+  "total_files": 122657,
+  "total_bytes": 225559931839,
+  "top_directories": [
+    {
+      "path": "data/zen-captures",
+      "files": 36192,
+      "bytes": 140573735312,
+      "GB": 140.574
+    },
+    {
+      "path": "data/whole-chip-standardized-01",
+      "files": 17354,
+      "bytes": 64880759421,
+      "GB": 64.881
+    },
+    {
+      "path": "data/chip-boundary-R2C3-01",
+      "files": 1131,
+      "bytes": 6515482045,
+      "GB": 6.515
+    },
+    {
+      "path": "data/chip-batch-01",
+      "files": 24721,
+      "bytes": 5457220774,
+      "GB": 5.457
+    },
+    {
+      "path": "external",
+      "files": 778,
+      "bytes": 2078581195,
+      "GB": 2.079
+    },
+    {
+      "path": "data/20x-commissioning",
+      "files": 106,
+      "bytes": 713992719,
+      "GB": 0.714
+    },
+    {
+      "path": "data/chip-layout-probes-01",
+      "files": 106,
+      "bytes": 567580133,
+      "GB": 0.568
+    },
+    {
+      "path": "data/20x-search-01",
+      "files": 294,
+      "bytes": 565732058,
+      "GB": 0.566
+    },
+    {
+      "path": "data/segmentation-validation-v2",
+      "files": 4942,
+      "bytes": 548522977,
+      "GB": 0.549
+    },
+    {
+      "path": "data/commission-20261008-125423",
+      "files": 72,
+      "bytes": 473109284,
+      "GB": 0.473
+    },
+    {
+      "path": "data/chip-layout-offset-checks-01",
+      "files": 49,
+      "bytes": 360802509,
+      "GB": 0.361
+    },
+    {
+      "path": "data/live-validation-20261008-c",
+      "files": 2722,
+      "bytes": 304515172,
+      "GB": 0.305
+    },
+    {
+      "path": "data/chip-layout-centres-01",
+      "files": 40,
+      "bytes": 303932327,
+      "GB": 0.304
+    },
+    {
+      "path": "data/chip-layout-cross-01",
+      "files": 37,
+      "bytes": 276549471,
+      "GB": 0.277
+    },
+    {
+      "path": "data/20x-fixed-profile",
+      "files": 22,
+      "bytes": 141818188,
+      "GB": 0.142
+    },
+    {
+      "path": "data/20x-color-comparison",
+      "files": 23,
+      "bytes": 134003377,
+      "GB": 0.134
+    },
+    {
+      "path": "data/calibration-20261008-130458",
+      "files": 18,
+      "bytes": 123748559,
+      "GB": 0.124
+    },
+    {
+      "path": "data/calibration-20261008-131138",
+      "files": 19,
+      "bytes": 123692919,
+      "GB": 0.124
+    },
+    {
+      "path": "laptop-viewer",
+      "files": 1396,
+      "bytes": 109772059,
+      "GB": 0.11
+    },
+    {
+      "path": "data/hardware-survey-local-02",
+      "files": 304,
+      "bytes": 98866434,
+      "GB": 0.099
+    },
+    {
+      "path": "data/raster-performance-audit-01",
+      "files": 14,
+      "bytes": 97432604,
+      "GB": 0.097
+    },
+    {
+      "path": "data/20x-channel-response",
+      "files": 13,
+      "bytes": 85124920,
+      "GB": 0.085
+    },
+    {
+      "path": "data/chip-layout-outer-cross-01",
+      "files": 13,
+      "bytes": 79224894,
+      "GB": 0.079
+    },
+    {
+      "path": "data/revisit-validation-10x",
+      "files": 484,
+      "bytes": 77274509,
+      "GB": 0.077
+    },
+    {
+      "path": "data/calibration-20261008-125841",
+      "files": 9,
+      "bytes": 61943392,
+      "GB": 0.062
+    },
+    {
+      "path": "data/demo-color-workflow-02",
+      "files": 824,
+      "bytes": 59525589,
+      "GB": 0.06
+    },
+    {
+      "path": "data/optical-control-test",
+      "files": 10,
+      "bytes": 57079813,
+      "GB": 0.057
+    },
+    {
+      "path": "data/demo-final",
+      "files": 488,
+      "bytes": 47933471,
+      "GB": 0.048
+    },
+    {
+      "path": "data/manual-visual-audit-01",
+      "files": 52,
+      "bytes": 47673303,
+      "GB": 0.048
+    },
+    {
+      "path": "data/demo-validation",
+      "files": 472,
+      "bytes": 47015460,
+      "GB": 0.047
+    },
+    {
+      "path": "research",
+      "files": 382,
+      "bytes": 45265851,
+      "GB": 0.045
+    },
+    {
+      "path": "data/hardware-survey-local",
+      "files": 15,
+      "bytes": 42686160,
+      "GB": 0.043
+    },
+    {
+      "path": "data/test-tmp",
+      "files": 13930,
+      "bytes": 37534659,
+      "GB": 0.038
+    },
+    {
+      "path": "data/first-live-frame.npy",
+      "files": 1,
+      "bytes": 30396032,
+      "GB": 0.03
+    },
+    {
+      "path": "data/demo-color-workflow",
+      "files": 240,
+      "bytes": 30241021,
+      "GB": 0.03
+    },
+    {
+      "path": "data/test-temp-final2",
+      "files": 208,
+      "bytes": 29782820,
+      "GB": 0.03
+    },
+    {
+      "path": "data/test-temp-final1",
+      "files": 207,
+      "bytes": 29782817,
+      "GB": 0.03
+    },
+    {
+      "path": "data/test-temp-handoff",
+      "files": 208,
+      "bytes": 29782815,
+      "GB": 0.03
+    },
+    {
+      "path": "data/test-temp-calibration2",
+      "files": 206,
+      "bytes": 29781140,
+      "GB": 0.03
+    },
+    {
+      "path": "data/test-temp-validation",
+      "files": 206,
+      "bytes": 29781136,
+      "GB": 0.03
+    },
+    {
+      "path": "data/exposure-optimization-10x",
+      "files": 4,
+      "bytes": 22142544,
+      "GB": 0.022
+    },
+    {
+      "path": "data/current-check-20261008",
+      "files": 3,
+      "bytes": 20654254,
+      "GB": 0.021
+    },
+    {
+      "path": "data/hardware-job-frame",
+      "files": 3,
+      "bytes": 20573657,
+      "GB": 0.021
+    },
+    {
+      "path": "data/test-temp-precision-01",
+      "files": 239,
+      "bytes": 16114829,
+      "GB": 0.016
+    },
+    {
+      "path": "data/test-temp-zmotion-01",
+      "files": 208,
+      "bytes": 14673240,
+      "GB": 0.015
+    },
+    {
+      "path": "data/motion.jsonl",
+      "files": 1,
+      "bytes": 13972471,
+      "GB": 0.014
+    },
+    {
+      "path": "data/first-live-frame.png",
+      "files": 1,
+      "bytes": 9596768,
+      "GB": 0.01
+    },
+    {
+      "path": "data/public-positive-terraces.json",
+      "files": 1,
+      "bytes": 8882094,
+      "GB": 0.009
+    },
+    {
+      "path": "data/thin-regions-01",
+      "files": 2,
+      "bytes": 6736099,
+      "GB": 0.007
+    },
+    {
+      "path": "data/test-temp-full-chip-02",
+      "files": 2475,
+      "bytes": 6404097,
+      "GB": 0.006
+    },
+    {
+      "path": "data/public-positive-development.json",
+      "files": 1,
+      "bytes": 6362567,
+      "GB": 0.006
+    },
+    {
+      "path": "data/test-temp-full-chip-01",
+      "files": 2348,
+      "bytes": 6339975,
+      "GB": 0.006
+    },
+    {
+      "path": "data/public-demo-diagnostic.json",
+      "files": 1,
+      "bytes": 6149586,
+      "GB": 0.006
+    },
+    {
+      "path": "data/detector-audit-02",
+      "files": 20,
+      "bytes": 4520469,
+      "GB": 0.005
+    },
+    {
+      "path": "data/test-temp-throughput-01",
+      "files": 55,
+      "bytes": 4273032,
+      "GB": 0.004
+    },
+    {
+      "path": "data/test-temp-throughput-02",
+      "files": 55,
+      "bytes": 4273032,
+      "GB": 0.004
+    },
+    {
+      "path": "data/mote2-rydberg-full.pdf",
+      "files": 1,
+      "bytes": 3170758,
+      "GB": 0.003
+    },
+    {
+      "path": "data/test-temp-precision-audit-01",
+      "files": 24,
+      "bytes": 2831431,
+      "GB": 0.003
+    },
+    {
+      "path": "data/test-temp-live-handoff-01",
+      "files": 24,
+      "bytes": 2831430,
+      "GB": 0.003
+    },
+    {
+      "path": "data/test-temp-chip-discovery-03",
+      "files": 1683,
+      "bytes": 2496364,
+      "GB": 0.002
+    },
+    {
+      "path": "data/test-temp-chip-discovery-02",
+      "files": 1683,
+      "bytes": 2493807,
+      "GB": 0.002
+    },
+    {
+      "path": "data/test-temp-chip-discovery-01",
+      "files": 1683,
+      "bytes": 2492303,
+      "GB": 0.002
+    },
+    {
+      "path": "data/test-material-revisit-20261008",
+      "files": 11,
+      "bytes": 2312305,
+      "GB": 0.002
+    },
+    {
+      "path": "data/public-positive-holdout.json",
+      "files": 1,
+      "bytes": 2270345,
+      "GB": 0.002
+    },
+    {
+      "path": "data/test-temp-full-chip-estimates-01",
+      "files": 740,
+      "bytes": 1802119,
+      "GB": 0.002
+    },
+    {
+      "path": "data/test-temp-v2-existing-adapted-01",
+      "files": 737,
+      "bytes": 1428987,
+      "GB": 0.001
+    },
+    {
+      "path": "data/test-temp-edge-focus-01",
+      "files": 46,
+      "bytes": 1315928,
+      "GB": 0.001
+    },
+    {
+      "path": "data/test-temp-live-progress-01",
+      "files": 12,
+      "bytes": 1078439,
+      "GB": 0.001
+    },
+    {
+      "path": "data/test-temp-live-progress-02",
+      "files": 12,
+      "bytes": 1078398,
+      "GB": 0.001
+    },
+    {
+      "path": "generated",
+      "files": 164,
+      "bytes": 1036618,
+      "GB": 0.001
+    },
+    {
+      "path": "data/reference-crystal-10x",
+      "files": 11,
+      "bytes": 1013842,
+      "GB": 0.001
+    },
+    {
+      "path": "flakefinder",
+      "files": 58,
+      "bytes": 926281,
+      "GB": 0.001
+    },
+    {
+      "path": "data/public-positive-graphcut.json",
+      "files": 1,
+      "bytes": 886167,
+      "GB": 0.001
+    },
+    {
+      "path": "data/public-positive-spatial.json",
+      "files": 1,
+      "bytes": 846647,
+      "GB": 0.001
+    },
+    {
+      "path": "data/boundary-efficiency-audit",
+      "files": 8,
+      "bytes": 753452,
+      "GB": 0.001
+    },
+    {
+      "path": "data/test-temp-sparse-focus-01",
+      "files": 318,
+      "bytes": 629382,
+      "GB": 0.001
+    },
+    {
+      "path": "data/existing-mask-measurement-01",
+      "files": 2,
+      "bytes": 566217,
+      "GB": 0.001
+    },
+    {
+      "path": "data/test-thin-22bdfb0cc97e42f9940def8b7dc88d88",
+      "files": 22,
+      "bytes": 557986,
+      "GB": 0.001
+    },
+    {
+      "path": "data/thin-regions-02",
+      "files": 10,
+      "bytes": 505560,
+      "GB": 0.001
+    },
+    {
+      "path": "data/mote2-figure-24.png",
+      "files": 1,
+      "bytes": 458754,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-thin-pipeline-20261008",
+      "files": 31,
+      "bytes": 404341,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-focus-recovery-02",
+      "files": 32,
+      "bytes": 393148,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-review-whole-field-01",
+      "files": 52,
+      "bytes": 319587,
+      "GB": 0.0
+    },
+    {
+      "path": "data/live-validation-20261008-b",
+      "files": 14,
+      "bytes": 300936,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-integration-v2-isolated-02",
+      "files": 90,
+      "bytes": 299593,
+      "GB": 0.0
+    },
+    {
+      "path": "tests",
+      "files": 63,
+      "bytes": 293664,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-v2-existing-unadapted-01",
+      "files": 294,
+      "bytes": 290035,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-focus-recovery-01",
+      "files": 26,
+      "bytes": 278499,
+      "GB": 0.0
+    },
+    {
+      "path": "scripts",
+      "files": 76,
+      "bytes": 267149,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-surface-quick-integration-01",
+      "files": 139,
+      "bytes": 198045,
+      "GB": 0.0
+    },
+    {
+      "path": "data/chip-layout-grid-01",
+      "files": 6,
+      "bytes": 180876,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-search-only-focus-01",
+      "files": 121,
+      "bytes": 178542,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-search-only-focus-02",
+      "files": 121,
+      "bytes": 175199,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-provisional-focus-01",
+      "files": 105,
+      "bytes": 135758,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-sparse-import-placement-02",
+      "files": 63,
+      "bytes": 125830,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-sparse-acquisition-01",
+      "files": 55,
+      "bytes": 117776,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-sparse-import-01",
+      "files": 62,
+      "bytes": 102622,
+      "GB": 0.0
+    },
+    {
+      "path": "data/radiometry-audit",
+      "files": 3,
+      "bytes": 96116,
+      "GB": 0.0
+    },
+    {
+      "path": "configs",
+      "files": 26,
+      "bytes": 93367,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-integration-v2-isolated-01",
+      "files": 35,
+      "bytes": 83925,
+      "GB": 0.0
+    },
+    {
+      "path": "docs",
+      "files": 4,
+      "bytes": 71802,
+      "GB": 0.0
+    },
+    {
+      "path": "data/20x-search-contactsheet.jpg",
+      "files": 1,
+      "bytes": 46087,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-activity-02",
+      "files": 17,
+      "bytes": 41469,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-v2-cli-preflight-02",
+      "files": 35,
+      "bytes": 40505,
+      "GB": 0.0
+    },
+    {
+      "path": "data/review-script-check.js",
+      "files": 1,
+      "bytes": 39457,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-activity-01",
+      "files": 10,
+      "bytes": 33025,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-overnight-recovery-01",
+      "files": 36,
+      "bytes": 20364,
+      "GB": 0.0
+    },
+    {
+      "path": "data/live-validation-20261008",
+      "files": 3,
+      "bytes": 20333,
+      "GB": 0.0
+    },
+    {
+      "path": "README.md",
+      "files": 1,
+      "bytes": 17818,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-quick-focus-01",
+      "files": 7,
+      "bytes": 14017,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-overnight-audit-01",
+      "files": 26,
+      "bytes": 13656,
+      "GB": 0.0
+    },
+    {
+      "path": "data/review-code-check.js",
+      "files": 1,
+      "bytes": 13213,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-restart-lineage-01",
+      "files": 16,
+      "bytes": 12123,
+      "GB": 0.0
+    },
+    {
+      "path": "data/hardware-focus-02",
+      "files": 2,
+      "bytes": 9729,
+      "GB": 0.0
+    },
+    {
+      "path": "data/public-positive-first.jpg",
+      "files": 1,
+      "bytes": 8882,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-v2-legacy-contract-01",
+      "files": 7,
+      "bytes": 8172,
+      "GB": 0.0
+    },
+    {
+      "path": "data/demo-color-workflow-02.log",
+      "files": 1,
+      "bytes": 8031,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-deadline-guard-02",
+      "files": 22,
+      "bytes": 5817,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-deadline-guard-01",
+      "files": 22,
+      "bytes": 5613,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-long-edge-registration-01",
+      "files": 8,
+      "bytes": 4640,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-edge-registration-01",
+      "files": 8,
+      "bytes": 4609,
+      "GB": 0.0
+    },
+    {
+      "path": "START-HERE-LAPTOP.txt",
+      "files": 1,
+      "bytes": 4300,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-overnight-cleanup-01",
+      "files": 8,
+      "bytes": 4292,
+      "GB": 0.0
+    },
+    {
+      "path": "data/validation-summary.json",
+      "files": 1,
+      "bytes": 2729,
+      "GB": 0.0
+    },
+    {
+      "path": "data/public-positive-empirical.json",
+      "files": 1,
+      "bytes": 2495,
+      "GB": 0.0
+    },
+    {
+      "path": "data/background-surface-audit-01",
+      "files": 2,
+      "bytes": 2245,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-material-queue-20261008",
+      "files": 3,
+      "bytes": 1468,
+      "GB": 0.0
+    },
+    {
+      "path": "data/20261008-120752-motion",
+      "files": 2,
+      "bytes": 1351,
+      "GB": 0.0
+    },
+    {
+      "path": "data/objective-motor-test.json",
+      "files": 1,
+      "bytes": 1042,
+      "GB": 0.0
+    },
+    {
+      "path": "pyproject.toml",
+      "files": 1,
+      "bytes": 753,
+      "GB": 0.0
+    },
+    {
+      "path": "data/services.json",
+      "files": 1,
+      "bytes": 731,
+      "GB": 0.0
+    },
+    {
+      "path": "data/stage-ranges.json",
+      "files": 1,
+      "bytes": 588,
+      "GB": 0.0
+    },
+    {
+      "path": "data/hardware-probe.json",
+      "files": 1,
+      "bytes": 582,
+      "GB": 0.0
+    },
+    {
+      "path": "requirements-lock.txt",
+      "files": 1,
+      "bytes": 578,
+      "GB": 0.0
+    },
+    {
+      "path": "data/first-live-frame.json",
+      "files": 1,
+      "bytes": 555,
+      "GB": 0.0
+    },
+    {
+      "path": "requirements-analysis-lock.txt",
+      "files": 1,
+      "bytes": 527,
+      "GB": 0.0
+    },
+    {
+      "path": "OPERATOR-HOLD.json",
+      "files": 1,
+      "bytes": 444,
+      "GB": 0.0
+    },
+    {
+      "path": "Launch Microscope Console.cmd",
+      "files": 1,
+      "bytes": 271,
+      "GB": 0.0
+    },
+    {
+      "path": "data/hardware-focus-01",
+      "files": 1,
+      "bytes": 247,
+      "GB": 0.0
+    },
+    {
+      "path": "data/test-temp-placement-guard-01",
+      "files": 1,
+      "bytes": 215,
+      "GB": 0.0
+    },
+    {
+      "path": "Review Latest Flakes.cmd",
+      "files": 1,
+      "bytes": 143,
+      "GB": 0.0
+    },
+    {
+      "path": ".gitignore",
+      "files": 1,
+      "bytes": 111,
+      "GB": 0.0
+    },
+    {
+      "path": "Launch FlakeFinder.cmd",
+      "files": 1,
+      "bytes": 92,
+      "GB": 0.0
+    },
+    {
+      "path": "data/20261008-120635-motion",
+      "files": 1,
+      "bytes": 68,
+      "GB": 0.0
+    },
+    {
+      "path": "data/20261008-120804-frame",
+      "files": 1,
+      "bytes": 68,
+      "GB": 0.0
+    },
+    {
+      "path": "data/locks",
+      "files": 1,
+      "bytes": 1,
+      "GB": 0.0
+    }
+  ],
+  "extensions": [
+    {
+      "path": ".czi",
+      "files": 4536,
+      "bytes": 139592464536,
+      "GB": 139.592
+    },
+    {
+      "path": ".tiff",
+      "files": 10436,
+      "bytes": 72385351872,
+      "GB": 72.385
+    },
+    {
+      "path": ".jpg",
+      "files": 42500,
+      "bytes": 3988630103,
+      "GB": 3.989
+    },
+    {
+      "path": ".npz",
+      "files": 9904,
+      "bytes": 3519480990,
+      "GB": 3.519
+    },
+    {
+      "path": ".json",
+      "files": 18337,
+      "bytes": 2436959294,
+      "GB": 2.437
+    },
+    {
+      "path": ".png",
+      "files": 11879,
+      "bytes": 1186296240,
+      "GB": 1.186
+    },
+    {
+      "path": ".zip",
+      "files": 3,
+      "bytes": 942833794,
+      "GB": 0.943
+    },
+    {
+      "path": ".pth",
+      "files": 2,
+      "bytes": 869073857,
+      "GB": 0.869
+    },
+    {
+      "path": ".html",
+      "files": 52,
+      "bytes": 368470252,
+      "GB": 0.368
+    },
+    {
+      "path": ".gz",
+      "files": 1388,
+      "bytes": 109133069,
+      "GB": 0.109
+    },
+    {
+      "path": ".metadata",
+      "files": 18108,
+      "bytes": 44211372,
+      "GB": 0.044
+    },
+    {
+      "path": ".czjob",
+      "files": 4541,
+      "bytes": 38197323,
+      "GB": 0.038
+    },
+    {
+      "path": ".npy",
+      "files": 1,
+      "bytes": 30396032,
+      "GB": 0.03
+    },
+    {
+      "path": ".ipynb",
+      "files": 8,
+      "bytes": 18966276,
+      "GB": 0.019
+    },
+    {
+      "path": ".jsonl",
+      "files": 4,
+      "bytes": 13987937,
+      "GB": 0.014
+    },
+    {
+      "path": ".csv",
+      "files": 168,
+      "bytes": 5269017,
+      "GB": 0.005
+    },
+    {
+      "path": ".py",
+      "files": 555,
+      "bytes": 4293988,
+      "GB": 0.004
+    },
+    {
+      "path": ".pdf",
+      "files": 2,
+      "bytes": 3694563,
+      "GB": 0.004
+    },
+    {
+      "path": ".log",
+      "files": 14,
+      "bytes": 1445652,
+      "GB": 0.001
+    },
+    {
+      "path": ".md",
+      "files": 18,
+      "bytes": 212703,
+      "GB": 0.0
+    },
+    {
+      "path": ".txt",
+      "files": 34,
+      "bytes": 187207,
+      "GB": 0.0
+    },
+    {
+      "path": ".patch",
+      "files": 7,
+      "bytes": 107152,
+      "GB": 0.0
+    },
+    {
+      "path": ".js",
+      "files": 5,
+      "bytes": 59294,
+      "GB": 0.0
+    },
+    {
+      "path": ".cuh",
+      "files": 1,
+      "bytes": 56168,
+      "GB": 0.0
+    },
+    {
+      "path": ".jsx",
+      "files": 13,
+      "bytes": 34726,
+      "GB": 0.0
+    },
+    {
+      "path": ".yaml",
+      "files": 13,
+      "bytes": 31691,
+      "GB": 0.0
+    },
+    {
+      "path": ".svg",
+      "files": 1,
+      "bytes": 26263,
+      "GB": 0.0
+    },
+    {
+      "path": "<none>",
+      "files": 67,
+      "bytes": 9587,
+      "GB": 0.0
+    },
+    {
+      "path": ".yml",
+      "files": 4,
+      "bytes": 9324,
+      "GB": 0.0
+    },
+    {
+      "path": ".czmac",
+      "files": 1,
+      "bytes": 8977,
+      "GB": 0.0
+    },
+    {
+      "path": ".tmp",
+      "files": 1,
+      "bytes": 8062,
+      "GB": 0.0
+    },
+    {
+      "path": ".cu",
+      "files": 1,
+      "bytes": 7616,
+      "GB": 0.0
+    },
+    {
+      "path": ".h",
+      "files": 3,
+      "bytes": 4686,
+      "GB": 0.0
+    },
+    {
+      "path": ".css",
+      "files": 13,
+      "bytes": 3413,
+      "GB": 0.0
+    },
+    {
+      "path": ".cpp",
+      "files": 2,
+      "bytes": 2408,
+      "GB": 0.0
+    },
+    {
+      "path": ".xml",
+      "files": 1,
+      "bytes": 2048,
+      "GB": 0.0
+    },
+    {
+      "path": ".conf",
+      "files": 1,
+      "bytes": 1069,
+      "GB": 0.0
+    },
+    {
+      "path": ".joblib",
+      "files": 1,
+      "bytes": 831,
+      "GB": 0.0
+    },
+    {
+      "path": ".toml",
+      "files": 1,
+      "bytes": 753,
+      "GB": 0.0
+    },
+    {
+      "path": ".sh",
+      "files": 1,
+      "bytes": 742,
+      "GB": 0.0
+    },
+    {
+      "path": ".cmd",
+      "files": 4,
+      "bytes": 570,
+      "GB": 0.0
+    },
+    {
+      "path": ".cjs",
+      "files": 1,
+      "bytes": 357,
+      "GB": 0.0
+    },
+    {
+      "path": ".lock",
+      "files": 25,
+      "bytes": 25,
+      "GB": 0.0
+    }
+  ],
+  "current_campaign": [
+    {
+      "path": "tiles",
+      "files": 6456,
+      "bytes": 31540940411,
+      "GB": 31.541
+    },
+    {
+      "path": "discovery",
+      "files": 3066,
+      "bytes": 15461835753,
+      "GB": 15.462
+    },
+    {
+      "path": "search",
+      "files": 2193,
+      "bytes": 13022185961,
+      "GB": 13.022
+    },
+    {
+      "path": "analysis-staged-features",
+      "files": 3731,
+      "bytes": 4023247263,
+      "GB": 4.023
+    },
+    {
+      "path": "calibration",
+      "files": 79,
+      "bytes": 369831317,
+      "GB": 0.37
+    },
+    {
+      "path": "focus-surface",
+      "files": 186,
+      "bytes": 277944250,
+      "GB": 0.278
+    },
+    {
+      "path": "overview.tiff",
+      "files": 3,
+      "bytes": 92885656,
+      "GB": 0.093
+    },
+    {
+      "path": "boundary-labels",
+      "files": 1386,
+      "bytes": 31459128,
+      "GB": 0.031
+    },
+    {
+      "path": "reference",
+      "files": 3,
+      "bytes": 22887514,
+      "GB": 0.023
+    },
+    {
+      "path": "analysis-observed-recovery",
+      "files": 159,
+      "bytes": 14787594,
+      "GB": 0.015
+    },
+    {
+      "path": "campaign-attempts",
+      "files": 29,
+      "bytes": 5750145,
+      "GB": 0.006
+    },
+    {
+      "path": "overview.jpg",
+      "files": 3,
+      "bytes": 5626372,
+      "GB": 0.006
+    },
+    {
+      "path": "manifest.json",
+      "files": 3,
+      "bytes": 4081474,
+      "GB": 0.004
+    },
+    {
+      "path": "coverage-plan.json",
+      "files": 3,
+      "bytes": 1664315,
+      "GB": 0.002
+    },
+    {
+      "path": "plans",
+      "files": 3,
+      "bytes": 1664315,
+      "GB": 0.002
+    },
+    {
+      "path": "overnight-acquisition.log",
+      "files": 1,
+      "bytes": 1437621,
+      "GB": 0.001
+    },
+    {
+      "path": "quality-audit",
+      "files": 7,
+      "bytes": 1199927,
+      "GB": 0.001
+    },
+    {
+      "path": "batch.json",
+      "files": 1,
+      "bytes": 582400,
+      "GB": 0.001
+    },
+    {
+      "path": "layout.json",
+      "files": 1,
+      "bytes": 191408,
+      "GB": 0.0
+    },
+    {
+      "path": "live-workflow.jpg",
+      "files": 1,
+      "bytes": 89920,
+      "GB": 0.0
+    },
+    {
+      "path": "coverage-evidence.npz",
+      "files": 3,
+      "bytes": 84058,
+      "GB": 0.0
+    },
+    {
+      "path": "seed-connected-substrate.npz",
+      "files": 2,
+      "bytes": 77063,
+      "GB": 0.0
+    },
+    {
+      "path": "gallery-running.jpg",
+      "files": 1,
+      "bytes": 74620,
+      "GB": 0.0
+    },
+    {
+      "path": "live-scan-running.jpg",
+      "files": 1,
+      "bytes": 66809,
+      "GB": 0.0
+    },
+    {
+      "path": "coverage.png",
+      "files": 3,
+      "bytes": 65937,
+      "GB": 0.0
+    },
+    {
+      "path": "search-plan.json",
+      "files": 1,
+      "bytes": 61516,
+      "GB": 0.0
+    },
+    {
+      "path": "overnight-session.json",
+      "files": 1,
+      "bytes": 7016,
+      "GB": 0.0
+    },
+    {
+      "path": "overnight-history",
+      "files": 2,
+      "bytes": 6596,
+      "GB": 0.0
+    },
+    {
+      "path": "configuration-revisions",
+      "files": 1,
+      "bytes": 5004,
+      "GB": 0.0
+    },
+    {
+      "path": "configuration.json",
+      "files": 1,
+      "bytes": 4969,
+      "GB": 0.0
+    },
+    {
+      "path": "overnight-outcome.json",
+      "files": 1,
+      "bytes": 4094,
+      "GB": 0.0
+    },
+    {
+      "path": "overnight.json",
+      "files": 1,
+      "bytes": 2497,
+      "GB": 0.0
+    },
+    {
+      "path": "overnight-outcome.txt",
+      "files": 1,
+      "bytes": 1629,
+      "GB": 0.0
+    },
+    {
+      "path": "analysis-worker.json",
+      "files": 2,
+      "bytes": 1130,
+      "GB": 0.0
+    },
+    {
+      "path": "overview.json",
+      "files": 3,
+      "bytes": 812,
+      "GB": 0.0
+    },
+    {
+      "path": "deadline-guard.json",
+      "files": 1,
+      "bytes": 789,
+      "GB": 0.0
+    },
+    {
+      "path": "seed-rejection-idle-check.json",
+      "files": 1,
+      "bytes": 597,
+      "GB": 0.0
+    },
+    {
+      "path": "discovery-focus-update-resume.json",
+      "files": 1,
+      "bytes": 438,
+      "GB": 0.0
+    },
+    {
+      "path": "acquisition-exit-verification.json",
+      "files": 1,
+      "bytes": 384,
+      "GB": 0.0
+    },
+    {
+      "path": "flakes.csv",
+      "files": 3,
+      "bytes": 339,
+      "GB": 0.0
+    },
+    {
+      "path": "discovery-focus-update-pause.json",
+      "files": 1,
+      "bytes": 219,
+      "GB": 0.0
+    },
+    {
+      "path": "activity.json",
+      "files": 1,
+      "bytes": 97,
+      "GB": 0.0
+    },
+    {
+      "path": "flakes.json",
+      "files": 3,
+      "bytes": 60,
+      "GB": 0.0
+    },
+    {
+      "path": "analysis-worker.lock",
+      "files": 2,
+      "bytes": 2,
+      "GB": 0.0
+    },
+    {
+      "path": "control-locks",
+      "files": 2,
+      "bytes": 2,
+      "GB": 0.0
+    }
+  ],
+  "vendor": [
+    {
+      "path": ".czi",
+      "files": 4524,
+      "bytes": 139592464224,
+      "GB": 139.592
+    },
+    {
+      "path": ".png",
+      "files": 9048,
+      "bytes": 898894810,
+      "GB": 0.899
+    },
+    {
+      "path": ".metadata",
+      "files": 18096,
+      "bytes": 44211240,
+      "GB": 0.044
+    },
+    {
+      "path": ".czjob",
+      "files": 4524,
+      "bytes": 38165038,
+      "GB": 0.038
+    }
+  ],
+  "largest_files": [
+    [
+      528384977,
+      "external/maskterial-hf/synthetic/model_final.pth"
+    ],
+    [
+      450077384,
+      "external/maskterial-hf/SEG_M2F_Synthetic_Data.zip"
+    ],
+    [
+      340688880,
+      "external/maskterial-hf/mose2/model_final.pth"
+    ],
+    [
+      315464851,
+      "external/maskterial-hf/SEG_M2F_MoSe2.zip"
+    ],
+    [
+      177291559,
+      "external/benchmarks/Real_MoSe2.zip"
+    ],
+    [
+      90899377,
+      "data/segmentation-validation-v2/R2C1-subset/analysis-global-color/review-data.json"
+    ],
+    [
+      71563797,
+      "data/chip-batch-01/R2C1/analysis-feature-contrast/review-data.json"
+    ],
+    [
+      67040797,
+      "data/chip-batch-01/R2C2/analysis-feature-contrast/review-data.json"
+    ],
+    [
+      65354175,
+      "data/chip-batch-01/R2C1/analysis-material-selected/review-data.json"
+    ],
+    [
+      65284803,
+      "data/chip-batch-01/R2C3/analysis-feature-contrast/review-data.json"
+    ]
+  ]
+}

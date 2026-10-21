@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "implementation": "scripts/watch_graphene_scan.py",
+  "state": "offline_ready_not_launched",
+  "launch": "python scripts/watch_graphene_scan.py --project <managed-Drive-project> --run-id <exact-authorized-scan-id>",
+  "outputs": "data/<run-id>/analysis-graphene-incremental",
+  "stop": "Create analysis-graphene-incremental/STOP. This does not stop the scanner or delete either STOP.",
+  "inputs": "Only manifest completed records with raw TIFF, sidecar and saved substrate-label hashes. Uncommitted raw files are ignored.",
+  "identity": "Pinned scan-request hash, project/run identity, source implementation and optical model hashes, source record/geometry hashes, and campaign coordinate_frame_id. A source change fails closed; it does not silently create a new lineage.",
+  "resume": "Replays small per-field ledger, verifies derived output hashes and immutable source record/geometry identities. Raw TIFF hashes are verified before and after each first analysis; unchanged already-committed fields are not re-decoded or rehashed on resume.",
+  "resource_policy": {
+    "processes": 1,
+    "threads": 2,
+    "windows_priority": "below_normal",
+    "minimum_available_ram_gib": 4,
+    "phase_boundary_abort_below_available_ram_gib": 2.5,
+    "memory_wait_limit_hours": 2,
+    "maximum_source_pixels": 6000000,
+    "minimum_output_reserve_gib": 10,
+    "derived_field_storage_allowance_mib": 256,
+    "field_budget_seconds": 240,
+    "qualification": "RAM is checked before field allocation with a conservative2GiB analysis allowance, and at phase/component boundaries with a2.5GiB reserve abort; not an OS-enforced process cap. No5Mpx peak benchmark was run on the low-RAM acquisition host. STOP/time limits are cooperative; a native operation can finish before the next check. No DINO, microscope client, raw deletion or copied TIFF/JPEG. Drive/cache reserve checks remain active."
+  },
+  "science": {
+    "domain": "Recorded chip polygon plus independently saved substrate labels; geometry remains distinct from bare-substrate color support.",
+    "proposal": "Noise-qualified connected features are independent of optical compatibility. Unmatched features and substrate controls remain in per-field masks/results.",
+    "conditional_model": "Published constant-index graphene film on nominal90nm SiO2/Si, finite85/90/95nm oxide, illumination NA0/.4, manufacturer typical Axiocam305 trace, equal-energy/3000K/6500K lamp scenarios under energy/photon interpretations. Actual lamp/spectral response and this run's gamma/dark offset are unmeasured. Wavelengths restricted to source trace support.",
+    "mismatch_allowance": "Explicit1% RGB standard deviation engineering allowance, not measured uncertainty or calibrated sensitivity/specificity.",
+    "shortlist": "Conditional optical compatibility plus25um2 area and3um usable width. All other regions remain uncertain; no chemical material or monolayer assignment.",
+    "revisit": "Source pixel lies inside observed region; transformed stage XY is tied to raw hash, transform and coordinate frame. Manual100x change requires fresh objective calibration before any later motion."
+  },
+  "viewer": {
+    "status": "status.json",
+    "shortlist": "catalog.json rows: top1000 by rank, counts cover all committed results",
+    "all_proposals": "ledger.json maps field to fields/.../field.json containing every retained region and explicit unassessable outcomes",
+    "masks": "Per-field masks.npz preserves instance/parent labels, class map, compatible/unknown domain and background/saturation controls",
+    "previews": "Existing RUN-root-relative chipNNN/tiles/tile_NNNNNN.jpg; no copied image"
+  },
+  "validation": {
+    "command": "Latest: python -m pytest tests/test_graphene_watcher.py -q --basetemp=data/gwt06. Earlier: watcher plus tests/test_material_profiles.py at gwt04.",
+    "latest_watcher_passed": 11,
+    "latest_seconds": 2.38,
+    "existing_material_profile_tests_passed": 10,
+    "coverage": "Synthetic raw pipeline, real default model construction, exact index regression, committed-only input, changed geometry/request rejection, retained unknown/background, source-bound coordinates, idempotent resume, coordinate-frame pinning, independent STOP, low-RAM yield, cooperative timeout outcome",
+    "live_validation": false
+  }
+}

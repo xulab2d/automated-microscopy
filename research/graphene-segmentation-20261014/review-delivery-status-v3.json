@@ -1,0 +1,15 @@
+{
+  "state": "running",
+  "pid": 24020,
+  "completed_fields": 200,
+  "refined_regions": 11990,
+  "failed_fields": 0,
+  "estimated_remaining_seconds": 1227.8873956039622,
+  "memory": {
+    "rss_bytes": 168742912,
+    "process_peak_rss_bytes": 286494720,
+    "private_bytes": 147279872,
+    "available_host_bytes": 3208671232,
+    "measurement": "Windows GetProcessMemoryInfo; process peak is cumulative"
+  }
+}

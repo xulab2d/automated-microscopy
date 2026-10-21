@@ -1,0 +1,7 @@
+{
+  "acquisition_authorized": false,
+  "reason": "User instructed no scan for now and is moving the chips away for the day.",
+  "recorded_date_local": "2026-10-09",
+  "allowed_work": "Offline analysis, portable viewer, code improvements, and transfer to the specified shared Google Drive.",
+  "next_acquisition_requires": "New user start instruction and fresh verification of chip placement; historical XY plans are invalid for moved chips."
+}

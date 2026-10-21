@@ -1,0 +1,201 @@
+{
+  "regions": [
+    {
+      "tile_id": "tile_000069",
+      "id": "f-747c06935c43d9",
+      "annulus_method": "independent raw RGB: 1-7um, all saved instances excluded, recorded SUBSTRATE labels required; no color closeness-to-zero filter",
+      "annulus_pixels": 61095,
+      "local_substrate_rgb": [
+        1470.0,
+        1764.0,
+        1344.0
+      ],
+      "raw_local_mean_contrast_rgb": [
+        0.08782783959931907,
+        0.13645631420313298,
+        0.38085382285676256
+      ],
+      "raw_local_median_contrast_rgb": [
+        0.0707482993197279,
+        0.14512471655328799,
+        0.4099702380952381
+      ],
+      "patch_rgb_percentiles_10_50_90": [
+        [
+          -0.22027777777777777,
+          -0.05761526832955405,
+          0.16007205513784462
+        ],
+        [
+          0.05933214555663535,
+          0.14263668430335097,
+          0.3985260770975057
+        ],
+        [
+          0.4336545729402876,
+          0.35837270093222473,
+          0.5735015707671959
+        ]
+      ],
+      "patch_std_rgb": [
+        0.24259139116556405,
+        0.16763329430138307,
+        0.15635505122656268
+      ],
+      "spatial_patches": 1160,
+      "patch_fraction_in_directional_search_cone": 0.2525862068965517,
+      "directional_fraction_is_descriptive_not_a_new_threshold": true
+    },
+    {
+      "tile_id": "tile_000111",
+      "id": "f-cbd1e4fc5d3302",
+      "annulus_method": "independent raw RGB: 1-7um, all saved instances excluded, recorded SUBSTRATE labels required; no color closeness-to-zero filter",
+      "annulus_pixels": 17018,
+      "local_substrate_rgb": [
+        1476.0,
+        1709.0,
+        1293.0
+      ],
+      "raw_local_mean_contrast_rgb": [
+        0.37876143223681064,
+        0.4011366319917328,
+        0.4025042083033483
+      ],
+      "raw_local_median_contrast_rgb": [
+        0.36585365853658536,
+        0.4321240491515506,
+        0.3866976024748647
+      ],
+      "patch_rgb_percentiles_10_50_90": [
+        [
+          0.14061345158906138,
+          0.08817372082439372,
+          0.14761574390003487
+        ],
+        [
+          0.353319783197832,
+          0.40576035368311564,
+          0.3655366503394345
+        ],
+        [
+          0.6216501053899427,
+          0.6640302971198232,
+          0.6869897739967347
+        ]
+      ],
+      "patch_std_rgb": [
+        0.17768491135849118,
+        0.2245591431193034,
+        0.2019241636062526
+      ],
+      "spatial_patches": 213,
+      "patch_fraction_in_directional_search_cone": 0.1784037558685446,
+      "directional_fraction_is_descriptive_not_a_new_threshold": true
+    },
+    {
+      "tile_id": "tile_000107",
+      "id": "f-6a923fecfda7c0",
+      "annulus_method": "independent raw RGB: 1-7um, all saved instances excluded, recorded SUBSTRATE labels required; no color closeness-to-zero filter",
+      "annulus_pixels": 13310,
+      "local_substrate_rgb": [
+        1472.0,
+        1710.0,
+        1296.0
+      ],
+      "raw_local_mean_contrast_rgb": [
+        0.36837881858377436,
+        0.40943764135557126,
+        0.3570735604633911
+      ],
+      "raw_local_median_contrast_rgb": [
+        0.359375,
+        0.391812865497076,
+        0.3449074074074074
+      ],
+      "patch_rgb_percentiles_10_50_90": [
+        [
+          0.18733865489130433,
+          0.14634468524251806,
+          0.17391332304526752
+        ],
+        [
+          0.33228600543478265,
+          0.3530864197530864,
+          0.3200445816186557
+        ],
+        [
+          0.556604770531401,
+          0.6789148797920727,
+          0.5613554526748971
+        ]
+      ],
+      "patch_std_rgb": [
+        0.1398477474025776,
+        0.20584230091989866,
+        0.1438667866151343
+      ],
+      "spatial_patches": 98,
+      "patch_fraction_in_directional_search_cone": 0.25510204081632654,
+      "directional_fraction_is_descriptive_not_a_new_threshold": true
+    },
+    {
+      "tile_id": "tile_000070",
+      "id": "f-ad5a0b9feb5bcf",
+      "annulus_method": "independent raw RGB: 1-7um, all saved instances excluded, recorded SUBSTRATE labels required; no color closeness-to-zero filter",
+      "annulus_pixels": 50259,
+      "local_substrate_rgb": [
+        1453.0,
+        1695.0,
+        1271.0
+      ],
+      "raw_local_mean_contrast_rgb": [
+        0.06127079461812915,
+        0.10160684859898572,
+        0.29733826927581686
+      ],
+      "raw_local_median_contrast_rgb": [
+        0.03785271851342051,
+        0.09085545722713864,
+        0.3210070810385523
+      ],
+      "patch_rgb_percentiles_10_50_90": [
+        [
+          -0.2037088017129311,
+          -0.04550966896099638,
+          0.03349068974560713
+        ],
+        [
+          0.02622925747495603,
+          0.09478859390363817,
+          0.3249847014599179
+        ],
+        [
+          0.38846447962070824,
+          0.3111406096361852,
+          0.5366115919223707
+        ]
+      ],
+      "patch_std_rgb": [
+        0.21936475209541065,
+        0.15597965216269175,
+        0.19128312368769282
+      ],
+      "spatial_patches": 1565,
+      "patch_fraction_in_directional_search_cone": 0.1769968051118211,
+      "directional_fraction_is_descriptive_not_a_new_threshold": true
+    }
+  ],
+  "overlap": {
+    "tiles": [
+      "tile_000069",
+      "tile_000070"
+    ],
+    "translation_pixels": [
+      1914.1676797228345,
+      -87.05347742056402
+    ],
+    "first_mask_fraction_covered_by_projected_second": 0.8189143248195324,
+    "second_projected_visible_mask_fraction_covered_by_first": 0.6275969411923936,
+    "interpretation": "Shared physical feature verified by stage-coordinate overlap, not only visual similarity."
+  }
+}

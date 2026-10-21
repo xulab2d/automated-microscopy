@@ -1,0 +1,55 @@
+{
+  "fields": [
+    {
+      "tile": "tile_000215",
+      "regions_identical": true,
+      "masks_byte_identical": true,
+      "region_count": 37
+    },
+    {
+      "tile": "tile_000269",
+      "regions_identical": true,
+      "masks_byte_identical": true,
+      "region_count": 25
+    },
+    {
+      "tile": "tile_000457",
+      "regions_identical": true,
+      "masks_byte_identical": true,
+      "region_count": 41
+    },
+    {
+      "tile": "tile_000547",
+      "regions_identical": true,
+      "masks_byte_identical": true,
+      "region_count": 59
+    },
+    {
+      "tile": "tile_000627",
+      "regions_identical": true,
+      "masks_byte_identical": true,
+      "region_count": 69
+    },
+    {
+      "tile": "tile_000635",
+      "regions_identical": true,
+      "masks_byte_identical": true,
+      "region_count": 104
+    },
+    {
+      "tile": "tile_000639",
+      "regions_identical": true,
+      "masks_byte_identical": true,
+      "region_count": 23
+    },
+    {
+      "tile": "tile_000660",
+      "regions_identical": true,
+      "masks_byte_identical": true,
+      "region_count": 68
+    }
+  ],
+  "serial_seconds": 11.766,
+  "parallel_seconds": 8.469,
+  "source": "Separate physical cores0and2, two bounded workers; exact same fieldmath and diagnostic/contour policy."
+}

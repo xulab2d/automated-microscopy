@@ -1,0 +1,180 @@
+{
+  "success": false,
+  "z_um": 170.10600000000002,
+  "score": 0.00017,
+  "prominence": 0.0,
+  "reason": "No resolved focus bracket within the exploratory image budget.",
+  "samples": [
+    {
+      "z_um": 100,
+      "requested_z_um": 100.0,
+      "phase": "initial",
+      "score": 0.00017,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 100,
+      "requested_z_um": 100.0,
+      "phase": "initial_repeat",
+      "score": 0.00017,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 90.078,
+      "requested_z_um": 90.0,
+      "phase": "direction_probe",
+      "score": 0.00017,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 110.078,
+      "requested_z_um": 110.0,
+      "phase": "direction_probe",
+      "score": 0.00017,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 80.078,
+      "requested_z_um": 80.0,
+      "phase": "direction_probe",
+      "score": 0.00017,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 120.078,
+      "requested_z_um": 120.0,
+      "phase": "direction_probe",
+      "score": 0.00017,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 0.314,
+      "requested_z_um": 0.236,
+      "phase": "bounded_gap_fallback",
+      "score": 0.00017,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 199.842,
+      "requested_z_um": 199.764,
+      "phase": "bounded_gap_fallback",
+      "score": 0.00017,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 40.274,
+      "requested_z_um": 40.196,
+      "phase": "bounded_gap_fallback",
+      "score": 0.00017,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 160.038,
+      "requested_z_um": 159.96,
+      "phase": "bounded_gap_fallback",
+      "score": 0.00017,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 140.136,
+      "requested_z_um": 140.058,
+      "phase": "bounded_gap_fallback",
+      "score": 0.00017,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 20.372,
+      "requested_z_um": 20.294,
+      "phase": "bounded_gap_fallback",
+      "score": 0.00017,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 60.254000000000005,
+      "requested_z_um": 60.176,
+      "phase": "bounded_gap_fallback",
+      "score": 0.00017,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 180.018,
+      "requested_z_um": 179.94,
+      "phase": "bounded_gap_fallback",
+      "score": 0.00017,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 10.421,
+      "requested_z_um": 10.343,
+      "phase": "bounded_gap_fallback",
+      "score": 0.00017,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 130.185,
+      "requested_z_um": 130.107,
+      "phase": "bounded_gap_fallback",
+      "score": 0.00017,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 50.342000000000006,
+      "requested_z_um": 50.264,
+      "phase": "bounded_gap_fallback",
+      "score": 0.00017,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 170.10600000000002,
+      "requested_z_um": 170.02800000000002,
+      "phase": "bounded_gap_fallback",
+      "score": 0.00017,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    }
+  ],
+  "outcome": "budget_exhausted",
+  "budget": {
+    "max_seconds": 180.0,
+    "max_captures": 48,
+    "captures_started": 18,
+    "elapsed_seconds": 0.09299999999348074,
+    "completed_actions": 183,
+    "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "kind": "conditional_material_optics",
+  "profile_id": "hbn-sio2-285nm-literature-v1",
+  "material": "hBN",
+  "contrast_convention": "(substrate-flake)/substrate",
+  "layer_spacing_nm": 0.333,
+  "valid_wavelength_nm": [
+    400,
+    800
+  ],
+  "substrate": {
+    "material": "SiO2/Si",
+    "nominal_oxide_nm": 285,
+    "oxide_thickness_measured": false,
+    "silica_source": "https://doi.org/10.1364/JOSA.55.001205",
+    "silica_model": "Malitson fused silica; approximate thermal oxide"
+  },
+  "optical_constants": {
+    "n": 2.2,
+    "k": 0.0,
+    "convention": "positive imaginary index for exp(-i omega t)",
+    "source": "https://arxiv.org/abs/1008.2868",
+    "publication": "https://doi.org/10.1002/smll.201001628",
+    "regime": "published constant-index approximation; no measured local material calibration",
+    "layer_spacing_status": "conventional structural spacing; not an AFM apparent height"
+  },
+  "silicon_data": {
+    "path": "data/Si_Aspnes_nm_n_k.txt",
+    "sha256": "e751386cde891835f4c83da624c0a413cd3966719d851f36b3dbe8dd826ab6bf",
+    "source": "https://doi.org/10.1103/PhysRevB.27.985",
+    "transcription": "Existing hash-pinned Aspnes silicon table; CC0 refractiveindex.info transcription"
+  },
+  "rgb_response": null,
+  "calibration_status": "requires_optical_context_or_local_labeled_calibration",
+  "layer_assignment_allowed": false,
+  "caveats": [
+    "Oxide thickness is provisional until the actual graphene/hBN wafer is specified.",
+    "Spectral weights must describe illumination times camera response; white balance alone is insufficient.",
+    "Raw linear unclipped dark-corrected contrast is required for quantitative comparison.",
+    "Optical constants are published approximations, not monolayer-specific measured constants.",
+    "Finite-NA isotropic extension neglects tensor anisotropy and imaging diffraction/defocus.",
+    "Water, residue, gaps and other transparent films can overlap material contrast.",
+    "Physical thickness and layer number remain conditional; obtain Raman/AFM or confirmed local reference labels.",
+    "On approximately290nm oxide hBN contrast reverses sign near530nm; RGB/white-light cancellation is possible. The small contamination contrast can rival a monolayer."
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "id": "zeiss-axio-20x",
+  "endpoint": "localhost:5002",
+  "bindings_dir": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\generated",
+  "gateway_dir": "C:\\ProgramData\\Carl Zeiss\\ZenApiGateway",
+  "objective_profile": "objective-20x-quantitative.json",
+  "note": "Installation configuration only. No specimen coordinates or focus heights. The encoded objective is manually selected and verified at each start."
+}

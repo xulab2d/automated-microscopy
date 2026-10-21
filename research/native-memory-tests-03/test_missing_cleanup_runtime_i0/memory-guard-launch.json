@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "run_id": "test_missing_cleanup_runtime_i0",
+  "worker_pid": 23832,
+  "state": "unavailable",
+  "error": "Native run-scoped cleanup implementation is unavailable"
+}

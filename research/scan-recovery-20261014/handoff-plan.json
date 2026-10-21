@@ -1,0 +1,12 @@
+{
+  "run_id": "scan-20261014-090615-88fb3166",
+  "donor": "scan-20261013-221727-131d9ced",
+  "deadline_at": 1792038022.16248,
+  "planned_at": 1791994152.6910307,
+  "pinned_files": 6426,
+  "preflight_ok": true,
+  "blockers": [],
+  "completed_chip001_tiles": 999,
+  "raw_tiffs_hash_verified": 999,
+  "validation": "138 combined tests passed; real 999-field coverage replay exact"
+}

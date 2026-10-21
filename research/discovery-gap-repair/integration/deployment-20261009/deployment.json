@@ -1,0 +1,34 @@
+{
+  "checked_at": "2026-10-09T09:38:53.419696+00:00",
+  "acquisition_exited": true,
+  "filesystem_lease_available": true,
+  "hardware_connected": false,
+  "restart_authorized": false,
+  "baseline_sha256": {
+    "flakefinder/sparse_edges.py": "a87c6fa01fc2b1bcbff0dc7fbc0728391c621763f758ad39288b6e1c079904ac",
+    "flakefinder/sparse_acquisition.py": "9949bce2f33e058ca0f96f200b3ad0c1f8203ec40651f375415acd3b41c994cd",
+    "flakefinder/chip_campaign.py": "3ded97403576a73e4ef982c4b85c70e5cfc32e5da066c534e3035af2a0f91c29",
+    "scripts/scan_chip_campaign.py": "4664f1eb56fad37e37299a5beeacbfa428bd565ee1b16059b264d59e191ab600",
+    "scripts/discover_chip_boundaries.py": "920c6a4c6e17567b50480dcd030b995e9dd25983cc2ddc49632a157b740ea4db",
+    "tests/test_sparse_acquisition.py": "63424d2a3c6415b0abe3ac27d596a8200ab790db89119f4fc2e8a2edcb480ab4",
+    "tests/test_sparse_edge_focus.py": "f8edac956a5096cf6cafbd2332ced482ec447c51c6abc0163502fb5addfe5cad",
+    "tests/test_chip_campaign_continuation.py": "a5781d7cb6248548bc3ec8eb11b34074081032c8df6d40476c71b302956bbaad"
+  },
+  "patch_sha256": "4c68e0aa0ce8570a573595e820ea2df66c2277e88957c78b6f4e30404e716880",
+  "state": "installed_offline",
+  "all_normalized_sources_match_reviewed_patch": true,
+  "deployed_sha256": {
+    "flakefinder/sparse_edges.py": "2349d03f2d34e06c02c47175d9f6411c875fc67f3fdea90d5d7e6aa9b13eb760",
+    "flakefinder/sparse_acquisition.py": "137a2794502357703289390339a57597321de6d9f1a329fbd9f4200357f01a2b",
+    "flakefinder/chip_campaign.py": "92f05bb1ea882173124ea17c16a9b4c84977e96e5ea441a8a80806ccec7f2c85",
+    "scripts/scan_chip_campaign.py": "a6c311b15cafdfb70f292722002b07ef191ae484c8e97f52a8790762f10d2cbe",
+    "scripts/discover_chip_boundaries.py": "3153335a1f86aac45ac826b6b2b8701138fc5f76cb8fec096dc43420d52164db",
+    "tests/test_sparse_acquisition.py": "b3b905d826d865422c20fdf64a85240ad87a4f7b791721e4d83a0d93b74b15fa",
+    "tests/test_sparse_edge_focus.py": "bd33deeb3c5ef82b057dac343a0c7fcf8b2c3f186e11abc41a5e9535f30ee803",
+    "tests/test_chip_campaign_continuation.py": "5d241ba201c68f09fde0037bdc5532bcca963b2e211c60340104170dbcf6f675",
+    "flakefinder/photometric_edges.py": "fa9f296ab7c812678971ee197f7ece7d21e3ce931f10bc0c3adf488a63d3112b",
+    "tests/sparse_profile_fixture.py": "a282aff64b52a3c5d614c7647173252ecb41b74ad84ba1f2373ad3569bd194e1",
+    "tests/test_sparse_cli_profile.py": "afc8dcdbdb4a814527a92664720219c7dc14cb5f6463f55070493f5b59f9f35b"
+  },
+  "acquisition_restarted": false
+}

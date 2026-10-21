@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "at": 1791563213.963557,
+  "coordinate_frame_id": "21dc3cbb-8f50-4097-ab27-091bf6b35113",
+  "reason": "User is removing chips for the day. Historical XY queue must not execute without new placement/discovery verification.",
+  "scan_authorized_now": false
+}

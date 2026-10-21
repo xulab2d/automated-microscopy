@@ -1,0 +1,86 @@
+{
+  "image": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000139.tiff",
+  "shape": [
+    2056,
+    2464,
+    3
+  ],
+  "dtype": "uint16",
+  "opencv": "5.0.0",
+  "records": [
+    {
+      "codec": "LZW",
+      "flag": 5,
+      "samples": [
+        {
+          "encode_s": 0.3480085999908624,
+          "decode_s": 0.10375939999357797,
+          "bytes": 22356526
+        },
+        {
+          "encode_s": 0.3264000000053784,
+          "decode_s": 0.08986930000537541,
+          "bytes": 22356526
+        },
+        {
+          "encode_s": 0.29375579999759793,
+          "decode_s": 0.09152329999778885,
+          "bytes": 22356526
+        }
+      ],
+      "lossless_verified": true
+    },
+    {
+      "codec": "DEFLATE",
+      "flag": 32946,
+      "samples": [
+        {
+          "encode_s": 0.8373534999991534,
+          "decode_s": 0.14366440000594594,
+          "bytes": 20429668
+        },
+        {
+          "encode_s": 1.0785649000026751,
+          "decode_s": 0.19486180000239983,
+          "bytes": 20429668
+        },
+        {
+          "encode_s": 1.2005662000010489,
+          "decode_s": 0.22645469999406487,
+          "bytes": 20429668
+        }
+      ],
+      "lossless_verified": true
+    },
+    {
+      "codec": "ZSTD",
+      "flag": 50000,
+      "samples": [],
+      "error": "TIFF encoding failed"
+    },
+    {
+      "codec": "NONE",
+      "flag": 1,
+      "samples": [
+        {
+          "encode_s": 0.05557320000662003,
+          "decode_s": 0.024640100004035048,
+          "bytes": 30408398
+        },
+        {
+          "encode_s": 0.05800210000597872,
+          "decode_s": 0.021925799999735318,
+          "bytes": 30408398
+        },
+        {
+          "encode_s": 0.05232830000750255,
+          "decode_s": 0.024672100000316277,
+          "bytes": 30408398
+        }
+      ],
+      "lossless_verified": true
+    }
+  ],
+  "hardware_used": false,
+  "qualification": "In-memory saved-frame codec benchmark; does not include disk, Drive upload or camera time."
+}

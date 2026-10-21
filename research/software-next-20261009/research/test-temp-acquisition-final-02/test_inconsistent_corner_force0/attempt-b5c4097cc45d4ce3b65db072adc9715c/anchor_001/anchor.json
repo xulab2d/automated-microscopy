@@ -1,0 +1,14 @@
+{
+  "position": {
+    "x": 100.0,
+    "y": 0.0,
+    "z": 11.0
+  },
+  "pixel_size_um": [
+    0.17,
+    0.17
+  ],
+  "sequence": 0,
+  "acquired_at": 1791585135.9128766,
+  "metadata": {}
+}

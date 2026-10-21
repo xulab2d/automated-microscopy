@@ -1,0 +1,63 @@
+SCAN CONSOLE — station setup and operation
+
+Open http://127.0.0.1:8770/scan on the microscope computer. Review images opens
+the existing analysis gallery. The scan console is served only on loopback;
+mutating requests require the same-origin session token.
+
+1. Place the chips, engage the manual 20x objective, roughly focus on exposed
+   substrate, and check the requested stage/focus travel is clear.
+2. Enter a sample name, material and oxide thickness. Search width and height
+   define a rectangle centered on the fresh stage readback at Start, not on any
+   previous specimen coordinates. The current discovery model assumes the
+   holder is darker than substrate in all three color channels.
+3. Set focus bounds relative to the starting Z. The maximum chip attempts is
+   a discovery budget; it is not a guarantee that this many distinct chips
+   will be found. Maximum raster images applies to an individual chip plan.
+4. Check setup and save a draft. A stationary microscope check applies the
+   selected illumination/exposure and captures a reference without XYZ motion.
+   Optional exposure adjustment uses at most three frames then locks exposure;
+   the measured 20x white-balance coefficients remain fixed. After the check,
+   save a new draft for the full scan. A uniform reference validates color and
+   signal, not focus; acquisition qualifies focus using measured chip edges.
+5. Start scan explicitly. If an earlier operator hold is displayed, authorize
+   this run only. The hold files stay intact, and changing them invalidates
+   that authorization. No run or STOP flag is silently resumed or cleared.
+6. Watch the saved-image preview, stage map, focus curves and counts. These are
+   persisted observations, not continuous video or live readback. Stop requests
+   cooperative cancellation; a vendor call or cleanup may take time to return.
+
+Resource behavior
+The acquisition process owns one host-wide hardware lease, checks optics before
+motion, bounds move steps and focus retries, and has absolute-time, progress,
+RAM and disk guards. Low headroom causes a recorded stop, not deletion of raw
+images. Controller/resource checks reduce failure risk but cannot guarantee
+vendor responsiveness or control memory allocated by unrelated applications.
+The worker never automatically restarts an ambiguous hardware failure.
+
+Storage
+Run folders are unique under the marked shared Drive project, data/scan-... .
+They retain the request, source hashes, camera settings, readbacks, manifest,
+raw frames, previews and analysis evidence. A Drive write is not proof that
+cloud synchronization is complete; Drive Desktop also uses local upload cache.
+Vendor duplicates are retired only after a verified scientific-frame or
+observation receipt. Legacy unacknowledged exports require explicit archival.
+
+Graphene90nm analysis
+The incremental worker consumes only manifest-committed, hash-verified tiles.
+It retains permissive parent features and independent terrace/sieve evidence.
+The optical model is conditional on manufacturer response and an unmeasured
+illumination profile. Matches are candidates, not confirmed graphene or layer
+counts. The analysis worker yields to acquisition when RAM is insufficient.
+
+100x handoff
+The objective turret is encoded and manual. Switching objectives stops a20x
+run at its next optics check. A measured100x scale, parcentric offset and fresh
+focus verification are required before automatic candidate revisits. Moving
+the holder or re-zeroing the stage invalidates saved specimen coordinates.
+
+Validation on2026-10-09
+Controller/worker focused tests use fake hardware;17passed. A live stationary
+20x check saved two frames, selected401.774ms at90.02% lamp, and accepted the
+reference with0.997 substrate-color support and5.92e-7 clipped-pixel fraction.
+That check exercised no stage movement. Full discovery/raster qualification
+and100x calibration must be reported separately from these results.

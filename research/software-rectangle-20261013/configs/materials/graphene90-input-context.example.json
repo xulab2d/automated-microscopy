@@ -1,0 +1,12 @@
+{
+  "material": "graphene",
+  "oxide_nm": 90.0,
+  "optical_profile_id": "EDIT_TO_YOUR_FIXED_ACQUISITION_PROFILE",
+  "radiometry": {
+    "raw_linear_status": "assumed_unverified",
+    "response_assumption": "Unmeasured effective lamp/camera response; use locally labeled fit or explicit conditional response, not illustrative auto-calibration.",
+    "dark_offset_status": "unmeasured_explicit_zero",
+    "dark_offset_rgb": [0.0, 0.0, 0.0]
+  },
+  "qualification": "Editable template, not a measured acquisition calibration. Oxide 90 nm is the user-confirmed upcoming graphene substrate."
+}

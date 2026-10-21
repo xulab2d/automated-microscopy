@@ -1,0 +1,93 @@
+[
+  {
+    "cache": true,
+    "seconds": 35.47362420009449,
+    "result": {
+      "pending_jobs": 3,
+      "pending_bytes": 92566816,
+      "maximum_jobs": 4,
+      "maximum_bytes": 536870912,
+      "reviewed_retained_jobs": 4
+    },
+    "locked_files": 55,
+    "text_bytes": 448612
+  },
+  {
+    "cache": false,
+    "seconds": 1.471119900001213,
+    "result": {
+      "pending_jobs": 3,
+      "pending_bytes": 92566816,
+      "maximum_jobs": 4,
+      "maximum_bytes": 536870912,
+      "reviewed_retained_jobs": 4
+    },
+    "locked_files": 55,
+    "text_bytes": 448612
+  },
+  {
+    "cache": true,
+    "seconds": 1.2462073999922723,
+    "result": {
+      "pending_jobs": 3,
+      "pending_bytes": 92566816,
+      "maximum_jobs": 4,
+      "maximum_bytes": 536870912,
+      "reviewed_retained_jobs": 4
+    },
+    "locked_files": 55,
+    "text_bytes": 448612
+  },
+  {
+    "cache": false,
+    "seconds": 1.626780900056474,
+    "result": {
+      "pending_jobs": 3,
+      "pending_bytes": 92566816,
+      "maximum_jobs": 4,
+      "maximum_bytes": 536870912,
+      "reviewed_retained_jobs": 4
+    },
+    "locked_files": 55,
+    "text_bytes": 448612
+  },
+  {
+    "cache": true,
+    "seconds": 1.590582299977541,
+    "result": {
+      "pending_jobs": 3,
+      "pending_bytes": 92566816,
+      "maximum_jobs": 4,
+      "maximum_bytes": 536870912,
+      "reviewed_retained_jobs": 4
+    },
+    "locked_files": 55,
+    "text_bytes": 448612
+  },
+  {
+    "cache": false,
+    "seconds": 2.2244089999003336,
+    "result": {
+      "pending_jobs": 3,
+      "pending_bytes": 92566816,
+      "maximum_jobs": 4,
+      "maximum_bytes": 536870912,
+      "reviewed_retained_jobs": 4
+    },
+    "locked_files": 55,
+    "text_bytes": 448612
+  },
+  {
+    "cache": true,
+    "seconds": 0.8572120000608265,
+    "result": {
+      "pending_jobs": 3,
+      "pending_bytes": 92566816,
+      "maximum_jobs": 4,
+      "maximum_bytes": 536870912,
+      "reviewed_retained_jobs": 4
+    },
+    "locked_files": 55,
+    "text_bytes": 448612
+  }
+]

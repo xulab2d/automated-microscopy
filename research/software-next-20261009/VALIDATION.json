@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-09",
+  "mode": "offline_regressions_and_live_stationary_reference",
+  "hardware_clients_constructed": true,
+  "affected_regression_tests": {
+    "passed": 94,
+    "failed": 0,
+    "seconds": 48.63
+  },
+  "separate_transfer_regression_tests": {
+    "passed": 10,
+    "failed": 0
+  },
+  "frozen_original_source_files_checked": 65,
+  "frozen_original_source_changed": [],
+  "ui": {
+    "images": 1386,
+    "chips": 3,
+    "tile139_source_regions": 41,
+    "known_tape_import_revision": 1,
+    "browser_verified": true
+  },
+  "catalog_seconds": {
+    "cold": 1.5673,
+    "warm": 0.1034,
+    "lazy_field": 0.4436
+  },
+  "material_accuracy": "Synthetic/negative control only; no real graphene or hBN positive validation",
+  "camera_overlap": "Implemented but disabled pending stationary hardware acceptance",
+  "transfer_fix": "Short UUID staging names avoid DriveFS MAX_PATH overflow; copy hashes and exclusive final publish retained",
+  "candidate_resume_update": {
+    "coordinator_and_catalog_tests_passed": 10,
+    "candidate_and_label_server_tests_passed": 10,
+    "javascript_syntax": "passed",
+    "browser_verified": [
+      "gallery with64potential proposals",
+      "separate 1exacthumanexclusion",
+      "largeoutlineview",
+      "next/previous",
+      "preservedcommittedcount805andseparateverification601"
+    ],
+    "original_completed_fields_reused": 798,
+    "scientific_worker_changed": false,
+    "running_coordinator_sha256": "9f613eab9c4f07278a023648fb0c1c17fd62471f6cca9665d6d84256207bd10d",
+    "hardware_accessed": false
+  },
+  "rejected_gallery_update": {
+    "api_tests_passed": 8,
+    "api_test_seconds": 4.55,
+    "javascript_syntax": "passed",
+    "scientific_analysis_changed": false,
+    "cold_page_seconds": 10.996,
+    "warm_page_seconds": 1.491,
+    "indexed_assessed_regions_in_benchmark": 11938,
+    "source_hash_warnings_in_benchmark": 0,
+    "hardware_accessed": false,
+    "browser_verified": [
+      "rejected gallery with10637regions",
+      "color-failure filter with769regions",
+      "48objectpages",
+      "crop rendering and category/reason badges"
+    ]
+  },
+  "contrast_gallery_update": {
+    "api_tests_passed": 11,
+    "api_test_seconds": 6.12,
+    "scientific_analysis_changed": false,
+    "hardware_accessed": false,
+    "cold_plot_seconds": 12.66,
+    "warm_brush_seconds": 1.47,
+    "assessed_regions": 14096,
+    "plotted_regions": 13509,
+    "missing_rgb_regions": 587,
+    "browser_verified": [
+      "real pointer rectangle selected 594 of 2069 bulk/clipped objects",
+      "all matching objects plotted before pagination",
+      "clear selection",
+      "full plot remains visible while brushing"
+    ]
+  },
+  "scan_console_update": {
+    "controller_and_fake_worker_tests_passed": 17,
+    "stationary_reference_run": "scan-20261009-192901-48698bd2",
+    "stationary_reference_state": "prepared",
+    "objective": 20,
+    "exposure_ms": 401.774,
+    "stage_motion_exercised": false,
+    "full_scan_qualification": "pending",
+    "manual_100x_handoff": "not_yet_calibrated"
+  },
+  "graphene_incremental_update": {
+    "watcher_tests_passed": 11,
+    "material_profile_tests_passed": 10,
+    "run_launched": false,
+    "minimum_available_ram_gib": 4,
+    "material_accuracy": "No real graphene positive validation yet; conditional optical proposals only"
+  },
+  "graphene_review_update": {
+    "suite_server_and_reader_tests_passed": 15,
+    "html_javascript_syntax": "passed",
+    "source": "All committed field ledger shards; not limited to top-1000 catalog",
+    "scan_motion_started": false
+  },
+  "graphene_interior_update": {
+    "material_and_patch_tests_passed": 14,
+    "watcher_and_interior_tests_passed": 15,
+    "unique_tests": 25,
+    "scientific_source_frames_changed": false,
+    "scan_motion_performed": false,
+    "real_graphene_accuracy_validated": false,
+    "peak_memory_benchmark": false,
+    "acquisition_source_modified": false
+  }
+}

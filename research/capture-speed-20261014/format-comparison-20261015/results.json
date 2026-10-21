@@ -1,0 +1,181 @@
+{
+  "source": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-221727-131d9ced\\chip001\\tiles\\tile_000215.tiff",
+  "shape": [
+    2056,
+    2464,
+    3
+  ],
+  "dtype": "uint16",
+  "source_white_for_jpeg": 4095,
+  "jpeg_conversion": "linear uint16 to uint8 using source maximum; quality95;4:4:4; timing excludes conversion; not a qualified scientific replacement",
+  "scope": "Local image encode/fsync/readback only; no metadata, preview, Drive transfer or capture;3 trials; no source modification or hardware",
+  "summary": {
+    "tiff_lzw": {
+      "median_write_fsync_s": 0.4060057000024244,
+      "median_write_read_check_s": 0.5320809000404552,
+      "bytes": 20127060,
+      "pixel_exact": true
+    },
+    "tiff_uncompressed": {
+      "median_write_fsync_s": 0.11565320007503033,
+      "median_write_read_check_s": 0.15901830000802875,
+      "bytes": 30408398,
+      "pixel_exact": true
+    },
+    "png_fast": {
+      "median_write_fsync_s": 0.7265850000549108,
+      "median_write_read_check_s": 0.9403793000383303,
+      "bytes": 18451919,
+      "pixel_exact": true
+    },
+    "png_default": {
+      "median_write_fsync_s": 1.2140291000250727,
+      "median_write_read_check_s": 1.5359733999939635,
+      "bytes": 18031064,
+      "pixel_exact": true
+    },
+    "jpeg_q95": {
+      "median_write_fsync_s": 0.03290190000552684,
+      "median_write_read_check_s": 0.10297330003231764,
+      "bytes": 1301378,
+      "pixel_exact": false
+    }
+  },
+  "trials": [
+    {
+      "format": "tiff_lzw",
+      "trial": 0,
+      "write_fsync_s": 0.334684900008142,
+      "write_read_check_s": 0.447598599945195,
+      "bytes": 20127060,
+      "pixel_exact": true,
+      "mean_abs_error_from_encoding_input": 0.0
+    },
+    {
+      "format": "tiff_uncompressed",
+      "trial": 0,
+      "write_fsync_s": 0.12131960003171116,
+      "write_read_check_s": 0.169188900035806,
+      "bytes": 30408398,
+      "pixel_exact": true,
+      "mean_abs_error_from_encoding_input": 0.0
+    },
+    {
+      "format": "png_fast",
+      "trial": 0,
+      "write_fsync_s": 0.6857264999998733,
+      "write_read_check_s": 0.8886142000555992,
+      "bytes": 18451919,
+      "pixel_exact": true,
+      "mean_abs_error_from_encoding_input": 0.0
+    },
+    {
+      "format": "png_default",
+      "trial": 0,
+      "write_fsync_s": 0.9328387998975813,
+      "write_read_check_s": 1.1448546999599785,
+      "bytes": 18031064,
+      "pixel_exact": true,
+      "mean_abs_error_from_encoding_input": 0.0
+    },
+    {
+      "format": "jpeg_q95",
+      "trial": 0,
+      "write_fsync_s": 0.029546899953857064,
+      "write_read_check_s": 0.06590699998196214,
+      "bytes": 1301378,
+      "pixel_exact": false,
+      "mean_abs_error_from_encoding_input": 1.0215623378753662
+    },
+    {
+      "format": "tiff_lzw",
+      "trial": 1,
+      "write_fsync_s": 0.4060057000024244,
+      "write_read_check_s": 0.5320809000404552,
+      "bytes": 20127060,
+      "pixel_exact": true,
+      "mean_abs_error_from_encoding_input": 0.0
+    },
+    {
+      "format": "tiff_uncompressed",
+      "trial": 1,
+      "write_fsync_s": 0.11565320007503033,
+      "write_read_check_s": 0.15901830000802875,
+      "bytes": 30408398,
+      "pixel_exact": true,
+      "mean_abs_error_from_encoding_input": 0.0
+    },
+    {
+      "format": "png_fast",
+      "trial": 1,
+      "write_fsync_s": 0.7265850000549108,
+      "write_read_check_s": 0.9403793000383303,
+      "bytes": 18451919,
+      "pixel_exact": true,
+      "mean_abs_error_from_encoding_input": 0.0
+    },
+    {
+      "format": "png_default",
+      "trial": 1,
+      "write_fsync_s": 1.2140291000250727,
+      "write_read_check_s": 1.5359733999939635,
+      "bytes": 18031064,
+      "pixel_exact": true,
+      "mean_abs_error_from_encoding_input": 0.0
+    },
+    {
+      "format": "jpeg_q95",
+      "trial": 1,
+      "write_fsync_s": 0.03290190000552684,
+      "write_read_check_s": 0.10297330003231764,
+      "bytes": 1301378,
+      "pixel_exact": false,
+      "mean_abs_error_from_encoding_input": 1.0215623378753662
+    },
+    {
+      "format": "tiff_lzw",
+      "trial": 2,
+      "write_fsync_s": 0.4960065999766812,
+      "write_read_check_s": 0.6472470000153407,
+      "bytes": 20127060,
+      "pixel_exact": true,
+      "mean_abs_error_from_encoding_input": 0.0
+    },
+    {
+      "format": "tiff_uncompressed",
+      "trial": 2,
+      "write_fsync_s": 0.10184170003049076,
+      "write_read_check_s": 0.15017150004860014,
+      "bytes": 30408398,
+      "pixel_exact": true,
+      "mean_abs_error_from_encoding_input": 0.0
+    },
+    {
+      "format": "png_fast",
+      "trial": 2,
+      "write_fsync_s": 1.2855637000175193,
+      "write_read_check_s": 1.619795999955386,
+      "bytes": 18451919,
+      "pixel_exact": true,
+      "mean_abs_error_from_encoding_input": 0.0
+    },
+    {
+      "format": "png_default",
+      "trial": 2,
+      "write_fsync_s": 1.8863888999912888,
+      "write_read_check_s": 2.280796300037764,
+      "bytes": 18031064,
+      "pixel_exact": true,
+      "mean_abs_error_from_encoding_input": 0.0
+    },
+    {
+      "format": "jpeg_q95",
+      "trial": 2,
+      "write_fsync_s": 0.059107799897901714,
+      "write_read_check_s": 0.11828899988904595,
+      "bytes": 1301378,
+      "pixel_exact": false,
+      "mean_abs_error_from_encoding_input": 1.0215623378753662
+    }
+  ]
+}

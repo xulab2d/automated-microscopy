@@ -1,0 +1,20 @@
+OFFLINE PROPOSAL — NOT DEPLOYED
+
+Sources: data/whole-chip-standardized-01 saved discovery/raster labels and JPEGs.
+No hardware connection, worker interruption, active batch mutation, or production source edits.
+
+1. Missing measured direction (006,007,009)
+Four cardinal rays hit three unique sides of a rotated chip. Existing lateral checks only run when an individual ray has no edge; outline fitting starts after all four rays and stops unresolved with 15-18 unused probes.
+proposed_gap_probe.py chooses the largest angular gap between measured outward normals, measures along its bisector using the existing coarse/bracket/lateral callbacks, then refits. Max three directional attempts and the original total32 geometric-frame cap remain. No rectangle prior or inferred edge is added. sparse-acquisition-gap.patch stages the integration in the existing source; it is not applied. Two focused tests pass, including the rotated off-center seed and STOP/exhausted budget.
+
+2. Separate failed edge proposal (010)
+Two lateral fields visibly contain a clean near-vertical edge. Probabilistic Hough returns no segments on slightly jagged masks. Standard Hough proposals recover93-95% substrate/99.8-100% holder side purity and258px measured span in267px-height maps. Keep existing acceptance gates; improve proposal generation instead. See standard-hough-replay.json. This fallback is diagnosed, not implemented in the staged gap patch.
+
+3. Duplicate seeds after chip002
+Both006/007 seed centers belong to the same374921-cell connected substrate component. A40um erosion rejects them because a few unknown/debris pixels lie nearby; only227873 cells remain eligible. Proposed policy: separately record already-acquired interior seeds using complete raw field coverage inside the planned polygon, without claiming a closed chip boundary. Keep exterior search and actual chip-extent validation distinct. This policy change is not in the staged patch.
+
+4. Chip002 unclosed extent
+All planned polygon cells are observed;511/511 fields complete. The northern chip tip touches the outermost capture near(-50,+5)um and unobserved area at y~15um. tile_000509 shows substrate continuing toward the border. Removing contradiction/unknown passability and replaying all labels into a350um-expanded evidence map still do not close the collar. Full chip extent is therefore genuinely unverified; a small north-tip scan extension, rather than rediscovering the same interior, is the appropriate future measurement. Extent/area beyond existing frames cannot be inferred as a measured fact.
+
+DEPLOYMENT
+Only adopt after the acquisition owner exits at a clean checkpoint, with explicit audited source transition and unchanged envelope/profile/STOP/lease checks. Do not clear STOP or restart automatically. Baseline source hash and proposed hash are in audit.json. The running campaign remains on its existing code.

@@ -1,0 +1,140 @@
+{
+  "shortlist": {
+    "counts": {
+      "shortlist": 31,
+      "uncertain": 45642,
+      "rejected": 45642,
+      "all": 45670
+    },
+    "filtered_count": 31,
+    "source_region_count": 309825,
+    "indexed_fields": 998,
+    "analysis_source": {
+      "kind": "offline_selected",
+      "analysis_relative_path": "analysis/graphene/scan-20261013-221727-131d9ced/chip001/full-chip-conditional-v1",
+      "plan_sha256": "2515992432f12ae6494c650ad03503f452e288fb05fb4187030ea1fde578174b",
+      "model_sha256": "3845f90cf159edfa9246afe030faabc0130a40151c3ef8923ff8718ae4936244",
+      "config_sha256": "54784251677b8fe51522cf140e2e056e844e2925e2cac8279a2941a7fb0813ab",
+      "chip": "chip001",
+      "version": "full-chip-conditional-v1",
+      "selection_file": "graphene-analysis-selection.json",
+      "empirical_trajectory": null
+    },
+    "ranking": "joint_evidence_v1",
+    "review_processing": {
+      "dedup_available": true,
+      "group_duplicates": true,
+      "minimum_grouped_area_um2": 25.0,
+      "refinement_available": true,
+      "refined_observations": 53689,
+      "hidden_artifacts": 140,
+      "artifact_observations": 140,
+      "hide_artifacts": true
+    },
+    "status": {
+      "state": "complete",
+      "pid": 12264,
+      "output": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\analysis\\graphene\\scan-20261013-221727-131d9ced\\chip001\\full-chip-conditional-v1",
+      "updated_at": 1792014844.4347422,
+      "no_acquisition_performed": true,
+      "cpu": {
+        "threads": 1,
+        "priority": "below_normal",
+        "windows_affinity": "one allowed logical CPU"
+      },
+      "current_field": null,
+      "finished_fields": 999,
+      "selected_fields": 999,
+      "counts": {
+        "assessed": 942,
+        "unassessable": 57,
+        "budget_exhausted": 0,
+        "invalid_source": 0,
+        "failed": 0
+      },
+      "run_id": "scan-20261013-221727-131d9ced",
+      "scan_request_sha256": "870686e9147199d8b31b10a068b43919b52432ea25bac1c9f3171ee629ceb1cf",
+      "processed_fields": 999,
+      "assessed_fields": 942,
+      "unassessable_fields": 57,
+      "failed_fields": 0,
+      "budget_exhausted_fields": 0,
+      "available_fields": 999,
+      "total_fields": 999
+    },
+    "warnings": [
+      "chip001/tile_000524: [WinError 2] The system cannot find the file specified: 'G:\\\\Shared drives\\\\Xu Lab - Microscopy and Instruments\\\\Automated Microscopy\\\\analysis\\\\graphene\\\\scan-20261013-221727-131d9ced\\\\chip001\\\\full-chip-conditional-v1\\\\fields\\\\tile_000524-ddc1d991\\\\field.json'"
+    ],
+    "fields_version": "8e5a9a47dfadb2d39db41811107f57a33bd48edc2caf58737b0bb6367adadb72",
+    "request_seconds": 0.935902199940756
+  },
+  "uncertain": {
+    "counts": {
+      "shortlist": 31,
+      "uncertain": 45642,
+      "rejected": 45642,
+      "all": 45670
+    },
+    "filtered_count": 45642,
+    "source_region_count": 309825,
+    "indexed_fields": 998,
+    "analysis_source": {
+      "kind": "offline_selected",
+      "analysis_relative_path": "analysis/graphene/scan-20261013-221727-131d9ced/chip001/full-chip-conditional-v1",
+      "plan_sha256": "2515992432f12ae6494c650ad03503f452e288fb05fb4187030ea1fde578174b",
+      "model_sha256": "3845f90cf159edfa9246afe030faabc0130a40151c3ef8923ff8718ae4936244",
+      "config_sha256": "54784251677b8fe51522cf140e2e056e844e2925e2cac8279a2941a7fb0813ab",
+      "chip": "chip001",
+      "version": "full-chip-conditional-v1",
+      "selection_file": "graphene-analysis-selection.json",
+      "empirical_trajectory": null
+    },
+    "ranking": "joint_evidence_v1",
+    "review_processing": {
+      "dedup_available": true,
+      "group_duplicates": true,
+      "minimum_grouped_area_um2": 25.0,
+      "refinement_available": true,
+      "refined_observations": 53689,
+      "hidden_artifacts": 140,
+      "artifact_observations": 140,
+      "hide_artifacts": true
+    },
+    "status": {
+      "state": "complete",
+      "pid": 12264,
+      "output": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\analysis\\graphene\\scan-20261013-221727-131d9ced\\chip001\\full-chip-conditional-v1",
+      "updated_at": 1792014844.4347422,
+      "no_acquisition_performed": true,
+      "cpu": {
+        "threads": 1,
+        "priority": "below_normal",
+        "windows_affinity": "one allowed logical CPU"
+      },
+      "current_field": null,
+      "finished_fields": 999,
+      "selected_fields": 999,
+      "counts": {
+        "assessed": 942,
+        "unassessable": 57,
+        "budget_exhausted": 0,
+        "invalid_source": 0,
+        "failed": 0
+      },
+      "run_id": "scan-20261013-221727-131d9ced",
+      "scan_request_sha256": "870686e9147199d8b31b10a068b43919b52432ea25bac1c9f3171ee629ceb1cf",
+      "processed_fields": 999,
+      "assessed_fields": 942,
+      "unassessable_fields": 57,
+      "failed_fields": 0,
+      "budget_exhausted_fields": 0,
+      "available_fields": 999,
+      "total_fields": 999
+    },
+    "warnings": [
+      "chip001/tile_000524: [WinError 2] The system cannot find the file specified: 'G:\\\\Shared drives\\\\Xu Lab - Microscopy and Instruments\\\\Automated Microscopy\\\\analysis\\\\graphene\\\\scan-20261013-221727-131d9ced\\\\chip001\\\\full-chip-conditional-v1\\\\fields\\\\tile_000524-ddc1d991\\\\field.json'"
+    ],
+    "fields_version": "8e5a9a47dfadb2d39db41811107f57a33bd48edc2caf58737b0bb6367adadb72",
+    "request_seconds": 0.8935595999937505
+  }
+}

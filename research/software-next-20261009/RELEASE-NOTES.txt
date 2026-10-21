@@ -1,0 +1,152 @@
+V7 — graphene interior contrast and analysis resource handling
+GRAPHENE INTERIOR MEASUREMENTS — 2026-10-09
+
+Integrated into software-next-20261009 analysis only. No acquisition source or
+request changed. No instrument client was constructed and no motion occurred.
+
+RGB mean, spatial-patch covariance and interior texture now use the physically
+eroded interior. Full source geometry, holes and separate components remain
+unchanged. A region with no interior remains visible with diagnostic color and
+no_blur_free_interior; it cannot qualify through that blurred color.
+
+Per-component work uses its own rectangle instead of the parent rectangle.
+Full-frame classifier and gradient scratch arrays are released before region
+statistics, and raw covariance inversion is reused. Resource floors remain
+unchanged; no full-camera peak-RAM or throughput claim is made.
+
+The offline watcher now declares pointer-sized Windows HANDLE signatures for
+setting its own below-normal priority and records a startup failure if that
+cannot be set. Analysis version is graphene-committed-terraces-v2-interior.
+
+Validation: 14 patch/material tests passed in1.59s; 15 watcher/interior tests
+passed in2.72s (25 unique tests). Earlier restricted-environment tests encountered
+Windows path/priority access errors. Long fixture paths exceeded MAX_PATH; the
+successful watcher regression used workspace/data/gi07. No scientific acquisition
+data was changed. Real graphene accuracy remains unvalidated.
+
+The pending scan still requires its already-requested travel clearance. This
+software update grants no motion authorization.
+
+
+V6 — SCAN CONSOLE AND INCREMENTAL GRAPHENE ANALYSIS
+
+New operator scan controls, scoped single-run authorization, resource/deadline
+watchdogs, bounded focus retries, fresh-coordinate discovery, saved progress
+and independent graphene90nm analysis. Live stationary20x reference accepted;
+full overnight acquisition and100x revisits are not yet qualified. See
+docs/SCAN-CONSOLE.txt. Earlier sections below describe historical releases.
+
+OFFLINE SOFTWARE RELEASE — 9 OCTOBER 2026
+
+V4 FOLLOW-UP: AUDIT REJECTED REGIONS
+Added paginated algorithm-rejected, bulk/clipped and all-assessed crop galleries,
+independent sieve-reason filters, exact human exclusion handling across all saved
+categories, and an explicit Color not measured badge. The gallery indexes only
+hash-verified committed field JSON and refreshes incrementally. Scientific masks,
+thresholds, source files and the running analysis are unchanged. Eight focused
+HTTP/API tests and JavaScript checks passed. See docs/REJECTED-REVIEW.txt for the
+black-region/background-support audit and the limits of the indexed set.
+
+V3 FOLLOW-UP: RESUME AND CANDIDATE REVIEW
+The default screen is now a crop gallery of the shortlist and uncertain candidates,
+with a large outline viewer and previous/next controls. Human-rejected features
+are kept in a separate review filter. Full-image browsing, detailed labels,
+contrast plots and processing details remain available as secondary tools.
+
+The offline batch resumes its committed ledger. Exact substrate-support refusals
+are recorded as unassessable fields instead of tripping the unexpected-error
+breaker. No contrast is fabricated, no mask or raw source is removed, and no
+scientific detection threshold changed. All unexpected-error, source-identity,
+storage and STOP checks remain. The original plan and failure log are archived
+beside a coordinator-revision receipt on Drive. The viewer distinguishes saved
+completed work from checkpoint verification, retaining the candidate list during
+resume. These are offline changes; the microscope was not accessed.
+
+The microscope was not accessed. The operator hold remains active. This release
+is isolated from the running frozen MoTe2 analysis source and existing viewers.
+
+REVIEW AND LABELING
+New workbench at http://127.0.0.1:8770/ reads all 1,386 images on shared Drive.
+It supports source outlines, image/region search, whole-library contrast views,
+independent semantic/material/thickness/quality labels, drawn missed features,
+boundary corrections, linked child regions, deliberate bulk labels, and undo.
+Immutable review events retain the original image and proposal identity. Changed
+machine masks cannot silently inherit old human labels. The user's exact known
+tape-residue control was imported and its durable revision verified in the UI.
+Labels and derived training exports live on Drive. See OFFLINE-WORKBENCH.txt.
+
+SCAN EFFICIENCY (OFFLINE DEVELOPMENT)
+Autofocus and nested recovery share capture/time budgets. Late peaks do not become
+successful focus; saved curves and failure reasons are retained. Sparse chip-edge
+discovery has explicit capture and elapsed limits. STOP and hardware errors still
+propagate. A smaller fine-focus fit plus confirmation was tested with saved curves.
+Bounded duplicate-CZI retirement requires durable raw/evidence checkpoints and a
+completed/unloaded owned job. Final scientific TIFFs and selected anchors remain.
+
+A pure CPU-processing overlap path is implemented but disabled. It cannot return
+a provisional frame, hide a late camera failure, or permit movement before the
+existing completion/unload fence. Enabling it requires a stationary acceptance
+record matching the exact backend source and camera profile. Live hardware testing
+was deliberately not performed while the microscope is in use.
+
+Measured first-frame logs show a median remaining camera tail of only 0.111 s;
+the larger 0.544 s finalization interval is not all available for overlap. Historical
+three-chip raster spans were 129.55 min; failed discovery attempt spans totaled
+102.06 min (recorded elapsed, potentially including pauses). Reducing failed searches
+and excess autofocus captures is therefore more promising than claiming a large
+camera-only speedup. See the acquisition audit documentation for scope and replay.
+
+TIFF compression benchmark: one saved 2464x2056 RGB16 frame, three repetitions.
+LZW: 22.36 MB, median encode 0.326 s. Deflate: 20.43 MB, 1.079 s.
+Uncompressed: 30.41 MB, 0.056 s. ZSTD is unavailable in this OpenCV build.
+Every successful decode matched all raw pixels. Current LZW stays unchanged;
+this was an in-memory codec measurement, not a camera or Drive-write benchmark.
+
+GRAPHENE / hBN
+Graphene on 90 nm SiO2/Si is the next-dataset default. Both materials have separate
+90/285/300 nm conditional optical profiles. The 2DMatGMM graphene prior importer
+explicitly converts BGR order and the opposite contrast sign and retains its
+foreign optical context. It is a prior, not a calibrated local layer classifier.
+
+Raw saved TIFFs can be prepared with verified chip-domain/background evidence and
+explicit optical context, then classified pixelwise. Substrate and unknown have
+their own outcomes. Existing parent masks, disconnected terraces and holes remain
+separate. Color, edge, texture and size evidence remain independently reviewable.
+Useful-area ranking defaults to25 um2; smaller features are retained. Usable size
+uses an actual inscribed rectangle in the eroded mask, not an exterior bounding box.
+See docs/MATERIALS-GRAPHENE-HBN.md for primary sources, assumptions and commands.
+
+Synthetic 1.05 MP runs took1.07–1.24 s on one CPU thread; a saved bare-substrate
+control produced no selected regions. Preparation of one saved5.07 MP raw image
+took2.94 s. These do not establish real graphene/hBN precision, recall or thickness
+accuracy. There are no independently confirmed thin positives in this dataset yet.
+
+STORAGE AND COMPUTE
+The new manifest catalog reads image metadata without opening raw pixels:1.57 s
+initial and0.103 s warm for1386 fields; lazy tile139 with41 rows took0.44 s.
+Optional local caching is content-verified, bounded and pinned while in use.
+It never deletes through a Drive mount to evict cloud data. Legacy local-copy
+removal remains receipt-based and protects files read by active analysis.
+
+Human-only dataset exports preserve chip groups in train/validation/test splits,
+check image/proposal hashes, and invalidate measurements after geometry edits.
+A CPU logistic appearance classifier exports transparent JSON and held-out reports;
+it refuses insufficient labels and does not infer chemical identity/thickness.
+A Sherlock Slurm template runs offline training in temporary scratch and produces
+checksummed results. No cluster connection or job submission was performed.
+See docs/storage-and-training.txt.
+
+VALIDATION
+94 affected tests passed in48.63 s, using offline fixtures and mocked hardware.
+Coverage includes budget failures, STOP/late-camera errors, persistence/retention,
+source changes, whole-chip planning, label revisions, cache eviction, source-bound
+training exports, material inference, and Drive routing. Tests now isolate their
+storage configuration rather than inheriting the lab's real Drive destination.
+All65 frozen original source hashes remained unchanged.
+
+CONTRAST GALLERY UPDATE (v5)
+Drag-to-select RGB contrast rectangles now filter the proposal gallery across all
+pages, intersecting category/chip/reason filters. Missing contrasts are counted,
+not placed at zero. Unavailable local-color measurements are visually distinct.
+The plot uses the same saved sieve regions as the gallery. No scientific analysis
+or microscope control changed. See docs/CONTRAST-GALLERY.txt.

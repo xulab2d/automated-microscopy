@@ -1,0 +1,75 @@
+{
+  "position": {
+    "x": 770.0,
+    "y": 476.0,
+    "z": 105.0
+  },
+  "pixel_size_um": [
+    1.0,
+    1.0
+  ],
+  "sequence": 6,
+  "acquired_at": 1791752345.5636983,
+  "metadata": {
+    "white_level": 4095,
+    "source": "TEST",
+    "objective_position": 2,
+    "camera_resources": {
+      "fixed": 1
+    },
+    "objective": {
+      "magnification": 20
+    },
+    "camera_job_template": "synthetic fixed20x",
+    "illumination_percent": 90,
+    "focus_only_roi_source_px": [
+      40,
+      30,
+      60,
+      50
+    ],
+    "physical_stage_position": {
+      "x": 800.0,
+      "y": 500.0,
+      "z": 105.0
+    },
+    "focus_mask_policy": "include_chip_edge",
+    "edge_focus_selection": {
+      "box_px": [
+        50,
+        32,
+        114,
+        96
+      ],
+      "edge_centre_px": [
+        81.5,
+        63.5
+      ],
+      "roi_centre_px": [
+        81.5,
+        63.5
+      ],
+      "point_xy_um": [
+        802.0,
+        500.0
+      ],
+      "method": "dominant_green_transition_gradient",
+      "long_line_evidence": null,
+      "relative_full_field_contrast": 1.1495753323980615,
+      "orientation_coherence": 1.0,
+      "normal_working_pixels": [
+        1.0,
+        0.0
+      ],
+      "profile_peak_to_median_slope": 102023743.10554273,
+      "guided_profile_step_contrast": null,
+      "selection_position_um": {
+        "x": 800.0,
+        "y": 500.0,
+        "z": 100
+      },
+      "local_focus_verified": false,
+      "policy": "Fixed ROI after current full-field edge registration; search image is not focus verification."
+    }
+  }
+}

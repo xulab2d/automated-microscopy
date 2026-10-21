@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "backend": "simulator",
+  "limits": {
+    "x_min": -100,
+    "x_max": 2400,
+    "y_min": -100,
+    "y_max": 2400,
+    "z_min": 60,
+    "z_max": 150,
+    "max_xy_step_um": 1200,
+    "max_z_step_um": 25
+  },
+  "survey": {
+    "bounds_um": [
+      0,
+      2300,
+      0,
+      2300
+    ],
+    "autofocus_every": 0,
+    "mode": "survey"
+  },
+  "grid": {
+    "expected_count": 15,
+    "grid_shape": [
+      4,
+      4
+    ],
+    "polarity": "bright"
+  },
+  "focus": {
+    "half_range_um": 12,
+    "coarse_step_um": 3,
+    "fine_step_um": 0.5
+  },
+  "initial_focus": {
+    "low": 65,
+    "high": 135,
+    "coarse_step_um": 5,
+    "fine_step_um": 0.5
+  },
+  "detail": {
+    "autofocus_every": 2,
+    "focus_half_range_um": 12,
+    "focus_step_um": 3,
+    "edge_margin_um": 12
+  },
+  "context": {
+    "material": "MoTe2",
+    "substrate": "SiO2/Si",
+    "oxide_nm": 285,
+    "oxide_process": "wet",
+    "objective": "SIMULATION",
+    "illumination": "SIMULATION"
+  },
+  "material_model": null
+}

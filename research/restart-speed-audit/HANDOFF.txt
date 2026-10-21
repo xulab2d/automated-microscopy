@@ -1,0 +1,64 @@
+PLACEMENT UPDATE: HISTORICAL PLAN ONLY — NO SCAN AUTHORIZED NOW
+The user is removing chips for the day and will analyze on a laptop. Prepared-01
+and prepared-02 preserve useful geometry/analysis history; their XY tasks must
+NOT run tonight merely because the old coordinate_frame_id matches a string.
+Sample replacement requires new placement/discovery evidence. The executor now
+fails closed unless current placement is independently verified, and both old
+queues have PLACEMENT_INVALIDATED.json markers. No microscope calls were made.
+
+MEASURED BOTTLENECKS (timing.json; JSON/sidecar-only audit)
+Saved campaign:3chips,1386 scientific fields,315.0active minutes.
+Scientific raster spans:40.8+48.1+40.7=129.5min. Median field cadence5.14/5.68/6.08s;
+camera medians1.58/1.94/2.34s. Camera totals46.1min inside those raster spans.
+The remaining83.4min is combined motion/readback/saving/classification/overhead;
+saved metadata does not separately time each component, so no invented split.
+26discovery attempts,664saved geometric probes,23unresolved attempts. Saved
+discovery intervals total124.7min, including pauses;37.8min of recorded edge
+autofocus is included within that, not additive.730search images include218holder,
+487uncertain and25substrate seeds. Short consecutive search intervals total63.6min,
+median5.37s;41lattice positions were still pending. Uncertain is not empty/absent.
+These time categories overlap at boundaries/pauses and are not an exact ledger.
+
+IMPLEMENTED OFFLINE SPEED PATH
+flakefinder/campaign_restart.py + scripts/prepare_campaign_restart.py:
+  - Replays all1386 saved registered labels/sidecars before completed-chip reuse.
+  - Keeps completed-chip identity exclusions distinct from complete-extent claims.
+  - Imports previously reviewed v2 candidate010 into a372field full-chip plan
+    without taking another discovery image;015 is duplicate geometry by98%IoU.
+  - Retains chip002 perimeter repair as an explicit unresolved task, and41pending
+    lattice sites. Does not throw away487uncertain prior observations as absence.
+  - Retains exact original raw, labels, metadata, discovery hashes and fingerprints
+    through a new derived-evidence identity. No original manifest is rewritten.
+  - Caller-owned executor has STOP/storage/placement guards; it is blocked for
+    the now-historical prepared queue. A generalized unattended old-XY restart
+    coordinator was NOT launched and is not supplied as a ready-to-run operation.
+
+flakefinder/sparse_import.py + scripts/prepare_sparse_import.py:
+  - Revalidates saved label proposals against raw RGB with installed v2 validator.
+  - Builds a NEW fingerprint-bound imported_records view; originals stay immutable.
+  - Preserves old unspent budget. Exhausted attempts have zero acquisition allowance.
+  - An explicitly requested additional_probes0..32 creates a bounded new allowance;
+    old budget usage stays in provenance, not reset/hidden. No blanket budget rise.
+  - Small sparse_acquisition.py hook loads the hash-bound imported observations
+    as cached evidence and counts only NEW captures against that new allowance.
+    Budget/context mismatch or imported metadata tampering fails before motion.
+  - Imported bracket annotations use working copies, keeping original bindings
+    stable across STOP/resume. Old raw/sidecar/label hashes are checked.
+  - Import alone does NOT verify today's/tomorrow's physical chip placement.
+    The fingerprint-bound restart_placement_status defaults to historical_unverified;
+    sparse acquisition rejects it before motion. Same-stage simulations explicitly
+    verify their fixture placement; no real registration was performed here.
+
+EVIDENCE / TESTS
+prepared-02/restart-plan.json: historical372tile plan, explicit gap task, same-chip
+deduplication, retained original source identities and registered-coverage audit.
+9 distinct focused tests passed across bounded runs (immutable lineage, raw tampering, coordinate
+frame mismatch, duplicate models, exact one-frame supplement, zero-budget gate,
+and imported-metadata tampering, plus both direct-task and sparse-import placement
+guards). Final4import tests passed in2.05s; no broad suite was run.
+No new raw-image benchmark replay or hardware test was required/performed.
+
+For tonight: fresh placement and discovery first. Reuse scientific image analysis
+and learned geometry as historical context; do not transport old XY/focus planes
+to newly placed chips. The current acquisition tool already supports fresh
+v2 discovery with explicit calibrated optical profile and bounded autofocus.

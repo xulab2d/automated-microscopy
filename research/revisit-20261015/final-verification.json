@@ -1,0 +1,15 @@
+{
+  "html_sha256": {
+    "graphene_review": "b652aac6293aa1a227e5ce95c58cb08e6bd7a9def6c8836945e722e97bc1ffb0",
+    "revisit": "0c9c17d4fc26ae307503bf7767303820d57602705330999a8af209a27b3a2c9d"
+  },
+  "javascript_syntax": "passed",
+  "revisit_status_after_browser_checks": {
+    "session_id": null,
+    "state": "idle",
+    "hardware_closed": true
+  },
+  "hardware_activity": "none; only GET APIs and saved-image point selection tested",
+  "backend_regressions": 155,
+  "thickness_regressions": 5
+}

@@ -1,0 +1,18 @@
+{
+  "completed_at": 1792000470.5385294,
+  "combined_tests_passed": 145,
+  "elapsed_seconds": 35.04,
+  "suite": [
+    "completed_artifacts",
+    "boundary_replay_recovery",
+    "rectangle_handoff",
+    "scan_worker",
+    "chip_campaign_continuation",
+    "chip_campaign_resume",
+    "campaign_grid_prior",
+    "campaign_deadline_guard",
+    "memory_watcher",
+    "native_memory_actions"
+  ],
+  "hardware_tests": false
+}

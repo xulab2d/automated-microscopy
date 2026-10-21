@@ -1,0 +1,23 @@
+{
+  "success": false,
+  "z_um": 10,
+  "score": 0.0,
+  "prominence": 0.0,
+  "reason": "time budget exhausted",
+  "samples": [
+    {
+      "z_um": 10,
+      "score": 1,
+      "phase": "confirmation"
+    }
+  ],
+  "outcome": "time_budget_exhausted",
+  "budget": {
+    "max_seconds": 1.0,
+    "max_captures": 10,
+    "captures_started": 1,
+    "elapsed_seconds": 2.0,
+    "completed_actions": 1,
+    "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline"
+  }
+}

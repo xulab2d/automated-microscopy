@@ -1,0 +1,51 @@
+{
+  "position": {
+    "x": 269.375,
+    "y": 213.5,
+    "z": 100
+  },
+  "pixel_size_um": [
+    1.0,
+    1.0
+  ],
+  "sequence": 65,
+  "acquired_at": 1791694802.038882,
+  "metadata": {
+    "white_level": 4095,
+    "source": "TEST",
+    "objective_position": 2,
+    "camera_resources": {
+      "fixed": 1
+    },
+    "full_chip_focus": {
+      "method": "in_field_substrate_roi_autofocus",
+      "focus_verified": true,
+      "extrapolated": false,
+      "focus_point_xy_um": [
+        269.375,
+        213.5
+      ],
+      "roi_source_px": [
+        50,
+        40,
+        90,
+        80
+      ],
+      "substrate_fraction": 1.0,
+      "result": {
+        "success": true,
+        "z_um": 100,
+        "score": 1.0,
+        "prominence": 0.2,
+        "reason": "Synthetic measured focus",
+        "samples": [],
+        "outcome": "resolved_peak",
+        "budget": null
+      },
+      "plane_prediction_rejection": "Synthetic missing plane support",
+      "local_focus_verified": true,
+      "thin_flake_focus_validated": false,
+      "capture_z_target_tolerance_um": 0.25
+    }
+  }
+}

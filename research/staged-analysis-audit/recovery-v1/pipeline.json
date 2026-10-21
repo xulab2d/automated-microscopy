@@ -1,0 +1,57 @@
+{
+  "method": "observed-footprint-failed-field-recovery-v1",
+  "options": {
+    "extraction": {
+      "min_area_um2": 100,
+      "min_detection_area_um2": 0.25,
+      "max_area_um2": 20000,
+      "min_contrast": 0.015,
+      "substrate_sigma": 5,
+      "edge_margin_um": 12,
+      "max_components": 8,
+      "sample_per_tile": 5000,
+      "min_solidity": 0.72,
+      "max_perimeter_ratio": 8,
+      "max_uniformity": 0.025,
+      "min_posterior": 0.65,
+      "max_color_distance_squared": 16,
+      "min_width_um": 5,
+      "boundary_probe_um": 1.5,
+      "min_boundary_support": 0.6,
+      "min_facet_fraction": 0.4,
+      "max_texture": 0.012,
+      "min_shape_score": 0.5,
+      "spatial_sigma_um": 0.6
+    },
+    "measurement": {
+      "minimum_area_um2": 25.0,
+      "interior_erosion_um": 0.5,
+      "substrate_clearance_um": 1.0,
+      "annulus_width_um": 7.0,
+      "spatial_patch_um": 1.0,
+      "minimum_interior_pixels": 8,
+      "minimum_background_patches": 12
+    },
+    "minimum_local_signal_z": 3.0,
+    "publish_every": 1
+  },
+  "source_code_sha256": {
+    "research\\staged-analysis-audit\\recover_failed_fields.py": "bbb911c4d98efe12584d2f00de26aa854878583166832b7be080c28ba53baeb2",
+    "research\\staged-analysis-audit\\observed_normalization.py": "d04b70de1d5f4a2e1b8619a6e0615d2a68eab2dca64120277ece9f0ad4530f2b",
+    "research\\staged-analysis-audit\\audit_saved_outputs.py": "840a8db1c0a35e6b1cf97bff4bbbb6fe06c268afe844d4a39eac1c811ed352ca",
+    "flakefinder\\analysis.py": "d335cb6676c9d413a5c8a47a0ba77f6bd9da2b8e4506b505f1f613d093a89026",
+    "flakefinder\\staged_features.py": "7b0ef2f41d4a088fc9d0fcc40483036f0d37159e3d59b9160525921608f7d0e1",
+    "flakefinder\\measure_existing_regions.py": "33be32391bdb6272d9889af68442605b7debee219b79e9c929d321ae13e2f4b1",
+    "flakefinder\\colors.py": "f23f84ce1479d7cf78b7c1dd8911103715c14b232777138657970d99f4a5483e",
+    "flakefinder\\imaging.py": "c663f1c7ae82afb063cb8975b46df0a34f74cf80a37bec1fc68d7f1b05d72c95",
+    "flakefinder\\thin_contrast.py": "763d3baa8ed383ccbab1385d70487e2164ae963490f51264d8c7c4e58b889e2b",
+    "flakefinder\\scan.py": "27becd3c01040f69e460cd94a905328f9d7835debf05977642c43e9e1bf80f94",
+    "flakefinder\\model.py": "11b4d72625ef3c304ee93df7d8ec402bb695f80eb120a7e0ae67944ed8d7e649"
+  },
+  "original_failures_sha256": "1d9ddc88f41aed27164900ba4756e4f741a42f34c2534fa51915d5f7fc7137d5",
+  "source_folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\chip001",
+  "worker_policy": "single process, one native thread, below-normal priority",
+  "geometry_policy": "unchanged accepted graph-cut extractor, followed only by observed-domain clipping with disconnected components retained",
+  "thin_policy": "mean-color direction reported descriptively; no coherent-terrace/material/thickness classification",
+  "fingerprint": "d0ee9d553c77cabdbd26df48c7124b59d8e90ac230d1d9f2c0a901a91192bbc8"
+}

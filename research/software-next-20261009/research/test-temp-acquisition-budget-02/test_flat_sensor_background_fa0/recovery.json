@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "state": "failed",
+  "initial_position_um": {
+    "x": 0,
+    "y": 0,
+    "z": 100
+  },
+  "search_bounds_um": [
+    0.236,
+    199.764
+  ],
+  "requested_search_bounds_um": [
+    0.0,
+    200.0
+  ],
+  "hard_limit_target_headroom_um": 0.236,
+  "max_exploratory_images": 24,
+  "max_bracket_width_um": 6.0,
+  "samples": [
+    {
+      "z_um": 100,
+      "requested_z_um": 100.0,
+      "phase": "initial",
+      "score": 0.00017,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    }
+  ],
+  "limitation": "Sparse sampling can miss a narrow peak; no completeness or thin-flake sensitivity guarantee.",
+  "direction": null,
+  "fallback_used": false,
+  "best_observed": {
+    "z_um": 100,
+    "requested_z_um": 100.0,
+    "phase": "initial",
+    "score": 0.00017,
+    "texture": 0.1,
+    "noise": 0.001,
+    "mean": 1000.0
+  },
+  "error": "Raw output still points at the local checkout. Resolve the run destination before capture."
+}

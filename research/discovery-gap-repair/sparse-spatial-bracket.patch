@@ -1,0 +1,70 @@
+--- a/flakefinder/sparse_acquisition.py
++++ b/flakefinder/sparse_acquisition.py
+@@ -9,6 +9,7 @@
+ from pathlib import Path
+ import hashlib,json,math,time
+ 
++import cv2
+ import numpy as np
+ 
+ from .chip_discovery import BoundaryOptions,EvidenceMap,classify_boundary,contained_field_size,file_hash,validate_bounds,validate_search_envelope
+@@ -49,6 +50,31 @@
+ class _FocusUnresolved(Exception):pass
+ 
+ 
++def _spatial_bracket_evidence(labels, original_side):
++    """Search-bracket evidence only; no seed, chip-boundary or focus acceptance."""
++    if original_side in ('substrate','holder'):
++        return {'side':original_side,'method':'original_classification','inferred':False}
++    h,w=labels.shape;sf=float(np.mean(labels==1));hf=float(np.mean(labels==2))
++    result={'side':'unknown','method':'whole_field_connected_support','inferred':False,
++            'substrate_fraction':sf,'holder_fraction':hf,
++            'qualification':'Search bracket only; does not relabel the centre, establish an edge, or verify focus.'}
++    # Reuse existing90%-substrate /95%-holder reference-patch standards; require
++    # spatially connected support rather than a mere aggregate colour fraction.
++    for value,name,enough in ((1,'substrate',sf>=.9 and hf<=.05),(2,'holder',hf>=.95 and sf<=.05)):
++        if not enough:continue
++        n,components,stats,_=cv2.connectedComponentsWithStats(np.uint8(labels==value),8)
++        if n<2:continue
++        index=1+int(np.argmax(stats[1:,cv2.CC_STAT_AREA]));mask=components==index
++        fractions=[float(mask[ys,xs].mean())for ys,xs in
++            [(slice(0,h//2),slice(0,w//2)),(slice(0,h//2),slice(w//2,None)),
++             (slice(h//2,None),slice(0,w//2)),(slice(h//2,None),slice(w//2,None))]]
++        if min(fractions)>=.8:
++            return dict(result,side=name,inferred=True,connected_quadrant_fractions=fractions)
++    return result
++
++
++
++
+ def _bracket_side(record,allow_fraction=False):
+     """A mostly-substrate field can bracket an edge despite a dirty centre.
+ 
+@@ -56,6 +82,11 @@
+     or declares an enclosure. Original per-frame classification is retained.
+     """
+     side=record['classification'];fractions=record.get('fractions',{})
++    spatial=record.get('spatial_bracket_evidence')
++    if side=='unknown' and spatial is not None:
++        if spatial['side'] in ('substrate','holder'):
++            record['bracket_inference']=spatial.copy()
++        return spatial['side']
+     if (allow_fraction and side=='unknown' and fractions.get('substrate',0)>=.90
+             and fractions.get('holder',1)<=.05):
+         record['bracket_inference']={'side':'substrate','method':'whole_field_substrate_fraction_at_least_90_percent_and_holder_at_most_5_percent',
+@@ -136,6 +167,7 @@
+         for relative,digest in record['hashes'].items():
+             if file_hash(folder/relative)!=digest:raise AcquisitionError('Saved sparse edge evidence changed: '+relative)
+         with np.load(folder/record['labels_file']) as stored:labels=stored['labels'].copy()
++        record['spatial_bracket_evidence']=_spatial_bracket_evidence(labels,record['classification'])
+         evidence.add(labels,record['position_um'],payload['source_shape'],transform)
+         by_xy[tuple(np.round(record['requested_xy_um'],3))]=record
+         if record.get('edge'):edges.append(record['edge'])
+@@ -167,6 +199,7 @@
+         record={'name':name,'phase':phase,'requested_xy_um':list(map(float,xy)),
+                 'position_um':[frame.position.x,frame.position.y,frame.position.z],'image':image,'labels_file':relative.as_posix(),
+                 'classification':side,'fractions':fractions,'edge':edge,'hashes':{p.as_posix():file_hash(folder/p) for p in paths},**extra}
++        record['spatial_bracket_evidence']=_spatial_bracket_evidence(labels,side)
+         evidence.add(labels,record['position_um'],frame.rgb.shape,transform)
+         state['records'].append(record);by_xy[key]=record;save()
+         if callback:callback('sparse_edge_probe',frame,record)

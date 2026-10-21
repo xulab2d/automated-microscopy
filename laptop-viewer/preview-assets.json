@@ -1,0 +1,5552 @@
+{
+  "schema": 1,
+  "dataset_name": "whole-chip-standardized-01",
+  "dataset_relative": "../data/whole-chip-standardized-01",
+  "kind": "portable_viewer_preview_priority",
+  "assets": [
+    {
+      "path": "chip001/tiles/tile_000000.jpg",
+      "bytes": 637738
+    },
+    {
+      "path": "chip001/tiles/tile_000001.jpg",
+      "bytes": 664806
+    },
+    {
+      "path": "chip001/tiles/tile_000002.jpg",
+      "bytes": 657953
+    },
+    {
+      "path": "chip001/tiles/tile_000003.jpg",
+      "bytes": 647708
+    },
+    {
+      "path": "chip001/tiles/tile_000004.jpg",
+      "bytes": 642453
+    },
+    {
+      "path": "chip001/tiles/tile_000005.jpg",
+      "bytes": 638550
+    },
+    {
+      "path": "chip001/tiles/tile_000006.jpg",
+      "bytes": 638378
+    },
+    {
+      "path": "chip001/tiles/tile_000007.jpg",
+      "bytes": 638444
+    },
+    {
+      "path": "chip001/tiles/tile_000008.jpg",
+      "bytes": 647345
+    },
+    {
+      "path": "chip001/tiles/tile_000009.jpg",
+      "bytes": 649623
+    },
+    {
+      "path": "chip001/tiles/tile_000010.jpg",
+      "bytes": 655010
+    },
+    {
+      "path": "chip001/tiles/tile_000011.jpg",
+      "bytes": 663461
+    },
+    {
+      "path": "chip001/tiles/tile_000012.jpg",
+      "bytes": 672207
+    },
+    {
+      "path": "chip001/tiles/tile_000013.jpg",
+      "bytes": 678928
+    },
+    {
+      "path": "chip001/tiles/tile_000014.jpg",
+      "bytes": 681139
+    },
+    {
+      "path": "chip001/tiles/tile_000015.jpg",
+      "bytes": 685383
+    },
+    {
+      "path": "chip001/tiles/tile_000016.jpg",
+      "bytes": 671377
+    },
+    {
+      "path": "chip001/tiles/tile_000017.jpg",
+      "bytes": 637148
+    },
+    {
+      "path": "chip001/tiles/tile_000018.jpg",
+      "bytes": 640454
+    },
+    {
+      "path": "chip001/tiles/tile_000019.jpg",
+      "bytes": 686800
+    },
+    {
+      "path": "chip001/tiles/tile_000020.jpg",
+      "bytes": 683636
+    },
+    {
+      "path": "chip001/tiles/tile_000021.jpg",
+      "bytes": 680099
+    },
+    {
+      "path": "chip001/tiles/tile_000022.jpg",
+      "bytes": 687656
+    },
+    {
+      "path": "chip001/tiles/tile_000023.jpg",
+      "bytes": 693009
+    },
+    {
+      "path": "chip001/tiles/tile_000024.jpg",
+      "bytes": 690523
+    },
+    {
+      "path": "chip001/tiles/tile_000025.jpg",
+      "bytes": 681310
+    },
+    {
+      "path": "chip001/tiles/tile_000026.jpg",
+      "bytes": 685111
+    },
+    {
+      "path": "chip001/tiles/tile_000027.jpg",
+      "bytes": 706506
+    },
+    {
+      "path": "chip001/tiles/tile_000028.jpg",
+      "bytes": 695966
+    },
+    {
+      "path": "chip001/tiles/tile_000029.jpg",
+      "bytes": 662318
+    },
+    {
+      "path": "chip001/tiles/tile_000030.jpg",
+      "bytes": 650136
+    },
+    {
+      "path": "chip001/tiles/tile_000031.jpg",
+      "bytes": 641359
+    },
+    {
+      "path": "chip001/tiles/tile_000032.jpg",
+      "bytes": 626767
+    },
+    {
+      "path": "chip001/tiles/tile_000033.jpg",
+      "bytes": 650364
+    },
+    {
+      "path": "chip001/tiles/tile_000034.jpg",
+      "bytes": 672187
+    },
+    {
+      "path": "chip001/tiles/tile_000035.jpg",
+      "bytes": 653280
+    },
+    {
+      "path": "chip001/tiles/tile_000036.jpg",
+      "bytes": 672440
+    },
+    {
+      "path": "chip001/tiles/tile_000037.jpg",
+      "bytes": 682181
+    },
+    {
+      "path": "chip001/tiles/tile_000038.jpg",
+      "bytes": 683784
+    },
+    {
+      "path": "chip001/tiles/tile_000039.jpg",
+      "bytes": 684263
+    },
+    {
+      "path": "chip001/tiles/tile_000040.jpg",
+      "bytes": 688395
+    },
+    {
+      "path": "chip001/tiles/tile_000041.jpg",
+      "bytes": 688764
+    },
+    {
+      "path": "chip001/tiles/tile_000042.jpg",
+      "bytes": 681157
+    },
+    {
+      "path": "chip001/tiles/tile_000043.jpg",
+      "bytes": 680581
+    },
+    {
+      "path": "chip001/tiles/tile_000044.jpg",
+      "bytes": 681385
+    },
+    {
+      "path": "chip001/tiles/tile_000045.jpg",
+      "bytes": 713643
+    },
+    {
+      "path": "chip001/tiles/tile_000046.jpg",
+      "bytes": 696205
+    },
+    {
+      "path": "chip001/tiles/tile_000047.jpg",
+      "bytes": 698590
+    },
+    {
+      "path": "chip001/tiles/tile_000048.jpg",
+      "bytes": 682974
+    },
+    {
+      "path": "chip001/tiles/tile_000049.jpg",
+      "bytes": 682929
+    },
+    {
+      "path": "chip001/tiles/tile_000050.jpg",
+      "bytes": 684122
+    },
+    {
+      "path": "chip001/tiles/tile_000051.jpg",
+      "bytes": 643870
+    },
+    {
+      "path": "chip001/tiles/tile_000052.jpg",
+      "bytes": 648167
+    },
+    {
+      "path": "chip001/tiles/tile_000053.jpg",
+      "bytes": 685830
+    },
+    {
+      "path": "chip001/tiles/tile_000054.jpg",
+      "bytes": 681743
+    },
+    {
+      "path": "chip001/tiles/tile_000055.jpg",
+      "bytes": 684531
+    },
+    {
+      "path": "chip001/tiles/tile_000056.jpg",
+      "bytes": 685753
+    },
+    {
+      "path": "chip001/tiles/tile_000057.jpg",
+      "bytes": 699922
+    },
+    {
+      "path": "chip001/tiles/tile_000058.jpg",
+      "bytes": 697216
+    },
+    {
+      "path": "chip001/tiles/tile_000059.jpg",
+      "bytes": 680534
+    },
+    {
+      "path": "chip001/tiles/tile_000060.jpg",
+      "bytes": 680055
+    },
+    {
+      "path": "chip001/tiles/tile_000061.jpg",
+      "bytes": 678209
+    },
+    {
+      "path": "chip001/tiles/tile_000062.jpg",
+      "bytes": 678950
+    },
+    {
+      "path": "chip001/tiles/tile_000063.jpg",
+      "bytes": 682258
+    },
+    {
+      "path": "chip001/tiles/tile_000064.jpg",
+      "bytes": 682929
+    },
+    {
+      "path": "chip001/tiles/tile_000065.jpg",
+      "bytes": 679968
+    },
+    {
+      "path": "chip001/tiles/tile_000066.jpg",
+      "bytes": 681170
+    },
+    {
+      "path": "chip001/tiles/tile_000067.jpg",
+      "bytes": 677590
+    },
+    {
+      "path": "chip001/tiles/tile_000068.jpg",
+      "bytes": 679578
+    },
+    {
+      "path": "chip001/tiles/tile_000069.jpg",
+      "bytes": 689762
+    },
+    {
+      "path": "chip001/tiles/tile_000070.jpg",
+      "bytes": 701488
+    },
+    {
+      "path": "chip001/tiles/tile_000071.jpg",
+      "bytes": 652298
+    },
+    {
+      "path": "chip001/tiles/tile_000072.jpg",
+      "bytes": 677676
+    },
+    {
+      "path": "chip001/tiles/tile_000073.jpg",
+      "bytes": 675860
+    },
+    {
+      "path": "chip001/tiles/tile_000074.jpg",
+      "bytes": 677359
+    },
+    {
+      "path": "chip001/tiles/tile_000075.jpg",
+      "bytes": 676483
+    },
+    {
+      "path": "chip001/tiles/tile_000076.jpg",
+      "bytes": 679446
+    },
+    {
+      "path": "chip001/tiles/tile_000077.jpg",
+      "bytes": 677827
+    },
+    {
+      "path": "chip001/tiles/tile_000078.jpg",
+      "bytes": 678414
+    },
+    {
+      "path": "chip001/tiles/tile_000079.jpg",
+      "bytes": 679465
+    },
+    {
+      "path": "chip001/tiles/tile_000080.jpg",
+      "bytes": 679318
+    },
+    {
+      "path": "chip001/tiles/tile_000081.jpg",
+      "bytes": 681333
+    },
+    {
+      "path": "chip001/tiles/tile_000082.jpg",
+      "bytes": 678643
+    },
+    {
+      "path": "chip001/tiles/tile_000083.jpg",
+      "bytes": 685187
+    },
+    {
+      "path": "chip001/tiles/tile_000084.jpg",
+      "bytes": 696409
+    },
+    {
+      "path": "chip001/tiles/tile_000085.jpg",
+      "bytes": 685558
+    },
+    {
+      "path": "chip001/tiles/tile_000086.jpg",
+      "bytes": 689886
+    },
+    {
+      "path": "chip001/tiles/tile_000087.jpg",
+      "bytes": 689206
+    },
+    {
+      "path": "chip001/tiles/tile_000088.jpg",
+      "bytes": 685712
+    },
+    {
+      "path": "chip001/tiles/tile_000089.jpg",
+      "bytes": 658358
+    },
+    {
+      "path": "chip001/tiles/tile_000090.jpg",
+      "bytes": 635593
+    },
+    {
+      "path": "chip001/tiles/tile_000091.jpg",
+      "bytes": 660868
+    },
+    {
+      "path": "chip001/tiles/tile_000092.jpg",
+      "bytes": 683112
+    },
+    {
+      "path": "chip001/tiles/tile_000093.jpg",
+      "bytes": 694167
+    },
+    {
+      "path": "chip001/tiles/tile_000094.jpg",
+      "bytes": 701359
+    },
+    {
+      "path": "chip001/tiles/tile_000095.jpg",
+      "bytes": 694583
+    },
+    {
+      "path": "chip001/tiles/tile_000096.jpg",
+      "bytes": 688944
+    },
+    {
+      "path": "chip001/tiles/tile_000097.jpg",
+      "bytes": 683400
+    },
+    {
+      "path": "chip001/tiles/tile_000098.jpg",
+      "bytes": 678888
+    },
+    {
+      "path": "chip001/tiles/tile_000099.jpg",
+      "bytes": 679469
+    },
+    {
+      "path": "chip001/tiles/tile_000100.jpg",
+      "bytes": 679588
+    },
+    {
+      "path": "chip001/tiles/tile_000101.jpg",
+      "bytes": 679682
+    },
+    {
+      "path": "chip001/tiles/tile_000102.jpg",
+      "bytes": 678986
+    },
+    {
+      "path": "chip001/tiles/tile_000103.jpg",
+      "bytes": 679025
+    },
+    {
+      "path": "chip001/tiles/tile_000104.jpg",
+      "bytes": 684280
+    },
+    {
+      "path": "chip001/tiles/tile_000105.jpg",
+      "bytes": 677608
+    },
+    {
+      "path": "chip001/tiles/tile_000106.jpg",
+      "bytes": 677135
+    },
+    {
+      "path": "chip001/tiles/tile_000107.jpg",
+      "bytes": 677482
+    },
+    {
+      "path": "chip001/tiles/tile_000108.jpg",
+      "bytes": 679616
+    },
+    {
+      "path": "chip001/tiles/tile_000109.jpg",
+      "bytes": 650257
+    },
+    {
+      "path": "chip001/tiles/tile_000110.jpg",
+      "bytes": 654618
+    },
+    {
+      "path": "chip001/tiles/tile_000111.jpg",
+      "bytes": 684266
+    },
+    {
+      "path": "chip001/tiles/tile_000112.jpg",
+      "bytes": 682175
+    },
+    {
+      "path": "chip001/tiles/tile_000113.jpg",
+      "bytes": 679408
+    },
+    {
+      "path": "chip001/tiles/tile_000114.jpg",
+      "bytes": 679760
+    },
+    {
+      "path": "chip001/tiles/tile_000115.jpg",
+      "bytes": 686740
+    },
+    {
+      "path": "chip001/tiles/tile_000116.jpg",
+      "bytes": 678737
+    },
+    {
+      "path": "chip001/tiles/tile_000117.jpg",
+      "bytes": 678874
+    },
+    {
+      "path": "chip001/tiles/tile_000118.jpg",
+      "bytes": 680478
+    },
+    {
+      "path": "chip001/tiles/tile_000119.jpg",
+      "bytes": 684533
+    },
+    {
+      "path": "chip001/tiles/tile_000120.jpg",
+      "bytes": 681720
+    },
+    {
+      "path": "chip001/tiles/tile_000121.jpg",
+      "bytes": 680667
+    },
+    {
+      "path": "chip001/tiles/tile_000122.jpg",
+      "bytes": 680378
+    },
+    {
+      "path": "chip001/tiles/tile_000123.jpg",
+      "bytes": 688019
+    },
+    {
+      "path": "chip001/tiles/tile_000124.jpg",
+      "bytes": 687936
+    },
+    {
+      "path": "chip001/tiles/tile_000125.jpg",
+      "bytes": 687643
+    },
+    {
+      "path": "chip001/tiles/tile_000126.jpg",
+      "bytes": 701838
+    },
+    {
+      "path": "chip001/tiles/tile_000127.jpg",
+      "bytes": 687680
+    },
+    {
+      "path": "chip001/tiles/tile_000128.jpg",
+      "bytes": 672756
+    },
+    {
+      "path": "chip001/tiles/tile_000129.jpg",
+      "bytes": 632644
+    },
+    {
+      "path": "chip001/tiles/tile_000130.jpg",
+      "bytes": 637178
+    },
+    {
+      "path": "chip001/tiles/tile_000131.jpg",
+      "bytes": 686706
+    },
+    {
+      "path": "chip001/tiles/tile_000132.jpg",
+      "bytes": 689582
+    },
+    {
+      "path": "chip001/tiles/tile_000133.jpg",
+      "bytes": 703595
+    },
+    {
+      "path": "chip001/tiles/tile_000134.jpg",
+      "bytes": 680866
+    },
+    {
+      "path": "chip001/tiles/tile_000135.jpg",
+      "bytes": 683199
+    },
+    {
+      "path": "chip001/tiles/tile_000136.jpg",
+      "bytes": 686550
+    },
+    {
+      "path": "chip001/tiles/tile_000137.jpg",
+      "bytes": 683047
+    },
+    {
+      "path": "chip001/tiles/tile_000138.jpg",
+      "bytes": 705022
+    },
+    {
+      "path": "chip001/tiles/tile_000139.jpg",
+      "bytes": 724711
+    },
+    {
+      "path": "chip001/tiles/tile_000140.jpg",
+      "bytes": 704057
+    },
+    {
+      "path": "chip001/tiles/tile_000141.jpg",
+      "bytes": 699662
+    },
+    {
+      "path": "chip001/tiles/tile_000142.jpg",
+      "bytes": 687868
+    },
+    {
+      "path": "chip001/tiles/tile_000143.jpg",
+      "bytes": 678507
+    },
+    {
+      "path": "chip001/tiles/tile_000144.jpg",
+      "bytes": 686864
+    },
+    {
+      "path": "chip001/tiles/tile_000145.jpg",
+      "bytes": 685067
+    },
+    {
+      "path": "chip001/tiles/tile_000146.jpg",
+      "bytes": 685849
+    },
+    {
+      "path": "chip001/tiles/tile_000147.jpg",
+      "bytes": 680041
+    },
+    {
+      "path": "chip001/tiles/tile_000148.jpg",
+      "bytes": 686252
+    },
+    {
+      "path": "chip001/tiles/tile_000149.jpg",
+      "bytes": 642742
+    },
+    {
+      "path": "chip001/tiles/tile_000150.jpg",
+      "bytes": 632041
+    },
+    {
+      "path": "chip001/tiles/tile_000151.jpg",
+      "bytes": 687550
+    },
+    {
+      "path": "chip001/tiles/tile_000152.jpg",
+      "bytes": 688247
+    },
+    {
+      "path": "chip001/tiles/tile_000153.jpg",
+      "bytes": 691354
+    },
+    {
+      "path": "chip001/tiles/tile_000154.jpg",
+      "bytes": 689113
+    },
+    {
+      "path": "chip001/tiles/tile_000155.jpg",
+      "bytes": 685600
+    },
+    {
+      "path": "chip001/tiles/tile_000156.jpg",
+      "bytes": 679029
+    },
+    {
+      "path": "chip001/tiles/tile_000157.jpg",
+      "bytes": 696782
+    },
+    {
+      "path": "chip001/tiles/tile_000158.jpg",
+      "bytes": 687303
+    },
+    {
+      "path": "chip001/tiles/tile_000159.jpg",
+      "bytes": 706715
+    },
+    {
+      "path": "chip001/tiles/tile_000160.jpg",
+      "bytes": 713756
+    },
+    {
+      "path": "chip001/tiles/tile_000161.jpg",
+      "bytes": 709650
+    },
+    {
+      "path": "chip001/tiles/tile_000162.jpg",
+      "bytes": 687532
+    },
+    {
+      "path": "chip001/tiles/tile_000163.jpg",
+      "bytes": 685699
+    },
+    {
+      "path": "chip001/tiles/tile_000164.jpg",
+      "bytes": 689729
+    },
+    {
+      "path": "chip001/tiles/tile_000165.jpg",
+      "bytes": 687506
+    },
+    {
+      "path": "chip001/tiles/tile_000166.jpg",
+      "bytes": 710115
+    },
+    {
+      "path": "chip001/tiles/tile_000167.jpg",
+      "bytes": 699965
+    },
+    {
+      "path": "chip001/tiles/tile_000168.jpg",
+      "bytes": 700670
+    },
+    {
+      "path": "chip001/tiles/tile_000169.jpg",
+      "bytes": 644462
+    },
+    {
+      "path": "chip001/tiles/tile_000170.jpg",
+      "bytes": 649155
+    },
+    {
+      "path": "chip001/tiles/tile_000171.jpg",
+      "bytes": 691307
+    },
+    {
+      "path": "chip001/tiles/tile_000172.jpg",
+      "bytes": 726751
+    },
+    {
+      "path": "chip001/tiles/tile_000173.jpg",
+      "bytes": 719886
+    },
+    {
+      "path": "chip001/tiles/tile_000174.jpg",
+      "bytes": 695031
+    },
+    {
+      "path": "chip001/tiles/tile_000175.jpg",
+      "bytes": 700010
+    },
+    {
+      "path": "chip001/tiles/tile_000176.jpg",
+      "bytes": 691311
+    },
+    {
+      "path": "chip001/tiles/tile_000177.jpg",
+      "bytes": 685724
+    },
+    {
+      "path": "chip001/tiles/tile_000178.jpg",
+      "bytes": 698376
+    },
+    {
+      "path": "chip001/tiles/tile_000179.jpg",
+      "bytes": 691180
+    },
+    {
+      "path": "chip001/tiles/tile_000180.jpg",
+      "bytes": 662150
+    },
+    {
+      "path": "chip001/tiles/tile_000181.jpg",
+      "bytes": 705183
+    },
+    {
+      "path": "chip001/tiles/tile_000182.jpg",
+      "bytes": 689115
+    },
+    {
+      "path": "chip001/tiles/tile_000183.jpg",
+      "bytes": 679548
+    },
+    {
+      "path": "chip001/tiles/tile_000184.jpg",
+      "bytes": 682704
+    },
+    {
+      "path": "chip001/tiles/tile_000185.jpg",
+      "bytes": 685118
+    },
+    {
+      "path": "chip001/tiles/tile_000186.jpg",
+      "bytes": 681347
+    },
+    {
+      "path": "chip001/tiles/tile_000187.jpg",
+      "bytes": 688234
+    },
+    {
+      "path": "chip001/tiles/tile_000188.jpg",
+      "bytes": 691643
+    },
+    {
+      "path": "chip001/tiles/tile_000189.jpg",
+      "bytes": 625487
+    },
+    {
+      "path": "chip001/tiles/tile_000190.jpg",
+      "bytes": 615910
+    },
+    {
+      "path": "chip001/tiles/tile_000191.jpg",
+      "bytes": 675257
+    },
+    {
+      "path": "chip001/tiles/tile_000192.jpg",
+      "bytes": 683187
+    },
+    {
+      "path": "chip001/tiles/tile_000193.jpg",
+      "bytes": 684178
+    },
+    {
+      "path": "chip001/tiles/tile_000194.jpg",
+      "bytes": 688364
+    },
+    {
+      "path": "chip001/tiles/tile_000195.jpg",
+      "bytes": 682820
+    },
+    {
+      "path": "chip001/tiles/tile_000196.jpg",
+      "bytes": 683170
+    },
+    {
+      "path": "chip001/tiles/tile_000197.jpg",
+      "bytes": 683553
+    },
+    {
+      "path": "chip001/tiles/tile_000198.jpg",
+      "bytes": 678889
+    },
+    {
+      "path": "chip001/tiles/tile_000199.jpg",
+      "bytes": 654394
+    },
+    {
+      "path": "chip001/tiles/tile_000200.jpg",
+      "bytes": 686198
+    },
+    {
+      "path": "chip001/tiles/tile_000201.jpg",
+      "bytes": 710494
+    },
+    {
+      "path": "chip001/tiles/tile_000202.jpg",
+      "bytes": 683339
+    },
+    {
+      "path": "chip001/tiles/tile_000203.jpg",
+      "bytes": 685663
+    },
+    {
+      "path": "chip001/tiles/tile_000204.jpg",
+      "bytes": 681884
+    },
+    {
+      "path": "chip001/tiles/tile_000205.jpg",
+      "bytes": 691945
+    },
+    {
+      "path": "chip001/tiles/tile_000206.jpg",
+      "bytes": 703764
+    },
+    {
+      "path": "chip001/tiles/tile_000207.jpg",
+      "bytes": 709920
+    },
+    {
+      "path": "chip001/tiles/tile_000208.jpg",
+      "bytes": 691919
+    },
+    {
+      "path": "chip001/tiles/tile_000209.jpg",
+      "bytes": 658807
+    },
+    {
+      "path": "chip001/tiles/tile_000210.jpg",
+      "bytes": 660942
+    },
+    {
+      "path": "chip001/tiles/tile_000211.jpg",
+      "bytes": 687241
+    },
+    {
+      "path": "chip001/tiles/tile_000212.jpg",
+      "bytes": 691070
+    },
+    {
+      "path": "chip001/tiles/tile_000213.jpg",
+      "bytes": 692303
+    },
+    {
+      "path": "chip001/tiles/tile_000214.jpg",
+      "bytes": 686072
+    },
+    {
+      "path": "chip001/tiles/tile_000215.jpg",
+      "bytes": 681986
+    },
+    {
+      "path": "chip001/tiles/tile_000216.jpg",
+      "bytes": 680090
+    },
+    {
+      "path": "chip001/tiles/tile_000217.jpg",
+      "bytes": 682249
+    },
+    {
+      "path": "chip001/tiles/tile_000218.jpg",
+      "bytes": 709675
+    },
+    {
+      "path": "chip001/tiles/tile_000219.jpg",
+      "bytes": 710445
+    },
+    {
+      "path": "chip001/tiles/tile_000220.jpg",
+      "bytes": 678174
+    },
+    {
+      "path": "chip001/tiles/tile_000221.jpg",
+      "bytes": 682684
+    },
+    {
+      "path": "chip001/tiles/tile_000222.jpg",
+      "bytes": 682938
+    },
+    {
+      "path": "chip001/tiles/tile_000223.jpg",
+      "bytes": 687003
+    },
+    {
+      "path": "chip001/tiles/tile_000224.jpg",
+      "bytes": 685037
+    },
+    {
+      "path": "chip001/tiles/tile_000225.jpg",
+      "bytes": 691551
+    },
+    {
+      "path": "chip001/tiles/tile_000226.jpg",
+      "bytes": 719823
+    },
+    {
+      "path": "chip001/tiles/tile_000227.jpg",
+      "bytes": 727610
+    },
+    {
+      "path": "chip001/tiles/tile_000228.jpg",
+      "bytes": 698202
+    },
+    {
+      "path": "chip001/tiles/tile_000229.jpg",
+      "bytes": 608440
+    },
+    {
+      "path": "chip001/tiles/tile_000230.jpg",
+      "bytes": 609280
+    },
+    {
+      "path": "chip001/tiles/tile_000231.jpg",
+      "bytes": 711130
+    },
+    {
+      "path": "chip001/tiles/tile_000232.jpg",
+      "bytes": 719818
+    },
+    {
+      "path": "chip001/tiles/tile_000233.jpg",
+      "bytes": 700635
+    },
+    {
+      "path": "chip001/tiles/tile_000234.jpg",
+      "bytes": 692885
+    },
+    {
+      "path": "chip001/tiles/tile_000235.jpg",
+      "bytes": 677659
+    },
+    {
+      "path": "chip001/tiles/tile_000236.jpg",
+      "bytes": 678821
+    },
+    {
+      "path": "chip001/tiles/tile_000237.jpg",
+      "bytes": 681429
+    },
+    {
+      "path": "chip001/tiles/tile_000238.jpg",
+      "bytes": 685830
+    },
+    {
+      "path": "chip001/tiles/tile_000239.jpg",
+      "bytes": 712513
+    },
+    {
+      "path": "chip001/tiles/tile_000240.jpg",
+      "bytes": 702242
+    },
+    {
+      "path": "chip001/tiles/tile_000241.jpg",
+      "bytes": 689741
+    },
+    {
+      "path": "chip001/tiles/tile_000242.jpg",
+      "bytes": 688492
+    },
+    {
+      "path": "chip001/tiles/tile_000243.jpg",
+      "bytes": 683320
+    },
+    {
+      "path": "chip001/tiles/tile_000244.jpg",
+      "bytes": 695154
+    },
+    {
+      "path": "chip001/tiles/tile_000245.jpg",
+      "bytes": 700913
+    },
+    {
+      "path": "chip001/tiles/tile_000246.jpg",
+      "bytes": 698813
+    },
+    {
+      "path": "chip001/tiles/tile_000247.jpg",
+      "bytes": 698447
+    },
+    {
+      "path": "chip001/tiles/tile_000248.jpg",
+      "bytes": 683408
+    },
+    {
+      "path": "chip001/tiles/tile_000249.jpg",
+      "bytes": 664334
+    },
+    {
+      "path": "chip001/tiles/tile_000250.jpg",
+      "bytes": 631444
+    },
+    {
+      "path": "chip001/tiles/tile_000251.jpg",
+      "bytes": 630872
+    },
+    {
+      "path": "chip001/tiles/tile_000252.jpg",
+      "bytes": 672696
+    },
+    {
+      "path": "chip001/tiles/tile_000253.jpg",
+      "bytes": 687950
+    },
+    {
+      "path": "chip001/tiles/tile_000254.jpg",
+      "bytes": 682921
+    },
+    {
+      "path": "chip001/tiles/tile_000255.jpg",
+      "bytes": 679706
+    },
+    {
+      "path": "chip001/tiles/tile_000256.jpg",
+      "bytes": 684847
+    },
+    {
+      "path": "chip001/tiles/tile_000257.jpg",
+      "bytes": 691541
+    },
+    {
+      "path": "chip001/tiles/tile_000258.jpg",
+      "bytes": 683030
+    },
+    {
+      "path": "chip001/tiles/tile_000259.jpg",
+      "bytes": 680456
+    },
+    {
+      "path": "chip001/tiles/tile_000260.jpg",
+      "bytes": 697332
+    },
+    {
+      "path": "chip001/tiles/tile_000261.jpg",
+      "bytes": 712245
+    },
+    {
+      "path": "chip001/tiles/tile_000262.jpg",
+      "bytes": 714461
+    },
+    {
+      "path": "chip001/tiles/tile_000263.jpg",
+      "bytes": 707268
+    },
+    {
+      "path": "chip001/tiles/tile_000264.jpg",
+      "bytes": 695948
+    },
+    {
+      "path": "chip001/tiles/tile_000265.jpg",
+      "bytes": 677482
+    },
+    {
+      "path": "chip001/tiles/tile_000266.jpg",
+      "bytes": 676514
+    },
+    {
+      "path": "chip001/tiles/tile_000267.jpg",
+      "bytes": 685395
+    },
+    {
+      "path": "chip001/tiles/tile_000268.jpg",
+      "bytes": 689006
+    },
+    {
+      "path": "chip001/tiles/tile_000269.jpg",
+      "bytes": 692525
+    },
+    {
+      "path": "chip001/tiles/tile_000270.jpg",
+      "bytes": 667656
+    },
+    {
+      "path": "chip001/tiles/tile_000271.jpg",
+      "bytes": 615318
+    },
+    {
+      "path": "chip001/tiles/tile_000272.jpg",
+      "bytes": 622002
+    },
+    {
+      "path": "chip001/tiles/tile_000273.jpg",
+      "bytes": 656075
+    },
+    {
+      "path": "chip001/tiles/tile_000274.jpg",
+      "bytes": 692355
+    },
+    {
+      "path": "chip001/tiles/tile_000275.jpg",
+      "bytes": 681239
+    },
+    {
+      "path": "chip001/tiles/tile_000276.jpg",
+      "bytes": 683119
+    },
+    {
+      "path": "chip001/tiles/tile_000277.jpg",
+      "bytes": 681213
+    },
+    {
+      "path": "chip001/tiles/tile_000278.jpg",
+      "bytes": 678857
+    },
+    {
+      "path": "chip001/tiles/tile_000279.jpg",
+      "bytes": 684801
+    },
+    {
+      "path": "chip001/tiles/tile_000280.jpg",
+      "bytes": 695893
+    },
+    {
+      "path": "chip001/tiles/tile_000281.jpg",
+      "bytes": 707811
+    },
+    {
+      "path": "chip001/tiles/tile_000282.jpg",
+      "bytes": 702833
+    },
+    {
+      "path": "chip001/tiles/tile_000283.jpg",
+      "bytes": 708565
+    },
+    {
+      "path": "chip001/tiles/tile_000284.jpg",
+      "bytes": 679388
+    },
+    {
+      "path": "chip001/tiles/tile_000285.jpg",
+      "bytes": 690779
+    },
+    {
+      "path": "chip001/tiles/tile_000286.jpg",
+      "bytes": 685373
+    },
+    {
+      "path": "chip001/tiles/tile_000287.jpg",
+      "bytes": 677130
+    },
+    {
+      "path": "chip001/tiles/tile_000288.jpg",
+      "bytes": 687179
+    },
+    {
+      "path": "chip001/tiles/tile_000289.jpg",
+      "bytes": 685014
+    },
+    {
+      "path": "chip001/tiles/tile_000290.jpg",
+      "bytes": 677980
+    },
+    {
+      "path": "chip001/tiles/tile_000291.jpg",
+      "bytes": 676657
+    },
+    {
+      "path": "chip001/tiles/tile_000292.jpg",
+      "bytes": 636737
+    },
+    {
+      "path": "chip001/tiles/tile_000293.jpg",
+      "bytes": 638481
+    },
+    {
+      "path": "chip001/tiles/tile_000294.jpg",
+      "bytes": 683099
+    },
+    {
+      "path": "chip001/tiles/tile_000295.jpg",
+      "bytes": 680482
+    },
+    {
+      "path": "chip001/tiles/tile_000296.jpg",
+      "bytes": 680411
+    },
+    {
+      "path": "chip001/tiles/tile_000297.jpg",
+      "bytes": 684898
+    },
+    {
+      "path": "chip001/tiles/tile_000298.jpg",
+      "bytes": 678671
+    },
+    {
+      "path": "chip001/tiles/tile_000299.jpg",
+      "bytes": 681487
+    },
+    {
+      "path": "chip001/tiles/tile_000300.jpg",
+      "bytes": 690528
+    },
+    {
+      "path": "chip001/tiles/tile_000301.jpg",
+      "bytes": 684732
+    },
+    {
+      "path": "chip001/tiles/tile_000302.jpg",
+      "bytes": 682666
+    },
+    {
+      "path": "chip001/tiles/tile_000303.jpg",
+      "bytes": 699086
+    },
+    {
+      "path": "chip001/tiles/tile_000304.jpg",
+      "bytes": 697589
+    },
+    {
+      "path": "chip001/tiles/tile_000305.jpg",
+      "bytes": 678401
+    },
+    {
+      "path": "chip001/tiles/tile_000306.jpg",
+      "bytes": 680407
+    },
+    {
+      "path": "chip001/tiles/tile_000307.jpg",
+      "bytes": 677851
+    },
+    {
+      "path": "chip001/tiles/tile_000308.jpg",
+      "bytes": 677573
+    },
+    {
+      "path": "chip001/tiles/tile_000309.jpg",
+      "bytes": 679468
+    },
+    {
+      "path": "chip001/tiles/tile_000310.jpg",
+      "bytes": 690558
+    },
+    {
+      "path": "chip001/tiles/tile_000311.jpg",
+      "bytes": 694421
+    },
+    {
+      "path": "chip001/tiles/tile_000312.jpg",
+      "bytes": 660615
+    },
+    {
+      "path": "chip001/tiles/tile_000313.jpg",
+      "bytes": 628790
+    },
+    {
+      "path": "chip001/tiles/tile_000314.jpg",
+      "bytes": 668581
+    },
+    {
+      "path": "chip001/tiles/tile_000315.jpg",
+      "bytes": 707188
+    },
+    {
+      "path": "chip001/tiles/tile_000316.jpg",
+      "bytes": 681249
+    },
+    {
+      "path": "chip001/tiles/tile_000317.jpg",
+      "bytes": 677888
+    },
+    {
+      "path": "chip001/tiles/tile_000318.jpg",
+      "bytes": 677493
+    },
+    {
+      "path": "chip001/tiles/tile_000319.jpg",
+      "bytes": 678108
+    },
+    {
+      "path": "chip001/tiles/tile_000320.jpg",
+      "bytes": 679152
+    },
+    {
+      "path": "chip001/tiles/tile_000321.jpg",
+      "bytes": 681397
+    },
+    {
+      "path": "chip001/tiles/tile_000322.jpg",
+      "bytes": 680279
+    },
+    {
+      "path": "chip001/tiles/tile_000323.jpg",
+      "bytes": 686371
+    },
+    {
+      "path": "chip001/tiles/tile_000324.jpg",
+      "bytes": 682229
+    },
+    {
+      "path": "chip001/tiles/tile_000325.jpg",
+      "bytes": 688283
+    },
+    {
+      "path": "chip001/tiles/tile_000326.jpg",
+      "bytes": 690463
+    },
+    {
+      "path": "chip001/tiles/tile_000327.jpg",
+      "bytes": 680543
+    },
+    {
+      "path": "chip001/tiles/tile_000328.jpg",
+      "bytes": 676205
+    },
+    {
+      "path": "chip001/tiles/tile_000329.jpg",
+      "bytes": 678248
+    },
+    {
+      "path": "chip001/tiles/tile_000330.jpg",
+      "bytes": 679972
+    },
+    {
+      "path": "chip001/tiles/tile_000331.jpg",
+      "bytes": 681548
+    },
+    {
+      "path": "chip001/tiles/tile_000332.jpg",
+      "bytes": 683180
+    },
+    {
+      "path": "chip001/tiles/tile_000333.jpg",
+      "bytes": 644179
+    },
+    {
+      "path": "chip001/tiles/tile_000334.jpg",
+      "bytes": 647391
+    },
+    {
+      "path": "chip001/tiles/tile_000335.jpg",
+      "bytes": 684201
+    },
+    {
+      "path": "chip001/tiles/tile_000336.jpg",
+      "bytes": 685896
+    },
+    {
+      "path": "chip001/tiles/tile_000337.jpg",
+      "bytes": 680314
+    },
+    {
+      "path": "chip001/tiles/tile_000338.jpg",
+      "bytes": 677928
+    },
+    {
+      "path": "chip001/tiles/tile_000339.jpg",
+      "bytes": 679700
+    },
+    {
+      "path": "chip001/tiles/tile_000340.jpg",
+      "bytes": 680565
+    },
+    {
+      "path": "chip001/tiles/tile_000341.jpg",
+      "bytes": 691786
+    },
+    {
+      "path": "chip001/tiles/tile_000342.jpg",
+      "bytes": 692200
+    },
+    {
+      "path": "chip001/tiles/tile_000343.jpg",
+      "bytes": 684455
+    },
+    {
+      "path": "chip001/tiles/tile_000344.jpg",
+      "bytes": 681301
+    },
+    {
+      "path": "chip001/tiles/tile_000345.jpg",
+      "bytes": 679669
+    },
+    {
+      "path": "chip001/tiles/tile_000346.jpg",
+      "bytes": 678937
+    },
+    {
+      "path": "chip001/tiles/tile_000347.jpg",
+      "bytes": 687659
+    },
+    {
+      "path": "chip001/tiles/tile_000348.jpg",
+      "bytes": 683325
+    },
+    {
+      "path": "chip001/tiles/tile_000349.jpg",
+      "bytes": 677325
+    },
+    {
+      "path": "chip001/tiles/tile_000350.jpg",
+      "bytes": 679824
+    },
+    {
+      "path": "chip001/tiles/tile_000351.jpg",
+      "bytes": 680930
+    },
+    {
+      "path": "chip001/tiles/tile_000352.jpg",
+      "bytes": 699870
+    },
+    {
+      "path": "chip001/tiles/tile_000353.jpg",
+      "bytes": 659729
+    },
+    {
+      "path": "chip001/tiles/tile_000354.jpg",
+      "bytes": 651418
+    },
+    {
+      "path": "chip001/tiles/tile_000355.jpg",
+      "bytes": 692135
+    },
+    {
+      "path": "chip001/tiles/tile_000356.jpg",
+      "bytes": 680532
+    },
+    {
+      "path": "chip001/tiles/tile_000357.jpg",
+      "bytes": 679793
+    },
+    {
+      "path": "chip001/tiles/tile_000358.jpg",
+      "bytes": 677667
+    },
+    {
+      "path": "chip001/tiles/tile_000359.jpg",
+      "bytes": 681969
+    },
+    {
+      "path": "chip001/tiles/tile_000360.jpg",
+      "bytes": 683978
+    },
+    {
+      "path": "chip001/tiles/tile_000361.jpg",
+      "bytes": 680837
+    },
+    {
+      "path": "chip001/tiles/tile_000362.jpg",
+      "bytes": 678406
+    },
+    {
+      "path": "chip001/tiles/tile_000363.jpg",
+      "bytes": 686413
+    },
+    {
+      "path": "chip001/tiles/tile_000364.jpg",
+      "bytes": 680198
+    },
+    {
+      "path": "chip001/tiles/tile_000365.jpg",
+      "bytes": 678319
+    },
+    {
+      "path": "chip001/tiles/tile_000366.jpg",
+      "bytes": 685236
+    },
+    {
+      "path": "chip001/tiles/tile_000367.jpg",
+      "bytes": 680784
+    },
+    {
+      "path": "chip001/tiles/tile_000368.jpg",
+      "bytes": 676624
+    },
+    {
+      "path": "chip001/tiles/tile_000369.jpg",
+      "bytes": 675753
+    },
+    {
+      "path": "chip001/tiles/tile_000370.jpg",
+      "bytes": 679953
+    },
+    {
+      "path": "chip001/tiles/tile_000371.jpg",
+      "bytes": 684216
+    },
+    {
+      "path": "chip001/tiles/tile_000372.jpg",
+      "bytes": 683573
+    },
+    {
+      "path": "chip001/tiles/tile_000373.jpg",
+      "bytes": 654951
+    },
+    {
+      "path": "chip001/tiles/tile_000374.jpg",
+      "bytes": 667851
+    },
+    {
+      "path": "chip001/tiles/tile_000375.jpg",
+      "bytes": 682702
+    },
+    {
+      "path": "chip001/tiles/tile_000376.jpg",
+      "bytes": 686716
+    },
+    {
+      "path": "chip001/tiles/tile_000377.jpg",
+      "bytes": 687756
+    },
+    {
+      "path": "chip001/tiles/tile_000378.jpg",
+      "bytes": 688090
+    },
+    {
+      "path": "chip001/tiles/tile_000379.jpg",
+      "bytes": 688093
+    },
+    {
+      "path": "chip001/tiles/tile_000380.jpg",
+      "bytes": 684687
+    },
+    {
+      "path": "chip001/tiles/tile_000381.jpg",
+      "bytes": 682953
+    },
+    {
+      "path": "chip001/tiles/tile_000382.jpg",
+      "bytes": 679821
+    },
+    {
+      "path": "chip001/tiles/tile_000383.jpg",
+      "bytes": 685710
+    },
+    {
+      "path": "chip001/tiles/tile_000384.jpg",
+      "bytes": 684284
+    },
+    {
+      "path": "chip001/tiles/tile_000385.jpg",
+      "bytes": 679158
+    },
+    {
+      "path": "chip001/tiles/tile_000386.jpg",
+      "bytes": 680039
+    },
+    {
+      "path": "chip001/tiles/tile_000387.jpg",
+      "bytes": 678116
+    },
+    {
+      "path": "chip001/tiles/tile_000388.jpg",
+      "bytes": 678034
+    },
+    {
+      "path": "chip001/tiles/tile_000389.jpg",
+      "bytes": 678783
+    },
+    {
+      "path": "chip001/tiles/tile_000390.jpg",
+      "bytes": 676796
+    },
+    {
+      "path": "chip001/tiles/tile_000391.jpg",
+      "bytes": 680256
+    },
+    {
+      "path": "chip001/tiles/tile_000392.jpg",
+      "bytes": 694809
+    },
+    {
+      "path": "chip001/tiles/tile_000393.jpg",
+      "bytes": 641976
+    },
+    {
+      "path": "chip001/tiles/tile_000394.jpg",
+      "bytes": 636921
+    },
+    {
+      "path": "chip001/tiles/tile_000395.jpg",
+      "bytes": 688861
+    },
+    {
+      "path": "chip001/tiles/tile_000396.jpg",
+      "bytes": 683545
+    },
+    {
+      "path": "chip001/tiles/tile_000397.jpg",
+      "bytes": 679133
+    },
+    {
+      "path": "chip001/tiles/tile_000398.jpg",
+      "bytes": 677717
+    },
+    {
+      "path": "chip001/tiles/tile_000399.jpg",
+      "bytes": 678406
+    },
+    {
+      "path": "chip001/tiles/tile_000400.jpg",
+      "bytes": 683567
+    },
+    {
+      "path": "chip001/tiles/tile_000401.jpg",
+      "bytes": 681862
+    },
+    {
+      "path": "chip001/tiles/tile_000402.jpg",
+      "bytes": 687451
+    },
+    {
+      "path": "chip001/tiles/tile_000403.jpg",
+      "bytes": 688533
+    },
+    {
+      "path": "chip001/tiles/tile_000404.jpg",
+      "bytes": 681452
+    },
+    {
+      "path": "chip001/tiles/tile_000405.jpg",
+      "bytes": 681827
+    },
+    {
+      "path": "chip001/tiles/tile_000406.jpg",
+      "bytes": 679592
+    },
+    {
+      "path": "chip001/tiles/tile_000407.jpg",
+      "bytes": 682246
+    },
+    {
+      "path": "chip001/tiles/tile_000408.jpg",
+      "bytes": 685086
+    },
+    {
+      "path": "chip001/tiles/tile_000409.jpg",
+      "bytes": 682757
+    },
+    {
+      "path": "chip001/tiles/tile_000410.jpg",
+      "bytes": 685040
+    },
+    {
+      "path": "chip001/tiles/tile_000411.jpg",
+      "bytes": 675010
+    },
+    {
+      "path": "chip001/tiles/tile_000412.jpg",
+      "bytes": 664628
+    },
+    {
+      "path": "chip001/tiles/tile_000413.jpg",
+      "bytes": 651183
+    },
+    {
+      "path": "chip001/tiles/tile_000414.jpg",
+      "bytes": 620715
+    },
+    {
+      "path": "chip001/tiles/tile_000415.jpg",
+      "bytes": 627324
+    },
+    {
+      "path": "chip001/tiles/tile_000416.jpg",
+      "bytes": 635275
+    },
+    {
+      "path": "chip001/tiles/tile_000417.jpg",
+      "bytes": 646362
+    },
+    {
+      "path": "chip001/tiles/tile_000418.jpg",
+      "bytes": 661155
+    },
+    {
+      "path": "chip001/tiles/tile_000419.jpg",
+      "bytes": 682072
+    },
+    {
+      "path": "chip001/tiles/tile_000420.jpg",
+      "bytes": 686465
+    },
+    {
+      "path": "chip001/tiles/tile_000421.jpg",
+      "bytes": 691186
+    },
+    {
+      "path": "chip001/tiles/tile_000422.jpg",
+      "bytes": 688148
+    },
+    {
+      "path": "chip001/tiles/tile_000423.jpg",
+      "bytes": 680254
+    },
+    {
+      "path": "chip001/tiles/tile_000424.jpg",
+      "bytes": 683933
+    },
+    {
+      "path": "chip001/tiles/tile_000425.jpg",
+      "bytes": 683068
+    },
+    {
+      "path": "chip001/tiles/tile_000426.jpg",
+      "bytes": 684101
+    },
+    {
+      "path": "chip001/tiles/tile_000427.jpg",
+      "bytes": 680161
+    },
+    {
+      "path": "chip001/tiles/tile_000428.jpg",
+      "bytes": 680017
+    },
+    {
+      "path": "chip001/tiles/tile_000429.jpg",
+      "bytes": 686462
+    },
+    {
+      "path": "chip001/tiles/tile_000430.jpg",
+      "bytes": 688327
+    },
+    {
+      "path": "chip001/tiles/tile_000431.jpg",
+      "bytes": 686079
+    },
+    {
+      "path": "chip001/tiles/tile_000432.jpg",
+      "bytes": 635557
+    },
+    {
+      "path": "chip001/tiles/tile_000433.jpg",
+      "bytes": 624919
+    },
+    {
+      "path": "chip001/tiles/tile_000434.jpg",
+      "bytes": 678535
+    },
+    {
+      "path": "chip001/tiles/tile_000435.jpg",
+      "bytes": 712874
+    },
+    {
+      "path": "chip001/tiles/tile_000436.jpg",
+      "bytes": 697832
+    },
+    {
+      "path": "chip001/tiles/tile_000437.jpg",
+      "bytes": 679236
+    },
+    {
+      "path": "chip001/tiles/tile_000438.jpg",
+      "bytes": 682773
+    },
+    {
+      "path": "chip001/tiles/tile_000439.jpg",
+      "bytes": 692061
+    },
+    {
+      "path": "chip001/tiles/tile_000440.jpg",
+      "bytes": 685348
+    },
+    {
+      "path": "chip001/tiles/tile_000441.jpg",
+      "bytes": 683680
+    },
+    {
+      "path": "chip001/tiles/tile_000442.jpg",
+      "bytes": 684903
+    },
+    {
+      "path": "chip001/tiles/tile_000443.jpg",
+      "bytes": 680198
+    },
+    {
+      "path": "chip001/tiles/tile_000444.jpg",
+      "bytes": 661203
+    },
+    {
+      "path": "chip001/tiles/tile_000445.jpg",
+      "bytes": 645297
+    },
+    {
+      "path": "chip001/tiles/tile_000446.jpg",
+      "bytes": 635283
+    },
+    {
+      "path": "chip001/tiles/tile_000447.jpg",
+      "bytes": 624858
+    },
+    {
+      "path": "chip001/tiles/tile_000448.jpg",
+      "bytes": 625769
+    },
+    {
+      "path": "chip001/tiles/tile_000449.jpg",
+      "bytes": 630501
+    },
+    {
+      "path": "chip001/tiles/tile_000450.jpg",
+      "bytes": 642768
+    },
+    {
+      "path": "chip001/tiles/tile_000451.jpg",
+      "bytes": 650388
+    },
+    {
+      "path": "chip001/tiles/tile_000452.jpg",
+      "bytes": 667690
+    },
+    {
+      "path": "chip001/tiles/tile_000453.jpg",
+      "bytes": 687203
+    },
+    {
+      "path": "chip001/tiles/tile_000454.jpg",
+      "bytes": 685684
+    },
+    {
+      "path": "chip001/tiles/tile_000455.jpg",
+      "bytes": 681290
+    },
+    {
+      "path": "chip001/tiles/tile_000456.jpg",
+      "bytes": 699549
+    },
+    {
+      "path": "chip001/tiles/tile_000457.jpg",
+      "bytes": 698193
+    },
+    {
+      "path": "chip001/tiles/tile_000458.jpg",
+      "bytes": 664970
+    },
+    {
+      "path": "chip001/tiles/tile_000459.jpg",
+      "bytes": 628304
+    },
+    {
+      "path": "chip001/tiles/tile_000460.jpg",
+      "bytes": 632881
+    },
+    {
+      "path": "chip001/tiles/tile_000461.jpg",
+      "bytes": 646113
+    },
+    {
+      "path": "chip001/tiles/tile_000462.jpg",
+      "bytes": 703772
+    },
+    {
+      "path": "chip001/tiles/tile_000463.jpg",
+      "bytes": 654039
+    },
+    {
+      "path": "chip001/tiles/tile_000464.jpg",
+      "bytes": 628262
+    },
+    {
+      "path": "chip001/tiles/tile_000465.jpg",
+      "bytes": 629344
+    },
+    {
+      "path": "chip001/tiles/tile_000466.jpg",
+      "bytes": 626427
+    },
+    {
+      "path": "chip001/tiles/tile_000467.jpg",
+      "bytes": 624569
+    },
+    {
+      "path": "chip001/tiles/tile_000468.jpg",
+      "bytes": 628875
+    },
+    {
+      "path": "chip001/tiles/tile_000469.jpg",
+      "bytes": 619652
+    },
+    {
+      "path": "chip001/tiles/tile_000470.jpg",
+      "bytes": 604331
+    },
+    {
+      "path": "chip001/tiles/tile_000471.jpg",
+      "bytes": 605954
+    },
+    {
+      "path": "chip001/tiles/tile_000472.jpg",
+      "bytes": 622163
+    },
+    {
+      "path": "chip001/tiles/tile_000473.jpg",
+      "bytes": 631461
+    },
+    {
+      "path": "chip002/tiles/tile_000000.jpg",
+      "bytes": 657879
+    },
+    {
+      "path": "chip002/tiles/tile_000001.jpg",
+      "bytes": 683893
+    },
+    {
+      "path": "chip002/tiles/tile_000002.jpg",
+      "bytes": 649382
+    },
+    {
+      "path": "chip002/tiles/tile_000003.jpg",
+      "bytes": 641857
+    },
+    {
+      "path": "chip002/tiles/tile_000004.jpg",
+      "bytes": 640429
+    },
+    {
+      "path": "chip002/tiles/tile_000005.jpg",
+      "bytes": 649649
+    },
+    {
+      "path": "chip002/tiles/tile_000006.jpg",
+      "bytes": 678071
+    },
+    {
+      "path": "chip002/tiles/tile_000007.jpg",
+      "bytes": 705216
+    },
+    {
+      "path": "chip002/tiles/tile_000008.jpg",
+      "bytes": 709070
+    },
+    {
+      "path": "chip002/tiles/tile_000009.jpg",
+      "bytes": 683819
+    },
+    {
+      "path": "chip002/tiles/tile_000010.jpg",
+      "bytes": 617445
+    },
+    {
+      "path": "chip002/tiles/tile_000011.jpg",
+      "bytes": 598488
+    },
+    {
+      "path": "chip002/tiles/tile_000012.jpg",
+      "bytes": 688032
+    },
+    {
+      "path": "chip002/tiles/tile_000013.jpg",
+      "bytes": 693162
+    },
+    {
+      "path": "chip002/tiles/tile_000014.jpg",
+      "bytes": 704794
+    },
+    {
+      "path": "chip002/tiles/tile_000015.jpg",
+      "bytes": 691430
+    },
+    {
+      "path": "chip002/tiles/tile_000016.jpg",
+      "bytes": 711476
+    },
+    {
+      "path": "chip002/tiles/tile_000017.jpg",
+      "bytes": 704807
+    },
+    {
+      "path": "chip002/tiles/tile_000018.jpg",
+      "bytes": 657281
+    },
+    {
+      "path": "chip002/tiles/tile_000019.jpg",
+      "bytes": 641940
+    },
+    {
+      "path": "chip002/tiles/tile_000020.jpg",
+      "bytes": 640946
+    },
+    {
+      "path": "chip002/tiles/tile_000021.jpg",
+      "bytes": 660900
+    },
+    {
+      "path": "chip002/tiles/tile_000022.jpg",
+      "bytes": 682589
+    },
+    {
+      "path": "chip002/tiles/tile_000023.jpg",
+      "bytes": 718623
+    },
+    {
+      "path": "chip002/tiles/tile_000024.jpg",
+      "bytes": 739048
+    },
+    {
+      "path": "chip002/tiles/tile_000025.jpg",
+      "bytes": 706461
+    },
+    {
+      "path": "chip002/tiles/tile_000026.jpg",
+      "bytes": 703108
+    },
+    {
+      "path": "chip002/tiles/tile_000027.jpg",
+      "bytes": 702141
+    },
+    {
+      "path": "chip002/tiles/tile_000028.jpg",
+      "bytes": 697060
+    },
+    {
+      "path": "chip002/tiles/tile_000029.jpg",
+      "bytes": 693497
+    },
+    {
+      "path": "chip002/tiles/tile_000030.jpg",
+      "bytes": 615235
+    },
+    {
+      "path": "chip002/tiles/tile_000031.jpg",
+      "bytes": 608530
+    },
+    {
+      "path": "chip002/tiles/tile_000032.jpg",
+      "bytes": 647820
+    },
+    {
+      "path": "chip002/tiles/tile_000033.jpg",
+      "bytes": 692153
+    },
+    {
+      "path": "chip002/tiles/tile_000034.jpg",
+      "bytes": 688707
+    },
+    {
+      "path": "chip002/tiles/tile_000035.jpg",
+      "bytes": 705207
+    },
+    {
+      "path": "chip002/tiles/tile_000036.jpg",
+      "bytes": 712580
+    },
+    {
+      "path": "chip002/tiles/tile_000037.jpg",
+      "bytes": 714198
+    },
+    {
+      "path": "chip002/tiles/tile_000038.jpg",
+      "bytes": 702474
+    },
+    {
+      "path": "chip002/tiles/tile_000039.jpg",
+      "bytes": 692762
+    },
+    {
+      "path": "chip002/tiles/tile_000040.jpg",
+      "bytes": 696312
+    },
+    {
+      "path": "chip002/tiles/tile_000041.jpg",
+      "bytes": 707381
+    },
+    {
+      "path": "chip002/tiles/tile_000042.jpg",
+      "bytes": 672121
+    },
+    {
+      "path": "chip002/tiles/tile_000043.jpg",
+      "bytes": 652848
+    },
+    {
+      "path": "chip002/tiles/tile_000044.jpg",
+      "bytes": 640545
+    },
+    {
+      "path": "chip002/tiles/tile_000045.jpg",
+      "bytes": 647375
+    },
+    {
+      "path": "chip002/tiles/tile_000046.jpg",
+      "bytes": 664314
+    },
+    {
+      "path": "chip002/tiles/tile_000047.jpg",
+      "bytes": 682556
+    },
+    {
+      "path": "chip002/tiles/tile_000048.jpg",
+      "bytes": 699914
+    },
+    {
+      "path": "chip002/tiles/tile_000049.jpg",
+      "bytes": 695668
+    },
+    {
+      "path": "chip002/tiles/tile_000050.jpg",
+      "bytes": 692173
+    },
+    {
+      "path": "chip002/tiles/tile_000051.jpg",
+      "bytes": 686911
+    },
+    {
+      "path": "chip002/tiles/tile_000052.jpg",
+      "bytes": 688099
+    },
+    {
+      "path": "chip002/tiles/tile_000053.jpg",
+      "bytes": 697784
+    },
+    {
+      "path": "chip002/tiles/tile_000054.jpg",
+      "bytes": 718804
+    },
+    {
+      "path": "chip002/tiles/tile_000055.jpg",
+      "bytes": 716307
+    },
+    {
+      "path": "chip002/tiles/tile_000056.jpg",
+      "bytes": 709076
+    },
+    {
+      "path": "chip002/tiles/tile_000057.jpg",
+      "bytes": 693615
+    },
+    {
+      "path": "chip002/tiles/tile_000058.jpg",
+      "bytes": 697341
+    },
+    {
+      "path": "chip002/tiles/tile_000059.jpg",
+      "bytes": 686901
+    },
+    {
+      "path": "chip002/tiles/tile_000060.jpg",
+      "bytes": 613653
+    },
+    {
+      "path": "chip002/tiles/tile_000061.jpg",
+      "bytes": 629364
+    },
+    {
+      "path": "chip002/tiles/tile_000062.jpg",
+      "bytes": 629572
+    },
+    {
+      "path": "chip002/tiles/tile_000063.jpg",
+      "bytes": 693753
+    },
+    {
+      "path": "chip002/tiles/tile_000064.jpg",
+      "bytes": 694809
+    },
+    {
+      "path": "chip002/tiles/tile_000065.jpg",
+      "bytes": 695464
+    },
+    {
+      "path": "chip002/tiles/tile_000066.jpg",
+      "bytes": 693610
+    },
+    {
+      "path": "chip002/tiles/tile_000067.jpg",
+      "bytes": 712609
+    },
+    {
+      "path": "chip002/tiles/tile_000068.jpg",
+      "bytes": 709088
+    },
+    {
+      "path": "chip002/tiles/tile_000069.jpg",
+      "bytes": 697426
+    },
+    {
+      "path": "chip002/tiles/tile_000070.jpg",
+      "bytes": 689384
+    },
+    {
+      "path": "chip002/tiles/tile_000071.jpg",
+      "bytes": 688048
+    },
+    {
+      "path": "chip002/tiles/tile_000072.jpg",
+      "bytes": 692681
+    },
+    {
+      "path": "chip002/tiles/tile_000073.jpg",
+      "bytes": 697394
+    },
+    {
+      "path": "chip002/tiles/tile_000074.jpg",
+      "bytes": 733589
+    },
+    {
+      "path": "chip002/tiles/tile_000075.jpg",
+      "bytes": 718229
+    },
+    {
+      "path": "chip002/tiles/tile_000076.jpg",
+      "bytes": 708586
+    },
+    {
+      "path": "chip002/tiles/tile_000077.jpg",
+      "bytes": 705700
+    },
+    {
+      "path": "chip002/tiles/tile_000078.jpg",
+      "bytes": 671069
+    },
+    {
+      "path": "chip002/tiles/tile_000079.jpg",
+      "bytes": 651863
+    },
+    {
+      "path": "chip002/tiles/tile_000080.jpg",
+      "bytes": 652209
+    },
+    {
+      "path": "chip002/tiles/tile_000081.jpg",
+      "bytes": 678712
+    },
+    {
+      "path": "chip002/tiles/tile_000082.jpg",
+      "bytes": 698741
+    },
+    {
+      "path": "chip002/tiles/tile_000083.jpg",
+      "bytes": 701226
+    },
+    {
+      "path": "chip002/tiles/tile_000084.jpg",
+      "bytes": 697707
+    },
+    {
+      "path": "chip002/tiles/tile_000085.jpg",
+      "bytes": 701004
+    },
+    {
+      "path": "chip002/tiles/tile_000086.jpg",
+      "bytes": 700120
+    },
+    {
+      "path": "chip002/tiles/tile_000087.jpg",
+      "bytes": 717329
+    },
+    {
+      "path": "chip002/tiles/tile_000088.jpg",
+      "bytes": 700468
+    },
+    {
+      "path": "chip002/tiles/tile_000089.jpg",
+      "bytes": 694326
+    },
+    {
+      "path": "chip002/tiles/tile_000090.jpg",
+      "bytes": 690961
+    },
+    {
+      "path": "chip002/tiles/tile_000091.jpg",
+      "bytes": 688515
+    },
+    {
+      "path": "chip002/tiles/tile_000092.jpg",
+      "bytes": 687443
+    },
+    {
+      "path": "chip002/tiles/tile_000093.jpg",
+      "bytes": 695141
+    },
+    {
+      "path": "chip002/tiles/tile_000094.jpg",
+      "bytes": 707296
+    },
+    {
+      "path": "chip002/tiles/tile_000095.jpg",
+      "bytes": 692164
+    },
+    {
+      "path": "chip002/tiles/tile_000096.jpg",
+      "bytes": 685088
+    },
+    {
+      "path": "chip002/tiles/tile_000097.jpg",
+      "bytes": 693336
+    },
+    {
+      "path": "chip002/tiles/tile_000098.jpg",
+      "bytes": 691735
+    },
+    {
+      "path": "chip002/tiles/tile_000099.jpg",
+      "bytes": 660282
+    },
+    {
+      "path": "chip002/tiles/tile_000100.jpg",
+      "bytes": 616913
+    },
+    {
+      "path": "chip002/tiles/tile_000101.jpg",
+      "bytes": 627038
+    },
+    {
+      "path": "chip002/tiles/tile_000102.jpg",
+      "bytes": 698752
+    },
+    {
+      "path": "chip002/tiles/tile_000103.jpg",
+      "bytes": 696879
+    },
+    {
+      "path": "chip002/tiles/tile_000104.jpg",
+      "bytes": 698572
+    },
+    {
+      "path": "chip002/tiles/tile_000105.jpg",
+      "bytes": 686425
+    },
+    {
+      "path": "chip002/tiles/tile_000106.jpg",
+      "bytes": 699074
+    },
+    {
+      "path": "chip002/tiles/tile_000107.jpg",
+      "bytes": 697947
+    },
+    {
+      "path": "chip002/tiles/tile_000108.jpg",
+      "bytes": 693555
+    },
+    {
+      "path": "chip002/tiles/tile_000109.jpg",
+      "bytes": 689260
+    },
+    {
+      "path": "chip002/tiles/tile_000110.jpg",
+      "bytes": 690987
+    },
+    {
+      "path": "chip002/tiles/tile_000111.jpg",
+      "bytes": 689405
+    },
+    {
+      "path": "chip002/tiles/tile_000112.jpg",
+      "bytes": 692121
+    },
+    {
+      "path": "chip002/tiles/tile_000113.jpg",
+      "bytes": 693773
+    },
+    {
+      "path": "chip002/tiles/tile_000114.jpg",
+      "bytes": 696926
+    },
+    {
+      "path": "chip002/tiles/tile_000115.jpg",
+      "bytes": 704467
+    },
+    {
+      "path": "chip002/tiles/tile_000116.jpg",
+      "bytes": 699510
+    },
+    {
+      "path": "chip002/tiles/tile_000117.jpg",
+      "bytes": 699539
+    },
+    {
+      "path": "chip002/tiles/tile_000118.jpg",
+      "bytes": 692457
+    },
+    {
+      "path": "chip002/tiles/tile_000119.jpg",
+      "bytes": 694100
+    },
+    {
+      "path": "chip002/tiles/tile_000120.jpg",
+      "bytes": 698399
+    },
+    {
+      "path": "chip002/tiles/tile_000121.jpg",
+      "bytes": 701349
+    },
+    {
+      "path": "chip002/tiles/tile_000122.jpg",
+      "bytes": 682142
+    },
+    {
+      "path": "chip002/tiles/tile_000123.jpg",
+      "bytes": 733497
+    },
+    {
+      "path": "chip002/tiles/tile_000124.jpg",
+      "bytes": 699230
+    },
+    {
+      "path": "chip002/tiles/tile_000125.jpg",
+      "bytes": 697336
+    },
+    {
+      "path": "chip002/tiles/tile_000126.jpg",
+      "bytes": 694931
+    },
+    {
+      "path": "chip002/tiles/tile_000127.jpg",
+      "bytes": 689283
+    },
+    {
+      "path": "chip002/tiles/tile_000128.jpg",
+      "bytes": 695412
+    },
+    {
+      "path": "chip002/tiles/tile_000129.jpg",
+      "bytes": 704064
+    },
+    {
+      "path": "chip002/tiles/tile_000130.jpg",
+      "bytes": 690314
+    },
+    {
+      "path": "chip002/tiles/tile_000131.jpg",
+      "bytes": 689136
+    },
+    {
+      "path": "chip002/tiles/tile_000132.jpg",
+      "bytes": 690243
+    },
+    {
+      "path": "chip002/tiles/tile_000133.jpg",
+      "bytes": 692492
+    },
+    {
+      "path": "chip002/tiles/tile_000134.jpg",
+      "bytes": 696799
+    },
+    {
+      "path": "chip002/tiles/tile_000135.jpg",
+      "bytes": 695351
+    },
+    {
+      "path": "chip002/tiles/tile_000136.jpg",
+      "bytes": 692725
+    },
+    {
+      "path": "chip002/tiles/tile_000137.jpg",
+      "bytes": 699870
+    },
+    {
+      "path": "chip002/tiles/tile_000138.jpg",
+      "bytes": 697405
+    },
+    {
+      "path": "chip002/tiles/tile_000139.jpg",
+      "bytes": 697378
+    },
+    {
+      "path": "chip002/tiles/tile_000140.jpg",
+      "bytes": 694592
+    },
+    {
+      "path": "chip002/tiles/tile_000141.jpg",
+      "bytes": 693838
+    },
+    {
+      "path": "chip002/tiles/tile_000142.jpg",
+      "bytes": 702371
+    },
+    {
+      "path": "chip002/tiles/tile_000143.jpg",
+      "bytes": 707053
+    },
+    {
+      "path": "chip002/tiles/tile_000144.jpg",
+      "bytes": 646578
+    },
+    {
+      "path": "chip002/tiles/tile_000145.jpg",
+      "bytes": 630905
+    },
+    {
+      "path": "chip002/tiles/tile_000146.jpg",
+      "bytes": 626903
+    },
+    {
+      "path": "chip002/tiles/tile_000147.jpg",
+      "bytes": 670892
+    },
+    {
+      "path": "chip002/tiles/tile_000148.jpg",
+      "bytes": 687042
+    },
+    {
+      "path": "chip002/tiles/tile_000149.jpg",
+      "bytes": 693794
+    },
+    {
+      "path": "chip002/tiles/tile_000150.jpg",
+      "bytes": 686171
+    },
+    {
+      "path": "chip002/tiles/tile_000151.jpg",
+      "bytes": 693673
+    },
+    {
+      "path": "chip002/tiles/tile_000152.jpg",
+      "bytes": 697278
+    },
+    {
+      "path": "chip002/tiles/tile_000153.jpg",
+      "bytes": 707655
+    },
+    {
+      "path": "chip002/tiles/tile_000154.jpg",
+      "bytes": 706058
+    },
+    {
+      "path": "chip002/tiles/tile_000155.jpg",
+      "bytes": 703204
+    },
+    {
+      "path": "chip002/tiles/tile_000156.jpg",
+      "bytes": 697592
+    },
+    {
+      "path": "chip002/tiles/tile_000157.jpg",
+      "bytes": 700067
+    },
+    {
+      "path": "chip002/tiles/tile_000158.jpg",
+      "bytes": 705359
+    },
+    {
+      "path": "chip002/tiles/tile_000159.jpg",
+      "bytes": 696831
+    },
+    {
+      "path": "chip002/tiles/tile_000160.jpg",
+      "bytes": 691956
+    },
+    {
+      "path": "chip002/tiles/tile_000161.jpg",
+      "bytes": 696308
+    },
+    {
+      "path": "chip002/tiles/tile_000162.jpg",
+      "bytes": 699411
+    },
+    {
+      "path": "chip002/tiles/tile_000163.jpg",
+      "bytes": 693459
+    },
+    {
+      "path": "chip002/tiles/tile_000164.jpg",
+      "bytes": 688681
+    },
+    {
+      "path": "chip002/tiles/tile_000165.jpg",
+      "bytes": 701564
+    },
+    {
+      "path": "chip002/tiles/tile_000166.jpg",
+      "bytes": 697401
+    },
+    {
+      "path": "chip002/tiles/tile_000167.jpg",
+      "bytes": 700481
+    },
+    {
+      "path": "chip002/tiles/tile_000168.jpg",
+      "bytes": 691019
+    },
+    {
+      "path": "chip002/tiles/tile_000169.jpg",
+      "bytes": 645869
+    },
+    {
+      "path": "chip002/tiles/tile_000170.jpg",
+      "bytes": 693299
+    },
+    {
+      "path": "chip002/tiles/tile_000171.jpg",
+      "bytes": 718967
+    },
+    {
+      "path": "chip002/tiles/tile_000172.jpg",
+      "bytes": 712909
+    },
+    {
+      "path": "chip002/tiles/tile_000173.jpg",
+      "bytes": 688728
+    },
+    {
+      "path": "chip002/tiles/tile_000174.jpg",
+      "bytes": 693565
+    },
+    {
+      "path": "chip002/tiles/tile_000175.jpg",
+      "bytes": 703003
+    },
+    {
+      "path": "chip002/tiles/tile_000176.jpg",
+      "bytes": 694776
+    },
+    {
+      "path": "chip002/tiles/tile_000177.jpg",
+      "bytes": 691495
+    },
+    {
+      "path": "chip002/tiles/tile_000178.jpg",
+      "bytes": 700771
+    },
+    {
+      "path": "chip002/tiles/tile_000179.jpg",
+      "bytes": 716353
+    },
+    {
+      "path": "chip002/tiles/tile_000180.jpg",
+      "bytes": 720625
+    },
+    {
+      "path": "chip002/tiles/tile_000181.jpg",
+      "bytes": 695742
+    },
+    {
+      "path": "chip002/tiles/tile_000182.jpg",
+      "bytes": 696288
+    },
+    {
+      "path": "chip002/tiles/tile_000183.jpg",
+      "bytes": 705206
+    },
+    {
+      "path": "chip002/tiles/tile_000184.jpg",
+      "bytes": 712721
+    },
+    {
+      "path": "chip002/tiles/tile_000185.jpg",
+      "bytes": 688335
+    },
+    {
+      "path": "chip002/tiles/tile_000186.jpg",
+      "bytes": 683472
+    },
+    {
+      "path": "chip002/tiles/tile_000187.jpg",
+      "bytes": 689853
+    },
+    {
+      "path": "chip002/tiles/tile_000188.jpg",
+      "bytes": 692102
+    },
+    {
+      "path": "chip002/tiles/tile_000189.jpg",
+      "bytes": 684540
+    },
+    {
+      "path": "chip002/tiles/tile_000190.jpg",
+      "bytes": 686204
+    },
+    {
+      "path": "chip002/tiles/tile_000191.jpg",
+      "bytes": 639837
+    },
+    {
+      "path": "chip002/tiles/tile_000192.jpg",
+      "bytes": 634288
+    },
+    {
+      "path": "chip002/tiles/tile_000193.jpg",
+      "bytes": 659031
+    },
+    {
+      "path": "chip002/tiles/tile_000194.jpg",
+      "bytes": 686349
+    },
+    {
+      "path": "chip002/tiles/tile_000195.jpg",
+      "bytes": 683862
+    },
+    {
+      "path": "chip002/tiles/tile_000196.jpg",
+      "bytes": 687027
+    },
+    {
+      "path": "chip002/tiles/tile_000197.jpg",
+      "bytes": 689522
+    },
+    {
+      "path": "chip002/tiles/tile_000198.jpg",
+      "bytes": 689131
+    },
+    {
+      "path": "chip002/tiles/tile_000199.jpg",
+      "bytes": 697398
+    },
+    {
+      "path": "chip002/tiles/tile_000200.jpg",
+      "bytes": 714975
+    },
+    {
+      "path": "chip002/tiles/tile_000201.jpg",
+      "bytes": 692665
+    },
+    {
+      "path": "chip002/tiles/tile_000202.jpg",
+      "bytes": 696639
+    },
+    {
+      "path": "chip002/tiles/tile_000203.jpg",
+      "bytes": 698738
+    },
+    {
+      "path": "chip002/tiles/tile_000204.jpg",
+      "bytes": 711837
+    },
+    {
+      "path": "chip002/tiles/tile_000205.jpg",
+      "bytes": 720227
+    },
+    {
+      "path": "chip002/tiles/tile_000206.jpg",
+      "bytes": 692904
+    },
+    {
+      "path": "chip002/tiles/tile_000207.jpg",
+      "bytes": 691744
+    },
+    {
+      "path": "chip002/tiles/tile_000208.jpg",
+      "bytes": 695695
+    },
+    {
+      "path": "chip002/tiles/tile_000209.jpg",
+      "bytes": 689348
+    },
+    {
+      "path": "chip002/tiles/tile_000210.jpg",
+      "bytes": 685601
+    },
+    {
+      "path": "chip002/tiles/tile_000211.jpg",
+      "bytes": 687634
+    },
+    {
+      "path": "chip002/tiles/tile_000212.jpg",
+      "bytes": 696732
+    },
+    {
+      "path": "chip002/tiles/tile_000213.jpg",
+      "bytes": 701598
+    },
+    {
+      "path": "chip002/tiles/tile_000214.jpg",
+      "bytes": 676055
+    },
+    {
+      "path": "chip002/tiles/tile_000215.jpg",
+      "bytes": 644506
+    },
+    {
+      "path": "chip002/tiles/tile_000216.jpg",
+      "bytes": 656400
+    },
+    {
+      "path": "chip002/tiles/tile_000217.jpg",
+      "bytes": 699096
+    },
+    {
+      "path": "chip002/tiles/tile_000218.jpg",
+      "bytes": 688291
+    },
+    {
+      "path": "chip002/tiles/tile_000219.jpg",
+      "bytes": 688817
+    },
+    {
+      "path": "chip002/tiles/tile_000220.jpg",
+      "bytes": 688060
+    },
+    {
+      "path": "chip002/tiles/tile_000221.jpg",
+      "bytes": 686905
+    },
+    {
+      "path": "chip002/tiles/tile_000222.jpg",
+      "bytes": 696952
+    },
+    {
+      "path": "chip002/tiles/tile_000223.jpg",
+      "bytes": 699563
+    },
+    {
+      "path": "chip002/tiles/tile_000224.jpg",
+      "bytes": 693032
+    },
+    {
+      "path": "chip002/tiles/tile_000225.jpg",
+      "bytes": 713682
+    },
+    {
+      "path": "chip002/tiles/tile_000226.jpg",
+      "bytes": 724660
+    },
+    {
+      "path": "chip002/tiles/tile_000227.jpg",
+      "bytes": 702901
+    },
+    {
+      "path": "chip002/tiles/tile_000228.jpg",
+      "bytes": 703005
+    },
+    {
+      "path": "chip002/tiles/tile_000229.jpg",
+      "bytes": 693456
+    },
+    {
+      "path": "chip002/tiles/tile_000230.jpg",
+      "bytes": 687260
+    },
+    {
+      "path": "chip002/tiles/tile_000231.jpg",
+      "bytes": 684740
+    },
+    {
+      "path": "chip002/tiles/tile_000232.jpg",
+      "bytes": 687354
+    },
+    {
+      "path": "chip002/tiles/tile_000233.jpg",
+      "bytes": 689440
+    },
+    {
+      "path": "chip002/tiles/tile_000234.jpg",
+      "bytes": 684176
+    },
+    {
+      "path": "chip002/tiles/tile_000235.jpg",
+      "bytes": 684617
+    },
+    {
+      "path": "chip002/tiles/tile_000236.jpg",
+      "bytes": 688207
+    },
+    {
+      "path": "chip002/tiles/tile_000237.jpg",
+      "bytes": 688217
+    },
+    {
+      "path": "chip002/tiles/tile_000238.jpg",
+      "bytes": 642334
+    },
+    {
+      "path": "chip002/tiles/tile_000239.jpg",
+      "bytes": 642217
+    },
+    {
+      "path": "chip002/tiles/tile_000240.jpg",
+      "bytes": 655443
+    },
+    {
+      "path": "chip002/tiles/tile_000241.jpg",
+      "bytes": 685247
+    },
+    {
+      "path": "chip002/tiles/tile_000242.jpg",
+      "bytes": 688199
+    },
+    {
+      "path": "chip002/tiles/tile_000243.jpg",
+      "bytes": 687447
+    },
+    {
+      "path": "chip002/tiles/tile_000244.jpg",
+      "bytes": 684355
+    },
+    {
+      "path": "chip002/tiles/tile_000245.jpg",
+      "bytes": 682607
+    },
+    {
+      "path": "chip002/tiles/tile_000246.jpg",
+      "bytes": 686738
+    },
+    {
+      "path": "chip002/tiles/tile_000247.jpg",
+      "bytes": 685560
+    },
+    {
+      "path": "chip002/tiles/tile_000248.jpg",
+      "bytes": 686970
+    },
+    {
+      "path": "chip002/tiles/tile_000249.jpg",
+      "bytes": 695287
+    },
+    {
+      "path": "chip002/tiles/tile_000250.jpg",
+      "bytes": 705610
+    },
+    {
+      "path": "chip002/tiles/tile_000251.jpg",
+      "bytes": 739578
+    },
+    {
+      "path": "chip002/tiles/tile_000252.jpg",
+      "bytes": 749118
+    },
+    {
+      "path": "chip002/tiles/tile_000253.jpg",
+      "bytes": 701734
+    },
+    {
+      "path": "chip002/tiles/tile_000254.jpg",
+      "bytes": 693731
+    },
+    {
+      "path": "chip002/tiles/tile_000255.jpg",
+      "bytes": 689734
+    },
+    {
+      "path": "chip002/tiles/tile_000256.jpg",
+      "bytes": 691402
+    },
+    {
+      "path": "chip002/tiles/tile_000257.jpg",
+      "bytes": 691941
+    },
+    {
+      "path": "chip002/tiles/tile_000258.jpg",
+      "bytes": 688901
+    },
+    {
+      "path": "chip002/tiles/tile_000259.jpg",
+      "bytes": 687130
+    },
+    {
+      "path": "chip002/tiles/tile_000260.jpg",
+      "bytes": 690661
+    },
+    {
+      "path": "chip002/tiles/tile_000261.jpg",
+      "bytes": 678806
+    },
+    {
+      "path": "chip002/tiles/tile_000262.jpg",
+      "bytes": 642550
+    },
+    {
+      "path": "chip002/tiles/tile_000263.jpg",
+      "bytes": 663763
+    },
+    {
+      "path": "chip002/tiles/tile_000264.jpg",
+      "bytes": 693749
+    },
+    {
+      "path": "chip002/tiles/tile_000265.jpg",
+      "bytes": 691506
+    },
+    {
+      "path": "chip002/tiles/tile_000266.jpg",
+      "bytes": 689843
+    },
+    {
+      "path": "chip002/tiles/tile_000267.jpg",
+      "bytes": 690376
+    },
+    {
+      "path": "chip002/tiles/tile_000268.jpg",
+      "bytes": 689469
+    },
+    {
+      "path": "chip002/tiles/tile_000269.jpg",
+      "bytes": 693370
+    },
+    {
+      "path": "chip002/tiles/tile_000270.jpg",
+      "bytes": 693744
+    },
+    {
+      "path": "chip002/tiles/tile_000271.jpg",
+      "bytes": 708548
+    },
+    {
+      "path": "chip002/tiles/tile_000272.jpg",
+      "bytes": 742390
+    },
+    {
+      "path": "chip002/tiles/tile_000273.jpg",
+      "bytes": 741023
+    },
+    {
+      "path": "chip002/tiles/tile_000274.jpg",
+      "bytes": 729811
+    },
+    {
+      "path": "chip002/tiles/tile_000275.jpg",
+      "bytes": 703883
+    },
+    {
+      "path": "chip002/tiles/tile_000276.jpg",
+      "bytes": 686869
+    },
+    {
+      "path": "chip002/tiles/tile_000277.jpg",
+      "bytes": 685441
+    },
+    {
+      "path": "chip002/tiles/tile_000278.jpg",
+      "bytes": 682580
+    },
+    {
+      "path": "chip002/tiles/tile_000279.jpg",
+      "bytes": 684737
+    },
+    {
+      "path": "chip002/tiles/tile_000280.jpg",
+      "bytes": 694485
+    },
+    {
+      "path": "chip002/tiles/tile_000281.jpg",
+      "bytes": 695893
+    },
+    {
+      "path": "chip002/tiles/tile_000282.jpg",
+      "bytes": 691229
+    },
+    {
+      "path": "chip002/tiles/tile_000283.jpg",
+      "bytes": 684416
+    },
+    {
+      "path": "chip002/tiles/tile_000284.jpg",
+      "bytes": 668866
+    },
+    {
+      "path": "chip002/tiles/tile_000285.jpg",
+      "bytes": 637722
+    },
+    {
+      "path": "chip002/tiles/tile_000286.jpg",
+      "bytes": 646900
+    },
+    {
+      "path": "chip002/tiles/tile_000287.jpg",
+      "bytes": 683915
+    },
+    {
+      "path": "chip002/tiles/tile_000288.jpg",
+      "bytes": 686406
+    },
+    {
+      "path": "chip002/tiles/tile_000289.jpg",
+      "bytes": 695416
+    },
+    {
+      "path": "chip002/tiles/tile_000290.jpg",
+      "bytes": 695787
+    },
+    {
+      "path": "chip002/tiles/tile_000291.jpg",
+      "bytes": 694650
+    },
+    {
+      "path": "chip002/tiles/tile_000292.jpg",
+      "bytes": 686950
+    },
+    {
+      "path": "chip002/tiles/tile_000293.jpg",
+      "bytes": 682523
+    },
+    {
+      "path": "chip002/tiles/tile_000294.jpg",
+      "bytes": 687645
+    },
+    {
+      "path": "chip002/tiles/tile_000295.jpg",
+      "bytes": 696564
+    },
+    {
+      "path": "chip002/tiles/tile_000296.jpg",
+      "bytes": 713578
+    },
+    {
+      "path": "chip002/tiles/tile_000297.jpg",
+      "bytes": 719853
+    },
+    {
+      "path": "chip002/tiles/tile_000298.jpg",
+      "bytes": 733727
+    },
+    {
+      "path": "chip002/tiles/tile_000299.jpg",
+      "bytes": 721801
+    },
+    {
+      "path": "chip002/tiles/tile_000300.jpg",
+      "bytes": 712390
+    },
+    {
+      "path": "chip002/tiles/tile_000301.jpg",
+      "bytes": 701001
+    },
+    {
+      "path": "chip002/tiles/tile_000302.jpg",
+      "bytes": 703109
+    },
+    {
+      "path": "chip002/tiles/tile_000303.jpg",
+      "bytes": 694040
+    },
+    {
+      "path": "chip002/tiles/tile_000304.jpg",
+      "bytes": 687746
+    },
+    {
+      "path": "chip002/tiles/tile_000305.jpg",
+      "bytes": 689922
+    },
+    {
+      "path": "chip002/tiles/tile_000306.jpg",
+      "bytes": 698633
+    },
+    {
+      "path": "chip002/tiles/tile_000307.jpg",
+      "bytes": 695427
+    },
+    {
+      "path": "chip002/tiles/tile_000308.jpg",
+      "bytes": 650524
+    },
+    {
+      "path": "chip002/tiles/tile_000309.jpg",
+      "bytes": 643061
+    },
+    {
+      "path": "chip002/tiles/tile_000310.jpg",
+      "bytes": 677352
+    },
+    {
+      "path": "chip002/tiles/tile_000311.jpg",
+      "bytes": 695235
+    },
+    {
+      "path": "chip002/tiles/tile_000312.jpg",
+      "bytes": 689924
+    },
+    {
+      "path": "chip002/tiles/tile_000313.jpg",
+      "bytes": 690924
+    },
+    {
+      "path": "chip002/tiles/tile_000314.jpg",
+      "bytes": 697882
+    },
+    {
+      "path": "chip002/tiles/tile_000315.jpg",
+      "bytes": 711103
+    },
+    {
+      "path": "chip002/tiles/tile_000316.jpg",
+      "bytes": 706195
+    },
+    {
+      "path": "chip002/tiles/tile_000317.jpg",
+      "bytes": 700761
+    },
+    {
+      "path": "chip002/tiles/tile_000318.jpg",
+      "bytes": 717549
+    },
+    {
+      "path": "chip002/tiles/tile_000319.jpg",
+      "bytes": 722445
+    },
+    {
+      "path": "chip002/tiles/tile_000320.jpg",
+      "bytes": 719671
+    },
+    {
+      "path": "chip002/tiles/tile_000321.jpg",
+      "bytes": 702944
+    },
+    {
+      "path": "chip002/tiles/tile_000322.jpg",
+      "bytes": 710073
+    },
+    {
+      "path": "chip002/tiles/tile_000323.jpg",
+      "bytes": 695102
+    },
+    {
+      "path": "chip002/tiles/tile_000324.jpg",
+      "bytes": 684067
+    },
+    {
+      "path": "chip002/tiles/tile_000325.jpg",
+      "bytes": 684022
+    },
+    {
+      "path": "chip002/tiles/tile_000326.jpg",
+      "bytes": 690757
+    },
+    {
+      "path": "chip002/tiles/tile_000327.jpg",
+      "bytes": 697598
+    },
+    {
+      "path": "chip002/tiles/tile_000328.jpg",
+      "bytes": 695244
+    },
+    {
+      "path": "chip002/tiles/tile_000329.jpg",
+      "bytes": 689653
+    },
+    {
+      "path": "chip002/tiles/tile_000330.jpg",
+      "bytes": 689272
+    },
+    {
+      "path": "chip002/tiles/tile_000331.jpg",
+      "bytes": 657933
+    },
+    {
+      "path": "chip002/tiles/tile_000332.jpg",
+      "bytes": 640500
+    },
+    {
+      "path": "chip002/tiles/tile_000333.jpg",
+      "bytes": 642790
+    },
+    {
+      "path": "chip002/tiles/tile_000334.jpg",
+      "bytes": 688791
+    },
+    {
+      "path": "chip002/tiles/tile_000335.jpg",
+      "bytes": 706322
+    },
+    {
+      "path": "chip002/tiles/tile_000336.jpg",
+      "bytes": 693647
+    },
+    {
+      "path": "chip002/tiles/tile_000337.jpg",
+      "bytes": 689481
+    },
+    {
+      "path": "chip002/tiles/tile_000338.jpg",
+      "bytes": 697199
+    },
+    {
+      "path": "chip002/tiles/tile_000339.jpg",
+      "bytes": 690457
+    },
+    {
+      "path": "chip002/tiles/tile_000340.jpg",
+      "bytes": 684253
+    },
+    {
+      "path": "chip002/tiles/tile_000341.jpg",
+      "bytes": 689131
+    },
+    {
+      "path": "chip002/tiles/tile_000342.jpg",
+      "bytes": 698345
+    },
+    {
+      "path": "chip002/tiles/tile_000343.jpg",
+      "bytes": 702971
+    },
+    {
+      "path": "chip002/tiles/tile_000344.jpg",
+      "bytes": 697241
+    },
+    {
+      "path": "chip002/tiles/tile_000345.jpg",
+      "bytes": 714483
+    },
+    {
+      "path": "chip002/tiles/tile_000346.jpg",
+      "bytes": 756169
+    },
+    {
+      "path": "chip002/tiles/tile_000347.jpg",
+      "bytes": 772203
+    },
+    {
+      "path": "chip002/tiles/tile_000348.jpg",
+      "bytes": 711148
+    },
+    {
+      "path": "chip002/tiles/tile_000349.jpg",
+      "bytes": 699391
+    },
+    {
+      "path": "chip002/tiles/tile_000350.jpg",
+      "bytes": 713861
+    },
+    {
+      "path": "chip002/tiles/tile_000351.jpg",
+      "bytes": 697200
+    },
+    {
+      "path": "chip002/tiles/tile_000352.jpg",
+      "bytes": 699054
+    },
+    {
+      "path": "chip002/tiles/tile_000353.jpg",
+      "bytes": 694227
+    },
+    {
+      "path": "chip002/tiles/tile_000354.jpg",
+      "bytes": 726377
+    },
+    {
+      "path": "chip002/tiles/tile_000355.jpg",
+      "bytes": 673530
+    },
+    {
+      "path": "chip002/tiles/tile_000356.jpg",
+      "bytes": 650174
+    },
+    {
+      "path": "chip002/tiles/tile_000357.jpg",
+      "bytes": 711884
+    },
+    {
+      "path": "chip002/tiles/tile_000358.jpg",
+      "bytes": 695517
+    },
+    {
+      "path": "chip002/tiles/tile_000359.jpg",
+      "bytes": 698788
+    },
+    {
+      "path": "chip002/tiles/tile_000360.jpg",
+      "bytes": 689783
+    },
+    {
+      "path": "chip002/tiles/tile_000361.jpg",
+      "bytes": 696826
+    },
+    {
+      "path": "chip002/tiles/tile_000362.jpg",
+      "bytes": 691100
+    },
+    {
+      "path": "chip002/tiles/tile_000363.jpg",
+      "bytes": 720648
+    },
+    {
+      "path": "chip002/tiles/tile_000364.jpg",
+      "bytes": 735203
+    },
+    {
+      "path": "chip002/tiles/tile_000365.jpg",
+      "bytes": 721666
+    },
+    {
+      "path": "chip002/tiles/tile_000366.jpg",
+      "bytes": 693050
+    },
+    {
+      "path": "chip002/tiles/tile_000367.jpg",
+      "bytes": 710074
+    },
+    {
+      "path": "chip002/tiles/tile_000368.jpg",
+      "bytes": 696066
+    },
+    {
+      "path": "chip002/tiles/tile_000369.jpg",
+      "bytes": 700027
+    },
+    {
+      "path": "chip002/tiles/tile_000370.jpg",
+      "bytes": 692741
+    },
+    {
+      "path": "chip002/tiles/tile_000371.jpg",
+      "bytes": 687755
+    },
+    {
+      "path": "chip002/tiles/tile_000372.jpg",
+      "bytes": 684647
+    },
+    {
+      "path": "chip002/tiles/tile_000373.jpg",
+      "bytes": 686079
+    },
+    {
+      "path": "chip002/tiles/tile_000374.jpg",
+      "bytes": 687458
+    },
+    {
+      "path": "chip002/tiles/tile_000375.jpg",
+      "bytes": 698777
+    },
+    {
+      "path": "chip002/tiles/tile_000376.jpg",
+      "bytes": 704540
+    },
+    {
+      "path": "chip002/tiles/tile_000377.jpg",
+      "bytes": 697842
+    },
+    {
+      "path": "chip002/tiles/tile_000378.jpg",
+      "bytes": 659419
+    },
+    {
+      "path": "chip002/tiles/tile_000379.jpg",
+      "bytes": 639306
+    },
+    {
+      "path": "chip002/tiles/tile_000380.jpg",
+      "bytes": 656020
+    },
+    {
+      "path": "chip002/tiles/tile_000381.jpg",
+      "bytes": 683503
+    },
+    {
+      "path": "chip002/tiles/tile_000382.jpg",
+      "bytes": 687567
+    },
+    {
+      "path": "chip002/tiles/tile_000383.jpg",
+      "bytes": 685291
+    },
+    {
+      "path": "chip002/tiles/tile_000384.jpg",
+      "bytes": 682912
+    },
+    {
+      "path": "chip002/tiles/tile_000385.jpg",
+      "bytes": 683232
+    },
+    {
+      "path": "chip002/tiles/tile_000386.jpg",
+      "bytes": 691703
+    },
+    {
+      "path": "chip002/tiles/tile_000387.jpg",
+      "bytes": 695585
+    },
+    {
+      "path": "chip002/tiles/tile_000388.jpg",
+      "bytes": 706418
+    },
+    {
+      "path": "chip002/tiles/tile_000389.jpg",
+      "bytes": 703391
+    },
+    {
+      "path": "chip002/tiles/tile_000390.jpg",
+      "bytes": 706851
+    },
+    {
+      "path": "chip002/tiles/tile_000391.jpg",
+      "bytes": 699344
+    },
+    {
+      "path": "chip002/tiles/tile_000392.jpg",
+      "bytes": 713612
+    },
+    {
+      "path": "chip002/tiles/tile_000393.jpg",
+      "bytes": 711457
+    },
+    {
+      "path": "chip002/tiles/tile_000394.jpg",
+      "bytes": 700442
+    },
+    {
+      "path": "chip002/tiles/tile_000395.jpg",
+      "bytes": 716824
+    },
+    {
+      "path": "chip002/tiles/tile_000396.jpg",
+      "bytes": 693373
+    },
+    {
+      "path": "chip002/tiles/tile_000397.jpg",
+      "bytes": 693125
+    },
+    {
+      "path": "chip002/tiles/tile_000398.jpg",
+      "bytes": 704227
+    },
+    {
+      "path": "chip002/tiles/tile_000399.jpg",
+      "bytes": 690871
+    },
+    {
+      "path": "chip002/tiles/tile_000400.jpg",
+      "bytes": 665947
+    },
+    {
+      "path": "chip002/tiles/tile_000401.jpg",
+      "bytes": 644996
+    },
+    {
+      "path": "chip002/tiles/tile_000402.jpg",
+      "bytes": 649904
+    },
+    {
+      "path": "chip002/tiles/tile_000403.jpg",
+      "bytes": 690651
+    },
+    {
+      "path": "chip002/tiles/tile_000404.jpg",
+      "bytes": 699992
+    },
+    {
+      "path": "chip002/tiles/tile_000405.jpg",
+      "bytes": 684871
+    },
+    {
+      "path": "chip002/tiles/tile_000406.jpg",
+      "bytes": 699691
+    },
+    {
+      "path": "chip002/tiles/tile_000407.jpg",
+      "bytes": 691402
+    },
+    {
+      "path": "chip002/tiles/tile_000408.jpg",
+      "bytes": 693266
+    },
+    {
+      "path": "chip002/tiles/tile_000409.jpg",
+      "bytes": 694099
+    },
+    {
+      "path": "chip002/tiles/tile_000410.jpg",
+      "bytes": 694128
+    },
+    {
+      "path": "chip002/tiles/tile_000411.jpg",
+      "bytes": 692044
+    },
+    {
+      "path": "chip002/tiles/tile_000412.jpg",
+      "bytes": 698679
+    },
+    {
+      "path": "chip002/tiles/tile_000413.jpg",
+      "bytes": 705568
+    },
+    {
+      "path": "chip002/tiles/tile_000414.jpg",
+      "bytes": 706090
+    },
+    {
+      "path": "chip002/tiles/tile_000415.jpg",
+      "bytes": 704895
+    },
+    {
+      "path": "chip002/tiles/tile_000416.jpg",
+      "bytes": 695266
+    },
+    {
+      "path": "chip002/tiles/tile_000417.jpg",
+      "bytes": 684312
+    },
+    {
+      "path": "chip002/tiles/tile_000418.jpg",
+      "bytes": 685238
+    },
+    {
+      "path": "chip002/tiles/tile_000419.jpg",
+      "bytes": 680028
+    },
+    {
+      "path": "chip002/tiles/tile_000420.jpg",
+      "bytes": 656697
+    },
+    {
+      "path": "chip002/tiles/tile_000421.jpg",
+      "bytes": 630159
+    },
+    {
+      "path": "chip002/tiles/tile_000422.jpg",
+      "bytes": 624479
+    },
+    {
+      "path": "chip002/tiles/tile_000423.jpg",
+      "bytes": 640131
+    },
+    {
+      "path": "chip002/tiles/tile_000424.jpg",
+      "bytes": 645675
+    },
+    {
+      "path": "chip002/tiles/tile_000425.jpg",
+      "bytes": 641205
+    },
+    {
+      "path": "chip002/tiles/tile_000426.jpg",
+      "bytes": 625475
+    },
+    {
+      "path": "chip002/tiles/tile_000427.jpg",
+      "bytes": 632829
+    },
+    {
+      "path": "chip002/tiles/tile_000428.jpg",
+      "bytes": 660450
+    },
+    {
+      "path": "chip002/tiles/tile_000429.jpg",
+      "bytes": 690192
+    },
+    {
+      "path": "chip002/tiles/tile_000430.jpg",
+      "bytes": 704165
+    },
+    {
+      "path": "chip002/tiles/tile_000431.jpg",
+      "bytes": 713273
+    },
+    {
+      "path": "chip002/tiles/tile_000432.jpg",
+      "bytes": 705674
+    },
+    {
+      "path": "chip002/tiles/tile_000433.jpg",
+      "bytes": 706449
+    },
+    {
+      "path": "chip002/tiles/tile_000434.jpg",
+      "bytes": 707673
+    },
+    {
+      "path": "chip002/tiles/tile_000435.jpg",
+      "bytes": 692158
+    },
+    {
+      "path": "chip002/tiles/tile_000436.jpg",
+      "bytes": 692362
+    },
+    {
+      "path": "chip002/tiles/tile_000437.jpg",
+      "bytes": 695716
+    },
+    {
+      "path": "chip002/tiles/tile_000438.jpg",
+      "bytes": 695625
+    },
+    {
+      "path": "chip002/tiles/tile_000439.jpg",
+      "bytes": 685031
+    },
+    {
+      "path": "chip002/tiles/tile_000440.jpg",
+      "bytes": 686971
+    },
+    {
+      "path": "chip002/tiles/tile_000441.jpg",
+      "bytes": 690103
+    },
+    {
+      "path": "chip002/tiles/tile_000442.jpg",
+      "bytes": 700984
+    },
+    {
+      "path": "chip002/tiles/tile_000443.jpg",
+      "bytes": 674969
+    },
+    {
+      "path": "chip002/tiles/tile_000444.jpg",
+      "bytes": 642372
+    },
+    {
+      "path": "chip002/tiles/tile_000445.jpg",
+      "bytes": 663355
+    },
+    {
+      "path": "chip002/tiles/tile_000446.jpg",
+      "bytes": 695548
+    },
+    {
+      "path": "chip002/tiles/tile_000447.jpg",
+      "bytes": 688443
+    },
+    {
+      "path": "chip002/tiles/tile_000448.jpg",
+      "bytes": 686629
+    },
+    {
+      "path": "chip002/tiles/tile_000449.jpg",
+      "bytes": 688944
+    },
+    {
+      "path": "chip002/tiles/tile_000450.jpg",
+      "bytes": 687817
+    },
+    {
+      "path": "chip002/tiles/tile_000451.jpg",
+      "bytes": 696192
+    },
+    {
+      "path": "chip002/tiles/tile_000452.jpg",
+      "bytes": 687799
+    },
+    {
+      "path": "chip002/tiles/tile_000453.jpg",
+      "bytes": 690435
+    },
+    {
+      "path": "chip002/tiles/tile_000454.jpg",
+      "bytes": 710694
+    },
+    {
+      "path": "chip002/tiles/tile_000455.jpg",
+      "bytes": 715427
+    },
+    {
+      "path": "chip002/tiles/tile_000456.jpg",
+      "bytes": 720090
+    },
+    {
+      "path": "chip002/tiles/tile_000457.jpg",
+      "bytes": 743914
+    },
+    {
+      "path": "chip002/tiles/tile_000458.jpg",
+      "bytes": 691609
+    },
+    {
+      "path": "chip002/tiles/tile_000459.jpg",
+      "bytes": 640840
+    },
+    {
+      "path": "chip002/tiles/tile_000460.jpg",
+      "bytes": 631230
+    },
+    {
+      "path": "chip002/tiles/tile_000461.jpg",
+      "bytes": 640735
+    },
+    {
+      "path": "chip002/tiles/tile_000462.jpg",
+      "bytes": 640479
+    },
+    {
+      "path": "chip002/tiles/tile_000463.jpg",
+      "bytes": 631688
+    },
+    {
+      "path": "chip002/tiles/tile_000464.jpg",
+      "bytes": 673838
+    },
+    {
+      "path": "chip002/tiles/tile_000465.jpg",
+      "bytes": 715713
+    },
+    {
+      "path": "chip002/tiles/tile_000466.jpg",
+      "bytes": 716082
+    },
+    {
+      "path": "chip002/tiles/tile_000467.jpg",
+      "bytes": 692367
+    },
+    {
+      "path": "chip002/tiles/tile_000468.jpg",
+      "bytes": 694291
+    },
+    {
+      "path": "chip002/tiles/tile_000469.jpg",
+      "bytes": 686855
+    },
+    {
+      "path": "chip002/tiles/tile_000470.jpg",
+      "bytes": 688731
+    },
+    {
+      "path": "chip002/tiles/tile_000471.jpg",
+      "bytes": 692167
+    },
+    {
+      "path": "chip002/tiles/tile_000472.jpg",
+      "bytes": 693391
+    },
+    {
+      "path": "chip002/tiles/tile_000473.jpg",
+      "bytes": 684824
+    },
+    {
+      "path": "chip002/tiles/tile_000474.jpg",
+      "bytes": 694506
+    },
+    {
+      "path": "chip002/tiles/tile_000475.jpg",
+      "bytes": 690879
+    },
+    {
+      "path": "chip002/tiles/tile_000476.jpg",
+      "bytes": 648625
+    },
+    {
+      "path": "chip002/tiles/tile_000477.jpg",
+      "bytes": 641763
+    },
+    {
+      "path": "chip002/tiles/tile_000478.jpg",
+      "bytes": 676783
+    },
+    {
+      "path": "chip002/tiles/tile_000479.jpg",
+      "bytes": 707067
+    },
+    {
+      "path": "chip002/tiles/tile_000480.jpg",
+      "bytes": 705721
+    },
+    {
+      "path": "chip002/tiles/tile_000481.jpg",
+      "bytes": 688952
+    },
+    {
+      "path": "chip002/tiles/tile_000482.jpg",
+      "bytes": 681158
+    },
+    {
+      "path": "chip002/tiles/tile_000483.jpg",
+      "bytes": 680932
+    },
+    {
+      "path": "chip002/tiles/tile_000484.jpg",
+      "bytes": 701696
+    },
+    {
+      "path": "chip002/tiles/tile_000485.jpg",
+      "bytes": 697661
+    },
+    {
+      "path": "chip002/tiles/tile_000486.jpg",
+      "bytes": 672865
+    },
+    {
+      "path": "chip002/tiles/tile_000487.jpg",
+      "bytes": 658075
+    },
+    {
+      "path": "chip002/tiles/tile_000488.jpg",
+      "bytes": 636844
+    },
+    {
+      "path": "chip002/tiles/tile_000489.jpg",
+      "bytes": 641680
+    },
+    {
+      "path": "chip002/tiles/tile_000490.jpg",
+      "bytes": 636233
+    },
+    {
+      "path": "chip002/tiles/tile_000491.jpg",
+      "bytes": 671328
+    },
+    {
+      "path": "chip002/tiles/tile_000492.jpg",
+      "bytes": 710507
+    },
+    {
+      "path": "chip002/tiles/tile_000493.jpg",
+      "bytes": 679533
+    },
+    {
+      "path": "chip002/tiles/tile_000494.jpg",
+      "bytes": 680759
+    },
+    {
+      "path": "chip002/tiles/tile_000495.jpg",
+      "bytes": 689104
+    },
+    {
+      "path": "chip002/tiles/tile_000496.jpg",
+      "bytes": 697376
+    },
+    {
+      "path": "chip002/tiles/tile_000497.jpg",
+      "bytes": 720720
+    },
+    {
+      "path": "chip002/tiles/tile_000498.jpg",
+      "bytes": 664799
+    },
+    {
+      "path": "chip002/tiles/tile_000499.jpg",
+      "bytes": 645334
+    },
+    {
+      "path": "chip002/tiles/tile_000500.jpg",
+      "bytes": 710425
+    },
+    {
+      "path": "chip002/tiles/tile_000501.jpg",
+      "bytes": 684646
+    },
+    {
+      "path": "chip002/tiles/tile_000502.jpg",
+      "bytes": 686159
+    },
+    {
+      "path": "chip002/tiles/tile_000503.jpg",
+      "bytes": 663371
+    },
+    {
+      "path": "chip002/tiles/tile_000504.jpg",
+      "bytes": 637776
+    },
+    {
+      "path": "chip002/tiles/tile_000505.jpg",
+      "bytes": 632435
+    },
+    {
+      "path": "chip002/tiles/tile_000506.jpg",
+      "bytes": 633597
+    },
+    {
+      "path": "chip002/tiles/tile_000507.jpg",
+      "bytes": 651563
+    },
+    {
+      "path": "chip002/tiles/tile_000508.jpg",
+      "bytes": 688365
+    },
+    {
+      "path": "chip002/tiles/tile_000509.jpg",
+      "bytes": 688221
+    },
+    {
+      "path": "chip002/tiles/tile_000510.jpg",
+      "bytes": 642527
+    },
+    {
+      "path": "chip003/tiles/tile_000000.jpg",
+      "bytes": 638494
+    },
+    {
+      "path": "chip003/tiles/tile_000001.jpg",
+      "bytes": 677888
+    },
+    {
+      "path": "chip003/tiles/tile_000002.jpg",
+      "bytes": 663441
+    },
+    {
+      "path": "chip003/tiles/tile_000003.jpg",
+      "bytes": 658075
+    },
+    {
+      "path": "chip003/tiles/tile_000004.jpg",
+      "bytes": 654597
+    },
+    {
+      "path": "chip003/tiles/tile_000005.jpg",
+      "bytes": 644583
+    },
+    {
+      "path": "chip003/tiles/tile_000006.jpg",
+      "bytes": 640472
+    },
+    {
+      "path": "chip003/tiles/tile_000007.jpg",
+      "bytes": 643108
+    },
+    {
+      "path": "chip003/tiles/tile_000008.jpg",
+      "bytes": 637354
+    },
+    {
+      "path": "chip003/tiles/tile_000009.jpg",
+      "bytes": 636776
+    },
+    {
+      "path": "chip003/tiles/tile_000010.jpg",
+      "bytes": 643381
+    },
+    {
+      "path": "chip003/tiles/tile_000011.jpg",
+      "bytes": 650029
+    },
+    {
+      "path": "chip003/tiles/tile_000012.jpg",
+      "bytes": 659366
+    },
+    {
+      "path": "chip003/tiles/tile_000013.jpg",
+      "bytes": 669338
+    },
+    {
+      "path": "chip003/tiles/tile_000014.jpg",
+      "bytes": 673411
+    },
+    {
+      "path": "chip003/tiles/tile_000015.jpg",
+      "bytes": 690381
+    },
+    {
+      "path": "chip003/tiles/tile_000016.jpg",
+      "bytes": 704437
+    },
+    {
+      "path": "chip003/tiles/tile_000017.jpg",
+      "bytes": 700442
+    },
+    {
+      "path": "chip003/tiles/tile_000018.jpg",
+      "bytes": 700852
+    },
+    {
+      "path": "chip003/tiles/tile_000019.jpg",
+      "bytes": 698598
+    },
+    {
+      "path": "chip003/tiles/tile_000020.jpg",
+      "bytes": 634877
+    },
+    {
+      "path": "chip003/tiles/tile_000021.jpg",
+      "bytes": 645122
+    },
+    {
+      "path": "chip003/tiles/tile_000022.jpg",
+      "bytes": 693187
+    },
+    {
+      "path": "chip003/tiles/tile_000023.jpg",
+      "bytes": 691372
+    },
+    {
+      "path": "chip003/tiles/tile_000024.jpg",
+      "bytes": 689912
+    },
+    {
+      "path": "chip003/tiles/tile_000025.jpg",
+      "bytes": 692816
+    },
+    {
+      "path": "chip003/tiles/tile_000026.jpg",
+      "bytes": 693153
+    },
+    {
+      "path": "chip003/tiles/tile_000027.jpg",
+      "bytes": 694440
+    },
+    {
+      "path": "chip003/tiles/tile_000028.jpg",
+      "bytes": 696558
+    },
+    {
+      "path": "chip003/tiles/tile_000029.jpg",
+      "bytes": 693076
+    },
+    {
+      "path": "chip003/tiles/tile_000030.jpg",
+      "bytes": 693342
+    },
+    {
+      "path": "chip003/tiles/tile_000031.jpg",
+      "bytes": 686402
+    },
+    {
+      "path": "chip003/tiles/tile_000032.jpg",
+      "bytes": 678186
+    },
+    {
+      "path": "chip003/tiles/tile_000033.jpg",
+      "bytes": 667499
+    },
+    {
+      "path": "chip003/tiles/tile_000034.jpg",
+      "bytes": 636375
+    },
+    {
+      "path": "chip003/tiles/tile_000035.jpg",
+      "bytes": 622856
+    },
+    {
+      "path": "chip003/tiles/tile_000036.jpg",
+      "bytes": 625372
+    },
+    {
+      "path": "chip003/tiles/tile_000037.jpg",
+      "bytes": 611871
+    },
+    {
+      "path": "chip003/tiles/tile_000038.jpg",
+      "bytes": 629637
+    },
+    {
+      "path": "chip003/tiles/tile_000039.jpg",
+      "bytes": 660666
+    },
+    {
+      "path": "chip003/tiles/tile_000040.jpg",
+      "bytes": 686622
+    },
+    {
+      "path": "chip003/tiles/tile_000041.jpg",
+      "bytes": 704308
+    },
+    {
+      "path": "chip003/tiles/tile_000042.jpg",
+      "bytes": 694375
+    },
+    {
+      "path": "chip003/tiles/tile_000043.jpg",
+      "bytes": 696137
+    },
+    {
+      "path": "chip003/tiles/tile_000044.jpg",
+      "bytes": 697280
+    },
+    {
+      "path": "chip003/tiles/tile_000045.jpg",
+      "bytes": 701035
+    },
+    {
+      "path": "chip003/tiles/tile_000046.jpg",
+      "bytes": 696112
+    },
+    {
+      "path": "chip003/tiles/tile_000047.jpg",
+      "bytes": 687120
+    },
+    {
+      "path": "chip003/tiles/tile_000048.jpg",
+      "bytes": 689483
+    },
+    {
+      "path": "chip003/tiles/tile_000049.jpg",
+      "bytes": 693602
+    },
+    {
+      "path": "chip003/tiles/tile_000050.jpg",
+      "bytes": 697317
+    },
+    {
+      "path": "chip003/tiles/tile_000051.jpg",
+      "bytes": 700174
+    },
+    {
+      "path": "chip003/tiles/tile_000052.jpg",
+      "bytes": 690984
+    },
+    {
+      "path": "chip003/tiles/tile_000053.jpg",
+      "bytes": 690201
+    },
+    {
+      "path": "chip003/tiles/tile_000054.jpg",
+      "bytes": 695532
+    },
+    {
+      "path": "chip003/tiles/tile_000055.jpg",
+      "bytes": 689251
+    },
+    {
+      "path": "chip003/tiles/tile_000056.jpg",
+      "bytes": 650631
+    },
+    {
+      "path": "chip003/tiles/tile_000057.jpg",
+      "bytes": 602861
+    },
+    {
+      "path": "chip003/tiles/tile_000058.jpg",
+      "bytes": 603810
+    },
+    {
+      "path": "chip003/tiles/tile_000059.jpg",
+      "bytes": 662202
+    },
+    {
+      "path": "chip003/tiles/tile_000060.jpg",
+      "bytes": 681603
+    },
+    {
+      "path": "chip003/tiles/tile_000061.jpg",
+      "bytes": 699191
+    },
+    {
+      "path": "chip003/tiles/tile_000062.jpg",
+      "bytes": 693202
+    },
+    {
+      "path": "chip003/tiles/tile_000063.jpg",
+      "bytes": 689272
+    },
+    {
+      "path": "chip003/tiles/tile_000064.jpg",
+      "bytes": 687622
+    },
+    {
+      "path": "chip003/tiles/tile_000065.jpg",
+      "bytes": 708097
+    },
+    {
+      "path": "chip003/tiles/tile_000066.jpg",
+      "bytes": 690448
+    },
+    {
+      "path": "chip003/tiles/tile_000067.jpg",
+      "bytes": 695802
+    },
+    {
+      "path": "chip003/tiles/tile_000068.jpg",
+      "bytes": 686871
+    },
+    {
+      "path": "chip003/tiles/tile_000069.jpg",
+      "bytes": 689795
+    },
+    {
+      "path": "chip003/tiles/tile_000070.jpg",
+      "bytes": 701975
+    },
+    {
+      "path": "chip003/tiles/tile_000071.jpg",
+      "bytes": 707368
+    },
+    {
+      "path": "chip003/tiles/tile_000072.jpg",
+      "bytes": 702301
+    },
+    {
+      "path": "chip003/tiles/tile_000073.jpg",
+      "bytes": 699371
+    },
+    {
+      "path": "chip003/tiles/tile_000074.jpg",
+      "bytes": 696442
+    },
+    {
+      "path": "chip003/tiles/tile_000075.jpg",
+      "bytes": 696285
+    },
+    {
+      "path": "chip003/tiles/tile_000076.jpg",
+      "bytes": 669577
+    },
+    {
+      "path": "chip003/tiles/tile_000077.jpg",
+      "bytes": 665795
+    },
+    {
+      "path": "chip003/tiles/tile_000078.jpg",
+      "bytes": 700952
+    },
+    {
+      "path": "chip003/tiles/tile_000079.jpg",
+      "bytes": 697568
+    },
+    {
+      "path": "chip003/tiles/tile_000080.jpg",
+      "bytes": 691828
+    },
+    {
+      "path": "chip003/tiles/tile_000081.jpg",
+      "bytes": 691023
+    },
+    {
+      "path": "chip003/tiles/tile_000082.jpg",
+      "bytes": 696278
+    },
+    {
+      "path": "chip003/tiles/tile_000083.jpg",
+      "bytes": 694651
+    },
+    {
+      "path": "chip003/tiles/tile_000084.jpg",
+      "bytes": 690711
+    },
+    {
+      "path": "chip003/tiles/tile_000085.jpg",
+      "bytes": 693103
+    },
+    {
+      "path": "chip003/tiles/tile_000086.jpg",
+      "bytes": 694148
+    },
+    {
+      "path": "chip003/tiles/tile_000087.jpg",
+      "bytes": 685988
+    },
+    {
+      "path": "chip003/tiles/tile_000088.jpg",
+      "bytes": 697289
+    },
+    {
+      "path": "chip003/tiles/tile_000089.jpg",
+      "bytes": 692468
+    },
+    {
+      "path": "chip003/tiles/tile_000090.jpg",
+      "bytes": 690924
+    },
+    {
+      "path": "chip003/tiles/tile_000091.jpg",
+      "bytes": 690150
+    },
+    {
+      "path": "chip003/tiles/tile_000092.jpg",
+      "bytes": 691250
+    },
+    {
+      "path": "chip003/tiles/tile_000093.jpg",
+      "bytes": 682638
+    },
+    {
+      "path": "chip003/tiles/tile_000094.jpg",
+      "bytes": 675683
+    },
+    {
+      "path": "chip003/tiles/tile_000095.jpg",
+      "bytes": 604352
+    },
+    {
+      "path": "chip003/tiles/tile_000096.jpg",
+      "bytes": 605810
+    },
+    {
+      "path": "chip003/tiles/tile_000097.jpg",
+      "bytes": 687561
+    },
+    {
+      "path": "chip003/tiles/tile_000098.jpg",
+      "bytes": 684201
+    },
+    {
+      "path": "chip003/tiles/tile_000099.jpg",
+      "bytes": 699910
+    },
+    {
+      "path": "chip003/tiles/tile_000100.jpg",
+      "bytes": 697622
+    },
+    {
+      "path": "chip003/tiles/tile_000101.jpg",
+      "bytes": 694588
+    },
+    {
+      "path": "chip003/tiles/tile_000102.jpg",
+      "bytes": 693575
+    },
+    {
+      "path": "chip003/tiles/tile_000103.jpg",
+      "bytes": 703377
+    },
+    {
+      "path": "chip003/tiles/tile_000104.jpg",
+      "bytes": 700697
+    },
+    {
+      "path": "chip003/tiles/tile_000105.jpg",
+      "bytes": 719761
+    },
+    {
+      "path": "chip003/tiles/tile_000106.jpg",
+      "bytes": 718928
+    },
+    {
+      "path": "chip003/tiles/tile_000107.jpg",
+      "bytes": 691119
+    },
+    {
+      "path": "chip003/tiles/tile_000108.jpg",
+      "bytes": 699928
+    },
+    {
+      "path": "chip003/tiles/tile_000109.jpg",
+      "bytes": 696039
+    },
+    {
+      "path": "chip003/tiles/tile_000110.jpg",
+      "bytes": 687665
+    },
+    {
+      "path": "chip003/tiles/tile_000111.jpg",
+      "bytes": 690950
+    },
+    {
+      "path": "chip003/tiles/tile_000112.jpg",
+      "bytes": 695432
+    },
+    {
+      "path": "chip003/tiles/tile_000113.jpg",
+      "bytes": 698018
+    },
+    {
+      "path": "chip003/tiles/tile_000114.jpg",
+      "bytes": 659724
+    },
+    {
+      "path": "chip003/tiles/tile_000115.jpg",
+      "bytes": 654190
+    },
+    {
+      "path": "chip003/tiles/tile_000116.jpg",
+      "bytes": 694938
+    },
+    {
+      "path": "chip003/tiles/tile_000117.jpg",
+      "bytes": 696063
+    },
+    {
+      "path": "chip003/tiles/tile_000118.jpg",
+      "bytes": 696801
+    },
+    {
+      "path": "chip003/tiles/tile_000119.jpg",
+      "bytes": 691682
+    },
+    {
+      "path": "chip003/tiles/tile_000120.jpg",
+      "bytes": 687032
+    },
+    {
+      "path": "chip003/tiles/tile_000121.jpg",
+      "bytes": 694757
+    },
+    {
+      "path": "chip003/tiles/tile_000122.jpg",
+      "bytes": 700604
+    },
+    {
+      "path": "chip003/tiles/tile_000123.jpg",
+      "bytes": 742860
+    },
+    {
+      "path": "chip003/tiles/tile_000124.jpg",
+      "bytes": 710513
+    },
+    {
+      "path": "chip003/tiles/tile_000125.jpg",
+      "bytes": 698237
+    },
+    {
+      "path": "chip003/tiles/tile_000126.jpg",
+      "bytes": 696519
+    },
+    {
+      "path": "chip003/tiles/tile_000127.jpg",
+      "bytes": 697752
+    },
+    {
+      "path": "chip003/tiles/tile_000128.jpg",
+      "bytes": 698798
+    },
+    {
+      "path": "chip003/tiles/tile_000129.jpg",
+      "bytes": 698982
+    },
+    {
+      "path": "chip003/tiles/tile_000130.jpg",
+      "bytes": 718675
+    },
+    {
+      "path": "chip003/tiles/tile_000131.jpg",
+      "bytes": 687310
+    },
+    {
+      "path": "chip003/tiles/tile_000132.jpg",
+      "bytes": 682825
+    },
+    {
+      "path": "chip003/tiles/tile_000133.jpg",
+      "bytes": 611603
+    },
+    {
+      "path": "chip003/tiles/tile_000134.jpg",
+      "bytes": 631959
+    },
+    {
+      "path": "chip003/tiles/tile_000135.jpg",
+      "bytes": 706202
+    },
+    {
+      "path": "chip003/tiles/tile_000136.jpg",
+      "bytes": 729861
+    },
+    {
+      "path": "chip003/tiles/tile_000137.jpg",
+      "bytes": 706786
+    },
+    {
+      "path": "chip003/tiles/tile_000138.jpg",
+      "bytes": 697064
+    },
+    {
+      "path": "chip003/tiles/tile_000139.jpg",
+      "bytes": 689334
+    },
+    {
+      "path": "chip003/tiles/tile_000140.jpg",
+      "bytes": 704598
+    },
+    {
+      "path": "chip003/tiles/tile_000141.jpg",
+      "bytes": 701178
+    },
+    {
+      "path": "chip003/tiles/tile_000142.jpg",
+      "bytes": 694260
+    },
+    {
+      "path": "chip003/tiles/tile_000143.jpg",
+      "bytes": 711136
+    },
+    {
+      "path": "chip003/tiles/tile_000144.jpg",
+      "bytes": 720624
+    },
+    {
+      "path": "chip003/tiles/tile_000145.jpg",
+      "bytes": 711162
+    },
+    {
+      "path": "chip003/tiles/tile_000146.jpg",
+      "bytes": 698389
+    },
+    {
+      "path": "chip003/tiles/tile_000147.jpg",
+      "bytes": 697208
+    },
+    {
+      "path": "chip003/tiles/tile_000148.jpg",
+      "bytes": 691099
+    },
+    {
+      "path": "chip003/tiles/tile_000149.jpg",
+      "bytes": 694451
+    },
+    {
+      "path": "chip003/tiles/tile_000150.jpg",
+      "bytes": 696506
+    },
+    {
+      "path": "chip003/tiles/tile_000151.jpg",
+      "bytes": 694556
+    },
+    {
+      "path": "chip003/tiles/tile_000152.jpg",
+      "bytes": 651242
+    },
+    {
+      "path": "chip003/tiles/tile_000153.jpg",
+      "bytes": 648064
+    },
+    {
+      "path": "chip003/tiles/tile_000154.jpg",
+      "bytes": 687340
+    },
+    {
+      "path": "chip003/tiles/tile_000155.jpg",
+      "bytes": 691576
+    },
+    {
+      "path": "chip003/tiles/tile_000156.jpg",
+      "bytes": 687923
+    },
+    {
+      "path": "chip003/tiles/tile_000157.jpg",
+      "bytes": 689359
+    },
+    {
+      "path": "chip003/tiles/tile_000158.jpg",
+      "bytes": 691654
+    },
+    {
+      "path": "chip003/tiles/tile_000159.jpg",
+      "bytes": 691185
+    },
+    {
+      "path": "chip003/tiles/tile_000160.jpg",
+      "bytes": 708543
+    },
+    {
+      "path": "chip003/tiles/tile_000161.jpg",
+      "bytes": 732035
+    },
+    {
+      "path": "chip003/tiles/tile_000162.jpg",
+      "bytes": 727805
+    },
+    {
+      "path": "chip003/tiles/tile_000163.jpg",
+      "bytes": 723535
+    },
+    {
+      "path": "chip003/tiles/tile_000164.jpg",
+      "bytes": 714473
+    },
+    {
+      "path": "chip003/tiles/tile_000165.jpg",
+      "bytes": 699576
+    },
+    {
+      "path": "chip003/tiles/tile_000166.jpg",
+      "bytes": 698588
+    },
+    {
+      "path": "chip003/tiles/tile_000167.jpg",
+      "bytes": 691359
+    },
+    {
+      "path": "chip003/tiles/tile_000168.jpg",
+      "bytes": 724522
+    },
+    {
+      "path": "chip003/tiles/tile_000169.jpg",
+      "bytes": 743222
+    },
+    {
+      "path": "chip003/tiles/tile_000170.jpg",
+      "bytes": 723140
+    },
+    {
+      "path": "chip003/tiles/tile_000171.jpg",
+      "bytes": 645885
+    },
+    {
+      "path": "chip003/tiles/tile_000172.jpg",
+      "bytes": 616786
+    },
+    {
+      "path": "chip003/tiles/tile_000173.jpg",
+      "bytes": 664956
+    },
+    {
+      "path": "chip003/tiles/tile_000174.jpg",
+      "bytes": 719960
+    },
+    {
+      "path": "chip003/tiles/tile_000175.jpg",
+      "bytes": 732205
+    },
+    {
+      "path": "chip003/tiles/tile_000176.jpg",
+      "bytes": 719513
+    },
+    {
+      "path": "chip003/tiles/tile_000177.jpg",
+      "bytes": 693603
+    },
+    {
+      "path": "chip003/tiles/tile_000178.jpg",
+      "bytes": 705151
+    },
+    {
+      "path": "chip003/tiles/tile_000179.jpg",
+      "bytes": 708108
+    },
+    {
+      "path": "chip003/tiles/tile_000180.jpg",
+      "bytes": 721361
+    },
+    {
+      "path": "chip003/tiles/tile_000181.jpg",
+      "bytes": 746614
+    },
+    {
+      "path": "chip003/tiles/tile_000182.jpg",
+      "bytes": 765888
+    },
+    {
+      "path": "chip003/tiles/tile_000183.jpg",
+      "bytes": 746149
+    },
+    {
+      "path": "chip003/tiles/tile_000184.jpg",
+      "bytes": 703104
+    },
+    {
+      "path": "chip003/tiles/tile_000185.jpg",
+      "bytes": 692373
+    },
+    {
+      "path": "chip003/tiles/tile_000186.jpg",
+      "bytes": 695620
+    },
+    {
+      "path": "chip003/tiles/tile_000187.jpg",
+      "bytes": 691030
+    },
+    {
+      "path": "chip003/tiles/tile_000188.jpg",
+      "bytes": 686799
+    },
+    {
+      "path": "chip003/tiles/tile_000189.jpg",
+      "bytes": 694106
+    },
+    {
+      "path": "chip003/tiles/tile_000190.jpg",
+      "bytes": 684808
+    },
+    {
+      "path": "chip003/tiles/tile_000191.jpg",
+      "bytes": 642869
+    },
+    {
+      "path": "chip003/tiles/tile_000192.jpg",
+      "bytes": 641607
+    },
+    {
+      "path": "chip003/tiles/tile_000193.jpg",
+      "bytes": 686364
+    },
+    {
+      "path": "chip003/tiles/tile_000194.jpg",
+      "bytes": 698153
+    },
+    {
+      "path": "chip003/tiles/tile_000195.jpg",
+      "bytes": 688695
+    },
+    {
+      "path": "chip003/tiles/tile_000196.jpg",
+      "bytes": 692378
+    },
+    {
+      "path": "chip003/tiles/tile_000197.jpg",
+      "bytes": 705040
+    },
+    {
+      "path": "chip003/tiles/tile_000198.jpg",
+      "bytes": 701186
+    },
+    {
+      "path": "chip003/tiles/tile_000199.jpg",
+      "bytes": 727186
+    },
+    {
+      "path": "chip003/tiles/tile_000200.jpg",
+      "bytes": 775290
+    },
+    {
+      "path": "chip003/tiles/tile_000201.jpg",
+      "bytes": 775260
+    },
+    {
+      "path": "chip003/tiles/tile_000202.jpg",
+      "bytes": 748919
+    },
+    {
+      "path": "chip003/tiles/tile_000203.jpg",
+      "bytes": 715054
+    },
+    {
+      "path": "chip003/tiles/tile_000204.jpg",
+      "bytes": 704163
+    },
+    {
+      "path": "chip003/tiles/tile_000205.jpg",
+      "bytes": 707888
+    },
+    {
+      "path": "chip003/tiles/tile_000206.jpg",
+      "bytes": 704158
+    },
+    {
+      "path": "chip003/tiles/tile_000207.jpg",
+      "bytes": 704640
+    },
+    {
+      "path": "chip003/tiles/tile_000208.jpg",
+      "bytes": 740440
+    },
+    {
+      "path": "chip003/tiles/tile_000209.jpg",
+      "bytes": 728549
+    },
+    {
+      "path": "chip003/tiles/tile_000210.jpg",
+      "bytes": 672089
+    },
+    {
+      "path": "chip003/tiles/tile_000211.jpg",
+      "bytes": 611579
+    },
+    {
+      "path": "chip003/tiles/tile_000212.jpg",
+      "bytes": 615805
+    },
+    {
+      "path": "chip003/tiles/tile_000213.jpg",
+      "bytes": 685595
+    },
+    {
+      "path": "chip003/tiles/tile_000214.jpg",
+      "bytes": 710985
+    },
+    {
+      "path": "chip003/tiles/tile_000215.jpg",
+      "bytes": 730302
+    },
+    {
+      "path": "chip003/tiles/tile_000216.jpg",
+      "bytes": 726656
+    },
+    {
+      "path": "chip003/tiles/tile_000217.jpg",
+      "bytes": 716576
+    },
+    {
+      "path": "chip003/tiles/tile_000218.jpg",
+      "bytes": 717254
+    },
+    {
+      "path": "chip003/tiles/tile_000219.jpg",
+      "bytes": 707000
+    },
+    {
+      "path": "chip003/tiles/tile_000220.jpg",
+      "bytes": 716436
+    },
+    {
+      "path": "chip003/tiles/tile_000221.jpg",
+      "bytes": 736865
+    },
+    {
+      "path": "chip003/tiles/tile_000222.jpg",
+      "bytes": 741232
+    },
+    {
+      "path": "chip003/tiles/tile_000223.jpg",
+      "bytes": 766395
+    },
+    {
+      "path": "chip003/tiles/tile_000224.jpg",
+      "bytes": 735647
+    },
+    {
+      "path": "chip003/tiles/tile_000225.jpg",
+      "bytes": 700968
+    },
+    {
+      "path": "chip003/tiles/tile_000226.jpg",
+      "bytes": 698723
+    },
+    {
+      "path": "chip003/tiles/tile_000227.jpg",
+      "bytes": 697533
+    },
+    {
+      "path": "chip003/tiles/tile_000228.jpg",
+      "bytes": 693765
+    },
+    {
+      "path": "chip003/tiles/tile_000229.jpg",
+      "bytes": 703982
+    },
+    {
+      "path": "chip003/tiles/tile_000230.jpg",
+      "bytes": 672000
+    },
+    {
+      "path": "chip003/tiles/tile_000231.jpg",
+      "bytes": 644361
+    },
+    {
+      "path": "chip003/tiles/tile_000232.jpg",
+      "bytes": 666429
+    },
+    {
+      "path": "chip003/tiles/tile_000233.jpg",
+      "bytes": 702198
+    },
+    {
+      "path": "chip003/tiles/tile_000234.jpg",
+      "bytes": 696021
+    },
+    {
+      "path": "chip003/tiles/tile_000235.jpg",
+      "bytes": 701762
+    },
+    {
+      "path": "chip003/tiles/tile_000236.jpg",
+      "bytes": 709386
+    },
+    {
+      "path": "chip003/tiles/tile_000237.jpg",
+      "bytes": 708866
+    },
+    {
+      "path": "chip003/tiles/tile_000238.jpg",
+      "bytes": 745156
+    },
+    {
+      "path": "chip003/tiles/tile_000239.jpg",
+      "bytes": 770363
+    },
+    {
+      "path": "chip003/tiles/tile_000240.jpg",
+      "bytes": 759052
+    },
+    {
+      "path": "chip003/tiles/tile_000241.jpg",
+      "bytes": 716122
+    },
+    {
+      "path": "chip003/tiles/tile_000242.jpg",
+      "bytes": 720966
+    },
+    {
+      "path": "chip003/tiles/tile_000243.jpg",
+      "bytes": 707245
+    },
+    {
+      "path": "chip003/tiles/tile_000244.jpg",
+      "bytes": 716255
+    },
+    {
+      "path": "chip003/tiles/tile_000245.jpg",
+      "bytes": 721981
+    },
+    {
+      "path": "chip003/tiles/tile_000246.jpg",
+      "bytes": 720491
+    },
+    {
+      "path": "chip003/tiles/tile_000247.jpg",
+      "bytes": 727041
+    },
+    {
+      "path": "chip003/tiles/tile_000248.jpg",
+      "bytes": 717296
+    },
+    {
+      "path": "chip003/tiles/tile_000249.jpg",
+      "bytes": 706211
+    },
+    {
+      "path": "chip003/tiles/tile_000250.jpg",
+      "bytes": 627465
+    },
+    {
+      "path": "chip003/tiles/tile_000251.jpg",
+      "bytes": 630107
+    },
+    {
+      "path": "chip003/tiles/tile_000252.jpg",
+      "bytes": 714619
+    },
+    {
+      "path": "chip003/tiles/tile_000253.jpg",
+      "bytes": 708239
+    },
+    {
+      "path": "chip003/tiles/tile_000254.jpg",
+      "bytes": 721854
+    },
+    {
+      "path": "chip003/tiles/tile_000255.jpg",
+      "bytes": 724601
+    },
+    {
+      "path": "chip003/tiles/tile_000256.jpg",
+      "bytes": 716189
+    },
+    {
+      "path": "chip003/tiles/tile_000257.jpg",
+      "bytes": 728129
+    },
+    {
+      "path": "chip003/tiles/tile_000258.jpg",
+      "bytes": 724280
+    },
+    {
+      "path": "chip003/tiles/tile_000259.jpg",
+      "bytes": 723039
+    },
+    {
+      "path": "chip003/tiles/tile_000260.jpg",
+      "bytes": 713765
+    },
+    {
+      "path": "chip003/tiles/tile_000261.jpg",
+      "bytes": 726912
+    },
+    {
+      "path": "chip003/tiles/tile_000262.jpg",
+      "bytes": 757421
+    },
+    {
+      "path": "chip003/tiles/tile_000263.jpg",
+      "bytes": 740920
+    },
+    {
+      "path": "chip003/tiles/tile_000264.jpg",
+      "bytes": 713517
+    },
+    {
+      "path": "chip003/tiles/tile_000265.jpg",
+      "bytes": 705310
+    },
+    {
+      "path": "chip003/tiles/tile_000266.jpg",
+      "bytes": 696128
+    },
+    {
+      "path": "chip003/tiles/tile_000267.jpg",
+      "bytes": 708380
+    },
+    {
+      "path": "chip003/tiles/tile_000268.jpg",
+      "bytes": 710380
+    },
+    {
+      "path": "chip003/tiles/tile_000269.jpg",
+      "bytes": 661372
+    },
+    {
+      "path": "chip003/tiles/tile_000270.jpg",
+      "bytes": 663936
+    },
+    {
+      "path": "chip003/tiles/tile_000271.jpg",
+      "bytes": 714437
+    },
+    {
+      "path": "chip003/tiles/tile_000272.jpg",
+      "bytes": 697300
+    },
+    {
+      "path": "chip003/tiles/tile_000273.jpg",
+      "bytes": 690668
+    },
+    {
+      "path": "chip003/tiles/tile_000274.jpg",
+      "bytes": 690358
+    },
+    {
+      "path": "chip003/tiles/tile_000275.jpg",
+      "bytes": 705611
+    },
+    {
+      "path": "chip003/tiles/tile_000276.jpg",
+      "bytes": 740160
+    },
+    {
+      "path": "chip003/tiles/tile_000277.jpg",
+      "bytes": 739567
+    },
+    {
+      "path": "chip003/tiles/tile_000278.jpg",
+      "bytes": 720568
+    },
+    {
+      "path": "chip003/tiles/tile_000279.jpg",
+      "bytes": 719105
+    },
+    {
+      "path": "chip003/tiles/tile_000280.jpg",
+      "bytes": 712898
+    },
+    {
+      "path": "chip003/tiles/tile_000281.jpg",
+      "bytes": 724526
+    },
+    {
+      "path": "chip003/tiles/tile_000282.jpg",
+      "bytes": 715532
+    },
+    {
+      "path": "chip003/tiles/tile_000283.jpg",
+      "bytes": 705821
+    },
+    {
+      "path": "chip003/tiles/tile_000284.jpg",
+      "bytes": 722813
+    },
+    {
+      "path": "chip003/tiles/tile_000285.jpg",
+      "bytes": 706193
+    },
+    {
+      "path": "chip003/tiles/tile_000286.jpg",
+      "bytes": 718850
+    },
+    {
+      "path": "chip003/tiles/tile_000287.jpg",
+      "bytes": 715488
+    },
+    {
+      "path": "chip003/tiles/tile_000288.jpg",
+      "bytes": 632364
+    },
+    {
+      "path": "chip003/tiles/tile_000289.jpg",
+      "bytes": 645456
+    },
+    {
+      "path": "chip003/tiles/tile_000290.jpg",
+      "bytes": 725782
+    },
+    {
+      "path": "chip003/tiles/tile_000291.jpg",
+      "bytes": 711940
+    },
+    {
+      "path": "chip003/tiles/tile_000292.jpg",
+      "bytes": 705774
+    },
+    {
+      "path": "chip003/tiles/tile_000293.jpg",
+      "bytes": 704396
+    },
+    {
+      "path": "chip003/tiles/tile_000294.jpg",
+      "bytes": 703169
+    },
+    {
+      "path": "chip003/tiles/tile_000295.jpg",
+      "bytes": 708144
+    },
+    {
+      "path": "chip003/tiles/tile_000296.jpg",
+      "bytes": 717220
+    },
+    {
+      "path": "chip003/tiles/tile_000297.jpg",
+      "bytes": 705613
+    },
+    {
+      "path": "chip003/tiles/tile_000298.jpg",
+      "bytes": 710130
+    },
+    {
+      "path": "chip003/tiles/tile_000299.jpg",
+      "bytes": 722687
+    },
+    {
+      "path": "chip003/tiles/tile_000300.jpg",
+      "bytes": 713376
+    },
+    {
+      "path": "chip003/tiles/tile_000301.jpg",
+      "bytes": 717719
+    },
+    {
+      "path": "chip003/tiles/tile_000302.jpg",
+      "bytes": 691347
+    },
+    {
+      "path": "chip003/tiles/tile_000303.jpg",
+      "bytes": 688543
+    },
+    {
+      "path": "chip003/tiles/tile_000304.jpg",
+      "bytes": 692369
+    },
+    {
+      "path": "chip003/tiles/tile_000305.jpg",
+      "bytes": 699520
+    },
+    {
+      "path": "chip003/tiles/tile_000306.jpg",
+      "bytes": 707377
+    },
+    {
+      "path": "chip003/tiles/tile_000307.jpg",
+      "bytes": 653531
+    },
+    {
+      "path": "chip003/tiles/tile_000308.jpg",
+      "bytes": 649085
+    },
+    {
+      "path": "chip003/tiles/tile_000309.jpg",
+      "bytes": 698103
+    },
+    {
+      "path": "chip003/tiles/tile_000310.jpg",
+      "bytes": 699820
+    },
+    {
+      "path": "chip003/tiles/tile_000311.jpg",
+      "bytes": 692310
+    },
+    {
+      "path": "chip003/tiles/tile_000312.jpg",
+      "bytes": 688542
+    },
+    {
+      "path": "chip003/tiles/tile_000313.jpg",
+      "bytes": 691242
+    },
+    {
+      "path": "chip003/tiles/tile_000314.jpg",
+      "bytes": 702809
+    },
+    {
+      "path": "chip003/tiles/tile_000315.jpg",
+      "bytes": 706309
+    },
+    {
+      "path": "chip003/tiles/tile_000316.jpg",
+      "bytes": 723812
+    },
+    {
+      "path": "chip003/tiles/tile_000317.jpg",
+      "bytes": 725015
+    },
+    {
+      "path": "chip003/tiles/tile_000318.jpg",
+      "bytes": 713459
+    },
+    {
+      "path": "chip003/tiles/tile_000319.jpg",
+      "bytes": 717213
+    },
+    {
+      "path": "chip003/tiles/tile_000320.jpg",
+      "bytes": 717223
+    },
+    {
+      "path": "chip003/tiles/tile_000321.jpg",
+      "bytes": 721137
+    },
+    {
+      "path": "chip003/tiles/tile_000322.jpg",
+      "bytes": 721177
+    },
+    {
+      "path": "chip003/tiles/tile_000323.jpg",
+      "bytes": 720635
+    },
+    {
+      "path": "chip003/tiles/tile_000324.jpg",
+      "bytes": 715600
+    },
+    {
+      "path": "chip003/tiles/tile_000325.jpg",
+      "bytes": 791553
+    },
+    {
+      "path": "chip003/tiles/tile_000326.jpg",
+      "bytes": 736230
+    },
+    {
+      "path": "chip003/tiles/tile_000327.jpg",
+      "bytes": 857229
+    },
+    {
+      "path": "chip003/tiles/tile_000328.jpg",
+      "bytes": 811692
+    },
+    {
+      "path": "chip003/tiles/tile_000329.jpg",
+      "bytes": 726914
+    },
+    {
+      "path": "chip003/tiles/tile_000330.jpg",
+      "bytes": 724520
+    },
+    {
+      "path": "chip003/tiles/tile_000331.jpg",
+      "bytes": 726278
+    },
+    {
+      "path": "chip003/tiles/tile_000332.jpg",
+      "bytes": 714607
+    },
+    {
+      "path": "chip003/tiles/tile_000333.jpg",
+      "bytes": 711589
+    },
+    {
+      "path": "chip003/tiles/tile_000334.jpg",
+      "bytes": 699928
+    },
+    {
+      "path": "chip003/tiles/tile_000335.jpg",
+      "bytes": 700838
+    },
+    {
+      "path": "chip003/tiles/tile_000336.jpg",
+      "bytes": 706097
+    },
+    {
+      "path": "chip003/tiles/tile_000337.jpg",
+      "bytes": 711042
+    },
+    {
+      "path": "chip003/tiles/tile_000338.jpg",
+      "bytes": 700036
+    },
+    {
+      "path": "chip003/tiles/tile_000339.jpg",
+      "bytes": 695585
+    },
+    {
+      "path": "chip003/tiles/tile_000340.jpg",
+      "bytes": 698022
+    },
+    {
+      "path": "chip003/tiles/tile_000341.jpg",
+      "bytes": 688800
+    },
+    {
+      "path": "chip003/tiles/tile_000342.jpg",
+      "bytes": 688535
+    },
+    {
+      "path": "chip003/tiles/tile_000343.jpg",
+      "bytes": 698650
+    },
+    {
+      "path": "chip003/tiles/tile_000344.jpg",
+      "bytes": 691366
+    },
+    {
+      "path": "chip003/tiles/tile_000345.jpg",
+      "bytes": 642268
+    },
+    {
+      "path": "chip003/tiles/tile_000346.jpg",
+      "bytes": 642484
+    },
+    {
+      "path": "chip003/tiles/tile_000347.jpg",
+      "bytes": 686019
+    },
+    {
+      "path": "chip003/tiles/tile_000348.jpg",
+      "bytes": 698164
+    },
+    {
+      "path": "chip003/tiles/tile_000349.jpg",
+      "bytes": 689671
+    },
+    {
+      "path": "chip003/tiles/tile_000350.jpg",
+      "bytes": 688228
+    },
+    {
+      "path": "chip003/tiles/tile_000351.jpg",
+      "bytes": 693993
+    },
+    {
+      "path": "chip003/tiles/tile_000352.jpg",
+      "bytes": 688546
+    },
+    {
+      "path": "chip003/tiles/tile_000353.jpg",
+      "bytes": 716899
+    },
+    {
+      "path": "chip003/tiles/tile_000354.jpg",
+      "bytes": 737562
+    },
+    {
+      "path": "chip003/tiles/tile_000355.jpg",
+      "bytes": 710133
+    },
+    {
+      "path": "chip003/tiles/tile_000356.jpg",
+      "bytes": 698288
+    },
+    {
+      "path": "chip003/tiles/tile_000357.jpg",
+      "bytes": 709486
+    },
+    {
+      "path": "chip003/tiles/tile_000358.jpg",
+      "bytes": 708143
+    },
+    {
+      "path": "chip003/tiles/tile_000359.jpg",
+      "bytes": 723437
+    },
+    {
+      "path": "chip003/tiles/tile_000360.jpg",
+      "bytes": 739062
+    },
+    {
+      "path": "chip003/tiles/tile_000361.jpg",
+      "bytes": 748810
+    },
+    {
+      "path": "chip003/tiles/tile_000362.jpg",
+      "bytes": 729143
+    },
+    {
+      "path": "chip003/tiles/tile_000363.jpg",
+      "bytes": 729128
+    },
+    {
+      "path": "chip003/tiles/tile_000364.jpg",
+      "bytes": 720767
+    },
+    {
+      "path": "chip003/tiles/tile_000365.jpg",
+      "bytes": 641290
+    },
+    {
+      "path": "chip003/tiles/tile_000366.jpg",
+      "bytes": 646152
+    },
+    {
+      "path": "chip003/tiles/tile_000367.jpg",
+      "bytes": 664637
+    },
+    {
+      "path": "chip003/tiles/tile_000368.jpg",
+      "bytes": 681603
+    },
+    {
+      "path": "chip003/tiles/tile_000369.jpg",
+      "bytes": 692009
+    },
+    {
+      "path": "chip003/tiles/tile_000370.jpg",
+      "bytes": 694926
+    },
+    {
+      "path": "chip003/tiles/tile_000371.jpg",
+      "bytes": 729759
+    },
+    {
+      "path": "chip003/tiles/tile_000372.jpg",
+      "bytes": 711011
+    },
+    {
+      "path": "chip003/tiles/tile_000373.jpg",
+      "bytes": 712480
+    },
+    {
+      "path": "chip003/tiles/tile_000374.jpg",
+      "bytes": 741136
+    },
+    {
+      "path": "chip003/tiles/tile_000375.jpg",
+      "bytes": 745746
+    },
+    {
+      "path": "chip003/tiles/tile_000376.jpg",
+      "bytes": 708369
+    },
+    {
+      "path": "chip003/tiles/tile_000377.jpg",
+      "bytes": 696317
+    },
+    {
+      "path": "chip003/tiles/tile_000378.jpg",
+      "bytes": 689877
+    },
+    {
+      "path": "chip003/tiles/tile_000379.jpg",
+      "bytes": 689320
+    },
+    {
+      "path": "chip003/tiles/tile_000380.jpg",
+      "bytes": 690448
+    },
+    {
+      "path": "chip003/tiles/tile_000381.jpg",
+      "bytes": 704849
+    },
+    {
+      "path": "chip003/tiles/tile_000382.jpg",
+      "bytes": 717382
+    },
+    {
+      "path": "chip003/tiles/tile_000383.jpg",
+      "bytes": 704460
+    },
+    {
+      "path": "chip003/tiles/tile_000384.jpg",
+      "bytes": 702095
+    },
+    {
+      "path": "chip003/tiles/tile_000385.jpg",
+      "bytes": 698516
+    },
+    {
+      "path": "chip003/tiles/tile_000386.jpg",
+      "bytes": 708347
+    },
+    {
+      "path": "chip003/tiles/tile_000387.jpg",
+      "bytes": 724797
+    },
+    {
+      "path": "chip003/tiles/tile_000388.jpg",
+      "bytes": 711632
+    },
+    {
+      "path": "chip003/tiles/tile_000389.jpg",
+      "bytes": 687587
+    },
+    {
+      "path": "chip003/tiles/tile_000390.jpg",
+      "bytes": 660709
+    },
+    {
+      "path": "chip003/tiles/tile_000391.jpg",
+      "bytes": 655759
+    },
+    {
+      "path": "chip003/tiles/tile_000392.jpg",
+      "bytes": 643278
+    },
+    {
+      "path": "chip003/tiles/tile_000393.jpg",
+      "bytes": 640654
+    },
+    {
+      "path": "chip003/tiles/tile_000394.jpg",
+      "bytes": 641150
+    },
+    {
+      "path": "chip003/tiles/tile_000395.jpg",
+      "bytes": 641424
+    },
+    {
+      "path": "chip003/tiles/tile_000396.jpg",
+      "bytes": 651626
+    },
+    {
+      "path": "chip003/tiles/tile_000397.jpg",
+      "bytes": 657818
+    },
+    {
+      "path": "chip003/tiles/tile_000398.jpg",
+      "bytes": 672589
+    },
+    {
+      "path": "chip003/tiles/tile_000399.jpg",
+      "bytes": 670795
+    },
+    {
+      "path": "chip003/tiles/tile_000400.jpg",
+      "bytes": 651733
+    }
+  ]
+}

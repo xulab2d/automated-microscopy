@@ -1,0 +1,36 @@
+{
+  "success": false,
+  "z_um": 100.0,
+  "score": 0.0,
+  "prominence": 0.0,
+  "reason": "capture budget exhausted",
+  "samples": [
+    {
+      "z_um": 98.0,
+      "phase": "quick",
+      "score": 0.13577154278755188,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 99.0,
+      "phase": "quick",
+      "score": 0.16552820801734924,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    }
+  ],
+  "outcome": "capture_budget_exhausted",
+  "budget": {
+    "max_seconds": 180.0,
+    "max_captures": 10,
+    "captures_started": 10,
+    "elapsed_seconds": 0.09299999999348074,
+    "completed_actions": 25,
+    "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline"
+  }
+}

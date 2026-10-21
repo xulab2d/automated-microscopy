@@ -1,0 +1,85 @@
+"""Isolated proposal: measure missing half-plane directions after cardinal rays.
+
+Not imported by production. Hardware ownership, profile, STOP and the total frame
+budget remain in the existing guarded acquire/check callbacks. A direction is a
+request for evidence, never an invented edge or a rectangular-chip prior.
+"""
+import numpy as np
+from flakefinder.sparse_edges import fit_outline
+
+
+def _gap_probe_direction(lines, seed, bounds, previous=()):
+    if len(lines) < 2:
+        return None
+    angles = sorted(np.mod([np.arctan2(line['normal'][1], line['normal'][0]) for line in lines], 2*np.pi))
+    gaps = sorted(((angles[(i+1)%len(angles)] + (2*np.pi if i+1==len(angles) else 0) - a, a)
+                   for i, a in enumerate(angles)), reverse=True)
+    seed = np.asarray(seed, float)
+    for gap, start in gaps:
+        # Retry a poorly observed sector with bounded subdivisions, rather than
+        # repeating the same ray. These are search directions, not fitted lines.
+        for fraction in (.5, .25, .75):
+            angle = start + fraction*gap
+            direction = np.array([np.cos(angle), np.sin(angle)])
+            if any(direction @ np.asarray(old) > np.cos(np.deg2rad(15)) for old in previous):
+                continue
+            distance = min(((bounds[2*i+(1 if direction[i]>0 else 0)]-seed[i])/direction[i]
+                            for i in range(2) if abs(direction[i])>1e-9), default=0)
+            if distance > 0:
+                return dict(direction=direction.tolist(), maximum_um=float(distance),
+                            angular_gap_deg=float(np.degrees(gap)), sector_fraction=fraction)
+    return None
+
+
+def _complete_missing_edge_directions(edges, seed, bounds, field, step, margin,
+        acquire, ray_edge, bracket_side, check, save_ray, remaining, max_attempts=3):
+    """Use spare geometric-probe budget after a failed four-ray outline fit.
+
+    The same live ``edges`` list is extended only by the supplied acquire
+    callback. No estimated line, rectangle, moved seed or new safety envelope is
+    introduced. A failed ray consumes a direction attempt, not unbounded retries.
+    """
+    previous = []
+    for attempt in range(max_attempts):
+        check()
+        result = fit_outline(edges, seed, bounds, margin)
+        if result['status']=='estimated' or remaining() <= 0:
+            return result
+        request = _gap_probe_direction(result.get('lines', []), seed, bounds, previous)
+        if request is None:
+            return result
+        direction = np.asarray(request['direction']); previous.append(direction.tolist())
+        maximum = request['maximum_um']; name = 'gap_%03d' % attempt
+        ray = dict(status='searching', purpose='missing_measured_halfplane', **request)
+        save_ray(name, ray)
+        width = min(field[i]/abs(direction[i]) for i in range(2) if abs(direction[i])>1e-9)
+        inside = last = 0.; outside = None; found = None
+        while last < maximum and remaining() > 0:
+            check(); distance = min(last+step, maximum)
+            record = acquire(np.asarray(seed)+direction*distance, 'coarse_'+name); last=distance
+            if ray_edge(record, direction):found=record;break
+            if record is None:break
+            side=bracket_side(record)
+            if side=='holder':outside=distance;break
+            if side=='substrate':inside=distance
+        if found is None and outside is not None:
+            while outside-inside > width/3 and remaining() > 0:
+                check(); midpoint=(inside+outside)/2
+                record=acquire(np.asarray(seed)+direction*midpoint, 'bisect_'+name)
+                if ray_edge(record,direction):found=record;break
+                if record is None:break
+                side=bracket_side(record)
+                if side=='substrate':inside=midpoint
+                elif side=='holder':outside=midpoint
+                else:break
+            if found is None:
+                middle=np.asarray(seed)+direction*((inside+outside)/2)
+                tangent=np.array([-direction[1],direction[0]])
+                for sign in (-1,1):
+                    if remaining() <= 0:break
+                    check(); record=acquire(middle+sign*tangent*min(field)*.6,'lateral_'+name)
+                    if ray_edge(record,direction):found=record;break
+        ray.update(status='coherent_edge' if found else 'unresolved', last_substrate_distance_um=inside,
+                   first_holder_distance_um=outside, edge_image=found['image'] if found else None)
+        save_ray(name,ray)
+    return fit_outline(edges,seed,bounds,margin)

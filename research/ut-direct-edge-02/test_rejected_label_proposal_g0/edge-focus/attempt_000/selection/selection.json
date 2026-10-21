@@ -1,0 +1,41 @@
+{
+  "box_px": [
+    50,
+    32,
+    114,
+    96
+  ],
+  "edge_centre_px": [
+    81.5,
+    63.5
+  ],
+  "roi_centre_px": [
+    81.5,
+    63.5
+  ],
+  "point_xy_um": [
+    802.0,
+    500.0
+  ],
+  "method": "label_guided_green_transition",
+  "long_line_evidence": {
+    "offset_working_px": 80.0,
+    "qualification": "Unvalidated current label proposal, used only to select an autofocus ROI."
+  },
+  "relative_full_field_contrast": 1.1495753323980615,
+  "orientation_coherence": 1.0,
+  "normal_working_pixels": [
+    1.0,
+    0.0
+  ],
+  "profile_peak_to_median_slope": 102023743.10554273,
+  "guided_profile_step_contrast": 1.1495753301123521,
+  "selection_position_um": {
+    "x": 800.0,
+    "y": 500.0,
+    "z": 100
+  },
+  "local_focus_verified": false,
+  "policy": "Fixed ROI after current full-field edge registration; search image is not focus verification.",
+  "primary_selector_rejection": "synthetic image-wide tensor failure"
+}

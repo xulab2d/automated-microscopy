@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "axio-flakefinder"
+version = "0.1.0"
+description = "Local ZEISS microscope acquisition, autofocus, chip mapping and flake analysis"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2.0", "opencv-python-headless>=4.10", "scipy>=1.13", "scikit-learn>=1.6", "Pillow>=10", "grpcio>=1.60", "protobuf>=5"]
+
+[project.optional-dependencies]
+zeiss = ["pythonnet>=3.0"]
+dev = ["pytest>=8", "grpcio-tools>=1.60"]
+appearance = ["torch>=2.6", "transformers>=4.57,<5", "safetensors>=0.4"]
+
+[project.scripts]
+flakefinder = "flakefinder.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["flakefinder*"]
+
+[tool.setuptools.package-data]
+flakefinder = ["*.html"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

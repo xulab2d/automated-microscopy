@@ -1,0 +1,20 @@
+{
+  "source_run": "verified-parent",
+  "source_result": "result.json",
+  "source_sha256": {},
+  "box": [
+    40,
+    30,
+    60,
+    50
+  ],
+  "accepted": true,
+  "confirmation": {
+    "z_um": 105.0,
+    "score": 5.684341970784096e-15,
+    "texture": 0.0,
+    "noise": 0.0,
+    "mean": 1500.0,
+    "focus_metric": "chip_edge_mean_gradient_energy"
+  }
+}

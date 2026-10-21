@@ -1,0 +1,65 @@
+{
+  "production_and_campaign_unchanged": true,
+  "campaign_source_snapshots": {
+    "candidate013": "35a604c0b9bbb93ce55fcec7acd940e7232e098e7663d815a3b1db59d453a236",
+    "candidate014": "0522414a1cb4cbb478072556369f7d30fed285ac690c5ff58a20c5cbad11e008",
+    "candidate015": "6efac52dc64fa87310ddfd66578cb9ea8350549da34fd00368f1676ba37c92da",
+    "candidate016": "1c55198e3341c26482988c1bed40e442debc4c1492755fbf35d97b80dfe9c5ad"
+  },
+  "conclusions": {
+    "candidate013": {
+      "classification": "missed proposals plus insufficient real north/west evidence; one new proposal is a false contamination edge",
+      "images": 30,
+      "budget_remaining": 2,
+      "trusted_observed_side_groups": 2,
+      "north_ambiguous_substrate_fraction": 0.9339553269630785,
+      "false_edge_image": "probe_000021",
+      "false_edge_outside_inside_green_ratio": 1.279924988746643,
+      "false_halfplane_contradicts_adjacent_substrate_fraction": 0.9862119013062409,
+      "action": "Do not accept the3-line result or blindly use its angular-gap direction. Requires trustworthy north/west measurements or saved raw-image reanalysis; existing2-frame allowance is unlikely enough for a fresh blind ray."
+    },
+    "candidate014": {
+      "classification": "real missing east-edge coverage caused by ambiguous-bracket early exit, not duplicate rays",
+      "images": 23,
+      "budget_remaining": 9,
+      "trusted_observed_side_groups": 3,
+      "ambiguous_east_substrate_fraction": 0.9455339151066042,
+      "unimaged_normal_gap_um": [
+        -310.954981045581,
+        261.4561403861135
+      ],
+      "action": "At a later legitimate continuation, repair the east bracket from saved inside/holder observations; no need for blind4-ray rediscovery. Angular-gap direction east [.997,.072] is reasonable. Missing side cannot be reconstructed from current labels alone."
+    },
+    "candidate015": {
+      "classification": "known missed-line proposal failure, recoverable from saved images as an estimated polygon",
+      "images": 30,
+      "budget_remaining": 2,
+      "coherent_images_before": 2,
+      "coherent_images_after": 13,
+      "line_groups_after": 4,
+      "observed_substrate_points_beyond_expanded_halfplanes": 0,
+      "estimated_polygon_iou_with_candidate010": 0.984279361236361,
+      "action": "Prefer this saved4-edge evidence for the repeated physical chip after raw-edge validation. No new geometric acquisition needed to form this estimate; still not closed full-chip coverage."
+    },
+    "candidate016": {
+      "classification": "mixed proposal failure and erroneous extra orientation; algebraic closure is not trustworthy",
+      "images": 32,
+      "budget_remaining": 0,
+      "coherent_images_before": 2,
+      "coherent_images_after": 11,
+      "line_groups_after": 5,
+      "questionable_extra_line_image": "probe_000013",
+      "questionable_stage_normal": [
+        -0.03467589244246483,
+        0.9993985891342163
+      ],
+      "raw_gradient_normal_image": [
+        -0.23878320875919642,
+        0.971072901081408
+      ],
+      "action": "Do not accept the fifth half-plane. Use saved full-resolution dark/bright edge gradients to adjudicate northern direction before any resumed plan. No remaining acquisition budget; do not silently enlarge it."
+    }
+  },
+  "staged_hough_patch_deployment": "blocked_pending_real_blurred_contamination_and_orientation_validation",
+  "no_new_tests_needed": "Saved raw-image counterexamples supersede the limited6-test negative-control result. This is offline diagnosis, not hardware validation."
+}

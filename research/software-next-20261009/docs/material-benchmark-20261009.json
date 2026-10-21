@@ -1,0 +1,482 @@
+{
+  "schema": 1,
+  "cpu_threads": 1,
+  "records": [
+    {
+      "kind": "synthetic_known_pixels",
+      "material": "graphene",
+      "pixels": 1048576,
+      "seconds": 1.2581301000027452,
+      "pooled_foreground_iou": 0.948985116456825,
+      "selected_regions": 2,
+      "all_source_regions": 5,
+      "source_hole_retained_fraction": 0.709375,
+      "source": "Synthetic profile-rendered fractional RGB contrast plus independent Gaussian noise; not real detection accuracy.",
+      "report": {
+        "schema": 1,
+        "method": "pixel_population_classification_then_connected_regions",
+        "parent_geometry": "new_noise_qualified_connected_features",
+        "options": {
+          "smoothing_um": 0.3,
+          "seed_quantile": 0.999,
+          "growth_quantile": 0.99,
+          "source_floor_um2": 1.0,
+          "useful_area_um2": 100.0,
+          "useful_width_um": 3.0,
+          "maximum_stat_pixels": 20000,
+          "patch_um": 2.0
+        },
+        "contrast_convention": "(substrate-flake)/substrate",
+        "classifier": {
+          "schema": 1,
+          "model_id": "graphene-sio2-90nm-literature-v1",
+          "model_sha256": "538825088b3c49e054d57f1015a8970952e845dfda1273b52ddb8288d2d815fa",
+          "contrast_convention": "(substrate-flake)/substrate",
+          "calibration_status": "illustrative_uncalibrated",
+          "context": {},
+          "context_mismatches": {},
+          "layer_assignment_allowed": false,
+          "chemical_identity_confirmed": false,
+          "statistics": {
+            "null_quantile": 0.9973,
+            "match_quantile": 0.9973,
+            "minimum_log_likelihood_ratio": 2.995732273553991,
+            "qualification": "Engineering decision levels under a Gaussian measurement model; not validated precision/recall."
+          }
+        },
+        "background_centre_rgb": [
+          1.7602142179384828e-05,
+          -1.6273654182441533e-05,
+          3.6233172977517825e-06
+        ],
+        "smoothed_substrate_covariance": [
+          [
+            5.670227917704154e-07,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            5.670227917704154e-07,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            5.670227917704154e-07
+          ]
+        ],
+        "source_regions": 5,
+        "selected_regions": 2,
+        "seconds": {
+          "normalization": 0.5824714999907883,
+          "pixel_classification": 0.4846210000105202,
+          "total": 1.250293099990813
+        },
+        "holes_preserved": true,
+        "disconnected_islands_not_unioned": true,
+        "layer_assignment_allowed": false,
+        "negative_result_means": "No accepted regions under this model; not verified absence of thin material."
+      }
+    },
+    {
+      "kind": "synthetic_known_pixels",
+      "material": "hbn",
+      "pixels": 1048576,
+      "seconds": 1.232432399992831,
+      "pooled_foreground_iou": 0.9621046510375723,
+      "selected_regions": 2,
+      "all_source_regions": 5,
+      "source_hole_retained_fraction": 0.805,
+      "source": "Synthetic profile-rendered fractional RGB contrast plus independent Gaussian noise; not real detection accuracy.",
+      "report": {
+        "schema": 1,
+        "method": "pixel_population_classification_then_connected_regions",
+        "parent_geometry": "new_noise_qualified_connected_features",
+        "options": {
+          "smoothing_um": 0.3,
+          "seed_quantile": 0.999,
+          "growth_quantile": 0.99,
+          "source_floor_um2": 1.0,
+          "useful_area_um2": 100.0,
+          "useful_width_um": 3.0,
+          "maximum_stat_pixels": 20000,
+          "patch_um": 2.0
+        },
+        "contrast_convention": "(substrate-flake)/substrate",
+        "classifier": {
+          "schema": 1,
+          "model_id": "hbn-sio2-90nm-literature-v1",
+          "model_sha256": "1f61add6f5fef62ce3bf6cb646f4e601484eb17678dea4a83eef7bd5ec0f0ff1",
+          "contrast_convention": "(substrate-flake)/substrate",
+          "calibration_status": "illustrative_uncalibrated",
+          "context": {},
+          "context_mismatches": {},
+          "layer_assignment_allowed": false,
+          "chemical_identity_confirmed": false,
+          "statistics": {
+            "null_quantile": 0.9973,
+            "match_quantile": 0.9973,
+            "minimum_log_likelihood_ratio": 2.995732273553991,
+            "qualification": "Engineering decision levels under a Gaussian measurement model; not validated precision/recall."
+          }
+        },
+        "background_centre_rgb": [
+          2.0414905520738102e-05,
+          -4.4135185817140155e-06,
+          -6.378448688337812e-06
+        ],
+        "smoothed_substrate_covariance": [
+          [
+            5.610491168823331e-07,
+            6.370830973878583e-09,
+            -5.038593542394665e-09
+          ],
+          [
+            6.370830973878583e-09,
+            5.735441529992216e-07,
+            2.4319493086011335e-09
+          ],
+          [
+            -5.038593542394665e-09,
+            2.4319493086011335e-09,
+            5.674939668693527e-07
+          ]
+        ],
+        "source_regions": 5,
+        "selected_regions": 2,
+        "seconds": {
+          "normalization": 0.1303811000107089,
+          "pixel_classification": 0.752532099999371,
+          "total": 1.2178269000141881
+        },
+        "holes_preserved": true,
+        "disconnected_islands_not_unioned": true,
+        "layer_assignment_allowed": false,
+        "negative_result_means": "No accepted regions under this model; not verified absence of thin material."
+      }
+    },
+    {
+      "kind": "saved_background_transfer_control",
+      "material_prior": "graphene",
+      "source": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000369.tiff",
+      "source_sha256": "86c0be7a46eed47b92ddd140ef802b586d1f7b6a314569b947a5330e96fb0f2b",
+      "substrate_labels_sha256": "aba57f2894ab88b5af6d70a0c61e72b5636722b5552748a5ce1088f59b04c2be",
+      "crop_xywh": [
+        848,
+        644,
+        768,
+        768
+      ],
+      "pixels": 589824,
+      "seconds": 0.7617155000043567,
+      "selected_regions": 0,
+      "all_source_regions": 3,
+      "normalization": {
+        "fit_models": [
+          {
+            "degree": 0,
+            "columns": 1,
+            "mean": 0.05813242888925172,
+            "se": 0.00034046757974884616,
+            "fold_scores": [
+              0.05893010391165117,
+              0.05774985319241699,
+              0.057413892561227614,
+              0.058435865891711104
+            ]
+          },
+          {
+            "degree": 1,
+            "columns": 3,
+            "mean": 0.05773368551014808,
+            "se": 0.0003517025340852315,
+            "fold_scores": [
+              0.058576370354054635,
+              0.057722984756601245,
+              0.05685508939332512,
+              0.05778029753661133
+            ]
+          },
+          {
+            "degree": 2,
+            "columns": 6,
+            "mean": 0.05756108576247969,
+            "se": 0.0002605065845942,
+            "fold_scores": [
+              0.05818019578829661,
+              0.05771065319996402,
+              0.05693877223837518,
+              0.05741472182328295
+            ]
+          }
+        ],
+        "chosen_degree": 1,
+        "coefficients": [
+          [
+            1494.9608154296875,
+            1789.849853515625,
+            1397.1649169921875
+          ],
+          [
+            -1.9964699745178223,
+            10.211515426635742,
+            13.303764343261719
+          ],
+          [
+            -1.505488395690918,
+            -2.555103302001953,
+            -2.667969226837158
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "background_sample_count": 36804,
+        "outside_domain": "Not measured; masked from every operation",
+        "fit_support_independent_of_feature_color": true
+      },
+      "report": {
+        "schema": 1,
+        "method": "pixel_population_classification_then_connected_regions",
+        "parent_geometry": "new_noise_qualified_connected_features",
+        "options": {
+          "smoothing_um": 0.3,
+          "seed_quantile": 0.999,
+          "growth_quantile": 0.99,
+          "source_floor_um2": 1.0,
+          "useful_area_um2": 100.0,
+          "useful_width_um": 3.0,
+          "maximum_stat_pixels": 20000,
+          "patch_um": 2.0
+        },
+        "contrast_convention": "(substrate-flake)/substrate",
+        "classifier": {
+          "schema": 1,
+          "model_id": "graphene-sio2-90nm-literature-v1",
+          "model_sha256": "618b3493f387832b199e6456a7ba928e85f8fe2e3a2b5047cb24d7bb6a40923b",
+          "contrast_convention": "(substrate-flake)/substrate",
+          "calibration_status": "illustrative_uncalibrated",
+          "context": {},
+          "context_mismatches": {},
+          "layer_assignment_allowed": false,
+          "chemical_identity_confirmed": false,
+          "statistics": {
+            "null_quantile": 0.9973,
+            "match_quantile": 0.9973,
+            "minimum_log_likelihood_ratio": 2.995732273553991,
+            "qualification": "Engineering decision levels under a Gaussian measurement model; not validated precision/recall."
+          }
+        },
+        "background_centre_rgb": [
+          -0.00012065640476066619,
+          0.00015470149810425937,
+          0.00017956134979613125
+        ],
+        "smoothed_substrate_covariance": [
+          [
+            0.0005154934883917911,
+            -2.947577740997076e-05,
+            -1.39442008730839e-05
+          ],
+          [
+            -2.947577740997076e-05,
+            4.720707559462136e-05,
+            6.383708296198165e-06
+          ],
+          [
+            -1.39442008730839e-05,
+            6.383708296198165e-06,
+            5.1239771464303716e-05
+          ]
+        ],
+        "source_regions": 3,
+        "selected_regions": 0,
+        "seconds": {
+          "normalization": 0.13765360000252258,
+          "pixel_classification": 0.5029241999873193,
+          "total": 0.7010074999998324
+        },
+        "holes_preserved": true,
+        "disconnected_islands_not_unioned": true,
+        "layer_assignment_allowed": false,
+        "negative_result_means": "No accepted regions under this model; not verified absence of thin material."
+      },
+      "qualification": "Previously visually reviewed mostly bare MoTe2-batch substrate, not a labeled graphene/hBN field or a guaranteed particle-free blank. Negative-only sanity check; oxide mismatch is deliberately not target-domain validation."
+    },
+    {
+      "kind": "saved_background_transfer_control",
+      "material_prior": "hbn",
+      "source": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000369.tiff",
+      "source_sha256": "86c0be7a46eed47b92ddd140ef802b586d1f7b6a314569b947a5330e96fb0f2b",
+      "substrate_labels_sha256": "aba57f2894ab88b5af6d70a0c61e72b5636722b5552748a5ce1088f59b04c2be",
+      "crop_xywh": [
+        848,
+        644,
+        768,
+        768
+      ],
+      "pixels": 589824,
+      "seconds": 0.7172274999902584,
+      "selected_regions": 0,
+      "all_source_regions": 3,
+      "normalization": {
+        "fit_models": [
+          {
+            "degree": 0,
+            "columns": 1,
+            "mean": 0.05813242888925172,
+            "se": 0.00034046757974884616,
+            "fold_scores": [
+              0.05893010391165117,
+              0.05774985319241699,
+              0.057413892561227614,
+              0.058435865891711104
+            ]
+          },
+          {
+            "degree": 1,
+            "columns": 3,
+            "mean": 0.05773368551014808,
+            "se": 0.0003517025340852315,
+            "fold_scores": [
+              0.058576370354054635,
+              0.057722984756601245,
+              0.05685508939332512,
+              0.05778029753661133
+            ]
+          },
+          {
+            "degree": 2,
+            "columns": 6,
+            "mean": 0.05756108576247969,
+            "se": 0.0002605065845942,
+            "fold_scores": [
+              0.05818019578829661,
+              0.05771065319996402,
+              0.05693877223837518,
+              0.05741472182328295
+            ]
+          }
+        ],
+        "chosen_degree": 1,
+        "coefficients": [
+          [
+            1494.9608154296875,
+            1789.849853515625,
+            1397.1649169921875
+          ],
+          [
+            -1.9964699745178223,
+            10.211515426635742,
+            13.303764343261719
+          ],
+          [
+            -1.505488395690918,
+            -2.555103302001953,
+            -2.667969226837158
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "background_sample_count": 36804,
+        "outside_domain": "Not measured; masked from every operation",
+        "fit_support_independent_of_feature_color": true
+      },
+      "report": {
+        "schema": 1,
+        "method": "pixel_population_classification_then_connected_regions",
+        "parent_geometry": "new_noise_qualified_connected_features",
+        "options": {
+          "smoothing_um": 0.3,
+          "seed_quantile": 0.999,
+          "growth_quantile": 0.99,
+          "source_floor_um2": 1.0,
+          "useful_area_um2": 100.0,
+          "useful_width_um": 3.0,
+          "maximum_stat_pixels": 20000,
+          "patch_um": 2.0
+        },
+        "contrast_convention": "(substrate-flake)/substrate",
+        "classifier": {
+          "schema": 1,
+          "model_id": "hbn-sio2-90nm-literature-v1",
+          "model_sha256": "d10b60736ecd2f471bfecd5febd8f765c6b27c1ccfd8b09f599f4115f21b8591",
+          "contrast_convention": "(substrate-flake)/substrate",
+          "calibration_status": "illustrative_uncalibrated",
+          "context": {},
+          "context_mismatches": {},
+          "layer_assignment_allowed": false,
+          "chemical_identity_confirmed": false,
+          "statistics": {
+            "null_quantile": 0.9973,
+            "match_quantile": 0.9973,
+            "minimum_log_likelihood_ratio": 2.995732273553991,
+            "qualification": "Engineering decision levels under a Gaussian measurement model; not validated precision/recall."
+          }
+        },
+        "background_centre_rgb": [
+          -0.00012065640476066619,
+          0.00015470149810425937,
+          0.00017956134979613125
+        ],
+        "smoothed_substrate_covariance": [
+          [
+            0.0005154934883917911,
+            -2.947577740997076e-05,
+            -1.39442008730839e-05
+          ],
+          [
+            -2.947577740997076e-05,
+            4.720707559462136e-05,
+            6.383708296198165e-06
+          ],
+          [
+            -1.39442008730839e-05,
+            6.383708296198165e-06,
+            5.1239771464303716e-05
+          ]
+        ],
+        "source_regions": 3,
+        "selected_regions": 0,
+        "seconds": {
+          "normalization": 0.12350119999609888,
+          "pixel_classification": 0.46095880000211764,
+          "total": 0.657531699995161
+        },
+        "holes_preserved": true,
+        "disconnected_islands_not_unioned": true,
+        "layer_assignment_allowed": false,
+        "negative_result_means": "No accepted regions under this model; not verified absence of thin material."
+      },
+      "qualification": "Previously visually reviewed mostly bare MoTe2-batch substrate, not a labeled graphene/hBN field or a guaranteed particle-free blank. Negative-only sanity check; oxide mismatch is deliberately not target-domain validation."
+    }
+  ],
+  "real_positive_validation_performed": false,
+  "scope": "Synthetic algorithm checks and saved negative-control transfer only; physical profile and target-camera thickness accuracy unvalidated."
+}

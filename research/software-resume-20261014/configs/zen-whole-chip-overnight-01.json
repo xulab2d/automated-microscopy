@@ -1,0 +1,180 @@
+{
+  "schema": 1,
+  "backend": "zen",
+  "zen": {
+    "job_template": "FlakeFinder Quantitative Camera",
+    "timeout_s": 30,
+    "settle_s": 0.5,
+    "xy_backlash_um": 30,
+    "camera_resources": {
+      "ff_exposure_ms": 200.0,
+      "ff_white_balance": "0.25007564,1,2.61244442"
+    },
+    "expected_objective_position": 2,
+    "camera_white_level": 4095,
+    "keep_vendor_results": false
+  },
+  "limits": {
+    "x_min": -39666.256,
+    "x_max": 16333.744,
+    "y_min": -30922.552,
+    "y_max": 25077.448,
+    "z_min": 15192.031,
+    "z_max": 15700,
+    "max_xy_step_um": 3000,
+    "max_z_step_um": 10
+  },
+  "focus": {
+    "half_range_um": 12,
+    "coarse_step_um": 3,
+    "fine_step_um": 0.5
+  },
+  "initial_focus": {
+    "low": 15362,
+    "high": 15386,
+    "coarse_step_um": 2,
+    "fine_step_um": 0.5
+  },
+  "survey": {
+    "bounds_um": [
+      -39666.256,
+      16333.744,
+      -30922.552,
+      25077.448
+    ],
+    "autofocus_every": 3,
+    "focus_half_range_um": 9,
+    "focus_step_um": 3,
+    "mode": "survey"
+  },
+  "grid": {
+    "expected_count": null,
+    "grid_shape": null,
+    "polarity": "bright"
+  },
+  "detail": {
+    "autofocus_every": 3,
+    "focus_half_range_um": 12,
+    "focus_step_um": 3,
+    "edge_margin_um": 15
+  },
+  "context": {
+    "sample_id": "MoTe2-2026-10-08",
+    "material": "MoTe2",
+    "substrate": "SiO2/Si",
+    "oxide_nm": 285,
+    "oxide_process": "wet",
+    "objective": "EC Epiplan 20x/0.4 HD M27",
+    "camera": "Axiocam 305 color",
+    "exposure_ms": 200.0,
+    "illumination": "reflected brightfield",
+    "illumination_percent": 93.44422700587084,
+    "white_balance": "0.25007564,1,2.61244442",
+    "white_level": 4095,
+    "color_profile_kind": "fixed acquisition channel balance; not a neutral-reference color calibration",
+    "coordinate_frame": "XY re-zeroed by operator; new measured positions 2026-10-08"
+  },
+  "material_model": null,
+  "notes": "Fresh coordinate frame after user XY re-zero. No old chip locations or focus anchors. Hardware XY envelope is current position +/-28mm; first edge search is +/-9mm. Z is current height +/-150um with10um increments on20x/0.4. Fresh images indicate appreciable chip tilt: establish a plane from current-coordinate verified texture sites before corner autofocus. Z maximum extended to15700um on20x/0.4, within3300um working-distance context.",
+  "camera_transform": {
+    "matrix": [
+      [
+        0.17248901979656125,
+        -0.0077434379225809
+      ],
+      [
+        0.007834271193644623,
+        0.17226317842089725
+      ]
+    ],
+    "pixel_size_um": [
+      0.1725,
+      0.1725
+    ],
+    "calibrated": true
+  },
+  "calibration_step_um": 30,
+  "calibration_quality": {
+    "responses": [
+      0.8857142857142857,
+      0.9215686274509803,
+      0.8921568627450981,
+      0.9494949494949495
+    ],
+    "feature_shifts_px": [
+      [
+        -171.05795288085938,
+        7.343780517578125
+      ],
+      [
+        -8.504974365234375,
+        -174.48828125
+      ],
+      [
+        176.08154296875,
+        -8.443603515625
+      ],
+      [
+        7.099365234375,
+        173.1063232421875
+      ]
+    ],
+    "max_fit_error_um": 0.44390576424490097,
+    "return_error_um": 0.0922605598813441,
+    "return_response": 0.7550888879846643
+  },
+  "interior_scan": {
+    "overlap": 0.15,
+    "focus_half_range_um": 12,
+    "focus_step_um": 3,
+    "focus_search_bounds_um": [
+      15192.031,
+      15492.031
+    ],
+    "focus_max_residual_um": 1.0,
+    "focus_initial_recovery": true
+  },
+  "analysis": {
+    "backend": "empirical",
+    "min_area_um2": 100,
+    "min_detection_area_um2": 0.25,
+    "max_area_um2": 20000,
+    "min_contrast": 0.015,
+    "substrate_sigma": 5,
+    "edge_margin_um": 12,
+    "max_components": 8,
+    "sample_per_tile": 5000,
+    "min_solidity": 0.72,
+    "max_perimeter_ratio": 8,
+    "max_uniformity": 0.025,
+    "min_posterior": 0.65,
+    "max_color_distance_squared": 16,
+    "min_width_um": 5,
+    "boundary_probe_um": 1.5,
+    "min_boundary_support": 0.6,
+    "min_facet_fraction": 0.4,
+    "max_texture": 0.012,
+    "min_shape_score": 0.5,
+    "spatial_sigma_um": 0.6
+  },
+  "analysis_workers": 2,
+  "radiometry": {
+    "report": "data/whole-chip-standardized-01/calibration/response/radiometry.json",
+    "exposure_choice": "200 ms retains >2x substrate headroom for bright bulk material. Fixed WB/lamp; measured RGB response exponents 0.992..0.998 over100..400ms; dark offset not independently measured."
+  },
+  "full_chip": {
+    "overlap": 0.15,
+    "focus_roi_um": 64,
+    "anchor_count": 4,
+    "focus_half_range_um": 12,
+    "focus_step_um": 3,
+    "focus_fine_step_um": 0.5,
+    "focus_search_bounds_um": [
+      15192.531,
+      15699.5
+    ],
+    "focus_max_extrapolation_um": 3000,
+    "focus_max_prediction_sigma_um": 2,
+    "focus_max_extrapolation_fraction": 0.75
+  }
+}

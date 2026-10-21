@@ -1,0 +1,272 @@
+{
+  "shortlist": {
+    "counts": {
+      "shortlist": 224,
+      "uncertain": 44940,
+      "rejected": 44940,
+      "all": 45164
+    },
+    "filtered_count": 224,
+    "source_region_count": 330196,
+    "indexed_fields": 999,
+    "analysis_source": {
+      "kind": "offline_selected",
+      "analysis_relative_path": "analysis/graphene/scan-20261013-221727-131d9ced/chip001/operator-empirical-full-v1",
+      "plan_sha256": "2bad76bc9db4db71ae31eaa4726883f485520b6c8ee56f37e5365f772219f83c",
+      "model_sha256": "fddd5c6c9c5e26eab299222c48d8d3c9ec4b9d279774f4f13425795d8a3c42d8",
+      "config_sha256": "5cd308b0fe4cbe67e289ea633e7fb8c43b4bb2c51d0f7a2cd16a9668168fcea2",
+      "chip": "chip001",
+      "version": "operator-empirical-full-v1",
+      "selection_file": "graphene-analysis-selection.json",
+      "empirical_trajectory": {
+        "direction_rgb": [
+          1.0,
+          0.7697997302943808,
+          0.4806112085220583
+        ],
+        "origin_rgb": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "supported_red_interval": [
+          0.09085932540372238,
+          0.3720495122466987
+        ],
+        "supported_interval_margin_rgb": 0.01,
+        "first_band": {
+          "red_interval": [
+            0.1,
+            0.15
+          ],
+          "green_slope": 0.6,
+          "green_intercept": 0.03,
+          "transition_margin": 0.003
+        },
+        "proposal_red_interval": [
+          0.0,
+          0.51
+        ],
+        "residual_covariance_rgb": [
+          [
+            3.6e-05,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            6.055702946051664e-05,
+            2.6032896173775936e-05
+          ],
+          [
+            0.0,
+            2.6032896173775936e-05,
+            0.00010037715900835479
+          ]
+        ],
+        "negative_preference_margin_distance2": 2.1972245773362196,
+        "covariance_floor_rgb": 0.006,
+        "method": "noise-weighted continuous RGB projection; three empirical bands support interpolation",
+        "qualification": "Engineering proposal corridor, not a calibrated probability. Mixed boundary pixels may also match. Extrapolation is retained as unknown."
+      }
+    },
+    "ranking": "empirical_support_then_joint_v1",
+    "review_processing": {
+      "dedup_available": true,
+      "group_duplicates": true,
+      "minimum_grouped_area_um2": 25.0,
+      "refinement_available": true,
+      "refined_observations": 53513,
+      "hidden_artifacts": 94,
+      "artifact_observations": 94,
+      "hide_artifacts": true
+    },
+    "status": {
+      "state": "complete",
+      "pid": 27528,
+      "output": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\analysis\\graphene\\scan-20261013-221727-131d9ced\\chip001\\operator-empirical-full-v1",
+      "updated_at": 1792040261.180305,
+      "no_acquisition_performed": true,
+      "cpu": {
+        "threads": 1,
+        "priority": "below_normal",
+        "windows_affinity": "explicit bounded CPU mask",
+        "cpu_masks": [
+          1,
+          2
+        ]
+      },
+      "memory_capacity": {
+        "physical_available_bytes": 2332655616,
+        "physical_total_bytes": 16851456000,
+        "commit_available_bytes": 27774943232,
+        "address_available_bytes": 140732815294464,
+        "policy": "windows_commit_and_address_capacity_v1",
+        "purpose": "two measured offline segmentation workers",
+        "working_allowance_bytes": 1113587712,
+        "uncertainty_allowance_bytes": 278396928,
+        "required_capacity_bytes": 1391984640,
+        "adequate": true,
+        "physical_free_floor_bytes": 0,
+        "qualification": "Estimated incremental allocation plus 25% uncertainty; Windows paging remains enabled and unchanged."
+      },
+      "current_field": null,
+      "finished_fields": 999,
+      "selected_fields": 999,
+      "counts": {
+        "assessed": 942,
+        "unassessable": 57,
+        "budget_exhausted": 0,
+        "invalid_source": 0,
+        "failed": 0
+      },
+      "run_id": "scan-20261013-221727-131d9ced",
+      "scan_request_sha256": "870686e9147199d8b31b10a068b43919b52432ea25bac1c9f3171ee629ceb1cf",
+      "processed_fields": 999,
+      "assessed_fields": 942,
+      "unassessable_fields": 57,
+      "failed_fields": 0,
+      "budget_exhausted_fields": 0,
+      "available_fields": 999,
+      "total_fields": 999
+    },
+    "warnings": [],
+    "fields_version": "035c25294af5a9c7af8982233e33a179e78e12f8b64ce2a82c09c95c0b549c56",
+    "request_seconds": 2.215204000007361
+  },
+  "uncertain": {
+    "counts": {
+      "shortlist": 224,
+      "uncertain": 44940,
+      "rejected": 44940,
+      "all": 45164
+    },
+    "filtered_count": 44940,
+    "source_region_count": 330196,
+    "indexed_fields": 999,
+    "analysis_source": {
+      "kind": "offline_selected",
+      "analysis_relative_path": "analysis/graphene/scan-20261013-221727-131d9ced/chip001/operator-empirical-full-v1",
+      "plan_sha256": "2bad76bc9db4db71ae31eaa4726883f485520b6c8ee56f37e5365f772219f83c",
+      "model_sha256": "fddd5c6c9c5e26eab299222c48d8d3c9ec4b9d279774f4f13425795d8a3c42d8",
+      "config_sha256": "5cd308b0fe4cbe67e289ea633e7fb8c43b4bb2c51d0f7a2cd16a9668168fcea2",
+      "chip": "chip001",
+      "version": "operator-empirical-full-v1",
+      "selection_file": "graphene-analysis-selection.json",
+      "empirical_trajectory": {
+        "direction_rgb": [
+          1.0,
+          0.7697997302943808,
+          0.4806112085220583
+        ],
+        "origin_rgb": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "supported_red_interval": [
+          0.09085932540372238,
+          0.3720495122466987
+        ],
+        "supported_interval_margin_rgb": 0.01,
+        "first_band": {
+          "red_interval": [
+            0.1,
+            0.15
+          ],
+          "green_slope": 0.6,
+          "green_intercept": 0.03,
+          "transition_margin": 0.003
+        },
+        "proposal_red_interval": [
+          0.0,
+          0.51
+        ],
+        "residual_covariance_rgb": [
+          [
+            3.6e-05,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            6.055702946051664e-05,
+            2.6032896173775936e-05
+          ],
+          [
+            0.0,
+            2.6032896173775936e-05,
+            0.00010037715900835479
+          ]
+        ],
+        "negative_preference_margin_distance2": 2.1972245773362196,
+        "covariance_floor_rgb": 0.006,
+        "method": "noise-weighted continuous RGB projection; three empirical bands support interpolation",
+        "qualification": "Engineering proposal corridor, not a calibrated probability. Mixed boundary pixels may also match. Extrapolation is retained as unknown."
+      }
+    },
+    "ranking": "empirical_support_then_joint_v1",
+    "review_processing": {
+      "dedup_available": true,
+      "group_duplicates": true,
+      "minimum_grouped_area_um2": 25.0,
+      "refinement_available": true,
+      "refined_observations": 53513,
+      "hidden_artifacts": 94,
+      "artifact_observations": 94,
+      "hide_artifacts": true
+    },
+    "status": {
+      "state": "complete",
+      "pid": 27528,
+      "output": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\analysis\\graphene\\scan-20261013-221727-131d9ced\\chip001\\operator-empirical-full-v1",
+      "updated_at": 1792040261.180305,
+      "no_acquisition_performed": true,
+      "cpu": {
+        "threads": 1,
+        "priority": "below_normal",
+        "windows_affinity": "explicit bounded CPU mask",
+        "cpu_masks": [
+          1,
+          2
+        ]
+      },
+      "memory_capacity": {
+        "physical_available_bytes": 2332655616,
+        "physical_total_bytes": 16851456000,
+        "commit_available_bytes": 27774943232,
+        "address_available_bytes": 140732815294464,
+        "policy": "windows_commit_and_address_capacity_v1",
+        "purpose": "two measured offline segmentation workers",
+        "working_allowance_bytes": 1113587712,
+        "uncertainty_allowance_bytes": 278396928,
+        "required_capacity_bytes": 1391984640,
+        "adequate": true,
+        "physical_free_floor_bytes": 0,
+        "qualification": "Estimated incremental allocation plus 25% uncertainty; Windows paging remains enabled and unchanged."
+      },
+      "current_field": null,
+      "finished_fields": 999,
+      "selected_fields": 999,
+      "counts": {
+        "assessed": 942,
+        "unassessable": 57,
+        "budget_exhausted": 0,
+        "invalid_source": 0,
+        "failed": 0
+      },
+      "run_id": "scan-20261013-221727-131d9ced",
+      "scan_request_sha256": "870686e9147199d8b31b10a068b43919b52432ea25bac1c9f3171ee629ceb1cf",
+      "processed_fields": 999,
+      "assessed_fields": 942,
+      "unassessable_fields": 57,
+      "failed_fields": 0,
+      "budget_exhausted_fields": 0,
+      "available_fields": 999,
+      "total_fields": 999
+    },
+    "warnings": [],
+    "fields_version": "035c25294af5a9c7af8982233e33a179e78e12f8b64ce2a82c09c95c0b549c56",
+    "request_seconds": 1.0426431000232697
+  }
+}

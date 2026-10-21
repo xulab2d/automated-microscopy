@@ -1,0 +1,110 @@
+{
+  "source": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000015.tiff",
+  "destination": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\transfer-verification\\chip001-tile_000015.tiff",
+  "source_hashes": {
+    "bytes": 22227066,
+    "mtime_ns": 1791518701412659000,
+    "sha256": "e59e412c6634de26c879692018ca48211d7c0a6251bb1da07428d98dbcf6a0aa",
+    "md5": "a534cfa9b8be4110b45f6f645c38b765"
+  },
+  "read_only_drivefs_evidence": {
+    "observed_at_utc": "2026-10-09T16:17:08.541410+00:00",
+    "status": "cached_metadata_observed",
+    "item": {
+      "stable_id": 148747,
+      "id": "1qZGO4FezTVtQvYo2jiCkPXn-0QjU0zX_",
+      "local_title": "chip001-tile_000015.tiff",
+      "file_size": 22227066,
+      "is_folder": 0,
+      "trashed": 0,
+      "is_tombstone": 0,
+      "team_drive_stable_id": 111,
+      "cloud_id": "1qZGO4FezTVtQvYo2jiCkPXn-0QjU0zX_",
+      "local_only": 0
+    },
+    "ancestry": [
+      {
+        "local_title": "Automated Microscopy",
+        "stable_id": 148743,
+        "cloud_id": "15fLb2vGRTVIPZMBRh8vEakZs-ggu9fr7"
+      },
+      {
+        "local_title": "transfer-verification",
+        "stable_id": 148745,
+        "cloud_id": "1U60i2vEYZsQye0kET5EG6cftmY6TZvC_"
+      },
+      {
+        "local_title": "chip001-tile_000015.tiff",
+        "stable_id": 148747,
+        "cloud_id": "1qZGO4FezTVtQvYo2jiCkPXn-0QjU0zX_"
+      }
+    ],
+    "cached_metadata_bytes": 700,
+    "cached_metadata_sha256": "05e8f42c5ba77bff136ccdadc2c324d5a7ca777c6714736f56faa59dfacc9d24",
+    "source_md5_matches_cached_metadata": true,
+    "matching_undocumented_field_paths": [
+      "48"
+    ],
+    "size_matches": true,
+    "global_pending_operations": 0,
+    "cloud_completion_verified": false,
+    "qualification": "Undocumented cached metadata and queue state are corroboration only; not an independent server checksum response."
+  },
+  "relevant_account_log_events": [
+    {
+      "log": "C:\\Users\\STM\\AppData\\Local\\Google\\DriveFS\\Logs\\structured_log_102154920943365146603",
+      "offset": 2679738,
+      "record_sha256": "c224bbcf0b2acfafb2ce15e62ad9681b30b8713aa8a54081c13c536f8e3d0a8f",
+      "event_code_undocumented": 2,
+      "timestamp_microseconds": 1791562342376976,
+      "field13_undocumented": null,
+      "field14_undocumented": null,
+      "mentions_exact_cloud_id": false,
+      "mentions_exact_name": true,
+      "interpretation": "Field semantics not verified; do not equate numeric status0 with upload success."
+    },
+    {
+      "log": "C:\\Users\\STM\\AppData\\Local\\Google\\DriveFS\\Logs\\structured_log_102154920943365146603",
+      "offset": 3100906,
+      "record_sha256": "3a73be444975aadf4f971736e43d86378ae73c4957061cdef14f23b0e8079869",
+      "event_code_undocumented": 45,
+      "timestamp_microseconds": 1791562349464901,
+      "field13_undocumented": null,
+      "field14_undocumented": null,
+      "mentions_exact_cloud_id": true,
+      "mentions_exact_name": false,
+      "interpretation": "Field semantics not verified; do not equate numeric status0 with upload success."
+    },
+    {
+      "log": "C:\\Users\\STM\\AppData\\Local\\Google\\DriveFS\\Logs\\structured_log_102154920943365146603",
+      "offset": 3103919,
+      "record_sha256": "3ed5d348eaa5e96dfcdbbec4d51aca4a01a02a3a4bd289cc81ae3f18d9409896",
+      "event_code_undocumented": 13,
+      "timestamp_microseconds": 1791562352682731,
+      "field13_undocumented": 0,
+      "field14_undocumented": 22227066,
+      "mentions_exact_cloud_id": true,
+      "mentions_exact_name": true,
+      "interpretation": "Field semantics not verified; do not equate numeric status0 with upload success."
+    },
+    {
+      "log": "C:\\Users\\STM\\AppData\\Local\\Google\\DriveFS\\Logs\\structured_log_102154920943365146603",
+      "offset": 3107143,
+      "record_sha256": "c594f4ebdb463d090db97aa586f26fd3a3875d0a4f2a81114651fa4c3773dc67",
+      "event_code_undocumented": 45,
+      "timestamp_microseconds": 1791562358268967,
+      "field13_undocumented": null,
+      "field14_undocumented": null,
+      "mentions_exact_cloud_id": true,
+      "mentions_exact_name": false,
+      "interpretation": "Field semantics not verified; do not equate numeric status0 with upload success."
+    }
+  ],
+  "independent_server_evidence": {
+    "status": "missing_independent_server_evidence",
+    "verified": false
+  },
+  "source_deletion_performed": false,
+  "free_cache_volume_bytes": 12706340864,
+  "observed_at_utc": "2026-10-09T16:17:08.586952+00:00"
+}

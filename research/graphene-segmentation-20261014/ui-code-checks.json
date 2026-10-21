@@ -1,0 +1,12 @@
+{
+  "inline_scripts_syntax_checked": 11,
+  "preview_cache_checks": [
+    "bounded retention",
+    "reuse",
+    "eviction recovery",
+    "late-error isolation",
+    "LRU refresh"
+  ],
+  "graphene_review_html_sha256": "dd50dd52a23d72af869cbf7e0fa156be718f9b0636528c04f8b9984a601d0c42",
+  "final_change": "Caption-only wording change after script checks; scripts unchanged."
+}

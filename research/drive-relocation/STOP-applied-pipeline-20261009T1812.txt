@@ -1,0 +1,1 @@
+Pause at a file boundary to apply an audited bounded copy-ahead policy; keep every source and resume the same journal.

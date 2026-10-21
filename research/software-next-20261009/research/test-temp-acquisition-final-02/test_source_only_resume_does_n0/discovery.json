@@ -1,0 +1,1672 @@
+{
+  "schema": 2,
+  "algorithm": "sparse_photometric_halfplanes_v2",
+  "algorithm_source_sha256": "new",
+  "edge_model_sha256": "2349d03f2d34e06c02c47175d9f6411c875fc67f3fdea90d5d7e6aa9b13eb760",
+  "photometric_model_sha256": "fa9f296ab7c812678971ee197f7ece7d21e3ce931f10bc0c3adf488a63d3112b",
+  "edge_validation_profile": {
+    "schema": 1,
+    "profile_id": "synthetic20x-dark-holder",
+    "holder_model": "dark_holder_all_rgb_v1",
+    "manual_objective": true,
+    "objective_position": 2,
+    "objective_magnification": 20,
+    "optical_context": {
+      "camera_resources": {
+        "fixed": 1
+      },
+      "camera_job_template": "synthetic fixed20x",
+      "objective_position": 2,
+      "objective": {
+        "magnification": 20
+      },
+      "white_level": 4095,
+      "illumination_percent": 90
+    }
+  },
+  "seed_xy_um": [
+    500.0,
+    500.0
+  ],
+  "options": {
+    "search_bounds_um": [
+      20.0,
+      1200.0,
+      20.0,
+      1100.0
+    ],
+    "coarse_step_um": 400,
+    "max_probes": 4,
+    "cell_um": 5,
+    "dark_holder_ratio": 0.15,
+    "margin_um": 20,
+    "focus_policy_id": "unchanged height; geometric evidence only"
+  },
+  "context": {},
+  "transform": {
+    "matrix": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "pixel_size_um": [
+      1.0,
+      1.0
+    ],
+    "calibrated": true
+  },
+  "source_shape": [
+    128,
+    160,
+    3
+  ],
+  "reference": {
+    "features": [
+      "log(R/G)",
+      "log(B/G)"
+    ],
+    "centre": [
+      0.18232160806655884,
+      0.2623642086982727
+    ],
+    "covariance": [
+      [
+        0.0006250001000000002,
+        0.0
+      ],
+      [
+        0.0,
+        0.0001440001
+      ]
+    ],
+    "white_level": 4095.0,
+    "context": {
+      "camera_resources": {
+        "fixed": 1
+      },
+      "camera_job_template": "synthetic fixed20x",
+      "objective_position": 2,
+      "objective": {
+        "magnification": 20
+      },
+      "white_level": 4095,
+      "illumination_percent": 90
+    },
+    "pixel_size_um": [
+      1.0,
+      1.0
+    ],
+    "working_max_dimension": 768,
+    "substrate_mahalanobis_max": 3.5,
+    "mismatch_mahalanobis_min": 6.0,
+    "interpretation": "Reference colour match; neither chemical identity nor proof of chip continuity."
+  },
+  "reference_rgb": [
+    1800.0,
+    1500.0,
+    1950.0
+  ],
+  "reference_pixels_sha256": "28112d13480d9ad3c329b5ea22c5d0c803e078aa2eef90c53687a9b0eaeae018",
+  "limits": {
+    "x_min": 0,
+    "x_max": 1600,
+    "y_min": 0,
+    "y_max": 1200,
+    "z_min": 50,
+    "z_max": 150,
+    "max_xy_step_um": 300,
+    "max_z_step_um": 10
+  },
+  "field_rectangle_um": [
+    158.75,
+    127.0
+  ],
+  "assumption": "One separated convex chip with approximately straight edges. Coarse hops may cross unobserved gaps.",
+  "coverage_kind": "estimated_boundary_not_full_interior_acquisition",
+  "all_chips_found": false,
+  "coverage_requirement": "Validate extent from scientific-raster border images; expand or replan if substrate reaches its perimeter.",
+  "fingerprint": "c1fe8f63f657f6f32ab058c76b4462b0a6783c0fd1b9a2ee957513a05d0a7b9d",
+  "state": "unresolved",
+  "started_at": 1791585140.0139525,
+  "records": [
+    {
+      "name": "probe_000000",
+      "phase": "seed",
+      "requested_xy_um": [
+        500.0,
+        500.0
+      ],
+      "position_um": [
+        500.0,
+        500.0,
+        100
+      ],
+      "image": "frames/probe_000000.tiff",
+      "labels_file": "labels/probe_000000.npz",
+      "classification": "substrate",
+      "fractions": {
+        "substrate": 1.0,
+        "holder": 0.0
+      },
+      "edge": null,
+      "edge_validation": {
+        "accepted": false,
+        "reason": "No label-side-supported line proposal.",
+        "profile": {
+          "supported": true,
+          "algorithm": "sparse_photometric_halfplanes_v2",
+          "profile_assumption": "Manual encoded objective at 20x; holder darker than substrate in all recorded RGB channels.",
+          "profile_id": "synthetic20x-dark-holder",
+          "reason": "Explicit optical contract matches recorded metadata; individual raw edges still require validation."
+        }
+      },
+      "spatial_bracket_evidence": {
+        "side": "substrate",
+        "method": "original_classification",
+        "inferred": false
+      },
+      "hashes": {
+        "frames/probe_000000.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "frames/probe_000000.json": "97026602160974318590ffb3d343989272509b94070fe11457c4343327648702",
+        "labels/probe_000000.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      }
+    },
+    {
+      "name": "probe_000001",
+      "phase": "coarse_east",
+      "requested_xy_um": [
+        900.0,
+        500.0
+      ],
+      "position_um": [
+        900.0,
+        500.0,
+        100
+      ],
+      "image": "frames/probe_000001.tiff",
+      "labels_file": "labels/probe_000001.npz",
+      "classification": "holder",
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0
+      },
+      "edge": null,
+      "edge_validation": {
+        "accepted": false,
+        "reason": "No label-side-supported line proposal.",
+        "profile": {
+          "supported": true,
+          "algorithm": "sparse_photometric_halfplanes_v2",
+          "profile_assumption": "Manual encoded objective at 20x; holder darker than substrate in all recorded RGB channels.",
+          "profile_id": "synthetic20x-dark-holder",
+          "reason": "Explicit optical contract matches recorded metadata; individual raw edges still require validation."
+        }
+      },
+      "spatial_bracket_evidence": {
+        "side": "holder",
+        "method": "original_classification",
+        "inferred": false
+      },
+      "hashes": {
+        "frames/probe_000001.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000001.json": "eba5977cf4df812dd675ffc0f34b5a441b553dca871caf4bf250f00b86d328d4",
+        "labels/probe_000001.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      }
+    },
+    {
+      "name": "probe_000002",
+      "phase": "bisect_east",
+      "requested_xy_um": [
+        700.0,
+        500.0
+      ],
+      "position_um": [
+        700.0,
+        500.0,
+        100
+      ],
+      "image": "frames/probe_000002.tiff",
+      "labels_file": "labels/probe_000002.npz",
+      "classification": "substrate",
+      "fractions": {
+        "substrate": 1.0,
+        "holder": 0.0
+      },
+      "edge": null,
+      "edge_validation": {
+        "accepted": false,
+        "reason": "No label-side-supported line proposal.",
+        "profile": {
+          "supported": true,
+          "algorithm": "sparse_photometric_halfplanes_v2",
+          "profile_assumption": "Manual encoded objective at 20x; holder darker than substrate in all recorded RGB channels.",
+          "profile_id": "synthetic20x-dark-holder",
+          "reason": "Explicit optical contract matches recorded metadata; individual raw edges still require validation."
+        }
+      },
+      "spatial_bracket_evidence": {
+        "side": "substrate",
+        "method": "original_classification",
+        "inferred": false
+      },
+      "hashes": {
+        "frames/probe_000002.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "frames/probe_000002.json": "cfc1d61ba02229804ac7ea336587dad18ff4ea3ef46dd077c4d5ced6f167a393",
+        "labels/probe_000002.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      }
+    },
+    {
+      "name": "probe_000003",
+      "phase": "bisect_east",
+      "requested_xy_um": [
+        800.0,
+        500.0
+      ],
+      "position_um": [
+        800.0,
+        500.0,
+        100
+      ],
+      "image": "frames/probe_000003.tiff",
+      "labels_file": "labels/probe_000003.npz",
+      "classification": "unknown",
+      "fractions": {
+        "substrate": 0.50625,
+        "holder": 0.49375
+      },
+      "edge": {
+        "normal": [
+          1.0,
+          0.0
+        ],
+        "offset_um": 800.5,
+        "points_um": [
+          [
+            800.5,
+            440.5
+          ],
+          [
+            800.5,
+            441.5
+          ],
+          [
+            800.5,
+            442.5
+          ],
+          [
+            800.5,
+            443.5
+          ],
+          [
+            800.5,
+            444.5
+          ],
+          [
+            800.5,
+            445.5
+          ],
+          [
+            800.5,
+            446.5
+          ],
+          [
+            800.5,
+            447.5
+          ],
+          [
+            800.5,
+            448.5
+          ],
+          [
+            800.5,
+            449.5
+          ],
+          [
+            800.5,
+            450.5
+          ],
+          [
+            800.5,
+            451.5
+          ],
+          [
+            800.5,
+            452.5
+          ],
+          [
+            800.5,
+            453.5
+          ],
+          [
+            800.5,
+            454.5
+          ],
+          [
+            800.5,
+            455.5
+          ],
+          [
+            800.5,
+            456.5
+          ],
+          [
+            800.5,
+            457.5
+          ],
+          [
+            800.5,
+            458.5
+          ],
+          [
+            800.5,
+            459.5
+          ],
+          [
+            800.5,
+            460.5
+          ],
+          [
+            800.5,
+            461.5
+          ],
+          [
+            800.5,
+            462.5
+          ],
+          [
+            800.5,
+            463.5
+          ],
+          [
+            800.5,
+            464.5
+          ],
+          [
+            800.5,
+            465.5
+          ],
+          [
+            800.5,
+            466.5
+          ],
+          [
+            800.5,
+            467.5
+          ],
+          [
+            800.5,
+            468.5
+          ],
+          [
+            800.5,
+            469.5
+          ],
+          [
+            800.5,
+            470.5
+          ],
+          [
+            800.5,
+            471.5
+          ],
+          [
+            800.5,
+            472.5
+          ],
+          [
+            800.5,
+            473.5
+          ],
+          [
+            800.5,
+            474.5
+          ],
+          [
+            800.5,
+            475.5
+          ],
+          [
+            800.5,
+            476.5
+          ],
+          [
+            800.5,
+            477.5
+          ],
+          [
+            800.5,
+            478.5
+          ],
+          [
+            800.5,
+            479.5
+          ],
+          [
+            800.5,
+            480.5
+          ],
+          [
+            800.5,
+            481.5
+          ],
+          [
+            800.5,
+            482.5
+          ],
+          [
+            800.5,
+            483.5
+          ],
+          [
+            800.5,
+            484.5
+          ],
+          [
+            800.5,
+            485.5
+          ],
+          [
+            800.5,
+            486.5
+          ],
+          [
+            800.5,
+            487.5
+          ],
+          [
+            800.5,
+            488.5
+          ],
+          [
+            800.5,
+            489.5
+          ],
+          [
+            800.5,
+            490.5
+          ],
+          [
+            800.5,
+            491.5
+          ],
+          [
+            800.5,
+            492.5
+          ],
+          [
+            800.5,
+            493.5
+          ],
+          [
+            800.5,
+            494.5
+          ],
+          [
+            800.5,
+            495.5
+          ],
+          [
+            800.5,
+            496.5
+          ],
+          [
+            800.5,
+            497.5
+          ],
+          [
+            800.5,
+            498.5
+          ],
+          [
+            800.5,
+            499.5
+          ],
+          [
+            800.5,
+            500.5
+          ],
+          [
+            800.5,
+            501.5
+          ],
+          [
+            800.5,
+            502.5
+          ],
+          [
+            800.5,
+            503.5
+          ],
+          [
+            800.5,
+            504.5
+          ],
+          [
+            800.5,
+            505.5
+          ],
+          [
+            800.5,
+            506.5
+          ],
+          [
+            800.5,
+            507.5
+          ],
+          [
+            800.5,
+            508.5
+          ],
+          [
+            800.5,
+            509.5
+          ],
+          [
+            800.5,
+            510.5
+          ],
+          [
+            800.5,
+            511.5
+          ],
+          [
+            800.5,
+            512.5
+          ],
+          [
+            800.5,
+            513.5
+          ],
+          [
+            800.5,
+            514.5
+          ],
+          [
+            800.5,
+            515.5
+          ],
+          [
+            800.5,
+            516.5
+          ],
+          [
+            800.5,
+            517.5
+          ],
+          [
+            800.5,
+            518.5
+          ],
+          [
+            800.5,
+            519.5
+          ],
+          [
+            800.5,
+            520.5
+          ],
+          [
+            800.5,
+            521.5
+          ],
+          [
+            800.5,
+            522.5
+          ],
+          [
+            800.5,
+            523.5
+          ],
+          [
+            800.5,
+            524.5
+          ],
+          [
+            800.5,
+            525.5
+          ],
+          [
+            800.5,
+            526.5
+          ],
+          [
+            800.5,
+            527.5
+          ],
+          [
+            800.5,
+            528.5
+          ],
+          [
+            800.5,
+            529.5
+          ],
+          [
+            800.5,
+            530.5
+          ],
+          [
+            800.5,
+            531.5
+          ],
+          [
+            800.5,
+            532.5
+          ],
+          [
+            800.5,
+            533.5
+          ],
+          [
+            800.5,
+            534.5
+          ],
+          [
+            800.5,
+            535.5
+          ],
+          [
+            800.5,
+            536.5
+          ],
+          [
+            800.5,
+            537.5
+          ],
+          [
+            800.5,
+            538.5
+          ],
+          [
+            800.5,
+            539.5
+          ],
+          [
+            800.5,
+            540.5
+          ],
+          [
+            800.5,
+            541.5
+          ],
+          [
+            800.5,
+            542.5
+          ],
+          [
+            800.5,
+            543.5
+          ],
+          [
+            800.5,
+            544.5
+          ],
+          [
+            800.5,
+            545.5
+          ],
+          [
+            800.5,
+            546.5
+          ],
+          [
+            800.5,
+            547.5
+          ],
+          [
+            800.5,
+            548.5
+          ],
+          [
+            800.5,
+            549.5
+          ],
+          [
+            800.5,
+            550.5
+          ],
+          [
+            800.5,
+            551.5
+          ],
+          [
+            800.5,
+            552.5
+          ],
+          [
+            800.5,
+            553.5
+          ],
+          [
+            800.5,
+            554.5
+          ],
+          [
+            800.5,
+            555.5
+          ],
+          [
+            800.5,
+            556.5
+          ],
+          [
+            800.5,
+            557.5
+          ],
+          [
+            800.5,
+            558.5
+          ],
+          [
+            800.5,
+            559.5
+          ]
+        ],
+        "substrate_purity": 1.0,
+        "holder_purity": 1.0,
+        "local_residual_px_p95": 0.0,
+        "image": "frames/probe_000003.tiff",
+        "phase": "bisect_east",
+        "position_um": [
+          800.0,
+          500.0,
+          100
+        ]
+      },
+      "edge_validation": {
+        "accepted": true,
+        "candidate_unchanged": true,
+        "method": "raw_RGB_dark_step_profiles",
+        "profile_assumption": "Holder is darker than exposed substrate in each recorded camera channel.",
+        "tested_profiles": 60,
+        "supported_profiles": 60,
+        "raw_normal_image": [
+          1.0,
+          4.371138828673793e-08
+        ],
+        "candidate_normal_image": [
+          1.0,
+          0.0
+        ],
+        "raw_working_shape": [
+          128,
+          160
+        ],
+        "raw_span_px": 118.93650793650792,
+        "raw_scatter_px": 1.0,
+        "orientation_drift_px": 5.198879879881385e-06,
+        "allowed_orientation_drift_px": 6.0,
+        "median_candidate_displacement_px": 0.0,
+        "raw_transition_width_px_p90": 4.0,
+        "inlier_profiles": 60,
+        "median_inside_minus_outside_RGB": [
+          1400.0,
+          1100.0001220703125,
+          1550.000244140625
+        ],
+        "measured_raw_points_image": [
+          [
+            80.0,
+            4.031746031746032
+          ],
+          [
+            80.0,
+            6.047619047619051
+          ],
+          [
+            80.0,
+            8.063492063492063
+          ],
+          [
+            80.0,
+            10.079365079365076
+          ],
+          [
+            80.0,
+            12.095238095238095
+          ],
+          [
+            80.0,
+            14.111111111111114
+          ],
+          [
+            80.0,
+            16.126984126984127
+          ],
+          [
+            80.0,
+            18.14285714285714
+          ],
+          [
+            80.0,
+            20.158730158730158
+          ],
+          [
+            80.0,
+            22.174603174603178
+          ],
+          [
+            80.0,
+            24.19047619047619
+          ],
+          [
+            80.0,
+            26.206349206349202
+          ],
+          [
+            80.0,
+            28.22222222222222
+          ],
+          [
+            80.0,
+            30.23809523809524
+          ],
+          [
+            80.0,
+            32.25396825396825
+          ],
+          [
+            80.0,
+            34.269841269841265
+          ],
+          [
+            80.0,
+            36.285714285714285
+          ],
+          [
+            80.0,
+            38.301587301587304
+          ],
+          [
+            80.0,
+            40.317460317460316
+          ],
+          [
+            80.0,
+            42.33333333333333
+          ],
+          [
+            80.0,
+            44.34920634920635
+          ],
+          [
+            80.0,
+            46.36507936507937
+          ],
+          [
+            80.0,
+            48.38095238095238
+          ],
+          [
+            80.0,
+            50.39682539682539
+          ],
+          [
+            80.0,
+            52.41269841269841
+          ],
+          [
+            80.0,
+            54.42857142857143
+          ],
+          [
+            80.0,
+            56.44444444444444
+          ],
+          [
+            80.0,
+            58.460317460317455
+          ],
+          [
+            80.0,
+            60.476190476190474
+          ],
+          [
+            80.0,
+            62.492063492063494
+          ],
+          [
+            80.0,
+            64.5079365079365
+          ],
+          [
+            80.0,
+            66.52380952380952
+          ],
+          [
+            80.0,
+            68.53968253968253
+          ],
+          [
+            80.0,
+            70.55555555555556
+          ],
+          [
+            80.0,
+            72.57142857142857
+          ],
+          [
+            80.0,
+            74.58730158730158
+          ],
+          [
+            80.0,
+            76.60317460317461
+          ],
+          [
+            80.0,
+            78.61904761904762
+          ],
+          [
+            80.0,
+            80.63492063492063
+          ],
+          [
+            80.0,
+            82.65079365079364
+          ],
+          [
+            80.0,
+            84.66666666666666
+          ],
+          [
+            80.0,
+            86.68253968253968
+          ],
+          [
+            80.0,
+            88.6984126984127
+          ],
+          [
+            80.0,
+            90.71428571428571
+          ],
+          [
+            80.0,
+            92.73015873015873
+          ],
+          [
+            80.0,
+            94.74603174603175
+          ],
+          [
+            80.0,
+            96.76190476190476
+          ],
+          [
+            80.0,
+            98.77777777777777
+          ],
+          [
+            80.0,
+            100.79365079365078
+          ],
+          [
+            80.0,
+            102.80952380952381
+          ],
+          [
+            80.0,
+            104.82539682539682
+          ],
+          [
+            80.0,
+            106.84126984126983
+          ],
+          [
+            80.0,
+            108.85714285714286
+          ],
+          [
+            80.0,
+            110.87301587301587
+          ],
+          [
+            80.0,
+            112.88888888888889
+          ],
+          [
+            80.0,
+            114.9047619047619
+          ],
+          [
+            80.0,
+            116.92063492063491
+          ],
+          [
+            80.0,
+            118.93650793650794
+          ],
+          [
+            80.0,
+            120.95238095238095
+          ],
+          [
+            80.0,
+            122.96825396825396
+          ]
+        ],
+        "reason": "Label line independently supported by a broadband dark edge.",
+        "profile": {
+          "supported": true,
+          "algorithm": "sparse_photometric_halfplanes_v2",
+          "profile_assumption": "Manual encoded objective at 20x; holder darker than substrate in all recorded RGB channels.",
+          "profile_id": "synthetic20x-dark-holder",
+          "reason": "Explicit optical contract matches recorded metadata; individual raw edges still require validation."
+        },
+        "proposal_path": "legacy_hough_p",
+        "original_label_proposal": {
+          "normal": [
+            1.0,
+            0.0
+          ],
+          "offset_um": 800.5,
+          "points_um": [
+            [
+              800.5,
+              440.5
+            ],
+            [
+              800.5,
+              441.5
+            ],
+            [
+              800.5,
+              442.5
+            ],
+            [
+              800.5,
+              443.5
+            ],
+            [
+              800.5,
+              444.5
+            ],
+            [
+              800.5,
+              445.5
+            ],
+            [
+              800.5,
+              446.5
+            ],
+            [
+              800.5,
+              447.5
+            ],
+            [
+              800.5,
+              448.5
+            ],
+            [
+              800.5,
+              449.5
+            ],
+            [
+              800.5,
+              450.5
+            ],
+            [
+              800.5,
+              451.5
+            ],
+            [
+              800.5,
+              452.5
+            ],
+            [
+              800.5,
+              453.5
+            ],
+            [
+              800.5,
+              454.5
+            ],
+            [
+              800.5,
+              455.5
+            ],
+            [
+              800.5,
+              456.5
+            ],
+            [
+              800.5,
+              457.5
+            ],
+            [
+              800.5,
+              458.5
+            ],
+            [
+              800.5,
+              459.5
+            ],
+            [
+              800.5,
+              460.5
+            ],
+            [
+              800.5,
+              461.5
+            ],
+            [
+              800.5,
+              462.5
+            ],
+            [
+              800.5,
+              463.5
+            ],
+            [
+              800.5,
+              464.5
+            ],
+            [
+              800.5,
+              465.5
+            ],
+            [
+              800.5,
+              466.5
+            ],
+            [
+              800.5,
+              467.5
+            ],
+            [
+              800.5,
+              468.5
+            ],
+            [
+              800.5,
+              469.5
+            ],
+            [
+              800.5,
+              470.5
+            ],
+            [
+              800.5,
+              471.5
+            ],
+            [
+              800.5,
+              472.5
+            ],
+            [
+              800.5,
+              473.5
+            ],
+            [
+              800.5,
+              474.5
+            ],
+            [
+              800.5,
+              475.5
+            ],
+            [
+              800.5,
+              476.5
+            ],
+            [
+              800.5,
+              477.5
+            ],
+            [
+              800.5,
+              478.5
+            ],
+            [
+              800.5,
+              479.5
+            ],
+            [
+              800.5,
+              480.5
+            ],
+            [
+              800.5,
+              481.5
+            ],
+            [
+              800.5,
+              482.5
+            ],
+            [
+              800.5,
+              483.5
+            ],
+            [
+              800.5,
+              484.5
+            ],
+            [
+              800.5,
+              485.5
+            ],
+            [
+              800.5,
+              486.5
+            ],
+            [
+              800.5,
+              487.5
+            ],
+            [
+              800.5,
+              488.5
+            ],
+            [
+              800.5,
+              489.5
+            ],
+            [
+              800.5,
+              490.5
+            ],
+            [
+              800.5,
+              491.5
+            ],
+            [
+              800.5,
+              492.5
+            ],
+            [
+              800.5,
+              493.5
+            ],
+            [
+              800.5,
+              494.5
+            ],
+            [
+              800.5,
+              495.5
+            ],
+            [
+              800.5,
+              496.5
+            ],
+            [
+              800.5,
+              497.5
+            ],
+            [
+              800.5,
+              498.5
+            ],
+            [
+              800.5,
+              499.5
+            ],
+            [
+              800.5,
+              500.5
+            ],
+            [
+              800.5,
+              501.5
+            ],
+            [
+              800.5,
+              502.5
+            ],
+            [
+              800.5,
+              503.5
+            ],
+            [
+              800.5,
+              504.5
+            ],
+            [
+              800.5,
+              505.5
+            ],
+            [
+              800.5,
+              506.5
+            ],
+            [
+              800.5,
+              507.5
+            ],
+            [
+              800.5,
+              508.5
+            ],
+            [
+              800.5,
+              509.5
+            ],
+            [
+              800.5,
+              510.5
+            ],
+            [
+              800.5,
+              511.5
+            ],
+            [
+              800.5,
+              512.5
+            ],
+            [
+              800.5,
+              513.5
+            ],
+            [
+              800.5,
+              514.5
+            ],
+            [
+              800.5,
+              515.5
+            ],
+            [
+              800.5,
+              516.5
+            ],
+            [
+              800.5,
+              517.5
+            ],
+            [
+              800.5,
+              518.5
+            ],
+            [
+              800.5,
+              519.5
+            ],
+            [
+              800.5,
+              520.5
+            ],
+            [
+              800.5,
+              521.5
+            ],
+            [
+              800.5,
+              522.5
+            ],
+            [
+              800.5,
+              523.5
+            ],
+            [
+              800.5,
+              524.5
+            ],
+            [
+              800.5,
+              525.5
+            ],
+            [
+              800.5,
+              526.5
+            ],
+            [
+              800.5,
+              527.5
+            ],
+            [
+              800.5,
+              528.5
+            ],
+            [
+              800.5,
+              529.5
+            ],
+            [
+              800.5,
+              530.5
+            ],
+            [
+              800.5,
+              531.5
+            ],
+            [
+              800.5,
+              532.5
+            ],
+            [
+              800.5,
+              533.5
+            ],
+            [
+              800.5,
+              534.5
+            ],
+            [
+              800.5,
+              535.5
+            ],
+            [
+              800.5,
+              536.5
+            ],
+            [
+              800.5,
+              537.5
+            ],
+            [
+              800.5,
+              538.5
+            ],
+            [
+              800.5,
+              539.5
+            ],
+            [
+              800.5,
+              540.5
+            ],
+            [
+              800.5,
+              541.5
+            ],
+            [
+              800.5,
+              542.5
+            ],
+            [
+              800.5,
+              543.5
+            ],
+            [
+              800.5,
+              544.5
+            ],
+            [
+              800.5,
+              545.5
+            ],
+            [
+              800.5,
+              546.5
+            ],
+            [
+              800.5,
+              547.5
+            ],
+            [
+              800.5,
+              548.5
+            ],
+            [
+              800.5,
+              549.5
+            ],
+            [
+              800.5,
+              550.5
+            ],
+            [
+              800.5,
+              551.5
+            ],
+            [
+              800.5,
+              552.5
+            ],
+            [
+              800.5,
+              553.5
+            ],
+            [
+              800.5,
+              554.5
+            ],
+            [
+              800.5,
+              555.5
+            ],
+            [
+              800.5,
+              556.5
+            ],
+            [
+              800.5,
+              557.5
+            ],
+            [
+              800.5,
+              558.5
+            ],
+            [
+              800.5,
+              559.5
+            ]
+          ],
+          "substrate_purity": 1.0,
+          "holder_purity": 1.0,
+          "local_residual_px_p95": 0.0,
+          "image": "frames/probe_000003.tiff",
+          "phase": "bisect_east",
+          "position_um": [
+            800.0,
+            500.0,
+            100
+          ]
+        },
+        "raw_refinement_permitted": false
+      },
+      "spatial_bracket_evidence": {
+        "side": "unknown",
+        "method": "whole_field_connected_support",
+        "inferred": false,
+        "substrate_fraction": 0.50625,
+        "holder_fraction": 0.49375,
+        "qualification": "Search bracket only; does not relabel the centre, establish an edge, or verify focus."
+      },
+      "hashes": {
+        "frames/probe_000003.tiff": "f4aee6e1b04785754564cd5d3884b9e8cd1529391044f992bb7e10628d4e8112",
+        "frames/probe_000003.json": "86c93a64eeed66fb48c05893fa4f4d0c35d0197ba9b393a8a0ecb6922965ec6e",
+        "labels/probe_000003.npz": "5d298698f79245b7bee8701f78dfc5db6faf1e213f62cda4cb8b63eb9945ea76"
+      }
+    }
+  ],
+  "rays": {
+    "east": {
+      "status": "coherent_edge",
+      "direction": [
+        1.0,
+        0.0
+      ],
+      "last_substrate_distance_um": 200.0,
+      "first_holder_distance_um": 400.0,
+      "edge_image": "frames/probe_000003.tiff"
+    },
+    "north": {
+      "status": "searching",
+      "direction": [
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "updated_at": 1791585140.3134663,
+  "operation_budget": {
+    "max_seconds": 240.0,
+    "max_captures": 64,
+    "captures_started": 0,
+    "elapsed_seconds": 0.06300000000919681,
+    "completed_actions": 0,
+    "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline"
+  },
+  "seed_verification": {
+    "classification": "substrate_seed",
+    "patch_substrate_fraction": 1.0,
+    "patch_non_substrate_fraction": 0.0,
+    "patch_diameter_um": 40.0,
+    "image": "frames/probe_000000.tiff",
+    "qualification": "Local centre patch only; whole-field substrate fraction is not an interior-seed requirement."
+  },
+  "budget_exhausted": true,
+  "reason": "geometric_probe_budget_exhausted",
+  "estimated_outline": {
+    "status": "unresolved",
+    "reason": "Fewer than three coherent edge directions.",
+    "lines": [
+      {
+        "normal": [
+          1.0,
+          -4.371138828673793e-08
+        ],
+        "offset_um": 800.4999781617902,
+        "expanded_offset_um": 820.4999781617902,
+        "residual_um_p95": 2.487614904111979e-06,
+        "margin_um": 20.0,
+        "source_images": [
+          "frames/probe_000003.tiff"
+        ],
+        "edge_point_count": 120
+      }
+    ],
+    "algorithm": "sparse_photometric_halfplanes_v2",
+    "registered_consistency": {
+      "accepted": true,
+      "observation_count": 4,
+      "line_checks": [
+        {
+          "accepted": true,
+          "violations": [],
+          "margin_um": 20.0,
+          "patch_diameter_um": 40.0,
+          "hypothesis": "Same separated convex chip across the supplied registered observations."
+        }
+      ],
+      "qualification": "Same separated convex chip hypothesis; not proof of unsampled gaps or complete coverage."
+    },
+    "outcome": "edge_not_found",
+    "evidence": {
+      "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\software-next-20261009\\research\\test-temp-acquisition-final-02\\test_source_only_resume_does_n0",
+      "images": 4,
+      "new_probe_images": 4,
+      "imported_probe_images": 0,
+      "coherent_edge_images": 1
+    },
+    "acquisition_assumption": "One separated convex chip with approximately straight edges. Coarse hops may cross unobserved gaps.",
+    "all_chips_found": false
+  },
+  "execution_changes": [
+    {
+      "kind": "explicit_source_transition",
+      "previous_algorithm_source_sha256": "old",
+      "algorithm_source_sha256": "new",
+      "previous_fingerprint": "9e16bbb1bfe8510b7b7b327ee0bef7d4b4fdf174a392fa920d462fe259459259",
+      "preserved_frames": 4,
+      "at": 1791585140.2604637
+    }
+  ]
+}

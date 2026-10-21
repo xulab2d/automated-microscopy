@@ -1,0 +1,42 @@
+[
+  {
+    "category": "uncertain",
+    "seconds": 71.09672529995441,
+    "response_bytes": 146603,
+    "rows": 48,
+    "source_regions": 309825,
+    "ranking": "joint_evidence_v1"
+  },
+  {
+    "category": "shortlist",
+    "seconds": 0.8482937000226229,
+    "response_bytes": 100170,
+    "rows": 31,
+    "source_regions": 309825,
+    "ranking": "joint_evidence_v1"
+  },
+  {
+    "category": "uncertain",
+    "seconds": 0.7278846999397501,
+    "response_bytes": 146603,
+    "rows": 48,
+    "source_regions": 309825,
+    "ranking": "joint_evidence_v1"
+  },
+  {
+    "category": "all",
+    "seconds": 0.8659586000721902,
+    "response_bytes": 146559,
+    "rows": 48,
+    "source_regions": 309825,
+    "ranking": "joint_evidence_v1"
+  },
+  {
+    "category": "uncertain",
+    "seconds": 0.8291382000315934,
+    "response_bytes": 146603,
+    "rows": 48,
+    "source_regions": 309825,
+    "ranking": "joint_evidence_v1"
+  }
+]

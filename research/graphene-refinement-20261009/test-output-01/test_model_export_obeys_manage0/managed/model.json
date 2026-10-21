@@ -1,0 +1,60 @@
+{
+  "kind": "empirical_material_populations",
+  "model_id": "synthetic-known-pixels",
+  "contrast_convention": "(substrate-flake)/substrate",
+  "calibration_status": "synthetic_only",
+  "components": [
+    {
+      "label": "plateau-A",
+      "role": "material",
+      "mean_rgb": [
+        0.1,
+        0.15,
+        0.06
+      ],
+      "covariance_rgb": [
+        [
+          2.5e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.5e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.5e-05
+        ]
+      ]
+    },
+    {
+      "label": "debris-control",
+      "role": "debris",
+      "mean_rgb": [
+        0.12,
+        -0.05,
+        0.06
+      ],
+      "covariance_rgb": [
+        [
+          2.5e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.5e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.5e-05
+        ]
+      ]
+    }
+  ]
+}

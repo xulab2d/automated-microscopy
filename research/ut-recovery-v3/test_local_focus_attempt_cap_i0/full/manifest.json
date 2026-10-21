@@ -1,0 +1,247 @@
+{
+  "schema": 1,
+  "plan": {
+    "bounds_um": [
+      190.0,
+      810.0,
+      150.0,
+      810.0
+    ],
+    "overlap": 0.15,
+    "autofocus_every": 5,
+    "focus_half_range_um": 12,
+    "focus_step_um": 3,
+    "max_tiles": 10000,
+    "chip_id": "arbitrary-chip",
+    "polygon_um": [
+      [
+        682.5,
+        152.5
+      ],
+      [
+        807.5,
+        192.5
+      ],
+      [
+        807.5,
+        807.5
+      ],
+      [
+        192.5,
+        807.5
+      ],
+      [
+        192.5,
+        192.5
+      ],
+      [
+        572.5,
+        152.5
+      ]
+    ],
+    "mode": "survey",
+    "focus_strategy": "surface",
+    "focus_search_bounds_um": null,
+    "focus_max_residual_um": 1.0,
+    "focus_initial_recovery": false
+  },
+  "transform": {
+    "matrix": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "pixel_size_um": [
+      1.0,
+      1.0
+    ],
+    "calibrated": true
+  },
+  "limits": {
+    "x_min": 0,
+    "x_max": 1600,
+    "y_min": 0,
+    "y_max": 1200,
+    "z_min": 50,
+    "z_max": 150,
+    "max_xy_step_um": 300,
+    "max_z_step_um": 10
+  },
+  "context": {},
+  "acquisition_settings": {
+    "camera_job_template": null,
+    "camera_resources": {
+      "fixed": 1
+    },
+    "objective_position": 2,
+    "illumination_percent": null
+  },
+  "camera_shape": [
+    128,
+    160,
+    3
+  ],
+  "source": "TEST",
+  "material_model": null,
+  "coverage_plan_fingerprint": "b00b5b85441e3f0535854dc9b74e9ce69157285c72a51d1cf3b70af5fba42720",
+  "full_chip_options": {
+    "overlap": 0.15,
+    "focus_roi_um": 40,
+    "minimum_substrate_fraction": 0.9,
+    "anchor_count": 4,
+    "focus_half_range_um": 5,
+    "focus_step_um": 2,
+    "focus_fine_step_um": 0.5,
+    "focus_max_residual_um": 1.0,
+    "max_local_focus_offset_um": 150,
+    "focus_search_bounds_um": null,
+    "max_tiles": 10000,
+    "focus_max_extrapolation_um": 0,
+    "focus_max_extrapolation_fraction": 0.25,
+    "focus_max_prediction_sigma_um": 2.0,
+    "focus_measurement_floor_um": 0.5,
+    "adaptive_focus_recovery": true,
+    "focus_anchor_mode": "chip_edges",
+    "edge_focus_roi_um": 64.0,
+    "max_local_focus_attempts": 1
+  },
+  "prior_focus_provenance": null,
+  "seed_focus_provenance": null,
+  "coverage_kind": "full_measured_enclosure_coverage",
+  "algorithm_source_sha256": "2088270585051854c9282d1312fdc0ceebb2ef9f94c7f4260d4c43b79ca72d07",
+  "fingerprint": "876a2b45f3e76db956531bc6ed2f94c8e28b1e524f8d12c4a5b6e2a78ab8b423",
+  "started_at": 1791694801.9798849,
+  "completed": {
+    "tile_000000": {
+      "position": {
+        "x": 269.375,
+        "y": 213.5,
+        "z": 100
+      },
+      "sequence": 65,
+      "focus": {
+        "success": true,
+        "z_um": 100,
+        "score": 1.0,
+        "prominence": 0.2,
+        "reason": "Synthetic measured focus",
+        "samples": [],
+        "outcome": "resolved_peak",
+        "budget": null
+      },
+      "focus_method": "in_field_substrate_roi_autofocus",
+      "focus_prediction_um": null,
+      "full_chip_focus": {
+        "method": "in_field_substrate_roi_autofocus",
+        "focus_verified": true,
+        "extrapolated": false,
+        "focus_point_xy_um": [
+          269.375,
+          213.5
+        ],
+        "roi_source_px": [
+          50,
+          40,
+          90,
+          80
+        ],
+        "substrate_fraction": 1.0,
+        "result": {
+          "success": true,
+          "z_um": 100,
+          "score": 1.0,
+          "prominence": 0.2,
+          "reason": "Synthetic measured focus",
+          "samples": [],
+          "outcome": "resolved_peak",
+          "budget": null
+        },
+        "plane_prediction_rejection": "Synthetic missing plane support",
+        "local_focus_verified": true,
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000000.tiff": "153dba66b3c0e96fe7b300255ebff9a7fdcf16ee1ab96a6632fd6631af5a74e9",
+        "tiles/tile_000000.json": "2397102a68ebf1cda37da0e66dc964393679c446455b88141cd1248390b44688",
+        "tiles/tile_000000.flakes.json": "138fe33c0ab212575451e0345187b9ff26d8e978ca38d3f5699336f4c31a3562",
+        "boundary-labels/tile_000000.npz": "4ad38d8f752d7ed1ee7b0115d8df025646b35a8fdaf18e6a9dc9216a02415ed9"
+      }
+    }
+  },
+  "state": "failed",
+  "tile_count": 30,
+  "focus_points_um": [
+    [
+      767.5,
+      762.5,
+      100
+    ],
+    [
+      232.5,
+      237.5,
+      100
+    ],
+    [
+      237.5,
+      767.5,
+      100
+    ],
+    [
+      762.5,
+      232.5,
+      100
+    ],
+    [
+      269.375,
+      213.5,
+      100
+    ]
+  ],
+  "focus_limits": [],
+  "anchors_prepared": true,
+  "updated_at": 1791694802.1432505,
+  "local_focus_attempts": [
+    {
+      "tile_id": "tile_000000",
+      "state": "verified",
+      "started_at": 1791694802.0218828,
+      "plane_rejection": "Synthetic missing plane support",
+      "max_elapsed_s": 180.0,
+      "max_captures": 48,
+      "result": {
+        "success": true,
+        "z_um": 100,
+        "score": 1.0,
+        "prominence": 0.2,
+        "reason": "Synthetic measured focus",
+        "samples": [],
+        "outcome": "resolved_peak",
+        "budget": null
+      },
+      "finished_at": 1791694802.0308836
+    }
+  ],
+  "boundary_validation": {
+    "estimate": {
+      "status": "observed_enclosure",
+      "uncertainty_um": 10.0
+    },
+    "acquired_raster_evidence": {
+      "status": "unresolved",
+      "reason": "Seed substrate evidence is absent or contradictory."
+    },
+    "method": "Registered labels from the scientific raster only; no extra boundary-probe acquisition.",
+    "classification_assumption": "Same-profile substrate/holder classification is correct at the recorded evidence resolution."
+  },
+  "chip_extent_validated": false,
+  "derived_outputs_pending": true,
+  "error": "Exceptional local-focus budget exhausted (1 attempts); refine the focus surface before continuing this chip."
+}

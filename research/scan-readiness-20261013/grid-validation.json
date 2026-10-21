@@ -1,0 +1,23 @@
+{
+  "validation": "offline; live verification remains separate",
+  "tests": [
+    {
+      "suite": "worker/service/grid/bootstrap/focus/sparse/full-chip",
+      "passed": 130
+    },
+    {
+      "suite": "latest bootstrap/campaign grid/preflight/resume/continuation/deadline",
+      "passed": 51
+    },
+    {
+      "suite": "live progress/service",
+      "passed": 41
+    },
+    {
+      "suite": "final vendor backlog/worker/bootstrap/grid campaign/live progress",
+      "passed": 58
+    }
+  ],
+  "note": "Suites overlap; counts must not be summed.",
+  "run_id": "scan-20261013-204741-cfb93379"
+}

@@ -1,0 +1,208 @@
+{
+  "success": true,
+  "z_um": 100.04041179168907,
+  "score": 0.18084560334682465,
+  "prominence": 0.15082100212467622,
+  "reason": "Quick quadratic focus verified by a confirmation image.",
+  "samples": [
+    {
+      "z_um": 112,
+      "requested_z_um": 112.0,
+      "phase": "initial",
+      "score": 0.033648863434791565,
+      "texture": 1.8697618246078491,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0001220703125,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 112,
+      "requested_z_um": 112.0,
+      "phase": "initial_repeat",
+      "score": 0.033648863434791565,
+      "texture": 1.8697618246078491,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0001220703125,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 102.0,
+      "requested_z_um": 102.0,
+      "phase": "direction_probe",
+      "score": 0.13577154278755188,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 122.0,
+      "requested_z_um": 122.0,
+      "phase": "direction_probe",
+      "score": 0.018581250682473183,
+      "texture": 1.8697617053985596,
+      "noise": 4.4655054807662964e-05,
+      "mean": 1549.9998779296875,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 92.0,
+      "requested_z_um": 92.0,
+      "phase": "direction_probe",
+      "score": 0.04941650107502937,
+      "texture": 1.8697618246078491,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0001220703125,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 132.0,
+      "requested_z_um": 132.0,
+      "phase": "direction_probe",
+      "score": 0.012810362502932549,
+      "texture": 1.8683595657348633,
+      "noise": 8.31112265586853e-05,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 97.0,
+      "requested_z_um": 97.0,
+      "phase": "tighten_bracket",
+      "score": 0.10920989513397217,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 107.0,
+      "requested_z_um": 107.0,
+      "phase": "tighten_bracket",
+      "score": 0.05584138631820679,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1549.9998779296875,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 99.5,
+      "requested_z_um": 99.5,
+      "phase": "tighten_bracket",
+      "score": 0.176614448428154,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 97.0,
+      "phase": "verification_coarse",
+      "score": 0.10920989513397217,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy",
+      "recovery_mask_score": 0.10920989513397217
+    },
+    {
+      "z_um": 98.66666666666667,
+      "phase": "verification_coarse",
+      "score": 0.15598911046981812,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0001220703125,
+      "focus_metric": "chip_edge_mean_gradient_energy",
+      "recovery_mask_score": 0.15598911046981812
+    },
+    {
+      "z_um": 100.33333333333333,
+      "phase": "verification_coarse",
+      "score": 0.17893235385417938,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy",
+      "recovery_mask_score": 0.17893235385417938
+    },
+    {
+      "z_um": 102.0,
+      "phase": "verification_coarse",
+      "score": 0.13577154278755188,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy",
+      "recovery_mask_score": 0.13577154278755188
+    },
+    {
+      "z_um": 98.66666666666666,
+      "phase": "verification_adaptive_fine_quick",
+      "score": 0.15598911046981812,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0001220703125,
+      "focus_metric": "chip_edge_mean_gradient_energy",
+      "recovery_mask_score": 0.15598911046981812
+    },
+    {
+      "z_um": 99.5,
+      "phase": "verification_adaptive_fine_quick",
+      "score": 0.176614448428154,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy",
+      "recovery_mask_score": 0.176614448428154
+    },
+    {
+      "z_um": 100.33333333333333,
+      "phase": "verification_adaptive_fine_quick",
+      "score": 0.17893235385417938,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy",
+      "recovery_mask_score": 0.17893235385417938
+    },
+    {
+      "z_um": 101.16666666666666,
+      "phase": "verification_adaptive_fine_quick",
+      "score": 0.1608867049217224,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy",
+      "recovery_mask_score": 0.1608867049217224
+    },
+    {
+      "z_um": 102.0,
+      "phase": "verification_adaptive_fine_quick",
+      "score": 0.13577154278755188,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy",
+      "recovery_mask_score": 0.13577154278755188
+    },
+    {
+      "z_um": 100.04041179168907,
+      "phase": "verification_adaptive_fine_confirmation",
+      "score": 0.18084560334682465,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1549.9998779296875,
+      "focus_metric": "chip_edge_mean_gradient_energy",
+      "recovery_mask_score": 0.18084560334682465
+    }
+  ],
+  "outcome": "resolved_peak",
+  "budget": {
+    "max_seconds": 180.0,
+    "max_captures": 48,
+    "captures_started": 21,
+    "elapsed_seconds": 0.2970000000204891,
+    "completed_actions": 53,
+    "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "algorithm": "sparse_photometric_halfplanes_v2",
+  "production_baseline_sha256": {
+    "flakefinder/sparse_edges.py": "a87c6fa01fc2b1bcbff0dc7fbc0728391c621763f758ad39288b6e1c079904ac",
+    "flakefinder/sparse_acquisition.py": "9949bce2f33e058ca0f96f200b3ad0c1f8203ec40651f375415acd3b41c994cd",
+    "flakefinder/chip_campaign.py": "3ded97403576a73e4ef982c4b85c70e5cfc32e5da066c534e3035af2a0f91c29",
+    "scripts/scan_chip_campaign.py": "4664f1eb56fad37e37299a5beeacbfa428bd565ee1b16059b264d59e191ab600",
+    "scripts/discover_chip_boundaries.py": "920c6a4c6e17567b50480dcd030b995e9dd25983cc2ddc49632a157b740ea4db",
+    "tests/test_sparse_acquisition.py": "63424d2a3c6415b0abe3ac27d596a8200ab790db89119f4fc2e8a2edcb480ab4",
+    "tests/test_sparse_edge_focus.py": "f8edac956a5096cf6cafbd2332ced482ec447c51c6abc0163502fb5addfe5cad",
+    "tests/test_chip_campaign_continuation.py": "a5781d7cb6248548bc3ec8eb11b34074081032c8df6d40476c71b302956bbaad"
+  },
+  "staged_source_sha256": {
+    "flakefinder/sparse_edges.py": "5dfa5dfdcb312ffbdff87745025c8d8ddd8b6cc571da717c0d2c91f56304df57",
+    "flakefinder/sparse_acquisition.py": "78fb0f0eab9683a24a7ed3494f96f9b53440e4adca18e497c2a089a264a7d529",
+    "flakefinder/chip_campaign.py": "9fac3acb86381186b2c4411d358f81c67eab10ccd65ec9702f793f645b886341",
+    "scripts/scan_chip_campaign.py": "4d397d1f15aa2eb38d4a6529f1fe4073795b49b4c5f14f61d0003ec0525fec89",
+    "scripts/discover_chip_boundaries.py": "d728836bc1749a76656be95ffff69904ccdf4705f7ed0092c573b5b5fefc0b8a",
+    "tests/test_sparse_acquisition.py": "a8e64f67e1a76ac0f655d789232d439c293ddf803f98d7f6e015f2af2a1cbc5a",
+    "tests/test_sparse_edge_focus.py": "eccb20f52ac1aeed34b31d1bbf13363c584b23be68dcee17bcc3a3ce2a18bc3a",
+    "tests/test_chip_campaign_continuation.py": "4d6774625d0e613f3debbee89d4423ec3d39458efd8deff0f478abc9d2bb6e45",
+    "flakefinder/photometric_edges.py": "fa9f296ab7c812678971ee197f7ece7d21e3ce931f10bc0c3adf488a63d3112b",
+    "tests/sparse_profile_fixture.py": "dedcfd697ae15d3f57658de4d4a6a4c593a9209ab7e4939b75471758ebe51713",
+    "tests/test_sparse_cli_profile.py": "1c0443fff5593b483bdd23fe69a9bcaf234d0f7018cc8b44a51df7358da90d25"
+  },
+  "production_modified": false,
+  "migration": "Legacy discoveries/campaign continuation rejected; separate lineage required."
+}

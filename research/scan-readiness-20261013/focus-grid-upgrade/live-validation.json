@@ -1,0 +1,15 @@
+{
+  "run_id": "scan-20261013-221727-131d9ced",
+  "observed_at_epoch": 1791955292.1705036,
+  "state": "running",
+  "phase": "tile",
+  "completed_tiles": 9,
+  "planned_tiles": 999,
+  "focus_points_retained": true,
+  "anchor_count": 4,
+  "new_local_focus_attempts": 0,
+  "tile_focus_methods": [
+    "measured_rectangle_plane_prediction"
+  ],
+  "error": null
+}

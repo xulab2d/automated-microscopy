@@ -1,0 +1,239 @@
+{
+  "files": [
+    {
+      "id": 35713108,
+      "name": "ph2c00433_si_001.pdf",
+      "size": 5630066,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/35713108",
+      "supplied_md5": "9337d18cd5d07089bbb8c33e990d83b5",
+      "computed_md5": "9337d18cd5d07089bbb8c33e990d83b5",
+      "mimetype": "application/pdf"
+    }
+  ],
+  "folder_structure": {},
+  "authors": [
+    {
+      "id": 3201951,
+      "full_name": "Battulga Munkhbat",
+      "first_name": "Battulga",
+      "last_name": "Munkhbat",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 1605424,
+      "full_name": "Piotr Wro\u0301bel",
+      "first_name": "Piotr",
+      "last_name": "Wro\u0301bel",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 1370499,
+      "full_name": "Tomasz J. Antosiewicz",
+      "first_name": "Tomasz J.",
+      "last_name": "Antosiewicz",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    },
+    {
+      "id": 11994197,
+      "full_name": "Timur O. Shegai",
+      "first_name": "Timur O.",
+      "last_name": "Shegai",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": ""
+    }
+  ],
+  "custom_fields": [],
+  "figshare_url": "https://acs.figshare.com/articles/journal_contribution/Optical_Constants_of_Several_Multilayer_Transition_Metal_Dichalcogenides_Measured_by_Spectroscopic_Ellipsometry_in_the_300_1700_nm_Range_High_Index_Anisotropy_and_Hyperbolicity/20020705",
+  "download_disabled": false,
+  "description": "Transition metal\ndichalcogenides (TMDs) attract significant attention\ndue to their remarkable optical and excitonic properties. It was understood\nalready in the 1960s and recently rediscovered that many TMDs possess\na high refractive index and optical anisotropy, which make them attractive\nfor nanophotonic applications. However, accurate analysis and predictions\nof nanooptical phenomena require knowledge of dielectric constants\nalong both in- and out-of-plane directions and over a broad spectral\nrange, information that is often inaccessible or incomplete. Here,\nwe present an experimental study of optical constants from several\nexfoliated TMD multilayers obtained using spectroscopic ellipsometry\nin the broad range of 300\u20131700 nm. The specific materials studied\ninclude semiconducting WS<sub>2</sub>, WSe<sub>2</sub>, MoS<sub>2</sub>, MoSe<sub>2</sub>, and MoTe<sub>2</sub>, as well as in-plane anisotropic\nReS<sub>2</sub> and WTe<sub>2</sub> and metallic TaS<sub>2</sub>,\nTaSe<sub>2</sub>, and NbSe<sub>2</sub>. The extracted parameters demonstrate\na high index (<i>n</i> up to \u223c4.84 for MoTe<sub>2</sub>), significant anisotropy (<i>n</i><sub>\u2225</sub> \u2013 <i>n</i><sub>\u22a5</sub> \u2248 1.54 for MoTe<sub>2</sub>),\nand low absorption in the near-infrared region. Moreover, metallic\nTMDs show potential for combined plasmonic\u2013dielectric behavior\nand hyperbolicity, as their plasma frequency occurs at around \u223c1000\u20131300\nnm depending on the material. The knowledge of optical constants of\nthese materials opens new experimental and computational possibilities\nfor further development of all-TMD nanophotonics.",
+  "funding": null,
+  "funding_list": [],
+  "version": 1,
+  "status": "public",
+  "size": 5630066,
+  "created_date": "2022-06-07T19:09:51Z",
+  "modified_date": "2023-05-31T14:20:32Z",
+  "is_public": true,
+  "is_confidential": false,
+  "is_metadata_record": false,
+  "confidential_reason": "",
+  "metadata_reason": "",
+  "license": {
+    "value": 10,
+    "name": "CC BY-NC 4.0",
+    "url": "https://creativecommons.org/licenses/by-nc/4.0/"
+  },
+  "tags": [
+    "plasma frequency occurs",
+    "extracted parameters demonstrate",
+    "plane anisotropic res",
+    "dielectric constants along",
+    "high refractive index",
+    "high index (<",
+    "many tmds possess",
+    "broad spectral range",
+    "2 </ sub",
+    "high index",
+    "broad range",
+    "plane directions",
+    "optical constants",
+    "n </",
+    "\u2248 1",
+    "\u223c 4",
+    "understood already",
+    "tmd nanophotonics",
+    "spectroscopic ellipsometry",
+    "remarkable optical",
+    "recently rediscovered",
+    "often inaccessible",
+    "nanophotonic applications",
+    "metallic tas",
+    "low absorption",
+    "infrared region",
+    "experimental study",
+    "excitonic properties",
+    "computational possibilities",
+    "accurate analysis"
+  ],
+  "keywords": [
+    "plasma frequency occurs",
+    "extracted parameters demonstrate",
+    "plane anisotropic res",
+    "dielectric constants along",
+    "high refractive index",
+    "high index (<",
+    "many tmds possess",
+    "broad spectral range",
+    "2 </ sub",
+    "high index",
+    "broad range",
+    "plane directions",
+    "optical constants",
+    "n </",
+    "\u2248 1",
+    "\u223c 4",
+    "understood already",
+    "tmd nanophotonics",
+    "spectroscopic ellipsometry",
+    "remarkable optical",
+    "recently rediscovered",
+    "often inaccessible",
+    "nanophotonic applications",
+    "metallic tas",
+    "low absorption",
+    "infrared region",
+    "experimental study",
+    "excitonic properties",
+    "computational possibilities",
+    "accurate analysis"
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "title": "Biophysics",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 915,
+      "title": "Physical Sciences not elsewhere classified",
+      "parent_id": 6,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 14,
+      "title": "Molecular Biology",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 15,
+      "title": "Neuroscience",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 122,
+      "title": "Mental Health",
+      "parent_id": 18,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 128,
+      "title": "Hematology",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    },
+    {
+      "id": 134,
+      "title": "Virology",
+      "parent_id": 48,
+      "path": "",
+      "source_id": "",
+      "taxonomy_id": 10
+    }
+  ],
+  "references": [
+    "https://doi.org/10.1021/acsphotonics.2c00433"
+  ],
+  "has_linked_file": false,
+  "citation": "Munkhbat, Battulga; Wro\u0301bel, Piotr; Antosiewicz, Tomasz J.; Shegai, Timur O. (2022). Optical Constants of Several Multilayer Transition\nMetal Dichalcogenides Measured by Spectroscopic Ellipsometry in the\n300\u20131700 nm Range: High Index, Anisotropy, and Hyperbolicity. ACS Publications. Journal contribution. https://doi.org/10.1021/acsphotonics.2c00433.s001",
+  "related_materials": [
+    {
+      "id": 11640989,
+      "identifier": "10.1021/acsphotonics.2c00433",
+      "title": "Optical Constants of Several Multilayer Transition\nMetal Dichalcogenides Measured by Spectroscopic Ellipsometry in the\n300\u20131700 nm Range: High Index, Anisotropy, and Hyperbolicity",
+      "relation": "IsSupplementTo",
+      "identifier_type": "DOI",
+      "is_linkout": true,
+      "link": "https://doi.org/10.1021/acsphotonics.2c00433"
+    }
+  ],
+  "is_embargoed": false,
+  "embargo_date": null,
+  "embargo_type": null,
+  "embargo_title": "",
+  "embargo_reason": "",
+  "embargo_options": [],
+  "id": 20020705,
+  "title": "Optical Constants of Several Multilayer Transition\nMetal Dichalcogenides Measured by Spectroscopic Ellipsometry in the\n300\u20131700 nm Range: High Index, Anisotropy, and Hyperbolicity",
+  "doi": "10.1021/acsphotonics.2c00433.s001",
+  "handle": "",
+  "url": "https://api.figshare.com/v2/articles/20020705",
+  "published_date": "2022-06-07T19:09:51Z",
+  "thumb": "https://ndownloader.figshare.com/files/35713108/preview/35713108/thumb.png",
+  "defined_type": 6,
+  "defined_type_name": "journal contribution",
+  "group_id": 2538,
+  "url_private_api": "https://api.figshare.com/v2/account/articles/20020705",
+  "url_public_api": "https://api.figshare.com/v2/articles/20020705",
+  "url_private_html": "https://figshare.com/account/articles/20020705",
+  "url_public_html": "https://acs.figshare.com/articles/journal_contribution/Optical_Constants_of_Several_Multilayer_Transition_Metal_Dichalcogenides_Measured_by_Spectroscopic_Ellipsometry_in_the_300_1700_nm_Range_High_Index_Anisotropy_and_Hyperbolicity/20020705",
+  "timeline": {
+    "posted": "2022-06-07T19:09:51",
+    "publisherPublication": "2022-06-07T00:00:00",
+    "firstOnline": "2022-06-07"
+  },
+  "resource_title": "Optical Constants of Several Multilayer Transition\nMetal Dichalcogenides Measured by Spectroscopic Ellipsometry in the\n300\u20131700 nm Range: High Index, Anisotropy, and Hyperbolicity",
+  "resource_doi": "10.1021/acsphotonics.2c00433"
+}

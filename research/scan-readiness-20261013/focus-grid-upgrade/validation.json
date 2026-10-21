@@ -1,0 +1,20 @@
+{
+  "combined_suite": {
+    "seconds": 36.4,
+    "skipped": 1,
+    "passed": 221
+  },
+  "additional_rectangle_work_budget": {
+    "passed": 2,
+    "skipped": 1
+  },
+  "actual_donor_replays": {
+    "new_stage_moves": 0,
+    "new_captures": 0,
+    "passed": 4
+  },
+  "saved_focus_grid_replay": "saved-data-replay.json",
+  "saved_campaign_resume_preflight": "campaign-resume-preflight.json",
+  "saved_second_chip_replay": "candidate002-replay.json",
+  "production_modified_during_acquisition": false
+}

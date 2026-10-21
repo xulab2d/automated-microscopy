@@ -1,0 +1,67 @@
+{
+  "source_analysis_sha256": "5f8d64d1166c78a3a18a70b7521c781f5b0c6ce1566fe46b7a9269f2fbd51f50",
+  "source_analysis_state": "partial_with_errors",
+  "source_completed_tiles": 425,
+  "source_total_tiles": 474,
+  "failures": [
+    {
+      "tile_key": "chip001/tile_000005",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000017",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000018",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000033",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000130",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000169",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000189",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000190",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000292",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000293",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000393",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000394",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000432",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000449",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    }
+  ],
+  "parent_recovery_folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\staged-analysis-audit\\recovery-v1",
+  "parent_failed_count": 49,
+  "subset_reason": "Only spatial holdout exclusions; correct orientation-dependent validation grouping. No successful source mask is rerun or replaced."
+}

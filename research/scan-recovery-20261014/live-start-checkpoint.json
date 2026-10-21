@@ -1,0 +1,29 @@
+{
+  "observed_at": 1791994244.9510167,
+  "run_id": "scan-20261014-090615-88fb3166",
+  "status": {
+    "state": "starting",
+    "phase": "validating_handoff_files",
+    "pid": 15812,
+    "updated_at": "2026-10-14T16:10:44.040367Z",
+    "error": null,
+    "file_progress": {
+      "operation": "hash",
+      "file": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-221727-131d9ced\\chip001\\tiles\\tile_000289.tiff",
+      "bytes_completed": 21424374,
+      "file_complete": true
+    }
+  },
+  "heartbeat": {
+    "schema": 1,
+    "pid": 15812,
+    "utc": "2026-10-14T16:10:40.854875Z",
+    "at": 1791994240.8548753,
+    "phase": "validating_handoff_files",
+    "progress_age_s": 0.0,
+    "deadline_remaining_s": 43781.30700703815,
+    "memory_pressure": null
+  },
+  "new_capture_verified": false,
+  "memory_guard_launch_verified": false
+}

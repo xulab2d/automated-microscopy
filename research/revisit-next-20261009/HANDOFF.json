@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "created_at": 1791599881.8925984,
+  "stage": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\revisit-next-20261009",
+  "baseline_manifest_sha256": "284759f319c7e777faaf79c53365c065bb67538ad13d35f628038a95d2c73cc4",
+  "files": {
+    "flakefinder/calibration.py": "72b3d9896b80f66e68151117596473457e4b5775205d93c2e620924d176d6de8",
+    "flakefinder/optics.py": "5a9d7c051ff263ac317ab84e25bb0b128a89eaf65f168bf4fb0242c566bd5548",
+    "flakefinder/__main__.py": "4a046c295077956ea82f8e5c5a76c7fde5a4613073272846c1ef7a55a5dfd896",
+    "flakefinder/revisit_queue.py": "3d1fcbbd481cdcc1cabcd41d4138a20550faa5bc786ca14fddc3c6bd7c4dc3aa",
+    "scripts/export_revisit_queue.py": "15b5e7eee477010ca8088c2cc1a25711ccc5579142a79a5d397d9ec32dcb142b",
+    "tests/test_revisit_readiness.py": "50c3398fc048a6d17db91d88ee7f956f7a449b5016db4b2e53ca6cd365cad27d",
+    "HANDOFF.txt": "b584112fc5e1e9ec3cc673517d845a40aacb71fb6887096d5b55278c811da94a",
+    "REVISIT-PATCH.diff": "4972e666845aa4122d431c3974310112ab7a2f949070407547fe30d7c78b6a73"
+  },
+  "tests": {
+    "command": "python -m pytest tests/test_revisit_readiness.py -q -p no:cacheprovider",
+    "passed": 14,
+    "seconds": 2.67,
+    "hardware_accessed": false
+  },
+  "active_source_modified": false,
+  "motion_ready": false
+}

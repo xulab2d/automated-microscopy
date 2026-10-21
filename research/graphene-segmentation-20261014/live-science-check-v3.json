@@ -1,0 +1,37 @@
+[
+  {
+    "id": "chip001/tile_000660/167",
+    "status": "review_required",
+    "rank": 0.006839398594368681,
+    "likely_artifact": true,
+    "flags": [
+      "diffuse_or_weak_boundary",
+      "diffuse_boundary_near_dark_feature_possible_shadow"
+    ]
+  },
+  {
+    "id": "chip001/tile_000639/121",
+    "status": "accepted",
+    "rank": 1.3235120958454731,
+    "likely_artifact": false,
+    "flags": []
+  },
+  {
+    "id": "chip001/tile_000368/1",
+    "status": "accepted",
+    "rank": 1.6431804853564251,
+    "likely_artifact": false,
+    "flags": [
+      "candidate_cut_by_crop_or_camera"
+    ]
+  },
+  {
+    "id": "chip001/tile_000943/6",
+    "status": "accepted",
+    "rank": 0.7278220720492798,
+    "likely_artifact": false,
+    "flags": [
+      "candidate_cut_by_crop_or_camera"
+    ]
+  }
+]

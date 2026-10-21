@@ -1,0 +1,58 @@
+[
+  {
+    "new_id": "chip001/tile_000627/122",
+    "original_id": "chip001/tile_000627/110",
+    "new_mask_fraction_overlapping_original": 0.4719626168224299,
+    "area_um2": 25.471349999999994,
+    "rgb": [
+      0.28374222626881856,
+      0.20797795628392007,
+      0.13195642671535257
+    ],
+    "previous_reasons": [
+      "below_useful_size"
+    ]
+  },
+  {
+    "new_id": "chip001/tile_000547/385",
+    "original_id": "chip001/tile_000547/305",
+    "new_mask_fraction_overlapping_original": 0.5410447761194029,
+    "area_um2": 63.79739999999999,
+    "rgb": [
+      0.20007431369926532,
+      0.14285845461303912,
+      0.09164993594659074
+    ],
+    "previous_reasons": [
+      "below_useful_size"
+    ]
+  },
+  {
+    "new_id": "chip001/tile_000269/32",
+    "original_id": "chip001/tile_000269/52",
+    "new_mask_fraction_overlapping_original": 0.9689655172413794,
+    "area_um2": 34.51725,
+    "rgb": [
+      0.13679555320567774,
+      0.08464697988652913,
+      0.06958778741159924
+    ],
+    "previous_reasons": [
+      "below_useful_size"
+    ]
+  },
+  {
+    "new_id": "chip001/tile_000457/61",
+    "original_id": "chip001/tile_000457/94",
+    "new_mask_fraction_overlapping_original": 0.9292035398230089,
+    "area_um2": 40.34947499999999,
+    "rgb": [
+      0.14005970217508723,
+      0.09510897289541637,
+      0.08345550639466928
+    ],
+    "previous_reasons": [
+      "below_useful_size"
+    ]
+  }
+]

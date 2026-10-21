@@ -1,0 +1,76 @@
+{
+  "donor_run": "scan-20261013-212016-7f8d2797",
+  "backup": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\scan-readiness-20261013\\rectangle-upgrade\\production-before",
+  "files": [
+    {
+      "path": "flakefinder/chip_campaign.py",
+      "before_sha256": "6eb4c5bcab449a9871c72810624daddc04594011fcb397366090253042b844ac",
+      "after_sha256": "8f5109f0708e39b9687a230e4ea7c2d844c38578bef8c6bc1f265e1364f81dc5"
+    },
+    {
+      "path": "flakefinder/full_chip.py",
+      "before_sha256": "af9d7526ffe4c86b165c4ae030802a064c1f70eec6a5bdaa73778c6fc7dd1f1e",
+      "after_sha256": "cafc4da1d7d33a60f46ed00daaff6acbb4d2ab067c8a88db81e2a8d2ca61cd03"
+    },
+    {
+      "path": "flakefinder/rectangle_edges.py",
+      "before_sha256": null,
+      "after_sha256": "f5d22a9186cc47cee50a63b3311132fc6ea6cdaf287f43fe48d372449b671660"
+    },
+    {
+      "path": "flakefinder/rectangle_handoff.py",
+      "before_sha256": null,
+      "after_sha256": "543946d6eb416c4d43c92689cc1910c2569e149cfa2bb1f7a6f07ac5ddc841aa"
+    },
+    {
+      "path": "flakefinder/scan_service.py",
+      "before_sha256": "5b81769680b213e6ef3f4e245b44aed846bfbd504148aab6d410396d84d0f686",
+      "after_sha256": "a18739d69a8a5908bc316cfefb407ba73c5d28e7db04585a6fad5529b5b10347"
+    },
+    {
+      "path": "flakefinder/scan_worker.py",
+      "before_sha256": "a9dcc343a66d323b87dcbfb7eb07c8f35b5abbb97e001d05fff8096a49ca4599",
+      "after_sha256": "9a20fe232250ca95acd70818a6e5685e6e2933088e0f054ae4623224227d82d1"
+    },
+    {
+      "path": "flakefinder/sparse_acquisition.py",
+      "before_sha256": "6194160c6831f6c6365916212039e1017021b7f2e7860e727842b21d8bb86937",
+      "after_sha256": "33b742562ce12fc922d51b0cd364af68803620e633119a76d3ca1d17398804d1"
+    },
+    {
+      "path": "flakefinder/vendor_backlog.py",
+      "before_sha256": "0f162861b6a2ea5ae1b9926c1932d64e280f81a61b463ed2f7b774921ed6bcd3",
+      "after_sha256": "65e3630df2d0aed3795a4fe755ef741ad03e4e98444e853a48457aad7d97e224"
+    },
+    {
+      "path": "tests/test_campaign_stop_review.py",
+      "before_sha256": null,
+      "after_sha256": "4e40bac43450e7fe6fb3eb5072ccdd6c6617dd4b6b4216f11dffbcb0be2ecc6d"
+    },
+    {
+      "path": "tests/test_focus_anchor_fallback.py",
+      "before_sha256": null,
+      "after_sha256": "b3ebbc32414e91c35d080fdfe601e99ca50c4e4e02d8629ee4bce553a8ca4e46"
+    },
+    {
+      "path": "tests/test_rectangle_edges.py",
+      "before_sha256": null,
+      "after_sha256": "3aafbd604783938a7a0101e1fde3919eb3d0a7f6a2cb7f33d7eccd8d5cb5c6de"
+    },
+    {
+      "path": "tests/test_rectangle_handoff.py",
+      "before_sha256": null,
+      "after_sha256": "4167d5a8a64ab3dff5d6c17cfa57ed3a1c4f534a6d4a6aca3985e6d9165ff3e0"
+    },
+    {
+      "path": "tests/test_rectangle_plan.py",
+      "before_sha256": null,
+      "after_sha256": "4fea805b27565cf1f6180e354753d1d5ad57172e83216fed930407777c7c65e0"
+    },
+    {
+      "path": "tests/test_sparse_acquisition.py",
+      "before_sha256": "000496e1e83f7cfbef9a36bf7673fa794971e6726f4c600d6f1877f853994a89",
+      "after_sha256": "d254da230c5ae88a597628a21fe62a84f8fae8262b32a302c6699f0b014ac3c9"
+    }
+  ]
+}

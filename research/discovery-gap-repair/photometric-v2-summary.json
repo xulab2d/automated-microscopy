@@ -1,0 +1,31 @@
+{
+  "raw_fields_replayed": 19,
+  "accepted": 16,
+  "raw_refinements": 4,
+  "originally_accepted_fields": 9,
+  "all_originally_accepted_preserved": true,
+  "fits": {
+    "candidate010": {
+      "status": "estimated",
+      "line_count": 4,
+      "registered_patch_checks_pass": true
+    },
+    "candidate015": {
+      "status": "estimated",
+      "line_count": 4,
+      "registered_patch_checks_pass": true
+    },
+    "candidate005": {
+      "status": "estimated",
+      "line_count": 4,
+      "registered_patch_checks_pass": true
+    }
+  },
+  "processing_seconds": 12.381717999996908,
+  "focused_tests_passed": 7,
+  "production_hashes": {
+    "flakefinder/sparse_acquisition.py": "9949bce2f33e058ca0f96f200b3ad0c1f8203ec40651f375415acd3b41c994cd",
+    "flakefinder/sparse_edges.py": "a87c6fa01fc2b1bcbff0dc7fbc0728391c621763f758ad39288b6e1c079904ac"
+  },
+  "scope": "Isolated offline research; integration/live validation not performed. Pure Hough-only patch remains blocked."
+}

@@ -1,0 +1,207 @@
+ZEN core 3.12 camera latency audit — offline, 2026-10-08
+
+Finding
+
+The approximately 1.6–1.7 s capture time is not the exposure/readout limit.
+The per-image workflow performs expensive result finalization after acquiring
+the image. Returning the full streamed frame while that job finishes is the
+smallest plausible improvement. A persistent direct-snap or live acquisition
+can remove the repeated workflow entirely, but needs a new acquisition path.
+No hardware connection, RPC, COM activation, camera request, server restart,
+installed-file change, or production-adapter change was made for this audit.
+
+Measured evidence
+
+saved-timings.json contains a snapshot of 182 saved captures (177 at 200 ms):
+  200 ms exposure, capture_total_before_cleanup median: 1.7013 s
+  200 ms exposure, camera_job_and_transfer median:       1.5424 s
+  200 ms exposure, job_load median:                      0.1335 s
+  200 ms exposure, resource_setup median:                0.0087 s
+
+The original 40-frame raster audit measured 1.6378 / 1.4815 / 0.1235 / 0.0101 s
+respectively. Different snapshots/load conditions; these are not controlled
+before/after speed comparisons. The job_load timer also includes objective
+verification and position reads before LoadJobTemplate. The combined camera
+timer includes the explicit 100 ms subscription delay, image transfer/decode,
+and waiting for RunJob completion. Cleanup is outside capture_total_before_cleanup.
+
+vendor-log-timings.json pairs 100 recent completed intervals from local logs:
+  AXCAM setup to acquisition-completion poll at 200 ms: median 0.481 s, p90 0.571
+  Workflow execution start to success:                 median 0.858 s
+  Subsequent result finalization:                       median 0.544 s
+    purge before file finalization:                     median 0.408 s
+    file finalization:                                  median 0.137 s
+
+These are separate log intervals, not a complete additive decomposition of
+one exact frame. AXCAM time includes exposure, readout and driver completion.
+The roughly 0.54 s finalization follows workflow success and is clearly work
+which the current capture() waits for after image execution has finished.
+
+Full-frame local decode benchmark (2464 x 2056 BGR48, 30,396,013-byte protobuf):
+  decode only: 0.048 / 0.057 s
+  protobuf parse plus decode: 0.073 / 0.066 s
+  saved RGB reconstructed exactly.
+This excludes transport, serialization on the server and hardware; it does
+not establish a live-stream frame rate. Repeated job loading alone would
+recover only about 0.13 s, not the full delay.
+
+Smallest candidate: return the acquired image before vendor finalization
+
+Current zen.py flow is subscribe -> 100 ms wait -> RunJob.future -> receive
+full frame -> decode/validate -> future.result -> metadata -> return -> cleanup.
+Candidate flow:
+  1. Fence/reap a previous pending RunJob before loading any new job.
+  2. Load the known camera-only template, apply/read back unchanged camera
+     settings, subscribe and start RunJob exactly as now.
+  3. Record first frame arrival and decode duration. Require full dimensions,
+     BGR48, matching XYZ/scale/objective and one expected camera acquisition.
+  4. Return the immutable raw frame; retain the future, stream and result
+     directory in a pending-job record. A worker waits for successful job
+     completion and performs existing unload/cleanup checks.
+  5. Save TIFF/preview and perform the next bounded stage travel while that
+     result-only work proceeds. Do not load another job until the fence passes.
+  6. On the next fence, stop, or close, propagate a pending failure and finish
+     or cancel cleanup. Never silently lose a final-frame failure at run end.
+
+This is an implementation candidate, not a measured speedup. The maximum
+measured opportunity is roughly 0.54 s plus any overlap with the tail of
+image handling. Actual savings = the pending duration after frame arrival
+which overlaps useful save/motion work. Add timestamps for first response,
+decode complete, RunJob future complete and cleanup complete before choosing
+the default. The 100 ms subscription delay is a separate opportunity; do not
+remove it without a subscriber-readiness mechanism or fresh-frame evidence.
+
+Exact installed-code evidence (installed-methods.json, reflection only):
+  Zeiss.Micro.AcquisitionEngine.Api.ZenApiSinkAdapterFilter.AddProcessingItem
+  calls StartExperimentStream/UpdateExperimentStream on acquisition processing
+  items; AcquisitionEngineApiDataService queues them to the stream. This path
+  is independent of workflow result finalization. MonitorAllExperiments with
+  enable_raw_data=False delivers complete frames (partial scans are assembled).
+  Therefore image generation does not wait for workflow finalization. Channel,
+  transport and client scheduling can delay arrival, so arrival-before-final-
+  completion must still be measured rather than inferred as a latency value.
+
+  WorkflowApiManager.ExecuteJobAsync awaits RunAsync, then calls
+  FinalizeJobResults, CloseJobDocument, and optionally ArchiveResults.
+  FinalizeJobResults purges unreferenced results and writes the result set.
+  This confirms why retaining a completed loaded job is not a supported
+  shortcut: the installed implementation closes the job document itself.
+  The public v3beta RunJob/StartJob requests have no retain_loaded/no_save flag.
+
+  StageApi V1/V2 MoveTo validates device initialization, speed/acceleration,
+  target range, and calls Stage.ApplyAsync. No workflow-running check appears
+  in those implementations. ContextAwareApiCallInterceptor checks API control
+  permission/mode, then proceeds; it does not check job status. This supports
+  trying movement during result-only finalization but does not prove that
+  dynamic application control permission stays enabled in that interval.
+  No live call was made to answer that remaining question.
+
+Scope conditions for early return:
+  The loaded job must remain the audited one-snap camera-only template with
+  no later stage/focus/objective/illumination actions. Raw capture is complete
+  before movement; do not use partial-frame or 'acquisition started' events.
+  Optics/profile metadata must be captured for the exposure, not queried after
+  the next move. Vendor-retention bookkeeping must not claim completed or
+  unloaded until the pending future and cleanup really succeed. The new
+  cleanup-after-verified-TIFF operation needs a final completion fence and
+  matching durable sidecar/ledger, not a race with mutable frame metadata.
+
+Larger supported candidate: persistent direct snap or live
+
+Installed official ZEN core sample:
+  C:\Users\Public\Documents\Carl Zeiss\ZENcore\Documents\Macro Jobs\Demo - Snap and save user defined number of images\Demo - ZENCore - Snap and save user defined number of images.czjob
+Macro:
+  C:\Users\Public\Documents\Carl Zeiss\ZENcore\Documents\Macro Jobs\Demo - Snap and save user defined number of images\Macros\Demo - Snap and save user defined number of images .czmac
+
+The vendor macro (copyright 2019; installed with this core version) explicitly
+loops Zen.Acquisition.StartLive(), Zen.Acquisition.AcquireImage(), image.Close(),
+and finally StopLive(). Its comments say no extra module/license required.
+It includes interactive dialogs and AutoExposure; it must be adapted, not
+executed as-is. Preserve fixed exposure, white balance, raw bit depth and
+lamp settings from our validated camera profile and remove AutoExposure,
+dialogs and burned-in annotations. Do not infer color equivalence between
+live and snap: verify their settings/readout on the next stationary test.
+
+Installed ZenAcquisitionLM methods confirm:
+  parameterless StartLive -> StartImmediateLive
+  parameterless AcquireImage -> AcquireImage(bool) -> ExecuteImmediateSnap
+  parameterless StartContinuous -> StartImmediateContinuous
+These use immediate acquisition and do not need a pre-existing .czexp.
+
+Minimal persistent macro adaptation, once registered as a new job:
+  Load one macro job once using WorkflowService v3beta LoadJobTemplate;
+  set typed handshake/profile resources if the macro supports them;
+  subscribe once to MonitorAllExperiments;
+  RunJob asynchronously (or StartJob then WaitJob/StopJob).
+  Inside the macro, perform request-driven AcquireImage() calls and close
+  documents after pixel delivery/durable storage. Keep the enclosing workflow
+  alive across many requests so its result finalization runs only once.
+  The macro must support bounded stop/cancellation and explicit frame/request
+  correlation. No such bridge or registration was created here.
+
+API prerequisites for that job are the same as current successful captures:
+registered job name, supervised API Mode and valid control token. The installed
+PrepareJobForStart also rejects a second job when one is already running.
+Ordinary raw streaming is monitoring, not a command to start the camera.
+
+Alternative direct gRPC path (actual installed contracts and implementations):
+  ExperimentService.Import(xml_string) or Load(experiment_name) -> experiment_id
+  MonitorExperiment(experiment_id, enable_raw_data=False)
+  repeated RunSnap(experiment_id), or StartLive/StartContinuous once then Stop.
+  TilesService.AddPositions accepts a list of XYZ in METRES; tile rectangles
+  and polygons are also supported; RunExperiment executes the loaded plan.
+
+The saved services.json advertises these services and installed .NET code
+implements them. The old read-only GetAvailableExperiments result was empty.
+ExperimentApiManager lists a folder named 'Experiment Setups', and Import
+loads a HardwareExperiment XML. A .czjob is not that XML. StartLive/RunSnap
+require a valid loaded experiment GUID; passing the live frame experiment ID
+or an empty string does not create the required loaded experiment instance.
+No .czexp was found in the inspected Public Zeiss or Local Zeiss folders.
+Thus direct gRPC is a concrete interface but lacks a verified experiment
+template for this current camera; the core macro route avoids that gap.
+
+Burst / complete tile-job option:
+  One RunExperiment with positions or a core macro with multiple snaps can
+  amortize job setup/finalization. It would move sequencing into ZEN and must
+  preserve our planned per-position Z surface, checkpoints and stop behavior.
+  No separate LM burst-count RPC or public keep-loaded/no-result-save option
+  exists in the inspected installed contracts. The EM CameraService contracts
+  are for electron microscopy and are not an Axiocam alternative.
+
+Persistent streaming caveat:
+  FrameData contains experiment ID, sequence, full/partial geometry, acquired
+  XYZ and pixel scale but no exposure timestamp. A background consumer must
+  drain continuously and prove a fresh settled exposure, rather than return
+  the latest queued image from a moving stage. Sequence/XYZ gates alone need
+  a measured latency bound when using live acquisition. Direct request-driven
+  snaps provide a simpler initial correlation model.
+
+Reproduction / evidence
+
+  scripts/audit_camera_interfaces.py writes installed-methods.json from local
+  assembly metadata/IL only; it never constructs a vendor service or invokes
+  its methods. Assembly versions are retained in the output.
+  scripts/audit_camera_latency_offline.py reads saved capture sidecars and
+  local vendor logs, benchmarks in-memory protobuf decode, and writes
+  saved-timings.json plus vendor-log-timings.json.
+  Contracts: C:\Users\Public\Documents\Carl Zeiss\ZEN API Proto Files\zen_api\
+    acquisition\v1beta\experiment_service.proto
+    acquisition\v1beta\experiment_streaming_service.proto
+    acquisition\v1beta\frame_data.proto
+    workflows\v3beta\workflow_service.proto
+    lm\acquisition\v1beta\tiles_service.proto
+No production files changed by this research task.
+
+Follow-up measurement: continuation captures, 2026-10-09 UTC
+
+The added client timers now separate arrival from job completion on60 saved
+seed images at200ms exposure (measured-stream-arrival.json). Median request to
+first full image is1.058s, decoding0.080s, completion wait AFTER decoding0.111s,
+and total capture including cleanup1.508s. Thus returning the image early alone
+would overlap only about0.11s median on these observations; the entire vendor
+finalization interval is not available to overlap at the client. A persistent
+snapshot path remains the larger candidate, but its live latency and camera
+profile equivalence are not yet measured. The disabled prototype is in
+scripts/camera_fastpath/README.txt. Production acquisition still uses the
+camera-only registered workflow.

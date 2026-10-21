@@ -1,0 +1,19 @@
+{
+  "checked_at_utc": "2026-10-14T02:53:33.4927440Z",
+  "user_placement": "Same chips moved since October 11; new run required",
+  "acquisition_started": false,
+  "test_result": "109 passed in 26.24s",
+  "api_elapsed_ms": 1067,
+  "run": "scan-20261011-162824-1400155a",
+  "state": "stopped",
+  "process_alive": false,
+  "hardware_closed": true,
+  "counts": {
+    "completed_chips": 0,
+    "skipped_chips": 0,
+    "raster_images_saved": 0,
+    "known_chips": 1
+  },
+  "storage_ok": true,
+  "remaining": "Live validation on fresh placement; optional analysis watcher still has obsolete physical RAM gates"
+}

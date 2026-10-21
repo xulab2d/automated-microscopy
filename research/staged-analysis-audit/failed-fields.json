@@ -1,0 +1,702 @@
+[
+  {
+    "tile_key": "chip001/tile_000000",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "3c6927c3b5fbc59d4115d9e56f55e13f49f87e86fb76a23bbcc8d48340a2f0e7",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.0,
+    "unknown_fraction": 1.6250650026001042e-05,
+    "non_substrate_fraction": 0.999983749349974,
+    "eroded_substrate_fraction": 0.0,
+    "largest_eroded_substrate_component_fraction": 0.0,
+    "predicted_eroded_polygon_fraction": 0.02296216848673947,
+    "predicted_mask_substrate_fraction": 0.0,
+    "predicted_mask_non_substrate_fraction": 0.9992922859164898,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 0.0
+  },
+  {
+    "tile_key": "chip001/tile_000001",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "cc9e7ac68c0598ef500fd2647de3bd7ad131b40833b58ee8f750baa7fd14ce26",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.43463379160166404,
+    "unknown_fraction": 0.01548483814352574,
+    "non_substrate_fraction": 0.5498813702548102,
+    "eroded_substrate_fraction": 0.33680690977639105,
+    "largest_eroded_substrate_component_fraction": 0.3284642323192928,
+    "predicted_eroded_polygon_fraction": 0.6734086550962038,
+    "predicted_mask_substrate_fraction": 0.6454235304409205,
+    "predicted_mask_non_substrate_fraction": 0.331581757468078,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 65518.73461383579
+  },
+  {
+    "tile_key": "chip001/tile_000003",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "04c3caf3f699c51eb48aff02dd5084ac805c99368a90d65bc7b41209d34f85de",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.343880005200208,
+    "unknown_fraction": 0.006331659516380655,
+    "non_substrate_fraction": 0.6497883352834113,
+    "eroded_substrate_fraction": 0.296476859074363,
+    "largest_eroded_substrate_component_fraction": 0.2960279348673947,
+    "predicted_eroded_polygon_fraction": 0.4907208788351534,
+    "predicted_mask_substrate_fraction": 0.70076497665331,
+    "predicted_mask_non_substrate_fraction": 0.28633225154816705,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 51838.08354313572
+  },
+  {
+    "tile_key": "chip001/tile_000004",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "40605246c5fb2360b8f4726027afd58e60e5619257fae7dc1df308a2e08f53d2",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.18951914326573063,
+    "unknown_fraction": 0.006000552522100884,
+    "non_substrate_fraction": 0.8044803042121685,
+    "eroded_substrate_fraction": 0.15768411986479458,
+    "largest_eroded_substrate_component_fraction": 0.156396255850234,
+    "predicted_eroded_polygon_fraction": 0.3019533281331253,
+    "predicted_mask_substrate_fraction": 0.6276438297185297,
+    "predicted_mask_non_substrate_fraction": 0.3524837199289597,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 28569.003818389232
+  },
+  {
+    "tile_key": "chip001/tile_000005",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "19d8ce69444064eba7b1ba3e0f7484027dcb85a1d4885865bfa8848b9fd36c8a",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.036653341133645344,
+    "unknown_fraction": 0.005110829433177327,
+    "non_substrate_fraction": 0.9582358294331773,
+    "eroded_substrate_fraction": 0.01987860764430577,
+    "largest_eroded_substrate_component_fraction": 0.01925295761830473,
+    "predicted_eroded_polygon_fraction": 0.11162571502860115,
+    "predicted_mask_substrate_fraction": 0.3283592953850633,
+    "predicted_mask_non_substrate_fraction": 0.625855291891105,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 5525.296414703586
+  },
+  {
+    "tile_key": "chip001/tile_000006",
+    "error": "Not enough exposed substrate to normalize this tile.",
+    "recorded_labels_sha256": "d248a8388cfdf3ae9040e162ae4c431f917f99c8e45cf9731eb8d6710d05378f",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.0,
+    "unknown_fraction": 0.0,
+    "non_substrate_fraction": 1.0,
+    "eroded_substrate_fraction": 0.0,
+    "largest_eroded_substrate_component_fraction": 0.0,
+    "predicted_eroded_polygon_fraction": 0.0008470651326053042,
+    "predicted_mask_substrate_fraction": 0.0,
+    "predicted_mask_non_substrate_fraction": 1.0,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 0.0
+  },
+  {
+    "tile_key": "chip001/tile_000007",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "24d49472955e75745359bad166bf676638a6be1fbc23d4977ec1e2f75ecabf60",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.004302359594383775,
+    "unknown_fraction": 0.004515649375975039,
+    "non_substrate_fraction": 0.9911819910296412,
+    "eroded_substrate_fraction": 0.0009892583203328132,
+    "largest_eroded_substrate_component_fraction": 0.0009770703328133125,
+    "predicted_eroded_polygon_fraction": 0.007113722048881955,
+    "predicted_mask_substrate_fraction": 0.1367789834380354,
+    "predicted_mask_non_substrate_fraction": 0.7233009708737864,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.7738432483474976,
+    "equivalent_recorded_substrate_area_um2": 648.5578478354133
+  },
+  {
+    "tile_key": "chip001/tile_000008",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "09bf01feca1547ffb9817ca4c8015e220f326d7fdd3f8e04c1823c30854c7b93",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.14330229459178367,
+    "unknown_fraction": 0.014899814742589704,
+    "non_substrate_fraction": 0.8417978906656266,
+    "eroded_substrate_fraction": 0.10934046736869475,
+    "largest_eroded_substrate_component_fraction": 0.1047232514300572,
+    "predicted_eroded_polygon_fraction": 0.14594708788351535,
+    "predicted_mask_substrate_fraction": 0.8030146976951342,
+    "predicted_mask_non_substrate_fraction": 0.13227925620754927,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.1821648286224591,
+    "equivalent_recorded_substrate_area_um2": 21602.05945863884
+  },
+  {
+    "tile_key": "chip001/tile_000017",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "83bf1ea92ea5776182e78fb2e0d985315cc9cbeca43729716781d1fafc62d965",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.048890080603224126,
+    "unknown_fraction": 0.005275367264690588,
+    "non_substrate_fraction": 0.9458345521320853,
+    "eroded_substrate_fraction": 0.024790366614664588,
+    "largest_eroded_substrate_component_fraction": 0.01125154381175247,
+    "predicted_eroded_polygon_fraction": 0.13294047386895474,
+    "predicted_mask_substrate_fraction": 0.36775918710367483,
+    "predicted_mask_non_substrate_fraction": 0.5925586370234548,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 7369.9198686037425
+  },
+  {
+    "tile_key": "chip001/tile_000018",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "7849c10e7d548cae24bea415375f635941cab6162a0388ccb0e370267e2aca9a",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.16229930447217888,
+    "unknown_fraction": 0.007682494799791992,
+    "non_substrate_fraction": 0.8300182007280291,
+    "eroded_substrate_fraction": 0.12361869474778991,
+    "largest_eroded_substrate_component_fraction": 0.12283256955278211,
+    "predicted_eroded_polygon_fraction": 0.25273214053562143,
+    "predicted_mask_substrate_fraction": 0.6421791234316854,
+    "predicted_mask_non_substrate_fraction": 0.32742310134467156,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 24465.75775559672
+  },
+  {
+    "tile_key": "chip001/tile_000032",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "fc3f1e66e26b9c53f96529eea46c5c8097bd59564ef31aafc5cffe1dfae2b8c6",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.1654681812272491,
+    "unknown_fraction": 0.0076967141185647426,
+    "non_substrate_fraction": 0.8268351046541862,
+    "eroded_substrate_fraction": 0.13055162831513262,
+    "largest_eroded_substrate_component_fraction": 0.12850201508060322,
+    "predicted_eroded_polygon_fraction": 0.01908029446177847,
+    "predicted_mask_substrate_fraction": 0.9535824550196955,
+    "predicted_mask_non_substrate_fraction": 0.002235707441711913,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.8900414937759336,
+    "equivalent_recorded_substrate_area_um2": 24943.449088280027
+  },
+  {
+    "tile_key": "chip001/tile_000033",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "51e0e867848fb437c5d6c532f96b9d5ece472ae31fe85686668ee15d835cead7",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.11918226729069163,
+    "unknown_fraction": 0.025046314352574102,
+    "non_substrate_fraction": 0.8557714183567343,
+    "eroded_substrate_fraction": 0.06633921606864275,
+    "largest_eroded_substrate_component_fraction": 0.04821364729589184,
+    "predicted_eroded_polygon_fraction": 0.036622871164846596,
+    "predicted_mask_substrate_fraction": 0.5227688723722891,
+    "predicted_mask_non_substrate_fraction": 0.36729713239780354,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.8393611944368694,
+    "equivalent_recorded_substrate_area_um2": 17966.093507176283
+  },
+  {
+    "tile_key": "chip001/tile_000051",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "470c603d3312c40aa18fa7ec6f9035e156ada71a079fc9c94806f4e1799585b9",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.2808254517680707,
+    "unknown_fraction": 0.007828750650026,
+    "non_substrate_fraction": 0.7113457975819033,
+    "eroded_substrate_fraction": 0.23623773075923038,
+    "largest_eroded_substrate_component_fraction": 0.2359147490899636,
+    "predicted_eroded_polygon_fraction": 0.37122172386895474,
+    "predicted_mask_substrate_fraction": 0.7564898111060039,
+    "predicted_mask_non_substrate_fraction": 0.22242103880753825,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 42332.94465991614
+  },
+  {
+    "tile_key": "chip001/tile_000090",
+    "error": "Not enough exposed substrate to normalize this tile.",
+    "recorded_labels_sha256": "d248a8388cfdf3ae9040e162ae4c431f917f99c8e45cf9731eb8d6710d05378f",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.0,
+    "unknown_fraction": 0.0,
+    "non_substrate_fraction": 1.0,
+    "eroded_substrate_fraction": 0.0,
+    "largest_eroded_substrate_component_fraction": 0.0,
+    "predicted_eroded_polygon_fraction": 0.0006297126885075403,
+    "predicted_mask_substrate_fraction": 0.0,
+    "predicted_mask_non_substrate_fraction": 1.0,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 0.0
+  },
+  {
+    "tile_key": "chip001/tile_000130",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "8b11059dc59a3e089ff880706a57e4372d2131f0dab235d1f151343205964aac",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.08574249219968799,
+    "unknown_fraction": 0.0043856441757670304,
+    "non_substrate_fraction": 0.909871863624545,
+    "eroded_substrate_fraction": 0.06610155031201248,
+    "largest_eroded_substrate_component_fraction": 0.06606295501820073,
+    "predicted_eroded_polygon_fraction": 0.1928363072022881,
+    "predicted_mask_substrate_fraction": 0.4446387376094216,
+    "predicted_mask_non_substrate_fraction": 0.5326184281214777,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 12925.22509779641
+  },
+  {
+    "tile_key": "chip001/tile_000150",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "968b20e9c35e7ad0514e4646d5c5e8e367a4ad5baa4086b040444317133548ed",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.2892534451378055,
+    "unknown_fraction": 0.01717896840873635,
+    "non_substrate_fraction": 0.6935675864534582,
+    "eroded_substrate_fraction": 0.16390202483099323,
+    "largest_eroded_substrate_component_fraction": 0.15765771255850233,
+    "predicted_eroded_polygon_fraction": 0.5180260335413417,
+    "predicted_mask_substrate_fraction": 0.558376271478876,
+    "predicted_mask_non_substrate_fraction": 0.40846136351159523,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 43603.41987741809
+  },
+  {
+    "tile_key": "chip001/tile_000169",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "ec0679a07d58a3086f709c29dca3ed0b1030757a6e442790f6877bd03a37bafb",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.18535491419656785,
+    "unknown_fraction": 0.011454676937077484,
+    "non_substrate_fraction": 0.8031904088663546,
+    "eroded_substrate_fraction": 0.13425271385855433,
+    "largest_eroded_substrate_component_fraction": 0.13191465158606344,
+    "predicted_eroded_polygon_fraction": 0.31132589053562143,
+    "predicted_mask_substrate_fraction": 0.5953726298756378,
+    "predicted_mask_non_substrate_fraction": 0.3678341663295533,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 27941.268413260525
+  },
+  {
+    "tile_key": "chip001/tile_000170",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "18bef9cda1fcab2880ec54e8e696e32c5b8822aa9086ccb69f689943afdd10a1",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.2913193090223609,
+    "unknown_fraction": 0.01612470748829953,
+    "non_substrate_fraction": 0.6925559834893396,
+    "eroded_substrate_fraction": 0.2088635107904316,
+    "largest_eroded_substrate_component_fraction": 0.20788034646385856,
+    "predicted_eroded_polygon_fraction": 0.42981547386895474,
+    "predicted_mask_substrate_fraction": 0.6777776202426357,
+    "predicted_mask_non_substrate_fraction": 0.2847069610053263,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 43914.837880840474
+  },
+  {
+    "tile_key": "chip001/tile_000180",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "16f0cdb76af368ae803e9b9189cf42d36adec59a9ff8f69757850ff38449a5a5",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.2959954335673427,
+    "unknown_fraction": 0.03063856929277171,
+    "non_substrate_fraction": 0.6733659971398855,
+    "eroded_substrate_fraction": 0.17551311427457097,
+    "largest_eroded_substrate_component_fraction": 0.16448298556942278,
+    "predicted_eroded_polygon_fraction": 1.0,
+    "predicted_mask_substrate_fraction": 0.2959954335673427,
+    "predicted_mask_non_substrate_fraction": 0.6733659971398855,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 44619.7388089411
+  },
+  {
+    "tile_key": "chip001/tile_000189",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "47dd1aee62923ae22a84d2975e874737b69da636d49b4da585b2e8aec9172826",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.1835165594123765,
+    "unknown_fraction": 0.015413741549661986,
+    "non_substrate_fraction": 0.8010696990379615,
+    "eroded_substrate_fraction": 0.09945804082163287,
+    "largest_eroded_substrate_component_fraction": 0.04314547581903276,
+    "predicted_eroded_polygon_fraction": 0.4385989502080083,
+    "predicted_mask_substrate_fraction": 0.4184154096249948,
+    "predicted_mask_non_substrate_fraction": 0.546446088080142,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 27664.14619782566
+  },
+  {
+    "tile_key": "chip001/tile_000190",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "f403d4ac480b27cded8f119d36841efc450da6be07460be0399e15b7fd28ebe9",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.08586030941237649,
+    "unknown_fraction": 0.01047963793551742,
+    "non_substrate_fraction": 0.9036600526521061,
+    "eroded_substrate_fraction": 0.033198046671866877,
+    "largest_eroded_substrate_component_fraction": 0.015874853744149767,
+    "predicted_eroded_polygon_fraction": 0.35786978354134164,
+    "predicted_mask_substrate_fraction": 0.23992053356038032,
+    "predicted_mask_non_substrate_fraction": 0.7307960834397615,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 12942.98541657566
+  },
+  {
+    "tile_key": "chip001/tile_000229",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "726e4238e086b053a96af26b97d57e223f31aedfab7d01bdaf6dd8048be9fd2c",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.007704839443577743,
+    "unknown_fraction": 0.002902772360894436,
+    "non_substrate_fraction": 0.9893923881955278,
+    "eroded_substrate_fraction": 0.0005058014820592824,
+    "largest_eroded_substrate_component_fraction": 0.00020719578783151327,
+    "predicted_eroded_polygon_fraction": 0.2784427002080083,
+    "predicted_mask_substrate_fraction": 0.027671184907422267,
+    "predicted_mask_non_substrate_fraction": 0.9619037891941579,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 1161.4636056844772
+  },
+  {
+    "tile_key": "chip001/tile_000250",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "d248a8388cfdf3ae9040e162ae4c431f917f99c8e45cf9731eb8d6710d05378f",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.0,
+    "unknown_fraction": 0.0,
+    "non_substrate_fraction": 1.0,
+    "eroded_substrate_fraction": 0.0,
+    "largest_eroded_substrate_component_fraction": 0.0,
+    "predicted_eroded_polygon_fraction": 0.02136554212168487,
+    "predicted_mask_substrate_fraction": 0.0,
+    "predicted_mask_non_substrate_fraction": 1.0,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 0.0
+  },
+  {
+    "tile_key": "chip001/tile_000272",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "d248a8388cfdf3ae9040e162ae4c431f917f99c8e45cf9731eb8d6710d05378f",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.0,
+    "unknown_fraction": 0.0,
+    "non_substrate_fraction": 1.0,
+    "eroded_substrate_fraction": 0.0,
+    "largest_eroded_substrate_component_fraction": 0.0,
+    "predicted_eroded_polygon_fraction": 0.037557283541341656,
+    "predicted_mask_substrate_fraction": 0.0,
+    "predicted_mask_non_substrate_fraction": 1.0,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 0.0
+  },
+  {
+    "tile_key": "chip001/tile_000292",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "47a13d402d3bb1f3d838fa0888de8289bc59b41ea491f6431a83bb6af6f1ba2c",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.10253144500780031,
+    "unknown_fraction": 0.006859805642225689,
+    "non_substrate_fraction": 0.890608749349974,
+    "eroded_substrate_fraction": 0.0710579985699428,
+    "largest_eroded_substrate_component_fraction": 0.06369036011440457,
+    "predicted_eroded_polygon_fraction": 0.2514300572022881,
+    "predicted_mask_substrate_fraction": 0.4077931101344364,
+    "predicted_mask_non_substrate_fraction": 0.5649237331954499,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 15456.0705238397
+  },
+  {
+    "tile_key": "chip001/tile_000293",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "c0cf180e3ffbffadfc0b0d145663632eccfa408bf5fca74b8df278b2005e1d7f",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.22093977509100365,
+    "unknown_fraction": 0.006764333073322933,
+    "non_substrate_fraction": 0.7722958918356734,
+    "eroded_substrate_fraction": 0.18355921736869474,
+    "largest_eroded_substrate_component_fraction": 0.18313670046801872,
+    "predicted_eroded_polygon_fraction": 0.36991964053562143,
+    "predicted_mask_substrate_fraction": 0.5972642457456331,
+    "predicted_mask_non_substrate_fraction": 0.3844498014903326,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 33305.49710937987
+  },
+  {
+    "tile_key": "chip001/tile_000313",
+    "error": "Too little exposed substrate in this field.",
+    "recorded_labels_sha256": "d248a8388cfdf3ae9040e162ae4c431f917f99c8e45cf9731eb8d6710d05378f",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.0,
+    "unknown_fraction": 0.0,
+    "non_substrate_fraction": 1.0,
+    "eroded_substrate_fraction": 0.0,
+    "largest_eroded_substrate_component_fraction": 0.0,
+    "predicted_eroded_polygon_fraction": 0.0,
+    "predicted_mask_substrate_fraction": null,
+    "predicted_mask_non_substrate_fraction": null,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 0.0
+  },
+  {
+    "tile_key": "chip001/tile_000333",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "7c1405487bd07c86e11c0d9745782dbeec8d732622b34bed958a11b9aa4d5bb9",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.3315234171866875,
+    "unknown_fraction": 0.012297679407176286,
+    "non_substrate_fraction": 0.6561789034061363,
+    "eroded_substrate_fraction": 0.26961250325013003,
+    "largest_eroded_substrate_component_fraction": 0.26898279056162244,
+    "predicted_eroded_polygon_fraction": 0.48840922386895474,
+    "predicted_mask_substrate_fraction": 0.6787820560809855,
+    "predicted_mask_non_substrate_fraction": 0.29603889568204694,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 49975.39355806356
+  },
+  {
+    "tile_key": "chip001/tile_000354",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "7636ef58657b94f7287f7676f8c5a35428e4f54c12ca38c6174cd7105397eab8",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.28722414521580864,
+    "unknown_fraction": 0.036340516120644824,
+    "non_substrate_fraction": 0.6764353386635465,
+    "eroded_substrate_fraction": 0.1609626885075403,
+    "largest_eroded_substrate_component_fraction": 0.1517120059802392,
+    "predicted_eroded_polygon_fraction": 0.491984366874675,
+    "predicted_mask_substrate_fraction": 0.5838074633151389,
+    "predicted_mask_non_substrate_fraction": 0.3423273520012552,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 43297.51369706512
+  },
+  {
+    "tile_key": "chip001/tile_000393",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "9fa0dc9cc70f0d2789f0ae532bcc8af732f4d2dda8fde7dd90e39dd366eb28ec",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.2462278178627145,
+    "unknown_fraction": 0.00983773725949038,
+    "non_substrate_fraction": 0.7439344448777951,
+    "eroded_substrate_fraction": 0.16656103744149767,
+    "largest_eroded_substrate_component_fraction": 0.16391421281851273,
+    "predicted_eroded_polygon_fraction": 0.41255728354134164,
+    "predicted_mask_substrate_fraction": 0.5968330403698725,
+    "predicted_mask_non_substrate_fraction": 0.37932121104693817,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 37117.53518667121
+  },
+  {
+    "tile_key": "chip001/tile_000394",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "7e9269a7c1b0da9fbbce6dca34ccd39661fed16aac376b9f26f4f9858bd19020",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.15056430382215288,
+    "unknown_fraction": 0.008090792381695269,
+    "non_substrate_fraction": 0.8413449037961519,
+    "eroded_substrate_fraction": 0.08608172451898076,
+    "largest_eroded_substrate_component_fraction": 0.08387569877795112,
+    "predicted_eroded_polygon_fraction": 0.331828116874675,
+    "predicted_mask_substrate_fraction": 0.45374185057084265,
+    "predicted_mask_non_substrate_fraction": 0.5218756695540387,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 22696.768762704753
+  },
+  {
+    "tile_key": "chip001/tile_000414",
+    "error": "Not enough exposed substrate to normalize this tile.",
+    "recorded_labels_sha256": "14d6a9191238216329c5b57a0b903e8009f0f3b6993698ca125f1689423d67a9",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.0,
+    "unknown_fraction": 2.0313312532501302e-06,
+    "non_substrate_fraction": 0.9999979686687468,
+    "eroded_substrate_fraction": 0.0,
+    "largest_eroded_substrate_component_fraction": 0.0,
+    "predicted_eroded_polygon_fraction": 0.0012452060582423298,
+    "predicted_mask_substrate_fraction": 0.0,
+    "predicted_mask_non_substrate_fraction": 0.99836867862969,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 0.0
+  },
+  {
+    "tile_key": "chip001/tile_000415",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "63b4b4e94d02bcdead4f8c08587ee9fd4ab371f620828f255c07a6b57b3b5aa9",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.08564498829953199,
+    "unknown_fraction": 0.002673231929277171,
+    "non_substrate_fraction": 0.9116817797711908,
+    "eroded_substrate_fraction": 0.07433047321892876,
+    "largest_eroded_substrate_component_fraction": 0.07416796671866875,
+    "predicted_eroded_polygon_fraction": 0.1393290106604264,
+    "predicted_mask_substrate_fraction": 0.6146960198279633,
+    "predicted_mask_non_substrate_fraction": 0.3661175098410847,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 12910.526902944615
+  },
+  {
+    "tile_key": "chip001/tile_000416",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "6ced6155d5a21c2ff8010376ca35ec18cc0f39a5ec3654ffd63e7f3f313d560f",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.26683161076443057,
+    "unknown_fraction": 0.0026793259230369214,
+    "non_substrate_fraction": 0.7304890633125325,
+    "eroded_substrate_fraction": 0.2382771873374935,
+    "largest_eroded_substrate_component_fraction": 0.23760278536141446,
+    "predicted_eroded_polygon_fraction": 0.3811386830473219,
+    "predicted_mask_substrate_fraction": 0.7000906038479987,
+    "predicted_mask_non_substrate_fraction": 0.29287960347492403,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 40223.44748629094
+  },
+  {
+    "tile_key": "chip001/tile_000432",
+    "error": "Invalid fitted background; supply a substrate mask or flat field.",
+    "recorded_labels_sha256": "ee2455f0296f43729703c0cfe54429fbc2546942ec3a5a2ccc4a266620b3c50b",
+    "label_hash_matches_manifest": true,
+    "recorded_label_shape": [
+      641,
+      768
+    ],
+    "substrate_fraction": 0.040403178627145084,
+    "unknown_fraction": 0.00405656851274051,
+    "non_substrate_fraction": 0.9555402528601145,
+    "eroded_substrate_fraction": 0.0202970618824753,
+    "largest_eroded_substrate_component_fraction": 0.019949704238169528,
+    "predicted_eroded_polygon_fraction": 0.25240103354134164,
+    "predicted_mask_substrate_fraction": 0.160075329566855,
+    "predicted_mask_non_substrate_fraction": 0.8238527532312843,
+    "substrate_outside_predicted_eroded_polygon_fraction": 0.0,
+    "equivalent_recorded_substrate_area_um2": 6090.564491712167
+  }
+]

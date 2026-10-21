@@ -1,0 +1,201 @@
+{
+  "schema": 1,
+  "before": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\analysis\\graphene\\scan-20261013-221727-131d9ced\\chip001\\full-chip-conditional-v1",
+  "after": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\analysis\\graphene\\scan-20261013-221727-131d9ced\\chip001\\operator-empirical-pilot-v1",
+  "after_plan_sha256": "b168fad7d2f4eab24e6af8562b38706f4607ff508d076103cdb63d8caaa1bd87",
+  "point_correspondence": "Recorded IDs inferred from conversation; overlap links observations, not independent verified identities.",
+  "fields": {
+    "tile_000215": {
+      "before_regions": 368,
+      "after_regions": 342,
+      "before_selected_useful": 2,
+      "after_selected_useful": 3
+    },
+    "tile_000627": {
+      "before_regions": 236,
+      "after_regions": 284,
+      "before_selected_useful": 1,
+      "after_selected_useful": 2
+    },
+    "tile_000639": {
+      "before_regions": 159,
+      "after_regions": 173,
+      "before_selected_useful": 2,
+      "after_selected_useful": 1
+    },
+    "tile_000547": {
+      "before_regions": 349,
+      "after_regions": 444,
+      "before_selected_useful": 3,
+      "after_selected_useful": 3
+    },
+    "tile_000660": {
+      "before_regions": 1872,
+      "after_regions": 1786,
+      "before_selected_useful": 7,
+      "after_selected_useful": 3
+    },
+    "tile_000635": {
+      "before_regions": 1715,
+      "after_regions": 1785,
+      "before_selected_useful": 8,
+      "after_selected_useful": 3
+    }
+  },
+  "observations": [
+    {
+      "original_id": "chip001/tile_000215/36",
+      "operator_negative_band": false,
+      "new_id": "chip001/tile_000215/30",
+      "intersection_over_union": 0.7805475183618963,
+      "original_mask_recovered_fraction": 0.8800501882057716,
+      "before_selected": true,
+      "after_selected": true,
+      "before_area_um2": 474.3146249999999,
+      "after_area_um2": 477.8853749999999,
+      "after_class": "operator_supported_rgb_trajectory",
+      "after_contrast_rgb": [
+        0.11885123898893474,
+        0.0925224556186636,
+        0.08403121291311606
+      ],
+      "after_filter_reasons": []
+    },
+    {
+      "original_id": "chip001/tile_000627/26",
+      "operator_negative_band": false,
+      "new_id": "chip001/tile_000627/25",
+      "intersection_over_union": 0.9453125,
+      "original_mask_recovered_fraction": 0.9552631578947368,
+      "before_selected": true,
+      "after_selected": true,
+      "before_area_um2": 90.45899999999999,
+      "after_area_um2": 87.36434999999999,
+      "after_class": "operator_supported_rgb_trajectory",
+      "after_contrast_rgb": [
+        0.12050034323820172,
+        0.09403566873005684,
+        0.06179010947057213
+      ],
+      "after_filter_reasons": []
+    },
+    {
+      "original_id": "chip001/tile_000639/121",
+      "operator_negative_band": false,
+      "new_id": "chip001/tile_000639/124",
+      "intersection_over_union": 0.6907924874026569,
+      "original_mask_recovered_fraction": 1.0,
+      "before_selected": true,
+      "after_selected": true,
+      "before_area_um2": 179.48969999999997,
+      "after_area_um2": 259.83157499999993,
+      "after_class": "operator_supported_rgb_trajectory",
+      "after_contrast_rgb": [
+        0.25665441036281517,
+        0.19336928413269397,
+        0.11590380067502451
+      ],
+      "after_filter_reasons": []
+    },
+    {
+      "original_id": "chip001/tile_000547/176",
+      "operator_negative_band": false,
+      "new_id": "chip001/tile_000547/227",
+      "intersection_over_union": 0.40587768069896746,
+      "original_mask_recovered_fraction": 0.998046875,
+      "before_selected": true,
+      "after_selected": true,
+      "before_area_um2": 121.88159999999998,
+      "after_area_um2": 299.46689999999995,
+      "after_class": "operator_supported_rgb_trajectory",
+      "after_contrast_rgb": [
+        0.29226985670294536,
+        0.22714491668746503,
+        0.14411482878365897
+      ],
+      "after_filter_reasons": []
+    },
+    {
+      "original_id": "chip001/tile_000660/167",
+      "operator_negative_band": false,
+      "new_id": "chip001/tile_000660/145",
+      "intersection_over_union": 0.5142650776453593,
+      "original_mask_recovered_fraction": 0.5175672401259995,
+      "before_selected": true,
+      "after_selected": true,
+      "before_area_um2": 982.4323499999998,
+      "after_area_um2": 514.7831249999999,
+      "after_class": "operator_supported_rgb_trajectory",
+      "after_contrast_rgb": [
+        0.12737999301451233,
+        0.12096264885332912,
+        0.11858314487389411
+      ],
+      "after_filter_reasons": []
+    },
+    {
+      "original_id": "chip001/tile_000660/176",
+      "operator_negative_band": true,
+      "new_id": "chip001/tile_000660/163",
+      "intersection_over_union": 0.47190160832544936,
+      "original_mask_recovered_fraction": 0.6762472885032538,
+      "before_selected": true,
+      "after_selected": false,
+      "before_area_um2": 438.9641999999999,
+      "after_area_um2": 486.9312749999999,
+      "after_class": "operator_negative_achromatic_population",
+      "after_contrast_rgb": [
+        0.20855131189772508,
+        0.22298533133655601,
+        0.22758268840339982
+      ],
+      "after_filter_reasons": [
+        "color_unclassified_or_not_coherent_material_population"
+      ]
+    },
+    {
+      "original_id": "chip001/tile_000635/1537",
+      "operator_negative_band": false,
+      "new_id": "chip001/tile_000635/1610",
+      "intersection_over_union": 0.6115702479338843,
+      "original_mask_recovered_fraction": 0.6166666666666667,
+      "before_selected": true,
+      "after_selected": true,
+      "before_area_um2": 742.7159999999999,
+      "after_area_um2": 464.19749999999993,
+      "after_class": "operator_supported_rgb_trajectory",
+      "after_contrast_rgb": [
+        0.12486548205824294,
+        0.11474391279443294,
+        0.11292415722140957
+      ],
+      "after_filter_reasons": []
+    },
+    {
+      "original_id": "chip001/tile_000635/1546",
+      "operator_negative_band": true,
+      "new_id": "chip001/tile_000635/1622",
+      "intersection_over_union": 0.44019138755980863,
+      "original_mask_recovered_fraction": 0.9721421709894332,
+      "before_selected": true,
+      "after_selected": false,
+      "before_area_um2": 123.90502499999998,
+      "after_area_um2": 270.18674999999996,
+      "after_class": "operator_negative_achromatic_population",
+      "after_contrast_rgb": [
+        0.21298061093035148,
+        0.22054657303002326,
+        0.22709287297457967
+      ],
+      "after_filter_reasons": [
+        "color_unclassified_or_not_coherent_material_population"
+      ]
+    }
+  ],
+  "totals": {
+    "before_regions": 4699,
+    "after_regions": 4814,
+    "before_selected_useful": 23,
+    "after_selected_useful": 15
+  }
+}

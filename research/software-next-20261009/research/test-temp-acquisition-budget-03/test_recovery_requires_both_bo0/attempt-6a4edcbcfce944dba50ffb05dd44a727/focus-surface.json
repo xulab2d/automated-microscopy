@@ -1,0 +1,370 @@
+{
+  "schema": 1,
+  "state": "complete",
+  "mode": "surface",
+  "centres_um": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      100.0
+    ],
+    [
+      50.0,
+      50.0
+    ],
+    [
+      100.0,
+      0.0
+    ],
+    [
+      100.0,
+      100.0
+    ]
+  ],
+  "seed_points_um": [],
+  "anchors": [
+    {
+      "index": 0,
+      "requested_xy_um": [
+        0.0,
+        0.0
+      ],
+      "search_seed": {
+        "method": "current_measured_height_search_seed",
+        "z_um": 10.0,
+        "prediction_is_focus_evidence": false,
+        "requires_local_autofocus": true
+      },
+      "local_search_bounds_um": [
+        6.0,
+        14.0
+      ],
+      "focus_budget": {
+        "max_seconds": 180.0,
+        "max_captures": 48,
+        "captures_started": 0,
+        "elapsed_seconds": 0.014999999999417923,
+        "completed_actions": 0,
+        "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline"
+      },
+      "local_result": {
+        "success": false,
+        "z_um": 10,
+        "score": 0,
+        "prominence": 0,
+        "reason": "Peak at search boundary; extend range.",
+        "samples": [],
+        "outcome": "peak_outside_interval",
+        "budget": null
+      },
+      "recovery_result": {
+        "success": true,
+        "z_um": 10.0,
+        "score": 1,
+        "prominence": 0.5,
+        "reason": "Focused",
+        "samples": [],
+        "outcome": "resolved_peak",
+        "budget": null
+      },
+      "status": "verified",
+      "position_um": [
+        0.0,
+        0.0,
+        10.0
+      ],
+      "image": "attempt-6a4edcbcfce944dba50ffb05dd44a727/anchor_000/anchor.tiff"
+    },
+    {
+      "index": 1,
+      "requested_xy_um": [
+        100.0,
+        0.0
+      ],
+      "search_seed": {
+        "method": "nearest_verified_height_search_seed",
+        "z_um": 10.0,
+        "prediction_is_focus_evidence": false,
+        "requires_local_autofocus": true,
+        "source_point_um": [
+          0.0,
+          0.0,
+          10.0
+        ],
+        "source_role": "verified_roi_focus"
+      },
+      "local_search_bounds_um": [
+        6.0,
+        14.0
+      ],
+      "focus_budget": {
+        "max_seconds": 180.0,
+        "max_captures": 48,
+        "captures_started": 0,
+        "elapsed_seconds": 0.014999999999417923,
+        "completed_actions": 0,
+        "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline"
+      },
+      "local_result": {
+        "success": false,
+        "z_um": 10.0,
+        "score": 0,
+        "prominence": 0,
+        "reason": "Peak at search boundary; extend range.",
+        "samples": [],
+        "outcome": "peak_outside_interval",
+        "budget": null
+      },
+      "recovery_result": {
+        "success": true,
+        "z_um": 11.0,
+        "score": 1,
+        "prominence": 0.5,
+        "reason": "Focused",
+        "samples": [],
+        "outcome": "resolved_peak",
+        "budget": null
+      },
+      "status": "verified",
+      "position_um": [
+        100.0,
+        0.0,
+        11.0
+      ],
+      "image": "attempt-6a4edcbcfce944dba50ffb05dd44a727/anchor_001/anchor.tiff"
+    },
+    {
+      "index": 2,
+      "requested_xy_um": [
+        100.0,
+        100.0
+      ],
+      "search_seed": {
+        "method": "nearest_verified_height_search_seed",
+        "z_um": 11.0,
+        "prediction_is_focus_evidence": false,
+        "requires_local_autofocus": true,
+        "source_point_um": [
+          100.0,
+          0.0,
+          11.0
+        ],
+        "source_role": "verified_roi_focus"
+      },
+      "local_search_bounds_um": [
+        7.0,
+        15.0
+      ],
+      "focus_budget": {
+        "max_seconds": 180.0,
+        "max_captures": 48,
+        "captures_started": 0,
+        "elapsed_seconds": 0.01600000000325963,
+        "completed_actions": 0,
+        "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline"
+      },
+      "local_result": {
+        "success": false,
+        "z_um": 11.0,
+        "score": 0,
+        "prominence": 0,
+        "reason": "Peak at search boundary; extend range.",
+        "samples": [],
+        "outcome": "peak_outside_interval",
+        "budget": null
+      },
+      "recovery_result": {
+        "success": true,
+        "z_um": 13.0,
+        "score": 1,
+        "prominence": 0.5,
+        "reason": "Focused",
+        "samples": [],
+        "outcome": "resolved_peak",
+        "budget": null
+      },
+      "status": "verified",
+      "position_um": [
+        100.0,
+        100.0,
+        13.0
+      ],
+      "image": "attempt-6a4edcbcfce944dba50ffb05dd44a727/anchor_002/anchor.tiff"
+    },
+    {
+      "index": 3,
+      "requested_xy_um": [
+        0.0,
+        100.0
+      ],
+      "search_seed": {
+        "method": "provisional_measured_plane_search_seed",
+        "z_um": 12.000000000000002,
+        "source_points_um": [
+          [
+            0.0,
+            0.0,
+            10.0
+          ],
+          [
+            100.0,
+            0.0,
+            11.0
+          ],
+          [
+            100.0,
+            100.0,
+            13.0
+          ]
+        ],
+        "fit_origin_xy_um": [
+          66.66666666666667,
+          33.333333333333336
+        ],
+        "fit_coefficients": [
+          0.00999999999999998,
+          0.020000000000000028,
+          11.333333333333332
+        ],
+        "residuals_um": [
+          0.0,
+          3.552713678800501e-15,
+          0.0
+        ],
+        "max_residual_um": 3.552713678800501e-15,
+        "extrapolated_search_seed": true,
+        "prediction_is_focus_evidence": false,
+        "requires_local_autofocus": true,
+        "source_role": "verified_roi_focus"
+      },
+      "local_search_bounds_um": [
+        8.000000000000002,
+        16.0
+      ],
+      "local_search_strategy": "quick_plane_seeded_with_full_sweep_fallback",
+      "quick_half_range_um": 2.0,
+      "focus_budget": {
+        "max_seconds": 180.0,
+        "max_captures": 48,
+        "captures_started": 0,
+        "elapsed_seconds": 0.031000000002677552,
+        "completed_actions": 0,
+        "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline"
+      },
+      "local_result": {
+        "success": false,
+        "z_um": 12.000000000000002,
+        "score": 0,
+        "prominence": 0,
+        "reason": "Peak at search boundary; extend range.",
+        "samples": [],
+        "outcome": "peak_outside_interval",
+        "budget": null
+      },
+      "recovery_result": {
+        "success": true,
+        "z_um": 12.0,
+        "score": 1,
+        "prominence": 0.5,
+        "reason": "Focused",
+        "samples": [],
+        "outcome": "resolved_peak",
+        "budget": null
+      },
+      "status": "verified",
+      "position_um": [
+        0.0,
+        100.0,
+        12.0
+      ],
+      "image": "attempt-6a4edcbcfce944dba50ffb05dd44a727/anchor_003/anchor.tiff"
+    }
+  ],
+  "verified_points_um": [
+    [
+      0.0,
+      0.0,
+      10.0
+    ],
+    [
+      100.0,
+      0.0,
+      11.0
+    ],
+    [
+      100.0,
+      100.0,
+      13.0
+    ],
+    [
+      0.0,
+      100.0,
+      12.0
+    ]
+  ],
+  "search_seed_points_um": [],
+  "search_seeds_are_focus_evidence": false,
+  "max_residual_um": 1.0,
+  "search_bounds_um": [
+    2.0,
+    20.0
+  ],
+  "attempt_folder": "attempt-6a4edcbcfce944dba50ffb05dd44a727",
+  "extrapolation_allowed": false,
+  "anchor_centres_um": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      100.0,
+      0.0
+    ],
+    [
+      100.0,
+      100.0
+    ],
+    [
+      0.0,
+      100.0
+    ]
+  ],
+  "fit_origin_xy_um": [
+    50.0,
+    50.0
+  ],
+  "fit_coefficients": [
+    0.010000000000000021,
+    0.019999999999999997,
+    11.5
+  ],
+  "residuals_um": [
+    0.0,
+    -1.7763568394002505e-15,
+    0.0,
+    1.7763568394002505e-15
+  ],
+  "measured_max_residual_um": 1.7763568394002505e-15,
+  "rms_um": 1.2560739669470201e-15,
+  "verified_hull_xy_um": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      100.0,
+      0.0
+    ],
+    [
+      100.0,
+      100.0
+    ],
+    [
+      0.0,
+      100.0
+    ]
+  ]
+}

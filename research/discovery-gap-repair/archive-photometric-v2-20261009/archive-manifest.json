@@ -1,0 +1,17 @@
+{
+  "created_at": 1791534165.368566,
+  "files_sha256": {
+    "photometric_validation.py": "7d9bf7f4b37d335b2f610d1a59b2cf1173c1a85908e90be9bad9de19ec1b0f90",
+    "replay_photometric.py": "e92f39c00d096db91d43380138c9c6e23aa61bba5ee3e35539e4a303d4958236",
+    "photometric-representative-replay.json": "ae4a705cce20b4ae02e8b85e87371a2dc43a105d47d674d690cbc2eb0c0d2c86",
+    "photometric-v2-summary.json": "e77016d802ca2949f35c991f0951c748c8439ee72078e2d9c724e3b9d821c49d",
+    "test_photometric_validation.py": "0d8ca05630f51b43626e19772ae2c4f76e1885a90fc4606a062e9c0676a4e9af",
+    "proposed_sparse_edges.py": "1bb15a5fca29cbf67ffd31009de5352bca04c9ee095436ffc2fb3853e35b4a0f",
+    "standard_hough_fallback.py": "1fa592c87ddc3d78c0d7eb7e784df643998c3f2dcc4c0a6c34febf38b9d02d35",
+    "proposed_gap_probe.py": "905e2d2bf23b2c00ce7a8a1df4d0bb05feb6df28f233bd108ff8d52c0b5b58b0",
+    "sparse-spatial-bracket.patch": "332603d8d16457cd02e935549e8e52ff8677e6e3ccc500e97ddd15d6886d37d6",
+    "sparse-gap-and-spatial-bracket.patch": "5be9abdc0c7f6c3ab95482bfcd15e67cc8a28364e22b46a254fdcab85d6a3baf",
+    "spatial-bracket-patch-metadata.json": "ce277d175c6c29eb8be3707c4ba1b09380b73e6b148e0897b1c591530111b1b8",
+    "HANDOFF.txt": "be877e68ec9dd9e404788fcf1a921742d763f9734bce1f83385d25f436c0fee9"
+  }
+}

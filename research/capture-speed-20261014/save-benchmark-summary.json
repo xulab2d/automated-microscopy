@@ -1,0 +1,75 @@
+{
+  "C": {
+    "total_s": [
+      0.6020214998861775,
+      0.7016034000553191,
+      1.0796437000390142
+    ],
+    "median_total_s": 0.7016034000553191,
+    "median_raw_encode_write_s": 0.3109740999061614,
+    "median_pixel_compare_hash_s": 0.1054469000082463,
+    "median_file_hash_s": 0.02819340000860393
+  },
+  "G": {
+    "total_s": [
+      1.6580165000632405,
+      1.9490686999633908,
+      1.8908588000340387
+    ],
+    "median_total_s": 1.8908588000340387,
+    "median_raw_encode_write_s": 1.2061979999998584,
+    "median_pixel_compare_hash_s": 0.0623329000081867,
+    "median_file_hash_s": 0.05164409999269992
+  },
+  "paired_G_minus_C_s": [
+    1.055995000177063,
+    1.2474652999080718,
+    0.8112150999950245
+  ],
+  "compression_tags": {
+    "production_default": 5,
+    "uncompressed_lossless": 1
+  },
+  "uncompressed": [
+    {
+      "drive": "C",
+      "raw_bytes": 30408398,
+      "timings": {
+        "raw_encode_write_s": 0.0311180999269709,
+        "preview_jpeg_write_s": 0.01415980001911521,
+        "metadata_json_s": 0.0058895000256598,
+        "save_frame_s": 0.10274959995876998,
+        "fsync_s": 0.024498700047843158,
+        "readback_decode_s": 0.04550909996032715,
+        "pixel_compare_hash_s": 0.062164400005713105,
+        "file_hash_s": 0.026349099935032427,
+        "total_verified_s": 0.2613081999588758
+      }
+    },
+    {
+      "drive": "G",
+      "raw_bytes": 30408398,
+      "timings": {
+        "raw_encode_write_s": 0.7118930999422446,
+        "preview_jpeg_write_s": 0.048344000009819865,
+        "metadata_json_s": 0.04722129995934665,
+        "save_frame_s": 0.9022635000292212,
+        "fsync_s": 0.01666799990925938,
+        "readback_decode_s": 0.14253399998415262,
+        "pixel_compare_hash_s": 0.12798099999781698,
+        "file_hash_s": 0.09153069998137653,
+        "total_verified_s": 1.2809917000122368
+      }
+    }
+  ],
+  "size_ratio_uncompressed_to_LZW": 1.334646104396857,
+  "priority": {
+    "threads": 1,
+    "below_normal": true,
+    "cpu_mask": 4,
+    "affinity_set": true
+  },
+  "output": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\save-benchmark-20261014-212742-b446e579",
+  "all_pixel_equal": true,
+  "source_unchanged": true
+}

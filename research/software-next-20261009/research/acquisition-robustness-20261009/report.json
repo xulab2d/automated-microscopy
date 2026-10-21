@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "created_at_utc": "2026-10-10T02:16:06.941078+00:00",
+  "scope": "Offline staged source only; original source and operator hold untouched.",
+  "source_sha256": {
+    "flakefinder/acquisition_resources.py": "8aecf32cf9f5d9883b024af7576d0998c8180a257804850ce007dce05f321f36",
+    "flakefinder/chip_discovery.py": "83ed6734c4c41c370f6e564dcbb8aea6e328e4ea984ce5ce79c42aa5d5b9ee60",
+    "flakefinder/scan.py": "3b06148710463b872af5a5c7fd553b7a4149cc9538dc9a26319279facb4144ef",
+    "flakefinder/zen.py": "3b31969462ff830a9e7fb2df8659ff418c0e3bc524df37617bc636fa79fb5968",
+    "flakefinder/full_chip.py": "f7e97069277553843a0c21447ce4d95f2a70760c57a4ed83514530fc6219105f",
+    "flakefinder/lease.py": "b6d51a64e70bd67b65bf89b1376539d499fa8108af6516684436a00db91561ba",
+    "tests/conftest.py": "c1ef5a97a47aef1a86279a94999a1f5e0f428574e1e1e576a8435b9ba38e966f",
+    "tests/test_acquisition_resource_guards.py": "f3bec248414946f9aa3c724ec831531978eef0003d5205e1d54ecae02f5f5490",
+    "tests/test_full_chip.py": "db5c3a5150f44cfcac8e480e28053467e515eeaca7c988d678152ef2d4e678d4"
+  },
+  "tests": [
+    {
+      "count": 33,
+      "elapsed_seconds": 35.21,
+      "scope": "resource guards, full-chip, capture overlap, acquisition budgets"
+    },
+    {
+      "count": 4,
+      "elapsed_seconds": 8.1,
+      "scope": "injected coverage failure, STOP/resume, completed full-chip and lease regression"
+    }
+  ],
+  "hardware_validation": false,
+  "actual_hardware_leases_acquired": false,
+  "limitations": [
+    "RAM preflight cannot control concurrent allocations or guarantee no memory failure.",
+    "Disk device failure can prevent even a terminal JSON write; no successful persistence claim is made then.",
+    "Focus/time limits remain cooperative across finite vendor RPC timeouts.",
+    "Two exceptional local-focus attempts default per chip; explicit options can increase up to100.",
+    "Host lock canonicalizes loopback names and acquires legacy checkout ancestor locks; external non-FlakeFinder clients are not covered."
+  ]
+}

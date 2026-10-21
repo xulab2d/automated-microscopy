@@ -1,0 +1,263 @@
+{
+  "sign_convention": "100*(R_substrate-R_film)/R_substrate, positive means darker",
+  "optics": "Normal incidence,285nm SiO2(Malitson)/Si(Aspnes), MoTe2 bulk Beal data; linear equal spectral illumination and top-hat bands R590-720,G520-590,B435-520nm. NOT camera-calibrated or monolayer optical constants. Ideal residue models n1.4/1.5,k0 are illustrative only.",
+  "sources": [
+    "https://doi.org/10.1088/0022-3719/12/5/017",
+    "https://doi.org/10.1103/PhysRevB.27.985",
+    "https://refractiveindex.info/?shelf=main&book=MoTe2&page=Beal"
+  ],
+  "results": [
+    {
+      "material": "MoTe2_bulk_constants",
+      "thickness_nm": 0.6982,
+      "illustrative_top_hat_RGB_contrast_percent": {
+        "R": 19.445,
+        "G": 35.149,
+        "B": 2.047
+      },
+      "monochromatic_450_550_650_nm_percent": [
+        -1.965,
+        36.697,
+        21.256
+      ]
+    },
+    {
+      "material": "MoTe2_bulk_constants",
+      "thickness_nm": 1.3964,
+      "illustrative_top_hat_RGB_contrast_percent": {
+        "R": 34.973,
+        "G": 51.628,
+        "B": 0.905
+      },
+      "monochromatic_450_550_650_nm_percent": [
+        -4.415,
+        51.767,
+        38.786
+      ]
+    },
+    {
+      "material": "MoTe2_bulk_constants",
+      "thickness_nm": 2.0946,
+      "illustrative_top_hat_RGB_contrast_percent": {
+        "R": 46.863,
+        "G": 54.829,
+        "B": -2.223
+      },
+      "monochromatic_450_550_650_nm_percent": [
+        -7.187,
+        51.806,
+        52.692
+      ]
+    },
+    {
+      "material": "MoTe2_bulk_constants",
+      "thickness_nm": 3.491,
+      "illustrative_top_hat_RGB_contrast_percent": {
+        "R": 61.164,
+        "G": 36.422,
+        "B": -11.647
+      },
+      "monochromatic_450_550_650_nm_percent": [
+        -13.249,
+        24.917,
+        70.554
+      ]
+    },
+    {
+      "material": "MoTe2_bulk_constants",
+      "thickness_nm": 6.982,
+      "illustrative_top_hat_RGB_contrast_percent": {
+        "R": 58.944,
+        "G": -62.873,
+        "B": -39.639
+      },
+      "monochromatic_450_550_650_nm_percent": [
+        -28.62,
+        -94.166,
+        72.445
+      ]
+    },
+    {
+      "material": "MoTe2_bulk_constants",
+      "thickness_nm": 20,
+      "illustrative_top_hat_RGB_contrast_percent": {
+        "R": -56.804,
+        "G": -346.482,
+        "B": -102.725
+      },
+      "monochromatic_450_550_650_nm_percent": [
+        -58.782,
+        -407.01,
+        -50.724
+      ]
+    },
+    {
+      "material": "MoTe2_bulk_constants",
+      "thickness_nm": 50,
+      "illustrative_top_hat_RGB_contrast_percent": {
+        "R": -139.436,
+        "G": -340.369,
+        "B": -50.029
+      },
+      "monochromatic_450_550_650_nm_percent": [
+        -8.524,
+        -380.451,
+        -141.515
+      ]
+    },
+    {
+      "material": "MoTe2_bulk_constants",
+      "thickness_nm": 100,
+      "illustrative_top_hat_RGB_contrast_percent": {
+        "R": -88.282,
+        "G": -290.81,
+        "B": -55.444
+      },
+      "monochromatic_450_550_650_nm_percent": [
+        -15.251,
+        -334.701,
+        -86.554
+      ]
+    },
+    {
+      "material": "1.4",
+      "thickness_nm": 1,
+      "illustrative_top_hat_RGB_contrast_percent": {
+        "R": 1.323,
+        "G": -0.236,
+        "B": -1.267
+      },
+      "monochromatic_450_550_650_nm_percent": [
+        -0.722,
+        -0.57,
+        1.502
+      ]
+    },
+    {
+      "material": "1.4",
+      "thickness_nm": 5,
+      "illustrative_top_hat_RGB_contrast_percent": {
+        "R": 6.611,
+        "G": -2.449,
+        "B": -6.15
+      },
+      "monochromatic_450_550_650_nm_percent": [
+        -3.278,
+        -4.458,
+        7.559
+      ]
+    },
+    {
+      "material": "1.4",
+      "thickness_nm": 10,
+      "illustrative_top_hat_RGB_contrast_percent": {
+        "R": 13.129,
+        "G": -7.962,
+        "B": -11.741
+      },
+      "monochromatic_450_550_650_nm_percent": [
+        -5.707,
+        -12.757,
+        15.152
+      ]
+    },
+    {
+      "material": "1.4",
+      "thickness_nm": 20,
+      "illustrative_top_hat_RGB_contrast_percent": {
+        "R": 25.319,
+        "G": -27.029,
+        "B": -20.74
+      },
+      "monochromatic_450_550_650_nm_percent": [
+        -7.963,
+        -39.074,
+        29.777
+      ]
+    },
+    {
+      "material": "1.4",
+      "thickness_nm": 50,
+      "illustrative_top_hat_RGB_contrast_percent": {
+        "R": 45.95,
+        "G": -116.385,
+        "B": -25.571
+      },
+      "monochromatic_450_550_650_nm_percent": [
+        6.056,
+        -150.268,
+        56.122
+      ]
+    },
+    {
+      "material": "1.5",
+      "thickness_nm": 1,
+      "illustrative_top_hat_RGB_contrast_percent": {
+        "R": 1.721,
+        "G": -0.322,
+        "B": -1.65
+      },
+      "monochromatic_450_550_650_nm_percent": [
+        -0.94,
+        -0.761,
+        1.955
+      ]
+    },
+    {
+      "material": "1.5",
+      "thickness_nm": 5,
+      "illustrative_top_hat_RGB_contrast_percent": {
+        "R": 8.573,
+        "G": -3.54,
+        "B": -8.014
+      },
+      "monochromatic_450_550_650_nm_percent": [
+        -4.261,
+        -6.245,
+        9.823
+      ]
+    },
+    {
+      "material": "1.5",
+      "thickness_nm": 10,
+      "illustrative_top_hat_RGB_contrast_percent": {
+        "R": 16.924,
+        "G": -11.708,
+        "B": -15.293
+      },
+      "monochromatic_450_550_650_nm_percent": [
+        -7.413,
+        -18.265,
+        19.622
+      ]
+    },
+    {
+      "material": "1.5",
+      "thickness_nm": 20,
+      "illustrative_top_hat_RGB_contrast_percent": {
+        "R": 32.041,
+        "G": -39.728,
+        "B": -26.9
+      },
+      "monochromatic_450_550_650_nm_percent": [
+        -10.351,
+        -56.195,
+        38.048
+      ]
+    },
+    {
+      "material": "1.5",
+      "thickness_nm": 50,
+      "illustrative_top_hat_RGB_contrast_percent": {
+        "R": 51.197,
+        "G": -160.811,
+        "B": -32.129
+      },
+      "monochromatic_450_550_650_nm_percent": [
+        7.659,
+        -203.089,
+        63.226
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "state": "complete",
+  "pid": 27528,
+  "output": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\analysis\\graphene\\scan-20261013-221727-131d9ced\\chip001\\operator-empirical-full-v1",
+  "updated_at": 1792040261.180305,
+  "no_acquisition_performed": true,
+  "cpu": {
+    "threads": 1,
+    "priority": "below_normal",
+    "windows_affinity": "explicit bounded CPU mask",
+    "cpu_masks": [
+      1,
+      2
+    ]
+  },
+  "memory_capacity": {
+    "physical_available_bytes": 2332655616,
+    "physical_total_bytes": 16851456000,
+    "commit_available_bytes": 27774943232,
+    "address_available_bytes": 140732815294464,
+    "policy": "windows_commit_and_address_capacity_v1",
+    "purpose": "two measured offline segmentation workers",
+    "working_allowance_bytes": 1113587712,
+    "uncertainty_allowance_bytes": 278396928,
+    "required_capacity_bytes": 1391984640,
+    "adequate": true,
+    "physical_free_floor_bytes": 0,
+    "qualification": "Estimated incremental allocation plus 25% uncertainty; Windows paging remains enabled and unchanged."
+  },
+  "current_field": null,
+  "finished_fields": 999,
+  "selected_fields": 999,
+  "counts": {
+    "assessed": 942,
+    "unassessable": 57,
+    "budget_exhausted": 0,
+    "invalid_source": 0,
+    "failed": 0
+  }
+}

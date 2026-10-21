@@ -1,0 +1,17 @@
+{
+  "position": {
+    "x": 50,
+    "y": 50,
+    "z": 20
+  },
+  "pixel_size_um": [
+    1,
+    1
+  ],
+  "sequence": 0,
+  "acquired_at": 1791753868.572015,
+  "metadata": {
+    "white_level": 4095,
+    "source": "TEST"
+  }
+}

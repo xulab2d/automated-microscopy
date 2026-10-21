@@ -1,0 +1,126 @@
+{
+  "run_id": "scan-20261015-215627-bb0a2529",
+  "original_state": "storage_budget_reached",
+  "tile_count": 4690,
+  "original_preflight": {
+    "sufficient": false,
+    "volumes": [
+      {
+        "volume_id": "428019990",
+        "checked_existing_path": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261015-215627-bb0a2529",
+        "free_bytes": 128953200640,
+        "estimated_new_bytes": 217255101952,
+        "reserve_bytes": 10737418240,
+        "destinations": [
+          {
+            "kind": "scan_and_derived",
+            "path": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261015-215627-bb0a2529\\chip001",
+            "estimated_new_bytes": 216718231040
+          },
+          {
+            "kind": "vendor_job_results",
+            "path": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\zen-captures",
+            "estimated_new_bytes": 536870912
+          }
+        ],
+        "required_free_bytes": 227992520192,
+        "sufficient": false
+      }
+    ],
+    "raw_frame_bytes": 30395904,
+    "tile_count": 4690,
+    "anchor_focus_attempts": 4,
+    "geometry_local_focus_attempts": 1668,
+    "reserved_local_focus_attempts": 2,
+    "full_frame_captures_per_focus_allowance": 63,
+    "runtime_local_focus_attempt_limit": 2,
+    "durable_observation_allowance_bytes": 1606418432,
+    "pending_vendor_allowance_bytes": 536870912,
+    "options": {
+      "reserve_bytes": 10737418240,
+      "scan_bytes_per_raw_byte": 1.5,
+      "vendor_bytes_per_raw_byte": 1.25,
+      "unexpected_local_focus_fraction": 0.05,
+      "guarded_extra_local_focus_attempts": 2
+    },
+    "vendor_copies_counted": true,
+    "keep_vendor_results": false,
+    "scientific_vendor_peak_copies": 1,
+    "planning_policy": "expected_focus_with_per_capture_reserve_guard",
+    "per_capture_guard": {
+      "reserve_bytes": 10737418240,
+      "next_capture_allowance_bytes": 536870912
+    },
+    "qualification": "Planning allowance including full-frame vendor results, geometry-predicted and extra autofocus, and free-space reserve; unrelated disk writers or additional focus failures can exceed it."
+  },
+  "repaired_preflight": {
+    "sufficient": false,
+    "can_start": true,
+    "volumes": [
+      {
+        "volume_id": "428019990",
+        "checked_existing_path": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261015-215627-bb0a2529",
+        "free_bytes": 128953200640,
+        "estimated_new_bytes": 217255101952,
+        "reserve_bytes": 10737418240,
+        "destinations": [
+          {
+            "kind": "scan_and_derived",
+            "path": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261015-215627-bb0a2529\\chip001",
+            "estimated_new_bytes": 216718231040
+          },
+          {
+            "kind": "vendor_job_results",
+            "path": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\zen-captures",
+            "estimated_new_bytes": 536870912
+          }
+        ],
+        "required_free_bytes": 227992520192,
+        "sufficient": false,
+        "next_capture_reserve_bytes": 10737418240,
+        "next_capture_allowance_bytes": 536870912,
+        "next_capture_required_free_bytes": 11274289152,
+        "next_capture_sufficient": true
+      }
+    ],
+    "admission_policy": "next_capture_with_runtime_reserve_guard",
+    "admission_reason": "whole_chip_forecast_exceeds_free_space_guarded_partial_acquisition_allowed",
+    "whole_chip_forecast_advisory": true,
+    "raw_frame_bytes": 30395904,
+    "tile_count": 4690,
+    "anchor_focus_attempts": 4,
+    "geometry_local_focus_attempts": 0,
+    "reserved_local_focus_attempts": 2,
+    "full_frame_captures_per_focus_allowance": 63,
+    "runtime_local_focus_attempt_limit": 2,
+    "durable_observation_allowance_bytes": 1606418432,
+    "pending_vendor_allowance_bytes": 536870912,
+    "options": {
+      "reserve_bytes": 10737418240,
+      "scan_bytes_per_raw_byte": 1.5,
+      "vendor_bytes_per_raw_byte": 1.25,
+      "unexpected_local_focus_fraction": 0.05,
+      "guarded_extra_local_focus_attempts": 2
+    },
+    "vendor_copies_counted": true,
+    "keep_vendor_results": false,
+    "scientific_vendor_peak_copies": 1,
+    "planning_policy": "expected_focus_with_per_capture_reserve_guard",
+    "per_capture_guard": {
+      "reserve_bytes": 10737418240,
+      "next_capture_allowance_bytes": 536870912,
+      "output_guard": "full_chip_before_each_capture",
+      "vendor_guard": "zen_before_each_camera_job"
+    },
+    "qualification": "Planning allowance including full-frame vendor results, geometry-predicted and extra autofocus, and free-space reserve; unrelated disk writers or additional focus failures can exceed it."
+  },
+  "saved_raw_samples": 25,
+  "tiff_compression_tags": [
+    5
+  ],
+  "median_raw_file_bytes": 20206964,
+  "maximum_raw_file_bytes": 20540982,
+  "projected_raw_gib_at_median": 88.26205614954233,
+  "projected_raw_gib_at_maximum": 89.72101433202624,
+  "qualification": "Offline admission replay at the original free-space reading. File-size projection excludes previews/derived files and is not a completion guarantee. No hardware calls or source data edits."
+}

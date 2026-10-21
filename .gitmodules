@@ -1,0 +1,9 @@
+[submodule "external/2DMatGMM"]
+	path = external/2DMatGMM
+	url = https://github.com/Jaluus/2DMatGMM.git
+[submodule "external/MaskTerial"]
+	path = external/MaskTerial
+	url = https://github.com/Jaluus/MaskTerial.git
+[submodule "external/TMDFlakeFinder"]
+	path = external/TMDFlakeFinder
+	url = https://github.com/JGCrimmann/TMDFlakeFinder.git

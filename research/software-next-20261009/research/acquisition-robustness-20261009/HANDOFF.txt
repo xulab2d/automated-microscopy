@@ -1,0 +1,40 @@
+ACQUISITION ROBUSTNESS — OFFLINE STAGED IMPLEMENTATION
+
+New defaults and UI fields
+- FullChipOptions.max_local_focus_attempts = 2 (0..100 integer). Manifest
+  local_focus_attempts records each attempt before selection/capture. Attempt
+  count survives explicit resume; no automatic reset or retry. Each local plus
+  recovery sequence shares 180 seconds / 48 captures. Failed local focus stops
+  before a final tile; campaign records focus_unresolved and may continue to
+  another chip only through its existing confirmed-STOP/arm path.
+- Camera preflight requires 1 GiB available RAM reserve plus 512 MiB working
+  allowance. This happens before a new job, and for legacy stream capture.
+  capture_memory_guard records the observation. Decoded RGB is capped at
+  128 MiB before copy. Mosaic allocation checks reserve + 48 bytes/pixel
+  estimated working space. These are conservative preflight checks, not a
+  guarantee against external applications allocating RAM concurrently.
+- Search/raster lattice counts are checked before np.linspace/list creation.
+  Search explicit cap <= 1,000,000; polygon raster candidate lattice also has
+  a 1,000,000 hard cap. Current regular scan defaults remain 10,000 tiles.
+- Full-chip terminal state is saved before derived coverage/overview output.
+  Secondary finalization errors do not replace the primary STOP/focus failure.
+  derived_outputs_pending and finalization_errors explain incomplete previews.
+
+Ownership and compatibility
+- HardwareLease uses ProgramData/FlakeFinder/hardware-leases on Windows and
+  simultaneously holds legacy checkout locks. A staged checkout discovers old
+  installation ancestors containing flakefinder/zen.py, covering the original
+  GUI. localhost/127.0.0.1/[::1] share an endpoint identity; all corresponding
+  legacy names are locked. Partial lock acquisition is rolled back. No local
+  fallback if ProgramData is unavailable/unwritable.
+- Worker must acquire scope.lease before initial position/readback. arm() now
+  acquires before checking limits/optics. stop() refuses hardware STOP when a
+  real client never obtained its lease, preventing failed competing startup
+  from stopping another owner. close() releases all held locks.
+- Unit tests use synthetic frames and temporary host/legacy lock files. No
+  actual hardware lock, client, position, camera or motion was accessed.
+
+Validation: 33 focused checks passed, then 4 targeted finalization/lease checks.
+No GUI files, material models, original frozen source, holds or STOPs changed.
+Existing exact-source camera-overlap acceptance is invalidated by zen.py edits;
+future stationary qualification is still required before enabling that path.

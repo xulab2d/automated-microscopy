@@ -1,0 +1,34 @@
+{
+  "source_log": "C:\\ProgramData\\Carl Zeiss\\Logging\\ZENCore.log.xml",
+  "session": "c6de09c7990c48b783527470afda19c6",
+  "events": [
+    {
+      "line": 4922,
+      "text": "<event logger=\"Zeiss.Micro.Workflows.Api.WorkflowApiManager\" timestamp=\"2026-10-09T09:22:28.2091994-07:00\" level=\"INFO\" thread=\"389\" domain=\"ZENcore\"><message>LoadJobTemplate(): Loaded job template: FlakeFinder Request Snap Prototype v1</message><properties><data name=\"SoftwareVersion\" value=\"3.12.108.02000\" /></properties></event>"
+    },
+    {
+      "line": 4923,
+      "text": "<event logger=\"Zeiss.Micro.Workflows.Api.WorkflowApiManager\" timestamp=\"2026-10-09T09:22:28.2182161-07:00\" level=\"INFO\" thread=\"67\" domain=\"ZENcore\"><message>ExecuteJobAsync(): Started job: FlakeFinder Request Snap Prototype v1</message><properties><data name=\"SoftwareVersion\" value=\"3.12.108.02000\" /></properties></event>"
+    },
+    {
+      "line": 4924,
+      "text": "<event logger=\"Zeiss.Micro.Workflows.Api.WorkflowApiManager\" timestamp=\"2026-10-09T09:22:34.8856876-07:00\" level=\"INFO\" thread=\"387\" domain=\"ZENcore\"><message>RunJobAsync(): The job execution has completed successfully</message><properties><data name=\"SoftwareVersion\" value=\"3.12.108.02000\" /></properties></event>"
+    },
+    {
+      "line": 4925,
+      "text": "<event logger=\"Zeiss.Micro.Workflows.Api.WorkflowApiManager\" timestamp=\"2026-10-09T09:22:34.8868733-07:00\" level=\"INFO\" thread=\"387\" domain=\"ZENcore\"><message>FinalizeJobResults(): Purging unreferenced results</message><properties><data name=\"SoftwareVersion\" value=\"3.12.108.02000\" /></properties></event>"
+    },
+    {
+      "line": 4926,
+      "text": "<event logger=\"Zeiss.Micro.Workflows.Api.WorkflowApiManager\" timestamp=\"2026-10-09T09:22:37.5678137-07:00\" level=\"INFO\" thread=\"387\" domain=\"ZENcore\"><message>FinalizeJobResults(): Finalizing the job results at path: C:\\Users\\[OS_USER_NAME]\\Documents\\ChatGPT\\Automated Microscopy\\scripts\\camera_fastpath\\transport\\c6de09c7990c48b783527470afda19c6\\vendor-result</message><properties><data name=\"SoftwareVersion\" value=\"3.12.108.02000\" /></properties></event>"
+    },
+    {
+      "line": 4927,
+      "text": "<event logger=\"Zeiss.Micro.Workflows.Api.WorkflowApiManager\" timestamp=\"2026-10-09T09:22:37.7252142-07:00\" level=\"ERROR\" thread=\"387\" domain=\"ZENcore\"><message>RunJobAsync(): The job execution has failed, discarding job results: System.ArgumentException: itemsToBeFinalized must not be empty (Parameter 'itemsToBeFinalized')\n   at Zeiss.Micro.Transfer.FinalizationManager.Finalize(String finalizationFolder, ResultSetInfo resultSetInfo, IEnumerable`1 itemsToBeFinalized, Dictionary`2 globalMetadata)\n   at Zeiss.Micro.Workflows.Api.WorkflowApiManager.FinalizeJobResults(JobDocument jobDocument)\n   at Zeiss.Micro.Workflows.Api.WorkflowApiManager.ExecuteJobAsync(CancellationToken cancellationToken)</message><properties><data name=\"SoftwareVersion\" value=\"3.12.108.02000\" /></properties></event>"
+    },
+    {
+      "line": 4931,
+      "text": "<event logger=\"Zeiss.Micro.Workflows.ArchiveManagementExtensions\" timestamp=\"2026-10-09T09:22:40.1972494-07:00\" level=\"INFO\" thread=\"387\" domain=\"ZENcore\"><message>DeleteSandbox(): Deleting sandbox folder 'C:\\Users\\[OS_USER_NAME]\\Documents\\ChatGPT\\Automated Microscopy\\scripts\\camera_fastpath\\transport\\c6de09c7990c48b783527470afda19c6\\vendor-result'</message><properties><data name=\"SoftwareVersion\" value=\"3.12.108.02000\" /></properties></event>"
+    }
+  ]
+}

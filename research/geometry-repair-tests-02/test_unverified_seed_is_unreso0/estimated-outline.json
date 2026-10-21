@@ -1,0 +1,23 @@
+{
+  "status": "unresolved",
+  "reason": "Fewer than three coherent edge directions.",
+  "lines": [],
+  "algorithm": "sparse_photometric_halfplanes_v3",
+  "registered_consistency": {
+    "accepted": true,
+    "observation_count": 1,
+    "line_checks": [],
+    "qualification": "Same separated convex chip hypothesis; not proof of unsampled gaps or complete coverage."
+  },
+  "outcome": "edge_not_found",
+  "evidence": {
+    "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\geometry-repair-tests-02\\test_unverified_seed_is_unreso0",
+    "images": 1,
+    "new_probe_images": 1,
+    "imported_probe_images": 0,
+    "coherent_edge_images": 0,
+    "discovery_sha256": "fd570b4c7c070dc7e66145a634013e2d889b307197c4af45bf205cc4c7b56cec"
+  },
+  "acquisition_assumption": "One separated convex chip with approximately straight edges. Coarse hops may cross unobserved gaps.",
+  "all_chips_found": false
+}

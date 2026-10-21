@@ -1,0 +1,2777 @@
+{
+  "schema": 1,
+  "plan": {
+    "bounds_um": [
+      190.0,
+      810.0,
+      150.0,
+      810.0
+    ],
+    "overlap": 0.15,
+    "autofocus_every": 5,
+    "focus_half_range_um": 12,
+    "focus_step_um": 3,
+    "max_tiles": 10000,
+    "chip_id": "arbitrary-chip",
+    "polygon_um": [
+      [
+        682.5,
+        152.5
+      ],
+      [
+        807.5,
+        192.5
+      ],
+      [
+        807.5,
+        807.5
+      ],
+      [
+        192.5,
+        807.5
+      ],
+      [
+        192.5,
+        192.5
+      ],
+      [
+        572.5,
+        152.5
+      ]
+    ],
+    "mode": "survey",
+    "focus_strategy": "surface",
+    "focus_search_bounds_um": null,
+    "focus_max_residual_um": 1.0,
+    "focus_initial_recovery": false
+  },
+  "transform": {
+    "matrix": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "pixel_size_um": [
+      1.0,
+      1.0
+    ],
+    "calibrated": true
+  },
+  "limits": {
+    "x_min": 0,
+    "x_max": 1600,
+    "y_min": 0,
+    "y_max": 1200,
+    "z_min": 50,
+    "z_max": 150,
+    "max_xy_step_um": 300,
+    "max_z_step_um": 10
+  },
+  "context": {},
+  "acquisition_settings": {
+    "camera_job_template": null,
+    "camera_resources": {
+      "fixed": 1
+    },
+    "objective_position": 2,
+    "illumination_percent": null
+  },
+  "camera_shape": [
+    128,
+    160,
+    3
+  ],
+  "source": "TEST",
+  "material_model": null,
+  "coverage_plan_fingerprint": "731d13c21c4f30513c5454a2522be836e077d8b1a046a5efd2084dfe2057a52d",
+  "full_chip_options": {
+    "overlap": 0.15,
+    "focus_roi_um": 40,
+    "minimum_substrate_fraction": 0.9,
+    "anchor_count": 4,
+    "focus_half_range_um": 5,
+    "focus_step_um": 2,
+    "focus_fine_step_um": 0.5,
+    "focus_max_residual_um": 1.0,
+    "max_local_focus_offset_um": 150,
+    "focus_search_bounds_um": null,
+    "max_tiles": 10000,
+    "focus_max_extrapolation_um": 0,
+    "focus_max_extrapolation_fraction": 0.25,
+    "focus_max_prediction_sigma_um": 2.0,
+    "focus_measurement_floor_um": 0.5,
+    "adaptive_focus_recovery": true,
+    "focus_anchor_mode": "chip_edges",
+    "edge_focus_roi_um": 64.0,
+    "max_local_focus_attempts": 100
+  },
+  "prior_focus_provenance": null,
+  "seed_focus_provenance": null,
+  "coverage_kind": "full_measured_enclosure_coverage",
+  "algorithm_source_sha256": "ab0bf76d3aa1dae2d68aad7d82002d13911f8b71e7ca2c5003b910a0cbfa891a",
+  "fingerprint": "2402495d0d45f00ea982225c297556f84e1bd631034916c9cea1c27a2532add7",
+  "started_at": 1791598431.7716393,
+  "completed": {
+    "tile_000000": {
+      "position": {
+        "x": 269.375,
+        "y": 213.5,
+        "z": 100
+      },
+      "sequence": 65,
+      "focus": {
+        "success": true,
+        "z_um": 100,
+        "score": 1.0,
+        "prominence": 0.2,
+        "reason": "Synthetic measured focus",
+        "samples": [],
+        "outcome": "resolved_peak",
+        "budget": null
+      },
+      "focus_method": "in_field_substrate_roi_autofocus",
+      "focus_prediction_um": null,
+      "full_chip_focus": {
+        "method": "in_field_substrate_roi_autofocus",
+        "focus_verified": true,
+        "extrapolated": false,
+        "focus_point_xy_um": [
+          229.375,
+          229.5
+        ],
+        "roi_source_px": [
+          20,
+          60,
+          60,
+          100
+        ],
+        "substrate_fraction": 1.0,
+        "result": {
+          "success": true,
+          "z_um": 100,
+          "score": 1.0,
+          "prominence": 0.2,
+          "reason": "Synthetic measured focus",
+          "samples": [],
+          "outcome": "resolved_peak",
+          "budget": null
+        },
+        "plane_prediction_rejection": "Field exceeds the bounded focus-plane extrapolation distance.",
+        "local_focus_verified": true,
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000000.tiff": "153dba66b3c0e96fe7b300255ebff9a7fdcf16ee1ab96a6632fd6631af5a74e9",
+        "tiles/tile_000000.json": "dbae019e4e931e2ff60f733b81647665a413c3282439301134c474d5e7e6fe7f",
+        "tiles/tile_000000.flakes.json": "db5d138755a72d495571569cef82767570480e18cef3d61064a7b998e0babc29",
+        "boundary-labels/tile_000000.npz": "4ad38d8f752d7ed1ee7b0115d8df025646b35a8fdaf18e6a9dc9216a02415ed9"
+      }
+    },
+    "tile_000001": {
+      "position": {
+        "x": 384.6875,
+        "y": 213.5,
+        "z": 100
+      },
+      "sequence": 69,
+      "focus": {
+        "success": true,
+        "z_um": 100,
+        "score": 1.0,
+        "prominence": 0.2,
+        "reason": "Synthetic measured focus",
+        "samples": [],
+        "outcome": "resolved_peak",
+        "budget": null
+      },
+      "focus_method": "in_field_substrate_roi_autofocus",
+      "focus_prediction_um": null,
+      "full_chip_focus": {
+        "method": "in_field_substrate_roi_autofocus",
+        "focus_verified": true,
+        "extrapolated": false,
+        "focus_point_xy_um": [
+          342.6875,
+          215.5
+        ],
+        "roi_source_px": [
+          18,
+          46,
+          58,
+          86
+        ],
+        "substrate_fraction": 0.8999999761581421,
+        "result": {
+          "success": true,
+          "z_um": 100,
+          "score": 1.0,
+          "prominence": 0.2,
+          "reason": "Synthetic measured focus",
+          "samples": [],
+          "outcome": "resolved_peak",
+          "budget": null
+        },
+        "plane_prediction_rejection": "Field exceeds the bounded focus-plane extrapolation distance.",
+        "local_focus_verified": true,
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000001.tiff": "01dee0d089f1b99f6d2ffc83a4c0c272ba5150af38f97580fe347b9748dccc60",
+        "tiles/tile_000001.json": "5c8be5dc2c65020e143e94544d4d976feb1b32a36266e481d9af4c3a2175817f",
+        "tiles/tile_000001.flakes.json": "161c65d08bb1835cebb47fc0dbe9af7c2d61611a61731e0c21820bc9fe557db1",
+        "boundary-labels/tile_000001.npz": "f2c2a176a6d8709b1b78894b37859197b9f5edd4554f4f5741a7d49c489f07b1"
+      }
+    },
+    "tile_000002": {
+      "position": {
+        "x": 500.0,
+        "y": 213.5,
+        "z": 100
+      },
+      "sequence": 72,
+      "focus": {
+        "success": true,
+        "z_um": 100,
+        "score": 1.0,
+        "prominence": 0.2,
+        "reason": "Synthetic measured focus",
+        "samples": [],
+        "outcome": "resolved_peak",
+        "budget": null
+      },
+      "focus_method": "in_field_substrate_roi_autofocus",
+      "focus_prediction_um": null,
+      "full_chip_focus": {
+        "method": "in_field_substrate_roi_autofocus",
+        "focus_verified": true,
+        "extrapolated": false,
+        "focus_point_xy_um": [
+          458.0,
+          215.5
+        ],
+        "roi_source_px": [
+          18,
+          46,
+          58,
+          86
+        ],
+        "substrate_fraction": 0.8999999761581421,
+        "result": {
+          "success": true,
+          "z_um": 100,
+          "score": 1.0,
+          "prominence": 0.2,
+          "reason": "Synthetic measured focus",
+          "samples": [],
+          "outcome": "resolved_peak",
+          "budget": null
+        },
+        "plane_prediction_rejection": "Field exceeds the bounded focus-plane extrapolation distance.",
+        "local_focus_verified": true,
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000002.tiff": "01dee0d089f1b99f6d2ffc83a4c0c272ba5150af38f97580fe347b9748dccc60",
+        "tiles/tile_000002.json": "643388f0d8ea4597e09b2ff6fb45ba36c7a811a8c09691c6800f4416902d75e3",
+        "tiles/tile_000002.flakes.json": "776c6a04d28d20d976575ddbdcc50939ca2ddcacc25a8a4e2932c7a7c59111bc",
+        "boundary-labels/tile_000002.npz": "f2c2a176a6d8709b1b78894b37859197b9f5edd4554f4f5741a7d49c489f07b1"
+      }
+    },
+    "tile_000003": {
+      "position": {
+        "x": 615.3125,
+        "y": 213.5,
+        "z": 100
+      },
+      "sequence": 75,
+      "focus": {
+        "success": true,
+        "z_um": 100,
+        "score": 1.0,
+        "prominence": 0.2,
+        "reason": "Synthetic measured focus",
+        "samples": [],
+        "outcome": "resolved_peak",
+        "budget": null
+      },
+      "focus_method": "in_field_substrate_roi_autofocus",
+      "focus_prediction_um": null,
+      "full_chip_focus": {
+        "method": "in_field_substrate_roi_autofocus",
+        "focus_verified": true,
+        "extrapolated": false,
+        "focus_point_xy_um": [
+          573.3125,
+          215.5
+        ],
+        "roi_source_px": [
+          18,
+          46,
+          58,
+          86
+        ],
+        "substrate_fraction": 0.8999999761581421,
+        "result": {
+          "success": true,
+          "z_um": 100,
+          "score": 1.0,
+          "prominence": 0.2,
+          "reason": "Synthetic measured focus",
+          "samples": [],
+          "outcome": "resolved_peak",
+          "budget": null
+        },
+        "plane_prediction_rejection": "Field exceeds the bounded focus-plane extrapolation distance.",
+        "local_focus_verified": true,
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000003.tiff": "01dee0d089f1b99f6d2ffc83a4c0c272ba5150af38f97580fe347b9748dccc60",
+        "tiles/tile_000003.json": "6a673cbc90a4e37db3ee13ff4dd3fb35bdfd580d048718f63bfb6a45b6b6bef7",
+        "tiles/tile_000003.flakes.json": "39235e02a7eaf791bad404b74a59496655b36047fb007b59c6eb963313db4108",
+        "boundary-labels/tile_000003.npz": "f2c2a176a6d8709b1b78894b37859197b9f5edd4554f4f5741a7d49c489f07b1"
+      }
+    },
+    "tile_000004": {
+      "position": {
+        "x": 730.625,
+        "y": 213.5,
+        "z": 100
+      },
+      "sequence": 78,
+      "focus": {
+        "success": true,
+        "z_um": 100,
+        "score": 1.0,
+        "prominence": 0.2,
+        "reason": "Synthetic measured focus",
+        "samples": [],
+        "outcome": "resolved_peak",
+        "budget": null
+      },
+      "focus_method": "in_field_substrate_roi_autofocus",
+      "focus_prediction_um": null,
+      "full_chip_focus": {
+        "method": "in_field_substrate_roi_autofocus",
+        "focus_verified": true,
+        "extrapolated": false,
+        "focus_point_xy_um": [
+          770.625,
+          229.5
+        ],
+        "roi_source_px": [
+          100,
+          60,
+          140,
+          100
+        ],
+        "substrate_fraction": 1.0,
+        "result": {
+          "success": true,
+          "z_um": 100,
+          "score": 1.0,
+          "prominence": 0.2,
+          "reason": "Synthetic measured focus",
+          "samples": [],
+          "outcome": "resolved_peak",
+          "budget": null
+        },
+        "plane_prediction_rejection": "Field exceeds the bounded focus-plane extrapolation distance.",
+        "local_focus_verified": true,
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000004.tiff": "a2153add879535870336ef3f7e1569e0506d08ad2a4269b8501849564e48b3cc",
+        "tiles/tile_000004.json": "5d94c4381fbf2705d12251bb9c336397167055e2527ad3061d602bcf517752f4",
+        "tiles/tile_000004.flakes.json": "6b5deb974fa084734faf9d0f550065c5c7a8d84a29d8b916d7c558d35909b960",
+        "boundary-labels/tile_000004.npz": "ce7c2607cffbdb912165d2ab1b8f122f34e2a7b91e909bfe667bc97dbbb6a182"
+      }
+    },
+    "tile_000005": {
+      "position": {
+        "x": 730.625,
+        "y": 320.1,
+        "z": 100
+      },
+      "sequence": 79,
+      "focus": null,
+      "focus_method": "measured_surface_interpolation",
+      "focus_prediction_um": 100.00000000000001,
+      "full_chip_focus": {
+        "method": "measured_surface_interpolation",
+        "predicted_z_um": 100.00000000000001,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": false,
+        "extrapolation_distance_um": 0.0,
+        "extrapolation_limit_um": 0,
+        "anchor_count": 9,
+        "anchor_points_um": [
+          [
+            229.375,
+            229.5,
+            100.0
+          ],
+          [
+            232.5,
+            237.5,
+            100.0
+          ],
+          [
+            237.5,
+            767.5,
+            100.0
+          ],
+          [
+            342.6875,
+            215.5,
+            100.0
+          ],
+          [
+            458.0,
+            215.5,
+            100.0
+          ],
+          [
+            573.3125,
+            215.5,
+            100.0
+          ],
+          [
+            762.5,
+            232.5,
+            100.0
+          ],
+          [
+            767.5,
+            762.5,
+            100.0
+          ],
+          [
+            770.625,
+            229.5,
+            100.0
+          ]
+        ],
+        "sample_rms_um": 1.4210854715202004e-14,
+        "max_anchor_residual_um": 1.4210854715202004e-14,
+        "residual_standard_error_um": 1.7404671430534633e-14,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.24440766741273615,
+        "conditional_prediction_sigma_um": 0.24718801923471945,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000005.tiff": "8e1fb2fa20e07e0c5fb2a0f1b698973f6472353e0cd85e00eb0299e67623a98d",
+        "tiles/tile_000005.json": "36fef126e2ccf6f84e3bb58b8f189a7a883808079d92c37c2558e37e14951189",
+        "tiles/tile_000005.flakes.json": "a854339f6d4e6ea5c4a2213a58e7570346ce4dfd9cb7949661e52aeb01804285",
+        "boundary-labels/tile_000005.npz": "f89a53f398fe0aaf5911c3b84ffd4afc719a7e9b8abefe705a842df3f65ccd0c"
+      }
+    },
+    "tile_000006": {
+      "position": {
+        "x": 615.3125,
+        "y": 320.1,
+        "z": 100
+      },
+      "sequence": 80,
+      "focus": null,
+      "focus_method": "measured_surface_interpolation",
+      "focus_prediction_um": 100.00000000000001,
+      "full_chip_focus": {
+        "method": "measured_surface_interpolation",
+        "predicted_z_um": 100.00000000000001,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": false,
+        "extrapolation_distance_um": 0.0,
+        "extrapolation_limit_um": 0,
+        "anchor_count": 9,
+        "anchor_points_um": [
+          [
+            229.375,
+            229.5,
+            100.0
+          ],
+          [
+            232.5,
+            237.5,
+            100.0
+          ],
+          [
+            237.5,
+            767.5,
+            100.0
+          ],
+          [
+            342.6875,
+            215.5,
+            100.0
+          ],
+          [
+            458.0,
+            215.5,
+            100.0
+          ],
+          [
+            573.3125,
+            215.5,
+            100.0
+          ],
+          [
+            762.5,
+            232.5,
+            100.0
+          ],
+          [
+            767.5,
+            762.5,
+            100.0
+          ],
+          [
+            770.625,
+            229.5,
+            100.0
+          ]
+        ],
+        "sample_rms_um": 1.4210854715202004e-14,
+        "max_anchor_residual_um": 1.4210854715202004e-14,
+        "residual_standard_error_um": 1.7404671430534633e-14,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.1495877818131573,
+        "conditional_prediction_sigma_um": 0.19338289855436888,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000006.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "tiles/tile_000006.json": "98fbadbd9df9284558a8ba019fa499a6848036c1338e727a519b800649e1fbce",
+        "tiles/tile_000006.flakes.json": "a7e3c9e5807c413fe906f36726a918d2c26898749aec25a90eccc51de294daa8",
+        "boundary-labels/tile_000006.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      }
+    },
+    "tile_000007": {
+      "position": {
+        "x": 500.0,
+        "y": 320.1,
+        "z": 100
+      },
+      "sequence": 81,
+      "focus": null,
+      "focus_method": "measured_surface_interpolation",
+      "focus_prediction_um": 100.00000000000001,
+      "full_chip_focus": {
+        "method": "measured_surface_interpolation",
+        "predicted_z_um": 100.00000000000001,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": false,
+        "extrapolation_distance_um": 0.0,
+        "extrapolation_limit_um": 0,
+        "anchor_count": 9,
+        "anchor_points_um": [
+          [
+            229.375,
+            229.5,
+            100.0
+          ],
+          [
+            232.5,
+            237.5,
+            100.0
+          ],
+          [
+            237.5,
+            767.5,
+            100.0
+          ],
+          [
+            342.6875,
+            215.5,
+            100.0
+          ],
+          [
+            458.0,
+            215.5,
+            100.0
+          ],
+          [
+            573.3125,
+            215.5,
+            100.0
+          ],
+          [
+            762.5,
+            232.5,
+            100.0
+          ],
+          [
+            767.5,
+            762.5,
+            100.0
+          ],
+          [
+            770.625,
+            229.5,
+            100.0
+          ]
+        ],
+        "sample_rms_um": 1.4210854715202004e-14,
+        "max_anchor_residual_um": 1.4210854715202004e-14,
+        "residual_standard_error_um": 1.7404671430534633e-14,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.1129685124885081,
+        "conditional_prediction_sigma_um": 0.168053944083818,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000007.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "tiles/tile_000007.json": "f542c93f70e304d4d29093ff598895e7180852b9e726197858ed7c710058900e",
+        "tiles/tile_000007.flakes.json": "c7d7dc94a4a0921465d3d28c9a990549514c061448ca17bfb64061eb84b9185e",
+        "boundary-labels/tile_000007.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      }
+    },
+    "tile_000008": {
+      "position": {
+        "x": 384.6875,
+        "y": 320.1,
+        "z": 100
+      },
+      "sequence": 82,
+      "focus": null,
+      "focus_method": "measured_surface_interpolation",
+      "focus_prediction_um": 100.00000000000001,
+      "full_chip_focus": {
+        "method": "measured_surface_interpolation",
+        "predicted_z_um": 100.00000000000001,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": false,
+        "extrapolation_distance_um": 0.0,
+        "extrapolation_limit_um": 0,
+        "anchor_count": 9,
+        "anchor_points_um": [
+          [
+            229.375,
+            229.5,
+            100.0
+          ],
+          [
+            232.5,
+            237.5,
+            100.0
+          ],
+          [
+            237.5,
+            767.5,
+            100.0
+          ],
+          [
+            342.6875,
+            215.5,
+            100.0
+          ],
+          [
+            458.0,
+            215.5,
+            100.0
+          ],
+          [
+            573.3125,
+            215.5,
+            100.0
+          ],
+          [
+            762.5,
+            232.5,
+            100.0
+          ],
+          [
+            767.5,
+            762.5,
+            100.0
+          ],
+          [
+            770.625,
+            229.5,
+            100.0
+          ]
+        ],
+        "sample_rms_um": 1.4210854715202004e-14,
+        "max_anchor_residual_um": 1.4210854715202004e-14,
+        "residual_standard_error_um": 1.7404671430534633e-14,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.1345498594387885,
+        "conditional_prediction_sigma_um": 0.18340519310994746,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000008.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "tiles/tile_000008.json": "493cd33a42f57ae5056afaef4391c90538b8c82b903f640eb54c49904227b63c",
+        "tiles/tile_000008.flakes.json": "e79094070fb5e6839420061dd50b5eda53145b76b4b13d17348f3db15269c586",
+        "boundary-labels/tile_000008.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      }
+    },
+    "tile_000009": {
+      "position": {
+        "x": 269.375,
+        "y": 320.1,
+        "z": 100
+      },
+      "sequence": 83,
+      "focus": null,
+      "focus_method": "measured_surface_interpolation",
+      "focus_prediction_um": 100.00000000000001,
+      "full_chip_focus": {
+        "method": "measured_surface_interpolation",
+        "predicted_z_um": 100.00000000000001,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": false,
+        "extrapolation_distance_um": 0.0,
+        "extrapolation_limit_um": 0,
+        "anchor_count": 9,
+        "anchor_points_um": [
+          [
+            229.375,
+            229.5,
+            100.0
+          ],
+          [
+            232.5,
+            237.5,
+            100.0
+          ],
+          [
+            237.5,
+            767.5,
+            100.0
+          ],
+          [
+            342.6875,
+            215.5,
+            100.0
+          ],
+          [
+            458.0,
+            215.5,
+            100.0
+          ],
+          [
+            573.3125,
+            215.5,
+            100.0
+          ],
+          [
+            762.5,
+            232.5,
+            100.0
+          ],
+          [
+            767.5,
+            762.5,
+            100.0
+          ],
+          [
+            770.625,
+            229.5,
+            100.0
+          ]
+        ],
+        "sample_rms_um": 1.4210854715202004e-14,
+        "max_anchor_residual_um": 1.4210854715202004e-14,
+        "residual_standard_error_um": 1.7404671430534633e-14,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.21433182266399853,
+        "conditional_prediction_sigma_um": 0.2314799249740669,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000009.tiff": "e356a54ec29b18c7fe990f4c22e0051e22aa849c90223f43327063e2221d7b0a",
+        "tiles/tile_000009.json": "0eebbcfb67f6aa06917457a51a7e2014915c9e19fc01f016b2a7c027c216a6a4",
+        "tiles/tile_000009.flakes.json": "53af5a22c34882c723d9c4c644dceee7fdeeb07d6e8f98c60846d3b45aa810d7",
+        "boundary-labels/tile_000009.npz": "a4beabb1abf083a832f0130bbf3982a90c82356a72f5bf12e0cea935d9e4d568"
+      }
+    },
+    "tile_000010": {
+      "position": {
+        "x": 269.375,
+        "y": 426.7,
+        "z": 100
+      },
+      "sequence": 84,
+      "focus": null,
+      "focus_method": "measured_surface_interpolation",
+      "focus_prediction_um": 100.00000000000001,
+      "full_chip_focus": {
+        "method": "measured_surface_interpolation",
+        "predicted_z_um": 100.00000000000001,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": false,
+        "extrapolation_distance_um": 0.0,
+        "extrapolation_limit_um": 0,
+        "anchor_count": 9,
+        "anchor_points_um": [
+          [
+            229.375,
+            229.5,
+            100.0
+          ],
+          [
+            232.5,
+            237.5,
+            100.0
+          ],
+          [
+            237.5,
+            767.5,
+            100.0
+          ],
+          [
+            342.6875,
+            215.5,
+            100.0
+          ],
+          [
+            458.0,
+            215.5,
+            100.0
+          ],
+          [
+            573.3125,
+            215.5,
+            100.0
+          ],
+          [
+            762.5,
+            232.5,
+            100.0
+          ],
+          [
+            767.5,
+            762.5,
+            100.0
+          ],
+          [
+            770.625,
+            229.5,
+            100.0
+          ]
+        ],
+        "sample_rms_um": 1.4210854715202004e-14,
+        "max_anchor_residual_um": 1.4210854715202004e-14,
+        "residual_standard_error_um": 1.7404671430534633e-14,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.231293185741406,
+        "conditional_prediction_sigma_um": 0.2404647509206942,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000010.tiff": "e356a54ec29b18c7fe990f4c22e0051e22aa849c90223f43327063e2221d7b0a",
+        "tiles/tile_000010.json": "f8d7e5c9a77c9956ad6a969c1f24c2c07b9ff2f493f4f7394725260d3d502ebd",
+        "tiles/tile_000010.flakes.json": "a7619f8909d59ec7867f2af48a71cb3716f83eb8466412b56c0dbf9965d6a65b",
+        "boundary-labels/tile_000010.npz": "a4beabb1abf083a832f0130bbf3982a90c82356a72f5bf12e0cea935d9e4d568"
+      }
+    },
+    "tile_000011": {
+      "position": {
+        "x": 384.6875,
+        "y": 426.7,
+        "z": 100
+      },
+      "sequence": 85,
+      "focus": null,
+      "focus_method": "measured_surface_interpolation",
+      "focus_prediction_um": 100.00000000000001,
+      "full_chip_focus": {
+        "method": "measured_surface_interpolation",
+        "predicted_z_um": 100.00000000000001,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": false,
+        "extrapolation_distance_um": 0.0,
+        "extrapolation_limit_um": 0,
+        "anchor_count": 9,
+        "anchor_points_um": [
+          [
+            229.375,
+            229.5,
+            100.0
+          ],
+          [
+            232.5,
+            237.5,
+            100.0
+          ],
+          [
+            237.5,
+            767.5,
+            100.0
+          ],
+          [
+            342.6875,
+            215.5,
+            100.0
+          ],
+          [
+            458.0,
+            215.5,
+            100.0
+          ],
+          [
+            573.3125,
+            215.5,
+            100.0
+          ],
+          [
+            762.5,
+            232.5,
+            100.0
+          ],
+          [
+            767.5,
+            762.5,
+            100.0
+          ],
+          [
+            770.625,
+            229.5,
+            100.0
+          ]
+        ],
+        "sample_rms_um": 1.4210854715202004e-14,
+        "max_anchor_residual_um": 1.4210854715202004e-14,
+        "residual_standard_error_um": 1.7404671430534633e-14,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.14957674531547954,
+        "conditional_prediction_sigma_um": 0.1933757645850945,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000011.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "tiles/tile_000011.json": "365dbe83bb34fe710a545e7f8732170749773f6e1f12a85b9ab10921dd4e3eaa",
+        "tiles/tile_000011.flakes.json": "704a11e58872abefb380091e34ffa7435f491323f41dfcf3453df859e64d2d7c",
+        "boundary-labels/tile_000011.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      }
+    },
+    "tile_000012": {
+      "position": {
+        "x": 500.0,
+        "y": 426.7,
+        "z": 100
+      },
+      "sequence": 86,
+      "focus": null,
+      "focus_method": "measured_surface_interpolation",
+      "focus_prediction_um": 100.00000000000001,
+      "full_chip_focus": {
+        "method": "measured_surface_interpolation",
+        "predicted_z_um": 100.00000000000001,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": false,
+        "extrapolation_distance_um": 0.0,
+        "extrapolation_limit_um": 0,
+        "anchor_count": 9,
+        "anchor_points_um": [
+          [
+            229.375,
+            229.5,
+            100.0
+          ],
+          [
+            232.5,
+            237.5,
+            100.0
+          ],
+          [
+            237.5,
+            767.5,
+            100.0
+          ],
+          [
+            342.6875,
+            215.5,
+            100.0
+          ],
+          [
+            458.0,
+            215.5,
+            100.0
+          ],
+          [
+            573.3125,
+            215.5,
+            100.0
+          ],
+          [
+            762.5,
+            232.5,
+            100.0
+          ],
+          [
+            767.5,
+            762.5,
+            100.0
+          ],
+          [
+            770.625,
+            229.5,
+            100.0
+          ]
+        ],
+        "sample_rms_um": 1.4210854715202004e-14,
+        "max_anchor_residual_um": 1.4210854715202004e-14,
+        "residual_standard_error_um": 1.7404671430534633e-14,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.12606092116448267,
+        "conditional_prediction_sigma_um": 0.17752529479237789,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000012.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "tiles/tile_000012.json": "da061b5fc8900472f40777e49ae3ef7446db06bbbf35dae7e7e657418c32a3d3",
+        "tiles/tile_000012.flakes.json": "53817498230038194e9d43b88252afec3544b944aa09919a6a62f0004e32a996",
+        "boundary-labels/tile_000012.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      }
+    },
+    "tile_000013": {
+      "position": {
+        "x": 615.3125,
+        "y": 426.7,
+        "z": 100
+      },
+      "sequence": 87,
+      "focus": null,
+      "focus_method": "measured_surface_interpolation",
+      "focus_prediction_um": 100.00000000000001,
+      "full_chip_focus": {
+        "method": "measured_surface_interpolation",
+        "predicted_z_um": 100.00000000000001,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": false,
+        "extrapolation_distance_um": 0.0,
+        "extrapolation_limit_um": 0,
+        "anchor_count": 9,
+        "anchor_points_um": [
+          [
+            229.375,
+            229.5,
+            100.0
+          ],
+          [
+            232.5,
+            237.5,
+            100.0
+          ],
+          [
+            237.5,
+            767.5,
+            100.0
+          ],
+          [
+            342.6875,
+            215.5,
+            100.0
+          ],
+          [
+            458.0,
+            215.5,
+            100.0
+          ],
+          [
+            573.3125,
+            215.5,
+            100.0
+          ],
+          [
+            762.5,
+            232.5,
+            100.0
+          ],
+          [
+            767.5,
+            762.5,
+            100.0
+          ],
+          [
+            770.625,
+            229.5,
+            100.0
+          ]
+        ],
+        "sample_rms_um": 1.4210854715202004e-14,
+        "max_anchor_residual_um": 1.4210854715202004e-14,
+        "residual_standard_error_um": 1.7404671430534633e-14,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.16074571328841547,
+        "conditional_prediction_sigma_um": 0.20046552901210687,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000013.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "tiles/tile_000013.json": "c316f0e7804d5f0921a95aa30a88ce4f81c806d267ad589be20c8702a59a1fde",
+        "tiles/tile_000013.flakes.json": "d0c2956a02d72a766fee60df76401ed4bd66893cf33ef3a157279982653b1f0e",
+        "boundary-labels/tile_000013.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      }
+    },
+    "tile_000014": {
+      "position": {
+        "x": 730.625,
+        "y": 426.7,
+        "z": 100
+      },
+      "sequence": 88,
+      "focus": null,
+      "focus_method": "measured_surface_interpolation",
+      "focus_prediction_um": 100.00000000000001,
+      "full_chip_focus": {
+        "method": "measured_surface_interpolation",
+        "predicted_z_um": 100.00000000000001,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": false,
+        "extrapolation_distance_um": 0.0,
+        "extrapolation_limit_um": 0,
+        "anchor_count": 9,
+        "anchor_points_um": [
+          [
+            229.375,
+            229.5,
+            100.0
+          ],
+          [
+            232.5,
+            237.5,
+            100.0
+          ],
+          [
+            237.5,
+            767.5,
+            100.0
+          ],
+          [
+            342.6875,
+            215.5,
+            100.0
+          ],
+          [
+            458.0,
+            215.5,
+            100.0
+          ],
+          [
+            573.3125,
+            215.5,
+            100.0
+          ],
+          [
+            762.5,
+            232.5,
+            100.0
+          ],
+          [
+            767.5,
+            762.5,
+            100.0
+          ],
+          [
+            770.625,
+            229.5,
+            100.0
+          ]
+        ],
+        "sample_rms_um": 1.4210854715202004e-14,
+        "max_anchor_residual_um": 1.4210854715202004e-14,
+        "residual_standard_error_um": 1.7404671430534633e-14,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.25363112168727786,
+        "conditional_prediction_sigma_um": 0.2518090157675445,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000014.tiff": "8e1fb2fa20e07e0c5fb2a0f1b698973f6472353e0cd85e00eb0299e67623a98d",
+        "tiles/tile_000014.json": "ff4f22d5e4c8683bbfd2c2634171fb2ea122f7e41c1fef1382b47a6661f2b078",
+        "tiles/tile_000014.flakes.json": "0c1bce0967e53841028e33cbfae97d9c0181cb48d143b898501182179b9dba38",
+        "boundary-labels/tile_000014.npz": "f89a53f398fe0aaf5911c3b84ffd4afc719a7e9b8abefe705a842df3f65ccd0c"
+      }
+    },
+    "tile_000015": {
+      "position": {
+        "x": 730.625,
+        "y": 533.3,
+        "z": 100
+      },
+      "sequence": 89,
+      "focus": null,
+      "focus_method": "measured_surface_interpolation",
+      "focus_prediction_um": 100.00000000000001,
+      "full_chip_focus": {
+        "method": "measured_surface_interpolation",
+        "predicted_z_um": 100.00000000000001,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": false,
+        "extrapolation_distance_um": 0.0,
+        "extrapolation_limit_um": 0,
+        "anchor_count": 9,
+        "anchor_points_um": [
+          [
+            229.375,
+            229.5,
+            100.0
+          ],
+          [
+            232.5,
+            237.5,
+            100.0
+          ],
+          [
+            237.5,
+            767.5,
+            100.0
+          ],
+          [
+            342.6875,
+            215.5,
+            100.0
+          ],
+          [
+            458.0,
+            215.5,
+            100.0
+          ],
+          [
+            573.3125,
+            215.5,
+            100.0
+          ],
+          [
+            762.5,
+            232.5,
+            100.0
+          ],
+          [
+            767.5,
+            762.5,
+            100.0
+          ],
+          [
+            770.625,
+            229.5,
+            100.0
+          ]
+        ],
+        "sample_rms_um": 1.4210854715202004e-14,
+        "max_anchor_residual_um": 1.4210854715202004e-14,
+        "residual_standard_error_um": 1.7404671430534633e-14,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.3129768213090146,
+        "conditional_prediction_sigma_um": 0.27972165687921563,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000015.tiff": "8e1fb2fa20e07e0c5fb2a0f1b698973f6472353e0cd85e00eb0299e67623a98d",
+        "tiles/tile_000015.json": "af415b45d510138e76221614465bb4c7e11a7688fa9b088c60256dc7404168dd",
+        "tiles/tile_000015.flakes.json": "363d89b799431fa1b04e5e626491e11d98cb961f62aefa9d96a3f4b1874207f2",
+        "boundary-labels/tile_000015.npz": "f89a53f398fe0aaf5911c3b84ffd4afc719a7e9b8abefe705a842df3f65ccd0c"
+      }
+    },
+    "tile_000016": {
+      "position": {
+        "x": 615.3125,
+        "y": 533.3,
+        "z": 100
+      },
+      "sequence": 90,
+      "focus": null,
+      "focus_method": "measured_surface_interpolation",
+      "focus_prediction_um": 100.00000000000001,
+      "full_chip_focus": {
+        "method": "measured_surface_interpolation",
+        "predicted_z_um": 100.00000000000001,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": false,
+        "extrapolation_distance_um": 0.0,
+        "extrapolation_limit_um": 0,
+        "anchor_count": 9,
+        "anchor_points_um": [
+          [
+            229.375,
+            229.5,
+            100.0
+          ],
+          [
+            232.5,
+            237.5,
+            100.0
+          ],
+          [
+            237.5,
+            767.5,
+            100.0
+          ],
+          [
+            342.6875,
+            215.5,
+            100.0
+          ],
+          [
+            458.0,
+            215.5,
+            100.0
+          ],
+          [
+            573.3125,
+            215.5,
+            100.0
+          ],
+          [
+            762.5,
+            232.5,
+            100.0
+          ],
+          [
+            767.5,
+            762.5,
+            100.0
+          ],
+          [
+            770.625,
+            229.5,
+            100.0
+          ]
+        ],
+        "sample_rms_um": 1.4210854715202004e-14,
+        "max_anchor_residual_um": 1.4210854715202004e-14,
+        "residual_standard_error_um": 1.7404671430534633e-14,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.22202589011086865,
+        "conditional_prediction_sigma_um": 0.23559811656232985,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000016.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "tiles/tile_000016.json": "95cf6ca094cbeb69e8f5e9619e6da2ff3bbdb89d467104d316ed59c02579d7d6",
+        "tiles/tile_000016.flakes.json": "eb0102e297fcac90262cbc28cca553227229e77168aeedb24275a9a81384502d",
+        "boundary-labels/tile_000016.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      }
+    },
+    "tile_000017": {
+      "position": {
+        "x": 500.0,
+        "y": 533.3,
+        "z": 100
+      },
+      "sequence": 91,
+      "focus": null,
+      "focus_method": "measured_surface_interpolation",
+      "focus_prediction_um": 100.00000000000001,
+      "full_chip_focus": {
+        "method": "measured_surface_interpolation",
+        "predicted_z_um": 100.00000000000001,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": false,
+        "extrapolation_distance_um": 0.0,
+        "extrapolation_limit_um": 0,
+        "anchor_count": 9,
+        "anchor_points_um": [
+          [
+            229.375,
+            229.5,
+            100.0
+          ],
+          [
+            232.5,
+            237.5,
+            100.0
+          ],
+          [
+            237.5,
+            767.5,
+            100.0
+          ],
+          [
+            342.6875,
+            215.5,
+            100.0
+          ],
+          [
+            458.0,
+            215.5,
+            100.0
+          ],
+          [
+            573.3125,
+            215.5,
+            100.0
+          ],
+          [
+            762.5,
+            232.5,
+            100.0
+          ],
+          [
+            767.5,
+            762.5,
+            100.0
+          ],
+          [
+            770.625,
+            229.5,
+            100.0
+          ]
+        ],
+        "sample_rms_um": 1.4210854715202004e-14,
+        "max_anchor_residual_um": 1.4210854715202004e-14,
+        "residual_standard_error_um": 1.7404671430534633e-14,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.18927557518765228,
+        "conditional_prediction_sigma_um": 0.21752906425788962,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000017.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "tiles/tile_000017.json": "e146dd15c6bb42e16cc9b6beef075b22846b9d6e13915339d53c581c8423842b",
+        "tiles/tile_000017.flakes.json": "096d0d4d9fa074b6ac6db5a2e26c778b55b13283840e3a2a73d63d2d4094c7c9",
+        "boundary-labels/tile_000017.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      }
+    },
+    "tile_000018": {
+      "position": {
+        "x": 384.6875,
+        "y": 533.3,
+        "z": 100
+      },
+      "sequence": 92,
+      "focus": null,
+      "focus_method": "measured_surface_interpolation",
+      "focus_prediction_um": 100.00000000000001,
+      "full_chip_focus": {
+        "method": "measured_surface_interpolation",
+        "predicted_z_um": 100.00000000000001,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": false,
+        "extrapolation_distance_um": 0.0,
+        "extrapolation_limit_um": 0,
+        "anchor_count": 9,
+        "anchor_points_um": [
+          [
+            229.375,
+            229.5,
+            100.0
+          ],
+          [
+            232.5,
+            237.5,
+            100.0
+          ],
+          [
+            237.5,
+            767.5,
+            100.0
+          ],
+          [
+            342.6875,
+            215.5,
+            100.0
+          ],
+          [
+            458.0,
+            215.5,
+            100.0
+          ],
+          [
+            573.3125,
+            215.5,
+            100.0
+          ],
+          [
+            762.5,
+            232.5,
+            100.0
+          ],
+          [
+            767.5,
+            762.5,
+            100.0
+          ],
+          [
+            770.625,
+            229.5,
+            100.0
+          ]
+        ],
+        "sample_rms_um": 1.4210854715202004e-14,
+        "max_anchor_residual_um": 1.4210854715202004e-14,
+        "residual_standard_error_um": 1.7404671430534633e-14,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.21472587653936556,
+        "conditional_prediction_sigma_um": 0.23169261778235703,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000018.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "tiles/tile_000018.json": "c9b11acdff2b77a93925fe664aa4d39a633851da6c3951134f6b1f75d484e0da",
+        "tiles/tile_000018.flakes.json": "664ec72e40dde65c2a9848d5809f837a6cefff7f3173e520f177f5265f7cf027",
+        "boundary-labels/tile_000018.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      }
+    },
+    "tile_000019": {
+      "position": {
+        "x": 269.375,
+        "y": 533.3,
+        "z": 100
+      },
+      "sequence": 93,
+      "focus": null,
+      "focus_method": "measured_surface_interpolation",
+      "focus_prediction_um": 100.00000000000001,
+      "full_chip_focus": {
+        "method": "measured_surface_interpolation",
+        "predicted_z_um": 100.00000000000001,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": false,
+        "extrapolation_distance_um": 0.0,
+        "extrapolation_limit_um": 0,
+        "anchor_count": 9,
+        "anchor_points_um": [
+          [
+            229.375,
+            229.5,
+            100.0
+          ],
+          [
+            232.5,
+            237.5,
+            100.0
+          ],
+          [
+            237.5,
+            767.5,
+            100.0
+          ],
+          [
+            342.6875,
+            215.5,
+            100.0
+          ],
+          [
+            458.0,
+            215.5,
+            100.0
+          ],
+          [
+            573.3125,
+            215.5,
+            100.0
+          ],
+          [
+            762.5,
+            232.5,
+            100.0
+          ],
+          [
+            767.5,
+            762.5,
+            100.0
+          ],
+          [
+            770.625,
+            229.5,
+            100.0
+          ]
+        ],
+        "sample_rms_um": 1.4210854715202004e-14,
+        "max_anchor_residual_um": 1.4210854715202004e-14,
+        "residual_standard_error_um": 1.7404671430534633e-14,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.2983767941660085,
+        "conditional_prediction_sigma_um": 0.27311938514411993,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000019.tiff": "e356a54ec29b18c7fe990f4c22e0051e22aa849c90223f43327063e2221d7b0a",
+        "tiles/tile_000019.json": "c9b5b46fe2412d21b2230e4170df10ce4a0c1de9aabee83345f80891530a3205",
+        "tiles/tile_000019.flakes.json": "b1598f54fbe3c959e3762109f1c980f007b3f49c09577e048547e576122d7129",
+        "boundary-labels/tile_000019.npz": "a4beabb1abf083a832f0130bbf3982a90c82356a72f5bf12e0cea935d9e4d568"
+      }
+    },
+    "tile_000020": {
+      "position": {
+        "x": 269.375,
+        "y": 639.9,
+        "z": 100
+      },
+      "sequence": 94,
+      "focus": null,
+      "focus_method": "measured_surface_interpolation",
+      "focus_prediction_um": 100.00000000000001,
+      "full_chip_focus": {
+        "method": "measured_surface_interpolation",
+        "predicted_z_um": 100.00000000000001,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": false,
+        "extrapolation_distance_um": 0.0,
+        "extrapolation_limit_um": 0,
+        "anchor_count": 9,
+        "anchor_points_um": [
+          [
+            229.375,
+            229.5,
+            100.0
+          ],
+          [
+            232.5,
+            237.5,
+            100.0
+          ],
+          [
+            237.5,
+            767.5,
+            100.0
+          ],
+          [
+            342.6875,
+            215.5,
+            100.0
+          ],
+          [
+            458.0,
+            215.5,
+            100.0
+          ],
+          [
+            573.3125,
+            215.5,
+            100.0
+          ],
+          [
+            762.5,
+            232.5,
+            100.0
+          ],
+          [
+            767.5,
+            762.5,
+            100.0
+          ],
+          [
+            770.625,
+            229.5,
+            100.0
+          ]
+        ],
+        "sample_rms_um": 1.4210854715202004e-14,
+        "max_anchor_residual_um": 1.4210854715202004e-14,
+        "residual_standard_error_um": 1.7404671430534633e-14,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.4155826479378061,
+        "conditional_prediction_sigma_um": 0.3223285001119999,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000020.tiff": "e356a54ec29b18c7fe990f4c22e0051e22aa849c90223f43327063e2221d7b0a",
+        "tiles/tile_000020.json": "5b034bf13c49cb3df0a96e68bdf6b72b989cc9108d8ff6cc8706ddf826b189af",
+        "tiles/tile_000020.flakes.json": "eeb61a876cb88d88aef993e3915f5936fd775f0cde9cf34531e558aa905dd6d7",
+        "boundary-labels/tile_000020.npz": "a4beabb1abf083a832f0130bbf3982a90c82356a72f5bf12e0cea935d9e4d568"
+      }
+    },
+    "tile_000021": {
+      "position": {
+        "x": 384.6875,
+        "y": 639.9,
+        "z": 100
+      },
+      "sequence": 95,
+      "focus": null,
+      "focus_method": "measured_surface_interpolation",
+      "focus_prediction_um": 100.00000000000001,
+      "full_chip_focus": {
+        "method": "measured_surface_interpolation",
+        "predicted_z_um": 100.00000000000001,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": false,
+        "extrapolation_distance_um": 0.0,
+        "extrapolation_limit_um": 0,
+        "anchor_count": 9,
+        "anchor_points_um": [
+          [
+            229.375,
+            229.5,
+            100.0
+          ],
+          [
+            232.5,
+            237.5,
+            100.0
+          ],
+          [
+            237.5,
+            767.5,
+            100.0
+          ],
+          [
+            342.6875,
+            215.5,
+            100.0
+          ],
+          [
+            458.0,
+            215.5,
+            100.0
+          ],
+          [
+            573.3125,
+            215.5,
+            100.0
+          ],
+          [
+            762.5,
+            232.5,
+            100.0
+          ],
+          [
+            767.5,
+            762.5,
+            100.0
+          ],
+          [
+            770.625,
+            229.5,
+            100.0
+          ]
+        ],
+        "sample_rms_um": 1.4210854715202004e-14,
+        "max_anchor_residual_um": 1.4210854715202004e-14,
+        "residual_standard_error_um": 1.7404671430534633e-14,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.32999725311044675,
+        "conditional_prediction_sigma_um": 0.2872269368941773,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000021.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "tiles/tile_000021.json": "d363a6ec5e9754ea01992771177d29642e902fe1a82ad3ed8ce6149f25b86b11",
+        "tiles/tile_000021.flakes.json": "cb04ac2d36e6214be76a410ff74197736f590cea21b1be5eaf1b48ec024f3259",
+        "boundary-labels/tile_000021.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      }
+    },
+    "tile_000022": {
+      "position": {
+        "x": 500.0,
+        "y": 639.9,
+        "z": 100
+      },
+      "sequence": 96,
+      "focus": null,
+      "focus_method": "measured_surface_interpolation",
+      "focus_prediction_um": 100.00000000000001,
+      "full_chip_focus": {
+        "method": "measured_surface_interpolation",
+        "predicted_z_um": 100.00000000000001,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": false,
+        "extrapolation_distance_um": 0.0,
+        "extrapolation_limit_um": 0,
+        "anchor_count": 9,
+        "anchor_points_um": [
+          [
+            229.375,
+            229.5,
+            100.0
+          ],
+          [
+            232.5,
+            237.5,
+            100.0
+          ],
+          [
+            237.5,
+            767.5,
+            100.0
+          ],
+          [
+            342.6875,
+            215.5,
+            100.0
+          ],
+          [
+            458.0,
+            215.5,
+            100.0
+          ],
+          [
+            573.3125,
+            215.5,
+            100.0
+          ],
+          [
+            762.5,
+            232.5,
+            100.0
+          ],
+          [
+            767.5,
+            762.5,
+            100.0
+          ],
+          [
+            770.625,
+            229.5,
+            100.0
+          ]
+        ],
+        "sample_rms_um": 1.4210854715202004e-14,
+        "max_anchor_residual_um": 1.4210854715202004e-14,
+        "residual_standard_error_um": 1.7404671430534633e-14,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.30261247455801704,
+        "conditional_prediction_sigma_um": 0.27505112004771815,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000022.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "tiles/tile_000022.json": "5ae84d79466dcb3eea2fb4256d01dcb2f922aa45e03846f4d63cd084d9f2d001",
+        "tiles/tile_000022.flakes.json": "e02007872d846506f58290472ec0d97e8261e788f163bec9ac19db5a7f875552",
+        "boundary-labels/tile_000022.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      }
+    },
+    "tile_000023": {
+      "position": {
+        "x": 615.3125,
+        "y": 639.9,
+        "z": 100
+      },
+      "sequence": 97,
+      "focus": null,
+      "focus_method": "measured_surface_interpolation",
+      "focus_prediction_um": 100.00000000000001,
+      "full_chip_focus": {
+        "method": "measured_surface_interpolation",
+        "predicted_z_um": 100.00000000000001,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": false,
+        "extrapolation_distance_um": 0.0,
+        "extrapolation_limit_um": 0,
+        "anchor_count": 9,
+        "anchor_points_um": [
+          [
+            229.375,
+            229.5,
+            100.0
+          ],
+          [
+            232.5,
+            237.5,
+            100.0
+          ],
+          [
+            237.5,
+            767.5,
+            100.0
+          ],
+          [
+            342.6875,
+            215.5,
+            100.0
+          ],
+          [
+            458.0,
+            215.5,
+            100.0
+          ],
+          [
+            573.3125,
+            215.5,
+            100.0
+          ],
+          [
+            762.5,
+            232.5,
+            100.0
+          ],
+          [
+            767.5,
+            762.5,
+            100.0
+          ],
+          [
+            770.625,
+            229.5,
+            100.0
+          ]
+        ],
+        "sample_rms_um": 1.4210854715202004e-14,
+        "max_anchor_residual_um": 1.4210854715202004e-14,
+        "residual_standard_error_um": 1.7404671430534633e-14,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.33342831228051695,
+        "conditional_prediction_sigma_um": 0.28871625875611723,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000023.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "tiles/tile_000023.json": "f85645b49c61052d8f9616089afbd84a60f0e3722e2ecd0b7df6e89bfe2af57d",
+        "tiles/tile_000023.flakes.json": "c9bd111cda40777c425f353d118cdae5fcdce7b548f7a7831ca68360223cf894",
+        "boundary-labels/tile_000023.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      }
+    },
+    "tile_000024": {
+      "position": {
+        "x": 730.625,
+        "y": 639.9,
+        "z": 100
+      },
+      "sequence": 98,
+      "focus": null,
+      "focus_method": "measured_surface_interpolation",
+      "focus_prediction_um": 100.00000000000001,
+      "full_chip_focus": {
+        "method": "measured_surface_interpolation",
+        "predicted_z_um": 100.00000000000001,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": false,
+        "extrapolation_distance_um": 0.0,
+        "extrapolation_limit_um": 0,
+        "anchor_count": 9,
+        "anchor_points_um": [
+          [
+            229.375,
+            229.5,
+            100.0
+          ],
+          [
+            232.5,
+            237.5,
+            100.0
+          ],
+          [
+            237.5,
+            767.5,
+            100.0
+          ],
+          [
+            342.6875,
+            215.5,
+            100.0
+          ],
+          [
+            458.0,
+            215.5,
+            100.0
+          ],
+          [
+            573.3125,
+            215.5,
+            100.0
+          ],
+          [
+            762.5,
+            232.5,
+            100.0
+          ],
+          [
+            767.5,
+            762.5,
+            100.0
+          ],
+          [
+            770.625,
+            229.5,
+            100.0
+          ]
+        ],
+        "sample_rms_um": 1.4210854715202004e-14,
+        "max_anchor_residual_um": 1.4210854715202004e-14,
+        "residual_standard_error_um": 1.7404671430534633e-14,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.4224447662779465,
+        "conditional_prediction_sigma_um": 0.32497875556640105,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000024.tiff": "8e1fb2fa20e07e0c5fb2a0f1b698973f6472353e0cd85e00eb0299e67623a98d",
+        "tiles/tile_000024.json": "32378fe08f5ff51d4998c8c983be6c88acb81002b408d2a90ecf3ab11b108bf4",
+        "tiles/tile_000024.flakes.json": "ef52118fcb4ffbc3333144038e233b764451fa362993a454586de68c749986fc",
+        "boundary-labels/tile_000024.npz": "f89a53f398fe0aaf5911c3b84ffd4afc719a7e9b8abefe705a842df3f65ccd0c"
+      }
+    },
+    "tile_000025": {
+      "position": {
+        "x": 730.625,
+        "y": 746.5,
+        "z": 100
+      },
+      "sequence": 99,
+      "focus": null,
+      "focus_method": "measured_surface_interpolation",
+      "focus_prediction_um": 100.00000000000001,
+      "full_chip_focus": {
+        "method": "measured_surface_interpolation",
+        "predicted_z_um": 100.00000000000001,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": false,
+        "extrapolation_distance_um": 0.0,
+        "extrapolation_limit_um": 0,
+        "anchor_count": 9,
+        "anchor_points_um": [
+          [
+            229.375,
+            229.5,
+            100.0
+          ],
+          [
+            232.5,
+            237.5,
+            100.0
+          ],
+          [
+            237.5,
+            767.5,
+            100.0
+          ],
+          [
+            342.6875,
+            215.5,
+            100.0
+          ],
+          [
+            458.0,
+            215.5,
+            100.0
+          ],
+          [
+            573.3125,
+            215.5,
+            100.0
+          ],
+          [
+            762.5,
+            232.5,
+            100.0
+          ],
+          [
+            767.5,
+            762.5,
+            100.0
+          ],
+          [
+            770.625,
+            229.5,
+            100.0
+          ]
+        ],
+        "sample_rms_um": 1.4210854715202004e-14,
+        "max_anchor_residual_um": 1.4210854715202004e-14,
+        "residual_standard_error_um": 1.7404671430534633e-14,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.5820349565940734,
+        "conditional_prediction_sigma_um": 0.381456077613817,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000025.tiff": "00d4ed1b2c8fee909d7e8d5317c8a5493c9e1e5612738608f6157a6867170dd1",
+        "tiles/tile_000025.json": "eac71428ecbff644870949328fa3d165afa1e09544769af1652277aea3e5c368",
+        "tiles/tile_000025.flakes.json": "14e85202320ef7caaa663e0a138504849e49ae7e77a0cc3d21bd5e82a2742e4b",
+        "boundary-labels/tile_000025.npz": "fb4497d7913a5e374efc0543a4dfc0f9e56b3157b551ba89afdf4d0be1f3b1d6"
+      }
+    },
+    "tile_000026": {
+      "position": {
+        "x": 615.3125,
+        "y": 746.5,
+        "z": 100
+      },
+      "sequence": 100,
+      "focus": null,
+      "focus_method": "measured_surface_interpolation",
+      "focus_prediction_um": 100.00000000000001,
+      "full_chip_focus": {
+        "method": "measured_surface_interpolation",
+        "predicted_z_um": 100.00000000000001,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": false,
+        "extrapolation_distance_um": 0.0,
+        "extrapolation_limit_um": 0,
+        "anchor_count": 9,
+        "anchor_points_um": [
+          [
+            229.375,
+            229.5,
+            100.0
+          ],
+          [
+            232.5,
+            237.5,
+            100.0
+          ],
+          [
+            237.5,
+            767.5,
+            100.0
+          ],
+          [
+            342.6875,
+            215.5,
+            100.0
+          ],
+          [
+            458.0,
+            215.5,
+            100.0
+          ],
+          [
+            573.3125,
+            215.5,
+            100.0
+          ],
+          [
+            762.5,
+            232.5,
+            100.0
+          ],
+          [
+            767.5,
+            762.5,
+            100.0
+          ],
+          [
+            770.625,
+            229.5,
+            100.0
+          ]
+        ],
+        "sample_rms_um": 1.4210854715202004e-14,
+        "max_anchor_residual_um": 1.4210854715202004e-14,
+        "residual_standard_error_um": 1.7404671430534633e-14,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.49495297979736036,
+        "conditional_prediction_sigma_um": 0.3517644736884896,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000026.tiff": "5bc13d2e3bff2b2d50d4de4c871be88ba61eca9fe723786befe6e0cc2c0142db",
+        "tiles/tile_000026.json": "3291ae4ed41caead2ec1f6ab0c4e18a44e1eb8b7724e79e61708395b22c3730c",
+        "tiles/tile_000026.flakes.json": "fb3e10a95abaa7854408e8794b74c602f20cfcdc0cda22d54e0426f3777022b5",
+        "boundary-labels/tile_000026.npz": "44a7a0c3c6fcc9fe0204581873c05d22b004781c71f163217cc534f2785fe212"
+      }
+    },
+    "tile_000027": {
+      "position": {
+        "x": 500.0,
+        "y": 746.5,
+        "z": 100
+      },
+      "sequence": 101,
+      "focus": null,
+      "focus_method": "measured_surface_interpolation",
+      "focus_prediction_um": 100.00000000000001,
+      "full_chip_focus": {
+        "method": "measured_surface_interpolation",
+        "predicted_z_um": 100.00000000000001,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": false,
+        "extrapolation_distance_um": 0.0,
+        "extrapolation_limit_um": 0,
+        "anchor_count": 9,
+        "anchor_points_um": [
+          [
+            229.375,
+            229.5,
+            100.0
+          ],
+          [
+            232.5,
+            237.5,
+            100.0
+          ],
+          [
+            237.5,
+            767.5,
+            100.0
+          ],
+          [
+            342.6875,
+            215.5,
+            100.0
+          ],
+          [
+            458.0,
+            215.5,
+            100.0
+          ],
+          [
+            573.3125,
+            215.5,
+            100.0
+          ],
+          [
+            762.5,
+            232.5,
+            100.0
+          ],
+          [
+            767.5,
+            762.5,
+            100.0
+          ],
+          [
+            770.625,
+            229.5,
+            100.0
+          ]
+        ],
+        "sample_rms_um": 1.4210854715202004e-14,
+        "max_anchor_residual_um": 1.4210854715202004e-14,
+        "residual_standard_error_um": 1.7404671430534633e-14,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.4660716192755769,
+        "conditional_prediction_sigma_um": 0.3413471910224167,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000027.tiff": "5bc13d2e3bff2b2d50d4de4c871be88ba61eca9fe723786befe6e0cc2c0142db",
+        "tiles/tile_000027.json": "9e8e09b2cc139f5f6da6b207c37847045f088c4e87bef3096955aed003ef3821",
+        "tiles/tile_000027.flakes.json": "8fc6aef29f92a78e0ea3ca9246781daea45f42fa910d07b09be99d31885be14f",
+        "boundary-labels/tile_000027.npz": "44a7a0c3c6fcc9fe0204581873c05d22b004781c71f163217cc534f2785fe212"
+      }
+    },
+    "tile_000028": {
+      "position": {
+        "x": 384.6875,
+        "y": 746.5,
+        "z": 100
+      },
+      "sequence": 102,
+      "focus": null,
+      "focus_method": "measured_surface_interpolation",
+      "focus_prediction_um": 100.00000000000001,
+      "full_chip_focus": {
+        "method": "measured_surface_interpolation",
+        "predicted_z_um": 100.00000000000001,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": false,
+        "extrapolation_distance_um": 0.0,
+        "extrapolation_limit_um": 0,
+        "anchor_count": 9,
+        "anchor_points_um": [
+          [
+            229.375,
+            229.5,
+            100.0
+          ],
+          [
+            232.5,
+            237.5,
+            100.0
+          ],
+          [
+            237.5,
+            767.5,
+            100.0
+          ],
+          [
+            342.6875,
+            215.5,
+            100.0
+          ],
+          [
+            458.0,
+            215.5,
+            100.0
+          ],
+          [
+            573.3125,
+            215.5,
+            100.0
+          ],
+          [
+            762.5,
+            232.5,
+            100.0
+          ],
+          [
+            767.5,
+            762.5,
+            100.0
+          ],
+          [
+            770.625,
+            229.5,
+            100.0
+          ]
+        ],
+        "sample_rms_um": 1.4210854715202004e-14,
+        "max_anchor_residual_um": 1.4210854715202004e-14,
+        "residual_standard_error_um": 1.7404671430534633e-14,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.49539087502872303,
+        "conditional_prediction_sigma_um": 0.35192004597234977,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000028.tiff": "5bc13d2e3bff2b2d50d4de4c871be88ba61eca9fe723786befe6e0cc2c0142db",
+        "tiles/tile_000028.json": "0a1e05934288a2fc5020d574cf4dd3fda045788c43a1d7be91525ccbaa14b07d",
+        "tiles/tile_000028.flakes.json": "2ac2acee91f0a59f889fd3a5d65ee374a042ab9d64951f6632920b3912760edf",
+        "boundary-labels/tile_000028.npz": "44a7a0c3c6fcc9fe0204581873c05d22b004781c71f163217cc534f2785fe212"
+      }
+    },
+    "tile_000029": {
+      "position": {
+        "x": 269.375,
+        "y": 746.5,
+        "z": 100
+      },
+      "sequence": 103,
+      "focus": null,
+      "focus_method": "measured_surface_interpolation",
+      "focus_prediction_um": 100.00000000000001,
+      "full_chip_focus": {
+        "method": "measured_surface_interpolation",
+        "predicted_z_um": 100.00000000000001,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": false,
+        "extrapolation_distance_um": 0.0,
+        "extrapolation_limit_um": 0,
+        "anchor_count": 9,
+        "anchor_points_um": [
+          [
+            229.375,
+            229.5,
+            100.0
+          ],
+          [
+            232.5,
+            237.5,
+            100.0
+          ],
+          [
+            237.5,
+            767.5,
+            100.0
+          ],
+          [
+            342.6875,
+            215.5,
+            100.0
+          ],
+          [
+            458.0,
+            215.5,
+            100.0
+          ],
+          [
+            573.3125,
+            215.5,
+            100.0
+          ],
+          [
+            762.5,
+            232.5,
+            100.0
+          ],
+          [
+            767.5,
+            762.5,
+            100.0
+          ],
+          [
+            770.625,
+            229.5,
+            100.0
+          ]
+        ],
+        "sample_rms_um": 1.4210854715202004e-14,
+        "max_anchor_residual_um": 1.4210854715202004e-14,
+        "residual_standard_error_um": 1.7404671430534633e-14,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.5829107470567988,
+        "conditional_prediction_sigma_um": 0.3817429590237385,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.25
+      },
+      "focus_limited": false,
+      "vendor_result_retention": null,
+      "hashes": {
+        "tiles/tile_000029.tiff": "f7c48c8a5d8daf462cbaa9fa5ec97e82bea78cce5d43cab0d6ed5c772e254a0d",
+        "tiles/tile_000029.json": "e653ddc089986bf4adec7d3c5a21f3e416fdbc2e694247a1e122e291b3415400",
+        "tiles/tile_000029.flakes.json": "2cfa61de4c6946ea955e8242cb62a726791b8e8b3d6a1f708f098caa1622af4c",
+        "boundary-labels/tile_000029.npz": "e372259aad8789ad3130ba712566768903d37117f74a29e5b67b061a88c86458"
+      }
+    }
+  },
+  "state": "complete",
+  "tile_count": 30,
+  "focus_points_um": [
+    [
+      767.5,
+      762.5,
+      100
+    ],
+    [
+      232.5,
+      237.5,
+      100
+    ],
+    [
+      237.5,
+      767.5,
+      100
+    ],
+    [
+      762.5,
+      232.5,
+      100
+    ],
+    [
+      229.375,
+      229.5,
+      100
+    ],
+    [
+      342.6875,
+      215.5,
+      100
+    ],
+    [
+      458.0,
+      215.5,
+      100
+    ],
+    [
+      573.3125,
+      215.5,
+      100
+    ],
+    [
+      770.625,
+      229.5,
+      100
+    ]
+  ],
+  "focus_limits": [],
+  "anchors_prepared": true,
+  "updated_at": 1791598433.750727,
+  "local_focus_attempts": [
+    {
+      "tile_id": "tile_000000",
+      "state": "verified",
+      "started_at": 1791598431.8326468,
+      "plane_rejection": "Field exceeds the bounded focus-plane extrapolation distance.",
+      "max_elapsed_s": 180.0,
+      "max_captures": 48,
+      "result": {
+        "success": true,
+        "z_um": 100,
+        "score": 1.0,
+        "prominence": 0.2,
+        "reason": "Synthetic measured focus",
+        "samples": [],
+        "outcome": "resolved_peak",
+        "budget": null
+      },
+      "finished_at": 1791598431.8466475
+    },
+    {
+      "tile_id": "tile_000001",
+      "state": "verified",
+      "started_at": 1791598432.002026,
+      "plane_rejection": "Field exceeds the bounded focus-plane extrapolation distance.",
+      "max_elapsed_s": 180.0,
+      "max_captures": 48,
+      "result": {
+        "success": true,
+        "z_um": 100,
+        "score": 1.0,
+        "prominence": 0.2,
+        "reason": "Synthetic measured focus",
+        "samples": [],
+        "outcome": "resolved_peak",
+        "budget": null
+      },
+      "finished_at": 1791598432.015039
+    },
+    {
+      "tile_id": "tile_000002",
+      "state": "verified",
+      "started_at": 1791598432.0655475,
+      "plane_rejection": "Field exceeds the bounded focus-plane extrapolation distance.",
+      "max_elapsed_s": 180.0,
+      "max_captures": 48,
+      "result": {
+        "success": true,
+        "z_um": 100,
+        "score": 1.0,
+        "prominence": 0.2,
+        "reason": "Synthetic measured focus",
+        "samples": [],
+        "outcome": "resolved_peak",
+        "budget": null
+      },
+      "finished_at": 1791598432.0775423
+    },
+    {
+      "tile_id": "tile_000003",
+      "state": "verified",
+      "started_at": 1791598432.1265397,
+      "plane_rejection": "Field exceeds the bounded focus-plane extrapolation distance.",
+      "max_elapsed_s": 180.0,
+      "max_captures": 48,
+      "result": {
+        "success": true,
+        "z_um": 100,
+        "score": 1.0,
+        "prominence": 0.2,
+        "reason": "Synthetic measured focus",
+        "samples": [],
+        "outcome": "resolved_peak",
+        "budget": null
+      },
+      "finished_at": 1791598432.1385407
+    },
+    {
+      "tile_id": "tile_000004",
+      "state": "verified",
+      "started_at": 1791598432.1858084,
+      "plane_rejection": "Field exceeds the bounded focus-plane extrapolation distance.",
+      "max_elapsed_s": 180.0,
+      "max_captures": 48,
+      "result": {
+        "success": true,
+        "z_um": 100,
+        "score": 1.0,
+        "prominence": 0.2,
+        "reason": "Synthetic measured focus",
+        "samples": [],
+        "outcome": "resolved_peak",
+        "budget": null
+      },
+      "finished_at": 1791598432.1988177
+    }
+  ],
+  "boundary_validation": {
+    "estimate": {
+      "status": "observed_enclosure",
+      "uncertainty_um": 10.0
+    },
+    "acquired_raster_evidence": {
+      "status": "enclosed",
+      "kind": "observed_non_substrate_collar",
+      "seed_xy_um": [
+        500.0,
+        500.0
+      ],
+      "scan_bounds_um": [
+        190.0,
+        810.0,
+        190.0,
+        810.0
+      ],
+      "outline_um": [
+        [
+          202.5,
+          202.5
+        ],
+        [
+          202.5,
+          797.5
+        ],
+        [
+          797.5,
+          797.5
+        ],
+        [
+          797.5,
+          202.5
+        ]
+      ],
+      "planning_polygon_um": [
+        [
+          807.5,
+          192.5
+        ],
+        [
+          807.5,
+          807.5
+        ],
+        [
+          192.5,
+          807.5
+        ],
+        [
+          192.5,
+          192.5
+        ]
+      ],
+      "edge_sampling_uncertainty_um": 10.0,
+      "interior_observed_fraction": 1.0,
+      "interior_fully_acquired": true,
+      "physical_chip_identity": "not established; occlusions, holes and unobserved interior require full raster review",
+      "classification_assumption": "Reference-colour substrate and non-substrate labels are correct at this evidence resolution."
+    },
+    "method": "Registered labels from the scientific raster only; no extra boundary-probe acquisition.",
+    "classification_assumption": "Same-profile substrate/holder classification is correct at the recorded evidence resolution."
+  },
+  "chip_extent_validated": true,
+  "raw_coverage_complete": true,
+  "planned_area_acquired": true,
+  "focus_coverage_complete": true
+}

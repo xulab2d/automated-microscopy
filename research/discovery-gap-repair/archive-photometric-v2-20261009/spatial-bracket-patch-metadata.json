@@ -1,0 +1,6 @@
+{
+  "production_unchanged": true,
+  "baseline_source_sha256": "9949bce2f33e058ca0f96f200b3ad0c1f8203ec40651f375415acd3b41c994cd",
+  "candidate_sha256": "e4a56088c04cf597e7e32416ff053357cfafaa705b2454255364c1f43a33c40d",
+  "policy": "Unchanged original classification; inferred spatial side is bracket-only metadata. Existing saved labels are replayed without changing image/label hashes. Source transition must be explicit."
+}

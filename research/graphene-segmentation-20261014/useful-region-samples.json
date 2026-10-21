@@ -1,0 +1,213 @@
+[
+  {
+    "id": "chip001/tile_000639/23",
+    "rank": 3.5420162725168014,
+    "original_selected_for_review": false,
+    "original_filter_reasons": [
+      "below_useful_size",
+      "color_unclassified_or_not_coherent_material_population"
+    ],
+    "filter_reasons": [
+      "color_unclassified_or_not_coherent_material_population"
+    ],
+    "size_assessment": {
+      "area_qualified": true,
+      "minimum_area_um2": 25.0,
+      "inscribed_diameter_um": 13.272415002553227,
+      "width_is_diagnostic_not_rejection": true,
+      "material_color_independent": true
+    },
+    "artifact_flags": [],
+    "likely_artifact": false
+  },
+  {
+    "id": "chip001/tile_000632/139",
+    "rank": 3.4601103343663926,
+    "original_selected_for_review": false,
+    "original_filter_reasons": [
+      "below_useful_size",
+      "color_unclassified_or_not_coherent_material_population"
+    ],
+    "filter_reasons": [
+      "color_unclassified_or_not_coherent_material_population"
+    ],
+    "size_assessment": {
+      "area_qualified": true,
+      "minimum_area_um2": 25.0,
+      "inscribed_diameter_um": 14.407622982296559,
+      "width_is_diagnostic_not_rejection": true,
+      "material_color_independent": true
+    },
+    "artifact_flags": [],
+    "likely_artifact": false
+  },
+  {
+    "id": "chip001/tile_000329/172",
+    "rank": 3.152027715461612,
+    "original_selected_for_review": false,
+    "original_filter_reasons": [
+      "below_useful_size",
+      "color_unclassified_or_not_coherent_material_population"
+    ],
+    "filter_reasons": [
+      "color_unclassified_or_not_coherent_material_population"
+    ],
+    "size_assessment": {
+      "area_qualified": true,
+      "minimum_area_um2": 25.0,
+      "inscribed_diameter_um": 17.2913504388755,
+      "width_is_diagnostic_not_rejection": true,
+      "material_color_independent": true
+    },
+    "artifact_flags": [],
+    "likely_artifact": false
+  },
+  {
+    "id": "chip001/tile_000660/1442",
+    "rank": 3.142215452183521,
+    "original_selected_for_review": false,
+    "original_filter_reasons": [
+      "below_useful_size",
+      "color_unclassified_or_not_coherent_material_population"
+    ],
+    "filter_reasons": [
+      "color_unclassified_or_not_coherent_material_population"
+    ],
+    "size_assessment": {
+      "area_qualified": true,
+      "minimum_area_um2": 25.0,
+      "inscribed_diameter_um": 35.786994844496235,
+      "width_is_diagnostic_not_rejection": true,
+      "material_color_independent": true
+    },
+    "artifact_flags": [
+      "candidate_cut_by_crop_or_camera"
+    ],
+    "likely_artifact": false
+  },
+  {
+    "id": "chip001/tile_000329/5",
+    "rank": 2.910696278090164,
+    "original_selected_for_review": false,
+    "original_filter_reasons": [
+      "below_useful_size",
+      "color_unclassified_or_not_coherent_material_population"
+    ],
+    "filter_reasons": [
+      "color_unclassified_or_not_coherent_material_population"
+    ],
+    "size_assessment": {
+      "area_qualified": true,
+      "minimum_area_um2": 25.0,
+      "inscribed_diameter_um": 19.758593067321367,
+      "width_is_diagnostic_not_rejection": true,
+      "material_color_independent": true
+    },
+    "artifact_flags": [
+      "candidate_cut_by_crop_or_camera"
+    ],
+    "likely_artifact": false
+  },
+  {
+    "id": "chip001/tile_000368/1",
+    "rank": 2.7626481911845477,
+    "original_selected_for_review": false,
+    "original_filter_reasons": [
+      "below_useful_size",
+      "color_unclassified_or_not_coherent_material_population"
+    ],
+    "filter_reasons": [
+      "color_unclassified_or_not_coherent_material_population"
+    ],
+    "size_assessment": {
+      "area_qualified": true,
+      "minimum_area_um2": 25.0,
+      "inscribed_diameter_um": 31.01164297485704,
+      "width_is_diagnostic_not_rejection": true,
+      "material_color_independent": true
+    },
+    "artifact_flags": [
+      "candidate_cut_by_crop_or_camera"
+    ],
+    "likely_artifact": false
+  },
+  {
+    "id": "chip001/tile_000457/301",
+    "rank": 2.759282782042472,
+    "original_selected_for_review": false,
+    "original_filter_reasons": [
+      "below_useful_size",
+      "color_unclassified_or_not_coherent_material_population"
+    ],
+    "filter_reasons": [
+      "color_unclassified_or_not_coherent_material_population"
+    ],
+    "size_assessment": {
+      "area_qualified": true,
+      "minimum_area_um2": 25.0,
+      "inscribed_diameter_um": 13.11,
+      "width_is_diagnostic_not_rejection": true,
+      "material_color_independent": true
+    },
+    "artifact_flags": [],
+    "likely_artifact": false
+  },
+  {
+    "id": "chip001/tile_000943/6",
+    "rank": 2.5093252788591993,
+    "original_selected_for_review": false,
+    "original_filter_reasons": [
+      "below_useful_size",
+      "color_unclassified_or_not_coherent_material_population"
+    ],
+    "filter_reasons": [
+      "color_unclassified_or_not_coherent_material_population"
+    ],
+    "size_assessment": {
+      "area_qualified": true,
+      "minimum_area_um2": 25.0,
+      "inscribed_diameter_um": 24.772825838002415,
+      "width_is_diagnostic_not_rejection": true,
+      "material_color_independent": true
+    },
+    "artifact_flags": [
+      "candidate_cut_by_crop_or_camera"
+    ],
+    "likely_artifact": false
+  },
+  {
+    "id": "chip001/tile_000639/121",
+    "rank": 1.7378565215216433,
+    "original_selected_for_review": true,
+    "original_filter_reasons": [],
+    "filter_reasons": [],
+    "size_assessment": {
+      "area_qualified": true,
+      "minimum_area_um2": 25.0,
+      "inscribed_diameter_um": 13.11,
+      "width_is_diagnostic_not_rejection": true,
+      "material_color_independent": true
+    },
+    "artifact_flags": [],
+    "likely_artifact": false
+  },
+  {
+    "id": "chip001/tile_000660/167",
+    "rank": 0.017659251236042877,
+    "original_selected_for_review": true,
+    "original_filter_reasons": [],
+    "filter_reasons": [],
+    "size_assessment": {
+      "area_qualified": true,
+      "minimum_area_um2": 25.0,
+      "inscribed_diameter_um": 10.909857927580907,
+      "width_is_diagnostic_not_rejection": true,
+      "material_color_independent": true
+    },
+    "artifact_flags": [
+      "diffuse_or_weak_boundary",
+      "diffuse_boundary_near_dark_feature_possible_shadow"
+    ],
+    "likely_artifact": true
+  }
+]

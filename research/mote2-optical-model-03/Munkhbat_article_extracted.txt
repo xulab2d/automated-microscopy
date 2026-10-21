@@ -1,0 +1,1072 @@
+Optical Constants of Several Multilayer Transition Metal Dichalcogenides
+Measured by Spectroscopic Ellipsometry in the 300-1700 nm Range: High
+Downloaded from: https://research.chalmers.se, 2026-10-09 18:01 UTC
+Citation for the original published paper (version of record):
+Munkhbat, B., Wróbel, P., Antosiewicz, T. et al (2022). Optical Constants of Several Multilayer
+Transition Metal Dichalcogenides Measured by
+Spectroscopic Ellipsometry in the 300-1700 nm Range: High Index, Anisotropy, and Hyperbolicity.
+ACS Photonics, 9(7): 2398-2407. http://dx.doi.org/10.1021/acsphotonics.2c00433
+N.B. When citing this work, cite the original published paper.
+research.chalmers.se offers the possibility of retrieving research publications produced at Chalmers University of Technology. It
+covers all kind of research output: articles, dissertations, conference papers, reports etc. since 2004. research.chalmers.se is
+administrated and maintained by Chalmers Library
+(article starts on next page)
+Optical Constants of Several Multilayer Transition Metal
+Dichalcogenides Measured by Spectroscopic Ellipsometry in the
+300−1700 nm Range: High Index, Anisotropy, and Hyperbolicity
+Battulga Munkhbat, § Piotr Wr óbel,§ Tomasz J. Antosiewicz, * and Timur O. Shegai *
+Cite This: https://doi.org/10.1021/acsphotonics.2c00433 Read Online
+ACCESS Metrics & More Article Recommendations *sı Supporting Information
+ABSTRACT: Transition metal dichalcogenides (TMDs) attract signi ﬁcant
+attention due to their remarkable optical and excitonic properties. It was
+understood already in the 1960s and recently rediscovered that many
+TMDs possess a high refractive index and optical anisotropy, which make
+them attractive for nanophotonic applications. However, accurate analysis
+and predictions of nanooptical phenomena require knowledge of dielectric
+constants along both in- and out-of-plane directions and over a broad
+spectral range, information that is often inaccessible or incomplete. Here,
+we present an experimental study of optical constants from several
+exfoliated TMD multilayers obtained using spectroscopic ellipsometry in
+the broad range of 300 −1700 nm. The speci ﬁc materials studied include
+semiconducting WS
+2, WSe2, MoS2, MoSe2, and MoTe2, as well as in-plane anisotropic ReS 2 and WTe2 and metallic TaS2, TaSe2, and
+NbSe2. The extracted parameters demonstrate a high index ( n up to ∼4.84 for MoTe 2), signiﬁcant anisotropy ( n∥ − n⊥ ≈ 1.54 for
+MoTe2), and low absorption in the near-infrared region. Moreover, metallic TMDs show potential for combined plasmonic −
+dielectric behavior and hyperbolicity, as their plasma frequency occurs at around ∼1000−1300 nm depending on the material. The
+knowledge of optical constants of these materials opens new experimental and computational possibilities for further development of
+all-TMD nanophotonics.
+KEYWORDS: semiconductors, transition metal dichalcogenides, anisotropy, high-index, nanophotonics
+■ INTRODUCTION
+One of the main reasons for the growing interest in 2D
+semiconductors stems from the recent discovery of a direct band
+gap in monolayer MoS
+2.1,2 In addition to exciting exciton
+physics in transition metal dichalcogenide (TMD) monolayers,3
+multilayer TMDs possess a number of attractive optical,
+electronic, and mechanical properties. The prospects of
+multilayer TMDs for optics and photonics have been discussed
+already in the 1960s.
+4 For example, due to their van der Waals
+(vdW) nature, TMDs are naturally anisotropic, which is
+reﬂected in their physical and optical properties.
+5−9 Due to
+large oscillator strengths of electronic excitations around the A-,
+B- and C-exciton bands, which are stable in both mono- and
+multilayers even at room temperature, TMD materials possess
+high refractive indices in the visible and near-infrared
+range.
+10−13 Moreover, below the A-exciton absorption band,
+there is a relatively broad region of low loss. 7,11
+These observations have led to a recently renewed interest in
+TMD optics and nanophotonics. This interest has grown even
+more after publication of several nanopatterning methods of
+TMDs and studies of optical phenomena in resulting TMD
+nanostructures.
+14,15 Recent observations include high-index Mie
+resonances and anapole states in WS 2 nanodisks,14 optical
+anisotropy in TMD slabs7,9 and nanocones,16 self-hybridization
+in TMD slabs17,18 and nanotubes,19 optical modes in lattices of
+TMD nanostructures,20 improved second-harmonic generation
+in WS 2 and MoS 2 nanodisks,21,22 high-index metamaterials, 23
+nanoholes down to ∼20 nm,24 dimer nanoantennas,25 and TMD
+metamaterials with atomically sharp edges. 26
+Theoretical predictions of large values of dielectric functions
+of TMDs and related vdW materials include density functional
+theory (DFT) studies, which con ﬁrm exceptionally high values
+and the anisotropic nature of permittivity tensors in these
+materials.27−30 Theoretically, MoTe 2, ReS 2, and ReSe 2 com-
+pounds were predicted to have the highest values of the in-plane
+dielectric function. Together, the experimental observations and
+theoretical predictions strongly motivate further development of
+all-TMD nanophotonics.31 The knowledge of optical constants
+of these materials is essential in this regard. However, these
+parameters are often not precisely known, the out-of-plane
+Received: March 17, 2022
+Articlepubs.acs.org/journal/apchd5
+© XXXX The Authors. Published by
+American Chemical Society
+A
+https://doi.org/10.1021/acsphotonics.2c00433
+ACS Photonics XXXX, XXX, XXX −XXX
+Downloaded via 217.209.103.26 on July 15, 2022 at 07:41:34 (UTC).
+See https://pubs.acs.org/sharingguidelines for options on how to legitimately share published articles.
+
+values are often assumed, and the response is measured within a
+too narrow spectral range. In addition, the quality of the
+extracted optical constants for any given TMD material strongly
+depends on the sample preparation,
+11,32 number of layers, 33,34
+and their lateral dimensions. The emerging ﬁeld of all-TMD
+nanophotonics requires accurate knowledge of both in-plane
+and out-of-plane optical constants of various TMDs over a broad
+spectral range. Such knowledge would allow the exploration of
+their potential not only in the visible but also in the near-infrared
+nanophotonic and optoelectronic applications. Here, we present
+a library of optical constants of several TMD materials, obtained
+using a sensitive and accurate spectroscopic ellipsometry
+approach. The method accounts for sample and measurement
+imperfections, such as surface roughness, thickness nonun-
+iformity, and spectrometer bandwidth and beam angular spread,
+ensuring a good level of consistency between all our results.
+In this work, we have measured both in-plane and out-of-
+plane optical constants of high-quality mechanically exfoliated
+TMDs over a broad spectral range of 300 −1700 nm using
+spectroscopic ellipsometry. Speci ﬁcally, we investigated several
+important multilayer TMDs with large lateral dimensions,
+including semiconducting WS
+2,W S e 2, MoS 2,M o S e2,a n d
+MoTe2, as well as in-plane anisotropic ReS 2 and WTe 2 and
+metallic TaS 2, TaSe 2, and NbSe 2 materials.29,30 Our exper-
+imentally obtained data reveal several interesting regimes,
+including high-index, anisotropy, and hyperbolicity, that may
+prove useful for future nanophotonic and optoelectronic
+applications.
+■ RESULTS AND DISCUSSION
+To extract the optical constants, we prepared all multilayer
+TMD ﬂakes by mechanical exfoliation directly from high-quality
+bulk crystals (HQ-graphene) onto substrates. We note that in
+order to perform spectroscopic ellipsometry measurements with
+low uncertainty, the lateral dimensions of the TMD ﬂakes are
+critical and must be larger than the beam spot during the
+measurements.
+In this work, the spectroscopic ellipsometry measurements
+(see Figure 1 for scheme) were performed using a variable-angle
+spectroscopic ellipsometer with a dual rotating compensator
+design (VASE Woollam RC2) equipped with focusing probes to
+reduce the beam diameter to ∼300 μm. To obtain multilayer
+TMDs of suﬃ cient lateral dimensions, all multilayer TMDﬂakes
+were mechanically exfoliated from bulk crystals, ﬁrst, onto
+polydimethylsiloxane (PDMS) stamps using the Scotch-tape
+method. Subsequently, the partially transparent semiconducting
+ﬂakes were transferred onto one-side-polished silicon substrates
+with a self-limiting natural oxide layer ( ∼1−3 nm) using the all-
+dry-transfer method
+35 with a few important concerns. 36 The
+lossy and/or metallic TMD ﬂakes were transferred onto silicon
+substrates with thermally grown SiO 2 with nominal thicknesses
+of 3 or 8.8 μm. First, we chose the original bulk crystals carefully
+and exfoliated multilayers onto PDMS stamps only from large
+(at least a centimeter) homogeneous crystals using blue Scotch
+tape. Second, due to the thermoplastic properties of the PDMS
+ﬁlm, the adhesion between the TMD ﬂakes and PDMS slightly
+decreases at elevated temperature (here 60 °C). By exploiting
+this property, large multilayer TMDs with a relatively
+homogeneous thickness can be readily transferred onto a
+substrate for ellipsometric measurements. Thicknesses of the
+transferred TMD ﬂakes were measured using a VEECO
+proﬁlometer. For our study, we chose multilayer TMDs with
+thicknesses ranging from a few tens of nanometers to several
+microns. Exemplary TMD ﬂakes are shown in Figure 2. These
+include semiconducting WS
+2, WSe 2, MoS 2, MoSe 2, MoTe 2,a s
+well as biaxial ReS 2 and WTe 2 and metallic TaS 2, TaSe 2, and
+NbSe2, which are among the most promising TMDs for future
+nanophotonic and optoelectronic applications. After sample
+preparation, we performed spectroscopic ellipsometry measure-
+ments and analysis for all freshly prepared multilayers in a broad
+spectral range of 300 −1700 nm in steps of 1 nm. The
+measurements were performed at multiple angles of incidence
+ranging from 20 ° to 75 ° in steps of 5 °. For some ﬂakes the
+maximum angle was reduced to ensure that the illumination spot
+was smaller than a TMD ﬂake. The obtained dielectric tensor
+component data as a function of wavelength for all studied
+materials are provided in the Supporting Information (SI).
+Uniaxial Semiconductors. We begin our study by
+investigating multilayers of uniaxial TMD semiconductors,
+Figure 1. Schematic of the spectroscopic ellipsometry measurements on mechanically exfoliated multilayer TMDs on a substrate. The sample is
+illuminated by a collimated and polarized beam containing p- and s-components. Optical properties of the sample are retrieved from the change of the
+polarization state induced by the reﬂection from the TMD surface. The change is measured as a function of incidence angleθ and wavelength in a broad
+angular and spectral range.
+ACS Photonics pubs.acs.org/journal/apchd5 Article
+https://doi.org/10.1021/acsphotonics.2c00433
+ACS Photonics XXXX, XXX, XXX −XXX
+B
+
+such as MoS2, MoSe2, MoTe2,W S2, and WSe2. These are one of
+the most well-studied TMD materials, especially in relation to
+their monolayers
+2 and vdW heterostructures. 37 Recently, they
+have been also suggested as a promising high-index dielectric
+material platform for future nanophotonics.
+10,14,28,31,38 Here, we
+report both their in-plane and out-of-plane dielectric constants
+and compare our results to previously reported val-
+ues.9,10,27,28,39,40
+In general, ellipsometry measures changes of the polarization
+state of light upon re ﬂection of an incident beam from a sample
+(Figure 1 ). The change is represented by two measured
+parameters, Ψ (psi) and Δ (delta), which correspond to the
+ratio of the re ﬂection coe ﬃ cients and the phase di ﬀerence
+between the p- and s-polarization components of the incident
+beam. The approach described above assumes that no exchange
+between the polarization components occurs upon re ﬂection
+from the sample. In the case of anisotropic samples, cross-
+polarization might occur; thus more complex analyses including
+general ellipsometry or Mueller matrix ellipsometry are required
+to address this issue. However, in the case of uniaxial anisotropic
+materials proper sample alignment results in canceling of all the
+oﬀ-diagonal components of the Mueller matrix, which simpliﬁes
+the procedure to the standard ellipsometry. While this alignment
+is straightforward for TMD ﬂakes due to their vdW nature,
+which dictates the alignment of the crystalline axes, the full
+Mueller matrix was measured to ensure this proper alignment
+(Figure S1−Figure S10).
+To extract physical parameters such as the thickness or
+complex refractive index of a given material, an appropriate
+model describing the investigated structure has to be built.
+Parameters of interest are extracted by a simultaneous ﬁt of the
+model parameters to the Ψ and Δ curves. Although the
+technique allows for optical characterization of a sample with
+thickness down to a monolayer, measurements of the
+anisotropic samples are challenging
+41 and require thick samples
+to ensure su ﬃ cient light interaction with in-plane and,
+especially, out-of-plane polarization components to sense the
+anisotropy. That is particularly di ﬃ cult for samples with a high
+refractive index, because the angle of refraction at the sample −
+air interface is greatly reduced, which in turn hampers accurate
+determination of the out-of-plane components. This problem
+can be partially overcome by using an appropriate scheme of
+measurements and analysis that allows improving the sensitivity
+of the model (see Methods).
+In our experiments, the samples exhibiting transparency in the
+visible−near-infrared (vis−NIR) range are present in the form
+of TMD layers (with thickness varying from a few tens of nm to a
+few microns) mechanically exfoliated onto Si substrates with a
+native SiO
+2 layer. In the extraction procedure, we use a
+multisample analysis approach with the model containing a
+semi-inﬁnite Si substrate with a native oxide and a layer of TMD
+with variable thickness. The optical constants of Si and SiO
+2 are
+taken from the CompleteEASE database, and their validity was
+conﬁrmed by reference measurements of substrates next to the
+TMD ﬂakes. The in-plane component of the complex refractive
+index is described by multiple Tauc −Lorentz dispersion model
+terms, while the out-of-plane component is described by a single
+resonance described by ε
+∞ and its ultraviolet (UV) position and
+amplitude (see Methods ). In the analysis, both surface
+roughness and layer nonuniformity are taken into account,
+and the goodness of ﬁt parameter, deﬁned as the mean squared
+error (MSE), is minimized during the ﬁtting procedure. The
+sensitivity of the technique to the anisotropic properties of the
+Figure 2. Exemplary images of exfoliated TMD ﬂakes used for
+ellipsometric measurements. The ﬁrst ﬁve rows show uniaxial
+semiconducting TMD ﬂakes: MoS 2, MoSe 2, (2H)MoTe 2,W S 2, and
+WSe2, respectively. The next three rows contain uniaxial metallic TMD
+ﬂakes: TaS 2, TaSe 2, and NbSe 2. The last two rows contain the two
+characterized biaxial TMD ﬂakes: metallic (though in the optical range
+the permittivity is positive) WTe 2 and semiconducting ReS 2,
+respectively. All semiconducting TMD ﬂakes were placed directly on
+a Si substrate with a rough (di ﬀusive) backside. In the case of metallic
+TMDs a thermally oxidized Si substrate was used (with a SiO2 thickness
+of 3 or 8.8 μm). The scale bar is 300 μm long and the same in every
+panel.
+ACS Photonics pubs.acs.org/journal/apchd5 Article
+https://doi.org/10.1021/acsphotonics.2c00433
+ACS Photonics XXXX, XXX, XXX −XXX
+C
+
+samples can be deduced from the asymmetry of the interference
+maxima in the Ψ curves occurring in the transparent regions of
+the samples. Moreover, a signi ﬁcant drop of MSE when the
+permittivity model is changed from isotropic to anisotropic
+indicates that this approach allows for extracting the out-of-
+plane components. Figure 3 shows the complex permittivities of
+the analyzed uniaxial semitransparent TMDs in the 300 −1700
+nm range (see Figures S11−S15 for quality of the ﬁts to Ψ and
+Δ). The surface of some samples is nonuniform, cf. Figure 2 ,
+with wrinkles and folds that cannot be easily incorporated into
+roughness within the model. Since the surface features inﬂuence
+the UV region the most, we limit the data to 300 nm in order to
+minimize the uncertainty of the extracted dispersion curves.
+Extracted in-plane ( n
+∥, here =ϵ=ϵn xx yy ) and out-of-
+plane =ϵ⊥n( )zz refractive indices at 1550 nm for semi-
+conducting TMDs and their optical anisotropy ( Δn = n∥ − n⊥)
+are displayed in Figure 4 . Overall, multilayer TMDs exhibit
+higher refractive indices at 1550 nm, in comparison to
+conventional high-index dielectrics, such as c-Si ( ∼3.47),42 a-
+Si (∼3.48),43 and GaAs (∼3.37).44 Our data in Figure 4a reveal a
+few interesting trends. First, we observe higher index values
+among Mo-based TMDs, ∼4.07 (MoS2), ∼4.21 (MoSe 2), and
+∼4.84 (MoTe2), when compared to W-based WS 2 (∼3.75) and
+WSe2 (∼3.99) materials. Second, these data also reveal that
+the refractive index increases in the following order:
+<<n nnMoS MoSe MoTe22 2
+. This observation agrees well with
+theoretically predicted results from an earlier DFT study. 27 In
+addition to high index, it is worth mentioning that optical losses
+for all studied materials shown in Figure 3 are negligible in the
+near-infrared range. This opens a possibility of using multilayer
+TMDs for low-loss nanophotonics, including waveguides and
+high quality factor resonators.
+31,45
+In the visible spectral range, the imaginary parts of
+permittivities exhibit pronounced resonances corresponding to
+A-, B-, and C-excitons ( Figure 3). For instance, in Figure 3, the
+Figure 3. Permittivity of uniaxial semiconducting TMD ﬂakes: (a)
+MoS2, (b) MoSe2, (c) MoTe2, (d) WS2, and (e) WSe2. Corresponding
+exemplary Mueller matrix measurements proving their uniaxial nature
+are plotted in Figures S1−S5.
+Figure 4. Comparison of extracted refractive indices of common TMDs
+at the telecom C band (1550 nm) with conventional semiconductors.
+(a) In-plane refractive index, (b) out-of-plane refractive index, (c)
+birefringence Δn = n∥ − n⊥.
+ACS Photonics pubs.acs.org/journal/apchd5 Article
+https://doi.org/10.1021/acsphotonics.2c00433
+ACS Photonics XXXX, XXX, XXX −XXX
+D
+
+in-plane imaginary parts of permittivities show clear A-exciton
+resonances at ∼676 nm (1.835 eV in MoS 2), ∼803 nm (1.544
+eV in MoSe 2), ∼1167 nm (1.062 eV in MoTe 2), ∼629 nm
+(1.972 eV in WS 2), and ∼764 nm (1.624 eV in WSe 2),
+respectively. The extracted values of A-exciton resonances are in
+reasonable agreement with previous reports. 11,39,40,46,47
+An important feature of all studied multilayer TMDs is their
+large birefringence Δn. Figure 4c shows that TMDs exhibitΔn ≥
+1.3 due to smaller out-of-plane refractive indices ranging fromn⊥
+= 2.44 (WS2) to 3.3 (MoTe2) (see Figure 4b), in comparison to
+their in-plane indices (see Figure 4a). MoTe2 shows the largest
+birefringence of Δn ≈ 1.54 among uniaxial semiconducting
+TMDs, whereas other materials MoS 2, MoSe2,W S2, and WSe 2
+exhibit birefringence values of Δn = ∼1.34, ∼1.44, ∼1.31, and
+∼1.34, respectively. The birefringence qualitatively follows the
+same Δ <Δ <Δnn nMoS MoSe MoTe22 2
+and Δ <ΔnnWX MoX22
+order as in-plane refractive indices. It should also be noted
+that the obtained birefrigence values in TMDs are 7 −8 times
+larger than common anisotropic materials, such as yttrium
+orthovanadate and rutile TiO
+2, which exhibit birefringences of
+Δn ≈ 0.2−0.3.48 Our data are in a good agreement with previous
+experimental and theoretical reports on birefringence. 7,9,27 For
+instance, our result for MoS 2, Δn ≈ 1.34, at 1550 nm is in
+agreement with previously obtained experimental values of Δn
+≈ 1.4 (at 1530 nm, extracted by scattering-type scanning near-
+ﬁeld optical microscopy (s-SNOM) 7) and Δn ≈ 1.5 (in the
+infrared, extracted by spectroscopic ellipsometry 9). However,
+due to the lack of reported birefringence data for a broader range
+of TMD materials, it is di ﬃ cult to perform a comprehensive
+comparison. Our study partially ﬁl l st h i sg a pa n d ,t h u s ,
+contributes to the database of available optical constants of
+TMD materials, which may prove useful for the development of
+future all-TMD nanophotonic applications. Additionally, a
+combination of high index ( n ≳ 4), low loss, and large
+birefringence ( Δn ≳ 1.4) in the near-infrared range makes
+multilayer TMDs a promising material platform for exploring
+photonic surface waves, e.g., Dyakonov
+49,50 and Zenneck 8
+surface waves.
+Biaxial Semiconductor. We now turn to the biaxial
+semiconductor ReS 2. The in-plane anisotropy of this material
+stems from the formation of covalent Re −Re bonds and
+correspondingly the 1T″-phase it adopts.51 This material, as well
+as its close relative ReSe2, has recently been predicted by DFT to
+have one of the highest permittivities in the visible −near-
+infrared spectral range (n > 5).28 Here, we report experimentally
+measured optical constants of ReS2. Performing ellipsometry on
+such a material is more challenging than for uniaxial TMDs from
+the measurement as well as analysis perspective. In-plane
+anisotropy requires rotation of the sample during the measure-
+ment to extract Euler angles of the material ’s crystallographic
+structure. This, in turn, requires that the lateral size of a ReS
+2
+ﬂake should be larger than the beam spot for all in-plane
+directions. However, due to in-plane anisotropy, ReS 2 tends to
+shear-oﬀ along the b-axis,52 which makes exfoliation of large
+symmetric ﬂakes extremely di ﬃ cult. We were, however, able to
+prepare reasonably large ReS 2 samples with some folds, which
+do not interfere with our measurements ( Figure 2 ). An
+additional diﬃ culty is that interaction of polarized light with a
+ReS2 sample leads to a cross-polarization e ﬀect; thus Ψ and Δ
+lose their meaning and the generalized ellipsometry, or more
+general Mueller matrix ellipsometry, is required. To ensure
+sensitivity of the methods to both in-plane and out-of-plane
+components, we performed a multisample analysis with ReS
+2
+thicknesses ranging from 200 nm to approximately 600 nm and
+at least two rotation angles with other measurement parameters
+being the same as for uniaxial semiconducting TMDs above. It is
+worth mentioning that due to problems with exfoliation, some
+ReS
+2 ﬂakes are characterized by a terrace-like surface
+morphology and are not uniform in thickness. Thus, in the
+analysis, the data acquired for each rotation angle are treated as
+for a separate sample and its thickness (for every in-plane
+rotation angle) is a free ﬁtting parameter. However, despite the
+presence of terraces, the crystalline axes of each ﬂake remain
+invariant, and thus the ﬁtted orientation (in-plane rotation)
+angles are consistent with the rotation angles during measure-
+ments. The in-plane permittivities ε
+xx and εyy are described by
+multiple Tauc −Lorentz dispersion models, while the out-of-
+plane component is described by a single resonance. The
+experimentally obtained permittivity for ReS2 is shown in Figure
+5a, while the ﬁdelity of the ﬁts is in Figure S17.
+Here, we extracted two n∥ (nxx and nyy) and one n⊥ (nzz)
+refractive index of ReS 2 at 1550 nm from the measured
+permittivity, which yielded nxx = 3.97, nyy = 3.71, and nzz = 2.66,
+respectively (Figure 4a,b). ReS2 exhibits birefringence values of
+Δ(nxx − nzz) ≈ 1.31 and Δ(nyy − nzz) ≈ 1.05 (Figure 4c). The
+obtained Δ(nyy − nzz) ≈ 1.05 is smaller than the birefringence of
+other TMDs. However, our data show that ReS2 possesses an in-
+plane birefringence of Δ(nxx − nyy) ≈ 0.26 at 1550 nm, in
+addition to its out-of-plane anisotropy. This suggests that ReS 2
+could be an interesting material for next-generation photonics
+due to its both in-plane and out-of-plane anisotropic properties
+(Re(ε
+xx) ≠ Re(εyy) ≠ Re(εzz) ≠ Re(εxx)), together with high
+index ( ≥3.7) and low loss in the telecom range. Moreover, a
+recent study reports a light-induced phase transition in mono-
+and bilayers of ReS
+2, which could be an additional bene ﬁt for
+ReS2-based nanophotonic applications, if such a process could
+be extended to multilayer ReS2.53 Finally, it is noteworthy that in
+the visible spectral range the in-plane anisotropic permittivity of
+ReS
+2 reveals two-orthogonal A-excitons at ∼792 nm (1.566 eV
+Figure 5. Permittivity of biaxial materials: (a) semiconducting ReS2 and
+(b) lossy (metallic at low frequencies) WTe 2 TMD ﬂakes.
+Corresponding exemplary Mueller matrix measurements in Figure S7
+and Figure S6 show their biaxial nature.
+ACS Photonics pubs.acs.org/journal/apchd5 Article
+https://doi.org/10.1021/acsphotonics.2c00433
+ACS Photonics XXXX, XXX, XXX −XXX
+E
+
+in Im( εyy)) and ∼830 nm (1.495 eV in Im( εxx)), respectively
+(Figure 5a).
+Metallic and Hyperbolic (Uniaxial and Biaxial). The
+third group of samples investigated in the experiment are TMDs
+that exhibit absorption in the whole measured wavelength range
+that comes from the metallic response and/or additional
+interband transitions.
+29 Due to a lack of sharp features in Ψ
+and Δ spectra when placed directly on a reﬂective substrate, they
+require a special scheme of measurements to ensure su ﬃ cient
+interaction of light with the samples and uniqueness of the
+ellipsometric models. This additional requirement is obtained
+by using a few-micron-thick thermally grown SiO
+2 layer on top
+of a Si substrate. When a thin semitransparent absorbing TMD
+ﬂake is deposited on such a support, interference in the SiO 2
+layer yields a distinct modulation of the ellipsometric signal,
+whose contrast depends on the thickness and extinction
+coeﬃ cient of the TMD layer. This so-called interference
+approach was introduced by Hil ﬁker et al.,
+54 showing great
+improvement in the sensitivity of ellipsometric models applied
+to absorbing materials.
+In our experiments semitransparent ﬂakes of thicknesses
+ranging from ∼50 to ∼400 nm were exfoliated onto a 3 or 8.8μm
+thick thermally grown SiO
+2 layer on a Si substrate. The
+measurements with the use of standard ellipsometry were
+carried out for the same wavelength and incidence angle range as
+for the previous samples (cf. Figures S8−S10 for Mueller matrix
+measurements conﬁrming appropriate alignment of the uniaxial
+samples). In the case of biaxial WTe
+2 the signiﬁcant diﬀerence
+with respect to the details above was the need to perform in-
+plane rotation of the sample identically to ReS2. The anisotropic
+materials were modeled with Tauc −Lorentz and as needed
+Drude functions for both in-plane and out-of-plane components.
+The ﬁtting procedure for these two types of materials is
+described in the Methods section.
+We now study uniaxial metallic TMDs, e.g., TaS
+2, TaSe2, and
+NbSe2, whose permittivities obtained in our measurements are
+shown in Figure 6 . Interestingly, the materials exhibit both
+dielectric and metallic responses in the studied spectral range, as
+indicated by a change of the sign of the values of the in-plane
+Re(ε) from positive to negative around 1100 to 1400 nm,
+depending on the material. Speci ﬁcally, the plasma frequencies
+of the in-plane Re( ε) of Ta-based TMDs TaS
+2 and TaSe 2 are
+respectively at ∼1110 nm ( ∼1.11 eV) and ∼1217 nm ( ∼1.01
+eV), as illustrated in Figure 6 a,b. However, their out-of-plane
+Re(εzz) remain positive, showing only a dielectric response over
+the entire studied spectral range. This suggests that TaS 2 and
+TaSe2 exhibit a natural hyperbolic response at frequencies below
+their corresponding plasma frequencies, which could be useful
+for TMD plasmonic applications.
+29,30
+On the other hand, Figure 6 c shows that both in-plane and
+out-of-plane components of Re( ε) of NbSe 2 are positive for
+wavelengths shorter than ∼1390 nm, suggesting that NbSe2 may
+behave like an out-of-plane anisotropic dielectric in the visible
+spectrum. Conversely, the real parts of the diagonal dielectric
+tensor become negative at longer wavelengths and retain the
+sign until the red edge of our measurement range. Furthermore,
+above ∼1200 nm NbSe
+2 is only weakly anisotropic. The negative
+sign of the in-plane dielectric function is associated with a free-
+electron response just like for Ta-based metallic TMDs and
+indicates an in-plane plasma frequency of ∼0.89 eV. However,
+the negative dielectric function in the out-of-plane direction is
+not associated with a free-electron Drude-like response. Rather
+it is due to a high oscillator strength of a Lorentz-like response,
+which leads to the appearance of a Reststrahlen-like band for
+wavelengths above ∼1400 nm. The out-of-plane dielectric
+function should therefore become positive again at longer
+wavelengths; however, this occurs outside of our measurement
+range (>1700 nm).
+In contrast to the above three materials, WTe
+2 is an in-plane
+anisotropic TMD like ReS 2, but is metallic and hyperbolic (the
+plasma frequency of this material is, however, much smaller than
+that of other metallic TMDs studied in this work, so in the 300−
+1700 nm spectral range it appears to have a dielectric-like
+response). Recently, hyperbolic dispersion in WTe
+2 was
+demonstrated experimentally in the infrared region ( ∼500
+cm−1) using far- ﬁeld absorption measurements. 55 Later, a new
+hyperbolic regime in the near-infrared (∼1 eV) was theoretically
+predicted in monolayer WTe 2 due to band-nested anisotropic
+interband transitions.56 However, such hyperbolicity of WTe2 in
+the near-infrared becomes weaker and disappears as the layer
+number increases from monolayer to bulk. Indeed, Figure 5 b
+shows the experimentally here-obtained permittivity from
+multilayer WTe
+2. As expected, the real part of the permittivity
+Re(ε) shows no sign of hyperbolic behavior in the studied
+spectral range. At the same time, we observed an interesting
+anisotropic behavior in the narrow spectral region around 800
+nm, where Re( ε
+xx) > Re( εzz) > Re( εyy). Such behavior is
+uncommon and is not observed in other TMDs studied here.
+Figure 6. Permittivity of uniaxial metallic TMD ﬂakes: (a) TaS 2, (b)
+TaSe2, and (c) NbSe 2. See Figures S8 −S10 for Mueller matrix
+measurements con ﬁrming their uniaxial properties and proper
+alignment. In all panels, horizontal black lines separate positive and
+negative permittivities, while vertical red lines show the wavelengths at
+which the in-plane permittivities cross zeros. In the measured spectral
+range, wavelengths to the right of the red lines correspond to regions of
+hyperbolicity for TaS
+2 and TaSe2, while for NbSe 2 hyperbolicity is not
+observed due to the appearance of a Reststrahlen band for wavelengths
+above ∼1400 nm in Re( εzz) (see text).
+ACS Photonics pubs.acs.org/journal/apchd5 Article
+https://doi.org/10.1021/acsphotonics.2c00433
+ACS Photonics XXXX, XXX, XXX −XXX
+F
+
+Moreover, WTe 2 possesses relatively large in-plane birefrin-
+gence ranging from a Δ(nxx − nyy)o f ∼0.2 (at 510 nm) to ∼1.12
+(at 880 nm). The maximum obtained Δ(nxx − nyy)o f ∼1.12
+(WTe2) is substantially larger than the in-plane birefringence of
+ReS2 (∼0.26). We note, however, that the in-plane losses are
+relatively large in the entire studied spectral range.
+■ CONCLUSION
+In conclusion, we have experimentally measured both in-plane
+and out-of-plane optical constants of mechanically exfoliated
+TMD multilayers using spectroscopic ellipsometry over a broad
+spectral range of 300 −1700 nm. Our measurements include
+several semiconducting, WS
+2, WSe2, MoS2, MoSe2, and MoTe 2
+as well as in-plane anisotropic ReS2 and WTe2 and metallic TaS2,
+TaSe2, and NbSe 2 materials. The extracted parameters
+demonstrate a combination of several remarkable optical
+properties, such as a high index ( n up to ∼4.84 for MoTe
+2),
+signiﬁcant anisotropy ( n∥ − n⊥ ≈ 1.54 for MoTe 2), and low
+absorption in the near-infrared region. Moreover, metallic
+TMDs show potential for a combined plasmonic −dielectric
+behavior and hyperbolicity, as their plasma frequencies occur in
+the ∼1000−1300 nm range depending on the material. The
+knowledge of dispersive and anisotropic optical constants of
+these vdW materials opens new possibilities for the future
+development of all-TMD nanophotonics.
+■ METHODS
+Sample Preparation. All TMD ﬂakes, including semi-
+conducting and uniaxial WS 2,W S e 2,M o S 2,M o S e2,a n d
+(2H)MoTe2, hyperbolic and metallic (2H)TaS 2, TaSe 2, and
+NbSe2, and biaxial ReS2 and WTe2, were mechanically exfoliated
+from bulk crystals (HQ-graphene) onto PDMS stamps using the
+Scotch-tape method and then transferred onto substrates using
+the all-dry-transfer method.
+35,36 For spectroscopic ellipsometry
+measurements, the lateral dimensions of TMD ﬂakes should be
+larger than the beam size. To obtain su ﬃ cient dimensions of
+TMD ﬂakes, we modiﬁed the previously developed method with
+a few important concerns.
+First, we chose the starting bulk crystals carefully and
+exfoliated multilayers onto PDMS stamps only from large
+crystals (a centimeter at the least) with a homogeneous surface
+using blue Scotch tape. Second, due to the thermoplastic
+properties of the PDMS ﬁlm, adhesion between TMD ﬂakes and
+PDMS slightly decreases at the elevated temperature of 60 °C.
+By exploiting this advantage, large multilayer TMDs with
+relatively homogeneous thicknesses can be readily transferred
+onto a substrate for ellipsometric measurements. The
+thicknesses of the transferred TMD ﬂakes were measured
+using a VEECO pro ﬁlometer, and we chose multilayer TMDs
+with thicknesses ranging from a few tens of nanometers to
+several microns. The minimum lateral size of uniaxial TMD
+ﬂakes investigated in this study is at least 300 μm in one
+direction (beam width) and at least 700 μm in the other to
+facilitate measurements at angles of incidence of up to (and a
+minimum of) 65 °. For biaxial TMDs, ReS
+2 and WTe 2, both
+orthogonal in-plane directions need to be not smaller than
+400 μm to enable measurements up to (at least) 45° and larger if
+possible. For ellipsometric measurements of semiconducting
+TMDs, one-side-polished silicon substrates with a self-limiting
+natural oxide layer (1 −3 nm) were used. Metallic TMDs lack
+sharp excitonic features in Ψ and Δ spectra. Therefore, in order
+to perform high-quality measurements of metallic TMDs and to
+obtain sharp interference features in the ellipsometric spectra,
+semitransparent metallic TMD ﬂakes of TaS
+2, TaSe 2, NbSe 2,
+and WTe2 were transferred onto silicon substrates with a 3 or 8.8
+μm thick thermally grown SiO 2 layer.
+Variable-Angle Spectroscopic Ellipsometry. Ellipso-
+metric measurements were carried out using a Woollam RC2
+dual rotating compensator (DRC) ellipsometer with a vertical
+auto angle stage. It allows for measurement of the full Mueller
+matrix, which is essential for analysis of biaxial samples and
+helpful for verifying that the uniaxial samples are correctly set up
+in the ellipsometer ’s coordinates. Another feature that is
+accessible in the DRC architecture is the depolarization factor,
+which allows for measurement and modeling of a sample ’s
+imperfections, such as thickness nonuniformity or the in ﬂuence
+of a device’s parameters/limitations such as detector bandwidth
+or angular spread of the beam. Due to the small lateral
+dimensions of TMD ﬂakes, they are measured using focusing
+probes, which reduce the light beam to a 300 μm spot at normal
+incidence. The con ﬁguration of the ellipsometer with mounted
+focusing probes does not allow for transmission measurements;
+thus samples were prepared and measured in re ﬂection up to a
+wavelength of 1700 nm and the full accessible angle range from
+20° to 75 ° depending of the size of the TMD ﬂake. Modeling
+and ﬁtting were done with the use of CompleteEASE v6.61.
+Fitting of Ellipsometric Data. The investigated samples
+exhibit three types of optical responses, which require di ﬀerent
+strategies in building appropriate models. The Ψ curves of
+uniaxial semitransparent TMD ﬂakes exhibit interference
+maxima in the transparent regions. Proper ﬁtting in these
+spectral ranges determines with very good accuracy both the
+thickness and the real part of the dielectric function, yielding a
+good starting point for further modeling of the data in the
+remaining spectral regions. For this type of samples we
+proceeded as follows:
+• In the ﬁrst step, an isotropic model is used and the
+transparent region is described by a Cauchy model,A + B/
+λ
+2, where the parameters such as layer thickness, A, and B
+are extracted by the Levenberg −Marquardt algorithm
+after ﬁtting the model to the Ψ and Δ curves.
+• In the next step, the Cauchy model is converted to the
+Kramers−Kronig consistent B-spline curves with their
+subsequent expansion to the whole wavelength range.
+The B-spline function approximates theﬁtting curves with
+basic functions with their argument (photon energy, eV)
+equally spaced. We used a 0.05 eV step in the whole
+energy range except where Ψ exhibits sharp or anomalous
+behavior corresponding to, for example, exciton bands in
+the dielectric function.
+• In the third step, the isotropic model is converted to an
+anisotropic one and the out-of-plane component is
+described by a single UV resonance. After minimization
+of the MSE, the B-spline model is parametrized by a
+general oscillator model with the use of Tauc −Lorentz
+oscillators.
+• The whole procedure is initially done for the thickest
+samples, and after parametrization, theﬁtting procedure is
+repeated in a multisample analysis, leading to a complex
+diagonal permittivity tensor, which is common for all
+samples.
+The lack of a transparent region for the metallic TMD samples
+necessitates some changes to the above-described procedure.
+First of all, use of the interference approach requires a more
+ACS Photonics pubs.acs.org/journal/apchd5 Article
+https://doi.org/10.1021/acsphotonics.2c00433
+ACS Photonics XXXX, XXX, XXX −XXX
+G
+
+complicated model taking into account the transparent
+interference layer as well as the additional interlayer present at
+the Si and SiO
+2 interface. The Si substrate with thermal SiO2 was
+characterized prior to the ﬁnal measurements, and their
+extracted parameters were ﬁxed in the initial stage of modeling.
+• The ﬁrst step consists of ﬁtting an isotropic Kramers −
+Kronig consistent Bi-spline function to the data for the
+thinnest samples exhibiting the most pronounced
+interference maxima. The thickness of the TMD layer is
+ﬁxed during the ﬁtting procedure, and their values are
+taken from pro ﬁlometric measurements.
+• In the next step, the isotropic model is converted to an
+anisotropic one and the ﬁtting procedure is repeated. For
+ﬁnal improvement of the results, roughness and sample
+and machine imperfections are taken into account.
+• In the last step the multisample analysis is carried out and
+the ﬁnal Bi-spline model is parametrized with Tauc −
+Lorentz and Drude functions.
+Evaluation of the models is based on minimization of the
+MSE, the correlation matrix, and the uniqueness test. In the case
+of biaxial samples the ﬁrst and second procedures were used for
+respectively ReS
+2 and WTe 2 with a modi ﬁcation that involved
+using a biaxial model instead of a uniaxial model.
+Ellipsometric Model Equations. The general model used
+to describe the optical properties of the studied TMDs is given
+by the following equation:
+∑ϵ= ϵ + ϵ + ϵ + ϵ∞EE E E() () () ()ii
+n
+nuv tl, drd
+where εii(E) is one of the diagonal elements of the complex
+dielectric tensor as a function of photon energy,E, in eV with the
+subscript ii being xx or yy for the in-plane components or zz for
+the out-of-plane component. The four terms on the right-hand
+side are as follows:
+• ε∞ is the real part of the permittivity at in ﬁnite frequency.
+• εuv(E) is equivalent to a Lorentz oscillator with zero
+broadening and position in the UV. Such resonances are
+positioned outside the measured spectral range and are
+applied to take into account absorption that occurs at
+higher energies than available in the experiment, thus
+inﬂuencing only the real part (speci ﬁcally, its dispersion)
+of the permittivity in the measured spectral range. The UV
+resonance is de ﬁned as
+ϵ=
+−
+E A
+EE
+()uv
+uv
+uv
+22
+where the permittivity εuv is centered at energy Euv and Auv is the
+amplitude of the oscillator in eV 2.
+• The third term is a sum of Tauc −Lorentz complex
+functions with the imaginary part of thenth element being
+[ϵ ] =
+−
+−+
+·>
+≤
+l
+m
+oo
+o
+o
+o
+o
+n
+oo
+o
+o
+o
+o
+E
+AE B E E
+EE B E E EE
+EE
+Im ( )
+()
+()
+1 ,
+0,
+n
+nn n n
+nn
+n
+n
+tl,
+0r g
+2
+2
+0
+22
+r
+22 g
+g
+where E0n is the center energy, Egn the band gap energy of the
+oscillator, Brn the broadening of the oscillator, and An the
+amplitude of the oscillator. The real part is calculated via the
+Kramers−Kronig transformation.
+• The last term is the Drude function describing the
+electromagnetic response of a free-electron gas in
+conductive materials given by
+ϵ= −
++Γ
+E
+E
+Ei E
+()drd
+p
+2
+2
+where Ep is the plasma energy and Γ is the damping.
+■ ASSOCIATED CONTENT
+*sı Supporting Information
+The Supporting Information is available free of charge at
+https://pubs.acs.org/doi/10.1021/acsphotonics.2c00433.
+Figures S1 −S10, exemplary Mueller matrices for all
+materials; Figures S11 −S20, agreement between meas-
+urements and ﬁtted models; Tables S1 and S2, summary
+of other ﬁtting parameters; Note S1, uncertainty of optical
+parameters accompanied by Figures S21 −S23 (PDF)
+Text ﬁles with the diagonal permittivity tensors plotted in
+Figure 3, Figure 5, and Figure 6 (ZIP)
+■ AUTHOR INFORMATION
+Corresponding Authors
+Tomasz J. Antosiewicz − Faculty of Physics, University of
+Warsaw, PL-02-093 Warsaw, Poland; Department of Physics,
+Chalmers University of Technology, SE-412 96 Gothenburg,
+Sweden;
+orcid.org/0000-0003-2535-4174;
+Email: tomasz.antosiewicz@fuw.edu.pl
+Timur O. Shegai − Department of Physics, Chalmers University
+of Technology, SE-412 96 Gothenburg, Sweden; orcid.org/
+0000-0002-4266-3721; Email: timurs@chalmers.se
+Authors
+Battulga Munkhbat − Department of Physics, Chalmers
+University of Technology, SE-412 96 Gothenburg, Sweden;
+Department of Photonics Engineering, Technical University of
+Denmark, 2800 Kongens Lyngby, Denmark
+Piotr Wróbel − Faculty of Physics, University of Warsaw, PL-
+02-093 Warsaw, Poland
+Complete contact information is available at:
+https://pubs.acs.org/10.1021/acsphotonics.2c00433
+Author Contributions
+§B.M. and P.W. contributed equally to this work.
+Author Contributions
+B.M. prepared the samples. B.M. and P.W. performed
+proﬁlometer measurements, while P.W. and T.J.A. carried out
+the ellipsometric measurements and data analysis. T.J.A. and
+T.O.S. conceived and coordinated the project. All authors wrote
+the paper.
+Notes
+The authors declare no competing ﬁnancial interest.
+The raw ellipsometric data along with ﬁtted models in both the
+proprietary format of the CompleteEASE software (Woolam)
+and as plain text ﬁles as well as plain text ﬁles with ﬁtted
+permittivities are available at 10.5281/zenodo.6205431.
+■ ACKNOWLEDGMENTS
+B.M. and T.O.S. acknowledge ﬁnancial support from the
+Swedish Research Council (under VR Miljö project, grant no.
+2016-06059), the Knut and Alice Wallenberg Foundation (grant
+no. 2019.0140), and 2D-TECH VINNOVA competence center
+ACS Photonics pubs.acs.org/journal/apchd5 Article
+https://doi.org/10.1021/acsphotonics.2c00433
+ACS Photonics XXXX, XXX, XXX −XXX
+H
+
+(ref. 2019-00068). B.M. also acknowledges the European
+Research Council (ERC-CoG “Unity”, grant no. 865230).
+P.W. and T.J.A. thank the Polish National Science Center for
+support via the projects 2019/34/E/ST3/00359 (T.J.A.) and
+2019/35/B/ST5/02477 (P.W.).
+■ REFERENCES
+(1) Splendiani, A.; Sun, L.; Zhang, Y.; Li, T.; Kim, J.; Chim, C.-Y.;
+Galli, G.; Wang, F. Emerging photoluminescence in monolayer MoS 2.
+Nano Lett. 2010, 10, 1271−1275.
+(2) Mak, K. F.; Lee, C.; Hone, J.; Shan, J.; Heinz, T. F. Atomically thin
+MoS2: a new direct-gap semiconductor. Phys. Rev. Lett. 2010, 105,
+136805.
+(3) Wang, G.; Chernikov, A.; Glazov, M. M.; Heinz, T. F.; Marie, X.;
+Amand, T.; Urbaszek, B. Colloquium: Excitons in atomically thin
+transition metal dichalcogenides. Rev. Mod. Phys. 2018, 90, 021001.
+(4) Wilson, J. A.; Yoffe, A. D. The transition metal dichalcogenides
+discussion and interpretation of the observed optical, electrical and
+structural properties. Adv. Phys. 1969, 18, 193−335.
+(5) Fei, Z.; Scott, M.; Gosztola, D.; Foley IV, J.; Yan, J.; Mandrus, D.;
+Wen, H.; Zhou, P.; Zhang, D.; Sun, Y.; et al. Nano-optical imaging of
+WSe
+2 waveguide modes revealing light-exciton interactions.Phys. Rev. B
+2016, 94, 081402.
+(6) Hu, F.; Luan, Y.; Scott, M.; Yan, J.; Mandrus, D.; Xu, X.; Fei, Z.
+Imaging exciton −polariton transport in MoSe 2 waveguides. Nat.
+Photonics 2017, 11, 356−360.
+(7) Hu, D.; Yang, X.; Li, C.; Liu, R.; Yao, Z.; Hu, H.; Corder, S. N. G.;
+Chen, J.; Sun, Z.; Liu, M.; Dai, Q. Probing optical anisotropy of
+nanometer-thin van der Waals microcrystals by near-field imaging. Nat.
+Commun. 2017, 8, 1471.
+(8) Babicheva, V. E.; Gamage, S.; Zhen, L.; Cronin, S. B.; Yakovlev, V.
+S.; Abate, Y. Near-field surface waves in few-layer MoS 2. ACS Photonics
+2018, 5, 2106−2112.
+(9) Ermolaev, G.; Grudinin, D.; Stebunov, Y.; Voronin, K. V.; Kravets,
+V.; Duan, J.; Mazitov, A.; Tselikov, G.; Bylinkin, A.; Yakubovsky, D.;
+et al. Giant optical anisotropy in transition metal dichalcogenides for
+next-generation photonics. Nat. Commun. 2021, 12, 854.
+(10) Li, Y.; Chernikov, A.; Zhang, X.; Rigosi, A.; Hill, H. M.; Van Der
+Zande, A. M.; Chenet, D. A.; Shih, E.-M.; Hone, J.; Heinz, T. F.
+Measurement of the optical dielectric function of monolayer transition-
+metal dichalcogenides: MoS
+2, MoSe 2,W S 2, and WSe 2. Phys. Rev. B
+2014, 90, 205422.
+(11) Ermolaev, G. A.; Stebunov, Y. V.; Vyshnevyy, A. A.; Tatarkin, D.
+E.; Yakubovsky, D. I.; Novikov, S. M.; Baranov, D. G.; Shegai, T.;
+Nikitin, A. Y.; Arsenin, A. V.; et al. Broadband optical properties of
+monolayer and bulk MoS
+2. npj 2D Mater. and Appl. 2020, 4, 21.
+(12) Li, W.; Birdwell, A. G.; Amani, M.; Burke, R. A.; Ling, X.; Lee, Y.-
+H.; Liang, X.; Peng, L.; Richter, C. A.; Kong, J.; et al. Broadband optical
+properties of large-area monolayer CVD molybdenum disulfide. Phys.
+Rev. B 2014, 90, 195434.
+(13) Yim, C.; O’Brien, M.; McEvoy, N.; Winters, S.; Mirza, I.; Lunney,
+J. G.; Duesberg, G. S. Investigation of the optical properties of MoS 2
+thin films using spectroscopic ellipsometry. Appl. Phys. Lett. 2014, 104,
+103114.
+(14) Verre, R.; Baranov, D. G.; Munkhbat, B.; Cuadra, J.; Käll, M.;
+Shegai, T. Transition metal dichalcogenide nanodisks as high-index
+dielectric Mie nanoresonators. Nat. Nanotechnol. 2019, 14, 679−683.
+(15) Zhang, X.; De-Eknamkul, C.; Gu, J.; Boehmke, A. L.; Menon, V.
+M.; Khurgin, J.; Cubukcu, E. Guiding of visible photons at the ångström
+thickness limit. Nat. Nanotechnol. 2019, 14, 844−850.
+(16) Green, T. D.; Baranov, D. G.; Munkhbat, B.; Verre, R.; Shegai, T.;
+Käll, M. Optical material anisotropy in high-index transition metal
+dichalcogenide Mie nanoresonators. Optica 2020, 7, 680−686.
+(17) Munkhbat, B.; Baranov, D. G.; Stu ̈hrenberg, M.; Wersäll, M.;
+Bisht, A.; Shegai, T. Self-hybridized exciton-polaritons in multilayers of
+transition metal dichalcogenides for efficient light absorption. ACS
+Photonics 2019, 6, 139−147.
+(18) Gogna, R.; Zhang, L.; Deng, H. Self-hybridized, polarized
+polaritons in ReS
+2 crystals. ACS Photonics 2020, 7, 3328−3332.
+(19) Yadgarov, L.; Vis̆ić, B.; Abir, T.; Tenne, R.; Polyakov, A. Y.; Levi,
+R.; Dolgova, T. V.; Zubyuk, V. V.; Fedyanin, A. A.; Goodilin, E. A.; et al.
+Strong light−matter interaction in tungsten disulfide nanotubes. Phys.
+Chem. Chem. Phys. 2018, 20, 20812−20820.
+(20) Babicheva, V. E.; Moloney, J. V. Lattice Resonances in
+Transdimensional WS
+2 Nanoantenna Arrays. Appl. Sci. 2019, 9, 2005.
+(21) Busschaert, S.; Reimann, R.; Cavigelli, M.; Khelifa, R.; Jain, A.;
+Novotny, L. Transition metal dichalcogenide resonators for second
+harmonic signal enhancement. ACS Photonics 2020, 7, 2482−2488.
+(22) Nauman, M.; Yan, J.; de Ceglia, D.; Rahmani, M.; Kamali, K. Z.;
+De Angelis, C.; Miroshnichenko, A. E.; Lu, Y.; Neshev, D. N. Tunable
+Unidirectional Nonlinear Emission from Transition-Metal-Dichalco-
+genide Metasurfaces. Nat. Commun. 2021, 12, 5597.
+(23) Krishnamoorthy, H.; Adamo, G.; Yin, J.; Savinov, V.; Zheludev,
+N.; Soci, C. Infrared dielectric metamaterials from high refractive index
+chalcogenides. Nat. Commun. 2020, 11, 1692.
+(24) Danielsen, D. R.; Lyksborg-Andersen, A.; Nielsen, K. E.; Jessen,
+B. S.; Booth, T. J.; Doan, M.-H.; Zhou, Y.; Bøggild, P.; Gammelgaard, L.
+Super-Resolution Nanolithography of Two-Dimensional Materials by
+Anisotropic Etching. ACS Appl. Mater. Interfaces 2021, 13, 41886 −
+41894.
+(25) Zotev, P. G.; Wang, Y.; Sortino, L.; Severs Millard, T.; Mullin, N.;
+Conteduca, D.; Shagar, M.; Genco, A.; Hobbs, J. K.; Krauss, T. F.; et al.
+Transition Metal Dichalcogenide Dimer Nanoantennas for Tailored
+Light−Matter Interactions. ACS Nano 2022, 16, 6493.
+(26) Munkhbat, B.; Yankovich, A. B.; Verre, R.; Olsson, E.; Shegai, T.
+O. Transition metal dichalcogenide metamaterials with atomic
+precision. Nat. Commun. 2020, 11, 4604.
+(27) Laturia, A.; Van de Put, M. L.; Vandenberghe, W. G. Dielectric
+properties of hexagonal boron nitride and transition metal dichalco-
+genides: from monolayer to bulk. npj 2D Mater. Appl. 2018, 2,6 .
+(28) Shubnic, A. A.; Polozkov, R. G.; Shelykh, I. A.; Iorsh, I. V. High
+refractive index and extreme biaxial optical anisotropy of rhenium
+diselenide for applications in all-dielectric nanophotonics. Nano-
+photonics 2020, 9, 4737−4742.
+(29) Gjerding, M. N.; Petersen, R.; Pedersen, T. G.; Mortensen, N. A.;
+Thygesen, K. S. Layered van der Waals crystals with hyperbolic light
+dispersion. Nat. Commun. 2017, 8,1 −8.
+(30) Gjerding, M. N.; Pandey, M.; Thygesen, K. S. Band structure
+engineered layered metals for low-loss plasmonics.Nat. Commun. 2017,
+8,1 −8.
+(31) Ling, H.; Li, R.; Davoyan, A. R. All van der Waals integrated
+nanophotonics with bulk transition metal dichalcogenides. ACS
+Photonics 2021, 8, 721
+−730.
+(32) Cai, Z.; Liu, B.; Zou, X.; Cheng, H.-M. Chemical vapor
+deposition growth and applications of two-dimensional materials and
+their heterostructures. Chem. Rev. 2018, 118, 6091−6133.
+(33) Diware, M. S.; Park, K.; Mun, J.; Park, H. G.; Chegal, W.; Cho, Y.
+J.; Cho, H. M.; Park, J.; Kim, H.; Kang, S.-W.; et al. Characterization of
+wafer-scale MoS
+2 and WSe 2 2D films by spectroscopic ellipsometry.
+Curr. Appl. Phys. 2017, 17, 1329−1334.
+(34) Kylänpää, I.; Komsa, H.-P. Binding energies of exciton complexes
+in transition metal dichalcogenide monolayers and effect of dielectric
+environment. Phys. Rev. B 2015, 92, 205418.
+(35) Castellanos-Gomez, A.; Buscema, M.; Molenaar, R.; Singh, V.;
+Janssen, L.; van der Zant, H. S. J.; Steele, G. A. Deterministic transfer of
+two-dimensional materials by all-dry viscoelastic stamping. 2D Mater.
+2014, 1, 011002.
+(36) Kinoshita, K.; Moriya, R.; Onodera, M.; Wakafuji, Y.; Masubuchi,
+S.; Watanabe, K.; Taniguchi, T.; Machida, T. Dry release transfer of
+graphene and few-layer h-BN by utilizing thermoplasticity of
+polypropylene carbonate. npj 2D Mater. Appl. 2019, 3, 22.
+(37) Rivera, P.; Yu, H.; Seyler, K. L.; Wilson, N. P.; Yao, W.; Xu, X.
+Interlayer valley excitons in heterobilayers of transition metal
+dichalcogenides. Nat. Nanotechnol. 2018, 13, 1004−1015.
+ACS Photonics pubs.acs.org/journal/apchd5 Article
+https://doi.org/10.1021/acsphotonics.2c00433
+ACS Photonics XXXX, XXX, XXX −XXX
+I
+
+(38) Liu, C.-H.; Zheng, J.; Colburn, S.; Fryett, T. K.; Chen, Y.; Xu, X.;
+Majumdar, A. Ultrathin van der Waals metalenses. Nano Lett. 2018, 18,
+6961−6966.
+(39) Beal, A.; Liang, W.; Hughes, H. Kramers-Kronig analysis of the
+reflectivity spectra of 3R-WS2 and 2H-WSe2. J. Phys. C Solid State Phys.
+1976, 9, 2449−2457.
+(40) Beal, A.; Hughes, H. Kramers-Kronig analysis of the reflectivity
+spectra of 2H-MoS 2, 2H-MoSe2 and 2H-MoTe2. J. Phys. C Solid State
+Phys. 1979, 12, 881−890.
+(41) Xu, Z.; Ferraro, D.; Zaltron, A.; Galvanetto, N.; Martucci, A.;
+Sun, L.; Yang, P.; Zhang, Y.; Wang, Y.; Liu, Z.; et al. Optical detection of
+the susceptibility tensor in two-dimensional crystals. Commun. Phys.
+2021, 4, 215.
+(42) Li, H. Refractive index of silicon and germanium and its
+wavelength and temperature derivatives. J. Phys. Chem. Ref. Data 1980,
+9, 561−658.
+(43) Pierce, D. T.; Spicer, W. E. Electronic structure of amorphous Si
+from photoemission and optical studies. Phys. Rev. B 1972, 5, 3017 −
+3029.
+(44) Papatryfonos, K.; Angelova, T.; Brimont, A.; Reid, B.; Guldin, S.;
+Smith, P. R.; Tang, M.; Li, K.; Seeds, A. J.; Liu, H.; et al. Refractive
+indices of MBE-grown Al xGa(1−x)As ternary alloys in the transparent
+wavelength region. AIP Adv. 2021, 11, 025327.
+(45) Munkhbat, B.; Ku ̈çüköz, B.; Baranov, D. G.; Antosiewicz, T. J.;
+Shegai, T. O. Nanostructured transition metal dichalcogenide multi-
+layers for advanced nanophotonics. arXiv preprint arXiv:2202.04898 ,
+2022.
+(46) Hsu, C.; Frisenda, R.; Schmidt, R.; Arora, A.; De Vasconcellos, S.
+M.; Bratschitsch, R.; van der Zant, H. S.; Castellanos-Gomez, A.
+Thickness-dependent refractive index of 1L, 2L, and 3L MoS 2, MoSe2,
+WS2, and WSe 2. Adv. Opt. Mater. 2019, 7, 1900239.
+(47) Gu, H.; Song, B.; Fang, M.; Hong, Y.; Chen, X.; Jiang, H.; Ren,
+W.; Liu, S. Layer-dependent dielectric and optical properties of
+centimeter-scale 2D WSe
+2: evolution from a single layer to few layers.
+Nanoscale 2019, 11, 22762−22771.
+(48) Takayama, O.; Crasovan, L.-C.; Johansen, S. K.; Mihalache, D.;
+Artigas, D.; Torner, L. Dyakonov surface waves: A review. Electro-
+magnetics 2008, 28, 126−145.
+(49) Takayama, O.; Crasovan, L.; Artigas, D.; Torner, L. Observation
+of Dyakonov surface waves. Phys. Rev. Lett. 2009, 102, 043903.
+(50) Takayama, O.; Artigas, D.; Torner, L. Lossless directional
+guiding of light in dielectric nanosheets using Dyakonov surface waves.
+Nat. Nanotechnol. 2014, 9, 419−424.
+(51) Aslan, O. B.; Chenet, D. A.; Van Der Zande, A. M.; Hone, J. C.;
+Heinz, T. F. Linearly polarized excitons in single-and few-layer ReS 2
+crystals. ACS Photonics 2016, 3,9 6−101.
+(52) Wang, H.; Liu, E.; Wang, Y.; Wan, B.; Ho, C.-H.; Miao, F.; Wan,
+X. Cleavage tendency of anisotropic two-dimensional materials: ReX 2
+(X = S, Se) and WTe 2. Phys. Rev. B 2017, 96, 165418.
+(53) Ku ̈çüköz, B.; Munkhbat, B.; Shegai, T. O. Boosting Second-
+Harmonic Generation in Monolayer Rhenium Disulfide by Reversible
+Laser Patterning. ACS Photonics 2022, 9, 518−526.
+(54) Hilfiker, J. N.; Singh, N.; Tiwald, T.; Convey, D.; Smith, S. M.;
+Baker, J. H.; Tompkins, H. G. Survey of methods to characterize thin
+absorbing films with Spectroscopic Ellipsometry.Thin Solid Films 2008,
+516, 7979−7989.
+(55) Wang, C.; Huang, S.; Xing, Q.; Xie, Y.; Song, C.; Wang, F.; Yan,
+H. Van der Waals thin films of WTe
+2 for natural hyperbolic plasmonic
+surfaces. Nat. Commun. 2020, 11, 1158.
+(56) Wang, H.; Low, T. Hyperbolicity in two-dimensional transition
+metal ditellurides induced by electronic bands nesting. Phys. Rev. B
+2020, 102, 241104.
+ACS Photonics pubs.acs.org/journal/apchd5 Article
+https://doi.org/10.1021/acsphotonics.2c00433
+ACS Photonics XXXX, XXX, XXX −XXX
+J

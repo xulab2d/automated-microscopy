@@ -1,0 +1,173 @@
+{
+  "schema": 1,
+  "plan": {
+    "bounds_um": [
+      190.0,
+      810.0,
+      150.0,
+      810.0
+    ],
+    "overlap": 0.15,
+    "autofocus_every": 5,
+    "focus_half_range_um": 12,
+    "focus_step_um": 3,
+    "max_tiles": 10000,
+    "chip_id": "arbitrary-chip",
+    "polygon_um": [
+      [
+        682.5,
+        152.5
+      ],
+      [
+        807.5,
+        192.5
+      ],
+      [
+        807.5,
+        807.5
+      ],
+      [
+        192.5,
+        807.5
+      ],
+      [
+        192.5,
+        192.5
+      ],
+      [
+        572.5,
+        152.5
+      ]
+    ],
+    "mode": "survey",
+    "focus_strategy": "surface",
+    "focus_search_bounds_um": null,
+    "focus_max_residual_um": 1.0,
+    "focus_initial_recovery": false
+  },
+  "transform": {
+    "matrix": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "pixel_size_um": [
+      1.0,
+      1.0
+    ],
+    "calibrated": true
+  },
+  "limits": {
+    "x_min": 0,
+    "x_max": 1600,
+    "y_min": 0,
+    "y_max": 1200,
+    "z_min": 50,
+    "z_max": 150,
+    "max_xy_step_um": 300,
+    "max_z_step_um": 10
+  },
+  "context": {},
+  "acquisition_settings": {
+    "camera_job_template": null,
+    "camera_resources": {
+      "fixed": 1
+    },
+    "objective_position": 2,
+    "illumination_percent": null
+  },
+  "camera_shape": [
+    128,
+    160,
+    3
+  ],
+  "source": "TEST",
+  "material_model": null,
+  "coverage_plan_fingerprint": "a0e90f6a1156ccf4bafe80a9698fa221c9e0593aaddb19db28c509e423301a7d",
+  "full_chip_options": {
+    "overlap": 0.15,
+    "focus_roi_um": 40,
+    "minimum_substrate_fraction": 0.9,
+    "anchor_count": 4,
+    "focus_half_range_um": 5,
+    "focus_step_um": 2,
+    "focus_fine_step_um": 0.5,
+    "focus_max_residual_um": 1.0,
+    "max_local_focus_offset_um": 150,
+    "focus_search_bounds_um": null,
+    "max_tiles": 10000,
+    "focus_max_extrapolation_um": 0,
+    "focus_max_extrapolation_fraction": 0.25,
+    "focus_max_prediction_sigma_um": 2.0,
+    "focus_measurement_floor_um": 0.5,
+    "adaptive_focus_recovery": true,
+    "focus_anchor_mode": "chip_edges",
+    "edge_focus_roi_um": 64.0,
+    "max_local_focus_attempts": 100
+  },
+  "prior_focus_provenance": null,
+  "seed_focus_provenance": null,
+  "coverage_kind": "full_measured_enclosure_coverage",
+  "algorithm_source_sha256": "2088270585051854c9282d1312fdc0ceebb2ef9f94c7f4260d4c43b79ca72d07",
+  "fingerprint": "9b94745dbc83efc7861e8625557dfbb948ce8b0aeeb4d2cb752a47264ed44ba6",
+  "started_at": 1791694805.4865015,
+  "completed": {},
+  "state": "failed",
+  "tile_count": 30,
+  "focus_points_um": [
+    [
+      767.5,
+      762.5,
+      100
+    ],
+    [
+      232.5,
+      237.5,
+      100
+    ],
+    [
+      237.5,
+      767.5,
+      100
+    ],
+    [
+      762.5,
+      232.5,
+      100
+    ]
+  ],
+  "focus_limits": [],
+  "anchors_prepared": true,
+  "updated_at": 1791694805.537488,
+  "local_focus_attempts": [
+    {
+      "tile_id": "tile_000000",
+      "state": "unresolved",
+      "started_at": 1791694805.5245028,
+      "plane_rejection": "Synthetic missing plane support",
+      "max_elapsed_s": 180.0,
+      "max_captures": 48,
+      "result": {
+        "success": false,
+        "z_um": 100.0,
+        "score": 0.0,
+        "prominence": 0.0,
+        "reason": "No peak",
+        "samples": [],
+        "outcome": "non_peak",
+        "budget": null
+      },
+      "finished_at": 1791694805.5284956
+    }
+  ],
+  "error": "Local focus unresolved; no final tile acquired: No peak",
+  "derived_outputs_pending": true,
+  "finalization_errors": [
+    "derived_outputs: Synthetic storage unavailable"
+  ]
+}

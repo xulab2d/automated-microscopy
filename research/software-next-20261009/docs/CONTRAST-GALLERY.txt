@@ -1,0 +1,29 @@
+CONTRAST SELECTION IN THE PROPOSAL GALLERY
+
+Drag a rectangle in the gallery's contrast plot to show only objects inside it.
+Choose any pair of R/G/B contrast axes. Clear selection restores the current
+category/chip/reason view. Changing axes clears the rectangle. Selection is an
+inclusive, view-only gate; it does not alter scientific masks, saved sieve
+decisions, ranks, labels, or the running analysis.
+
+The plot uses the exact saved regions shown by the gallery, before the contrast
+gate and across all pages. It is not a sample of the visible page. The gate is
+applied before pagination and intersects the category, chip and reason filters.
+The plot keeps the full context when the selected rectangle contains no objects.
+
+Contrast is (substrate - feature) / substrate. Positive values mean darker than
+substrate. An RGB tuple is not itself a valid local substrate measurement: the
+COLOR status is retained, and unavailable local measurements are shown separately
+as estimates. Objects without three finite numeric contrasts are counted as
+missing, not placed at zero; they stay visible without a gate and cannot be
+selected in color space. Some tiny/off-domain source regions were omitted by the
+upstream analysis and are not in this assessed-region catalog.
+
+API: GET /api/candidates?filter=all&plot=1
+Optional gate parameters: contrast_x=R&contrast_y=G&x_min=0&x_max=.5&y_min=0&y_max=.5
+Axes must differ. Both intervals require finite, strictly increasing bounds.
+The response includes contrast_plot (all pre-gate points and missing counts),
+contrast_selection, unbrushed_count and the paginated filtered_count/rows.
+
+No microscope hardware is used. This feature reads saved JSON measurements and
+preview images; it does not reanalyze acquired images or restart the worker.

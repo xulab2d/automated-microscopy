@@ -1,0 +1,12 @@
+{
+  "status": "unresolved",
+  "reason": "Fewer than three coherent edge directions.",
+  "lines": [],
+  "algorithm": "sparse_photometric_halfplanes_v3",
+  "registered_consistency": {
+    "accepted": true,
+    "observation_count": 2,
+    "line_checks": [],
+    "qualification": "Same separated convex chip hypothesis; not proof of unsampled gaps or complete coverage."
+  }
+}

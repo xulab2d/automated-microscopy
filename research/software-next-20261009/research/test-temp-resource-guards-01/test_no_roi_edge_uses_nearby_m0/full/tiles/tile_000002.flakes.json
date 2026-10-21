@@ -1,0 +1,32 @@
+{
+  "flakes": [],
+  "quality": {
+    "raw_acquisition_only": true,
+    "full_chip_focus": {
+      "method": "nearby_measured_height",
+      "focus_verified": false,
+      "extrapolated": false,
+      "focus_point_xy_um": [
+        497.5,
+        232.5
+      ],
+      "offset_um": 19.1637678967368,
+      "local_autofocus_succeeded": true,
+      "result": {
+        "success": true,
+        "z_um": 100,
+        "score": 1.0,
+        "prominence": 0.2,
+        "reason": "Synthetic measured focus",
+        "samples": [],
+        "outcome": "resolved_peak",
+        "budget": null
+      },
+      "limitation": "Measured at a nearby substrate point; focus at this edge field is not verified.",
+      "plane_prediction_rejection": "Field exceeds the bounded focus-plane extrapolation distance.",
+      "local_focus_verified": false,
+      "thin_flake_focus_validated": false,
+      "capture_z_target_tolerance_um": 0.25
+    }
+  }
+}

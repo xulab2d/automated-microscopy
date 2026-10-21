@@ -1,0 +1,234 @@
+{
+  "schema": 1,
+  "qualification": "Offline subsampling of existing local fine windows, not fresh five-frame acquisitions; starting windows already near focus. Confirmation still requires a new live image.",
+  "curves": [
+    {
+      "source_curve": "data\\whole-chip-standardized-01\\chip001\\focus-surface\\attempt-93e3ff1f2564410fb2286e6b86015b1b\\anchor_000\\recovery\\verification\\focus-curve.json",
+      "image": "data\\whole-chip-standardized-01\\chip001\\focus-surface\\attempt-93e3ff1f2564410fb2286e6b86015b1b\\anchor_000\\anchor.tiff",
+      "five_measured_samples": [
+        {
+          "z_um": 15374.608999999999,
+          "phase": "fine",
+          "score": 0.03058994561433792,
+          "texture": 1.2116312980651855,
+          "noise": 0.008140191435813904,
+          "mean": 1175.6954857560263,
+          "focus_metric": "chip_edge_mean_gradient_energy"
+        },
+        {
+          "z_um": 15375.469,
+          "phase": "fine",
+          "score": 0.03280248865485191,
+          "texture": 1.2103463411331177,
+          "noise": 0.008133023977279663,
+          "mean": 1175.430080350621,
+          "focus_metric": "chip_edge_mean_gradient_energy"
+        },
+        {
+          "z_um": 15376.406,
+          "phase": "fine",
+          "score": 0.03377023711800575,
+          "texture": 1.2108852863311768,
+          "noise": 0.00816500186920166,
+          "mean": 1175.611877282688,
+          "focus_metric": "chip_edge_mean_gradient_energy"
+        },
+        {
+          "z_um": 15377.265,
+          "phase": "fine",
+          "score": 0.03227122500538826,
+          "texture": 1.2108886241912842,
+          "noise": 0.008180961012840271,
+          "mean": 1175.6043681519357,
+          "focus_metric": "chip_edge_mean_gradient_energy"
+        },
+        {
+          "z_um": 15378.202999999998,
+          "phase": "fine",
+          "score": 0.02764451503753662,
+          "texture": 1.211012840270996,
+          "noise": 0.008058518171310425,
+          "mean": 1175.5946018991965,
+          "focus_metric": "chip_edge_mean_gradient_energy"
+        }
+      ],
+      "dense_fine_sample_count": 9,
+      "dense_peak_z_um": 15376.406,
+      "fitted_z_um": 15376.148082305786,
+      "accepted": true,
+      "reason": "Quick quadratic focus peak; confirmation image still required.",
+      "absolute_error_vs_dense_best_um": 0.2579176942144841
+    },
+    {
+      "source_curve": "data\\whole-chip-standardized-01\\chip001\\focus-surface\\attempt-1c1b5f7709d040c8b032a11ea99ca4db\\anchor_000\\recovery\\verification\\focus-curve.json",
+      "image": "data\\whole-chip-standardized-01\\chip001\\focus-surface\\attempt-1c1b5f7709d040c8b032a11ea99ca4db\\anchor_000\\anchor.tiff",
+      "five_measured_samples": [
+        {
+          "z_um": 15591.64,
+          "phase": "fine",
+          "score": 0.03459881246089935,
+          "texture": 1.4948208332061768,
+          "noise": 0.009710341691970825,
+          "mean": 845.8476260043827,
+          "focus_metric": "chip_edge_mean_gradient_energy"
+        },
+        {
+          "z_um": 15592.578,
+          "phase": "fine",
+          "score": 0.03780115395784378,
+          "texture": 1.4964911937713623,
+          "noise": 0.009757310152053833,
+          "mean": 845.3048137326516,
+          "focus_metric": "chip_edge_mean_gradient_energy"
+        },
+        {
+          "z_um": 15593.515,
+          "phase": "fine",
+          "score": 0.04162255674600601,
+          "texture": 1.4977450370788574,
+          "noise": 0.009775310754776001,
+          "mean": 843.650803506209,
+          "focus_metric": "chip_edge_mean_gradient_energy"
+        },
+        {
+          "z_um": 15594.453,
+          "phase": "fine",
+          "score": 0.042722251266241074,
+          "texture": 1.501058578491211,
+          "noise": 0.009761422872543335,
+          "mean": 841.3403579254931,
+          "focus_metric": "chip_edge_mean_gradient_energy"
+        },
+        {
+          "z_um": 15595.39,
+          "phase": "fine",
+          "score": 0.04050314798951149,
+          "texture": 1.5029759407043457,
+          "noise": 0.00981798768043518,
+          "mean": 839.4765741417093,
+          "focus_metric": "chip_edge_mean_gradient_energy"
+        }
+      ],
+      "dense_fine_sample_count": 9,
+      "dense_peak_z_um": 15594.453,
+      "fitted_z_um": 15594.32467848575,
+      "accepted": true,
+      "reason": "Quick quadratic focus peak; confirmation image still required.",
+      "absolute_error_vs_dense_best_um": 0.12832151425027405
+    },
+    {
+      "source_curve": "data\\whole-chip-standardized-01\\chip001\\focus-surface\\attempt-1c1b5f7709d040c8b032a11ea99ca4db\\anchor_002\\recovery\\verification\\focus-curve.json",
+      "image": "data\\whole-chip-standardized-01\\chip001\\focus-surface\\attempt-1c1b5f7709d040c8b032a11ea99ca4db\\anchor_002\\anchor.tiff",
+      "five_measured_samples": [
+        {
+          "z_um": 15324.139999999998,
+          "phase": "fine",
+          "score": 0.020407207310199738,
+          "texture": 1.1137137413024902,
+          "noise": 0.008109718561172485,
+          "mean": 1191.1075821767713,
+          "focus_metric": "chip_edge_mean_gradient_energy"
+        },
+        {
+          "z_um": 15325.078,
+          "phase": "fine",
+          "score": 0.022188512608408928,
+          "texture": 1.1119513511657715,
+          "noise": 0.008148476481437683,
+          "mean": 1191.5997954711468,
+          "focus_metric": "chip_edge_mean_gradient_energy"
+        },
+        {
+          "z_um": 15326.014999999998,
+          "phase": "fine",
+          "score": 0.02418745867908001,
+          "texture": 1.1109938621520996,
+          "noise": 0.008189857006072998,
+          "mean": 1192.5247991234478,
+          "focus_metric": "chip_edge_mean_gradient_energy"
+        },
+        {
+          "z_um": 15326.953,
+          "phase": "fine",
+          "score": 0.0240225438028574,
+          "texture": 1.1097215414047241,
+          "noise": 0.008053436875343323,
+          "mean": 1193.3578086194302,
+          "focus_metric": "chip_edge_mean_gradient_energy"
+        },
+        {
+          "z_um": 15327.89,
+          "phase": "fine",
+          "score": 0.02214338630437851,
+          "texture": 1.1096832752227783,
+          "noise": 0.008126184344291687,
+          "mean": 1193.4673484295106,
+          "focus_metric": "chip_edge_mean_gradient_energy"
+        }
+      ],
+      "dense_fine_sample_count": 9,
+      "dense_peak_z_um": 15326.484,
+      "fitted_z_um": 15326.382289649606,
+      "accepted": true,
+      "reason": "Quick quadratic focus peak; confirmation image still required.",
+      "absolute_error_vs_dense_best_um": 0.1017103503945691
+    },
+    {
+      "source_curve": "data\\whole-chip-standardized-01\\chip001\\focus-surface\\attempt-1766dd68b1d34c0bbbf30c39bc9ba47c\\anchor_003\\local\\focus-curve.json",
+      "image": "data\\whole-chip-standardized-01\\chip001\\focus-surface\\attempt-1766dd68b1d34c0bbbf30c39bc9ba47c\\anchor_003\\anchor.tiff",
+      "five_measured_samples": [
+        {
+          "z_um": 15366.484,
+          "phase": "fine",
+          "score": 0.08608213812112808,
+          "texture": 2.7875852584838867,
+          "noise": 0.006475538015365601,
+          "mean": 1260.269495982469,
+          "focus_metric": "chip_edge_mean_gradient_energy"
+        },
+        {
+          "z_um": 15367.5,
+          "phase": "fine",
+          "score": 0.09796004742383957,
+          "texture": 2.768094539642334,
+          "noise": 0.006518259644508362,
+          "mean": 1257.439349890431,
+          "focus_metric": "chip_edge_mean_gradient_energy"
+        },
+        {
+          "z_um": 15368.515,
+          "phase": "fine",
+          "score": 0.10480089485645294,
+          "texture": 2.758877754211426,
+          "noise": 0.006589233875274658,
+          "mean": 1256.0662016070123,
+          "focus_metric": "chip_edge_mean_gradient_energy"
+        },
+        {
+          "z_um": 15369.452999999998,
+          "phase": "fine",
+          "score": 0.1019190177321434,
+          "texture": 2.759573221206665,
+          "noise": 0.0065806955099105835,
+          "mean": 1256.5611979547114,
+          "focus_metric": "chip_edge_mean_gradient_energy"
+        },
+        {
+          "z_um": 15370.468999999997,
+          "phase": "fine",
+          "score": 0.09105399250984192,
+          "texture": 2.771721601486206,
+          "noise": 0.006628632545471191,
+          "mean": 1257.8185317750183,
+          "focus_metric": "chip_edge_mean_gradient_energy"
+        }
+      ],
+      "dense_fine_sample_count": 13,
+      "dense_peak_z_um": 15368.515,
+      "fitted_z_um": 15368.654224328962,
+      "accepted": true,
+      "reason": "Quick quadratic focus peak; confirmation image still required.",
+      "absolute_error_vs_dense_best_um": 0.13922432896288228
+    }
+  ]
+}

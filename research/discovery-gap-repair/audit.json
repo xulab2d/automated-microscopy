@@ -1,0 +1,139 @@
+{
+  "production_unchanged": true,
+  "baseline_source_sha256": "9949bce2f33e058ca0f96f200b3ad0c1f8203ec40651f375415acd3b41c994cd",
+  "candidate_sha256": "be31c39a9f0e1d7af1d43b0972332da58c32008fb5b68a8c8c976583ba835a5e",
+  "attempts": [
+    {
+      "attempt": "candidate006",
+      "saved_frames": 14,
+      "unused_budget": 18,
+      "coherent_images": 4,
+      "unique_lines": 3,
+      "reason": "Estimated outline reaches search bounds.",
+      "suggested_measurement_ray": {
+        "direction": [
+          -0.9297901208290418,
+          -0.3680901128918243
+        ],
+        "maximum_um": 9679.603814219066,
+        "angular_gap_deg": 177.48613298022153,
+        "sector_fraction": 0.5
+      }
+    },
+    {
+      "attempt": "candidate007",
+      "saved_frames": 15,
+      "unused_budget": 17,
+      "coherent_images": 4,
+      "unique_lines": 3,
+      "reason": "Estimated outline reaches search bounds.",
+      "suggested_measurement_ray": {
+        "direction": [
+          0.938711327114356,
+          0.3447042853624023
+        ],
+        "maximum_um": 9587.61201664247,
+        "angular_gap_deg": 179.5065363486029,
+        "sector_fraction": 0.5
+      }
+    },
+    {
+      "attempt": "candidate009",
+      "saved_frames": 17,
+      "unused_budget": 15,
+      "coherent_images": 4,
+      "unique_lines": 3,
+      "reason": "Estimated outline reaches search bounds.",
+      "suggested_measurement_ray": {
+        "direction": [
+          0.9015694995915001,
+          -0.432634299849575
+        ],
+        "maximum_um": 9982.591474176852,
+        "angular_gap_deg": 179.01417948124617,
+        "sector_fraction": 0.5
+      }
+    },
+    {
+      "attempt": "candidate010",
+      "saved_frames": 26,
+      "unused_budget": 6,
+      "coherent_images": 3,
+      "unique_lines": 3,
+      "reason": "Measured edge normals do not bound the seed.",
+      "suggested_measurement_ray": {
+        "direction": [
+          0.9986664219075034,
+          0.0516272966023236
+        ],
+        "maximum_um": 8302.924450002025,
+        "angular_gap_deg": 180.80446221919928,
+        "sector_fraction": 0.5
+      }
+    }
+  ],
+  "chip002": {
+    "planned_polygon_observed_fraction": 1.0,
+    "closed_extent": false,
+    "collar_leak_xy_um": [
+      -50,
+      15
+    ],
+    "nearest_saved_field": "chip002/tiles/tile_000509.jpg",
+    "expanded_350um_map_replay_still_open": true,
+    "blocking_contradictory_and_observed_unknown_cells_still_open": true,
+    "duplicate_seed_cause": "40um erosion of connected observed substrate rejects local unknown/debris specks despite both seeds in same374921-cell component",
+    "strict_connected_substrate_cells": 374921,
+    "eroded_skip_cells": 227873
+  },
+  "tests": {
+    "targeted": 2,
+    "result": "passed",
+    "fixture": "25 degree rotated rectangle, off-centre seed: four cardinal rays give three unique sides; one adaptive angular-gap ray closes fourth within32 total probes",
+    "limits": "Synthetic geometry only; no new hardware data or validated field success claim"
+  },
+  "deployment": "Not applied. Adopt only after acquisition owner exits at a clean checkpoint, with explicit source transition and preserved STOP/lease checks.",
+  "candidate010_edge_extractor": {
+    "cause": "Probabilistic Hough segment proposal returns no lines on a nearly vertical, slightly jagged threshold boundary; no side-purity check is reached. Lateral motion itself is correct.",
+    "offline_standard_hough": [
+      {
+        "image": "probe_000006",
+        "substrate_purity": 0.9396385585978692,
+        "holder_purity": 1.0,
+        "points": 253,
+        "span_px": 258.0,
+        "source_height_px": 267,
+        "normal_image": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "image": "probe_000009",
+        "substrate_purity": 0.9507923824743642,
+        "holder_purity": 1.0,
+        "points": 238,
+        "span_px": 258.0171706052497,
+        "source_height_px": 267,
+        "normal_image": [
+          0.9999143481254578,
+          0.013089596293866634
+        ]
+      },
+      {
+        "image": "probe_000010",
+        "substrate_purity": 0.9330617581975458,
+        "holder_purity": 0.998208338118755,
+        "points": 234,
+        "span_px": 258.19183181226254,
+        "source_height_px": 267,
+        "normal_image": [
+          0.9993908405303955,
+          0.03489949554204941
+        ]
+      }
+    ],
+    "recommendation": "Add global Hough-line proposals only as a fallback, retaining original side-purity gates and requiring observed edge-point span; no blanket threshold relaxation."
+  },
+  "production_unchanged_after_audit": true
+}

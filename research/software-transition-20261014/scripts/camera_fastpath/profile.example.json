@@ -1,0 +1,35 @@
+{
+  "enabled": false,
+  "camera_name": null,
+  "exposure_ms": 200.0,
+  "expected_shape": [
+    2056,
+    2464,
+    3
+  ],
+  "expected_dtype": "uint16",
+  "expected_white_level": 4095,
+  "readback_gates": {
+    "white_balance": {
+      "parameter_name": null,
+      "expected": "0.25007564,1,2.61244442",
+      "kind": "rgb"
+    },
+    "auto_exposure": {
+      "parameter_name": null,
+      "expected": false,
+      "kind": "boolean"
+    },
+    "auto_white_balance": {
+      "parameter_name": null,
+      "expected": false,
+      "kind": "boolean"
+    },
+    "hdr": {
+      "parameter_name": null,
+      "expected": false,
+      "kind": "boolean"
+    }
+  },
+  "note": "Fill parameter_name only from the emitted runtime camera inventory. Missing bindings deliberately block acquisition. No camera settings are changed by this prototype."
+}

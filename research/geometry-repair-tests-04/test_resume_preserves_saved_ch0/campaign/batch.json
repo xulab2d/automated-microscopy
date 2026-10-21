@@ -1,0 +1,101 @@
+{
+  "state": "chip_complete_discovery_pending",
+  "current_chip": null,
+  "coordinate_frame_id": "fresh-test",
+  "options": {
+    "minimum_chip_diameter_um": 100,
+    "max_chips": 3,
+    "walltime_budget_s": 3600.0,
+    "detectable_patch_diameter_um": 40.0,
+    "max_seed_probes": 100000,
+    "boundary_radius_um": 9000.0,
+    "boundary_coarse_step_um": 1500.0,
+    "boundary_max_probes": 32,
+    "boundary_cell_um": 10.0,
+    "boundary_margin_um": 75.0,
+    "support_inset_um": 500.0,
+    "support_trigger_fraction": 0.05
+  },
+  "full_chip_options": {
+    "overlap": 0.15,
+    "focus_roi_um": 160.0,
+    "minimum_substrate_fraction": 0.9,
+    "anchor_count": 4,
+    "focus_half_range_um": 9.0,
+    "focus_step_um": 3.0,
+    "focus_fine_step_um": 0.5,
+    "focus_max_residual_um": 1.0,
+    "max_local_focus_offset_um": 600.0,
+    "focus_search_bounds_um": null,
+    "max_tiles": 10000,
+    "focus_max_extrapolation_um": 1500.0,
+    "focus_max_extrapolation_fraction": 0.25,
+    "focus_max_prediction_sigma_um": 2.0,
+    "focus_measurement_floor_um": 0.5,
+    "adaptive_focus_recovery": true,
+    "focus_anchor_mode": "chip_edges",
+    "edge_focus_roi_um": 64.0,
+    "max_local_focus_attempts": 2
+  },
+  "search_bounds_um": [
+    0.0,
+    100.0,
+    0.0,
+    100.0
+  ],
+  "reference_path": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\geometry-repair-tests-04\\test_resume_preserves_saved_ch0\\reference\\raw.tiff",
+  "reference_sha256": "874547786b8124343f6550780db9bb4b6d87321469fe4ccca20ea554a71638a8",
+  "reference_position_um": {
+    "x": 50,
+    "y": 50,
+    "z": 20
+  },
+  "reference_context": {
+    "camera_resources": null,
+    "camera_job_template": null,
+    "objective_position": null,
+    "objective": null,
+    "white_level": 4095,
+    "illumination_percent": null
+  },
+  "seed_focus_bundle_provenance": null,
+  "elapsed_seconds": 10.01600000000326,
+  "algorithm_source_sha256": "9640fabb33c8bcaf0b9fa8ee1971a68ac5c267dc517d6149c64b53965fd9c77f",
+  "remaining_lattice_probes": 7,
+  "chip_states": {
+    "chip001": {
+      "state": "complete_with_boundary_limits",
+      "completed_tiles": 2,
+      "total_tiles": 2,
+      "planned_area_acquired": true,
+      "chip_extent_validated": false,
+      "focus_coverage_complete": false,
+      "analysis_state": "pending_offline"
+    }
+  },
+  "phase": "awaiting_campaign_continuation",
+  "algorithm_transitions": [
+    {
+      "at": 1791753868.5141718,
+      "from_sha256": "old-campaign-code",
+      "to_sha256": "9640fabb33c8bcaf0b9fa8ee1971a68ac5c267dc517d6149c64b53965fd9c77f",
+      "authorization": "explicit resume with allow_source_change; saved configuration, plan, bounds, reference, profile and focus evidence match",
+      "previous_source_unrecorded": false,
+      "completed_tiles_retained": 1
+    }
+  ],
+  "resume_attempts": [
+    {
+      "at": 1791753868.5141718,
+      "chip_id": "chip001",
+      "completed_tiles_retained": 1,
+      "verified_focus_points_retained": 1,
+      "storage_preflight": {
+        "sufficient": true
+      },
+      "scope": "Resume this saved chip only; later campaign discovery remains pending."
+    }
+  ],
+  "updated_at": 1791753868.5192325,
+  "all_chips_found": false
+}

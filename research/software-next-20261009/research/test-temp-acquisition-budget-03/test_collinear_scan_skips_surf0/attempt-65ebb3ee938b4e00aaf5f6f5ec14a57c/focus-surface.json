@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "state": "complete",
+  "mode": "per_tile_autofocus",
+  "centres_um": [
+    [
+      0.0,
+      10.0
+    ],
+    [
+      50.0,
+      10.0
+    ],
+    [
+      100.0,
+      10.0
+    ]
+  ],
+  "seed_points_um": [
+    [
+      0.0,
+      10.0,
+      10.2
+    ]
+  ],
+  "anchors": [],
+  "verified_points_um": [
+    [
+      0.0,
+      10.0,
+      10.2
+    ]
+  ],
+  "search_seed_points_um": [],
+  "search_seeds_are_focus_evidence": false,
+  "max_residual_um": 1.0,
+  "search_bounds_um": null,
+  "attempt_folder": "attempt-65ebb3ee938b4e00aaf5f6f5ec14a57c",
+  "extrapolation_allowed": false,
+  "reason": "Tile centres are collinear; a two-dimensional focus surface cannot be fitted."
+}

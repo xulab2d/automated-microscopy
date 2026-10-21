@@ -1,0 +1,8 @@
+{
+  "colorStatus": "330,196 regions · 219,133 visible. ",
+  "coverage": "330,196 regions · 999 images · 57 unassessable images",
+  "field524": "chip001/tile_000524 · assessed",
+  "modelHidden": false,
+  "ranking": "Observed color bands first, then extrapolated matches. Area and boundary scores order each group.",
+  "version": "scan-20261013-221727-131d9ced · 90 nm SiO₂/Si · operator-empirical-full-v1"
+}

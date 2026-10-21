@@ -1,0 +1,10 @@
+{
+  "outcome": "confirmation_failed",
+  "max_seconds": 120.0,
+  "max_captures": 40,
+  "captures_started": 6,
+  "elapsed_seconds": 0.01600000000325963,
+  "completed_actions": 12,
+  "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline",
+  "shared_with_parent": false
+}

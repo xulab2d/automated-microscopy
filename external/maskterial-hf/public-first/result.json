@@ -1,0 +1,35 @@
+{
+  "source_image": "data/public-positive-first.jpg",
+  "scale": 1,
+  "shape": [
+    210,
+    203,
+    3
+  ],
+  "seconds": 1.2782580000002781,
+  "instances": [
+    {
+      "query": 46,
+      "score": 0.7815208435058594,
+      "area_pixels": 592
+    },
+    {
+      "query": 47,
+      "score": 0.7687938809394836,
+      "area_pixels": 726
+    }
+  ],
+  "top_scores": [
+    0.7815208435058594,
+    0.7687938809394836,
+    0.34417372941970825,
+    0.300294429063797,
+    0.021913612261414528,
+    0.020756687968969345,
+    0.018398690968751907,
+    0.01683986559510231,
+    0.01676442287862301,
+    0.01667128875851631
+  ],
+  "status": "research inference; conversion parity and target-domain accuracy not validated"
+}

@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "model_id": "mote2-2h-munkhbat-2022-285nm-v1",
+  "material": "MoTe2",
+  "phase": "2H",
+  "sample_phase_confirmed": false,
+  "constants_regime": "exfoliated thick multilayer 2H; not monolayer-specific",
+  "objective_na": 0.4,
+  "valid_wavelength_nm": [
+    300.0,
+    826.6
+  ],
+  "substrate": {
+    "material": "wet thermal SiO2/Si",
+    "nominal_oxide_nm": 285.0,
+    "oxide_thickness_measured": false,
+    "silica_model": "Malitson fused silica at20C, approximation to wet thermal oxide",
+    "silica_source": "https://doi.org/10.1364/JOSA.55.001205"
+  },
+  "data": {
+    "mote2_tensor": {
+      "path": "data/MoTe2_Munkhbat_tensor_nm.txt",
+      "sha256": "02254f768131303bbe6772990eea20122dd26a40999477840221c59ea00aba9e",
+      "columns": [
+        "wavelength_nm",
+        "epsilon_xx_real",
+        "epsilon_xx_imag",
+        "epsilon_yy_real",
+        "epsilon_yy_imag",
+        "epsilon_zz_real",
+        "epsilon_zz_imag"
+      ],
+      "epsilon_convention": "positive imaginary loss for exp(-i omega t)",
+      "source": "https://zenodo.org/records/6205431",
+      "publication": "https://doi.org/10.1021/acsphotonics.2c00433",
+      "source_file_md5": "d32de83c300a5ef4dd7655cfaed0d71c",
+      "license": "CC-BY-4.0",
+      "published_valid_min_nm": 300,
+      "table_min_nm": 193.0,
+      "table_max_nm": 1690.0
+    },
+    "silicon_nk": {
+      "path": "data/Si_Aspnes_nm_n_k.txt",
+      "sha256": "e751386cde891835f4c83da624c0a413cd3966719d851f36b3dbe8dd826ab6bf",
+      "columns": [
+        "wavelength_nm",
+        "n",
+        "k"
+      ],
+      "publication": "https://doi.org/10.1103/PhysRevB.27.985",
+      "data_origin": "https://github.com/polyanskiy/refractiveindex.info-database/blob/master/database/data/main/Si/nk/Aspnes.yml",
+      "source_local_yaml_sha256": "2c259e3ea878ca17190c8dc1ff3af7aafb718ff36a695b5a8a768b64eaacd388",
+      "source_wavelength_unit": "um",
+      "conversion_to_nm": 1000.0,
+      "measurement": "room-temperature <111> n-type Si,2.3e14cm^-3",
+      "license": "CC0 database transcription"
+    }
+  },
+  "rgb_response": null,
+  "radiometry_status": "not experimentally established; job does not pin all camera processing settings",
+  "calibrated_thickness": false,
+  "layer_assignment_allowed": false,
+  "caveats": [
+    "Bulk/multilayer dielectric constants extrapolated to atomic thickness are a hypothesis, not validated thin-layer optical properties.",
+    "Actual phase, wet-oxide index/thickness, contamination gaps, illumination pupil and lamp/camera spectral response remain unmeasured.",
+    "White-balance gains cancel only for linear unclipped offset-corrected independent channels; color mixing and gamma alter contrast.",
+    "Plane-wave reflectance does not model diffraction, defocus, edge mixing or sensor-fixed artifacts.",
+    "An RGB match does not identify material: residues and other layers can have overlapping contrast.",
+    "Use actual per-frame optical metadata; objective profile files are not historical camera-state proof."
+  ],
+  "manufacturer_response": {
+    "path": "data/Axiocam305_vendor_response.json",
+    "sha256": "f8fab8d39f9a308bcaee6357effa401017fae945bf2d074b3977de15d7dc970b",
+    "status": "manufacturer typical vector trace, not measured effective response"
+  },
+  "radiometry_evidence": {
+    "path": "data\\whole-chip-standardized-01\\calibration\\response\\radiometry.json",
+    "sha256": "8ccf1f272261653febea186df06ce0efe507fa54e75d408bdb2c5eac7590ad2a",
+    "status": "indeterminate_without_dark_reference",
+    "response_power_exponents_rgb": [
+      0.9965661732891606,
+      0.9976528248413953,
+      0.9914695529699967
+    ],
+    "dark_reference_supplied": false,
+    "linearity_confirmed": false,
+    "scope": "These measurements support near-linear response for that optical profile; not an unconstrained gamma prior or universal processing guarantee."
+  },
+  "conditional_ensemble_defaults": {
+    "oxide_nm": [
+      280,
+      285,
+      290
+    ],
+    "illumination_na": [
+      0,
+      0.267,
+      0.4
+    ],
+    "gamma": [
+      0.99,
+      1.0
+    ],
+    "lamps": [
+      "equal_energy",
+      "blackbody3000K",
+      "blackbody4500K",
+      "blackbody6500K"
+    ],
+    "response_interpretations": [
+      "energy_response",
+      "photon_efficiency"
+    ],
+    "assumption_status": "finite sensitivity scenarios, not measured confidence bounds; blackbody does not reproduce whiteLED phosphor peaks"
+  }
+}

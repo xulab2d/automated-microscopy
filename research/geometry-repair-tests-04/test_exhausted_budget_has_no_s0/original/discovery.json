@@ -1,0 +1,272 @@
+{
+  "schema": 2,
+  "algorithm": "sparse_photometric_halfplanes_v3",
+  "algorithm_source_sha256": "511b88d7670816fe1a6ceada8da5e8199cad10df491c916aecc4fade6acf26ad",
+  "edge_model_sha256": "f40b469916bab2edf5c24134865955dd5d4154c6c742a30ab172ed89f9adc1a3",
+  "photometric_model_sha256": "ae55b093b5f5b4f68b02c7f8fe8f918de5a150aa1bfab64a70c794e7ead2d361",
+  "edge_validation_profile": {
+    "schema": 1,
+    "profile_id": "synthetic20x-dark-holder",
+    "holder_model": "dark_holder_all_rgb_v1",
+    "manual_objective": true,
+    "objective_position": 2,
+    "objective_magnification": 20,
+    "optical_context": {
+      "camera_resources": {
+        "fixed": 1
+      },
+      "camera_job_template": "synthetic fixed20x",
+      "objective_position": 2,
+      "objective": {
+        "magnification": 20
+      },
+      "white_level": 4095,
+      "illumination_percent": 90
+    }
+  },
+  "seed_xy_um": [
+    500.0,
+    500.0
+  ],
+  "options": {
+    "search_bounds_um": [
+      20.0,
+      1200.0,
+      20.0,
+      1100.0
+    ],
+    "coarse_step_um": 400,
+    "max_probes": 2,
+    "cell_um": 5,
+    "dark_holder_ratio": 0.15,
+    "margin_um": 20,
+    "focus_policy_id": "unchanged height; geometric evidence only"
+  },
+  "context": {},
+  "transform": {
+    "matrix": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "pixel_size_um": [
+      1.0,
+      1.0
+    ],
+    "calibrated": true
+  },
+  "source_shape": [
+    128,
+    160,
+    3
+  ],
+  "reference": {
+    "features": [
+      "log(R/G)",
+      "log(B/G)"
+    ],
+    "centre": [
+      0.18232160806655884,
+      0.2623642086982727
+    ],
+    "covariance": [
+      [
+        0.0006250001000000002,
+        0.0
+      ],
+      [
+        0.0,
+        0.0001440001
+      ]
+    ],
+    "white_level": 4095.0,
+    "context": {
+      "camera_resources": {
+        "fixed": 1
+      },
+      "camera_job_template": "synthetic fixed20x",
+      "objective_position": 2,
+      "objective": {
+        "magnification": 20
+      },
+      "white_level": 4095,
+      "illumination_percent": 90
+    },
+    "pixel_size_um": [
+      1.0,
+      1.0
+    ],
+    "working_max_dimension": 768,
+    "substrate_mahalanobis_max": 3.5,
+    "mismatch_mahalanobis_min": 6.0,
+    "interpretation": "Reference colour match; neither chemical identity nor proof of chip continuity."
+  },
+  "reference_rgb": [
+    1800.0,
+    1500.0,
+    1950.0
+  ],
+  "reference_pixels_sha256": "28112d13480d9ad3c329b5ea22c5d0c803e078aa2eef90c53687a9b0eaeae018",
+  "limits": {
+    "x_min": 0,
+    "x_max": 1600,
+    "y_min": 0,
+    "y_max": 1200,
+    "z_min": 50,
+    "z_max": 150,
+    "max_xy_step_um": 300,
+    "max_z_step_um": 10
+  },
+  "field_rectangle_um": [
+    158.75,
+    127.0
+  ],
+  "assumption": "One separated convex chip with approximately straight edges. Coarse hops may cross unobserved gaps.",
+  "coverage_kind": "estimated_boundary_not_full_interior_acquisition",
+  "all_chips_found": false,
+  "coverage_requirement": "Validate extent from scientific-raster border images; expand or replan if substrate reaches its perimeter.",
+  "fingerprint": "c06d70e203a436b7711f355c436aebd418d46868f377a091b6062feb532d8f13",
+  "state": "unresolved",
+  "started_at": 1791753868.0379782,
+  "records": [
+    {
+      "name": "probe_000000",
+      "phase": "seed",
+      "requested_xy_um": [
+        500.0,
+        500.0
+      ],
+      "position_um": [
+        500.0,
+        500.0,
+        100
+      ],
+      "image": "frames/probe_000000.tiff",
+      "labels_file": "labels/probe_000000.npz",
+      "classification": "substrate",
+      "fractions": {
+        "substrate": 1.0,
+        "holder": 0.0
+      },
+      "edge": null,
+      "edge_validation": {
+        "accepted": false,
+        "reason": "No label-side-supported line proposal.",
+        "profile": {
+          "supported": true,
+          "algorithm": "sparse_photometric_halfplanes_v3",
+          "profile_assumption": "Manual encoded objective at 20x; reference-bound substrate side and independently measured coherent RGB transition.",
+          "profile_id": "synthetic20x-dark-holder",
+          "reason": "Explicit optical contract matches recorded metadata; individual raw edges still require validation."
+        }
+      },
+      "spatial_bracket_evidence": {
+        "side": "substrate",
+        "method": "original_classification",
+        "inferred": false
+      },
+      "hashes": {
+        "frames/probe_000000.tiff": "2af62decd1edddcfa57f312df83acba3940ecbe6f216d0923b07e8350b58ce2f",
+        "frames/probe_000000.json": "c752c91c9b12f8a199594f196e0b574ad7019f78ea213943fb739abaec984615",
+        "labels/probe_000000.npz": "65c5325f48f9944d045156b9c097759de9b3a81999ba124957155ef805c4f2c9"
+      }
+    },
+    {
+      "name": "probe_000001",
+      "phase": "coarse_east",
+      "requested_xy_um": [
+        900.0,
+        500.0
+      ],
+      "position_um": [
+        900.0,
+        500.0,
+        100
+      ],
+      "image": "frames/probe_000001.tiff",
+      "labels_file": "labels/probe_000001.npz",
+      "classification": "holder",
+      "fractions": {
+        "substrate": 0.0,
+        "holder": 1.0
+      },
+      "edge": null,
+      "edge_validation": {
+        "accepted": false,
+        "reason": "No label-side-supported line proposal.",
+        "profile": {
+          "supported": true,
+          "algorithm": "sparse_photometric_halfplanes_v3",
+          "profile_assumption": "Manual encoded objective at 20x; reference-bound substrate side and independently measured coherent RGB transition.",
+          "profile_id": "synthetic20x-dark-holder",
+          "reason": "Explicit optical contract matches recorded metadata; individual raw edges still require validation."
+        }
+      },
+      "spatial_bracket_evidence": {
+        "side": "holder",
+        "method": "original_classification",
+        "inferred": false
+      },
+      "hashes": {
+        "frames/probe_000001.tiff": "31abc9a26d162387e1445f41fbadac28a2d1c7cfc127ae772211b6afc3ca535e",
+        "frames/probe_000001.json": "f84c413317314de7521739036c07af8d52d1cd5995a899c87b3f1887f86392e7",
+        "labels/probe_000001.npz": "58c5502ca1fe5d90258fc445282d26fd169ec68d703133f9d01b8815c047fbd8"
+      }
+    }
+  ],
+  "rays": {
+    "east": {
+      "status": "searching",
+      "direction": [
+        1.0,
+        0.0
+      ]
+    }
+  },
+  "updated_at": 1791753868.0989285,
+  "operation_budget": {
+    "max_seconds": 600.0,
+    "max_captures": 64,
+    "captures_started": 2,
+    "elapsed_seconds": 0.0779999999795109,
+    "completed_actions": 4,
+    "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline"
+  },
+  "seed_verification": {
+    "classification": "substrate_seed",
+    "patch_substrate_fraction": 1.0,
+    "patch_non_substrate_fraction": 0.0,
+    "patch_diameter_um": 40.0,
+    "image": "frames/probe_000000.tiff",
+    "qualification": "Local centre patch only; whole-field substrate fraction is not an interior-seed requirement."
+  },
+  "budget_exhausted": true,
+  "reason": "geometric_probe_budget_exhausted",
+  "estimated_outline": {
+    "status": "unresolved",
+    "reason": "Fewer than three coherent edge directions.",
+    "lines": [],
+    "algorithm": "sparse_photometric_halfplanes_v3",
+    "registered_consistency": {
+      "accepted": true,
+      "observation_count": 2,
+      "line_checks": [],
+      "qualification": "Same separated convex chip hypothesis; not proof of unsampled gaps or complete coverage."
+    },
+    "outcome": "edge_not_found",
+    "evidence": {
+      "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\geometry-repair-tests-04\\test_exhausted_budget_has_no_s0\\original",
+      "images": 2,
+      "new_probe_images": 2,
+      "imported_probe_images": 0,
+      "coherent_edge_images": 0
+    },
+    "acquisition_assumption": "One separated convex chip with approximately straight edges. Coarse hops may cross unobserved gaps.",
+    "all_chips_found": false
+  }
+}

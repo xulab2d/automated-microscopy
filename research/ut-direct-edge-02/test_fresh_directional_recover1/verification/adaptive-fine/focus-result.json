@@ -1,0 +1,66 @@
+{
+  "success": true,
+  "z_um": 140.00163773663473,
+  "score": 0.0016699999860303057,
+  "prominence": 0.010753724036788712,
+  "reason": "Quick quadratic focus verified by a confirmation image.",
+  "samples": [
+    {
+      "z_um": 137.5,
+      "phase": "quick",
+      "score": 0.0016377985881098418,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 138.33333333333331,
+      "phase": "quick",
+      "score": 0.0016556019540457433,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 139.16666666666666,
+      "phase": "quick",
+      "score": 0.0016663874589998061,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 140.0,
+      "phase": "quick",
+      "score": 0.00167,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 140.83333333333331,
+      "phase": "quick",
+      "score": 0.0016663874589998066,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 140.00163773663473,
+      "phase": "confirmation",
+      "score": 0.0016699999860303057,
+      "texture": 0.1,
+      "noise": 0.001,
+      "mean": 1000.0
+    }
+  ],
+  "outcome": "resolved_peak",
+  "budget": {
+    "max_seconds": 180.0,
+    "max_captures": 48,
+    "captures_started": 26,
+    "elapsed_seconds": 0.17199999999138527,
+    "completed_actions": 75,
+    "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline"
+  }
+}

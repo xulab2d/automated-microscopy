@@ -1,0 +1,35 @@
+{
+  "grid_max_nm": 1000,
+  "no_model_fitting": true,
+  "source_profile_audit": "reference-profile-audit.json",
+  "qualification": "References are20x/NA.4 matching266.6msfixedWB raw12bitmetadata; material phase and actual thickness remain unconfirmed. Descriptive covariance only. This does not prove chemicalidentity of brightreference.",
+  "results": [
+    {
+      "reference": "bright_bulk_reference",
+      "conditional_best_nm": 11.0,
+      "min_distance": 25.273144035913692,
+      "range_nm": [
+        11.0,
+        11.0
+      ]
+    },
+    {
+      "reference": "cyan_P1",
+      "conditional_best_nm": 7.0,
+      "min_distance": 0.9338848870253931,
+      "range_nm": [
+        6.0,
+        7.0
+      ]
+    },
+    {
+      "reference": "cyan_P2",
+      "conditional_best_nm": 7.0,
+      "min_distance": 2.339869161486028,
+      "range_nm": [
+        7.0,
+        7.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "status": "unresolved",
+  "reason": "edge_focus_unresolved",
+  "lines": [],
+  "algorithm": "sparse_photometric_halfplanes_v3",
+  "registered_consistency": {
+    "accepted": true,
+    "observation_count": 4,
+    "line_checks": [],
+    "qualification": "Same separated convex chip hypothesis; not proof of unsampled gaps or complete coverage."
+  },
+  "polygon_um": [],
+  "outcome": "edge_not_found",
+  "evidence": {
+    "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\memory-footprint-test-tmp2\\test_unresolved_focus_stays_un0",
+    "images": 4,
+    "new_probe_images": 4,
+    "imported_probe_images": 0,
+    "coherent_edge_images": 0,
+    "discovery_sha256": "49ae4bbf49e58dbbaba94b46f235281a7ecba6756e9f3def996c9178cdb35a92"
+  },
+  "acquisition_assumption": "One separated convex chip with approximately straight edges. Coarse hops may cross unobserved gaps.",
+  "all_chips_found": false
+}

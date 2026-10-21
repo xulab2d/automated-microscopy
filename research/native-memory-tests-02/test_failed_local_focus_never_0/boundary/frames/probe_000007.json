@@ -1,0 +1,21 @@
+{
+  "position": {
+    "x": 500.0,
+    "y": 906.4000000000001,
+    "z": 100
+  },
+  "pixel_size_um": [
+    1.0,
+    1.0
+  ],
+  "sequence": 9,
+  "acquired_at": 1791752264.8279963,
+  "metadata": {
+    "white_level": 4095,
+    "source": "TEST",
+    "objective_position": 2,
+    "camera_resources": {
+      "fixed": 1
+    }
+  }
+}

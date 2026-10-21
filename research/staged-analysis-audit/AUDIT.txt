@@ -1,0 +1,117 @@
+Read-only staged-analysis audit -- 2026-10-09, 07:34 UTC snapshot
+
+Scope: chip001, data/whole-chip-standardized-01. Production analysis worker,
+production code, raw acquisition files, source masks and shards were not changed.
+Audit scripts use one CPU thread. No hardware calls or acquisition changes.
+
+1. Failed-field normalization
+
+Snapshot: 399 successful analyses + 35 failures of 474 acquired fields; four
+thin-reference mean-color matches. The worker continues, so these are snapshot
+counts, not final totals. snapshot.json records the exact analysis JSON hash.
+
+All 35 boundary-label hashes match the acquisition manifest. Of these failures:
+- 28/35 (80%) contain recorded substrate, independently visible in raw previews.
+- 26 contain more than 1% substrate; two contain only a narrow substrate sliver.
+- Seven have zero recorded substrate and visibly show holder only: tiles0,6,90,
+  250,272,313,414. These should stay excluded, rather than become analysis errors
+  implying missing on-chip analysis.
+
+Two concrete causes are reproduced in normalization-fit-diagnostic.json:
+- The acquisition planning polygon includes an outward coverage margin. It is
+  not an exposed-substrate mask. Only64.5% of tile1's eroded planning mask is
+  labeled substrate; holder contaminates its robust background fit.
+- background_surface rejects a polynomial if it is nonpositive ANYWHERE in the
+  camera image, including outside the chip. Tile32's original fit is positive
+  on every fit-support pixel, but extrapolates to -12190 camera counts off-chip.
+- Tile180 is an interior field dominated by a large dark aggregate. Its
+  geometric mask is the whole field, so the robust fit is also contaminated;
+  independently recorded substrate remains available around the aggregate.
+
+Isolated prototype: observed_normalization.py. It is NOT imported by production.
+It requires the completed raster's measured enclosed footprint and matching
+recorded boundary-label hash, actual XYZ and camera optical profile. The runner
+also verifies TIFF and sidecar hashes against the immutable acquisition manifest.
+The evaluation domain comes from the observed enclosure, with the existing12um
+edge exclusion. Background samples come from recorded SUBSTRATE labels with1um
+clearance. The domain does NOT require substrate color, preserving bright/dark
+objects and terraces inside the chip. Off-chip arrays are explicitly invalid.
+Constant, affine and quadratic fits are compared using four spatial block groups;
+the simplest within one standard error of the best held-out score is selected.
+Positivity is checked on the measured analysis domain, never on holder pixels.
+
+Focused check: tiles1,32,180,354 now have positive, visually sensible on-chip
+normalization. Four held-out fits favored a quadratic. Tile0 stays excluded;
+tile7's tiny sliver also stays excluded after the unchanged12um edge margin.
+This is normalization evidence, NOT a recovery/recall claim for all28 fields.
+The observed enclosure is a finite-resolution raster boundary; its discretization
+and the12um exclusion still sacrifice some chip-edge area. Do not silently treat
+every previously failed field as recoverable. The first diagnostic that eroded
+the entire noisy tri-state mask by12um was intentionally retained in the report:
+that destroys substrate support around classifier holes and is not the repair.
+
+Integration proposal after the active worker is stopped at an explicit boundary:
+retain separate evaluation-domain and background-sample masks throughout contrast
+and local annulus measurement; exclude measured off-chip pixels from both. Save
+the label/enclosure hashes and chosen fit with each derived tile. Preserve every
+source rejection. Write a separately versioned derived analysis, not these shards.
+No segmentation was rerun for this audit and no production result was relabeled.
+
+2. Four thin-reference matches
+
+All four masks outline visible physical features, unlike the user-rejected bare
+substrate cards. However, NONE establishes a uniform thin platelet:
+- tile69 f-747c06935c43d9,1348um2: long, folded/fibrous-looking feature with highly
+  varying interior colors. It is not a demonstrated flat thin terrace.
+- tile70 f-ad5a0b9feb5bcf,1759um2: overlapping view of the same extended feature.
+  Stage-coordinate projection covers81.9% of tile69's mask. The catalog's
+  centroid-based dedup missed this extended-object overlap. Four matches are at
+  most three physical features.
+- tile111 f-cbd1e4fc5d3302,246um2, and tile107 f-6a923fecfda7c0,114um2: dark,
+  blurred compact particles. Their morphology/material/thickness are unresolved;
+  neither provides evidence of a thin MoTe2 platelet.
+
+Independent raw-ROI local annuli exclude all saved source instances and require
+recorded substrate, without selecting by closeness to zero contrast. These
+reproduce the saved mean RGB contrasts. Thus local background misnormalization
+does not explain these four matches. No clipping was recorded for these masks.
+Raw spatial-patch color spreads are14-24%, while errors of the regional MEAN are
+only0.5-2.1%. Only17.7-25.5% of approximately1um interior patches even fall in the
+directional R>0,G>R,0.02<=G<=0.45 search cone, before any uncertainty test.
+These fractions are descriptive audit measurements, not proposed new thresholds.
+
+Exact failure mechanism: the current sieve tests the significance of the MEAN
+color of the entire object. Covariance of that mean shrinks with the number of
+spatial samples, even when the object contains heterogeneous colors or a blurred
+dark core. A precise mean inside a broad literature direction does not mean the
+object has a uniform material terrace of that color. The measured interior
+heterogeneity is already saved, but the thin-prior stage does not use it.
+
+Principled later check: keep every broad source-object mask. Within a source
+object, measure spatially connected color plateaus using the observed patch
+covariance/noise, and compare a constant-color plateau model with a continuous
+gradient/mixture model on held-out spatial patches. Apply material-direction
+uncertainty to an actual coherent plateau, and apply useful area/width to that
+connected support, not to the entire heterogeneous parent. Record color spread,
+supported area and focus limitations alongside mean uncertainty. No arbitrary
+hard facet/solidity veto, automatic chemical identity, or universal RGB box is
+justified by this audit. The broad source geometry remains available even when
+thin-reference evidence is unconvincing.
+
+Comparison control: human-rejected-bare-substrate-control.jpg reproduces one of
+the12 explicitly user-rejected regions from the earlier thin-plateau branch.
+Its decoded raw RGB hash is verified; the exact human feedback file hash and
+annotation are saved. The four current features are a different failure mode:
+physical debris-like objects promoted by mean-color compatibility. The prior
+bare-substrate branch must not be used as the proposal source.
+
+Optical limitation: this scan has about16.2um focus-height variation across a
+full field. None of this audit validates thin-flake detection or material focus.
+No monolayer count, chemical identification or absence claim is supported.
+
+Key artifacts:
+failed-fields.json / failed-fields-contact.jpg
+normalization-fit-diagnostic.json / normalization-repair-results.json
+tile_000032-normalization-repair.jpg / tile_000180-normalization-repair.jpg
+thin-matches.json / thin-matches-contact.jpg / thin-local-raw-diagnostic.json
+human-rejected-bare-substrate-control.jpg

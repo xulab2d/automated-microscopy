@@ -1,0 +1,92 @@
+Automated Microscopy - laptop handoff, 9 October 2026
+
+Shared Drive: Xu Lab - Microscopy and Instruments / Automated Microscopy
+
+LATEST HANDOFF
+Laptop Review.zip is the self-contained preview/gallery/contrast package.
+Download it and extract the entire ZIP, preserving its directory structure.
+Analysis Review 2026-10-09.zip is the smaller update containing the completed
+appearance-cluster review and accepted-parent terrace pilot. Extract it and
+open index.html in a browser; no Python or microscope connection is needed.
+The full project migration continues separately; TRANSFER-STATUS.txt at the
+Drive project root reports its progress. Do not infer upload completion from
+a file merely appearing on this microscope computer's mounted G: drive.
+
+New acquisition and analysis defaults now require the shared Drive project.
+The microscope checkout is retained for runtime/code and original-data backup;
+it is not the default destination for new scientific run/analysis outputs.
+On a laptop with a differently mounted shared Drive, set
+FLAKEFINDER_PROJECT_ROOT to that mounted Automated Microscopy directory.
+The identity marker .flakefinder-project.json must travel with the project.
+See docs/OFFLINE-ANALYSIS.txt for the new terrace/optical/appearance tools.
+
+OPEN THE SAVED IMAGES AND CONTRAST PLOT
+Download/sync laptop-viewer and data/whole-chip-standardized-01, preserving
+their sibling directory structure. The viewer's README describes the small
+preview-only set needed for browsing before all raw images arrive.
+Run laptop-viewer/Launcher.py with Python 3. It uses only the Python standard
+library and does not connect to the microscope. This is a saved-data viewer;
+Google Drive's web preview does not execute this application.
+
+CONTINUE ANALYSIS / DEVELOPMENT
+The complete source is in flakefinder/, scripts/, tests/, configs/, generated/,
+and research/. Use Python 3.11 or later and a new virtual environment on the
+laptop. From this project directory, run:
+  python -m venv .venv
+  [activate that virtual environment using your operating system]
+  python -m pip install -e .
+The original requirements-lock.txt records the Windows acquisition environment
+and includes Windows-only packages. It is preserved as provenance; do not
+blindly install that file on macOS. requirements-analysis-lock.txt omits the
+Windows hardware bridge packages for offline analysis.
+
+The preserved baseline analysis is flakefinder/staged_features.py. Its command
+entry point is scripts/analyze_staged_features.py. New pixel/terrace work is in
+flakefinder/terrace_analysis.py and scripts/analyze_terraces.py. Work on a new copy/version
+of analysis outputs when changing the algorithm. Keep original source masks,
+per-region measurements, raw images, and independent screening reasons.
+The ordinary dynamic gallery is available with:
+  python -m flakefinder.batch_viewer data/whole-chip-standardized-01 --port 8766
+The portable snapshot viewer needs no third-party packages.
+
+DATA AND ANALYSIS MAP
+data/whole-chip-standardized-01: current standardized 20x dataset, three chips,
+1,386 raster images. chip*/tiles contains raw TIFFs, preview JPEGs and sidecars.
+chip*/analysis-staged-features contains the broad feature proposals, local
+contrast measurements, masks, rejection reasons and catalogs.
+chip001/analysis-observed-recovery is the supplemental recovery of failed
+primary fields. Successful primary analysis takes precedence over recovery.
+calibration/, discovery/, search/ and all manifests preserve acquisition context.
+research/ contains algorithm investigations, literature, replay evidence and
+timing audits. Other data/ folders contain earlier scans and analysis versions.
+data/zen-captures preserves the vendor CZI/job results, including autofocus
+source frames that are not necessarily duplicated by the saved crop TIFFs.
+
+SCIENTIFIC STATUS
+All 1,386 planned raster fields were acquired. This is not all 15 chips.
+chip002's northern tip is not yet verified as fully covered; chip001 has a
+tilt-related full-field focus limitation. Details: overnight-outcome.txt/json.
+The contrast plot uses measured per-object local RGB contrast, not image pixels:
+  (local substrate - feature) / local substrate
+Positive values are darker; negative values are brighter. Unmeasured objects
+are explicitly counted. Overlap can produce multiple observations of one object.
+Proposals are optical features; there are no validated monolayers in this batch.
+Known user-rejected bare-substrate examples and later debris matches must not
+be reused as positive thin-flake training labels.
+
+ACQUISITION IS ON HOLD
+The user is removing/repositioning the chips for the day. Do not launch a scan
+from this handoff. The old stage coordinates and focus surfaces are historical;
+tonight requires fresh placement/discovery verification. The turret is manual
+and encoded. The faster camera prototype remains disabled: its inventory ran
+but ZEN reported a failed job at finalization. No acquisition settings were
+changed by that inventory operation.
+
+TRANSFER STATUS
+The transfer preserves source files until verification. A local Drive-mounted
+file alone is not upload completion. Transfer reports distinguish mounted
+checksum verification, Drive-client-confirmed sync, and independent download
+verification. The test TIFF downloaded from Google Drive matches its original
+SHA256. The full transfer status and exclusions are saved under
+research/drive-relocation/. Raw and vendor data are substantially larger than
+the analysis/preview set and may finish later.

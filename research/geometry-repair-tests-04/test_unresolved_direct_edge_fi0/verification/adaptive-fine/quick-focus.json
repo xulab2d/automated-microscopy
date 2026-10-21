@@ -1,0 +1,192 @@
+{
+  "schema": 1,
+  "state": "focused",
+  "initial_position_um": {
+    "x": 0,
+    "y": 0,
+    "z": 99.16666666666667
+  },
+  "quick_bounds_um": [
+    97.5,
+    100.83333333333334
+  ],
+  "fallback_bounds_um": null,
+  "quick_samples": [
+    {
+      "z_um": 97.5,
+      "phase": "quick",
+      "score": 0.12165400385856628,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 98.33333333333334,
+      "phase": "quick",
+      "score": 0.14584262669086456,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 99.16666666666667,
+      "phase": "quick",
+      "score": 0.16978628933429718,
+      "texture": 1.86976158618927,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1549.9998779296875,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 100.0,
+      "phase": "quick",
+      "score": 0.18087482452392578,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1549.9998779296875,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 100.83333333333334,
+      "phase": "quick",
+      "score": 0.16978628933429718,
+      "texture": 1.86976158618927,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1549.9998779296875,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    }
+  ],
+  "quick_path_image_budget": 6,
+  "fitted_quick_result": {
+    "success": true,
+    "z_um": 100.08490540054724,
+    "score": 0.18087482452392578,
+    "prominence": 0.22042825752263243,
+    "reason": "Quick quadratic focus peak; confirmation image still required.",
+    "samples": [
+      {
+        "z_um": 97.5,
+        "phase": "quick",
+        "score": 0.12165400385856628,
+        "texture": 1.8697617053985596,
+        "noise": 1.1920928955078125e-07,
+        "mean": 1550.0,
+        "focus_metric": "chip_edge_mean_gradient_energy"
+      },
+      {
+        "z_um": 98.33333333333334,
+        "phase": "quick",
+        "score": 0.14584262669086456,
+        "texture": 1.8697617053985596,
+        "noise": 1.1920928955078125e-07,
+        "mean": 1550.0,
+        "focus_metric": "chip_edge_mean_gradient_energy"
+      },
+      {
+        "z_um": 99.16666666666667,
+        "phase": "quick",
+        "score": 0.16978628933429718,
+        "texture": 1.86976158618927,
+        "noise": 1.1920928955078125e-07,
+        "mean": 1549.9998779296875,
+        "focus_metric": "chip_edge_mean_gradient_energy"
+      },
+      {
+        "z_um": 100.0,
+        "phase": "quick",
+        "score": 0.18087482452392578,
+        "texture": 1.8697617053985596,
+        "noise": 1.1920928955078125e-07,
+        "mean": 1549.9998779296875,
+        "focus_metric": "chip_edge_mean_gradient_energy"
+      },
+      {
+        "z_um": 100.83333333333334,
+        "phase": "quick",
+        "score": 0.16978628933429718,
+        "texture": 1.86976158618927,
+        "noise": 1.1920928955078125e-07,
+        "mean": 1549.9998779296875,
+        "focus_metric": "chip_edge_mean_gradient_energy"
+      }
+    ],
+    "outcome": "resolved_peak",
+    "budget": null
+  },
+  "confirmation": {
+    "z_um": 100.08490540054724,
+    "phase": "confirmation",
+    "score": 0.18074584007263184,
+    "texture": 1.8697617053985596,
+    "noise": 1.1920928955078125e-07,
+    "mean": 1550.0,
+    "focus_metric": "chip_edge_mean_gradient_energy"
+  },
+  "result": {
+    "success": true,
+    "z_um": 100.08490540054724,
+    "score": 0.18074584007263184,
+    "prominence": 0.22042825752263243,
+    "reason": "Quick quadratic focus verified by a confirmation image.",
+    "samples": [
+      {
+        "z_um": 97.5,
+        "phase": "quick",
+        "score": 0.12165400385856628,
+        "texture": 1.8697617053985596,
+        "noise": 1.1920928955078125e-07,
+        "mean": 1550.0,
+        "focus_metric": "chip_edge_mean_gradient_energy"
+      },
+      {
+        "z_um": 98.33333333333334,
+        "phase": "quick",
+        "score": 0.14584262669086456,
+        "texture": 1.8697617053985596,
+        "noise": 1.1920928955078125e-07,
+        "mean": 1550.0,
+        "focus_metric": "chip_edge_mean_gradient_energy"
+      },
+      {
+        "z_um": 99.16666666666667,
+        "phase": "quick",
+        "score": 0.16978628933429718,
+        "texture": 1.86976158618927,
+        "noise": 1.1920928955078125e-07,
+        "mean": 1549.9998779296875,
+        "focus_metric": "chip_edge_mean_gradient_energy"
+      },
+      {
+        "z_um": 100.0,
+        "phase": "quick",
+        "score": 0.18087482452392578,
+        "texture": 1.8697617053985596,
+        "noise": 1.1920928955078125e-07,
+        "mean": 1549.9998779296875,
+        "focus_metric": "chip_edge_mean_gradient_energy"
+      },
+      {
+        "z_um": 100.83333333333334,
+        "phase": "quick",
+        "score": 0.16978628933429718,
+        "texture": 1.86976158618927,
+        "noise": 1.1920928955078125e-07,
+        "mean": 1549.9998779296875,
+        "focus_metric": "chip_edge_mean_gradient_energy"
+      },
+      {
+        "z_um": 100.08490540054724,
+        "phase": "confirmation",
+        "score": 0.18074584007263184,
+        "texture": 1.8697617053985596,
+        "noise": 1.1920928955078125e-07,
+        "mean": 1550.0,
+        "focus_metric": "chip_edge_mean_gradient_energy"
+      }
+    ],
+    "outcome": "resolved_peak",
+    "budget": null
+  }
+}

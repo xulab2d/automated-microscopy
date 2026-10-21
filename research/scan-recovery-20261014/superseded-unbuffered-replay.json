@@ -1,0 +1,12 @@
+{
+  "donor": "scan-20261013-221727-131d9ced",
+  "operation": "read-only original coverage replay",
+  "state": "aborted_for_superseding_buffered_validation",
+  "verified_process_id": 30660,
+  "verified_parent_process_id": 29588,
+  "started_local": "2026-10-14T10:39:54-07:00",
+  "elapsed_seconds": 524.5869074,
+  "scientific_files_modified": false,
+  "hardware_connections": 0,
+  "reason": "Replaced by final single-buffer sidecar replay; original code used repeated provider reads and ZIP seeks. This interrupted run supplies no new completion claim."
+}

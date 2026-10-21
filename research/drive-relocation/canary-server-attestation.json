@@ -1,0 +1,11 @@
+{
+  "method": "authenticated_drive_web_download",
+  "file_id": "1qZGO4FezTVtQvYo2jiCkPXn-0QjU0zX_",
+  "bytes": 22227066,
+  "sha256": "e59e412c6634de26c879692018ca48211d7c0a6251bb1da07428d98dbcf6a0aa",
+  "downloaded_from_google_server": true,
+  "download_path": "C:\\Users\\STM\\Downloads\\chip001-tile_000015.tiff",
+  "created_at_utc": "2026-10-09T16:24:41.512349+00:00",
+  "recorded_at_utc": "2026-10-09T16:26:57.310278+00:00",
+  "provenance": "Parent agent reports user authenticated Drive web, observed exact canary file, and clicked Download. This process independently hashed that downloaded file. No authentication extraction or bypass."
+}

@@ -1,0 +1,568 @@
+[
+  {
+    "tile_id": "tile_000000",
+    "known_support_fraction": 0.0,
+    "original_polygon_fit": {
+      "status": "fit",
+      "sample_stride": 12,
+      "initial_samples": 824,
+      "retained_samples": 796,
+      "degree": 2,
+      "sampled_design_condition": 5217.197056482391,
+      "minimum_anywhere_rgb": [
+        -1366.4192516776066,
+        -5548.308158726535,
+        234.59494936993403
+      ],
+      "minimum_inside_fit_support_rgb": [
+        428.77531461625017,
+        528.6177537952696,
+        234.59494936993403
+      ],
+      "nonpositive_anywhere_fraction": 0.6383777376382931,
+      "nonpositive_inside_fit_support_fraction": 0.0,
+      "robust_relative_residual_median": 0.11518671557055038,
+      "retained_relative_residual_p90": 0.22497734864791305,
+      "coefficients": [
+        [
+          225.76842881070178,
+          -710.7503173024,
+          2047.5467281715585
+        ],
+        [
+          821.7016215027229,
+          2956.593988325293,
+          -3370.4808676195985
+        ],
+        [
+          -178.10376010135704,
+          81.17268775622495,
+          -545.3313077258379
+        ],
+        [
+          -555.7626353641517,
+          -1606.3094118564256,
+          1590.3531944514382
+        ],
+        [
+          75.85790785512071,
+          -233.8409207643898,
+          478.0523810652195
+        ],
+        [
+          38.7225373224463,
+          40.35916727819847,
+          47.472779886117564
+        ]
+      ]
+    },
+    "observed_substrate_quadratic_fit": {
+      "status": "insufficient_measured_substrate",
+      "samples": 0
+    },
+    "observed_substrate_affine_fit": {
+      "status": "insufficient_measured_substrate",
+      "samples": 0
+    }
+  },
+  {
+    "tile_id": "tile_000001",
+    "known_support_fraction": 0.019714037786143817,
+    "original_polygon_fit": {
+      "status": "fit",
+      "sample_stride": 12,
+      "initial_samples": 23763,
+      "retained_samples": 13616,
+      "degree": 2,
+      "sampled_design_condition": 11.42148064124228,
+      "minimum_anywhere_rgb": [
+        -58.40051840024256,
+        -87.35084038701598,
+        -575.4760960034328
+      ],
+      "minimum_inside_fit_support_rgb": [
+        392.91950776588,
+        491.2119421050984,
+        51.41869312206003
+      ],
+      "nonpositive_anywhere_fraction": 0.04817678934296681,
+      "nonpositive_inside_fit_support_fraction": 0.0,
+      "robust_relative_residual_median": 0.07952788175223535,
+      "retained_relative_residual_p90": 0.15593230331003166,
+      "coefficients": [
+        [
+          1344.9519541175014,
+          1683.406694890429,
+          1281.0324844243778
+        ],
+        [
+          99.83169931782331,
+          125.73925231194448,
+          147.0641517602008
+        ],
+        [
+          572.7293834708385,
+          694.3182412049955,
+          701.9315343964286
+        ],
+        [
+          -62.02586294861976,
+          -92.8633685673466,
+          -136.12000744496464
+        ],
+        [
+          -126.30832660270784,
+          -153.78262554474315,
+          -146.52288856466112
+        ],
+        [
+          -542.4572001777547,
+          -704.0540476484152,
+          -724.8699982615556
+        ]
+      ]
+    },
+    "observed_substrate_quadratic_fit": {
+      "status": "fit",
+      "sample_stride": 12,
+      "initial_samples": 719,
+      "retained_samples": 662,
+      "degree": 2,
+      "sampled_design_condition": 152.61562226078993,
+      "minimum_anywhere_rgb": [
+        1245.7161940639369,
+        1610.0406948093257,
+        1016.9127959081669
+      ],
+      "minimum_inside_fit_support_rgb": [
+        1420.2606753255673,
+        1716.3182909524514,
+        1302.6087485114595
+      ],
+      "nonpositive_anywhere_fraction": 0.0,
+      "nonpositive_inside_fit_support_fraction": 0.0,
+      "robust_relative_residual_median": 0.05534225507718577,
+      "retained_relative_residual_p90": 0.10493162714311148,
+      "coefficients": [
+        [
+          1621.291951051241,
+          1821.7851205302143,
+          1396.271197318976
+        ],
+        [
+          -72.78671691759453,
+          96.34070896909094,
+          99.72914182959047
+        ],
+        [
+          -421.0609108037979,
+          -59.01529266379824,
+          23.826050098656737
+        ],
+        [
+          -72.64649120082507,
+          -94.01032602656198,
+          -112.13286810567256
+        ],
+        [
+          190.00678098812142,
+          -76.3628154317456,
+          -60.66675910720362
+        ],
+        [
+          234.9374646754574,
+          -4.045867957288575,
+          -83.00358226968578
+        ]
+      ]
+    },
+    "observed_substrate_affine_fit": {
+      "status": "fit",
+      "sample_stride": 12,
+      "initial_samples": 719,
+      "retained_samples": 666,
+      "degree": 1,
+      "sampled_design_condition": 14.45664737828047,
+      "minimum_anywhere_rgb": [
+        1429.8566308518193,
+        1726.3404243548714,
+        1312.844743403983
+      ],
+      "minimum_inside_fit_support_rgb": [
+        1443.899367931645,
+        1739.3066296699596,
+        1328.202665883872
+      ],
+      "nonpositive_anywhere_fraction": 0.0,
+      "nonpositive_inside_fit_support_fraction": 0.0,
+      "robust_relative_residual_median": 0.057189244691649876,
+      "retained_relative_residual_p90": 0.1078669123990997,
+      "coefficients": [
+        [
+          1456.7534892326378,
+          1855.0150850145383,
+          1467.4056153669026
+        ],
+        [
+          15.836658162825398,
+          -38.74904936868997,
+          -37.302392694698284
+        ],
+        [
+          -11.092587334297628,
+          -90.28360782659986,
+          -117.69297903183869
+        ]
+      ]
+    }
+  },
+  {
+    "tile_id": "tile_000007",
+    "known_support_fraction": 0.0,
+    "original_polygon_fit": {
+      "status": "fit",
+      "sample_stride": 12,
+      "initial_samples": 261,
+      "retained_samples": 243,
+      "degree": 2,
+      "sampled_design_condition": 12499.771956196186,
+      "minimum_anywhere_rgb": [
+        -8988.04865881346,
+        -23452.44053698164,
+        -17111.753486312147
+      ],
+      "minimum_inside_fit_support_rgb": [
+        647.1589771029929,
+        932.0693775998375,
+        599.4105149558691
+      ],
+      "nonpositive_anywhere_fraction": 0.1762248814630842,
+      "nonpositive_inside_fit_support_fraction": 0.0,
+      "robust_relative_residual_median": 0.24918280966990472,
+      "retained_relative_residual_p90": 0.6524503418166244,
+      "coefficients": [
+        [
+          32591.201120305337,
+          122825.35138659117,
+          22495.41170592432
+        ],
+        [
+          -8491.475866677043,
+          12886.901244006876,
+          -12986.636654693813
+        ],
+        [
+          -72989.01719585076,
+          -235460.42993356864,
+          -54037.584518110125
+        ],
+        [
+          -3707.4911411253206,
+          -8760.444260180928,
+          -6393.429322089049
+        ],
+        [
+          4049.986764741702,
+          -25290.992887105378,
+          4580.222634786798
+        ],
+        [
+          40397.92219384965,
+          110155.49362282807,
+          30152.092161526125
+        ]
+      ]
+    },
+    "observed_substrate_quadratic_fit": {
+      "status": "insufficient_measured_substrate",
+      "samples": 0
+    },
+    "observed_substrate_affine_fit": {
+      "status": "insufficient_measured_substrate",
+      "samples": 0
+    }
+  },
+  {
+    "tile_id": "tile_000032",
+    "known_support_fraction": 0.011943582924857244,
+    "original_polygon_fit": {
+      "status": "fit",
+      "sample_stride": 12,
+      "initial_samples": 690,
+      "retained_samples": 640,
+      "degree": 2,
+      "sampled_design_condition": 3916.6616246007306,
+      "minimum_anywhere_rgb": [
+        -12190.39384051628,
+        -11000.211581057709,
+        -3401.36776405236
+      ],
+      "minimum_inside_fit_support_rgb": [
+        1401.8678778185742,
+        1580.1167201616604,
+        1173.5510717216346
+      ],
+      "nonpositive_anywhere_fraction": 0.6119327161887559,
+      "nonpositive_inside_fit_support_fraction": 0.0,
+      "robust_relative_residual_median": 0.05689357463726915,
+      "retained_relative_residual_p90": 0.10477598581428653,
+      "coefficients": [
+        [
+          -1207.0325823611427,
+          -916.0086041624636,
+          665.144489548229
+        ],
+        [
+          538.7815057422089,
+          352.11682044284476,
+          540.1750986733716
+        ],
+        [
+          6233.527512134009,
+          5957.155479970918,
+          1835.6293487435303
+        ],
+        [
+          -41.08559168974756,
+          -95.74895098555487,
+          -50.39951127090858
+        ],
+        [
+          -582.3936799815729,
+          -349.85317719565415,
+          -463.62165121570956
+        ],
+        [
+          -3587.572968607601,
+          -3329.328548300273,
+          -1176.6866436970693
+        ]
+      ]
+    },
+    "observed_substrate_quadratic_fit": {
+      "status": "fit",
+      "sample_stride": 12,
+      "initial_samples": 427,
+      "retained_samples": 395,
+      "degree": 2,
+      "sampled_design_condition": 609.9489709915601,
+      "minimum_anywhere_rgb": [
+        -863.5491771767929,
+        -177.25327518700664,
+        1202.8310352676956
+      ],
+      "minimum_inside_fit_support_rgb": [
+        1431.3289976594774,
+        1684.8415067067515,
+        1284.590959332792
+      ],
+      "nonpositive_anywhere_fraction": 0.05455520433506435,
+      "nonpositive_inside_fit_support_fraction": 0.0,
+      "robust_relative_residual_median": 0.05269920741857147,
+      "retained_relative_residual_p90": 0.10510152976170316,
+      "coefficients": [
+        [
+          1178.6169816737622,
+          1409.6212125373584,
+          1480.7827958884834
+        ],
+        [
+          -505.9853946054035,
+          -68.04242255782188,
+          4.303977102901655
+        ],
+        [
+          612.5804620399545,
+          839.6902363836227,
+          -261.36671290098263
+        ],
+        [
+          -16.886978896431206,
+          -62.57818930211946,
+          -79.37846733763885
+        ],
+        [
+          573.6154762863783,
+          91.40567296237185,
+          36.53915199676744
+        ],
+        [
+          -335.8099875609967,
+          -525.8509069089323,
+          103.36948681975429
+        ]
+      ]
+    },
+    "observed_substrate_affine_fit": {
+      "status": "fit",
+      "sample_stride": 12,
+      "initial_samples": 427,
+      "retained_samples": 399,
+      "degree": 1,
+      "sampled_design_condition": 21.05443317715491,
+      "minimum_anywhere_rgb": [
+        1448.3200799004892,
+        1723.1871321733347,
+        1317.4052969469494
+      ],
+      "minimum_inside_fit_support_rgb": [
+        1448.3200799004892,
+        1723.1871321733347,
+        1320.940626692699
+      ],
+      "nonpositive_anywhere_fraction": 0.0,
+      "nonpositive_inside_fit_support_fraction": 0.0,
+      "robust_relative_residual_median": 0.05550493158931055,
+      "retained_relative_residual_p90": 0.10704932108084722,
+      "coefficients": [
+        [
+          1490.7798988187599,
+          1767.8255890656153,
+          1358.5237995151447
+        ],
+        [
+          -5.787583054148037,
+          -5.314779426761703,
+          4.170266840891358
+        ],
+        [
+          -36.79376176827681,
+          -39.451812326253894,
+          -37.05642968258139
+        ]
+      ]
+    }
+  },
+  {
+    "tile_id": "tile_000180",
+    "known_support_fraction": 0.000567115885087675,
+    "original_polygon_fit": {
+      "status": "fit",
+      "sample_stride": 12,
+      "initial_samples": 35432,
+      "retained_samples": 23838,
+      "degree": 2,
+      "sampled_design_condition": 7.603674450480625,
+      "minimum_anywhere_rgb": [
+        -623.5912796460346,
+        -768.5349158775433,
+        -692.999811850233
+      ],
+      "minimum_inside_fit_support_rgb": [
+        -623.5912796460346,
+        -768.5349158775433,
+        -692.999811850233
+      ],
+      "nonpositive_anywhere_fraction": 0.3042729735832016,
+      "nonpositive_inside_fit_support_fraction": 0.3042729735832016,
+      "robust_relative_residual_median": 0.7648424639429232,
+      "retained_relative_residual_p90": 1.4248005595662094,
+      "coefficients": [
+        [
+          69.02736492625847,
+          127.48978510260879,
+          31.548232075348892
+        ],
+        [
+          -287.09121862237475,
+          -284.84431216404755,
+          -257.86514781678284
+        ],
+        [
+          -950.9301954078675,
+          -1239.7507566720365,
+          -980.3373721834217
+        ],
+        [
+          862.7310542655503,
+          1106.7434171411128,
+          830.4418916659082
+        ],
+        [
+          -466.21711820441016,
+          -530.8332440903291,
+          -453.45447046593256
+        ],
+        [
+          421.8320825812296,
+          492.68409157741837,
+          407.03577534657285
+        ]
+      ]
+    },
+    "observed_substrate_quadratic_fit": {
+      "status": "insufficient_measured_substrate",
+      "samples": 20
+    },
+    "observed_substrate_affine_fit": {
+      "status": "insufficient_measured_substrate",
+      "samples": 20
+    }
+  },
+  {
+    "tile_id": "tile_000354",
+    "known_support_fraction": 0.0012810936631461923,
+    "original_polygon_fit": {
+      "status": "fit",
+      "sample_stride": 12,
+      "initial_samples": 17456,
+      "retained_samples": 10722,
+      "degree": 2,
+      "sampled_design_condition": 64.15338807893261,
+      "minimum_anywhere_rgb": [
+        -86.62783475519477,
+        1625.8448828093822,
+        1189.314797005763
+      ],
+      "minimum_inside_fit_support_rgb": [
+        1065.0495053999748,
+        1625.8448828093822,
+        1189.314797005763
+      ],
+      "nonpositive_anywhere_fraction": 0.003612553623842854,
+      "nonpositive_inside_fit_support_fraction": 0.0,
+      "robust_relative_residual_median": 0.06428874267388276,
+      "retained_relative_residual_p90": 0.12564913343155457,
+      "coefficients": [
+        [
+          1221.3520748118647,
+          1904.1489916058226,
+          1449.016880534414
+        ],
+        [
+          -692.969760351559,
+          250.10822854678457,
+          121.28014568576464
+        ],
+        [
+          59.47912828541277,
+          -98.7482325440296,
+          -79.41279304628918
+        ],
+        [
+          -471.03692314443754,
+          29.0237721509761,
+          -67.44949266368435
+        ],
+        [
+          23.089501407831733,
+          -65.29298474304167,
+          -54.19727950984833
+        ],
+        [
+          -65.4411021923352,
+          -24.002037428010638,
+          -46.09935390463566
+        ]
+      ]
+    },
+    "observed_substrate_quadratic_fit": {
+      "status": "insufficient_measured_substrate",
+      "samples": 47
+    },
+    "observed_substrate_affine_fit": {
+      "status": "insufficient_measured_substrate",
+      "samples": 47
+    }
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "created_utc": "2026-10-09T18:01:04.934351+00:00",
+  "hardware_access": false,
+  "sources": [
+    {
+      "file": "MoTe2_Munkhbat_tensor_nm.txt",
+      "url": "https://zenodo.org/records/6205431/files/f3_dataset_MoTe2_nm_ex1_ex2_ey1_ey2_ez1_ez2.txt",
+      "bytes": 123576,
+      "sha256": "02254f768131303bbe6772990eea20122dd26a40999477840221c59ea00aba9e",
+      "md5": "d32de83c300a5ef4dd7655cfaed0d71c",
+      "status": "retrieved"
+    },
+    {
+      "file": "Munkhbat_zenodo_metadata.json",
+      "url": "https://zenodo.org/api/records/6205431",
+      "bytes": 10296,
+      "sha256": "7c0214c32677ae011221fcbf3104b36b3b4f2b3e813e5443deeeeba203fd8385",
+      "md5": "4a3610bbbffaf8ea03771578a5b10d2c",
+      "status": "retrieved"
+    },
+    {
+      "file": "Munkhbat_article.pdf",
+      "url": "https://research.chalmers.se/publication/531148/file/531148_Fulltext.pdf",
+      "bytes": 12277733,
+      "sha256": "53ec92d4affdc249c9543051ab8029c5a5e90d0f52f620628f172083ffbcd969",
+      "md5": "ecc1ca9b6d1100569a7daf93c1b33ef7",
+      "status": "retrieved"
+    },
+    {
+      "file": "synthetic_generator_tree.json",
+      "url": "https://api.github.com/repos/Jaluus/MaskTerial-Synthetic-Data/git/trees/main?recursive=1",
+      "bytes": 50776,
+      "sha256": "66232b5231acecb91bfb9953d84551b187e1b1ad5ca452a735d7c33ed2fb9e70",
+      "md5": "c56368117e4c63cfbaeba64120c9e7d1",
+      "status": "retrieved"
+    },
+    {
+      "file": "Malitson_fused_silica.yml",
+      "url": "https://raw.githubusercontent.com/polyanskiy/refractiveindex.info-database/master/database/data/main/SiO2/nk/Malitson.yml",
+      "bytes": 973,
+      "sha256": "c587670f397241ecb93a1af3279d6fe7ed67888e587e399074b0eab729c92b52",
+      "md5": "4ccf9041bfa0fc7e74e2e40598aca853",
+      "status": "retrieved"
+    }
+  ]
+}

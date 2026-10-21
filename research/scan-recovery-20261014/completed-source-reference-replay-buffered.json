@@ -1,0 +1,230 @@
+{
+  "donor": "scan-20261013-221727-131d9ced",
+  "actual_completed_chip_sources": {
+    "chip001": {
+      "kind": "readonly_completed_chip_v1",
+      "source_run_id": "scan-20261013-221727-131d9ced",
+      "source_folder": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-221727-131d9ced\\chip001",
+      "source_request_sha256": "870686e9147199d8b31b10a068b43919b52432ea25bac1c9f3171ee629ceb1cf",
+      "source_status_sha256": "9b42e00fcee02ebbfc3ad74bd36b54c6acaecece348567f23b10d251634b37be",
+      "source_worker_sha256": "bd7a1a5666613e9601eb22a4495a92df49ead6c80b46d673a98393ff41647c5a",
+      "manifest_sha256": "2512566a5fcb8af820d74ef46b396f4bcc28fa17bff89f95afc9b27eb45fdadd",
+      "coverage_sha256": "d749bdd741439b34ec73db9f0a2ebea39b5f8e8b093cb04f9386125858f986b1",
+      "plan_sha256": "94325c7b322f26ecc3482d9d0d2a2c9f5e29d8817c26c28cb137b0a145a9201a",
+      "coverage_plan_fingerprint": "93ac5ea6b7c3ab290fed02116e4e3f24d404822132e8c8831199c259a353039d",
+      "tile_count": 999,
+      "state": "complete_with_boundary_limits",
+      "planned_area_acquired": true,
+      "policy": "Read-only original committed raster; verify scientific artifact hashes on use; no raw copy or new acquisition."
+    }
+  },
+  "reference_construction_raw_reads": 0,
+  "real_original_coverage_replay": [
+    {
+      "chip_id": "chip001",
+      "plan_fingerprint": "93ac5ea6b7c3ab290fed02116e4e3f24d404822132e8c8831199c259a353039d",
+      "manifest_sha256": "2512566a5fcb8af820d74ef46b396f4bcc28fa17bff89f95afc9b27eb45fdadd",
+      "registered_fields_verified": 999,
+      "coverage_sha256": "d749bdd741439b34ec73db9f0a2ebea39b5f8e8b093cb04f9386125858f986b1",
+      "eligible_observed_cells": 565339,
+      "missing_artifact_replay": {
+        "missing_manifest_artifacts": [
+          {
+            "path": "tiles/tile_000023.flakes.json",
+            "expected_sha256": "efb34b5ac30d60d2e9dedef4f1e8d40987350f1af754be1c317f37e5727d9435"
+          },
+          {
+            "path": "boundary-labels/tile_000025.npz",
+            "expected_sha256": "d248a8388cfdf3ae9040e162ae4c431f917f99c8e45cf9731eb8d6710d05378f"
+          },
+          {
+            "path": "tiles/tile_000030.flakes.json",
+            "expected_sha256": "d6f10f91905dbc85b086b6a1e77ac9002886c8f2de91e5aeec7bad2a823f41ca"
+          },
+          {
+            "path": "tiles/tile_000030.zen-vendor.json",
+            "expected_sha256": "b118340ced0ec8d5b81f262a4f0ca9ff312e755a84adcbc8348fa69e3f29c780"
+          },
+          {
+            "path": "tiles/tile_000048.json",
+            "expected_sha256": "716e64e887f7c0bed1e55c03913ad50a2cd38a39ff2004fcbb25beac5013ab9c"
+          },
+          {
+            "path": "tiles/tile_000116.flakes.json",
+            "expected_sha256": "d55b725c54dd6925a651a938ac76e426cae5bcc72a1216e44e5a85feca1d931b"
+          },
+          {
+            "path": "tiles/tile_000116.zen-vendor.json",
+            "expected_sha256": "dd4927db92de1a8258448fa261aca72efccc9c1ff3c9b9a569792823c7380a77"
+          },
+          {
+            "path": "boundary-labels/tile_000116.npz",
+            "expected_sha256": "bd811e4f9eafa4e065a1a6886e644e8ba0cda571dfeed6ced003e68b72d9b2b2"
+          },
+          {
+            "path": "tiles/tile_000117.json",
+            "expected_sha256": "4efacb668672819a68162692f798d10cc8be22059c0308e3ec2a91b2d3c9ebc4"
+          },
+          {
+            "path": "tiles/tile_000388.zen-vendor.json",
+            "expected_sha256": "7804da9cd558812e3c1c7ca917b34c594b27e4475eaaf5598c67f727b86f2d62"
+          },
+          {
+            "path": "tiles/tile_000845.flakes.json",
+            "expected_sha256": "b0b7c10b81217a11a818b231899625c20282c13cccdabd7ae3569b1543abcccc"
+          },
+          {
+            "path": "tiles/tile_000845.zen-vendor.json",
+            "expected_sha256": "39beff75041efa6a4d323142349e4f1b6dacf273555ab2766898a0e926bb4e39"
+          },
+          {
+            "path": "boundary-labels/tile_000845.npz",
+            "expected_sha256": "71f0520a312c3b71e9d7ace1326d0dbfc0a326f5092c1040fc7c78f412ee81ac"
+          },
+          {
+            "path": "tiles/tile_000846.json",
+            "expected_sha256": "b02a5cfa60e9f5e991abde5abdb990e9afa65c2070c9301667265a8bdcd63dd7"
+          },
+          {
+            "path": "tiles/tile_000859.flakes.json",
+            "expected_sha256": "ea794f3503219867eaaa51f9fa58887402e62a0d591f257240b4c5756f8c6a7a"
+          },
+          {
+            "path": "tiles/tile_000859.zen-vendor.json",
+            "expected_sha256": "8a628faae2b8ee391f5ca08c545b05627a5ec29311dc5e86436b93431d7ee2ac"
+          },
+          {
+            "path": "boundary-labels/tile_000859.npz",
+            "expected_sha256": "5c41e19dd1d82884f4c16533f3a6580554a265b4c6cc55eabb42febcf42f2531"
+          }
+        ],
+        "replay_recoveries": [
+          {
+            "kind": "exact_original_boundary_labels_in_memory",
+            "tile": "tile_000025",
+            "missing_path": "boundary-labels/tile_000025.npz",
+            "recomputed_sha256": "d248a8388cfdf3ae9040e162ae4c431f917f99c8e45cf9731eb8d6710d05378f",
+            "raw_sha256": "03b871e17674e7e0502d2ec8a1bfa9a4c6f7e6fae4fb7b4e3675d105f8b93cf6",
+            "metadata_sha256": "c7015c8e1e022e2c1260cbfd876e6f75ac2a2272f4805456fbfa0353e13301d5",
+            "reference_sha256": "689608eff4fa4b6258472b3710d11e8443a4d528fd7f635b6962d38c157e3849",
+            "classification_source_sha256": {
+              "chip_discovery.py": "19210b8cff035d6e384cb54b71b430e272eca036e1cd6803f19a696e265ef6db",
+              "layout.py": "c087d6af7ebc6ac14b6697acab7f306df2153fb5a9b4b649f243ece005ea8ea1",
+              "imaging.py": "e0c6c8a011e1b948ba8bc3ba9d6a65760bb43c2d91a6b5cc12174ec160cdf92d",
+              "model.py": "ce35abc5343f9489930721fe9438fd493d96be6ccce5df43fcea3b2fe84a7730"
+            },
+            "original_acquisition_source_sha256": "dfd2ea9ea03ef93c76a1d126b6d9beaf3c34d1ce7fd9b6fe984fb2262a07c8ab",
+            "original_files_modified": false
+          },
+          {
+            "kind": "independent_archived_vendor_registration",
+            "tile": "tile_000048",
+            "missing_sidecar": "tiles/tile_000048.json",
+            "original_sidecar_sha256": "716e64e887f7c0bed1e55c03913ad50a2cd38a39ff2004fcbb25beac5013ab9c",
+            "raw_sha256": "8014ffa1db8c4feb845b2865ab1612309b59bb2c3f047f75b296766a307fd0b9",
+            "archive_sha256": "6be4804077af16c6f832c8ce3102a51bb0161bfb7eb9c273ba384784f81f4fff",
+            "vendor_metadata_sha256": "af4becffe4d008f32e4882d1d3e54f6891132c015fe778bf0dc3e87129f88cef",
+            "position_um": {
+              "x": 43874.30999999999,
+              "y": 21874.767,
+              "z": 15614.219
+            },
+            "original_sidecar_restored": false,
+            "acquisition_timestamp_synthesized": false
+          },
+          {
+            "kind": "exact_original_boundary_labels_in_memory",
+            "tile": "tile_000116",
+            "missing_path": "boundary-labels/tile_000116.npz",
+            "recomputed_sha256": "bd811e4f9eafa4e065a1a6886e644e8ba0cda571dfeed6ced003e68b72d9b2b2",
+            "raw_sha256": "9778e623ceed5ec2727c867b3acc7a7375ece5d3c4103ecd74ac158464e5efdf",
+            "metadata_sha256": "4195c3c30d9f1f5de8c84b9cb0cb17021a0b09a270f18c9f1079bdc98237cc7f",
+            "reference_sha256": "689608eff4fa4b6258472b3710d11e8443a4d528fd7f635b6962d38c157e3849",
+            "classification_source_sha256": {
+              "chip_discovery.py": "19210b8cff035d6e384cb54b71b430e272eca036e1cd6803f19a696e265ef6db",
+              "layout.py": "c087d6af7ebc6ac14b6697acab7f306df2153fb5a9b4b649f243ece005ea8ea1",
+              "imaging.py": "e0c6c8a011e1b948ba8bc3ba9d6a65760bb43c2d91a6b5cc12174ec160cdf92d",
+              "model.py": "ce35abc5343f9489930721fe9438fd493d96be6ccce5df43fcea3b2fe84a7730"
+            },
+            "original_acquisition_source_sha256": "dfd2ea9ea03ef93c76a1d126b6d9beaf3c34d1ce7fd9b6fe984fb2262a07c8ab",
+            "original_files_modified": false
+          },
+          {
+            "kind": "independent_archived_vendor_registration",
+            "tile": "tile_000117",
+            "missing_sidecar": "tiles/tile_000117.json",
+            "original_sidecar_sha256": "4efacb668672819a68162692f798d10cc8be22059c0308e3ec2a91b2d3c9ebc4",
+            "raw_sha256": "be41d24f701a19e6a2af5ef71efb14c2830a09b3e8f3c0d8135050cac75c4be9",
+            "archive_sha256": "faf1bdfd9093fba9d1235917e7d92c8118110b7b7ce2d2c2ae20bcfcc0ef7569",
+            "vendor_metadata_sha256": "09645ac2bdde1555049b57f2f09df46f346b10e0f116183f9e562f129f28880d",
+            "position_um": {
+              "x": 45211.224,
+              "y": 22725.076,
+              "z": 15616.406
+            },
+            "original_sidecar_restored": false,
+            "acquisition_timestamp_synthesized": false
+          },
+          {
+            "kind": "exact_original_boundary_labels_in_memory",
+            "tile": "tile_000845",
+            "missing_path": "boundary-labels/tile_000845.npz",
+            "recomputed_sha256": "71f0520a312c3b71e9d7ace1326d0dbfc0a326f5092c1040fc7c78f412ee81ac",
+            "raw_sha256": "b35c79b27b929ae927c273a2fc764b7bfc49161f83dcd29c5af3444dfaa5171a",
+            "metadata_sha256": "2dda9c753f6833ab4a3ae4595178aded2cc182efbe91a5b4b2da4711b8bb0942",
+            "reference_sha256": "689608eff4fa4b6258472b3710d11e8443a4d528fd7f635b6962d38c157e3849",
+            "classification_source_sha256": {
+              "chip_discovery.py": "19210b8cff035d6e384cb54b71b430e272eca036e1cd6803f19a696e265ef6db",
+              "layout.py": "c087d6af7ebc6ac14b6697acab7f306df2153fb5a9b4b649f243ece005ea8ea1",
+              "imaging.py": "e0c6c8a011e1b948ba8bc3ba9d6a65760bb43c2d91a6b5cc12174ec160cdf92d",
+              "model.py": "ce35abc5343f9489930721fe9438fd493d96be6ccce5df43fcea3b2fe84a7730"
+            },
+            "original_acquisition_source_sha256": "dfd2ea9ea03ef93c76a1d126b6d9beaf3c34d1ce7fd9b6fe984fb2262a07c8ab",
+            "original_files_modified": false
+          },
+          {
+            "kind": "independent_archived_vendor_registration",
+            "tile": "tile_000846",
+            "missing_sidecar": "tiles/tile_000846.json",
+            "original_sidecar_sha256": "b02a5cfa60e9f5e991abde5abdb990e9afa65c2070c9301667265a8bdcd63dd7",
+            "raw_sha256": "bada133c6e7b60f31889abe634fb22c26325a549770a8570c82031d3bdc558a6",
+            "archive_sha256": "80d5ac7250f73e92bae9ddf06d0b57536c70956b7c95eb9690ea8e45e8f22e85",
+            "vendor_metadata_sha256": "f4071a03c84272c7adcad2700c597696df0d2d0bbcfc615feaca2a2c31bb12c2",
+            "position_um": {
+              "x": 47885.053,
+              "y": 30377.856999999996,
+              "z": 15613.047
+            },
+            "original_sidecar_restored": false,
+            "acquisition_timestamp_synthesized": false
+          },
+          {
+            "kind": "exact_original_boundary_labels_in_memory",
+            "tile": "tile_000859",
+            "missing_path": "boundary-labels/tile_000859.npz",
+            "recomputed_sha256": "5c41e19dd1d82884f4c16533f3a6580554a265b4c6cc55eabb42febcf42f2531",
+            "raw_sha256": "365558770f6e7c83e8bbcc08c7e41710e14e91bb2cdb5b45cd0e63669bc89103",
+            "metadata_sha256": "0e20f5f8e4f0a61d76d6b7b59a5867eb2932dcda56e5bbc188fe626313298585",
+            "reference_sha256": "689608eff4fa4b6258472b3710d11e8443a4d528fd7f635b6962d38c157e3849",
+            "classification_source_sha256": {
+              "chip_discovery.py": "19210b8cff035d6e384cb54b71b430e272eca036e1cd6803f19a696e265ef6db",
+              "layout.py": "c087d6af7ebc6ac14b6697acab7f306df2153fb5a9b4b649f243ece005ea8ea1",
+              "imaging.py": "e0c6c8a011e1b948ba8bc3ba9d6a65760bb43c2d91a6b5cc12174ec160cdf92d",
+              "model.py": "ce35abc5343f9489930721fe9438fd493d96be6ccce5df43fcea3b2fe84a7730"
+            },
+            "original_acquisition_source_sha256": "dfd2ea9ea03ef93c76a1d126b6d9beaf3c34d1ce7fd9b6fe984fb2262a07c8ab",
+            "original_files_modified": false
+          }
+        ],
+        "original_manifest_and_raw_modified": false,
+        "missing_files_restored": false,
+        "aggregate_coverage_exact_match": true
+      }
+    }
+  ],
+  "buffered_replay_elapsed_seconds": 380.5780000000377,
+  "new_invocation_mapping_validation": "Synthetic complete-chip fixture exercised immutable request map, copied plan, original source metadata and recovery. Real donor replay above uses original path directly.",
+  "scientific_files_modified": false,
+  "hardware_connections": 0,
+  "raw_tiff_copies": 0
+}

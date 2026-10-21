@@ -1,0 +1,43 @@
+REVIEWING EXCLUDED PROPOSALS
+
+Open http://127.0.0.1:8770/?proposals=rejected for algorithm-rejected regions.
+The gallery also offers bulk/clipped, all-assessed and human-excluded views.
+Pages contain48 regions, with chip and independent sieve-reason filters.
+Each crop opens its saved outline and the original filter outcomes. Whole-image
+context and the existing human labeler remain available. Review does not change
+the saved scientific decisions. Pagination only reads committed analysis files.
+
+The all-assessed index covers region rows written by the sieve worker. It does
+not claim pixel-level completeness: small/off-domain regions omitted before
+measurement and fields lacking substrate support are not measured region rows.
+Use the full-image library when looking for features never proposed at all.
+
+SOURCE AND PERFORMANCE
+Only completed ledger entries are indexed. Field JSON hashes and raw-image
+identities are checked before their rows enter the cache. Revised ledger entries
+invalidate cached rows. No TIFF decoding or segmentation runs to browse results.
+Thousands of thumbnails are paged; the browser holds eight decoded image promises.
+On this Drive dataset while analysis was active, cold index/page construction took
+11.0s; subsequent pages took1.49s. Status and completed progress remain independent.
+
+WHY THREE BLACK EXAMPLES WERE UNCERTAIN
+Read-only inspection of the saved inputs and source,9 October2026:
+chip002/tile_000241, f-a5e6d3a7ffdf60:25.77um2;5 local background pixels.
+chip002/tile_000174, f-b475288d18d384:25.35um2;0 local background pixels.
+chip002/tile_000055, f-044eae2fe3f772:76.98um2;0 local background pixels.
+All require50 pixels. COLOR is unavailable; no competing-material model match
+was evaluated. EDGE, TEXTURE and GEOMETRY pass, leading to uncertain.
+
+Within the same0.8–6um annuli, the independently recorded labels initially contain
+1786/3266/2219 non-foreground substrate pixels. ChipDomain.masks applies1um
+clearance from all non-support pixels to the upsampled labels; fragmented support
+falls to5/0/0. The subsequent9x9 foreground exclusion removes none further.
+These are not validated thin-color matches. Their stored field-relative contrasts
+are strongly dark, around0.55–0.79, and have no valid local correction.
+
+The UI now distinguishes COLOR unavailable (Color not measured) from COLOR
+uncertain (Color ambiguous). No live classifier, support threshold, mask or
+candidate rank was altered by this review update. Repairing background support
+requires a separate measured comparison using independent patches and explicit
+coverage/uncertainty; silently removing the safeguard or substituting zero color
+would not establish a reliable match.

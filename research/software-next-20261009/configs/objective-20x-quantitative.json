@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "created_at": 1791497229.983333,
+  "objective": {
+    "position": 2,
+    "name": "EC Epiplan 20x/0.4 HD M27",
+    "magnification": 20.0,
+    "na": 0.4,
+    "working_distance_um": 3300.0
+  },
+  "motorization": "Coded",
+  "camera_transform": {
+    "matrix": [
+      [
+        0.17248901979656125,
+        -0.0077434379225809
+      ],
+      [
+        0.007834271193644623,
+        0.17226317842089725
+      ]
+    ],
+    "pixel_size_um": [
+      0.1725,
+      0.1725
+    ],
+    "calibrated": true
+  },
+  "context": {
+    "sample_id": "MoTe2-2026-10-08",
+    "material": "MoTe2",
+    "substrate": "SiO2/Si",
+    "oxide_nm": 285,
+    "oxide_process": "wet",
+    "objective": "EC Epiplan 20x/0.4 HD M27",
+    "camera": "Axiocam 305 color",
+    "exposure_ms": 266.6015625,
+    "illumination": "reflected brightfield",
+    "illumination_percent": 93.44422700587084,
+    "white_balance": "0.25007564,1,2.61244442",
+    "white_level": 4095,
+    "color_profile_kind": "fixed acquisition channel balance; not a neutral-reference color calibration"
+  },
+  "job_template": "FlakeFinder Quantitative Camera",
+  "camera_resources": {
+    "ff_exposure_ms": 266.6015625,
+    "ff_white_balance": "0.25007564,1,2.61244442"
+  },
+  "illumination_percent": 93.44422700587084,
+  "focus": {
+    "half_range_um": 12,
+    "coarse_step_um": 2,
+    "fine_step_um": 0.5
+  },
+  "calibration_position": {
+    "x": 48527.631,
+    "y": 30237.224999999995,
+    "z": 15612.187
+  },
+  "source": "ZEN API raw stream"
+}

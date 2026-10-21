@@ -1,0 +1,149 @@
+{
+  "schema": 1,
+  "state": "stopped",
+  "initial_position_um": {
+    "x": 0,
+    "y": 0,
+    "z": 100
+  },
+  "search_bounds_um": [
+    60.0,
+    145.0
+  ],
+  "requested_search_bounds_um": [
+    60.0,
+    145.0
+  ],
+  "hard_limit_target_headroom_um": 0.236,
+  "max_exploratory_images": 24,
+  "max_bracket_width_um": 6.0,
+  "samples": [
+    {
+      "z_um": 100,
+      "requested_z_um": 100.0,
+      "phase": "initial",
+      "score": 0.18087482452392578,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1549.9998779296875,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 100,
+      "requested_z_um": 100.0,
+      "phase": "initial_repeat",
+      "score": 0.18087482452392578,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1549.9998779296875,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 90.0,
+      "requested_z_um": 90.0,
+      "phase": "direction_probe",
+      "score": 0.04007585346698761,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 110.0,
+      "requested_z_um": 110.0,
+      "phase": "direction_probe",
+      "score": 0.04007585346698761,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 95.0,
+      "requested_z_um": 95.0,
+      "phase": "tighten_bracket",
+      "score": 0.07483410090208054,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0001220703125,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 105.0,
+      "requested_z_um": 105.0,
+      "phase": "tighten_bracket",
+      "score": 0.07483410090208054,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0001220703125,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 97.5,
+      "requested_z_um": 97.5,
+      "phase": "tighten_bracket",
+      "score": 0.12165400385856628,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 102.5,
+      "requested_z_um": 102.5,
+      "phase": "tighten_bracket",
+      "score": 0.12165400385856628,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 98.0,
+      "phase": "verification_quick",
+      "score": 0.13577154278755188,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy",
+      "recovery_mask_score": 0.13577154278755188
+    },
+    {
+      "z_um": 99.0,
+      "phase": "verification_quick",
+      "score": 0.16552820801734924,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy",
+      "recovery_mask_score": 0.16552820801734924
+    }
+  ],
+  "limitation": "Sparse sampling can miss a narrow peak; no completeness or thin-flake sensitivity guarantee.",
+  "direction": null,
+  "fallback_used": false,
+  "best_observed": {
+    "z_um": 100,
+    "requested_z_um": 100.0,
+    "phase": "initial",
+    "score": 0.18087482452392578,
+    "texture": 1.8697617053985596,
+    "noise": 1.1920928955078125e-07,
+    "mean": 1549.9998779296875,
+    "focus_metric": "chip_edge_mean_gradient_energy"
+  },
+  "initial_repeat_score_noise": 0.0,
+  "bracket_um": [
+    97.5,
+    102.5
+  ],
+  "direct_edge_refinement": {
+    "state": "sampling",
+    "measured_peak_um": 100.0,
+    "bounds_um": [
+      98.0,
+      102.0
+    ],
+    "policy": "Fresh resolved edge bracket; independent fitted-peak confirmation; same total budget."
+  }
+}

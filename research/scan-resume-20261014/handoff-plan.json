@@ -1,0 +1,27 @@
+{
+  "run_id": "scan-20261014-105506-f3cb07a9",
+  "donor": "scan-20261013-221727-131d9ced",
+  "deadline_at": 1792038022.16248,
+  "planned_at": 1792000520.7863104,
+  "pinned_files_to_consider": 362,
+  "completed_chip_sources": {
+    "chip001": {
+      "kind": "readonly_completed_chip_v1",
+      "source_run_id": "scan-20261013-221727-131d9ced",
+      "source_folder": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-221727-131d9ced\\chip001",
+      "source_request_sha256": "870686e9147199d8b31b10a068b43919b52432ea25bac1c9f3171ee629ceb1cf",
+      "source_status_sha256": "9b42e00fcee02ebbfc3ad74bd36b54c6acaecece348567f23b10d251634b37be",
+      "source_worker_sha256": "bd7a1a5666613e9601eb22a4495a92df49ead6c80b46d673a98393ff41647c5a",
+      "manifest_sha256": "2512566a5fcb8af820d74ef46b396f4bcc28fa17bff89f95afc9b27eb45fdadd",
+      "coverage_sha256": "d749bdd741439b34ec73db9f0a2ebea39b5f8e8b093cb04f9386125858f986b1",
+      "plan_sha256": "94325c7b322f26ecc3482d9d0d2a2c9f5e29d8817c26c28cb137b0a145a9201a",
+      "coverage_plan_fingerprint": "93ac5ea6b7c3ab290fed02116e4e3f24d404822132e8c8831199c259a353039d",
+      "tile_count": 999,
+      "state": "complete_with_boundary_limits",
+      "planned_area_acquired": true,
+      "policy": "Read-only original committed raster; verify scientific artifact hashes on use; no raw copy or new acquisition."
+    }
+  },
+  "preflight_ok": true,
+  "blockers": []
+}

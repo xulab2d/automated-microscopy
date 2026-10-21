@@ -1,0 +1,9 @@
+{
+  "source": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\software-next-20261009",
+  "created_at": 1791626528.581837,
+  "purpose": "Offline explicit same-placement scan continuation; no deployment or launch authorization",
+  "original_files": {
+    "flakefinder\\scan_service.py": "ec0bb61f65c30e10f4822e488af4c87e3f1f4543559f2cbd70312a749d38e076",
+    "flakefinder\\scan_worker.py": "3cd30a2f6d2bab6a57d8c87c16a422ea394eb534f6bcaa139b8a92f1c52c8b53"
+  }
+}

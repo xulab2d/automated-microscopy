@@ -1,0 +1,63 @@
+{
+  "position": {
+    "x": 433.125,
+    "y": 543.3,
+    "z": 100
+  },
+  "pixel_size_um": [
+    1.0,
+    1.0
+  ],
+  "sequence": 77,
+  "acquired_at": 1791598449.771792,
+  "metadata": {
+    "white_level": 4095,
+    "source": "TEST",
+    "objective_position": 2,
+    "camera_resources": {
+      "fixed": 1
+    },
+    "full_chip_focus": {
+      "method": "measured_surface_interpolation",
+      "predicted_z_um": 100.00000000000001,
+      "focus_verified": false,
+      "local_focus_verified": false,
+      "plane_prediction_accepted": true,
+      "extrapolated": false,
+      "extrapolation_distance_um": 0.0,
+      "extrapolation_limit_um": 0,
+      "anchor_count": 4,
+      "anchor_points_um": [
+        [
+          252.5,
+          257.5,
+          100.0
+        ],
+        [
+          257.5,
+          752.5,
+          100.0
+        ],
+        [
+          747.5,
+          252.5,
+          100.0
+        ],
+        [
+          752.5,
+          747.5,
+          100.0
+        ]
+      ],
+      "sample_rms_um": 1.7404671430534633e-14,
+      "max_anchor_residual_um": 2.842170943040401e-14,
+      "residual_standard_error_um": 3.4809342861069267e-14,
+      "measurement_floor_um": 0.5,
+      "prediction_leverage": 0.27643350591715976,
+      "conditional_prediction_sigma_um": 0.2628847208935695,
+      "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+      "thin_flake_focus_validated": false,
+      "capture_z_target_tolerance_um": 0.25
+    }
+  }
+}

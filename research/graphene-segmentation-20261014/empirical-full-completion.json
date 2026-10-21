@@ -1,0 +1,160 @@
+{
+  "schema": 1,
+  "checked_at": 1792041794.3872602,
+  "closed_processes": {
+    "27528": true,
+    "19232": true,
+    "30424": true,
+    "9528": true,
+    "34804": true,
+    "35632": true,
+    "33620": true,
+    "37292": true,
+    "30032": true,
+    "34868": true
+  },
+  "pipeline": {
+    "run_id": "scan-20261013-221727-131d9ced",
+    "chip": "chip001",
+    "no_acquisition_performed": true,
+    "state": "complete",
+    "stage": "review_ready",
+    "updated_at": 1792041726.1449153,
+    "child_pid": null,
+    "stage_status": {
+      "cpu": {
+        "cpu_masks": [
+          1
+        ],
+        "priority": "below_normal",
+        "threads": 1,
+        "windows_affinity": "one allowed logical CPU"
+      },
+      "grouped_observations": 53513,
+      "indexed_fields": 999,
+      "memory": {
+        "available_host_bytes": 950026240,
+        "measurement": "Windows GetProcessMemoryInfo; process peak is cumulative",
+        "private_bytes": 160169984,
+        "process_peak_rss_bytes": 167247872,
+        "rss_bytes": 149872640
+      },
+      "memory_at_start": {
+        "available_host_bytes": 2122330112,
+        "measurement": "Windows GetProcessMemoryInfo; process peak is cumulative",
+        "private_bytes": 37699584,
+        "process_peak_rss_bytes": 58159104,
+        "rss_bytes": 48852992
+      },
+      "merged_observation_count": 8265,
+      "multi_observation_groups": 7481,
+      "no_acquisition_performed": true,
+      "observation_count": 53513,
+      "output": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\analysis\\graphene\\scan-20261013-221727-131d9ced\\chip001\\operator-empirical-full-v1-review\\dedup.json",
+      "pair_checks_this_invocation": 53793,
+      "phase": "complete",
+      "pid": 34868,
+      "selected_fields": 999,
+      "started_at": 1792041200.8463452,
+      "state": "complete",
+      "total_group_count": 45248,
+      "unavailable_fields": 0,
+      "updated_at": 1792041725.6396177
+    }
+  },
+  "segmentation": {
+    "state": "complete",
+    "pid": 27528,
+    "output": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\analysis\\graphene\\scan-20261013-221727-131d9ced\\chip001\\operator-empirical-full-v1",
+    "updated_at": 1792040261.180305,
+    "no_acquisition_performed": true,
+    "cpu": {
+      "threads": 1,
+      "priority": "below_normal",
+      "windows_affinity": "explicit bounded CPU mask",
+      "cpu_masks": [
+        1,
+        2
+      ]
+    },
+    "memory_capacity": {
+      "physical_available_bytes": 2332655616,
+      "physical_total_bytes": 16851456000,
+      "commit_available_bytes": 27774943232,
+      "address_available_bytes": 140732815294464,
+      "policy": "windows_commit_and_address_capacity_v1",
+      "purpose": "two measured offline segmentation workers",
+      "working_allowance_bytes": 1113587712,
+      "uncertainty_allowance_bytes": 278396928,
+      "required_capacity_bytes": 1391984640,
+      "adequate": true,
+      "physical_free_floor_bytes": 0,
+      "qualification": "Estimated incremental allocation plus 25% uncertainty; Windows paging remains enabled and unchanged."
+    },
+    "current_field": null,
+    "finished_fields": 999,
+    "selected_fields": 999,
+    "counts": {
+      "assessed": 942,
+      "unassessable": 57,
+      "budget_exhausted": 0,
+      "invalid_source": 0,
+      "failed": 0
+    }
+  },
+  "grouping": {
+    "cpu": {
+      "cpu_masks": [
+        1
+      ],
+      "priority": "below_normal",
+      "threads": 1,
+      "windows_affinity": "one allowed logical CPU"
+    },
+    "grouped_observations": 53513,
+    "indexed_fields": 999,
+    "memory": {
+      "available_host_bytes": 950026240,
+      "measurement": "Windows GetProcessMemoryInfo; process peak is cumulative",
+      "private_bytes": 160169984,
+      "process_peak_rss_bytes": 167247872,
+      "rss_bytes": 149872640
+    },
+    "memory_at_start": {
+      "available_host_bytes": 2122330112,
+      "measurement": "Windows GetProcessMemoryInfo; process peak is cumulative",
+      "private_bytes": 37699584,
+      "process_peak_rss_bytes": 58159104,
+      "rss_bytes": 48852992
+    },
+    "merged_observation_count": 8265,
+    "multi_observation_groups": 7481,
+    "no_acquisition_performed": true,
+    "observation_count": 53513,
+    "output": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\analysis\\graphene\\scan-20261013-221727-131d9ced\\chip001\\operator-empirical-full-v1-review\\dedup.json",
+    "pair_checks_this_invocation": 53793,
+    "phase": "complete",
+    "pid": 34868,
+    "selected_fields": 999,
+    "started_at": 1792041200.8463452,
+    "state": "complete",
+    "total_group_count": 45248,
+    "unavailable_fields": 0,
+    "updated_at": 1792041725.6396177
+  },
+  "published_selector_sha256": {
+    "graphene-analysis-selection.json": "6a0c440b1289d9aa1e0bdea1840fdb52375243264337b1ceeb97e9166aaa550c",
+    "graphene-analysis-selection-chip001.json": "6a0c440b1289d9aa1e0bdea1840fdb52375243264337b1ceeb97e9166aaa550c",
+    "graphene-review-selection.json": "430fc825a34c32d643849ddc67163404441709e1cad89467b9f2a1635ddb9b4b",
+    "graphene-review-selection-chip001.json": "430fc825a34c32d643849ddc67163404441709e1cad89467b9f2a1635ddb9b4b"
+  },
+  "grouping_source_archive": {
+    "schema": 1,
+    "archive": "pinned-grouping-source.zip",
+    "sha256": "c12d116f76a2a33e0c5d5f756016321baf9e3c4853a47243dde30c34627e4cba",
+    "files": 2,
+    "dedup_pin_sha256": "cdd61c257214f5f1343571730cb29a08954ef788089125a0c2b49d76d1cfaa97",
+    "qualification": "Exact files explicitly pinned by the executed grouping plan. Executed analyzer source is separately retained in pinned-segmentation-source.zip; later CPU dispatch changes are not part of this execution."
+  },
+  "future_cpu_dispatch_applied": false
+}

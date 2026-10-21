@@ -1,0 +1,6369 @@
+{
+  "schema": 1,
+  "fingerprint": "d0ee9d553c77cabdbd26df48c7124b59d8e90ac230d1d9f2c0a901a91192bbc8",
+  "tile_key": "chip001/tile_000464",
+  "state": "recovered",
+  "original_failure": {
+    "tile_key": "chip001/tile_000464",
+    "error": "Invalid fitted background; supply a substrate mask or flat field."
+  },
+  "source_identity": "ea7ba0830ee31752bdced7e87fc79a3bea006899bd629e3d5a752b08df3bb6b4",
+  "provenance": {
+    "source_files_sha256": {
+      ".tiff": "8143c61be182485b6075e99809511af8061bd2b6c512b5a0ef41794ef99a6c3b",
+      ".json": "d4371964b4566bee9cb138d4f553151b133c0630c44bfb7b70cf73e482513355"
+    },
+    "source_position": {
+      "x": -9188.875,
+      "y": -1240.3949999999998,
+      "z": 15300.625
+    },
+    "tile_acquisition": {
+      "position": {
+        "x": -9188.875,
+        "y": -1240.3949999999998,
+        "z": 15300.625
+      },
+      "sequence": 0,
+      "focus": null,
+      "focus_method": "bounded_measured_plane_extrapolation",
+      "focus_prediction_um": 15300.609975708932,
+      "full_chip_focus": {
+        "method": "bounded_measured_plane_extrapolation",
+        "predicted_z_um": 15300.609975708932,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": true,
+        "extrapolation_distance_um": 1220.9391941536815,
+        "extrapolation_limit_um": 3000,
+        "anchor_count": 4,
+        "anchor_points_um": [
+          [
+            -14188.322999999999,
+            -2923.554,
+            15376.483999999999
+          ],
+          [
+            -11661.995306914745,
+            -1801.7010079777526,
+            15326.561999999998
+          ],
+          [
+            -11601.930972420409,
+            -8126.870671359783,
+            15594.531
+          ],
+          [
+            -7937.339408140974,
+            -2869.172222753674,
+            15368.515
+          ]
+        ],
+        "sample_rms_um": 0.042879520607744255,
+        "max_anchor_residual_um": 0.06386943313736992,
+        "residual_standard_error_um": 0.08575904121548851,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.7561065143668118,
+        "conditional_prediction_sigma_um": 0.441120731212235,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "capture_z_target_tolerance_um": 0.235
+      },
+      "focus_limited": false,
+      "hashes": {
+        "tiles/tile_000464.tiff": "8143c61be182485b6075e99809511af8061bd2b6c512b5a0ef41794ef99a6c3b",
+        "tiles/tile_000464.json": "d4371964b4566bee9cb138d4f553151b133c0630c44bfb7b70cf73e482513355",
+        "tiles/tile_000464.flakes.json": "e471d46230ea454e3868a61a564b6bc2c056fdb69484d3d4c9936b97decfad39",
+        "boundary-labels/tile_000464.npz": "400c5a1ad74941748617167143e540af44487b13cbec4b15a449c607db2b52c0"
+      }
+    },
+    "transform": {
+      "matrix": [
+        [
+          0.17248901979656125,
+          -0.0077434379225809
+        ],
+        [
+          0.007834271193644623,
+          0.17226317842089725
+        ]
+      ],
+      "pixel_size_um": [
+        0.1725,
+        0.1725
+      ],
+      "calibrated": true
+    },
+    "plan": {
+      "bounds_um": [
+        -14353.17578125,
+        -7333.05126953125,
+        -8480.2880859375,
+        -789.3216552734375
+      ],
+      "overlap": 0.15,
+      "autofocus_every": 5,
+      "focus_half_range_um": 12,
+      "focus_step_um": 3,
+      "max_tiles": 10000,
+      "chip_id": "chip001",
+      "polygon_um": [
+        [
+          -8115.4111328125,
+          -789.3216552734375
+        ],
+        [
+          -14353.17578125,
+          -2431.058349609375
+        ],
+        [
+          -13265.732421875,
+          -8480.2880859375
+        ],
+        [
+          -7333.05126953125,
+          -7265.87646484375
+        ]
+      ],
+      "mode": "survey",
+      "focus_strategy": "surface",
+      "focus_search_bounds_um": null,
+      "focus_max_residual_um": 1.0,
+      "focus_initial_recovery": false
+    },
+    "context": {
+      "sample_id": "MoTe2-2026-10-08",
+      "material": "MoTe2",
+      "substrate": "SiO2/Si",
+      "oxide_nm": 285,
+      "oxide_process": "wet",
+      "objective": "EC Epiplan 20x/0.4 HD M27",
+      "camera": "Axiocam 305 color",
+      "exposure_ms": 200.0,
+      "illumination": "reflected brightfield",
+      "illumination_percent": 93.44422700587084,
+      "white_balance": "0.25007564,1,2.61244442",
+      "white_level": 4095,
+      "color_profile_kind": "fixed acquisition channel balance; not a neutral-reference color calibration",
+      "coordinate_frame": "XY re-zeroed by operator; new measured positions 2026-10-08"
+    },
+    "acquisition_fingerprint": "d7b07f60d38be6a8078305425f5ffe09a3d4b5d9f9084b0856920ea7cbde3198"
+  },
+  "mask_sha256": "70a24ec9b8b6a61df580abd703960634c4b00f986d7fbf8d9989a9c579725619",
+  "tile": {
+    "key": "chip001/tile_000464",
+    "tile_id": "tile_000464",
+    "chip_id": "chip001",
+    "source": "tiles/tile_000464.tiff",
+    "position": {
+      "x": -9188.875,
+      "y": -1240.3949999999998,
+      "z": 15300.625
+    },
+    "shape": [
+      2056,
+      2464
+    ],
+    "pixel_size_um": [
+      0.1725,
+      0.1725
+    ],
+    "sha256": "395591579be288165aa2716cbaa88742c38e85b5f45bf504c84f739dcaff202e",
+    "acquired_at": 1791521019.1255226,
+    "footprint_um": [
+      [
+        -9393.338845414013,
+        -1427.0433208024451
+      ],
+      [
+        -8968.498389655082,
+        -1407.7475108524984
+      ],
+      [
+        -8984.411154585987,
+        -1053.7466791975544
+      ],
+      [
+        -9409.251610344918,
+        -1073.042489147501
+      ]
+    ],
+    "focus_status": {
+      "method": "bounded_measured_plane_extrapolation",
+      "predicted_z_um": 15300.60997042213,
+      "focus_verified": false,
+      "local_focus_verified": false,
+      "plane_prediction_accepted": true,
+      "extrapolated": true,
+      "extrapolation_distance_um": 1220.9393373209768,
+      "extrapolation_limit_um": 3000,
+      "anchor_count": 4,
+      "anchor_points_um": [
+        [
+          -14188.322999999999,
+          -2923.554,
+          15376.483999999999
+        ],
+        [
+          -11661.995306914745,
+          -1801.7010079777526,
+          15326.561999999998
+        ],
+        [
+          -11601.930972420409,
+          -8126.870671359783,
+          15594.531
+        ],
+        [
+          -7937.339408140974,
+          -2869.172222753674,
+          15368.515
+        ]
+      ],
+      "sample_rms_um": 0.042879520607744255,
+      "max_anchor_residual_um": 0.06386943313736992,
+      "residual_standard_error_um": 0.08575904121548851,
+      "measurement_floor_um": 0.5,
+      "prediction_leverage": 0.7561065590432006,
+      "conditional_prediction_sigma_um": 0.44112074424457937,
+      "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+      "thin_flake_focus_validated": false,
+      "status": "accepted_bounded_plane_replay",
+      "capture_z_target_tolerance_um": 0.235,
+      "capture_z_error_um": 0.015024291067675222,
+      "local_autofocus": false
+    },
+    "focus_limited": false,
+    "instance_mask": "chip001__tile_000464.instances.png",
+    "support_masks": "chip001__tile_000464.support.npz",
+    "contrast_rg_file": "chip001__tile_000464.contrast-rg.npz",
+    "observations_file": "fields/chip001__tile_000464.json",
+    "proposal_count": 10,
+    "selected_count": 1,
+    "rejected_count": 9,
+    "stage_counts": {
+      "below_useful_size": 9,
+      "feature_review": 1
+    },
+    "analysis_seconds": 10.138912499998696
+  },
+  "rows": [
+    {
+      "instance_label": 1,
+      "bbox_px": [
+        1313,
+        258,
+        63,
+        70
+      ],
+      "centroid_px": [
+        1343.163182737694,
+        289.48179366149697
+      ],
+      "area_um2": 88.25703749999998,
+      "usable_width_um": 8.89137333869934,
+      "polygon_px": [
+        [
+          1353,
+          258
+        ],
+        [
+          1347,
+          258
+        ],
+        [
+          1343,
+          261
+        ],
+        [
+          1341,
+          261
+        ],
+        [
+          1340,
+          260
+        ],
+        [
+          1336,
+          260
+        ],
+        [
+          1335,
+          261
+        ],
+        [
+          1326,
+          261
+        ],
+        [
+          1325,
+          262
+        ],
+        [
+          1323,
+          262
+        ],
+        [
+          1316,
+          267
+        ],
+        [
+          1316,
+          271
+        ],
+        [
+          1315,
+          272
+        ],
+        [
+          1315,
+          274
+        ],
+        [
+          1313,
+          275
+        ],
+        [
+          1313,
+          283
+        ],
+        [
+          1314,
+          284
+        ],
+        [
+          1314,
+          286
+        ],
+        [
+          1316,
+          288
+        ],
+        [
+          1317,
+          295
+        ],
+        [
+          1319,
+          297
+        ],
+        [
+          1321,
+          297
+        ],
+        [
+          1323,
+          300
+        ],
+        [
+          1323,
+          302
+        ],
+        [
+          1322,
+          303
+        ],
+        [
+          1323,
+          305
+        ],
+        [
+          1323,
+          308
+        ],
+        [
+          1328,
+          312
+        ],
+        [
+          1331,
+          318
+        ],
+        [
+          1333,
+          319
+        ],
+        [
+          1334,
+          323
+        ],
+        [
+          1335,
+          323
+        ],
+        [
+          1338,
+          327
+        ],
+        [
+          1342,
+          326
+        ],
+        [
+          1343,
+          325
+        ],
+        [
+          1344,
+          326
+        ],
+        [
+          1347,
+          325
+        ],
+        [
+          1355,
+          317
+        ],
+        [
+          1356,
+          317
+        ],
+        [
+          1358,
+          315
+        ],
+        [
+          1358,
+          313
+        ],
+        [
+          1360,
+          312
+        ],
+        [
+          1360,
+          310
+        ],
+        [
+          1361,
+          309
+        ],
+        [
+          1365,
+          310
+        ],
+        [
+          1366,
+          308
+        ],
+        [
+          1368,
+          307
+        ],
+        [
+          1368,
+          306
+        ],
+        [
+          1373,
+          302
+        ],
+        [
+          1373,
+          300
+        ],
+        [
+          1375,
+          296
+        ],
+        [
+          1375,
+          293
+        ],
+        [
+          1371,
+          289
+        ],
+        [
+          1371,
+          285
+        ],
+        [
+          1370,
+          284
+        ],
+        [
+          1370,
+          281
+        ],
+        [
+          1369,
+          280
+        ],
+        [
+          1369,
+          275
+        ],
+        [
+          1366,
+          271
+        ],
+        [
+          1364,
+          271
+        ],
+        [
+          1360,
+          267
+        ],
+        [
+          1360,
+          266
+        ],
+        [
+          1354,
+          260
+        ]
+      ],
+      "holes_px": [],
+      "stage_xy_um": [
+        -9163.899528895694,
+        -1366.6535623004472
+      ],
+      "stage_polygon_um": [
+        [
+          -9161.959008613292,
+          -1371.9996518448525
+        ],
+        [
+          -9162.993942732071,
+          -1372.0466574720142
+        ],
+        [
+          -9163.707129125025,
+          -1371.5612050215261
+        ],
+        [
+          -9164.052107164618,
+          -1371.5768735639135
+        ],
+        [
+          -9164.216852746493,
+          -1371.756971013528
+        ],
+        [
+          -9164.906808825679,
+          -1371.7883080983024
+        ],
+        [
+          -9165.087041283397,
+          -1371.6238791910753
+        ],
+        [
+          -9166.639442461566,
+          -1371.694387631818
+        ],
+        [
+          -9166.819674919287,
+          -1371.5299587245909
+        ],
+        [
+          -9167.16465295888,
+          -1371.545627266978
+        ],
+        [
+          -9168.410793287068,
+          -1370.7391512732293
+        ],
+        [
+          -9168.441767038757,
+          -1370.0500985595456
+        ],
+        [
+          -9168.621999496478,
+          -1369.8856696523183
+        ],
+        [
+          -9168.637486372323,
+          -1369.5411432954766
+        ],
+        [
+          -9168.990207849838,
+          -1369.3845486594428
+        ],
+        [
+          -9169.052155353218,
+          -1368.0064432320758
+        ],
+        [
+          -9168.887409771345,
+          -1367.8263457824612
+        ],
+        [
+          -9168.90289664719,
+          -1367.4818194256193
+        ],
+        [
+          -9168.573405483441,
+          -1367.1216245263904
+        ],
+        [
+          -9168.455120529103,
+          -1365.9079480062503
+        ],
+        [
+          -9168.125629365355,
+          -1365.5477531070212
+        ],
+        [
+          -9167.780651325762,
+          -1365.532084564634
+        ],
+        [
+          -9167.458903599938,
+          -1364.999626486984
+        ],
+        [
+          -9167.474390475782,
+          -1364.6551001301423
+        ],
+        [
+          -9167.654622933502,
+          -1364.490671222915
+        ],
+        [
+          -9167.49762078955,
+          -1364.1383105948796
+        ],
+        [
+          -9167.520851103318,
+          -1363.621521059617
+        ],
+        [
+          -9166.689379756026,
+          -1362.893296989965
+        ],
+        [
+          -9166.21837332417,
+          -1361.8362151058586
+        ],
+        [
+          -9165.8811387225,
+          -1361.6482833850505
+        ],
+        [
+          -9165.739623454394,
+          -1360.9513964001733
+        ],
+        [
+          -9165.567134434597,
+          -1360.9435621289797
+        ],
+        [
+          -9165.080641126899,
+          -1360.231006601715
+        ],
+        [
+          -9164.382941609789,
+          -1360.3719326953615
+        ],
+        [
+          -9164.20270915207,
+          -1360.5363616025886
+        ],
+        [
+          -9164.037963570196,
+          -1360.356264152974
+        ],
+        [
+          -9163.512753072884,
+          -1360.505024517814
+        ],
+        [
+          -9162.070893411132,
+          -1361.8204557756321
+        ],
+        [
+          -9161.898404391335,
+          -1361.8126215044385
+        ],
+        [
+          -9161.537939475897,
+          -1362.141479318893
+        ],
+        [
+          -9161.522452600051,
+          -1362.4860056757348
+        ],
+        [
+          -9161.169731122534,
+          -1362.6426003117683
+        ],
+        [
+          -9161.15424424669,
+          -1362.9871266686102
+        ],
+        [
+          -9160.97401178897,
+          -1363.1515555758374
+        ],
+        [
+          -9160.291799147708,
+          -1362.947955312642
+        ],
+        [
+          -9160.103823252066,
+          -1363.2846473982902
+        ],
+        [
+          -9159.75110177455,
+          -1363.4412420343237
+        ],
+        [
+          -9159.743358336627,
+          -1363.6135052127447
+        ],
+        [
+          -9158.849939485954,
+          -1364.26338657046
+        ],
+        [
+          -9158.834452610108,
+          -1364.6079129273019
+        ],
+        [
+          -9158.458500818826,
+          -1365.281297098598
+        ],
+        [
+          -9158.435270505057,
+          -1365.7980866338607
+        ],
+        [
+          -9159.094252832554,
+          -1366.518476432319
+        ],
+        [
+          -9159.063279080863,
+          -1367.2075291460026
+        ],
+        [
+          -9159.228024662738,
+          -1367.3876265956171
+        ],
+        [
+          -9159.204794348969,
+          -1367.9044161308798
+        ],
+        [
+          -9159.369539930844,
+          -1368.0845135804943
+        ],
+        [
+          -9159.33082274123,
+          -1368.9458294725987
+        ],
+        [
+          -9159.81731604893,
+          -1369.6583849998633
+        ],
+        [
+          -9160.162294088523,
+          -1369.6740535422507
+        ],
+        [
+          -9160.82127641602,
+          -1370.3944433407087
+        ],
+        [
+          -9160.813532978096,
+          -1370.5667065191296
+        ],
+        [
+          -9161.802006469341,
+          -1371.647291216817
+        ]
+      ],
+      "touches_border": false,
+      "solidity": 0.947663859996698,
+      "mask_area_pixels": 2966,
+      "geometry_method": "accepted component-repair graph cut; disconnected pieces separate; holes retained",
+      "id": "r-4400100e68a2c0",
+      "source_image": "tiles/tile_000464.tiff",
+      "source_tile": "tile_000464",
+      "tile_key": "chip001/tile_000464",
+      "tile_id": "tile_000464",
+      "chip_id": "chip001",
+      "contrast_rgb": [
+        0.10895504436979807,
+        -0.12382067997495588,
+        -0.07155276807200713
+      ],
+      "source_contrast_rgb": [
+        0.08969201147556305,
+        -0.09592914581298828,
+        -0.055621422827243805
+      ],
+      "focus_status": {
+        "method": "bounded_measured_plane_extrapolation",
+        "predicted_z_um": 15300.60997042213,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": true,
+        "extrapolation_distance_um": 1220.9393373209768,
+        "extrapolation_limit_um": 3000,
+        "anchor_count": 4,
+        "anchor_points_um": [
+          [
+            -14188.322999999999,
+            -2923.554,
+            15376.483999999999
+          ],
+          [
+            -11661.995306914745,
+            -1801.7010079777526,
+            15326.561999999998
+          ],
+          [
+            -11601.930972420409,
+            -8126.870671359783,
+            15594.531
+          ],
+          [
+            -7937.339408140974,
+            -2869.172222753674,
+            15368.515
+          ]
+        ],
+        "sample_rms_um": 0.042879520607744255,
+        "max_anchor_residual_um": 0.06386943313736992,
+        "residual_standard_error_um": 0.08575904121548851,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.7561065590432006,
+        "conditional_prediction_sigma_um": 0.44112074424457937,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "status": "accepted_bounded_plane_replay",
+        "capture_z_target_tolerance_um": 0.235,
+        "capture_z_error_um": 0.015024291067675222,
+        "local_autofocus": false
+      },
+      "focus_limited": false,
+      "saturated_fraction": 0.0,
+      "proposal_stage": "below_useful_size",
+      "color_group": "cyan_optical_feature",
+      "label": "cyan optical feature",
+      "disposition": "rejected",
+      "selected_for_review": false,
+      "filter_reasons": [
+        "below_useful_area"
+      ],
+      "evidence_warnings": [],
+      "local_contrast_measurement": {
+        "instance_label": 1,
+        "measurement_status": "measured",
+        "mask_modified": false,
+        "mask_area_pixels": 2966,
+        "mask_area_um2": 88.25703749999998,
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "interior_pixels": 2442,
+        "interior_fallback_to_full_mask": false,
+        "interior_spatial_patches": 88,
+        "background_spatial_patches": 247,
+        "background_pixels": 6099,
+        "background_excludes_all_source_instances": true,
+        "reason": "exact_existing_mask_with_clear_local_substrate",
+        "contrast_rgb": [
+          0.10895504436979807,
+          -0.12382067997495588,
+          -0.07155276807200713
+        ],
+        "contrast_covariance": [
+          [
+            0.00011023986376294051,
+            -8.135923469509115e-05,
+            -5.63003419241491e-05
+          ],
+          [
+            -8.135923469509117e-05,
+            0.0001164680404330778,
+            7.111422843053571e-05
+          ],
+          [
+            -5.630034192414911e-05,
+            7.111422843053571e-05,
+            5.499468894614832e-05
+          ]
+        ],
+        "standard_error_rgb": [
+          0.010499517310950085,
+          0.010792035972562258,
+          0.007415840407273361
+        ],
+        "global_interior_contrast_rgb": [
+          0.11152566068414223,
+          -0.12385409311279205,
+          -0.07250201855272806
+        ],
+        "local_substrate_contrast_rgb": [
+          0.0028849457012256607,
+          -2.9731734280681445e-05,
+          -0.0008858644287101924
+        ],
+        "interior_patch_covariance": [
+          [
+            0.005653182575656389,
+            -0.005474182316870106,
+            -0.003366887758425248
+          ],
+          [
+            -0.005474182316870106,
+            0.007295852072492682,
+            0.004282110630859032
+          ],
+          [
+            -0.003366887758425248,
+            0.004282110630859032,
+            0.0029238531884632477
+          ]
+        ],
+        "background_patch_covariance": [
+          [
+            0.0004762037620029884,
+            -4.199806839916164e-05,
+            -3.828927510378715e-05
+          ],
+          [
+            -4.199806839916164e-05,
+            6.79992229167576e-05,
+            2.0244452561489258e-05
+          ],
+          [
+            -3.8289275103787155e-05,
+            2.0244452561489258e-05,
+            7.029326106390794e-05
+          ]
+        ],
+        "background_systematic_covariance": [
+          [
+            3.863073416034175e-05,
+            -6.338713793035605e-06,
+            -1.0620041895303505e-05
+          ],
+          [
+            -6.338713793035605e-06,
+            1.3189851457028414e-05,
+            1.0568972220271543e-05
+          ],
+          [
+            -1.0620041895303505e-05,
+            1.0568972220271543e-05,
+            1.2936277001318428e-05
+          ]
+        ],
+        "background_sector_count": 8,
+        "effective_interior_patches": 73.41512778844732,
+        "effective_background_patches": 195.85521126760568,
+        "interior_patch_spread_rgb": [
+          0.07518764908983648,
+          0.08541576009433319,
+          0.05407266581613346
+        ],
+        "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+        "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated.",
+        "background_sample_policy": "recorded SUBSTRATE support within measured chip domain, excluding all source instances and initial foreground",
+        "observed_substrate_label_sha256": "400c5a1ad74941748617167143e540af44487b13cbec4b15a449c607db2b52c0",
+        "measured_domain_enclosure_sha256": "1a5b2084ef76ae7762fa37c7d95d3485198bb2a481d57b5a3f4296250fcbfdab"
+      },
+      "thin_reference_evidence": {
+        "compatible": null,
+        "status": "not_classified",
+        "mean_color_compatible": false,
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "reason": "Mean color is descriptive; no coherent thin terrace or material identity has been established."
+      },
+      "local_contrast_signal_z": 12.059413608573365,
+      "review_role": "faint_unvalidated",
+      "priority": "rejected",
+      "quality_score": 0.2411882721714673,
+      "useful_area_um2": 0.0,
+      "layer_number": null,
+      "chemical_identity_confirmed": false,
+      "sieve_results": [
+        {
+          "name": "feature_extraction",
+          "status": "pass",
+          "reason": "Connected foreground refined with accepted component-repair geometry."
+        },
+        {
+          "name": "useful_size",
+          "status": "reject",
+          "minimum_area_um2": 100,
+          "minimum_width_um": 5
+        },
+        {
+          "name": "local_substrate_contrast",
+          "status": "pass",
+          "signal_z": 12.059413608573365,
+          "minimum_signal_z": 3.0,
+          "reason": "exact_existing_mask_with_clear_local_substrate"
+        },
+        {
+          "name": "optical_color",
+          "status": "descriptive",
+          "category": "cyan_optical_feature",
+          "material_identity_confirmed": false
+        },
+        {
+          "name": "thin_reference",
+          "status": "descriptive_mean_only",
+          "role": "Not thin classification; source geometry and broad review selection retained.",
+          "layer_number": null
+        }
+      ],
+      "mean_color_reference_evidence": {
+        "status": "unresolved_color_plateau",
+        "compatible": false,
+        "score": 0.0,
+        "red_z": 10.37714793385477,
+        "green_minus_red_z": -11.795734980901118,
+        "green_minus_red_contrast": -0.23277572434475396,
+        "within_search_interval": false,
+        "reason": "Color direction is unresolved or outside the first-few-layer reference direction.",
+        "reference": "https://doi.org/10.1021/nn5007607.s001",
+        "model_id": "mote2-rg-direction-yamamoto2014-v1",
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "uncertainty_scope": "Regional spatial/color uncertainty only; optical transfer and selection bias are uncalibrated."
+      },
+      "coherence_evidence": {
+        "status": "descriptive_only",
+        "plateau_validated": false,
+        "interior_patch_spread_rgb": [
+          0.07518764908983648,
+          0.08541576009433319,
+          0.05407266581613346
+        ],
+        "regional_mean_standard_error_rgb": [
+          0.010499517310950085,
+          0.010792035972562258,
+          0.007415840407273361
+        ],
+        "raw_substrate_noise_rgb": [
+          0.022803492844104767,
+          0.013676486909389496,
+          0.01820436865091324
+        ],
+        "reason": "Spatial heterogeneity and uncertainty of a mean are distinct. No new arbitrary shape/uniformity threshold is applied."
+      }
+    },
+    {
+      "instance_label": 2,
+      "bbox_px": [
+        1770,
+        224,
+        17,
+        17
+      ],
+      "centroid_px": [
+        1778.0875,
+        231.34375
+      ],
+      "area_um2": 4.760999999999999,
+      "usable_width_um": 1.7249999999999999,
+      "polygon_px": [
+        [
+          1784,
+          225
+        ],
+        [
+          1782,
+          225
+        ],
+        [
+          1781,
+          224
+        ],
+        [
+          1774,
+          225
+        ],
+        [
+          1775,
+          226
+        ],
+        [
+          1775,
+          230
+        ],
+        [
+          1772,
+          232
+        ],
+        [
+          1772,
+          234
+        ],
+        [
+          1770,
+          236
+        ],
+        [
+          1774,
+          240
+        ],
+        [
+          1780,
+          235
+        ],
+        [
+          1782,
+          235
+        ],
+        [
+          1783,
+          233
+        ],
+        [
+          1786,
+          233
+        ],
+        [
+          1786,
+          231
+        ],
+        [
+          1784,
+          230
+        ]
+      ],
+      "holes_px": [],
+      "stage_xy_um": [
+        -9088.429671393398,
+        -1373.261291438606
+      ],
+      "stage_polygon_um": [
+        [
+          -9087.360707629528,
+          -1374.3077658482812
+        ],
+        [
+          -9087.705685669122,
+          -1374.3234343906684
+        ],
+        [
+          -9087.870431250996,
+          -1374.503531840283
+        ],
+        [
+          -9089.085597827494,
+          -1374.3861085602175
+        ],
+        [
+          -9088.920852245621,
+          -1374.206011110603
+        ],
+        [
+          -9088.95182599731,
+          -1373.5169583969196
+        ],
+        [
+          -9089.484779932545,
+          -1373.1959348536586
+        ],
+        [
+          -9089.50026680839,
+          -1372.8514084968167
+        ],
+        [
+          -9089.86073172383,
+          -1372.5225506823622
+        ],
+        [
+          -9089.201749396332,
+          -1371.8021608839042
+        ],
+        [
+          -9088.12809808794,
+          -1372.6164711488468
+        ],
+        [
+          -9087.783120048347,
+          -1372.6008026064594
+        ],
+        [
+          -9087.595144152707,
+          -1372.9374946921075
+        ],
+        [
+          -9087.077677093317,
+          -1372.9139918785268
+        ],
+        [
+          -9087.062190217472,
+          -1373.2585182353685
+        ],
+        [
+          -9087.399424819141,
+          -1373.4464499561766
+        ]
+      ],
+      "touches_border": false,
+      "solidity": 0.8011869436201781,
+      "mask_area_pixels": 160,
+      "geometry_method": "accepted component-repair graph cut; disconnected pieces separate; holes retained",
+      "id": "r-57769f4d5ac27e",
+      "source_image": "tiles/tile_000464.tiff",
+      "source_tile": "tile_000464",
+      "tile_key": "chip001/tile_000464",
+      "tile_id": "tile_000464",
+      "chip_id": "chip001",
+      "contrast_rgb": [
+        -0.1868235170841217,
+        -0.2521520256996155,
+        -0.23519267141819
+      ],
+      "source_contrast_rgb": [
+        -0.1868235170841217,
+        -0.2521520256996155,
+        -0.23519267141819
+      ],
+      "focus_status": {
+        "method": "bounded_measured_plane_extrapolation",
+        "predicted_z_um": 15300.60997042213,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": true,
+        "extrapolation_distance_um": 1220.9393373209768,
+        "extrapolation_limit_um": 3000,
+        "anchor_count": 4,
+        "anchor_points_um": [
+          [
+            -14188.322999999999,
+            -2923.554,
+            15376.483999999999
+          ],
+          [
+            -11661.995306914745,
+            -1801.7010079777526,
+            15326.561999999998
+          ],
+          [
+            -11601.930972420409,
+            -8126.870671359783,
+            15594.531
+          ],
+          [
+            -7937.339408140974,
+            -2869.172222753674,
+            15368.515
+          ]
+        ],
+        "sample_rms_um": 0.042879520607744255,
+        "max_anchor_residual_um": 0.06386943313736992,
+        "residual_standard_error_um": 0.08575904121548851,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.7561065590432006,
+        "conditional_prediction_sigma_um": 0.44112074424457937,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "status": "accepted_bounded_plane_replay",
+        "capture_z_target_tolerance_um": 0.235,
+        "capture_z_error_um": 0.015024291067675222,
+        "local_autofocus": false
+      },
+      "focus_limited": false,
+      "saturated_fraction": 0.0,
+      "proposal_stage": "below_useful_size",
+      "color_group": "bright_optical_feature",
+      "label": "bright optical feature",
+      "disposition": "rejected",
+      "selected_for_review": false,
+      "filter_reasons": [
+        "below_useful_area",
+        "below_useful_width"
+      ],
+      "evidence_warnings": [
+        "local_color_measurement_unavailable"
+      ],
+      "local_contrast_measurement": {
+        "instance_label": 2,
+        "measurement_status": "unmeasurable",
+        "mask_modified": false,
+        "mask_area_pixels": 160,
+        "mask_area_um2": 4.760999999999999,
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "reason": "below_measurement_area_floor",
+        "background_sample_policy": "recorded SUBSTRATE support within measured chip domain, excluding all source instances and initial foreground",
+        "observed_substrate_label_sha256": "400c5a1ad74941748617167143e540af44487b13cbec4b15a449c607db2b52c0",
+        "measured_domain_enclosure_sha256": "1a5b2084ef76ae7762fa37c7d95d3485198bb2a481d57b5a3f4296250fcbfdab"
+      },
+      "thin_reference_evidence": {
+        "compatible": null,
+        "status": "not_classified",
+        "mean_color_compatible": null,
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "reason": "Mean color is descriptive; no coherent thin terrace or material identity has been established."
+      },
+      "local_contrast_signal_z": null,
+      "review_role": "faint_unvalidated",
+      "priority": "rejected",
+      "quality_score": 0.0,
+      "useful_area_um2": 0.0,
+      "layer_number": null,
+      "chemical_identity_confirmed": false,
+      "sieve_results": [
+        {
+          "name": "feature_extraction",
+          "status": "pass",
+          "reason": "Connected foreground refined with accepted component-repair geometry."
+        },
+        {
+          "name": "useful_size",
+          "status": "reject",
+          "minimum_area_um2": 100,
+          "minimum_width_um": 5
+        },
+        {
+          "name": "local_substrate_contrast",
+          "status": "unmeasured",
+          "signal_z": null,
+          "minimum_signal_z": 3.0,
+          "reason": "below_measurement_area_floor"
+        },
+        {
+          "name": "optical_color",
+          "status": "descriptive",
+          "category": "bright_optical_feature",
+          "material_identity_confirmed": false
+        },
+        {
+          "name": "thin_reference",
+          "status": "descriptive_mean_only",
+          "role": "Not thin classification; source geometry and broad review selection retained.",
+          "layer_number": null
+        }
+      ],
+      "mean_color_reference_evidence": {
+        "compatible": null,
+        "status": "not_measured",
+        "score": 0.0,
+        "reason": "below_measurement_area_floor",
+        "model_id": "mote2-rg-direction-yamamoto2014-v1",
+        "layer_number": null,
+        "chemical_identity_confirmed": false
+      },
+      "coherence_evidence": {
+        "status": "descriptive_only",
+        "plateau_validated": false,
+        "interior_patch_spread_rgb": null,
+        "regional_mean_standard_error_rgb": null,
+        "raw_substrate_noise_rgb": [
+          0.022803492844104767,
+          0.013676486909389496,
+          0.01820436865091324
+        ],
+        "reason": "Spatial heterogeneity and uncertainty of a mean are distinct. No new arbitrary shape/uniformity threshold is applied."
+      }
+    },
+    {
+      "instance_label": 3,
+      "bbox_px": [
+        879,
+        271,
+        14,
+        16
+      ],
+      "centroid_px": [
+        885.2485207100592,
+        278.49112426035504
+      ],
+      "area_um2": 5.028806249999999,
+      "usable_width_um": 1.998860957622528,
+      "polygon_px": [
+        [
+          883,
+          271
+        ],
+        [
+          881,
+          272
+        ],
+        [
+          879,
+          275
+        ],
+        [
+          879,
+          276
+        ],
+        [
+          881,
+          277
+        ],
+        [
+          881,
+          279
+        ],
+        [
+          880,
+          280
+        ],
+        [
+          880,
+          285
+        ],
+        [
+          881,
+          286
+        ],
+        [
+          887,
+          286
+        ],
+        [
+          889,
+          284
+        ],
+        [
+          890,
+          284
+        ],
+        [
+          890,
+          280
+        ],
+        [
+          892,
+          277
+        ],
+        [
+          892,
+          275
+        ],
+        [
+          889,
+          272
+        ]
+      ],
+      "holes_px": [],
+      "stage_xy_um": [
+        -9242.799674533078,
+        -1372.134277590332
+      ],
+      "stage_polygon_um": [
+        [
+          -9243.129512610669,
+          -1373.4423379863938
+        ],
+        [
+          -9243.482234088186,
+          -1373.28574335036
+        ],
+        [
+          -9243.850442441546,
+          -1372.7846223574847
+        ],
+        [
+          -9243.858185879468,
+          -1372.6123591790638
+        ],
+        [
+          -9243.520951277798,
+          -1372.4244274582556
+        ],
+        [
+          -9243.536438153644,
+          -1372.0799011014137
+        ],
+        [
+          -9243.716670611362,
+          -1371.9154721941866
+        ],
+        [
+          -9243.755387800975,
+          -1371.054156302082
+        ],
+        [
+          -9243.5906422191,
+          -1370.8740588524674
+        ],
+        [
+          -9242.55570810032,
+          -1370.8270532253057
+        ],
+        [
+          -9242.195243184884,
+          -1371.1559110397602
+        ],
+        [
+          -9242.022754165087,
+          -1371.1480767685666
+        ],
+        [
+          -9241.991780413397,
+          -1371.83712948225
+        ],
+        [
+          -9241.623572060036,
+          -1372.3382504751255
+        ],
+        [
+          -9241.60808518419,
+          -1372.6827768319672
+        ],
+        [
+          -9242.102321929813,
+          -1373.2230691808109
+        ]
+      ],
+      "touches_border": false,
+      "solidity": 0.9096573208722741,
+      "mask_area_pixels": 169,
+      "geometry_method": "accepted component-repair graph cut; disconnected pieces separate; holes retained",
+      "id": "r-88c5d6ac83f342",
+      "source_image": "tiles/tile_000464.tiff",
+      "source_tile": "tile_000464",
+      "tile_key": "chip001/tile_000464",
+      "tile_id": "tile_000464",
+      "chip_id": "chip001",
+      "contrast_rgb": [
+        0.10332081466913223,
+        -0.08746042102575302,
+        0.09826327115297318
+      ],
+      "source_contrast_rgb": [
+        0.10332081466913223,
+        -0.08746042102575302,
+        0.09826327115297318
+      ],
+      "focus_status": {
+        "method": "bounded_measured_plane_extrapolation",
+        "predicted_z_um": 15300.60997042213,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": true,
+        "extrapolation_distance_um": 1220.9393373209768,
+        "extrapolation_limit_um": 3000,
+        "anchor_count": 4,
+        "anchor_points_um": [
+          [
+            -14188.322999999999,
+            -2923.554,
+            15376.483999999999
+          ],
+          [
+            -11661.995306914745,
+            -1801.7010079777526,
+            15326.561999999998
+          ],
+          [
+            -11601.930972420409,
+            -8126.870671359783,
+            15594.531
+          ],
+          [
+            -7937.339408140974,
+            -2869.172222753674,
+            15368.515
+          ]
+        ],
+        "sample_rms_um": 0.042879520607744255,
+        "max_anchor_residual_um": 0.06386943313736992,
+        "residual_standard_error_um": 0.08575904121548851,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.7561065590432006,
+        "conditional_prediction_sigma_um": 0.44112074424457937,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "status": "accepted_bounded_plane_replay",
+        "capture_z_target_tolerance_um": 0.235,
+        "capture_z_error_um": 0.015024291067675222,
+        "local_autofocus": false
+      },
+      "focus_limited": false,
+      "saturated_fraction": 0.0,
+      "proposal_stage": "below_useful_size",
+      "color_group": "cyan_optical_feature",
+      "label": "cyan optical feature",
+      "disposition": "rejected",
+      "selected_for_review": false,
+      "filter_reasons": [
+        "below_useful_area",
+        "below_useful_width"
+      ],
+      "evidence_warnings": [
+        "local_color_measurement_unavailable"
+      ],
+      "local_contrast_measurement": {
+        "instance_label": 3,
+        "measurement_status": "unmeasurable",
+        "mask_modified": false,
+        "mask_area_pixels": 169,
+        "mask_area_um2": 5.028806249999999,
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "reason": "below_measurement_area_floor",
+        "background_sample_policy": "recorded SUBSTRATE support within measured chip domain, excluding all source instances and initial foreground",
+        "observed_substrate_label_sha256": "400c5a1ad74941748617167143e540af44487b13cbec4b15a449c607db2b52c0",
+        "measured_domain_enclosure_sha256": "1a5b2084ef76ae7762fa37c7d95d3485198bb2a481d57b5a3f4296250fcbfdab"
+      },
+      "thin_reference_evidence": {
+        "compatible": null,
+        "status": "not_classified",
+        "mean_color_compatible": null,
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "reason": "Mean color is descriptive; no coherent thin terrace or material identity has been established."
+      },
+      "local_contrast_signal_z": null,
+      "review_role": "faint_unvalidated",
+      "priority": "rejected",
+      "quality_score": 0.0,
+      "useful_area_um2": 0.0,
+      "layer_number": null,
+      "chemical_identity_confirmed": false,
+      "sieve_results": [
+        {
+          "name": "feature_extraction",
+          "status": "pass",
+          "reason": "Connected foreground refined with accepted component-repair geometry."
+        },
+        {
+          "name": "useful_size",
+          "status": "reject",
+          "minimum_area_um2": 100,
+          "minimum_width_um": 5
+        },
+        {
+          "name": "local_substrate_contrast",
+          "status": "unmeasured",
+          "signal_z": null,
+          "minimum_signal_z": 3.0,
+          "reason": "below_measurement_area_floor"
+        },
+        {
+          "name": "optical_color",
+          "status": "descriptive",
+          "category": "cyan_optical_feature",
+          "material_identity_confirmed": false
+        },
+        {
+          "name": "thin_reference",
+          "status": "descriptive_mean_only",
+          "role": "Not thin classification; source geometry and broad review selection retained.",
+          "layer_number": null
+        }
+      ],
+      "mean_color_reference_evidence": {
+        "compatible": null,
+        "status": "not_measured",
+        "score": 0.0,
+        "reason": "below_measurement_area_floor",
+        "model_id": "mote2-rg-direction-yamamoto2014-v1",
+        "layer_number": null,
+        "chemical_identity_confirmed": false
+      },
+      "coherence_evidence": {
+        "status": "descriptive_only",
+        "plateau_validated": false,
+        "interior_patch_spread_rgb": null,
+        "regional_mean_standard_error_rgb": null,
+        "raw_substrate_noise_rgb": [
+          0.022803492844104767,
+          0.013676486909389496,
+          0.01820436865091324
+        ],
+        "reason": "Spatial heterogeneity and uncertainty of a mean are distinct. No new arbitrary shape/uniformity threshold is applied."
+      }
+    },
+    {
+      "instance_label": 4,
+      "bbox_px": [
+        902,
+        303,
+        50,
+        69
+      ],
+      "centroid_px": [
+        924.9971428571429,
+        340.13591836734696
+      ],
+      "area_um2": 72.90281249999998,
+      "usable_width_um": 7.5167211914062495,
+      "polygon_px": [
+        [
+          914,
+          304
+        ],
+        [
+          909,
+          309
+        ],
+        [
+          908,
+          311
+        ],
+        [
+          908,
+          322
+        ],
+        [
+          907,
+          323
+        ],
+        [
+          907,
+          336
+        ],
+        [
+          904,
+          341
+        ],
+        [
+          904,
+          345
+        ],
+        [
+          902,
+          347
+        ],
+        [
+          902,
+          354
+        ],
+        [
+          904,
+          354
+        ],
+        [
+          905,
+          355
+        ],
+        [
+          905,
+          363
+        ],
+        [
+          908,
+          367
+        ],
+        [
+          912,
+          367
+        ],
+        [
+          913,
+          368
+        ],
+        [
+          921,
+          368
+        ],
+        [
+          924,
+          370
+        ],
+        [
+          928,
+          370
+        ],
+        [
+          929,
+          371
+        ],
+        [
+          931,
+          370
+        ],
+        [
+          937,
+          370
+        ],
+        [
+          938,
+          369
+        ],
+        [
+          943,
+          368
+        ],
+        [
+          947,
+          364
+        ],
+        [
+          947,
+          362
+        ],
+        [
+          951,
+          357
+        ],
+        [
+          950,
+          349
+        ],
+        [
+          948,
+          348
+        ],
+        [
+          948,
+          345
+        ],
+        [
+          945,
+          341
+        ],
+        [
+          945,
+          336
+        ],
+        [
+          946,
+          335
+        ],
+        [
+          946,
+          332
+        ],
+        [
+          944,
+          332
+        ],
+        [
+          941,
+          329
+        ],
+        [
+          941,
+          325
+        ],
+        [
+          939,
+          323
+        ],
+        [
+          939,
+          320
+        ],
+        [
+          936,
+          320
+        ],
+        [
+          934,
+          317
+        ],
+        [
+          934,
+          312
+        ],
+        [
+          932,
+          312
+        ],
+        [
+          931,
+          311
+        ],
+        [
+          931,
+          308
+        ],
+        [
+          929,
+          306
+        ],
+        [
+          929,
+          304
+        ],
+        [
+          928,
+          303
+        ],
+        [
+          917,
+          303
+        ],
+        [
+          916,
+          304
+        ]
+      ],
+      "holes_px": [],
+      "stage_xy_um": [
+        -9236.420816297083,
+        -1361.2037479388857
+      ],
+      "stage_polygon_um": [
+        [
+          -9238.037886448421,
+          -1367.514790691501
+        ],
+        [
+          -9238.939048737016,
+          -1366.6926461553649
+        ],
+        [
+          -9239.127024632659,
+          -1366.3559540697167
+        ],
+        [
+          -9239.212202449808,
+          -1364.4610591070868
+        ],
+        [
+          -9239.392434907526,
+          -1364.2966301998595
+        ],
+        [
+          -9239.493099600519,
+          -1362.0572088803879
+        ],
+        [
+          -9240.049283849523,
+          -1361.2193958018643
+        ],
+        [
+          -9240.080257601212,
+          -1360.5303430881806
+        ],
+        [
+          -9240.44072251665,
+          -1360.2014852737261
+        ],
+        [
+          -9240.494926582109,
+          -1358.9956430247798
+        ],
+        [
+          -9240.149948542516,
+          -1358.9799744823927
+        ],
+        [
+          -9239.98520296064,
+          -1358.799877032778
+        ],
+        [
+          -9240.047150464023,
+          -1357.4217716054109
+        ],
+        [
+          -9239.560657156322,
+          -1356.7092160781465
+        ],
+        [
+          -9238.870701077136,
+          -1356.677878993372
+        ],
+        [
+          -9238.705955495263,
+          -1356.4977815437574
+        ],
+        [
+          -9237.32604333689,
+          -1356.4351073742082
+        ],
+        [
+          -9236.824063153346,
+          -1356.0670782037855
+        ],
+        [
+          -9236.13410707416,
+          -1356.035741119011
+        ],
+        [
+          -9235.969361492285,
+          -1355.8556436693964
+        ],
+        [
+          -9235.61664001477,
+          -1356.01223830543
+        ],
+        [
+          -9234.581705895991,
+          -1355.965232678268
+        ],
+        [
+          -9234.40147343827,
+          -1356.1296615854953
+        ],
+        [
+          -9233.531284901366,
+          -1356.262753407948
+        ],
+        [
+          -9232.81035507049,
+          -1356.920469036857
+        ],
+        [
+          -9232.794868194644,
+          -1357.2649953936989
+        ],
+        [
+          -9232.066194925845,
+          -1358.0949742010287
+        ],
+        [
+          -9232.176736442261,
+          -1359.4809138995895
+        ],
+        [
+          -9232.51397104393,
+          -1359.6688456203976
+        ],
+        [
+          -9232.490740730163,
+          -1360.1856351556603
+        ],
+        [
+          -9232.977234037862,
+          -1360.898190682925
+        ],
+        [
+          -9232.93851684825,
+          -1361.7595065750295
+        ],
+        [
+          -9232.758284390531,
+          -1361.9239354822566
+        ],
+        [
+          -9232.735054076764,
+          -1362.4407250175193
+        ],
+        [
+          -9233.080032116357,
+          -1362.4563935599067
+        ],
+        [
+          -9233.574268861978,
+          -1362.9966859087504
+        ],
+        [
+          -9233.543295110288,
+          -1363.6857386224337
+        ],
+        [
+          -9233.872786274036,
+          -1364.0459335216628
+        ],
+        [
+          -9233.849555960269,
+          -1364.5627230569255
+        ],
+        [
+          -9234.367023019659,
+          -1364.5862258705065
+        ],
+        [
+          -9234.688770745483,
+          -1365.1186839481566
+        ],
+        [
+          -9234.65005355587,
+          -1365.979999840261
+        ],
+        [
+          -9234.995031595463,
+          -1365.9956683826483
+        ],
+        [
+          -9235.159777177338,
+          -1366.1757658322629
+        ],
+        [
+          -9235.13654686357,
+          -1366.6925553675255
+        ],
+        [
+          -9235.466038027318,
+          -1367.0527502667546
+        ],
+        [
+          -9235.450551151473,
+          -1367.3972766235963
+        ],
+        [
+          -9235.615296733347,
+          -1367.5773740732109
+        ],
+        [
+          -9237.51267595111,
+          -1367.663551056341
+        ],
+        [
+          -9237.692908408828,
+          -1367.4991221491139
+        ]
+      ],
+      "touches_border": false,
+      "solidity": 0.9319485657764589,
+      "mask_area_pixels": 2450,
+      "geometry_method": "accepted component-repair graph cut; disconnected pieces separate; holes retained",
+      "id": "r-7d4d7e13300459",
+      "source_image": "tiles/tile_000464.tiff",
+      "source_tile": "tile_000464",
+      "tile_key": "chip001/tile_000464",
+      "tile_id": "tile_000464",
+      "chip_id": "chip001",
+      "contrast_rgb": [
+        0.21225511077145193,
+        -0.24116140644843231,
+        -0.11477189822494382
+      ],
+      "source_contrast_rgb": [
+        0.17493072152137756,
+        -0.1850055307149887,
+        -0.09597878158092499
+      ],
+      "focus_status": {
+        "method": "bounded_measured_plane_extrapolation",
+        "predicted_z_um": 15300.60997042213,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": true,
+        "extrapolation_distance_um": 1220.9393373209768,
+        "extrapolation_limit_um": 3000,
+        "anchor_count": 4,
+        "anchor_points_um": [
+          [
+            -14188.322999999999,
+            -2923.554,
+            15376.483999999999
+          ],
+          [
+            -11661.995306914745,
+            -1801.7010079777526,
+            15326.561999999998
+          ],
+          [
+            -11601.930972420409,
+            -8126.870671359783,
+            15594.531
+          ],
+          [
+            -7937.339408140974,
+            -2869.172222753674,
+            15368.515
+          ]
+        ],
+        "sample_rms_um": 0.042879520607744255,
+        "max_anchor_residual_um": 0.06386943313736992,
+        "residual_standard_error_um": 0.08575904121548851,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.7561065590432006,
+        "conditional_prediction_sigma_um": 0.44112074424457937,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "status": "accepted_bounded_plane_replay",
+        "capture_z_target_tolerance_um": 0.235,
+        "capture_z_error_um": 0.015024291067675222,
+        "local_autofocus": false
+      },
+      "focus_limited": false,
+      "saturated_fraction": 0.0,
+      "proposal_stage": "below_useful_size",
+      "color_group": "cyan_optical_feature",
+      "label": "cyan optical feature",
+      "disposition": "rejected",
+      "selected_for_review": false,
+      "filter_reasons": [
+        "below_useful_area"
+      ],
+      "evidence_warnings": [],
+      "local_contrast_measurement": {
+        "instance_label": 4,
+        "measurement_status": "measured",
+        "mask_modified": false,
+        "mask_area_pixels": 2450,
+        "mask_area_um2": 72.90281249999998,
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "interior_pixels": 1988,
+        "interior_fallback_to_full_mask": false,
+        "interior_spatial_patches": 73,
+        "background_spatial_patches": 264,
+        "background_pixels": 7018,
+        "background_excludes_all_source_instances": true,
+        "reason": "exact_existing_mask_with_clear_local_substrate",
+        "contrast_rgb": [
+          0.21225511077145193,
+          -0.24116140644843231,
+          -0.11477189822494382
+        ],
+        "contrast_covariance": [
+          [
+            0.00017963781283824267,
+            -0.0001640344710388587,
+            -8.53496767317019e-05
+          ],
+          [
+            -0.00016403447103885874,
+            0.00021063462916954021,
+            0.00011200427654588598
+          ],
+          [
+            -8.534967673170191e-05,
+            0.00011200427654588598,
+            9.251685108117955e-05
+          ]
+        ],
+        "standard_error_rgb": [
+          0.013402903149625557,
+          0.014513257014520903,
+          0.00961856803693666
+        ],
+        "global_interior_contrast_rgb": [
+          0.21183542060753532,
+          -0.2423622701181215,
+          -0.1144719399930057
+        ],
+        "local_substrate_contrast_rgb": [
+          -0.0005327742136513633,
+          -0.0009675322350905469,
+          0.00026907588217442126
+        ],
+        "interior_patch_covariance": [
+          [
+            0.008600094091535837,
+            -0.009160098175120224,
+            -0.004265761276606972
+          ],
+          [
+            -0.009160098175120224,
+            0.012241730826233454,
+            0.006133407884180115
+          ],
+          [
+            -0.004265761276606972,
+            0.006133407884180116,
+            0.004511025316299055
+          ]
+        ],
+        "background_patch_covariance": [
+          [
+            0.0005341740103827153,
+            -3.557695462952951e-05,
+            -1.9100562419179994e-05
+          ],
+          [
+            -3.557695462952951e-05,
+            5.44684479437371e-05,
+            1.3231497042235748e-05
+          ],
+          [
+            -1.9100562419179994e-05,
+            1.3231497042235747e-05,
+            6.428361346073135e-05
+          ]
+        ],
+        "background_systematic_covariance": [
+          [
+            6.026173589901958e-05,
+            -1.4339472063710905e-05,
+            -1.753075462313978e-05
+          ],
+          [
+            -1.4339472063710905e-05,
+            6.530980529768364e-06,
+            8.30708302854591e-06
+          ],
+          [
+            -1.753075462313978e-05,
+            8.30708302854591e-06,
+            1.4631970595478363e-05
+          ]
+        ],
+        "background_sector_count": 8,
+        "effective_interior_patches": 61.025663197554096,
+        "effective_background_patches": 219.74303101688255,
+        "interior_patch_spread_rgb": [
+          0.09273669226113167,
+          0.11064235548031981,
+          0.06716416690690843
+        ],
+        "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+        "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated.",
+        "background_sample_policy": "recorded SUBSTRATE support within measured chip domain, excluding all source instances and initial foreground",
+        "observed_substrate_label_sha256": "400c5a1ad74941748617167143e540af44487b13cbec4b15a449c607db2b52c0",
+        "measured_domain_enclosure_sha256": "1a5b2084ef76ae7762fa37c7d95d3485198bb2a481d57b5a3f4296250fcbfdab"
+      },
+      "thin_reference_evidence": {
+        "compatible": null,
+        "status": "not_classified",
+        "mean_color_compatible": false,
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "reason": "Mean color is descriptive; no coherent thin terrace or material identity has been established."
+      },
+      "local_contrast_signal_z": 17.100947569289758,
+      "review_role": "faint_unvalidated",
+      "priority": "rejected",
+      "quality_score": 0.3420189513857952,
+      "useful_area_um2": 0.0,
+      "layer_number": null,
+      "chemical_identity_confirmed": false,
+      "sieve_results": [
+        {
+          "name": "feature_extraction",
+          "status": "pass",
+          "reason": "Connected foreground refined with accepted component-repair geometry."
+        },
+        {
+          "name": "useful_size",
+          "status": "reject",
+          "minimum_area_um2": 100,
+          "minimum_width_um": 5
+        },
+        {
+          "name": "local_substrate_contrast",
+          "status": "pass",
+          "signal_z": 17.100947569289758,
+          "minimum_signal_z": 3.0,
+          "reason": "exact_existing_mask_with_clear_local_substrate"
+        },
+        {
+          "name": "optical_color",
+          "status": "descriptive",
+          "category": "cyan_optical_feature",
+          "material_identity_confirmed": false
+        },
+        {
+          "name": "thin_reference",
+          "status": "descriptive_mean_only",
+          "role": "Not thin classification; source geometry and broad review selection retained.",
+          "layer_number": null
+        }
+      ],
+      "mean_color_reference_evidence": {
+        "status": "unresolved_color_plateau",
+        "compatible": false,
+        "score": 0.0,
+        "red_z": 15.836502614538537,
+        "green_minus_red_z": -16.91733281019676,
+        "green_minus_red_contrast": -0.45341651721988424,
+        "within_search_interval": false,
+        "reason": "Color direction is unresolved or outside the first-few-layer reference direction.",
+        "reference": "https://doi.org/10.1021/nn5007607.s001",
+        "model_id": "mote2-rg-direction-yamamoto2014-v1",
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "uncertainty_scope": "Regional spatial/color uncertainty only; optical transfer and selection bias are uncalibrated."
+      },
+      "coherence_evidence": {
+        "status": "descriptive_only",
+        "plateau_validated": false,
+        "interior_patch_spread_rgb": [
+          0.09273669226113167,
+          0.11064235548031981,
+          0.06716416690690843
+        ],
+        "regional_mean_standard_error_rgb": [
+          0.013402903149625557,
+          0.014513257014520903,
+          0.00961856803693666
+        ],
+        "raw_substrate_noise_rgb": [
+          0.022803492844104767,
+          0.013676486909389496,
+          0.01820436865091324
+        ],
+        "reason": "Spatial heterogeneity and uncertainty of a mean are distinct. No new arbitrary shape/uniformity threshold is applied."
+      }
+    },
+    {
+      "instance_label": 5,
+      "bbox_px": [
+        2378,
+        230,
+        50,
+        39
+      ],
+      "centroid_px": [
+        2401.763812154696,
+        249.12085635359117
+      ],
+      "area_um2": 43.08704999999999,
+      "usable_width_um": 6.272582445144653,
+      "polygon_px": [
+        [
+          2427,
+          244
+        ],
+        [
+          2421,
+          238
+        ],
+        [
+          2419,
+          237
+        ],
+        [
+          2416,
+          237
+        ],
+        [
+          2415,
+          236
+        ],
+        [
+          2415,
+          234
+        ],
+        [
+          2413,
+          234
+        ],
+        [
+          2411,
+          232
+        ],
+        [
+          2407,
+          230
+        ],
+        [
+          2398,
+          231
+        ],
+        [
+          2396,
+          233
+        ],
+        [
+          2394,
+          233
+        ],
+        [
+          2391,
+          235
+        ],
+        [
+          2388,
+          235
+        ],
+        [
+          2386,
+          234
+        ],
+        [
+          2384,
+          236
+        ],
+        [
+          2383,
+          236
+        ],
+        [
+          2383,
+          237
+        ],
+        [
+          2378,
+          242
+        ],
+        [
+          2378,
+          256
+        ],
+        [
+          2379,
+          258
+        ],
+        [
+          2385,
+          259
+        ],
+        [
+          2386,
+          260
+        ],
+        [
+          2386,
+          264
+        ],
+        [
+          2388,
+          266
+        ],
+        [
+          2394,
+          266
+        ],
+        [
+          2398,
+          268
+        ],
+        [
+          2404,
+          268
+        ],
+        [
+          2409,
+          265
+        ],
+        [
+          2412,
+          265
+        ],
+        [
+          2414,
+          263
+        ],
+        [
+          2417,
+          263
+        ],
+        [
+          2427,
+          254
+        ],
+        [
+          2427,
+          251
+        ],
+        [
+          2426,
+          250
+        ]
+      ],
+      "holes_px": [],
+      "stage_xy_um": [
+        -8980.990011558992,
+        -1365.312901228538
+      ],
+      "stage_polygon_um": [
+        [
+          -8976.597393220869,
+          -1365.9973290807707
+        ],
+        [
+          -8977.585866712112,
+          -1367.0779137784577
+        ],
+        [
+          -8977.923101313783,
+          -1367.265845499266
+        ],
+        [
+          -8978.440568373173,
+          -1367.2893483128469
+        ],
+        [
+          -8978.605313955048,
+          -1367.4694457624614
+        ],
+        [
+          -8978.589827079202,
+          -1367.8139721193033
+        ],
+        [
+          -8978.934805118795,
+          -1367.8296406616905
+        ],
+        [
+          -8979.264296282543,
+          -1368.1898355609196
+        ],
+        [
+          -8979.938765485884,
+          -1368.5656990025361
+        ],
+        [
+          -8981.498910101976,
+          -1368.463944264858
+        ],
+        [
+          -8981.859375017413,
+          -1368.1350864504034
+        ],
+        [
+          -8982.204353057006,
+          -1368.1507549927908
+        ],
+        [
+          -8982.737306992241,
+          -1367.8297314495298
+        ],
+        [
+          -8983.254774051631,
+          -1367.8532342631108
+        ],
+        [
+          -8983.592008653302,
+          -1368.041165983919
+        ],
+        [
+          -8983.952473568741,
+          -1367.7123081694644
+        ],
+        [
+          -8984.124962588538,
+          -1367.720142440658
+        ],
+        [
+          -8984.13270602646,
+          -1367.5478792622373
+        ],
+        [
+          -8985.033868315055,
+          -1366.725734726101
+        ],
+        [
+          -8985.142276445971,
+          -1364.3140502282085
+        ],
+        [
+          -8984.98527430202,
+          -1363.961689600173
+        ],
+        [
+          -8983.958083621163,
+          -1363.7424207945903
+        ],
+        [
+          -8983.79333803929,
+          -1363.5623233449758
+        ],
+        [
+          -8983.824311790979,
+          -1362.8732706312921
+        ],
+        [
+          -8983.494820627231,
+          -1362.513075732063
+        ],
+        [
+          -8982.459886508452,
+          -1362.466070104901
+        ],
+        [
+          -8981.785417305111,
+          -1362.0902066632848
+        ],
+        [
+          -8980.750483186332,
+          -1362.0432010361228
+        ],
+        [
+          -8979.864807773582,
+          -1362.5208192154173
+        ],
+        [
+          -8979.347340714192,
+          -1362.4973164018363
+        ],
+        [
+          -8978.986875798753,
+          -1362.8261742162908
+        ],
+        [
+          -8978.469408739364,
+          -1362.80267140271
+        ],
+        [
+          -8976.674827600094,
+          -1364.2746972965617
+        ],
+        [
+          -8976.651597286327,
+          -1364.7914868318244
+        ],
+        [
+          -8976.8163428682,
+          -1364.971584281439
+        ]
+      ],
+      "touches_border": false,
+      "solidity": 0.9524465885596141,
+      "mask_area_pixels": 1448,
+      "geometry_method": "accepted component-repair graph cut; disconnected pieces separate; holes retained",
+      "id": "r-3e690e03d4f701",
+      "source_image": "tiles/tile_000464.tiff",
+      "source_tile": "tile_000464",
+      "tile_key": "chip001/tile_000464",
+      "tile_id": "tile_000464",
+      "chip_id": "chip001",
+      "contrast_rgb": [
+        0.1617712611351121,
+        -0.1761292684751005,
+        -0.13614438568212547
+      ],
+      "source_contrast_rgb": [
+        0.14201605319976807,
+        -0.1512591689825058,
+        -0.11037664115428925
+      ],
+      "focus_status": {
+        "method": "bounded_measured_plane_extrapolation",
+        "predicted_z_um": 15300.60997042213,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": true,
+        "extrapolation_distance_um": 1220.9393373209768,
+        "extrapolation_limit_um": 3000,
+        "anchor_count": 4,
+        "anchor_points_um": [
+          [
+            -14188.322999999999,
+            -2923.554,
+            15376.483999999999
+          ],
+          [
+            -11661.995306914745,
+            -1801.7010079777526,
+            15326.561999999998
+          ],
+          [
+            -11601.930972420409,
+            -8126.870671359783,
+            15594.531
+          ],
+          [
+            -7937.339408140974,
+            -2869.172222753674,
+            15368.515
+          ]
+        ],
+        "sample_rms_um": 0.042879520607744255,
+        "max_anchor_residual_um": 0.06386943313736992,
+        "residual_standard_error_um": 0.08575904121548851,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.7561065590432006,
+        "conditional_prediction_sigma_um": 0.44112074424457937,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "status": "accepted_bounded_plane_replay",
+        "capture_z_target_tolerance_um": 0.235,
+        "capture_z_error_um": 0.015024291067675222,
+        "local_autofocus": false
+      },
+      "focus_limited": false,
+      "saturated_fraction": 0.0,
+      "proposal_stage": "below_useful_size",
+      "color_group": "cyan_optical_feature",
+      "label": "cyan optical feature",
+      "disposition": "rejected",
+      "selected_for_review": false,
+      "filter_reasons": [
+        "below_useful_area"
+      ],
+      "evidence_warnings": [],
+      "local_contrast_measurement": {
+        "instance_label": 5,
+        "measurement_status": "measured",
+        "mask_modified": false,
+        "mask_area_pixels": 1448,
+        "mask_area_um2": 43.08704999999999,
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "interior_pixels": 1102,
+        "interior_fallback_to_full_mask": false,
+        "interior_spatial_patches": 45,
+        "background_spatial_patches": 253,
+        "background_pixels": 6537,
+        "background_excludes_all_source_instances": true,
+        "reason": "exact_existing_mask_with_clear_local_substrate",
+        "contrast_rgb": [
+          0.1617712611351121,
+          -0.1761292684751005,
+          -0.13614438568212547
+        ],
+        "contrast_covariance": [
+          [
+            0.00012402735571473655,
+            -6.4880935486653e-05,
+            -6.56390627379965e-05
+          ],
+          [
+            -6.4880935486653e-05,
+            8.614313457412893e-05,
+            7.226477600798806e-05
+          ],
+          [
+            -6.56390627379965e-05,
+            7.226477600798806e-05,
+            7.975854465037224e-05
+          ]
+        ],
+        "standard_error_rgb": [
+          0.011136756965774935,
+          0.009281332586117628,
+          0.00893076394550725
+        ],
+        "global_interior_contrast_rgb": [
+          0.16385124917845656,
+          -0.17689158724867715,
+          -0.13433373363742676
+        ],
+        "local_substrate_contrast_rgb": [
+          0.0024814086500555277,
+          -0.0006481590025941841,
+          0.0015936812851577997
+        ],
+        "interior_patch_covariance": [
+          [
+            0.0035579486016625475,
+            -0.0023506508801727733,
+            -0.0022241486384757107
+          ],
+          [
+            -0.0023506508801727733,
+            0.002491435053072662,
+            0.0022179208921045894
+          ],
+          [
+            -0.0022241486384757107,
+            0.0022179208921045894,
+            0.002323552168863373
+          ]
+        ],
+        "background_patch_covariance": [
+          [
+            0.0005141098983736711,
+            -3.54330134949237e-05,
+            -2.6651319070503403e-05
+          ],
+          [
+            -3.54330134949237e-05,
+            6.163791263316281e-05,
+            1.4156171910015155e-05
+          ],
+          [
+            -2.665131907050341e-05,
+            1.4156171910015153e-05,
+            6.455475718496323e-05
+          ]
+        ],
+        "background_systematic_covariance": [
+          [
+            2.5037501237224724e-05,
+            4.2180768492951525e-06,
+            -2.0778092183718556e-07
+          ],
+          [
+            4.2180768492951525e-06,
+            9.377479923492916e-06,
+            5.41519263237716e-06
+          ],
+          [
+            -2.0778092183718556e-07,
+            5.41519263237716e-06,
+            8.630849128770178e-06
+          ]
+        ],
+        "background_sector_count": 8,
+        "effective_interior_patches": 34.19122698350132,
+        "effective_background_patches": 205.21026042442034,
+        "interior_patch_spread_rgb": [
+          0.059648542326385036,
+          0.049914277046479015,
+          0.048203238157445115
+        ],
+        "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+        "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated.",
+        "background_sample_policy": "recorded SUBSTRATE support within measured chip domain, excluding all source instances and initial foreground",
+        "observed_substrate_label_sha256": "400c5a1ad74941748617167143e540af44487b13cbec4b15a449c607db2b52c0",
+        "measured_domain_enclosure_sha256": "1a5b2084ef76ae7762fa37c7d95d3485198bb2a481d57b5a3f4296250fcbfdab"
+      },
+      "thin_reference_evidence": {
+        "compatible": null,
+        "status": "not_classified",
+        "mean_color_compatible": false,
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "reason": "Mean color is descriptive; no coherent thin terrace or material identity has been established."
+      },
+      "local_contrast_signal_z": 19.645987187971375,
+      "review_role": "faint_unvalidated",
+      "priority": "rejected",
+      "quality_score": 0.3929197437594275,
+      "useful_area_um2": 0.0,
+      "layer_number": null,
+      "chemical_identity_confirmed": false,
+      "sieve_results": [
+        {
+          "name": "feature_extraction",
+          "status": "pass",
+          "reason": "Connected foreground refined with accepted component-repair geometry."
+        },
+        {
+          "name": "useful_size",
+          "status": "reject",
+          "minimum_area_um2": 100,
+          "minimum_width_um": 5
+        },
+        {
+          "name": "local_substrate_contrast",
+          "status": "pass",
+          "signal_z": 19.645987187971375,
+          "minimum_signal_z": 3.0,
+          "reason": "exact_existing_mask_with_clear_local_substrate"
+        },
+        {
+          "name": "optical_color",
+          "status": "descriptive",
+          "category": "cyan_optical_feature",
+          "material_identity_confirmed": false
+        },
+        {
+          "name": "thin_reference",
+          "status": "descriptive_mean_only",
+          "role": "Not thin classification; source geometry and broad review selection retained.",
+          "layer_number": null
+        }
+      ],
+      "mean_color_reference_evidence": {
+        "status": "unresolved_color_plateau",
+        "compatible": false,
+        "score": 0.0,
+        "red_z": 14.5258859138492,
+        "green_minus_red_z": -18.327052205696706,
+        "green_minus_red_contrast": -0.33790052961021255,
+        "within_search_interval": false,
+        "reason": "Color direction is unresolved or outside the first-few-layer reference direction.",
+        "reference": "https://doi.org/10.1021/nn5007607.s001",
+        "model_id": "mote2-rg-direction-yamamoto2014-v1",
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "uncertainty_scope": "Regional spatial/color uncertainty only; optical transfer and selection bias are uncalibrated."
+      },
+      "coherence_evidence": {
+        "status": "descriptive_only",
+        "plateau_validated": false,
+        "interior_patch_spread_rgb": [
+          0.059648542326385036,
+          0.049914277046479015,
+          0.048203238157445115
+        ],
+        "regional_mean_standard_error_rgb": [
+          0.011136756965774935,
+          0.009281332586117628,
+          0.00893076394550725
+        ],
+        "raw_substrate_noise_rgb": [
+          0.022803492844104767,
+          0.013676486909389496,
+          0.01820436865091324
+        ],
+        "reason": "Spatial heterogeneity and uncertainty of a mean are distinct. No new arbitrary shape/uniformity threshold is applied."
+      }
+    },
+    {
+      "instance_label": 6,
+      "bbox_px": [
+        1787,
+        310,
+        46,
+        59
+      ],
+      "centroid_px": [
+        1805.6248581157774,
+        335.07264472190695
+      ],
+      "area_um2": 52.43051249999999,
+      "usable_width_um": 5.864999999999999,
+      "polygon_px": [
+        [
+          1820,
+          310
+        ],
+        [
+          1809,
+          310
+        ],
+        [
+          1808,
+          311
+        ],
+        [
+          1805,
+          311
+        ],
+        [
+          1804,
+          310
+        ],
+        [
+          1799,
+          310
+        ],
+        [
+          1796,
+          313
+        ],
+        [
+          1794,
+          313
+        ],
+        [
+          1791,
+          316
+        ],
+        [
+          1790,
+          323
+        ],
+        [
+          1787,
+          329
+        ],
+        [
+          1787,
+          334
+        ],
+        [
+          1789,
+          335
+        ],
+        [
+          1789,
+          337
+        ],
+        [
+          1788,
+          338
+        ],
+        [
+          1789,
+          339
+        ],
+        [
+          1789,
+          344
+        ],
+        [
+          1791,
+          345
+        ],
+        [
+          1791,
+          350
+        ],
+        [
+          1789,
+          354
+        ],
+        [
+          1789,
+          365
+        ],
+        [
+          1790,
+          366
+        ],
+        [
+          1792,
+          366
+        ],
+        [
+          1794,
+          368
+        ],
+        [
+          1802,
+          368
+        ],
+        [
+          1803,
+          367
+        ],
+        [
+          1807,
+          366
+        ],
+        [
+          1807,
+          362
+        ],
+        [
+          1810,
+          358
+        ],
+        [
+          1810,
+          353
+        ],
+        [
+          1814,
+          349
+        ],
+        [
+          1815,
+          346
+        ],
+        [
+          1817,
+          344
+        ],
+        [
+          1818,
+          342
+        ],
+        [
+          1817,
+          340
+        ],
+        [
+          1820,
+          337
+        ],
+        [
+          1821,
+          337
+        ],
+        [
+          1828,
+          331
+        ],
+        [
+          1829,
+          331
+        ],
+        [
+          1830,
+          328
+        ],
+        [
+          1832,
+          326
+        ],
+        [
+          1832,
+          325
+        ],
+        [
+          1829,
+          322
+        ],
+        [
+          1829,
+          320
+        ],
+        [
+          1827,
+          318
+        ],
+        [
+          1826,
+          314
+        ],
+        [
+          1824,
+          312
+        ]
+      ],
+      "holes_px": [],
+      "stage_xy_um": [
+        -9084.482997741277,
+        -1355.1768872082882
+      ],
+      "stage_polygon_um": [
+        [
+          -9081.809295140272,
+          -1359.3833619195336
+        ],
+        [
+          -9083.706674358034,
+          -1359.4695389026638
+        ],
+        [
+          -9083.886906815753,
+          -1359.3051099954364
+        ],
+        [
+          -9084.404373875142,
+          -1359.3286128090174
+        ],
+        [
+          -9084.569119457017,
+          -1359.508710258632
+        ],
+        [
+          -9085.431564556,
+          -1359.5478816146
+        ],
+        [
+          -9085.972261929157,
+          -1359.0545948929184
+        ],
+        [
+          -9086.31723996875,
+          -1359.0702634353058
+        ],
+        [
+          -9086.857937341907,
+          -1358.576976713624
+        ],
+        [
+          -9087.084630427162,
+          -1357.3789687358712
+        ],
+        [
+          -9087.648558114088,
+          -1356.368892478927
+        ],
+        [
+          -9087.6872753037,
+          -1355.5075765868223
+        ],
+        [
+          -9087.35004070203,
+          -1355.3196448660142
+        ],
+        [
+          -9087.365527577875,
+          -1354.9751185091725
+        ],
+        [
+          -9087.545760035595,
+          -1354.8106896019451
+        ],
+        [
+          -9087.38101445372,
+          -1354.6305921523306
+        ],
+        [
+          -9087.419731643333,
+          -1353.7692762602262
+        ],
+        [
+          -9087.082497041663,
+          -1353.5813445394178
+        ],
+        [
+          -9087.121214231276,
+          -1352.7200286473135
+        ],
+        [
+          -9087.497166022558,
+          -1352.0466444760173
+        ],
+        [
+          -9087.582343839707,
+          -1350.1517495133874
+        ],
+        [
+          -9087.417598257833,
+          -1349.9716520637728
+        ],
+        [
+          -9087.07262021824,
+          -1349.9559835213854
+        ],
+        [
+          -9086.743129054492,
+          -1349.5957886221563
+        ],
+        [
+          -9085.36321689612,
+          -1349.5331144526072
+        ],
+        [
+          -9085.182984438401,
+          -1349.6975433598345
+        ],
+        [
+          -9084.485284921291,
+          -1349.838469453481
+        ],
+        [
+          -9084.454311169602,
+          -1350.5275221671643
+        ],
+        [
+          -9083.905870358521,
+          -1351.1930720672672
+        ],
+        [
+          -9083.867153168909,
+          -1352.0543879593715
+        ],
+        [
+          -9083.146223338032,
+          -1352.7121035882806
+        ],
+        [
+          -9082.950504004468,
+          -1353.2210588523496
+        ],
+        [
+          -9082.59003908903,
+          -1353.5499166668042
+        ],
+        [
+          -9082.402063193387,
+          -1353.8866087524523
+        ],
+        [
+          -9082.559065337338,
+          -1354.2389693804878
+        ],
+        [
+          -9082.018367964181,
+          -1354.7322561021695
+        ],
+        [
+          -9081.845878944385,
+          -1354.7244218309759
+        ],
+        [
+          -9080.591995178274,
+          -1355.7031610031456
+        ],
+        [
+          -9080.419506158478,
+          -1355.695326731952
+        ],
+        [
+          -9080.223786824912,
+          -1356.204281996021
+        ],
+        [
+          -9079.863321909474,
+          -1356.5331398104756
+        ],
+        [
+          -9079.855578471552,
+          -1356.7054029888964
+        ],
+        [
+          -9080.349815217174,
+          -1357.24569533774
+        ],
+        [
+          -9080.334328341329,
+          -1357.590221694582
+        ],
+        [
+          -9080.663819505076,
+          -1357.950416593811
+        ],
+        [
+          -9080.805334773182,
+          -1358.6473035786883
+        ],
+        [
+          -9081.134825936932,
+          -1359.0074984779174
+        ]
+      ],
+      "touches_border": false,
+      "solidity": 0.8960831334932055,
+      "mask_area_pixels": 1762,
+      "geometry_method": "accepted component-repair graph cut; disconnected pieces separate; holes retained",
+      "id": "r-805f8b95740f10",
+      "source_image": "tiles/tile_000464.tiff",
+      "source_tile": "tile_000464",
+      "tile_key": "chip001/tile_000464",
+      "tile_id": "tile_000464",
+      "chip_id": "chip001",
+      "contrast_rgb": [
+        0.11779754222935422,
+        -0.13889136965207524,
+        -0.05221007606789854
+      ],
+      "source_contrast_rgb": [
+        0.10831394046545029,
+        -0.1340545117855072,
+        -0.048944368958473206
+      ],
+      "focus_status": {
+        "method": "bounded_measured_plane_extrapolation",
+        "predicted_z_um": 15300.60997042213,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": true,
+        "extrapolation_distance_um": 1220.9393373209768,
+        "extrapolation_limit_um": 3000,
+        "anchor_count": 4,
+        "anchor_points_um": [
+          [
+            -14188.322999999999,
+            -2923.554,
+            15376.483999999999
+          ],
+          [
+            -11661.995306914745,
+            -1801.7010079777526,
+            15326.561999999998
+          ],
+          [
+            -11601.930972420409,
+            -8126.870671359783,
+            15594.531
+          ],
+          [
+            -7937.339408140974,
+            -2869.172222753674,
+            15368.515
+          ]
+        ],
+        "sample_rms_um": 0.042879520607744255,
+        "max_anchor_residual_um": 0.06386943313736992,
+        "residual_standard_error_um": 0.08575904121548851,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.7561065590432006,
+        "conditional_prediction_sigma_um": 0.44112074424457937,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "status": "accepted_bounded_plane_replay",
+        "capture_z_target_tolerance_um": 0.235,
+        "capture_z_error_um": 0.015024291067675222,
+        "local_autofocus": false
+      },
+      "focus_limited": false,
+      "saturated_fraction": 0.0,
+      "proposal_stage": "below_useful_size",
+      "color_group": "cyan_optical_feature",
+      "label": "cyan optical feature",
+      "disposition": "rejected",
+      "selected_for_review": false,
+      "filter_reasons": [
+        "below_useful_area"
+      ],
+      "evidence_warnings": [],
+      "local_contrast_measurement": {
+        "instance_label": 6,
+        "measurement_status": "measured",
+        "mask_modified": false,
+        "mask_area_pixels": 1762,
+        "mask_area_um2": 52.43051249999999,
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "interior_pixels": 1345,
+        "interior_fallback_to_full_mask": false,
+        "interior_spatial_patches": 50,
+        "background_spatial_patches": 243,
+        "background_pixels": 5933,
+        "background_excludes_all_source_instances": true,
+        "reason": "exact_existing_mask_with_clear_local_substrate",
+        "contrast_rgb": [
+          0.11779754222935422,
+          -0.13889136965207524,
+          -0.05221007606789854
+        ],
+        "contrast_covariance": [
+          [
+            0.00015046006041916202,
+            -0.00010877997970286702,
+            -5.360946405543675e-05
+          ],
+          [
+            -0.000108779979702867,
+            0.00013060634212548413,
+            6.0657341200920225e-05
+          ],
+          [
+            -5.3609464055436745e-05,
+            6.0657341200920225e-05,
+            6.036818529081044e-05
+          ]
+        ],
+        "standard_error_rgb": [
+          0.01226621622258315,
+          0.011428313179357842,
+          0.007769696602236823
+        ],
+        "global_interior_contrast_rgb": [
+          0.12151110587270716,
+          -0.1404831712458585,
+          -0.055045912139065574
+        ],
+        "local_substrate_contrast_rgb": [
+          0.004209423370614079,
+          -0.0013976764037377304,
+          -0.002695123469796575
+        ],
+        "interior_patch_covariance": [
+          [
+            0.004970751687805949,
+            -0.003915737907524865,
+            -0.001801198850343013
+          ],
+          [
+            -0.003915737907524865,
+            0.00456161392936156,
+            0.0020114982234369304
+          ],
+          [
+            -0.001801198850343013,
+            0.0020114982234369304,
+            0.001989382766996417
+          ]
+        ],
+        "background_patch_covariance": [
+          [
+            0.0006375247633825633,
+            -5.370527075529351e-05,
+            -3.184158802641894e-05
+          ],
+          [
+            -5.370527075529351e-05,
+            7.80571302419893e-05,
+            2.190839379625413e-05
+          ],
+          [
+            -3.1841588026418935e-05,
+            2.190839379625413e-05,
+            6.771171701684947e-05
+          ]
+        ],
+        "background_systematic_covariance": [
+          [
+            3.653024726788688e-05,
+            -1.5044141335803457e-05,
+            -1.1374953017740814e-05
+          ],
+          [
+            -1.5044141335803457e-05,
+            1.6970850993800965e-05,
+            1.0811390306191366e-05
+          ],
+          [
+            -1.1374953017740814e-05,
+            1.0811390306191366e-05,
+            1.1753666300284824e-05
+          ]
+        ],
+        "background_sector_count": 8,
+        "effective_interior_patches": 42.07132724016838,
+        "effective_background_patches": 189.7672095442954,
+        "interior_patch_spread_rgb": [
+          0.07050355797976404,
+          0.06753972112291817,
+          0.044602497317935204
+        ],
+        "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+        "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated.",
+        "background_sample_policy": "recorded SUBSTRATE support within measured chip domain, excluding all source instances and initial foreground",
+        "observed_substrate_label_sha256": "400c5a1ad74941748617167143e540af44487b13cbec4b15a449c607db2b52c0",
+        "measured_domain_enclosure_sha256": "1a5b2084ef76ae7762fa37c7d95d3485198bb2a481d57b5a3f4296250fcbfdab"
+      },
+      "thin_reference_evidence": {
+        "compatible": null,
+        "status": "not_classified",
+        "mean_color_compatible": false,
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "reason": "Mean color is descriptive; no coherent thin terrace or material identity has been established."
+      },
+      "local_contrast_signal_z": 12.352308075454332,
+      "review_role": "faint_unvalidated",
+      "priority": "rejected",
+      "quality_score": 0.24704616150908662,
+      "useful_area_um2": 0.0,
+      "layer_number": null,
+      "chemical_identity_confirmed": false,
+      "sieve_results": [
+        {
+          "name": "feature_extraction",
+          "status": "pass",
+          "reason": "Connected foreground refined with accepted component-repair geometry."
+        },
+        {
+          "name": "useful_size",
+          "status": "reject",
+          "minimum_area_um2": 100,
+          "minimum_width_um": 5
+        },
+        {
+          "name": "local_substrate_contrast",
+          "status": "pass",
+          "signal_z": 12.352308075454332,
+          "minimum_signal_z": 3.0,
+          "reason": "exact_existing_mask_with_clear_local_substrate"
+        },
+        {
+          "name": "optical_color",
+          "status": "descriptive",
+          "category": "cyan_optical_feature",
+          "material_identity_confirmed": false
+        },
+        {
+          "name": "thin_reference",
+          "status": "descriptive_mean_only",
+          "role": "Not thin classification; source geometry and broad review selection retained.",
+          "layer_number": null
+        }
+      ],
+      "mean_color_reference_evidence": {
+        "status": "unresolved_color_plateau",
+        "compatible": false,
+        "score": 0.0,
+        "red_z": 9.603413154618854,
+        "green_minus_red_z": -11.495278332491926,
+        "green_minus_red_contrast": -0.25668891188142945,
+        "within_search_interval": false,
+        "reason": "Color direction is unresolved or outside the first-few-layer reference direction.",
+        "reference": "https://doi.org/10.1021/nn5007607.s001",
+        "model_id": "mote2-rg-direction-yamamoto2014-v1",
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "uncertainty_scope": "Regional spatial/color uncertainty only; optical transfer and selection bias are uncalibrated."
+      },
+      "coherence_evidence": {
+        "status": "descriptive_only",
+        "plateau_validated": false,
+        "interior_patch_spread_rgb": [
+          0.07050355797976404,
+          0.06753972112291817,
+          0.044602497317935204
+        ],
+        "regional_mean_standard_error_rgb": [
+          0.01226621622258315,
+          0.011428313179357842,
+          0.007769696602236823
+        ],
+        "raw_substrate_noise_rgb": [
+          0.022803492844104767,
+          0.013676486909389496,
+          0.01820436865091324
+        ],
+        "reason": "Spatial heterogeneity and uncertainty of a mean are distinct. No new arbitrary shape/uniformity threshold is applied."
+      }
+    },
+    {
+      "instance_label": 7,
+      "bbox_px": [
+        1646,
+        368,
+        25,
+        17
+      ],
+      "centroid_px": [
+        1658.4710144927535,
+        376.0688405797101
+      ],
+      "area_um2": 8.212724999999999,
+      "usable_width_um": 2.415,
+      "polygon_px": [
+        [
+          1670,
+          375
+        ],
+        [
+          1664,
+          368
+        ],
+        [
+          1656,
+          369
+        ],
+        [
+          1654,
+          371
+        ],
+        [
+          1652,
+          371
+        ],
+        [
+          1649,
+          374
+        ],
+        [
+          1649,
+          377
+        ],
+        [
+          1646,
+          380
+        ],
+        [
+          1646,
+          381
+        ],
+        [
+          1647,
+          382
+        ],
+        [
+          1653,
+          382
+        ],
+        [
+          1655,
+          384
+        ],
+        [
+          1657,
+          384
+        ],
+        [
+          1658,
+          382
+        ],
+        [
+          1662,
+          382
+        ],
+        [
+          1664,
+          380
+        ],
+        [
+          1670,
+          379
+        ]
+      ],
+      "holes_px": [],
+      "stage_xy_um": [
+        -9110.182871484796,
+        -1349.2675953247874
+      ],
+      "stage_polygon_um": [
+        [
+          -9108.185971574723,
+          -1349.3613960012221
+        ],
+        [
+          -9109.166701628044,
+          -1350.6142438773302
+        ],
+        [
+          -9110.55435722434,
+          -1350.5046548684584
+        ],
+        [
+          -9110.914822139779,
+          -1350.1757970540039
+        ],
+        [
+          -9111.259800179372,
+          -1350.1914655963913
+        ],
+        [
+          -9111.80049755253,
+          -1349.6981788747094
+        ],
+        [
+          -9111.823727866296,
+          -1349.1813893394467
+        ],
+        [
+          -9112.364425239453,
+          -1348.688102617765
+        ],
+        [
+          -9112.372168677377,
+          -1348.515839439344
+        ],
+        [
+          -9112.207423095502,
+          -1348.3357419897295
+        ],
+        [
+          -9111.172488976723,
+          -1348.2887363625678
+        ],
+        [
+          -9110.842997812975,
+          -1347.9285414633387
+        ],
+        [
+          -9110.498019773382,
+          -1347.9128729209513
+        ],
+        [
+          -9110.31004387774,
+          -1348.2495650065996
+        ],
+        [
+          -9109.620087798554,
+          -1348.218227921825
+        ],
+        [
+          -9109.259622883115,
+          -1348.5470857362793
+        ],
+        [
+          -9108.216945326414,
+          -1348.6723432875385
+        ]
+      ],
+      "touches_border": false,
+      "solidity": 0.9077490774907749,
+      "mask_area_pixels": 276,
+      "geometry_method": "accepted component-repair graph cut; disconnected pieces separate; holes retained",
+      "id": "r-1e201f135b904c",
+      "source_image": "tiles/tile_000464.tiff",
+      "source_tile": "tile_000464",
+      "tile_key": "chip001/tile_000464",
+      "tile_id": "tile_000464",
+      "chip_id": "chip001",
+      "contrast_rgb": [
+        0.23780858516693115,
+        -0.2919806241989136,
+        -0.22339391708374023
+      ],
+      "source_contrast_rgb": [
+        0.23780858516693115,
+        -0.2919806241989136,
+        -0.22339391708374023
+      ],
+      "focus_status": {
+        "method": "bounded_measured_plane_extrapolation",
+        "predicted_z_um": 15300.60997042213,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": true,
+        "extrapolation_distance_um": 1220.9393373209768,
+        "extrapolation_limit_um": 3000,
+        "anchor_count": 4,
+        "anchor_points_um": [
+          [
+            -14188.322999999999,
+            -2923.554,
+            15376.483999999999
+          ],
+          [
+            -11661.995306914745,
+            -1801.7010079777526,
+            15326.561999999998
+          ],
+          [
+            -11601.930972420409,
+            -8126.870671359783,
+            15594.531
+          ],
+          [
+            -7937.339408140974,
+            -2869.172222753674,
+            15368.515
+          ]
+        ],
+        "sample_rms_um": 0.042879520607744255,
+        "max_anchor_residual_um": 0.06386943313736992,
+        "residual_standard_error_um": 0.08575904121548851,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.7561065590432006,
+        "conditional_prediction_sigma_um": 0.44112074424457937,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "status": "accepted_bounded_plane_replay",
+        "capture_z_target_tolerance_um": 0.235,
+        "capture_z_error_um": 0.015024291067675222,
+        "local_autofocus": false
+      },
+      "focus_limited": false,
+      "saturated_fraction": 0.0,
+      "proposal_stage": "below_useful_size",
+      "color_group": "cyan_optical_feature",
+      "label": "cyan optical feature",
+      "disposition": "rejected",
+      "selected_for_review": false,
+      "filter_reasons": [
+        "below_useful_area",
+        "below_useful_width"
+      ],
+      "evidence_warnings": [
+        "local_color_measurement_unavailable"
+      ],
+      "local_contrast_measurement": {
+        "instance_label": 7,
+        "measurement_status": "unmeasurable",
+        "mask_modified": false,
+        "mask_area_pixels": 276,
+        "mask_area_um2": 8.212724999999999,
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "reason": "below_measurement_area_floor",
+        "background_sample_policy": "recorded SUBSTRATE support within measured chip domain, excluding all source instances and initial foreground",
+        "observed_substrate_label_sha256": "400c5a1ad74941748617167143e540af44487b13cbec4b15a449c607db2b52c0",
+        "measured_domain_enclosure_sha256": "1a5b2084ef76ae7762fa37c7d95d3485198bb2a481d57b5a3f4296250fcbfdab"
+      },
+      "thin_reference_evidence": {
+        "compatible": null,
+        "status": "not_classified",
+        "mean_color_compatible": null,
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "reason": "Mean color is descriptive; no coherent thin terrace or material identity has been established."
+      },
+      "local_contrast_signal_z": null,
+      "review_role": "faint_unvalidated",
+      "priority": "rejected",
+      "quality_score": 0.0,
+      "useful_area_um2": 0.0,
+      "layer_number": null,
+      "chemical_identity_confirmed": false,
+      "sieve_results": [
+        {
+          "name": "feature_extraction",
+          "status": "pass",
+          "reason": "Connected foreground refined with accepted component-repair geometry."
+        },
+        {
+          "name": "useful_size",
+          "status": "reject",
+          "minimum_area_um2": 100,
+          "minimum_width_um": 5
+        },
+        {
+          "name": "local_substrate_contrast",
+          "status": "unmeasured",
+          "signal_z": null,
+          "minimum_signal_z": 3.0,
+          "reason": "below_measurement_area_floor"
+        },
+        {
+          "name": "optical_color",
+          "status": "descriptive",
+          "category": "cyan_optical_feature",
+          "material_identity_confirmed": false
+        },
+        {
+          "name": "thin_reference",
+          "status": "descriptive_mean_only",
+          "role": "Not thin classification; source geometry and broad review selection retained.",
+          "layer_number": null
+        }
+      ],
+      "mean_color_reference_evidence": {
+        "compatible": null,
+        "status": "not_measured",
+        "score": 0.0,
+        "reason": "below_measurement_area_floor",
+        "model_id": "mote2-rg-direction-yamamoto2014-v1",
+        "layer_number": null,
+        "chemical_identity_confirmed": false
+      },
+      "coherence_evidence": {
+        "status": "descriptive_only",
+        "plateau_validated": false,
+        "interior_patch_spread_rgb": null,
+        "regional_mean_standard_error_rgb": null,
+        "raw_substrate_noise_rgb": [
+          0.022803492844104767,
+          0.013676486909389496,
+          0.01820436865091324
+        ],
+        "reason": "Spatial heterogeneity and uncertainty of a mean are distinct. No new arbitrary shape/uniformity threshold is applied."
+      }
+    },
+    {
+      "instance_label": 8,
+      "bbox_px": [
+        713,
+        409,
+        90,
+        108
+      ],
+      "centroid_px": [
+        751.1870503597122,
+        458.4058003597122
+      ],
+      "area_um2": 132.3558,
+      "usable_width_um": 6.272582445144653,
+      "polygon_px": [
+        [
+          791,
+          413
+        ],
+        [
+          788,
+          413
+        ],
+        [
+          785,
+          411
+        ],
+        [
+          779,
+          411
+        ],
+        [
+          777,
+          409
+        ],
+        [
+          773,
+          409
+        ],
+        [
+          771,
+          411
+        ],
+        [
+          763,
+          412
+        ],
+        [
+          762,
+          413
+        ],
+        [
+          757,
+          413
+        ],
+        [
+          755,
+          412
+        ],
+        [
+          753,
+          414
+        ],
+        [
+          743,
+          414
+        ],
+        [
+          741,
+          416
+        ],
+        [
+          739,
+          416
+        ],
+        [
+          738,
+          417
+        ],
+        [
+          738,
+          419
+        ],
+        [
+          739,
+          420
+        ],
+        [
+          739,
+          425
+        ],
+        [
+          737,
+          427
+        ],
+        [
+          737,
+          433
+        ],
+        [
+          736,
+          434
+        ],
+        [
+          736,
+          437
+        ],
+        [
+          737,
+          438
+        ],
+        [
+          736,
+          440
+        ],
+        [
+          734,
+          441
+        ],
+        [
+          732,
+          444
+        ],
+        [
+          732,
+          446
+        ],
+        [
+          731,
+          447
+        ],
+        [
+          731,
+          451
+        ],
+        [
+          730,
+          452
+        ],
+        [
+          730,
+          455
+        ],
+        [
+          728,
+          457
+        ],
+        [
+          729,
+          459
+        ],
+        [
+          729,
+          462
+        ],
+        [
+          725,
+          467
+        ],
+        [
+          725,
+          471
+        ],
+        [
+          727,
+          474
+        ],
+        [
+          727,
+          476
+        ],
+        [
+          723,
+          480
+        ],
+        [
+          722,
+          484
+        ],
+        [
+          717,
+          489
+        ],
+        [
+          715,
+          490
+        ],
+        [
+          715,
+          492
+        ],
+        [
+          713,
+          495
+        ],
+        [
+          713,
+          503
+        ],
+        [
+          717,
+          509
+        ],
+        [
+          719,
+          509
+        ],
+        [
+          721,
+          511
+        ],
+        [
+          724,
+          512
+        ],
+        [
+          727,
+          515
+        ],
+        [
+          732,
+          515
+        ],
+        [
+          733,
+          516
+        ],
+        [
+          750,
+          516
+        ],
+        [
+          752,
+          515
+        ],
+        [
+          752,
+          513
+        ],
+        [
+          753,
+          512
+        ],
+        [
+          754,
+          508
+        ],
+        [
+          752,
+          506
+        ],
+        [
+          752,
+          502
+        ],
+        [
+          751,
+          501
+        ],
+        [
+          751,
+          495
+        ],
+        [
+          754,
+          492
+        ],
+        [
+          756,
+          492
+        ],
+        [
+          760,
+          489
+        ],
+        [
+          759,
+          487
+        ],
+        [
+          759,
+          467
+        ],
+        [
+          760,
+          466
+        ],
+        [
+          759,
+          464
+        ],
+        [
+          759,
+          458
+        ],
+        [
+          762,
+          454
+        ],
+        [
+          765,
+          454
+        ],
+        [
+          765,
+          449
+        ],
+        [
+          767,
+          447
+        ],
+        [
+          767,
+          444
+        ],
+        [
+          770,
+          441
+        ],
+        [
+          772,
+          441
+        ],
+        [
+          775,
+          439
+        ],
+        [
+          783,
+          439
+        ],
+        [
+          784,
+          438
+        ],
+        [
+          789,
+          438
+        ],
+        [
+          790,
+          439
+        ],
+        [
+          792,
+          439
+        ],
+        [
+          793,
+          438
+        ],
+        [
+          795,
+          438
+        ],
+        [
+          798,
+          435
+        ],
+        [
+          798,
+          434
+        ],
+        [
+          802,
+          431
+        ],
+        [
+          802,
+          427
+        ],
+        [
+          798,
+          422
+        ],
+        [
+          798,
+          419
+        ]
+      ],
+      "holes_px": [],
+      "stage_xy_um": [
+        -9267.316964272033,
+        -1342.1918775562337
+      ],
+      "stage_polygon_um": [
+        [
+          -9260.09807061696,
+          -1349.7017196004415
+        ],
+        [
+          -9260.615537676349,
+          -1349.7252224140225
+        ],
+        [
+          -9261.117517859893,
+          -1350.0932515844452
+        ],
+        [
+          -9262.152451978673,
+          -1350.1402572116071
+        ],
+        [
+          -9262.48194314242,
+          -1350.5004521108362
+        ],
+        [
+          -9263.171899221607,
+          -1350.5317891956108
+        ],
+        [
+          -9263.532364137045,
+          -1350.2029313811563
+        ],
+        [
+          -9264.920019733341,
+          -1350.0933423722845
+        ],
+        [
+          -9265.10025219106,
+          -1349.9289134650573
+        ],
+        [
+          -9265.962697290042,
+          -1349.9680848210255
+        ],
+        [
+          -9266.299931891714,
+          -1350.1560165418337
+        ],
+        [
+          -9266.66039680715,
+          -1349.8271587273791
+        ],
+        [
+          -9268.385287005116,
+          -1349.9055014393157
+        ],
+        [
+          -9268.745751920555,
+          -1349.5766436248612
+        ],
+        [
+          -9269.090729960148,
+          -1349.5923121672483
+        ],
+        [
+          -9269.270962417868,
+          -1349.4278832600212
+        ],
+        [
+          -9269.286449293713,
+          -1349.0833569031793
+        ],
+        [
+          -9269.121703711839,
+          -1348.9032594535647
+        ],
+        [
+          -9269.160420901451,
+          -1348.0419435614604
+        ],
+        [
+          -9269.52088581689,
+          -1347.7130857470058
+        ],
+        [
+          -9269.567346444424,
+          -1346.6795066764805
+        ],
+        [
+          -9269.747578902145,
+          -1346.5150777692531
+        ],
+        [
+          -9269.770809215912,
+          -1345.9982882339905
+        ],
+        [
+          -9269.606063634039,
+          -1345.818190784376
+        ],
+        [
+          -9269.79403952968,
+          -1345.4814986987278
+        ],
+        [
+          -9270.146761007196,
+          -1345.3249040626943
+        ],
+        [
+          -9270.514969360556,
+          -1344.8237830698188
+        ],
+        [
+          -9270.530456236402,
+          -1344.479256712977
+        ],
+        [
+          -9270.71068869412,
+          -1344.3148278057497
+        ],
+        [
+          -9270.741662445811,
+          -1343.625775092066
+        ],
+        [
+          -9270.92189490353,
+          -1343.461346184839
+        ],
+        [
+          -9270.945125217298,
+          -1342.9445566495763
+        ],
+        [
+          -9271.305590132737,
+          -1342.6156988351217
+        ],
+        [
+          -9271.148587988784,
+          -1342.2633382070862
+        ],
+        [
+          -9271.171818302553,
+          -1341.7465486718236
+        ],
+        [
+          -9271.900491571352,
+          -1340.9165698644936
+        ],
+        [
+          -9271.931465323041,
+          -1340.2275171508102
+        ],
+        [
+          -9271.609717597217,
+          -1339.69505907316
+        ],
+        [
+          -9271.62520447306,
+          -1339.3505327163184
+        ],
+        [
+          -9272.346134303938,
+          -1338.6928170874094
+        ],
+        [
+          -9272.549597075425,
+          -1338.0115986449193
+        ],
+        [
+          -9273.450759364021,
+          -1337.1894541087831
+        ],
+        [
+          -9273.803480841536,
+          -1337.0328594727496
+        ],
+        [
+          -9273.818967717381,
+          -1336.6883331159077
+        ],
+        [
+          -9274.187176070744,
+          -1336.1872121230322
+        ],
+        [
+          -9274.249123574124,
+          -1334.8091066956652
+        ],
+        [
+          -9273.605628122472,
+          -1333.7441905403653
+        ],
+        [
+          -9273.260650082879,
+          -1333.7285219979779
+        ],
+        [
+          -9272.931158919131,
+          -1333.3683270987488
+        ],
+        [
+          -9272.421435297665,
+          -1333.172561106747
+        ],
+        [
+          -9271.927198552043,
+          -1332.6322687579034
+        ],
+        [
+          -9271.06475345306,
+          -1332.593097401935
+        ],
+        [
+          -9270.900007871185,
+          -1332.4129999523204
+        ],
+        [
+          -9267.967694534644,
+          -1332.2798173420285
+        ],
+        [
+          -9267.614973057129,
+          -1332.436411978062
+        ],
+        [
+          -9267.599486181283,
+          -1332.780938334904
+        ],
+        [
+          -9267.419253723565,
+          -1332.9453672421312
+        ],
+        [
+          -9267.215790952077,
+          -1333.6265856846212
+        ],
+        [
+          -9267.545282115825,
+          -1333.9867805838503
+        ],
+        [
+          -9267.514308364134,
+          -1334.675833297534
+        ],
+        [
+          -9267.679053946009,
+          -1334.8559307471485
+        ],
+        [
+          -9267.632593318473,
+          -1335.8895098176738
+        ],
+        [
+          -9267.091895945316,
+          -1336.3827965393555
+        ],
+        [
+          -9266.746917905723,
+          -1336.3671279969683
+        ],
+        [
+          -9266.033731512769,
+          -1336.8525804474564
+        ],
+        [
+          -9266.19073365672,
+          -1337.204941075492
+        ],
+        [
+          -9266.03586489827,
+          -1340.6502046439098
+        ],
+        [
+          -9265.855632440549,
+          -1340.814633551137
+        ],
+        [
+          -9266.0126345845,
+          -1341.1669941791724
+        ],
+        [
+          -9265.966173956966,
+          -1342.2005732496978
+        ],
+        [
+          -9265.417733145885,
+          -1342.8661231498004
+        ],
+        [
+          -9264.900266086495,
+          -1342.8426203362196
+        ],
+        [
+          -9264.861548896883,
+          -1343.703936228324
+        ],
+        [
+          -9264.501083981444,
+          -1344.0327940427785
+        ],
+        [
+          -9264.477853667677,
+          -1344.5495835780412
+        ],
+        [
+          -9263.93715629452,
+          -1345.042870299723
+        ],
+        [
+          -9263.592178254927,
+          -1345.0272017573357
+        ],
+        [
+          -9263.059224319692,
+          -1345.3482253005966
+        ],
+        [
+          -9261.67931216132,
+          -1345.2855511310474
+        ],
+        [
+          -9261.499079703599,
+          -1345.4499800382746
+        ],
+        [
+          -9260.636634604616,
+          -1345.4108086823064
+        ],
+        [
+          -9260.471889022743,
+          -1345.2307112326919
+        ],
+        [
+          -9260.12691098315,
+          -1345.2150426903047
+        ],
+        [
+          -9259.94667852543,
+          -1345.3794715975318
+        ],
+        [
+          -9259.601700485837,
+          -1345.3638030551447
+        ],
+        [
+          -9259.06100311268,
+          -1345.8570897768263
+        ],
+        [
+          -9259.053259674758,
+          -1346.0293529552473
+        ],
+        [
+          -9258.340073281803,
+          -1346.5148054057354
+        ],
+        [
+          -9258.309099530114,
+          -1347.203858119419
+        ],
+        [
+          -9258.960338419687,
+          -1348.096511096298
+        ],
+        [
+          -9258.937108105918,
+          -1348.6133006315606
+        ]
+      ],
+      "touches_border": false,
+      "solidity": 0.7297159380847082,
+      "mask_area_pixels": 4448,
+      "geometry_method": "accepted component-repair graph cut; disconnected pieces separate; holes retained",
+      "id": "r-c72dd118f7b792",
+      "source_image": "tiles/tile_000464.tiff",
+      "source_tile": "tile_000464",
+      "tile_key": "chip001/tile_000464",
+      "tile_id": "tile_000464",
+      "chip_id": "chip001",
+      "contrast_rgb": [
+        0.10219755771192399,
+        -0.11773562923456984,
+        -0.014653204509224365
+      ],
+      "source_contrast_rgb": [
+        0.09047023952007294,
+        -0.10335876792669296,
+        -0.026505889371037483
+      ],
+      "focus_status": {
+        "method": "bounded_measured_plane_extrapolation",
+        "predicted_z_um": 15300.60997042213,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": true,
+        "extrapolation_distance_um": 1220.9393373209768,
+        "extrapolation_limit_um": 3000,
+        "anchor_count": 4,
+        "anchor_points_um": [
+          [
+            -14188.322999999999,
+            -2923.554,
+            15376.483999999999
+          ],
+          [
+            -11661.995306914745,
+            -1801.7010079777526,
+            15326.561999999998
+          ],
+          [
+            -11601.930972420409,
+            -8126.870671359783,
+            15594.531
+          ],
+          [
+            -7937.339408140974,
+            -2869.172222753674,
+            15368.515
+          ]
+        ],
+        "sample_rms_um": 0.042879520607744255,
+        "max_anchor_residual_um": 0.06386943313736992,
+        "residual_standard_error_um": 0.08575904121548851,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.7561065590432006,
+        "conditional_prediction_sigma_um": 0.44112074424457937,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "status": "accepted_bounded_plane_replay",
+        "capture_z_target_tolerance_um": 0.235,
+        "capture_z_error_um": 0.015024291067675222,
+        "local_autofocus": false
+      },
+      "focus_limited": false,
+      "saturated_fraction": 0.0,
+      "proposal_stage": "feature_review",
+      "color_group": "cyan_optical_feature",
+      "label": "cyan optical feature",
+      "disposition": "candidate",
+      "selected_for_review": true,
+      "filter_reasons": [],
+      "evidence_warnings": [],
+      "local_contrast_measurement": {
+        "instance_label": 8,
+        "measurement_status": "measured",
+        "mask_modified": false,
+        "mask_area_pixels": 4448,
+        "mask_area_um2": 132.3558,
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "interior_pixels": 3636,
+        "interior_fallback_to_full_mask": false,
+        "interior_spatial_patches": 128,
+        "background_spatial_patches": 379,
+        "background_pixels": 9979,
+        "background_excludes_all_source_instances": true,
+        "reason": "exact_existing_mask_with_clear_local_substrate",
+        "contrast_rgb": [
+          0.10219755771192399,
+          -0.11773562923456984,
+          -0.014653204509224365
+        ],
+        "contrast_covariance": [
+          [
+            6.483185593325063e-05,
+            -2.1055986231722923e-05,
+            -3.6690741874603846e-05
+          ],
+          [
+            -2.105598623172292e-05,
+            4.989314341025115e-05,
+            6.7212916364611655e-06
+          ],
+          [
+            -3.6690741874603846e-05,
+            6.721291636461163e-06,
+            7.000918541202255e-05
+          ]
+        ],
+        "standard_error_rgb": [
+          0.008051823143440908,
+          0.0070635078686337675,
+          0.00836714918069605
+        ],
+        "global_interior_contrast_rgb": [
+          0.10214975717765286,
+          -0.11974154136808537,
+          -0.017286880274741682
+        ],
+        "local_substrate_contrast_rgb": [
+          -5.324170666022433e-05,
+          -0.0017946212691539484,
+          -0.0025956413026766052
+        ],
+        "interior_patch_covariance": [
+          [
+            0.0053666931112114884,
+            -0.0018145389335606638,
+            -0.003504345068391802
+          ],
+          [
+            -0.0018145389335606633,
+            0.004076881297323731,
+            0.000735683013668474
+          ],
+          [
+            -0.003504345068391802,
+            0.000735683013668474,
+            0.0070923948324941736
+          ]
+        ],
+        "background_patch_covariance": [
+          [
+            0.0005346457961059513,
+            -4.092762588545453e-05,
+            -4.2495500256749e-05
+          ],
+          [
+            -4.092762588545453e-05,
+            5.8539509867964096e-05,
+            1.3952425824111943e-05
+          ],
+          [
+            -4.249550025674901e-05,
+            1.3952425824111943e-05,
+            6.424139284243825e-05
+          ]
+        ],
+        "background_systematic_covariance": [
+          [
+            1.8408769607955327e-05,
+            -4.509176451518248e-06,
+            -5.398104055738815e-06
+          ],
+          [
+            -4.509176451518248e-06,
+            1.0329318474326977e-05,
+            3.122859546181013e-08
+          ],
+          [
+            -5.398104055738815e-06,
+            3.122859546181013e-08,
+            5.740570594154784e-06
+          ]
+        ],
+        "background_sector_count": 8,
+        "effective_interior_patches": 110.38605280296579,
+        "effective_background_patches": 311.63002938534845,
+        "interior_patch_spread_rgb": [
+          0.07325771707616535,
+          0.06385046043157191,
+          0.08421635727395346
+        ],
+        "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+        "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated.",
+        "background_sample_policy": "recorded SUBSTRATE support within measured chip domain, excluding all source instances and initial foreground",
+        "observed_substrate_label_sha256": "400c5a1ad74941748617167143e540af44487b13cbec4b15a449c607db2b52c0",
+        "measured_domain_enclosure_sha256": "1a5b2084ef76ae7762fa37c7d95d3485198bb2a481d57b5a3f4296250fcbfdab"
+      },
+      "thin_reference_evidence": {
+        "compatible": null,
+        "status": "not_classified",
+        "mean_color_compatible": false,
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "reason": "Mean color is descriptive; no coherent thin terrace or material identity has been established."
+      },
+      "local_contrast_signal_z": 18.694642356652555,
+      "review_role": "faint_unvalidated",
+      "priority": "review_required",
+      "quality_score": 0.3738928471330511,
+      "useful_area_um2": 132.3558,
+      "layer_number": null,
+      "chemical_identity_confirmed": false,
+      "sieve_results": [
+        {
+          "name": "feature_extraction",
+          "status": "pass",
+          "reason": "Connected foreground refined with accepted component-repair geometry."
+        },
+        {
+          "name": "useful_size",
+          "status": "pass",
+          "minimum_area_um2": 100,
+          "minimum_width_um": 5
+        },
+        {
+          "name": "local_substrate_contrast",
+          "status": "pass",
+          "signal_z": 18.694642356652555,
+          "minimum_signal_z": 3.0,
+          "reason": "exact_existing_mask_with_clear_local_substrate"
+        },
+        {
+          "name": "optical_color",
+          "status": "descriptive",
+          "category": "cyan_optical_feature",
+          "material_identity_confirmed": false
+        },
+        {
+          "name": "thin_reference",
+          "status": "descriptive_mean_only",
+          "role": "Not thin classification; source geometry and broad review selection retained.",
+          "layer_number": null
+        }
+      ],
+      "mean_color_reference_evidence": {
+        "status": "unresolved_color_plateau",
+        "compatible": false,
+        "score": 0.0,
+        "red_z": 12.69247422494309,
+        "green_minus_red_z": -17.561699564838204,
+        "green_minus_red_contrast": -0.21993318694649383,
+        "within_search_interval": false,
+        "reason": "Color direction is unresolved or outside the first-few-layer reference direction.",
+        "reference": "https://doi.org/10.1021/nn5007607.s001",
+        "model_id": "mote2-rg-direction-yamamoto2014-v1",
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "uncertainty_scope": "Regional spatial/color uncertainty only; optical transfer and selection bias are uncalibrated."
+      },
+      "coherence_evidence": {
+        "status": "descriptive_only",
+        "plateau_validated": false,
+        "interior_patch_spread_rgb": [
+          0.07325771707616535,
+          0.06385046043157191,
+          0.08421635727395346
+        ],
+        "regional_mean_standard_error_rgb": [
+          0.008051823143440908,
+          0.0070635078686337675,
+          0.00836714918069605
+        ],
+        "raw_substrate_noise_rgb": [
+          0.022803492844104767,
+          0.013676486909389496,
+          0.01820436865091324
+        ],
+        "reason": "Spatial heterogeneity and uncertainty of a mean are distinct. No new arbitrary shape/uniformity threshold is applied."
+      }
+    },
+    {
+      "instance_label": 9,
+      "bbox_px": [
+        1596,
+        509,
+        83,
+        49
+      ],
+      "centroid_px": [
+        1635.3096114519428,
+        531.7075664621677
+      ],
+      "area_um2": 72.75403124999998,
+      "usable_width_um": 5.864999999999999,
+      "polygon_px": [
+        [
+          1596,
+          526
+        ],
+        [
+          1596,
+          531
+        ],
+        [
+          1597,
+          532
+        ],
+        [
+          1596,
+          540
+        ],
+        [
+          1597,
+          541
+        ],
+        [
+          1604,
+          541
+        ],
+        [
+          1607,
+          543
+        ],
+        [
+          1609,
+          543
+        ],
+        [
+          1613,
+          541
+        ],
+        [
+          1630,
+          543
+        ],
+        [
+          1632,
+          545
+        ],
+        [
+          1635,
+          545
+        ],
+        [
+          1637,
+          547
+        ],
+        [
+          1642,
+          547
+        ],
+        [
+          1645,
+          549
+        ],
+        [
+          1648,
+          549
+        ],
+        [
+          1656,
+          557
+        ],
+        [
+          1658,
+          557
+        ],
+        [
+          1661,
+          555
+        ],
+        [
+          1665,
+          555
+        ],
+        [
+          1666,
+          556
+        ],
+        [
+          1677,
+          545
+        ],
+        [
+          1678,
+          545
+        ],
+        [
+          1678,
+          542
+        ],
+        [
+          1672,
+          536
+        ],
+        [
+          1672,
+          534
+        ],
+        [
+          1668,
+          530
+        ],
+        [
+          1668,
+          528
+        ],
+        [
+          1664,
+          526
+        ],
+        [
+          1661,
+          523
+        ],
+        [
+          1654,
+          523
+        ],
+        [
+          1652,
+          522
+        ],
+        [
+          1646,
+          515
+        ],
+        [
+          1644,
+          514
+        ],
+        [
+          1636,
+          514
+        ],
+        [
+          1633,
+          512
+        ],
+        [
+          1630,
+          512
+        ],
+        [
+          1627,
+          509
+        ],
+        [
+          1613,
+          509
+        ],
+        [
+          1611,
+          511
+        ],
+        [
+          1608,
+          511
+        ],
+        [
+          1604,
+          513
+        ],
+        [
+          1604,
+          514
+        ],
+        [
+          1600,
+          517
+        ],
+        [
+          1600,
+          521
+        ]
+      ],
+      "holes_px": [],
+      "stage_xy_um": [
+        -9115.38313800464,
+        -1322.6382264315434
+      ],
+      "stage_polygon_um": [
+        [
+          -9122.11941816598,
+          -1323.9293921279962
+        ],
+        [
+          -9122.158135355592,
+          -1323.0680762358918
+        ],
+        [
+          -9121.993389773717,
+          -1322.8879787862772
+        ],
+        [
+          -9122.227826296896,
+          -1321.5177076301036
+        ],
+        [
+          -9122.063080715021,
+          -1321.3376101804893
+        ],
+        [
+          -9120.855657576445,
+          -1321.2827702821337
+        ],
+        [
+          -9120.3536773929,
+          -1320.914741111711
+        ],
+        [
+          -9120.008699353308,
+          -1320.8990725693236
+        ],
+        [
+          -9119.303256398276,
+          -1321.212261841391
+        ],
+        [
+          -9116.38642993758,
+          -1320.7345528742571
+        ],
+        [
+          -9116.056938773832,
+          -1320.374357975028
+        ],
+        [
+          -9115.539471714443,
+          -1320.350855161447
+        ],
+        [
+          -9115.209980550695,
+          -1319.990660262218
+        ],
+        [
+          -9114.347535451712,
+          -1319.9514889062498
+        ],
+        [
+          -9113.845555268166,
+          -1319.583459735827
+        ],
+        [
+          -9113.328088208777,
+          -1319.559956922246
+        ],
+        [
+          -9112.010123553786,
+          -1318.1191773253297
+        ],
+        [
+          -9111.665145514193,
+          -1318.1035087829425
+        ],
+        [
+          -9111.132191578958,
+          -1318.4245323262032
+        ],
+        [
+          -9110.442235499771,
+          -1318.3931952414287
+        ],
+        [
+          -9110.277489917897,
+          -1318.213097791814
+        ],
+        [
+          -9108.294932882987,
+          -1320.021815771314
+        ],
+        [
+          -9108.12244386319,
+          -1320.0139815001203
+        ],
+        [
+          -9108.099213549422,
+          -1320.5307710353832
+        ],
+        [
+          -9109.087687040666,
+          -1321.6113557330702
+        ],
+        [
+          -9109.072200164821,
+          -1321.9558820899122
+        ],
+        [
+          -9109.731182492316,
+          -1322.6762718883704
+        ],
+        [
+          -9109.715695616473,
+          -1323.020798245212
+        ],
+        [
+          -9110.390164819813,
+          -1323.3966616868283
+        ],
+        [
+          -9110.884401565434,
+          -1323.936954035672
+        ],
+        [
+          -9112.09182470401,
+          -1323.9917939340276
+        ],
+        [
+          -9112.429059305681,
+          -1324.1797256548357
+        ],
+        [
+          -9113.409789359002,
+          -1325.432573530944
+        ],
+        [
+          -9113.747023960674,
+          -1325.620505251752
+        ],
+        [
+          -9115.126936119046,
+          -1325.6831794213012
+        ],
+        [
+          -9115.62891630259,
+          -1326.051208591724
+        ],
+        [
+          -9116.14638336198,
+          -1326.074711405305
+        ],
+        [
+          -9116.640620107602,
+          -1326.6150037541486
+        ],
+        [
+          -9119.055466384754,
+          -1326.7246835508595
+        ],
+        [
+          -9119.415931300193,
+          -1326.395825736405
+        ],
+        [
+          -9119.933398359582,
+          -1326.419328549986
+        ],
+        [
+          -9120.638841314612,
+          -1326.1061392779188
+        ],
+        [
+          -9120.646584752536,
+          -1325.9338760994979
+        ],
+        [
+          -9121.35977114549,
+          -1325.4484236490098
+        ],
+        [
+          -9121.39074489718,
+          -1324.7593709353262
+        ]
+      ],
+      "touches_border": false,
+      "solidity": 0.8710814320163235,
+      "mask_area_pixels": 2445,
+      "geometry_method": "accepted component-repair graph cut; disconnected pieces separate; holes retained",
+      "id": "r-3099880069223b",
+      "source_image": "tiles/tile_000464.tiff",
+      "source_tile": "tile_000464",
+      "tile_key": "chip001/tile_000464",
+      "tile_id": "tile_000464",
+      "chip_id": "chip001",
+      "contrast_rgb": [
+        0.2097374567011095,
+        -0.24523124643873706,
+        -0.11834099233381358
+      ],
+      "source_contrast_rgb": [
+        0.19084814190864563,
+        -0.20500114560127258,
+        -0.10615764558315277
+      ],
+      "focus_status": {
+        "method": "bounded_measured_plane_extrapolation",
+        "predicted_z_um": 15300.60997042213,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": true,
+        "extrapolation_distance_um": 1220.9393373209768,
+        "extrapolation_limit_um": 3000,
+        "anchor_count": 4,
+        "anchor_points_um": [
+          [
+            -14188.322999999999,
+            -2923.554,
+            15376.483999999999
+          ],
+          [
+            -11661.995306914745,
+            -1801.7010079777526,
+            15326.561999999998
+          ],
+          [
+            -11601.930972420409,
+            -8126.870671359783,
+            15594.531
+          ],
+          [
+            -7937.339408140974,
+            -2869.172222753674,
+            15368.515
+          ]
+        ],
+        "sample_rms_um": 0.042879520607744255,
+        "max_anchor_residual_um": 0.06386943313736992,
+        "residual_standard_error_um": 0.08575904121548851,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.7561065590432006,
+        "conditional_prediction_sigma_um": 0.44112074424457937,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "status": "accepted_bounded_plane_replay",
+        "capture_z_target_tolerance_um": 0.235,
+        "capture_z_error_um": 0.015024291067675222,
+        "local_autofocus": false
+      },
+      "focus_limited": false,
+      "saturated_fraction": 0.0,
+      "proposal_stage": "below_useful_size",
+      "color_group": "cyan_optical_feature",
+      "label": "cyan optical feature",
+      "disposition": "rejected",
+      "selected_for_review": false,
+      "filter_reasons": [
+        "below_useful_area"
+      ],
+      "evidence_warnings": [],
+      "local_contrast_measurement": {
+        "instance_label": 9,
+        "measurement_status": "measured",
+        "mask_modified": false,
+        "mask_area_pixels": 2445,
+        "mask_area_um2": 72.75403125,
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "interior_pixels": 1922,
+        "interior_fallback_to_full_mask": false,
+        "interior_spatial_patches": 70,
+        "background_spatial_patches": 249,
+        "background_pixels": 6140,
+        "background_excludes_all_source_instances": true,
+        "reason": "exact_existing_mask_with_clear_local_substrate",
+        "contrast_rgb": [
+          0.2097374567011095,
+          -0.24523124643873706,
+          -0.11834099233381358
+        ],
+        "contrast_covariance": [
+          [
+            9.779105583140432e-05,
+            -8.14986898625762e-05,
+            -1.9486175884518744e-05
+          ],
+          [
+            -8.149868986257621e-05,
+            0.00016082171776916283,
+            2.4980495744263462e-05
+          ],
+          [
+            -1.9486175884518748e-05,
+            2.4980495744263462e-05,
+            6.043901087731268e-05
+          ]
+        ],
+        "standard_error_rgb": [
+          0.009888936031313193,
+          0.012681550290448042,
+          0.007774253075203603
+        ],
+        "global_interior_contrast_rgb": [
+          0.2065638036846424,
+          -0.24248057780312476,
+          -0.11762637527809507
+        ],
+        "local_substrate_contrast_rgb": [
+          -0.004015947666226162,
+          0.002208962105214596,
+          0.0006389974619701712
+        ],
+        "interior_patch_covariance": [
+          [
+            0.004698438648106206,
+            -0.004182466552212215,
+            -0.0011992548297845044
+          ],
+          [
+            -0.004182466552212215,
+            0.008374524214114006,
+            0.0013664945803065016
+          ],
+          [
+            -0.0011992548297845042,
+            0.0013664945803065016,
+            0.0033590996437703213
+          ]
+        ],
+        "background_patch_covariance": [
+          [
+            0.0005657369151721602,
+            -1.3181848473658538e-05,
+            -1.2633592804181325e-06
+          ],
+          [
+            -1.3181848473658545e-05,
+            5.878918492837217e-05,
+            1.3139826362651319e-05
+          ],
+          [
+            -1.2633592804181341e-06,
+            1.313982636265132e-05,
+            5.74919187217213e-05
+          ]
+        ],
+        "background_systematic_covariance": [
+          [
+            2.689875097911754e-05,
+            -1.0536451149399211e-05,
+            9.87107413602619e-07
+          ],
+          [
+            -1.0536451149399211e-05,
+            1.1006117462483819e-05,
+            1.1136820764267458e-06
+          ],
+          [
+            9.87107413602619e-07,
+            1.1136820764267458e-06,
+            2.24388126947213e-06
+          ]
+        ],
+        "background_sector_count": 8,
+        "effective_interior_patches": 58.733210379038425,
+        "effective_background_patches": 198.14154919954169,
+        "interior_patch_spread_rgb": [
+          0.06854515772909277,
+          0.09151242655570885,
+          0.05795774015410126
+        ],
+        "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+        "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated.",
+        "background_sample_policy": "recorded SUBSTRATE support within measured chip domain, excluding all source instances and initial foreground",
+        "observed_substrate_label_sha256": "400c5a1ad74941748617167143e540af44487b13cbec4b15a449c607db2b52c0",
+        "measured_domain_enclosure_sha256": "1a5b2084ef76ae7762fa37c7d95d3485198bb2a481d57b5a3f4296250fcbfdab"
+      },
+      "thin_reference_evidence": {
+        "compatible": null,
+        "status": "not_classified",
+        "mean_color_compatible": false,
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "reason": "Mean color is descriptive; no coherent thin terrace or material identity has been established."
+      },
+      "local_contrast_signal_z": 24.30963766396599,
+      "review_role": "faint_unvalidated",
+      "priority": "rejected",
+      "quality_score": 0.4861927532793198,
+      "useful_area_um2": 0.0,
+      "layer_number": null,
+      "chemical_identity_confirmed": false,
+      "sieve_results": [
+        {
+          "name": "feature_extraction",
+          "status": "pass",
+          "reason": "Connected foreground refined with accepted component-repair geometry."
+        },
+        {
+          "name": "useful_size",
+          "status": "reject",
+          "minimum_area_um2": 100,
+          "minimum_width_um": 5
+        },
+        {
+          "name": "local_substrate_contrast",
+          "status": "pass",
+          "signal_z": 24.30963766396599,
+          "minimum_signal_z": 3.0,
+          "reason": "exact_existing_mask_with_clear_local_substrate"
+        },
+        {
+          "name": "optical_color",
+          "status": "descriptive",
+          "category": "cyan_optical_feature",
+          "material_identity_confirmed": false
+        },
+        {
+          "name": "thin_reference",
+          "status": "descriptive_mean_only",
+          "role": "Not thin classification; source geometry and broad review selection retained.",
+          "layer_number": null
+        }
+      ],
+      "mean_color_reference_evidence": {
+        "status": "unresolved_color_plateau",
+        "compatible": false,
+        "score": 0.0,
+        "red_z": 21.209304624580284,
+        "green_minus_red_z": -22.157767060588757,
+        "green_minus_red_contrast": -0.45496870313984655,
+        "within_search_interval": false,
+        "reason": "Color direction is unresolved or outside the first-few-layer reference direction.",
+        "reference": "https://doi.org/10.1021/nn5007607.s001",
+        "model_id": "mote2-rg-direction-yamamoto2014-v1",
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "uncertainty_scope": "Regional spatial/color uncertainty only; optical transfer and selection bias are uncalibrated."
+      },
+      "coherence_evidence": {
+        "status": "descriptive_only",
+        "plateau_validated": false,
+        "interior_patch_spread_rgb": [
+          0.06854515772909277,
+          0.09151242655570885,
+          0.05795774015410126
+        ],
+        "regional_mean_standard_error_rgb": [
+          0.009888936031313193,
+          0.012681550290448042,
+          0.007774253075203603
+        ],
+        "raw_substrate_noise_rgb": [
+          0.022803492844104767,
+          0.013676486909389496,
+          0.01820436865091324
+        ],
+        "reason": "Spatial heterogeneity and uncertainty of a mean are distinct. No new arbitrary shape/uniformity threshold is applied."
+      }
+    },
+    {
+      "instance_label": 10,
+      "bbox_px": [
+        2130,
+        530,
+        35,
+        37
+      ],
+      "centroid_px": [
+        2147.269675925926,
+        548.1041666666666
+      ],
+      "area_um2": 25.709399999999995,
+      "usable_width_um": 4.272652015686035,
+      "polygon_px": [
+        [
+          2159,
+          531
+        ],
+        [
+          2157,
+          531
+        ],
+        [
+          2156,
+          530
+        ],
+        [
+          2152,
+          530
+        ],
+        [
+          2149,
+          533
+        ],
+        [
+          2146,
+          533
+        ],
+        [
+          2144,
+          536
+        ],
+        [
+          2142,
+          537
+        ],
+        [
+          2138,
+          537
+        ],
+        [
+          2137,
+          538
+        ],
+        [
+          2136,
+          542
+        ],
+        [
+          2134,
+          545
+        ],
+        [
+          2134,
+          548
+        ],
+        [
+          2132,
+          550
+        ],
+        [
+          2132,
+          554
+        ],
+        [
+          2130,
+          556
+        ],
+        [
+          2130,
+          560
+        ],
+        [
+          2134,
+          565
+        ],
+        [
+          2136,
+          566
+        ],
+        [
+          2141,
+          566
+        ],
+        [
+          2144,
+          563
+        ],
+        [
+          2149,
+          563
+        ],
+        [
+          2154,
+          558
+        ],
+        [
+          2156,
+          558
+        ],
+        [
+          2156,
+          555
+        ],
+        [
+          2158,
+          553
+        ],
+        [
+          2161,
+          553
+        ],
+        [
+          2163,
+          551
+        ],
+        [
+          2164,
+          552
+        ],
+        [
+          2163,
+          551
+        ],
+        [
+          2163,
+          548
+        ],
+        [
+          2164,
+          547
+        ],
+        [
+          2163,
+          536
+        ]
+      ],
+      "holes_px": [],
+      "stage_xy_um": [
+        -9027.202614364362,
+        -1315.8028619796148
+      ],
+      "stage_polygon_um": [
+        [
+          -9025.046817210128,
+          -1318.6573815538698
+        ],
+        [
+          -9025.391795249721,
+          -1318.6730500962572
+        ],
+        [
+          -9025.556540831594,
+          -1318.8531475458717
+        ],
+        [
+          -9026.24649691078,
+          -1318.8844846306463
+        ],
+        [
+          -9026.78719428394,
+          -1318.3911979089644
+        ],
+        [
+          -9027.304661343329,
+          -1318.4147007225454
+        ],
+        [
+          -9027.67286969669,
+          -1317.9135797296701
+        ],
+        [
+          -9028.025591174204,
+          -1317.7569850936363
+        ],
+        [
+          -9028.71554725339,
+          -1317.788322178411
+        ],
+        [
+          -9028.89577971111,
+          -1317.6238932711838
+        ],
+        [
+          -9029.099242482598,
+          -1316.9426748286937
+        ],
+        [
+          -9029.467450835959,
+          -1316.4415538358185
+        ],
+        [
+          -9029.490681149726,
+          -1315.9247643005558
+        ],
+        [
+          -9029.851146065164,
+          -1315.5959064861013
+        ],
+        [
+          -9029.882119816855,
+          -1314.9068537724177
+        ],
+        [
+          -9030.242584732292,
+          -1314.5779959579631
+        ],
+        [
+          -9030.273558483983,
+          -1313.8889432442795
+        ],
+        [
+          -9029.62231959441,
+          -1312.9962902674004
+        ],
+        [
+          -9029.28508499274,
+          -1312.8083585465922
+        ],
+        [
+          -9028.422639893757,
+          -1312.769187190624
+        ],
+        [
+          -9027.881942520598,
+          -1313.2624739123057
+        ],
+        [
+          -9027.019497421616,
+          -1313.2233025563376
+        ],
+        [
+          -9026.11833513302,
+          -1314.0454470924738
+        ],
+        [
+          -9025.773357093427,
+          -1314.0297785500866
+        ],
+        [
+          -9025.75012677966,
+          -1314.5465680853492
+        ],
+        [
+          -9025.389661864221,
+          -1314.8754258998038
+        ],
+        [
+          -9024.872194804831,
+          -1314.8519230862228
+        ],
+        [
+          -9024.511729889393,
+          -1315.1807809006773
+        ],
+        [
+          -9024.34698430752,
+          -1315.0006834510627
+        ],
+        [
+          -9024.511729889393,
+          -1315.1807809006773
+        ],
+        [
+          -9024.488499575626,
+          -1315.69757043594
+        ],
+        [
+          -9024.308267117907,
+          -1315.8619993431673
+        ],
+        [
+          -9024.395578320555,
+          -1317.7647285769908
+        ]
+      ],
+      "touches_border": false,
+      "solidity": 0.9263278126784694,
+      "mask_area_pixels": 864,
+      "geometry_method": "accepted component-repair graph cut; disconnected pieces separate; holes retained",
+      "id": "r-0864a5a39cde17",
+      "source_image": "tiles/tile_000464.tiff",
+      "source_tile": "tile_000464",
+      "tile_key": "chip001/tile_000464",
+      "tile_id": "tile_000464",
+      "chip_id": "chip001",
+      "contrast_rgb": [
+        0.23358220640767793,
+        -0.16736234412967455,
+        -0.10459122362357925
+      ],
+      "source_contrast_rgb": [
+        0.2014274001121521,
+        -0.14854520559310913,
+        -0.09788715839385986
+      ],
+      "focus_status": {
+        "method": "bounded_measured_plane_extrapolation",
+        "predicted_z_um": 15300.60997042213,
+        "focus_verified": false,
+        "local_focus_verified": false,
+        "plane_prediction_accepted": true,
+        "extrapolated": true,
+        "extrapolation_distance_um": 1220.9393373209768,
+        "extrapolation_limit_um": 3000,
+        "anchor_count": 4,
+        "anchor_points_um": [
+          [
+            -14188.322999999999,
+            -2923.554,
+            15376.483999999999
+          ],
+          [
+            -11661.995306914745,
+            -1801.7010079777526,
+            15326.561999999998
+          ],
+          [
+            -11601.930972420409,
+            -8126.870671359783,
+            15594.531
+          ],
+          [
+            -7937.339408140974,
+            -2869.172222753674,
+            15368.515
+          ]
+        ],
+        "sample_rms_um": 0.042879520607744255,
+        "max_anchor_residual_um": 0.06386943313736992,
+        "residual_standard_error_um": 0.08575904121548851,
+        "measurement_floor_um": 0.5,
+        "prediction_leverage": 0.7561065590432006,
+        "conditional_prediction_sigma_um": 0.44112074424457937,
+        "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+        "thin_flake_focus_validated": false,
+        "status": "accepted_bounded_plane_replay",
+        "capture_z_target_tolerance_um": 0.235,
+        "capture_z_error_um": 0.015024291067675222,
+        "local_autofocus": false
+      },
+      "focus_limited": false,
+      "saturated_fraction": 0.0,
+      "proposal_stage": "below_useful_size",
+      "color_group": "cyan_optical_feature",
+      "label": "cyan optical feature",
+      "disposition": "rejected",
+      "selected_for_review": false,
+      "filter_reasons": [
+        "below_useful_area",
+        "below_useful_width"
+      ],
+      "evidence_warnings": [],
+      "local_contrast_measurement": {
+        "instance_label": 10,
+        "measurement_status": "measured",
+        "mask_modified": false,
+        "mask_area_pixels": 864,
+        "mask_area_um2": 25.709399999999995,
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "interior_pixels": 591,
+        "interior_fallback_to_full_mask": false,
+        "interior_spatial_patches": 28,
+        "background_spatial_patches": 201,
+        "background_pixels": 5405,
+        "background_excludes_all_source_instances": true,
+        "reason": "exact_existing_mask_with_clear_local_substrate",
+        "contrast_rgb": [
+          0.23358220640767793,
+          -0.16736234412967455,
+          -0.10459122362357925
+        ],
+        "contrast_covariance": [
+          [
+            0.0006114403526747946,
+            -0.00011115609607202493,
+            6.743020400948985e-05
+          ],
+          [
+            -0.00011115609607202492,
+            6.459010171915277e-05,
+            4.293833625051704e-05
+          ],
+          [
+            6.743020400948984e-05,
+            4.293833625051704e-05,
+            0.00013306604441045311
+          ]
+        ],
+        "standard_error_rgb": [
+          0.02472731996547128,
+          0.008036796732476988,
+          0.011535425627624371
+        ],
+        "global_interior_contrast_rgb": [
+          0.23074494870797163,
+          -0.1656639895160791,
+          -0.10240516884008126
+        ],
+        "local_substrate_contrast_rgb": [
+          -0.003701972636109632,
+          0.0014548649972615142,
+          0.0019790622419818783
+        ],
+        "interior_patch_covariance": [
+          [
+            0.01004685223708807,
+            -0.00191034096412853,
+            0.0012001751106317214
+          ],
+          [
+            -0.00191034096412853,
+            0.0010177087559516212,
+            0.0006610184335303728
+          ],
+          [
+            0.0012001751106317214,
+            0.0006610184335303728,
+            0.0023304100154238855
+          ]
+        ],
+        "background_patch_covariance": [
+          [
+            0.0005206699122678286,
+            -7.087419976489499e-06,
+            -5.4748702716487605e-06
+          ],
+          [
+            -7.0874199764894975e-06,
+            4.98728127172333e-05,
+            5.358380854508585e-06
+          ],
+          [
+            -5.4748702716487605e-06,
+            5.358380854508585e-06,
+            6.013790443317752e-05
+          ]
+        ],
+        "background_systematic_covariance": [
+          [
+            0.00016021822485506982,
+            -1.3956661685659111e-05,
+            6.4398763629558855e-06
+          ],
+          [
+            -1.3956661685659111e-05,
+            8.305172926473138e-06,
+            6.618967228388559e-06
+          ],
+          [
+            6.4398763629558855e-06,
+            6.618967228388559e-06,
+            9.40615999889768e-06
+          ]
+        ],
+        "background_sector_count": 8,
+        "effective_interior_patches": 19.319707948448475,
+        "effective_background_patches": 166.8562412542479,
+        "interior_patch_spread_rgb": [
+          0.10023398743484203,
+          0.031901547861375334,
+          0.04827432045532993
+        ],
+        "measurement_method": "Existing exact mask; spatial patch means; foreground-excluded local substrate and sector uncertainty",
+        "uncertainty_note": "Includes measured interior heterogeneity and local substrate variation; spatial correlation and optical transfer remain uncalibrated.",
+        "background_sample_policy": "recorded SUBSTRATE support within measured chip domain, excluding all source instances and initial foreground",
+        "observed_substrate_label_sha256": "400c5a1ad74941748617167143e540af44487b13cbec4b15a449c607db2b52c0",
+        "measured_domain_enclosure_sha256": "1a5b2084ef76ae7762fa37c7d95d3485198bb2a481d57b5a3f4296250fcbfdab"
+      },
+      "thin_reference_evidence": {
+        "compatible": null,
+        "status": "not_classified",
+        "mean_color_compatible": false,
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "reason": "Mean color is descriptive; no coherent thin terrace or material identity has been established."
+      },
+      "local_contrast_signal_z": 21.25239960956587,
+      "review_role": "faint_unvalidated",
+      "priority": "rejected",
+      "quality_score": 0.4250479921913174,
+      "useful_area_um2": 0.0,
+      "layer_number": null,
+      "chemical_identity_confirmed": false,
+      "sieve_results": [
+        {
+          "name": "feature_extraction",
+          "status": "pass",
+          "reason": "Connected foreground refined with accepted component-repair geometry."
+        },
+        {
+          "name": "useful_size",
+          "status": "reject",
+          "minimum_area_um2": 100,
+          "minimum_width_um": 5
+        },
+        {
+          "name": "local_substrate_contrast",
+          "status": "pass",
+          "signal_z": 21.25239960956587,
+          "minimum_signal_z": 3.0,
+          "reason": "exact_existing_mask_with_clear_local_substrate"
+        },
+        {
+          "name": "optical_color",
+          "status": "descriptive",
+          "category": "cyan_optical_feature",
+          "material_identity_confirmed": false
+        },
+        {
+          "name": "thin_reference",
+          "status": "descriptive_mean_only",
+          "role": "Not thin classification; source geometry and broad review selection retained.",
+          "layer_number": null
+        }
+      ],
+      "mean_color_reference_evidence": {
+        "status": "unresolved_color_plateau",
+        "compatible": false,
+        "score": 0.0,
+        "red_z": 9.446321183769504,
+        "green_minus_red_z": -13.377141055291343,
+        "green_minus_red_contrast": -0.40094455053735245,
+        "within_search_interval": false,
+        "reason": "Color direction is unresolved or outside the first-few-layer reference direction.",
+        "reference": "https://doi.org/10.1021/nn5007607.s001",
+        "model_id": "mote2-rg-direction-yamamoto2014-v1",
+        "layer_number": null,
+        "chemical_identity_confirmed": false,
+        "uncertainty_scope": "Regional spatial/color uncertainty only; optical transfer and selection bias are uncalibrated."
+      },
+      "coherence_evidence": {
+        "status": "descriptive_only",
+        "plateau_validated": false,
+        "interior_patch_spread_rgb": [
+          0.10023398743484203,
+          0.031901547861375334,
+          0.04827432045532993
+        ],
+        "regional_mean_standard_error_rgb": [
+          0.02472731996547128,
+          0.008036796732476988,
+          0.011535425627624371
+        ],
+        "raw_substrate_noise_rgb": [
+          0.022803492844104767,
+          0.013676486909389496,
+          0.01820436865091324
+        ],
+        "reason": "Spatial heterogeneity and uncertainty of a mean are distinct. No new arbitrary shape/uniformity threshold is applied."
+      }
+    }
+  ],
+  "report": {
+    "normalization": {
+      "method": "experimental_observed_enclosure_and_recorded_substrate_normalization",
+      "label_sha256": "400c5a1ad74941748617167143e540af44487b13cbec4b15a449c607db2b52c0",
+      "enclosure_sha256": "1a5b2084ef76ae7762fa37c7d95d3485198bb2a481d57b5a3f4296250fcbfdab",
+      "source_position": {
+        "x": -9188.875,
+        "y": -1240.3949999999998,
+        "z": 15300.625
+      },
+      "source_optics": {
+        "sample_id": "MoTe2-2026-10-08",
+        "material": "MoTe2",
+        "substrate": "SiO2/Si",
+        "oxide_nm": 285,
+        "oxide_process": "wet",
+        "objective": "EC Epiplan 20x/0.4 HD M27",
+        "camera": "Axiocam 305 color",
+        "exposure_ms": 200.0,
+        "illumination": "reflected brightfield",
+        "illumination_percent": 93.44422700587084,
+        "white_balance": "0.25007564,1,2.61244442",
+        "white_level": 4095,
+        "color_profile_kind": "fixed acquisition channel balance; not a neutral-reference color calibration",
+        "coordinate_frame": "XY re-zeroed by operator; new measured positions 2026-10-08"
+      },
+      "edge_margin_um": 12,
+      "background_support_clearance_um": 1.0,
+      "domain_fraction": 0.2910907338041336,
+      "background_support_fraction": 0.25185393400373945,
+      "background_samples": 8963,
+      "retained_background_samples": 8376,
+      "model_selection": "four spatial block groups, simplest within one standard error of lowest validation error",
+      "models": [
+        {
+          "degree": 0,
+          "columns": 1,
+          "fold_scores": [
+            0.09386284805123023,
+            0.06660954464584977,
+            0.06946142775541059,
+            0.062085868545057904
+          ],
+          "mean": 0.07300492224938712,
+          "standard_error": 0.0071165066949656275
+        },
+        {
+          "degree": 1,
+          "columns": 3,
+          "fold_scores": [
+            0.09703308274188889,
+            0.07070610713654564,
+            0.06873981471093718,
+            0.07982032734200428
+          ],
+          "mean": 0.079074832982844,
+          "standard_error": 0.00645434395852208
+        },
+        {
+          "degree": 2,
+          "columns": 6,
+          "fold_scores": [
+            0.060303297524212894,
+            0.061202389420209384,
+            0.05641315010431747,
+            0.05771102176446169
+          ],
+          "mean": 0.058907464703300355,
+          "standard_error": 0.0011131078768030793
+        }
+      ],
+      "chosen_degree": 2,
+      "coefficients": [
+        [
+          1507.8717242488,
+          1825.3630817016765,
+          1420.0633976944573
+        ],
+        [
+          -30.34256565657315,
+          43.604190422146246,
+          44.502151593385186
+        ],
+        [
+          95.88432703917368,
+          41.456855885069615,
+          17.088971837365627
+        ],
+        [
+          -27.012617216916393,
+          -93.93214152001013,
+          -110.22299654639907
+        ],
+        [
+          -46.40782784503267,
+          3.5809633646305263,
+          0.16255222329467367
+        ],
+        [
+          74.37001602868905,
+          -26.35037238663179,
+          -57.40513694265967
+        ]
+      ],
+      "minimum_background_inside_domain_rgb": [
+        1442.2877197265625,
+        1623.600341796875,
+        1191.006591796875
+      ],
+      "domain_does_not_require_substrate_color": true,
+      "outside_domain": "invalid / NaN; never clamp or interpret",
+      "qualification": "Isolated normalization check; not a validated flake or thin-layer detector.",
+      "filtering": "3px median followed by domain-normalized Gaussian; invalid pixels never enter filter sums",
+      "noise_sample_policy": "independently recorded substrate support, not all geometrically valid pixels"
+    },
+    "clipping": {
+      "pixels_clipped_outside_measured_domain": 0,
+      "source_graphcut_label_by_final_label": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5,
+        "6": 6,
+        "7": 7,
+        "8": 8,
+        "9": 9,
+        "10": 10
+      },
+      "policy": "No shape or color geometry veto; domain clipping only, every surviving connected component retained."
+    },
+    "normalization_seconds": 3.5493979999955627,
+    "segmentation_seconds": 5.424050699999498,
+    "total_seconds": 10.088180999999167,
+    "foreground_fraction": 0.11247059493673461,
+    "substrate_mean": [
+      0.0004422706551849842,
+      0.0010310464422218502,
+      0.0012618058826774359
+    ],
+    "substrate_covariance": [
+      [
+        5.2474793692326596e-05,
+        -4.637966203077343e-06,
+        -2.791401910346157e-06
+      ],
+      [
+        -4.637966203077343e-06,
+        2.3546539223659157e-05,
+        6.579394737627265e-06
+      ],
+      [
+        -2.791401910346157e-06,
+        6.579394737627265e-06,
+        2.331113543624096e-05
+      ]
+    ],
+    "raw_noise_rgb": [
+      0.022803492844104767,
+      0.013676486909389496,
+      0.01820436865091324
+    ],
+    "mask_geometry_unchanged_by_sieves": true,
+    "outside_domain_instances": 0,
+    "annulus_outside_recorded_support": 0,
+    "support_sha256": "079c615e74275580b63811ce9f5e39d186f4e985fc6c46775ef5796c2d3b6901",
+    "contrast_map_sha256": "4d3c6e588ee490b0b37f00769d1edcc8dcf29ede45646656fad9b6e0a814e462"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "schema": 2,
+  "storage": "per_tile_shards",
+  "source_folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\chip001",
+  "shards": [
+    {
+      "tile_key": "chip001/tile_000001",
+      "file": "fields/chip001__tile_000001.json",
+      "count": 18
+    },
+    {
+      "tile_key": "chip001/tile_000032",
+      "file": "fields/chip001__tile_000032.json",
+      "count": 2
+    },
+    {
+      "tile_key": "chip001/tile_000180",
+      "file": "fields/chip001__tile_000180.json",
+      "count": 41
+    },
+    {
+      "tile_key": "chip001/tile_000354",
+      "file": "fields/chip001__tile_000354.json",
+      "count": 48
+    },
+    {
+      "tile_key": "chip001/tile_000003",
+      "file": "fields/chip001__tile_000003.json",
+      "count": 6
+    },
+    {
+      "tile_key": "chip001/tile_000004",
+      "file": "fields/chip001__tile_000004.json",
+      "count": 2
+    },
+    {
+      "tile_key": "chip001/tile_000008",
+      "file": "fields/chip001__tile_000008.json",
+      "count": 3
+    },
+    {
+      "tile_key": "chip001/tile_000051",
+      "file": "fields/chip001__tile_000051.json",
+      "count": 14
+    },
+    {
+      "tile_key": "chip001/tile_000150",
+      "file": "fields/chip001__tile_000150.json",
+      "count": 26
+    },
+    {
+      "tile_key": "chip001/tile_000170",
+      "file": "fields/chip001__tile_000170.json",
+      "count": 26
+    },
+    {
+      "tile_key": "chip001/tile_000333",
+      "file": "fields/chip001__tile_000333.json",
+      "count": 18
+    },
+    {
+      "tile_key": "chip001/tile_000415",
+      "file": "fields/chip001__tile_000415.json",
+      "count": 0
+    },
+    {
+      "tile_key": "chip001/tile_000416",
+      "file": "fields/chip001__tile_000416.json",
+      "count": 9
+    },
+    {
+      "tile_key": "chip001/tile_000445",
+      "file": "fields/chip001__tile_000445.json",
+      "count": 18
+    },
+    {
+      "tile_key": "chip001/tile_000446",
+      "file": "fields/chip001__tile_000446.json",
+      "count": 8
+    },
+    {
+      "tile_key": "chip001/tile_000450",
+      "file": "fields/chip001__tile_000450.json",
+      "count": 3
+    },
+    {
+      "tile_key": "chip001/tile_000451",
+      "file": "fields/chip001__tile_000451.json",
+      "count": 11
+    },
+    {
+      "tile_key": "chip001/tile_000458",
+      "file": "fields/chip001__tile_000458.json",
+      "count": 34
+    },
+    {
+      "tile_key": "chip001/tile_000461",
+      "file": "fields/chip001__tile_000461.json",
+      "count": 24
+    },
+    {
+      "tile_key": "chip001/tile_000462",
+      "file": "fields/chip001__tile_000462.json",
+      "count": 54
+    },
+    {
+      "tile_key": "chip001/tile_000463",
+      "file": "fields/chip001__tile_000463.json",
+      "count": 22
+    },
+    {
+      "tile_key": "chip001/tile_000464",
+      "file": "fields/chip001__tile_000464.json",
+      "count": 10
+    }
+  ],
+  "observation_count": 397,
+  "physical_unique_count": 34,
+  "physical_unique_count_scope": "Existing centroid-pair dedup; extended-object duplicates remain possible."
+}

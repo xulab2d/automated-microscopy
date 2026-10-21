@@ -1,0 +1,115 @@
+{
+  "run_id": "scan-20261014-105506-f3cb07a9",
+  "settings": {
+    "sample_id": "Graphene 90nm 4x4 fresh grid 2026-10-13",
+    "material": "graphene",
+    "oxide_nm": 90,
+    "width_mm": 100,
+    "height_mm": 100,
+    "z_below_um": 25,
+    "z_above_um": 25,
+    "focus_travel_policy": "controller",
+    "min_chip_mm": 5,
+    "max_chips": 16,
+    "hours": 24,
+    "max_tiles": 10000,
+    "exposure_ms": 200,
+    "light_percent": 90,
+    "auto_exposure": true,
+    "dark_holder": true,
+    "operator_ready": true,
+    "autonomous_reference": true,
+    "grid_4x4": true,
+    "grid_spacing_mm": 10
+  },
+  "attempts": [
+    {
+      "run_id": "scan-20261013-203955-009f2158",
+      "state": "failed",
+      "hardware_closed": true,
+      "reason": "Four historical unacknowledged vendor jobs block first capture; no scan motion or capture occurred."
+    },
+    {
+      "run_id": "scan-20261013-204741-cfb93379",
+      "state": "failed",
+      "hardware_closed": true,
+      "reason": "Autonomous edge focus confirmed at15624.219um; postfocus global edge ROI redetection rejected textured fullfield before reference.",
+      "focus_verified": true,
+      "focus_z_um": 15624.219
+    },
+    {
+      "run_id": "scan-20261013-205538-8bc94cc9",
+      "state": "failed",
+      "hardware_closed": true,
+      "reason": "Confirmed edge focus and independent bright reference passed; central patch substrate support 0.822 failed heuristic 0.90. Bounded observed clean-patch retries now implemented.",
+      "focus_z_um": 15624.453
+    },
+    {
+      "run_id": "scan-20261013-210432-d3fc65a2",
+      "state": "stopped",
+      "hardware_closed": true,
+      "reason": "Stopped to honor user request: central patch purity informational only; actual prior focused reference now accepts in offline replay."
+    },
+    {
+      "run_id": "scan-20261013-210620-87dad7fa",
+      "state": "failed",
+      "hardware_closed": true,
+      "reason": "Prior STOP left returned export unreviewed; retained original vendor files with exact stopped-owner time/XYZ/profile evidence. Central patch gate removed."
+    },
+    {
+      "run_id": "scan-20261013-211022-c7c77255",
+      "state": "failed",
+      "hardware_closed": true,
+      "reason": "New edge candidate failed independent polarity after focus; use earlier verified focused reference at explicit user request, without repeating bootstrap."
+    },
+    {
+      "run_id": "scan-20261013-211822-ee05e17d",
+      "state": "failed",
+      "hardware_closed": true,
+      "reason": "Identical calibration differed only by tuple/list after JSON serialization; canonical comparison fixed and full retained path replay passed offline."
+    },
+    {
+      "run_id": "scan-20261013-212016-7f8d2797",
+      "state": "stopped",
+      "hardware_closed": true,
+      "reason": "Explicit rectangle algorithm upgrade preserving searched positions, raw images, focus and original deadline."
+    },
+    {
+      "run_id": "scan-20261013-215137-c4f3127d",
+      "state": "stopped",
+      "hardware_closed": true,
+      "reason": "Explicit focus/grid upgrade after four verified anchors; first tile blocked only by fixed hull-distance rule. Prepared focus and raw evidence retained.",
+      "completed_tiles": 0,
+      "verified_focus_points": 4
+    },
+    {
+      "run_id": "scan-20261013-221727-131d9ced",
+      "state": "running",
+      "reason": "Same-placement focus/grid upgrade, prepared chip001 retry, original deadline retained.",
+      "donor_run": "scan-20261013-215137-c4f3127d",
+      "validation": "focus-grid-upgrade/validation.json",
+      "last_observed_completed_tiles": 9,
+      "focus_points_retained": true,
+      "live_validation": "focus-grid-upgrade/live-validation.json"
+    },
+    {
+      "run_id": "scan-20261013-221727-131d9ced",
+      "state": "failed",
+      "hardware_closed": true,
+      "reason": "All999 chip001 tiles complete; missing sidecars blocked campaign coverage replay. Raw999 hashes verified; exact recovery deployed.",
+      "completed_chip001_tiles": 999
+    },
+    {
+      "run_id": "scan-20261014-090615-88fb3166",
+      "state": "failed",
+      "hardware_closed": true,
+      "reason": "Source read EINVAL during incomplete handoff copy; no new chip acquired. Replaced completed-chip copy with pinned read-only reference.",
+      "completed_chip001_tiles": 999
+    }
+  ],
+  "rectangle_handoff_parent": "scan-20261013-212016-7f8d2797",
+  "recovery_evidence": "research/scan-resume-20261014",
+  "recovery_started_at": 1792000555.3948646,
+  "state_at_update": "starting",
+  "phase_at_update": "validating_handoff_files"
+}

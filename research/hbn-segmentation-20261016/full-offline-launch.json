@@ -1,0 +1,22 @@
+{
+  "pid": 38692,
+  "started_at": 1792172625.1354158,
+  "argv": [
+    "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\.venv\\Scripts\\python.exe",
+    "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\software-next-20261009\\scripts\\run_hbn_offline.py",
+    "--project",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy",
+    "--run-id",
+    "scan-20261015-223549-98fae566",
+    "--chip",
+    "chip001",
+    "--model",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\analysis\\hbn\\scan-20261015-223549-98fae566\\chip001\\models\\hbn90-conditional-v2.json",
+    "--version",
+    "hbn-partial-full-v3",
+    "--refinement-version",
+    "hbn-partial-screen-v3",
+    "--defer-selection"
+  ],
+  "no_acquisition_performed": true
+}

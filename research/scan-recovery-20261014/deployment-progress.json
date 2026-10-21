@@ -1,0 +1,26 @@
+{
+  "files": [
+    {
+      "path": "flakefinder/rectangle_handoff.py",
+      "before_sha256": "8662341e0168fc96e86833b647c4b17bc4b12f281524e7e05c776eb249a648e4",
+      "after_sha256": "c4df2e4cc8db6f1e4c642441b263d4f3c1820549f0dd58d382b1552398127de9"
+    },
+    {
+      "path": "flakefinder/scan_worker.py",
+      "before_sha256": "2c6f53bebd9e0ae178ba01ec5c17477fc328bbf9de10e0b976c7ac16b0d2b872",
+      "after_sha256": "b98f305bae924cf5f142a60d4eb32b9b29fd163d33923c4f1c38ca3258e2e6df"
+    },
+    {
+      "path": "tests/test_rectangle_handoff.py",
+      "before_sha256": "63788ba9738427dbff759854f8ddace0904b279684c297014ae7a0398ecd3664",
+      "after_sha256": "78bbf24e5ce52baeacc1d1688f0374e9d9ff859c40867e4563e42cd00c9bcdda"
+    },
+    {
+      "path": "tests/test_scan_worker.py",
+      "before_sha256": "941c23cb0adb0307751b88f1f3e731067ac659c0cb74ad50ed03496ea5a63e50",
+      "after_sha256": "088f980277cfba55933547f822501f703b02479c823481fedec16d2aa50ad7b9"
+    }
+  ],
+  "deployed": true,
+  "prior_deployment_sha256": "8fdf3669406346e3794f656b8b4cf66302b287674015abec8f670099e0deb527"
+}

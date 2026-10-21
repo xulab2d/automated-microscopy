@@ -1,0 +1,429 @@
+[
+  {
+    "attempt": "candidate013",
+    "recorded_state": "unresolved",
+    "images": 30,
+    "spare_probes": 2,
+    "old_coherent_images": 1,
+    "old_unique_lines": 1,
+    "new_coherent_images": 9,
+    "new_unique_lines": 3,
+    "recovered_images": [
+      "probe_000004",
+      "probe_000005",
+      "probe_000006",
+      "probe_000007",
+      "probe_000021",
+      "probe_000023",
+      "probe_000027",
+      "probe_000028"
+    ],
+    "unchanged_accepted_images": [
+      "probe_000029"
+    ],
+    "fit": {
+      "status": "unresolved",
+      "reason": "Measured edge normals do not bound the seed.",
+      "lines": [
+        {
+          "normal": [
+            0.9978669285774231,
+            0.06528114527463913
+          ],
+          "offset_um": 11467.120788717402,
+          "expanded_offset_um": 11542.120788717402,
+          "residual_um_p95": 3.394423997099874,
+          "margin_um": 75.0,
+          "source_images": [
+            "frames/probe_000004.tiff",
+            "frames/probe_000005.tiff",
+            "frames/probe_000006.tiff",
+            "frames/probe_000007.tiff"
+          ],
+          "edge_point_count": 369
+        },
+        {
+          "normal": [
+            -0.6364260911941528,
+            -0.7713376879692078
+          ],
+          "offset_um": 121.1870245958271,
+          "expanded_offset_um": 196.1870245958271,
+          "residual_um_p95": 3.7025018207979645,
+          "margin_um": 75.0,
+          "source_images": [
+            "frames/probe_000021.tiff"
+          ],
+          "edge_point_count": 82
+        },
+        {
+          "normal": [
+            0.06109044700860977,
+            -0.9981322288513184
+          ],
+          "offset_um": 7718.983574750302,
+          "expanded_offset_um": 7793.983574750302,
+          "residual_um_p95": 3.4011232544114134,
+          "margin_um": 75.0,
+          "source_images": [
+            "frames/probe_000023.tiff",
+            "frames/probe_000027.tiff",
+            "frames/probe_000028.tiff",
+            "frames/probe_000029.tiff"
+          ],
+          "edge_point_count": 403
+        }
+      ]
+    },
+    "next_measurement_suggestion": {
+      "direction": [
+        -0.45567821353173205,
+        0.8901445757361718
+      ],
+      "maximum_um": 10110.717118684654,
+      "angular_gap_deg": 226.73116874838715,
+      "sector_fraction": 0.5
+    },
+    "processing_seconds": 0.47859259999677306,
+    "source_sha256": "35a604c0b9bbb93ce55fcec7acd940e7232e098e7663d815a3b1db59d453a236"
+  },
+  {
+    "attempt": "candidate014",
+    "recorded_state": "unresolved",
+    "images": 23,
+    "spare_probes": 9,
+    "old_coherent_images": 3,
+    "old_unique_lines": 3,
+    "new_coherent_images": 4,
+    "new_unique_lines": 3,
+    "recovered_images": [
+      "probe_000013"
+    ],
+    "unchanged_accepted_images": [
+      "probe_000007",
+      "probe_000014",
+      "probe_000022"
+    ],
+    "fit": {
+      "status": "unresolved",
+      "reason": "Measured edge normals do not bound the seed.",
+      "lines": [
+        {
+          "normal": [
+            -0.08240766823291779,
+            0.9965987205505371
+          ],
+          "offset_um": -2013.5150560448965,
+          "expanded_offset_um": -1938.5150560448965,
+          "residual_um_p95": 1.2090209157388927,
+          "margin_um": 75.0,
+          "source_images": [
+            "frames/probe_000007.tiff"
+          ],
+          "edge_point_count": 104
+        },
+        {
+          "normal": [
+            -0.9971829056739807,
+            -0.07500864565372467
+          ],
+          "offset_um": -6193.67352071532,
+          "expanded_offset_um": -6118.67352071532,
+          "residual_um_p95": 1.795808416594536,
+          "margin_um": 75.0,
+          "source_images": [
+            "frames/probe_000013.tiff",
+            "frames/probe_000014.tiff"
+          ],
+          "edge_point_count": 167
+        },
+        {
+          "normal": [
+            0.06218617036938667,
+            -0.9980645775794983
+          ],
+          "offset_um": 7728.269035098998,
+          "expanded_offset_um": 7803.269035098998,
+          "residual_um_p95": 2.1219959572304945,
+          "margin_um": 75.0,
+          "source_images": [
+            "frames/probe_000022.tiff"
+          ],
+          "edge_point_count": 99
+        }
+      ]
+    },
+    "next_measurement_suggestion": {
+      "direction": [
+        0.9973828845621504,
+        0.07230063334773806
+      ],
+      "maximum_um": 6235.207145768272,
+      "angular_gap_deg": 181.1616665009563,
+      "sector_fraction": 0.5
+    },
+    "processing_seconds": 0.13537889999861363,
+    "source_sha256": "0522414a1cb4cbb478072556369f7d30fed285ac690c5ff58a20c5cbad11e008"
+  },
+  {
+    "attempt": "candidate015",
+    "recorded_state": "unresolved",
+    "images": 30,
+    "spare_probes": 2,
+    "old_coherent_images": 2,
+    "old_unique_lines": 2,
+    "new_coherent_images": 13,
+    "new_unique_lines": 4,
+    "recovered_images": [
+      "probe_000003",
+      "probe_000004",
+      "probe_000006",
+      "probe_000007",
+      "probe_000008",
+      "probe_000013",
+      "probe_000019",
+      "probe_000020",
+      "probe_000021",
+      "probe_000022",
+      "probe_000023"
+    ],
+    "unchanged_accepted_images": [
+      "probe_000014",
+      "probe_000029"
+    ],
+    "fit": {
+      "schema": 1,
+      "status": "estimated",
+      "method": "coherent_halfplane_edges_with_robust_line_fit",
+      "polygon_um": [
+        [
+          11927.061783228839,
+          -7082.642393404823
+        ],
+        [
+          11678.385677998709,
+          -980.2486312584078
+        ],
+        [
+          6240.59636176435,
+          -1423.6307410719899
+        ],
+        [
+          6682.834152912357,
+          -7390.123947810013
+        ]
+      ],
+      "uncertainty_um": 75.0,
+      "uncertainty_kind": "planning margin, not a statistical confidence bound",
+      "lines": [
+        {
+          "normal": [
+            0.99917072057724,
+            0.04071678966283798
+          ],
+          "offset_um": 11553.788455728656,
+          "expanded_offset_um": 11628.788455728656,
+          "residual_um_p95": 11.718703628394085,
+          "margin_um": 75.0,
+          "source_images": [
+            "frames/probe_000003.tiff",
+            "frames/probe_000004.tiff",
+            "frames/probe_000006.tiff",
+            "frames/probe_000007.tiff",
+            "frames/probe_000008.tiff"
+          ],
+          "edge_point_count": 490
+        },
+        {
+          "normal": [
+            -0.08126749843358994,
+            0.9966922998428345
+          ],
+          "offset_um": -2001.0794525003512,
+          "expanded_offset_um": -1926.0794525003512,
+          "residual_um_p95": 1.7031034125590394,
+          "margin_um": 75.0,
+          "source_images": [
+            "frames/probe_000013.tiff",
+            "frames/probe_000014.tiff"
+          ],
+          "edge_point_count": 207
+        },
+        {
+          "normal": [
+            -0.9972643852233887,
+            -0.073917455971241
+          ],
+          "offset_um": -6193.293331519748,
+          "expanded_offset_um": -6118.293331519748,
+          "residual_um_p95": 3.826935446945753,
+          "margin_um": 75.0,
+          "source_images": [
+            "frames/probe_000019.tiff",
+            "frames/probe_000020.tiff",
+            "frames/probe_000021.tiff",
+            "frames/probe_000022.tiff",
+            "frames/probe_000023.tiff"
+          ],
+          "edge_point_count": 505
+        },
+        {
+          "normal": [
+            0.058531858026981354,
+            -0.9982855319976807
+          ],
+          "offset_um": 7693.612516624446,
+          "expanded_offset_um": 7768.612516624446,
+          "residual_um_p95": 3.359469418402977,
+          "margin_um": 75.0,
+          "source_images": [
+            "frames/probe_000029.tiff"
+          ],
+          "edge_point_count": 104
+        }
+      ],
+      "assumption": "Convex chip with approximately straight edges; unobserved corners are inferred.",
+      "coverage_requirement": "Check substrate at raster perimeter and expand/replan if it reaches that perimeter."
+    },
+    "next_measurement_suggestion": null,
+    "processing_seconds": 0.49130760000116425,
+    "source_sha256": "6efac52dc64fa87310ddfd66578cb9ea8350549da34fd00368f1676ba37c92da"
+  },
+  {
+    "attempt": "candidate016",
+    "recorded_state": "unresolved",
+    "images": 32,
+    "spare_probes": 0,
+    "old_coherent_images": 2,
+    "old_unique_lines": 2,
+    "new_coherent_images": 11,
+    "new_unique_lines": 5,
+    "recovered_images": [
+      "probe_000011",
+      "probe_000012",
+      "probe_000013",
+      "probe_000014",
+      "probe_000019",
+      "probe_000027",
+      "probe_000029",
+      "probe_000030",
+      "probe_000031"
+    ],
+    "unchanged_accepted_images": [
+      "probe_000007",
+      "probe_000020"
+    ],
+    "fit": {
+      "schema": 1,
+      "status": "estimated",
+      "method": "coherent_halfplane_edges_with_robust_line_fit",
+      "polygon_um": [
+        [
+          13088.75822297814,
+          -18764.105589343366
+        ],
+        [
+          10854.983943319576,
+          -12719.517838581756
+        ],
+        [
+          8168.606456618916,
+          -12812.726432031333
+        ],
+        [
+          5001.911798234587,
+          -13798.264145154775
+        ],
+        [
+          7307.503717929163,
+          -20006.06300786797
+        ]
+      ],
+      "uncertainty_um": 75.0,
+      "uncertainty_kind": "planning margin, not a statistical confidence bound",
+      "lines": [
+        {
+          "normal": [
+            0.9379993081092834,
+            0.34663715958595276
+          ],
+          "offset_um": 5697.909893502307,
+          "expanded_offset_um": 5772.909893502307,
+          "residual_um_p95": 2.489699351905074,
+          "margin_um": 75.0,
+          "source_images": [
+            "frames/probe_000007.tiff"
+          ],
+          "edge_point_count": 91
+        },
+        {
+          "normal": [
+            -0.2971610724925995,
+            0.9548273682594299
+          ],
+          "offset_um": -14736.333714743363,
+          "expanded_offset_um": -14661.333714743363,
+          "residual_um_p95": 12.424362141908931,
+          "margin_um": 75.0,
+          "source_images": [
+            "frames/probe_000011.tiff",
+            "frames/probe_000012.tiff",
+            "frames/probe_000014.tiff"
+          ],
+          "edge_point_count": 273
+        },
+        {
+          "normal": [
+            -0.03467589244246483,
+            0.9993985891342163
+          ],
+          "offset_um": -13163.274438029337,
+          "expanded_offset_um": -13088.274438029337,
+          "residual_um_p95": 3.40767049639062,
+          "margin_um": 75.0,
+          "source_images": [
+            "frames/probe_000013.tiff"
+          ],
+          "edge_point_count": 82
+        },
+        {
+          "normal": [
+            -0.9374332427978516,
+            -0.34816503524780273
+          ],
+          "offset_um": 40.114725248422474,
+          "expanded_offset_um": 115.11472524842247,
+          "residual_um_p95": 2.9474266063539405,
+          "margin_um": 75.0,
+          "source_images": [
+            "frames/probe_000019.tiff",
+            "frames/probe_000020.tiff"
+          ],
+          "edge_point_count": 185
+        },
+        {
+          "normal": [
+            0.21003307402133942,
+            -0.9776942729949951
+          ],
+          "offset_um": 21019.63069726857,
+          "expanded_offset_um": 21094.63069726857,
+          "residual_um_p95": 4.926343281427394,
+          "margin_um": 75.0,
+          "source_images": [
+            "frames/probe_000027.tiff",
+            "frames/probe_000029.tiff",
+            "frames/probe_000030.tiff",
+            "frames/probe_000031.tiff"
+          ],
+          "edge_point_count": 369
+        }
+      ],
+      "assumption": "Convex chip with approximately straight edges; unobserved corners are inferred.",
+      "coverage_requirement": "Check substrate at raster perimeter and expand/replan if it reaches that perimeter."
+    },
+    "next_measurement_suggestion": null,
+    "processing_seconds": 0.3433385999960592,
+    "source_sha256": "1c55198e3341c26482988c1bed40e442debc4c1492755fbf35d97b80dfe9c5ad"
+  }
+]

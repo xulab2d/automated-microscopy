@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "default_material": "graphene",
+  "default_substrate": "SiO2/Si",
+  "default_oxide_nm": 90,
+  "confirmed_by_user": true,
+  "materials": {
+    "graphene": {
+      "default_profile": "graphene-sio2-90nm.json",
+      "available_profiles": [
+        "graphene-sio2-90nm.json",
+        "graphene-sio2-285nm.json",
+        "graphene-sio2-300nm.json"
+      ],
+      "external_population_prior": "graphene90-2dmatgmm-external.json"
+    },
+    "hBN": {
+      "default_profile": "hbn-sio2-285nm.json",
+      "substrate_confirmation_required": true,
+      "available_profiles": [
+        "hbn-sio2-90nm.json",
+        "hbn-sio2-285nm.json",
+        "hbn-sio2-300nm.json"
+      ]
+    }
+  }
+}

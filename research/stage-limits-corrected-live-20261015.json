@@ -1,0 +1,103 @@
+{
+  "position": {
+    "x": 42743.769,
+    "y": 0.0,
+    "z": 19074.218
+  },
+  "axes": {
+    "x": {
+      "nominal_min_um": -85000.0,
+      "nominal_max_um": 85000.0,
+      "HasSWLimit": "Upper, Lower",
+      "IsOnSWLimit": "None",
+      "CalibrationMode": "OnLowerLimit",
+      "CoordinateDirection": "Positive",
+      "IsOnHWLimit": "None",
+      "lower_enabled": true,
+      "lower_position_um": -34268.98,
+      "upper_enabled": true,
+      "upper_position_um": 135731.02
+    },
+    "y": {
+      "nominal_min_um": -65000.0,
+      "nominal_max_um": 65000.0,
+      "HasSWLimit": "Upper, Lower",
+      "IsOnSWLimit": "None",
+      "CalibrationMode": "OnLowerLimit",
+      "CoordinateDirection": "Positive",
+      "IsOnHWLimit": "Upper",
+      "lower_enabled": true,
+      "lower_position_um": -39726.15,
+      "upper_enabled": true,
+      "upper_position_um": 90273.85
+    }
+  },
+  "effective_range": {
+    "source": "active MTBStageAxisX/Y nominal range intersect IMTBAxis calibrated origin and enabled software limits",
+    "configuration": "C:\\ProgramData\\Carl Zeiss\\MTB2011\\3.11.9.0\\Active Configuration.xml",
+    "axis_limits": {
+      "x": {
+        "nominal_min_um": -85000.0,
+        "nominal_max_um": 85000.0,
+        "software_limits": {
+          "lower": {
+            "available": true,
+            "enabled": true,
+            "position_um": -34268.98
+          },
+          "upper": {
+            "available": true,
+            "enabled": true,
+            "position_um": 135731.02
+          }
+        },
+        "calibration_mode": "OnLowerLimit",
+        "coordinate_direction": "Positive",
+        "hardware_limit_state": "None",
+        "calibration_origin_constraint": {
+          "min_um": 0.0,
+          "basis": "IMTBAxis OnLowerLimit origin with Positive coordinate direction",
+          "hardware_switch_label_used_as_coordinate_bound": false
+        },
+        "effective_min_um": 0.0,
+        "effective_max_um": 85000.0,
+        "settings_changed": false,
+        "policy": "nominal_intersect_calibrated_origin_and_available_enabled_software_limits"
+      },
+      "y": {
+        "nominal_min_um": -65000.0,
+        "nominal_max_um": 65000.0,
+        "software_limits": {
+          "lower": {
+            "available": true,
+            "enabled": true,
+            "position_um": -39726.15
+          },
+          "upper": {
+            "available": true,
+            "enabled": true,
+            "position_um": 90273.85
+          }
+        },
+        "calibration_mode": "OnLowerLimit",
+        "coordinate_direction": "Positive",
+        "hardware_limit_state": "Upper",
+        "calibration_origin_constraint": {
+          "min_um": 0.0,
+          "basis": "IMTBAxis OnLowerLimit origin with Positive coordinate direction",
+          "hardware_switch_label_used_as_coordinate_bound": false
+        },
+        "effective_min_um": 0.0,
+        "effective_max_um": 65000.0,
+        "settings_changed": false,
+        "policy": "nominal_intersect_calibrated_origin_and_available_enabled_software_limits"
+      }
+    },
+    "x_min_um": 0.0,
+    "x_max_um": 85000.0,
+    "x_position_um": 42743.769,
+    "y_min_um": 0.0,
+    "y_max_um": 65000.0,
+    "y_position_um": 0.0
+  }
+}

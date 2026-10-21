@@ -1,0 +1,122 @@
+{
+  "schema": 1,
+  "state": "unresolved",
+  "initial_position_um": {
+    "x": 0,
+    "y": 0,
+    "z": 15376
+  },
+  "quick_bounds_um": [
+    15374,
+    15378
+  ],
+  "fallback_bounds_um": [
+    15364.0,
+    15388.0
+  ],
+  "quick_samples": [
+    {
+      "z_um": 15374.0,
+      "phase": "quick",
+      "score": 0.001,
+      "texture": 0.2,
+      "noise": 0.008,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 15375.0,
+      "phase": "quick",
+      "score": 0.001,
+      "texture": 0.2,
+      "noise": 0.008,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 15376.0,
+      "phase": "quick",
+      "score": 0.001,
+      "texture": 0.2,
+      "noise": 0.008,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 15377.0,
+      "phase": "quick",
+      "score": 0.001,
+      "texture": 0.2,
+      "noise": 0.008,
+      "mean": 1000.0
+    },
+    {
+      "z_um": 15378.0,
+      "phase": "quick",
+      "score": 0.001,
+      "texture": 0.2,
+      "noise": 0.008,
+      "mean": 1000.0
+    }
+  ],
+  "quick_path_image_budget": 6,
+  "fitted_quick_result": {
+    "success": false,
+    "z_um": 15374.0,
+    "score": 0.001,
+    "prominence": 0.0,
+    "reason": "Peak at search boundary; extend the approved Z range or seed focus manually.",
+    "samples": [
+      {
+        "z_um": 15374.0,
+        "phase": "quick",
+        "score": 0.001,
+        "texture": 0.2,
+        "noise": 0.008,
+        "mean": 1000.0
+      },
+      {
+        "z_um": 15375.0,
+        "phase": "quick",
+        "score": 0.001,
+        "texture": 0.2,
+        "noise": 0.008,
+        "mean": 1000.0
+      },
+      {
+        "z_um": 15376.0,
+        "phase": "quick",
+        "score": 0.001,
+        "texture": 0.2,
+        "noise": 0.008,
+        "mean": 1000.0
+      },
+      {
+        "z_um": 15377.0,
+        "phase": "quick",
+        "score": 0.001,
+        "texture": 0.2,
+        "noise": 0.008,
+        "mean": 1000.0
+      },
+      {
+        "z_um": 15378.0,
+        "phase": "quick",
+        "score": 0.001,
+        "texture": 0.2,
+        "noise": 0.008,
+        "mean": 1000.0
+      }
+    ],
+    "outcome": "peak_outside_interval",
+    "budget": null
+  },
+  "quick_failure": "Peak at search boundary; extend the approved Z range or seed focus manually.",
+  "result": {
+    "success": false,
+    "z_um": 15378.0,
+    "score": 0.001,
+    "prominence": 0,
+    "reason": "Full sweep unresolved",
+    "samples": [],
+    "outcome": "non_peak",
+    "budget": null
+  }
+}

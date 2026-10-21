@@ -1,0 +1,59 @@
+OFFLINE REVIEW WORKBENCH
+
+Launch from this source directory:
+  python scripts/start_review.py
+This detects the surrounding marked Drive project automatically. On another
+computer with a separately downloaded release, pass --project-root <shared-project>.
+The review server needs only Python3.11+ standard-library modules; numerical
+analysis/training additionally use the dependencies listed in pyproject.toml.
+
+Explicit alternative:
+  python -m flakefinder.suite_server "<project directory on Drive>" --port 8770
+Open http://127.0.0.1:8770/. Existing services on other ports are unaffected.
+No microscope imports, hardware connections, acquisition or movement endpoints exist.
+
+Review
+- Open the default Proposed flakes view for candidate crops, enlarged outlines,
+  and next/previous browsing. Shortlist and uncertain are screening categories,
+  not confirmed material or layer labels. Human-rejected entries stay available
+  in their own filter. New candidates appear as saved analysis progresses.
+- All images, detailed labeling, contrast plots and activity are secondary views.
+  On resume, completed counts remain visible while checkpoint verification has
+  its own progress message; verification does not rerun completed detections.
+- The library lists every saved field, including fields without analysis.
+- Outlines refer to individual source observations. The display area filter defaults
+  to 25 um2 and can be set to zero; it does not delete scientific proposals.
+- Wheel zooms; hold Space while dragging to pan. Click an outline or object row.
+- J/K moves through regions. 1-8 stages an appearance label; Ctrl/Command+Enter saves.
+- Appearance, material identity, layer/thickness observations and quality are separate.
+  A visual label does not establish material identity or a monolayer.
+- Drawing a child creates a separate human region linked to its parent. Draw additional
+  children to document a split. The source parent remains intact. Edit boundary moves
+  existing vertices. No automatic scientific mask recomputation is performed.
+- Check explicit rows to apply one semantic label deliberately to at most 100 regions.
+
+Saved labels and recovery
+- Immutable JSON events live under annotations/<dataset_id>/events/ on the configured
+  project. Raw image identity, acquisition-chip group, original proposal geometry and
+  mask identity are retained. Existing scientific outputs are never overwritten.
+- Save confirms a local file write and readback. Drive cloud synchronization is not
+  verified. Check Drive independently before switching computers.
+- Undo creates another event; history is never erased. Conflicting revisions and
+  cross-computer event forks fail closed instead of silently discarding reviews.
+- Do not delete a .writer.lock without inspecting whether another writer is active.
+- When machine geometry changes under the same ID, the old human label is flagged
+  stale and is not applied to the new proposal.
+
+Exports and future materials
+- Export labels downloads source-linked human review JSON.
+- Activity > Create training bundle writes a unique project/training/<timestamp-id>
+  folder. Preview copies are optional. Whole chips remain together across ML splits.
+  Corrected geometry requires feature remeasurement. One labeled chip is insufficient
+  for held-out evaluation, and this button does not train a model.
+- Next-dataset material selection is a browser-local planning preference. Graphene on
+  90 nm SiO2/Si is the initial next-dataset default. Existing MoTe2 images are unchanged.
+
+Verification
+- Focused event/API checks cover durable reconstruction, idempotent writes, undo,
+  source identity, stale revisions, forked histories, geometry validation, material
+  evidence, original proposal retention, loopback/CSRF guards and path confinement.

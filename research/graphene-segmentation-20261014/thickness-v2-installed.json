@@ -1,0 +1,121 @@
+{
+  "pointer": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-221727-131d9ced\\graphene-thickness-selection-chip001.json",
+  "sidecar_sha256": "badb55baa4440a4bb4f5ea6d42336340cfdcce8637705a8e429f98e79dfd27b3",
+  "lazy_checked_observation": "chip001/tile_000037/135",
+  "lazy_status": "conditional_optical_fit",
+  "counts": {
+    "conditional_optical_fit": 250,
+    "grid_boundary": 2,
+    "model_mismatch": 354,
+    "useful_observations": 53513
+  },
+  "candidate_observations": 233,
+  "uncertain_observations_sampled": 373,
+  "bands": {
+    "first": {
+      "measured_rgb": [
+        0.1317414675254134,
+        0.10114108876557609,
+        0.06431082914013506
+      ],
+      "provisional_layer_estimate": 1.25,
+      "scenario_best_layer_range": [
+        0.75,
+        1.25
+      ],
+      "linear_response_layer_estimate": 1.0,
+      "linear_response_scenario_best_layer_range": [
+        0.75,
+        1.0
+      ],
+      "linear_response_best_distance2": 2.722614456171808,
+      "predicted_rgb": [
+        0.1212918499544271,
+        0.11317171206610777,
+        0.06588664992643622
+      ],
+      "rgb_residual": [
+        0.010449617570986308,
+        -0.012030623300531673,
+        -0.0015758207863011686
+      ],
+      "status": "conditional_optical_fit",
+      "best_scenario": {
+        "gamma": 0.8,
+        "illumination_na": 0.0,
+        "oxide_nm": 95.0,
+        "response_sha256": "786a25673d9f806c051ab1ed9acab4bc41645fdbc18d2af12a44787f99e6fa01"
+      }
+    },
+    "second": {
+      "measured_rgb": [
+        0.2529138275716534,
+        0.19552333499503627,
+        0.12051845827031918
+      ],
+      "provisional_layer_estimate": 2.5,
+      "scenario_best_layer_range": [
+        1.25,
+        2.5
+      ],
+      "linear_response_layer_estimate": 2.0,
+      "linear_response_scenario_best_layer_range": [
+        1.5,
+        2.0
+      ],
+      "linear_response_best_distance2": 8.190321426630767,
+      "predicted_rgb": [
+        0.23116533247401105,
+        0.211289661507587,
+        0.11987472611449934
+      ],
+      "rgb_residual": [
+        0.021748495097642373,
+        -0.01576632651255072,
+        0.0006437321558198372
+      ],
+      "status": "conditional_optical_fit",
+      "best_scenario": {
+        "gamma": 0.8,
+        "illumination_na": 0.0,
+        "oxide_nm": 95.0,
+        "response_sha256": "786a25673d9f806c051ab1ed9acab4bc41645fdbc18d2af12a44787f99e6fa01"
+      }
+    },
+    "third": {
+      "measured_rgb": [
+        0.3545389251270703,
+        0.2750159310875599,
+        0.17663196893907251
+      ],
+      "provisional_layer_estimate": 4.0,
+      "scenario_best_layer_range": [
+        2.0,
+        4.0
+      ],
+      "linear_response_layer_estimate": 3.0,
+      "linear_response_scenario_best_layer_range": [
+        2.5,
+        3.2499999999999996
+      ],
+      "linear_response_best_distance2": 13.00692481895869,
+      "predicted_rgb": [
+        0.3406685421339273,
+        0.3039014141496529,
+        0.16466149537044883
+      ],
+      "rgb_residual": [
+        0.013870382993143027,
+        -0.028885483062092987,
+        0.011970473568623685
+      ],
+      "status": "model_mismatch",
+      "best_scenario": {
+        "gamma": 0.8,
+        "illumination_na": 0.0,
+        "oxide_nm": 95.0,
+        "response_sha256": "9a9374867aedb1aab1d0220f693386c685c0753fcee66b0c435e367c2721a881"
+      }
+    }
+  }
+}

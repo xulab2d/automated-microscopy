@@ -1,0 +1,144 @@
+OFFLINE ANALYSIS AND DRIVE STORAGE — 9 OCTOBER 2026
+
+No microscope acquisition is authorized while the chips are removed. Both the
+local and shared OPERATOR-HOLD.json are checked before loading the ZEISS client.
+Existing XYZ plans are historical; a future start needs fresh placement evidence.
+
+STORAGE
+configs/storage.json makes the mounted shared project the destination for the
+current acquisition, autofocus, calibration-image, chip-discovery, revisit and
+analysis entry points. Missing/mismatched/unwritable mounts fail rather than
+silently writing scientific output in this local checkout. Hardware leases are
+host-local; they must not be synchronized locks shared between computers.
+Drive for Desktop still maintains a local upload cache. Its local free-space
+reserve is checked in addition to available space reported by the mounted drive.
+Writing a file successfully is not proof that the cloud upload is complete.
+
+For another computer, install the project with Python3.11+ using pip install -e .
+from the shared project, and set FLAKEFINDER_PROJECT_ROOT to that computer's
+mounted shared project path. Do not point it at an arbitrary Downloads folder.
+The portable laptop-viewer/Launcher.py needs only Python3.9+ standard library.
+
+HIGH-RECALL FEATURES AND TERRACES
+The original component boundaries and all prior analyses remain unchanged.
+The default is to reuse exact checksummed analysis-staged-features instance
+masks, IDs and holes; missing or changed masks are explicit failures. Each
+parent is partitioned internally into observed RGB/conditional optical groups.
+Original parents remain visible even when no child passes the review criteria.
+Global foreground resegmentation is an explicitly experimental option only.
+terrace_analysis.py writes independent parent and terrace masks. Chip-level
+overview geometry and substrate-color consistency determine where normalization
+is supported. Off-chip fields and unsupported substrate fits are explicit
+outcomes, not silent empty catalogs. Pixel RGB populations / conditional optical
+coordinates are split before connected terrace regions are formed.
+The chip substrate reference uses up to nine spatially separated fields from
+the same recorded exposure/WB/objective/illumination profile. Independently
+saved substrate labels determine sampling positions in verified raw TIFFs.
+Gross color/intensity mismatch and insufficient support are reported; candidate
+colors do not define that reference. This is a conservative QC flag, not a
+validated residue classifier or an adjustment of the camera's original pixels.
+
+The review target is25um2 rather than100um2. Edges are trimmed before contrast
+measurement. Edge localization, interior uniformity/texture, straight facets,
+saturation and focus limitations remain separate evidence fields. Small regions
+receive stronger rank penalties. The usable rectangle is the largest all-inside
+rectangle aligned with source image axes, a lower bound on the best rotated
+device area. It is not the flake bounding box or a claim of crystal cleanliness.
+
+The accepted-parent check is chip001/analysis-terraces-v3-accepted-parents-01/.
+The latest CLI integration, including the chip-wide substrate consistency
+reference, is chip001/analysis-terraces-v3-accepted-parents-qc-01/. Its139/369
+parent and terrace masks match the earlier pilot byte-for-byte.
+It retains167 original parent features:160 in field139 and7 in blank field369.
+The blank control produces zero eligible terraces; field000 is off-chip excluded.
+Field139 has260 internal terraces and52 broad reviewable regions. The single
+conditional optical match has only2.02um2 usable rectangle and is not a useful
+thin-flake result. Earlier analysis-terraces-v3-pilot-* folders are retained
+development experiments, not the current shortlist. A pilot is not a whole-
+dataset accuracy evaluation. Source-code snapshots and options
+accompany each analysis version. Never overwrite the original raw TIFFs,
+acquisition manifests, earlier masks or known user-rejected substrate controls.
+
+PHYSICAL CONTRAST MODEL
+flakefinder/mote2_optics.py implements an anisotropic air/MoTe2/SiO2/Si stack,
+NA averaging and RGB spectral integration. The source tensor is Munkhbat et al.
+(ACS Photonics2022; https://doi.org/10.1021/acsphotonics.2c00433,
+https://zenodo.org/records/6205431). The vendor Axiocam305 sensitivity curves
+were extracted from the ZEISS vector PDF, with their provenance preserved.
+See research/mote2-optical-model-03/HANDOFF.txt and configs/materials/.
+
+Convention: C=(substrate-feature)/substrate. Darker material is positive.
+The camera's earlier exposure ladder was close to linear but lacked a measured
+dark reference. White-balance gains cancel only for independent linear,
+unclipped, offset-corrected channels. Preview gamma is not scientific contrast.
+The effective lamp/objective/camera spectrum remains incompletely measured.
+The published tensor is thick2H material, not monolayer-specific constants.
+Model ensembles explore declared assumptions; they are not experimental error
+bars. Near-zero curve agreement is also compatible with bare substrate.
+
+Use conditional model distance and improvement over the substrate null as
+evidence. Unmatched objects remain visible. No current candidate is assigned
+a validated layer number. The independent reference checks show that model
+agreement alone does not reliably separate all material and residue controls.
+
+REFERENCE CALIBRATION
+flakefinder/reference_clusters.py supplies an optical-profile-bound Gaussian
+classifier for pixels. It requires at least five distinct confirmed physical
+references for each thickness class and bare-substrate controls. Repeated
+photographs do not increase the reference count. Provide AFM/Raman/PL records
+and separate measured terraces, then evaluate on held-out flakes/chips before
+trusting posterior scores. The current batch has no such thickness labels;
+the code therefore does not fabricate a trained thickness classifier.
+
+APPEARANCE CLUSTERING
+Completed run:14,344 regions from1,266 fields in26.3minutes on4CPUthreads,
+32 unlabeled clusters, zero inference errors. The1,266 fields comprise1,235
+primary and31 recovered analyses. The1386 raster fields also include13
+excluded,5 unresolved and102 failed original feature analyses; those120 fields
+do not supply candidate crops and are not counted as processed by DINOv2.
+The review export is Analysis Review 2026-10-09.zip at the shared project root.
+Extract the complete ZIP and open index.html. It includes representative and
+distant cluster members and the accepted-parent terrace pilot; the full
+per-field embeddings and assignments remain in the shared campaign folder.
+
+scripts/cluster_flake_crops.py uses pinned DINOv2-small weights locally onCPU.
+It consumes candidate crops from the saved feature fields, including rejected
+regions >=25um2, retains whole crops rather than truncating them by center-crop,
+and writes resumable embeddings and cluster-previews to Drive. Prior analysis
+failures/exclusions are counted; they are not claimed as processed candidates.
+The standalone review.html displays typical and distant cluster members and
+exports provisional cluster labels. A cluster may be mixed. Review members
+before propagating labels or training a geometry/cleanliness classifier.
+
+Model: https://huggingface.co/facebook/dinov2-small
+Revision: ed25f3a31f01632728cabb09d1542f84ab7b0056
+Paper: https://arxiv.org/abs/2304.07193
+Install optional inference dependencies with pip install -e .[appearance].
+On this computer the isolated .venv-maskterial runtime has the required CPU
+PyTorch/Transformers/scikit-learn dependencies. The public model weights and
+hash receipt live under external/dinov2-small/ on Drive.
+
+Example from the project root, using the optional runtime:
+python scripts/cluster_flake_crops.py --campaign data/whole-chip-standardized-01 --output data/whole-chip-standardized-01/analysis-dinov2-appearance --model <mounted-project>/external/dinov2-small/ed25f3a31f01632728cabb09d1542f84ab7b0056 --threads 4
+Progress is progress.json.
+An output STOP file stops the next batch without treating a partial field as
+complete. Removing STOP is a deliberate operator action, never automatic.
+
+Appearance embeddings do not establish flake cleanliness or crystal quality.
+Training a clean-interior anomaly model needs reviewed clean patches and a
+held-out check; it is not trained from the current unlabeled clusters. Raman,
+PL or futureSHG measurements remain independent physical characterization.
+
+RELATION TO PUBLISHED METHODS
+2DMatGMM uses Gaussian contrast classes with a learned false-positive classifier:
+https://github.com/Jaluus/2DMatGMM
+https://doi.org/10.1088/2632-2153/ad2287
+Our reference_clusters.py is a separate small-reference Gaussian implementation;
+it is not pretrained MoTe2 weights or a claim to reproduce published accuracy.
+MaskTerial reports synthetic pretraining and adaptation with5-10 annotated images:
+https://arxiv.org/abs/2412.09333
+https://pubs.rsc.org/en/content/articlepdf/2025/DD/D5DD00156K
+Those images still need genuine instance/layer annotations. No fine-tuned
+MaskTerial model or reviewed-clean-interior anomaly detector was trained in this
+unlabeled batch. The present deliverable is the auditable segmentation, physical
+model, reference-classifier interface and completed appearance-cluster review.

@@ -1,0 +1,138 @@
+COPY-ONLY RELOCATION / 2026-10-09
+
+Current transfer owner: root agent. This helper never removes originals, mutates
+Drive databases/cache/settings, extracts authentication, or uses microscope hardware.
+
+Source vendor inventory:
+  C:\Users\STM\Documents\ChatGPT\Automated Microscopy\data\zen-captures
+Destination:
+  G:\Shared drives\Xu Lab - Microscopy and Instruments\Automated Microscopy\data\zen-captures
+Ledger: research/drive-relocation/zen-transfer-ledger.json
+Per-batch evidence: research/drive-relocation/batch-NNNNN.json
+
+Inventory records all absolute and relative paths, size and mtime, with an immutable
+mapping checksum. Files are copied in <=256 MiB batches, preserving relative paths.
+Free C: must exceed an 8 GiB reserve plus twice the batch size before staging.
+During copying the reserve is checked for every MiB. Sources must be unchanged
+since inventory. Destinations are created exclusively; existing exact SHA256 matches
+can resume, whereas differing partial/existing files stop without deleting anything.
+SHA256 and MD5 are calculated from source bytes; the mounted destination is reread
+and its SHA256 compared. This readback alone does not prove upload completion.
+
+Client-confirmation gate:
+Two read-only SQLite snapshots at least 10 seconds apart must each show:
+  - the exact shared-drive ancestry and same cloud IDs;
+  - matching size and cached MD5 at empirically identified protobuf field 48;
+  - local_only=0, neither trashed nor tombstoned, and not a folder;
+  - zero global pending operations (conservative: unrelated uploads also defer).
+The prior mounted SHA256 match is also required. Every per-file result retains both
+sanitized metadata snapshots. Another batch is blocked until all current files meet
+the gate. It is labeled client_confirmed; independent_server_verified remains false.
+The transfer owner should additionally observe Drive's supported Done/sync-complete
+UI before authorizing source removal. This program contains no removal operation.
+
+Field 48 semantic evidence and limitations:
+The canary is 22,227,066 bytes, source MD5 a534cfa9b8be4110b45f6f645c38b765,
+SHA256 e59e412c6634de26c879692018ca48211d7c0a6251bb1da07428d98dbcf6a0aa.
+Immediately after copying, its cached item had a cloud ID/local_only=0 but no MD5,
+and the operations table held two pending entries. Subsequently its protobuf grew
+from 109 to 700 bytes, field 48 contained the exact source MD5, and the queue became
+empty. This strongly corroborates cached remote-checksum semantics. Google does
+NOT document the DriveFS SQLite/protobuf schema: the field number and queue cannot
+be represented as a public API contract or independent server response. Structured
+log numeric event/status codes are retained only as corroboration, never proof.
+
+Canary cloud ID: 1qZGO4FezTVtQvYo2jiCkPXn-0QjU0zX_
+Canary URL: https://drive.google.com/file/d/1qZGO4FezTVtQvYo2jiCkPXn-0QjU0zX_/view
+Shared drive ID: 0AGMvZpRbSaSKUk9PVA
+Project folder ID: 15fLb2vGRTVIPZMBRh8vEakZs-ggu9fr7
+
+Supported status/cache behavior (official references):
+https://support.google.com/a/users/answer/13005112?hl=en
+Google documents that a Drive desktop Done icon means uploaded and accessible from
+other devices/browser. Sync icon means upload is not complete.
+
+https://knowledge.workspace.google.com/admin/drive/advanced-drive-for-desktop-configuration?hl=en
+ContentCacheMaxKbytes is a supported administrative/host-wide limit. It excludes
+currently uploading and offline-pinned files, so it cannot replace bounded staging.
+MinFreeDiskSpaceKBytes is a supported free-space guard. Cache may contain unsynced
+data; direct deletion is unsafe. No setting or cache was changed by this helper.
+
+https://support.google.com/drive/answer/13401938?hl=en
+Shared drives use streaming. Marking files online-only removes the offline-retention
+requirement, but the cited documentation does not promise immediate cache eviction.
+Do not delete mounted G: files to reclaim cache: that deletes cloud content.
+
+https://developers.google.com/workspace/drive/api/reference/rest/v3/files
+The official File API defines output-only md5Checksum for binary file content and
+optional sha256Checksum, size, id, parents and driveId. An authenticated API response
+would be stronger evidence; this helper does not obtain credentials or make one.
+Browser independent verification initially stopped at sign-in. The user then
+authenticated Drive web, and root observed the canary and clicked Download. The
+downloaded file was independently hashed here at 16:26:57 UTC; its SHA256 matches.
+Receipt: canary-server-attestation.json. No credential extraction or bypass occurred.
+
+Commands (from project root, no shell chaining required):
+  .venv\Scripts\python.exe research/drive-relocation/bounded_transfer.py copy-next --ledger research/drive-relocation/zen-transfer-ledger.json
+  .venv\Scripts\python.exe research/drive-relocation/bounded_transfer.py verify-batch --ledger research/drive-relocation/zen-transfer-ledger.json --separation-seconds 10
+copy-next stages at most one batch. verify-batch can be repeated while upload is
+pending; it does not copy or remove data. A process lock prevents concurrent ledger
+writers. Keep batch manifests when originals are later removed by the transfer owner.
+
+Eight focused temporary-directory tests verify stable gates, interval enforcement,
+pending/missing-checksum/cloud-identity rejection, resumable matching copies,
+collision preservation, disk-reserve protection, inventory tamper/size limits,
+priority phase preservation and batched cached-metadata decoding.
+
+WORKSPACE WORKER
+run_transfer.py inventory-workspace emits a complete recorded inventory in phases:
+code/research/configuration/dependencies; analyses/previews/resources; scientific
+raw TIFF/CZI; vendor data last. Scientific/vendor temporary files are retained.
+Only explicit runtime/Git/cache/dot-prefixed .test-*/credential patterns and live
+relocation journals are omitted. Ordinary data/test-* outputs ARE INCLUDED:
+28,792 files, approximately 265.2 MB in the original inventory. Earlier broad
+wording that all test-temporary outputs were excluded was inaccurate. No files
+are dropped by this reporting correction. laptop-viewer and its ZIP use separate
+recorded inventories.
+Single files >256 MiB are explicitly permitted only as isolated batches, subject
+to the same 8 GiB reserve plus twice their size before copying. The final journal
+worker batches <=256 MiB and <=4096 files, with <=1 GiB of unconfirmed staged
+content. Failed/conflicting copies never overwrite destinations.
+
+The worker runs below-normal priority, owns a process lock and checks relocation
+STOP at every file boundary and between phases. Current files finish rather than
+creating intentional partial copies. It waits up to 10 minutes for disk reserve
+and 120 minutes for upload confirmation, then writes a resumable blocked status.
+No source/cache deletion occurs. Two client snapshots use one read-only transaction
+each, with ancestor lookup caching for all files in the batch.
+
+FINAL PRIORITY AND COMPLETION (2026-10-09)
+Laptop Review.zip and its manifest are client-confirmed and separately retained.
+The unpacked laptop-viewer snapshot was appended to the mirror. Current campaign
+data/whole-chip-standardized-01 is now first among unassigned pending paths:
+31.54 GB of chip tiles/sidecars, followed by remaining campaign data (64.88 GB total).
+Historical data and all vendor files remain queued afterward, not excluded.
+
+Two stable owned-file cloud identities/MD5/size matches can release copy-only
+backpressure while unrelated uploads continue. This state is content_matched,
+never final client_confirmed or authorization to remove originals. The latter
+still requires an empty pending queue in both snapshots. Original sources stay.
+
+complete_transfer.py waits for the existing worker to release its owner lock and
+finish successfully, then requires SOURCE-FROZEN.json with schema=1, ready=true,
+and frozen_at_utc. It reconciles explicit prior revisions, audits new/changed
+files, copies additions and preserves verified old canonical versions before
+updating changed files. Unexpected destination bytes stop the refresh. It repeats
+the audit and exports a consistent SQLite backup plus original inventory. Its
+supervisor-state.json and Drive TRANSFER-COMPLETION.json distinguish completion,
+blocked storage/upload/conflicts, and operator STOP. No indefinite automatic retry
+or original/cache deletion is used. Runtime environments/credentials remain
+explicit exclusions; live relocation journals are exported as frozen evidence.
+
+Cache audit (read-only, independent acquisition_audit agent): no configured
+ContentCacheMaxKbytes, MinFreeDiskSpaceKBytes or ContentCachePath was found in
+HKLM host/override or HKCU keys. Hidden account content_cache held 16,110 files,
+2,374,365,446 logical and 2,376,664,406 allocated bytes at the audit snapshot.
+Automatic cache eviction has no documented completion-time guarantee; pending
+uploads and pinned files are outside the cap. The 8 GiB reserve must therefore
+remain a real blocked condition, not an assumption that cache will always clear.

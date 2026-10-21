@@ -1,0 +1,39 @@
+{
+  "recorded_at": "2026-10-14T20:06:43.067254+00:00",
+  "full_pass_status": {
+    "state": "running",
+    "pid": 12264,
+    "output": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\analysis\\graphene\\scan-20261013-221727-131d9ced\\chip001\\full-chip-conditional-v1",
+    "updated_at": 1792008402.4910195,
+    "no_acquisition_performed": true,
+    "cpu": {
+      "threads": 1,
+      "priority": "below_normal",
+      "windows_affinity": "one allowed logical CPU"
+    },
+    "current_field": "tile_000027",
+    "finished_fields": 27,
+    "selected_fields": 999
+  },
+  "committed_counts": {
+    "assessed": 18,
+    "unassessable": 9,
+    "budget_exhausted": 0,
+    "invalid_source": 0,
+    "failed": 0
+  },
+  "validation": {
+    "passed": 40,
+    "suite": [
+      "test_analyze_graphene_run.py",
+      "test_material_profiles.py",
+      "test_material_selection.py",
+      "test_graphene_watcher.py"
+    ],
+    "seconds": 3.5,
+    "review_js_syntax": "passed",
+    "interactive_browser_qa": "blocked by local security policy; static plots visually inspected"
+  },
+  "acquisition_paused": true,
+  "analysis_only": true
+}

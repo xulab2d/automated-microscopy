@@ -1,0 +1,17 @@
+{
+  "success": false,
+  "z_um": 15378.0,
+  "score": 0.001,
+  "prominence": 0,
+  "reason": "Full sweep unresolved",
+  "samples": [],
+  "outcome": "non_peak",
+  "budget": {
+    "max_seconds": 120.0,
+    "max_captures": 40,
+    "captures_started": 5,
+    "elapsed_seconds": 0.015000000013969839,
+    "completed_actions": 10,
+    "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline"
+  }
+}

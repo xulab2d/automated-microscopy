@@ -1,0 +1,1505 @@
+{
+  "status": "offline qualitative model consistency check; no fit and no classification labels assigned",
+  "source": "configs\\mote2-285nm-20x-material.json",
+  "source_sha256": "9f4c9baf43a2bb85b8132ddab8b0276b9da02e1ff9b6cf7de14e195c125fd35b",
+  "covariance_interpretation": "existing within-reference color-distribution covariance, not uncertainty of mean and not a validated acceptance threshold",
+  "optical_profile_scope": "reference exactcontext retained in source; comparisons not applied to mismatched acquisitionsettings",
+  "curve_provenance": {
+    "schema": 1,
+    "model_id": "mote2-2h-munkhbat-2022-285nm-v1",
+    "model": {
+      "config_sha256": "90992597b3587c75779fc5e3218fc66fe682944ec78729189839497dd1eafb70",
+      "data_sha256": {
+        "mote2_tensor": "02254f768131303bbe6772990eea20122dd26a40999477840221c59ea00aba9e",
+        "silicon_nk": "e751386cde891835f4c83da624c0a413cd3966719d851f36b3dbe8dd826ab6bf"
+      },
+      "implementation_sha256": "6fd20f20469379563110815c0c5bdff15f6d9a0b3776e7e2069fc503f1760d38"
+    },
+    "curve_sha256": "42b68f247b957db558ec28f6ca1415b5ee854c4c4f3d069dbdd78c509df4e193",
+    "calibration_status": "conditional_manufacturer_response_ensemble",
+    "response_sha256": "f8fab8d39f9a308bcaee6357effa401017fae945bf2d074b3977de15d7dc970b",
+    "response_provenance": null,
+    "scenario_provenance": [
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.0,
+        "gamma": 0.99,
+        "lamp": "equal_energy",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.0,
+        "gamma": 1.0,
+        "lamp": "equal_energy",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.0,
+        "gamma": 0.99,
+        "lamp": "equal_energy",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.0,
+        "gamma": 1.0,
+        "lamp": "equal_energy",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.0,
+        "gamma": 0.99,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.0,
+        "gamma": 1.0,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.0,
+        "gamma": 0.99,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.0,
+        "gamma": 1.0,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.0,
+        "gamma": 0.99,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.0,
+        "gamma": 1.0,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.0,
+        "gamma": 0.99,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.0,
+        "gamma": 1.0,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.0,
+        "gamma": 0.99,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.0,
+        "gamma": 1.0,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.0,
+        "gamma": 0.99,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.0,
+        "gamma": 1.0,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.267,
+        "gamma": 0.99,
+        "lamp": "equal_energy",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.267,
+        "gamma": 1.0,
+        "lamp": "equal_energy",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.267,
+        "gamma": 0.99,
+        "lamp": "equal_energy",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.267,
+        "gamma": 1.0,
+        "lamp": "equal_energy",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.267,
+        "gamma": 0.99,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.267,
+        "gamma": 1.0,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.267,
+        "gamma": 0.99,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.267,
+        "gamma": 1.0,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.267,
+        "gamma": 0.99,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.267,
+        "gamma": 1.0,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.267,
+        "gamma": 0.99,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.267,
+        "gamma": 1.0,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.267,
+        "gamma": 0.99,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.267,
+        "gamma": 1.0,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.267,
+        "gamma": 0.99,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.267,
+        "gamma": 1.0,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.4,
+        "gamma": 0.99,
+        "lamp": "equal_energy",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.4,
+        "gamma": 1.0,
+        "lamp": "equal_energy",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.4,
+        "gamma": 0.99,
+        "lamp": "equal_energy",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.4,
+        "gamma": 1.0,
+        "lamp": "equal_energy",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.4,
+        "gamma": 0.99,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.4,
+        "gamma": 1.0,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.4,
+        "gamma": 0.99,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.4,
+        "gamma": 1.0,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.4,
+        "gamma": 0.99,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.4,
+        "gamma": 1.0,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.4,
+        "gamma": 0.99,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.4,
+        "gamma": 1.0,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.4,
+        "gamma": 0.99,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.4,
+        "gamma": 1.0,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.4,
+        "gamma": 0.99,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.4,
+        "gamma": 1.0,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.0,
+        "gamma": 0.99,
+        "lamp": "equal_energy",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.0,
+        "gamma": 1.0,
+        "lamp": "equal_energy",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.0,
+        "gamma": 0.99,
+        "lamp": "equal_energy",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.0,
+        "gamma": 1.0,
+        "lamp": "equal_energy",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.0,
+        "gamma": 0.99,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.0,
+        "gamma": 1.0,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.0,
+        "gamma": 0.99,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.0,
+        "gamma": 1.0,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.0,
+        "gamma": 0.99,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.0,
+        "gamma": 1.0,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.0,
+        "gamma": 0.99,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.0,
+        "gamma": 1.0,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.0,
+        "gamma": 0.99,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.0,
+        "gamma": 1.0,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.0,
+        "gamma": 0.99,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.0,
+        "gamma": 1.0,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.267,
+        "gamma": 0.99,
+        "lamp": "equal_energy",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.267,
+        "gamma": 1.0,
+        "lamp": "equal_energy",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.267,
+        "gamma": 0.99,
+        "lamp": "equal_energy",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.267,
+        "gamma": 1.0,
+        "lamp": "equal_energy",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.267,
+        "gamma": 0.99,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.267,
+        "gamma": 1.0,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.267,
+        "gamma": 0.99,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.267,
+        "gamma": 1.0,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.267,
+        "gamma": 0.99,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.267,
+        "gamma": 1.0,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.267,
+        "gamma": 0.99,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.267,
+        "gamma": 1.0,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.267,
+        "gamma": 0.99,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.267,
+        "gamma": 1.0,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.267,
+        "gamma": 0.99,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.267,
+        "gamma": 1.0,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.4,
+        "gamma": 0.99,
+        "lamp": "equal_energy",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.4,
+        "gamma": 1.0,
+        "lamp": "equal_energy",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.4,
+        "gamma": 0.99,
+        "lamp": "equal_energy",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.4,
+        "gamma": 1.0,
+        "lamp": "equal_energy",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.4,
+        "gamma": 0.99,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.4,
+        "gamma": 1.0,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.4,
+        "gamma": 0.99,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.4,
+        "gamma": 1.0,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.4,
+        "gamma": 0.99,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.4,
+        "gamma": 1.0,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.4,
+        "gamma": 0.99,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.4,
+        "gamma": 1.0,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.4,
+        "gamma": 0.99,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.4,
+        "gamma": 1.0,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.4,
+        "gamma": 0.99,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.4,
+        "gamma": 1.0,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.0,
+        "gamma": 0.99,
+        "lamp": "equal_energy",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.0,
+        "gamma": 1.0,
+        "lamp": "equal_energy",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.0,
+        "gamma": 0.99,
+        "lamp": "equal_energy",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.0,
+        "gamma": 1.0,
+        "lamp": "equal_energy",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.0,
+        "gamma": 0.99,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.0,
+        "gamma": 1.0,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.0,
+        "gamma": 0.99,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.0,
+        "gamma": 1.0,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.0,
+        "gamma": 0.99,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.0,
+        "gamma": 1.0,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.0,
+        "gamma": 0.99,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.0,
+        "gamma": 1.0,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.0,
+        "gamma": 0.99,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.0,
+        "gamma": 1.0,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.0,
+        "gamma": 0.99,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.0,
+        "gamma": 1.0,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.267,
+        "gamma": 0.99,
+        "lamp": "equal_energy",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.267,
+        "gamma": 1.0,
+        "lamp": "equal_energy",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.267,
+        "gamma": 0.99,
+        "lamp": "equal_energy",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.267,
+        "gamma": 1.0,
+        "lamp": "equal_energy",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.267,
+        "gamma": 0.99,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.267,
+        "gamma": 1.0,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.267,
+        "gamma": 0.99,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.267,
+        "gamma": 1.0,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.267,
+        "gamma": 0.99,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.267,
+        "gamma": 1.0,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.267,
+        "gamma": 0.99,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.267,
+        "gamma": 1.0,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.267,
+        "gamma": 0.99,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.267,
+        "gamma": 1.0,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.267,
+        "gamma": 0.99,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.267,
+        "gamma": 1.0,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.4,
+        "gamma": 0.99,
+        "lamp": "equal_energy",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.4,
+        "gamma": 1.0,
+        "lamp": "equal_energy",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.4,
+        "gamma": 0.99,
+        "lamp": "equal_energy",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.4,
+        "gamma": 1.0,
+        "lamp": "equal_energy",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.4,
+        "gamma": 0.99,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.4,
+        "gamma": 1.0,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.4,
+        "gamma": 0.99,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.4,
+        "gamma": 1.0,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.4,
+        "gamma": 0.99,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.4,
+        "gamma": 1.0,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.4,
+        "gamma": 0.99,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.4,
+        "gamma": 1.0,
+        "lamp": "blackbody_4500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.4,
+        "gamma": 0.99,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.4,
+        "gamma": 1.0,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "energy_response"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.4,
+        "gamma": 0.99,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "photon_efficiency"
+      },
+      {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.4,
+        "gamma": 1.0,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "photon_efficiency"
+      }
+    ],
+    "vendor_trace_uncertainty": {
+      "plot_half_stroke_uncertainty_response": 0.003639348324351113,
+      "plot_half_stroke_uncertainty_nm": 0.6662147171206706,
+      "uncertainty_warning": "Drawing scale only, NOT a confidence bound on sensor sensitivity. Manufacturer gives no device-to-device uncertainty or incident-photon-versus-radiant-power convention."
+    },
+    "oxide_nm": null,
+    "illumination_na": null,
+    "thickness_grid_nm": [
+      0.0,
+      0.1,
+      0.2,
+      0.30000000000000004,
+      0.4,
+      0.5,
+      0.6000000000000001,
+      0.7000000000000001,
+      0.8,
+      0.9,
+      1.0,
+      1.1,
+      1.2000000000000002,
+      1.3,
+      1.4000000000000001,
+      1.5,
+      1.6,
+      1.7000000000000002,
+      1.8,
+      1.9000000000000001,
+      2.0,
+      2.1,
+      2.2,
+      2.3000000000000003,
+      2.4000000000000004,
+      2.5,
+      2.6,
+      2.7,
+      2.8000000000000003,
+      2.9000000000000004,
+      3.0,
+      3.1,
+      3.2,
+      3.3000000000000003,
+      3.4000000000000004,
+      3.5,
+      3.6,
+      3.7,
+      3.8000000000000003,
+      3.9000000000000004,
+      4.0,
+      4.1000000000000005,
+      4.2,
+      4.3,
+      4.4,
+      4.5,
+      4.6000000000000005,
+      4.7,
+      4.800000000000001,
+      4.9,
+      5.0,
+      6.0,
+      7.0,
+      8.0,
+      9.0,
+      10.0,
+      11.0,
+      12.0,
+      13.0,
+      14.0,
+      15.0,
+      16.0,
+      17.0,
+      18.0,
+      19.0,
+      20.0,
+      21.0,
+      22.0,
+      23.0,
+      24.0,
+      25.0,
+      26.0,
+      27.0,
+      28.0,
+      29.0,
+      30.0,
+      31.0,
+      32.0,
+      33.0,
+      34.0,
+      35.0,
+      36.0,
+      37.0,
+      38.0,
+      39.0,
+      40.0,
+      41.0,
+      42.0,
+      43.0,
+      44.0,
+      45.0,
+      46.0,
+      47.0,
+      48.0,
+      49.0,
+      50.0,
+      51.0,
+      52.0,
+      53.0,
+      54.0,
+      55.0,
+      56.0,
+      57.0,
+      58.0,
+      59.0,
+      60.0,
+      61.0,
+      62.0,
+      63.0,
+      64.0,
+      65.0,
+      66.0,
+      67.0,
+      68.0,
+      69.0,
+      70.0,
+      71.0,
+      72.0,
+      73.0,
+      74.0,
+      75.0,
+      76.0,
+      77.0,
+      78.0,
+      79.0,
+      80.0,
+      81.0,
+      82.0,
+      83.0,
+      84.0,
+      85.0,
+      86.0,
+      87.0,
+      88.0,
+      89.0,
+      90.0,
+      91.0,
+      92.0,
+      93.0,
+      94.0,
+      95.0,
+      96.0,
+      97.0,
+      98.0,
+      99.0,
+      100.0,
+      101.0,
+      102.0,
+      103.0,
+      104.0,
+      105.0,
+      106.0,
+      107.0,
+      108.0,
+      109.0,
+      110.0,
+      111.0,
+      112.0,
+      113.0,
+      114.0,
+      115.0,
+      116.0,
+      117.0,
+      118.0,
+      119.0,
+      120.0,
+      121.0,
+      122.0,
+      123.0,
+      124.0,
+      125.0,
+      126.0,
+      127.0,
+      128.0,
+      129.0,
+      130.0,
+      131.0,
+      132.0,
+      133.0,
+      134.0,
+      135.0,
+      136.0,
+      137.0,
+      138.0,
+      139.0,
+      140.0,
+      141.0,
+      142.0,
+      143.0,
+      144.0,
+      145.0,
+      146.0,
+      147.0,
+      148.0,
+      149.0,
+      150.0,
+      151.0,
+      152.0,
+      153.0,
+      154.0,
+      155.0,
+      156.0,
+      157.0,
+      158.0,
+      159.0,
+      160.0,
+      161.0,
+      162.0,
+      163.0,
+      164.0,
+      165.0,
+      166.0,
+      167.0,
+      168.0,
+      169.0,
+      170.0,
+      171.0,
+      172.0,
+      173.0,
+      174.0,
+      175.0,
+      176.0,
+      177.0,
+      178.0,
+      179.0,
+      180.0,
+      181.0,
+      182.0,
+      183.0,
+      184.0,
+      185.0,
+      186.0,
+      187.0,
+      188.0,
+      189.0,
+      190.0,
+      191.0,
+      192.0,
+      193.0,
+      194.0,
+      195.0,
+      196.0,
+      197.0,
+      198.0,
+      199.0,
+      200.0,
+      201.0,
+      202.0,
+      203.0,
+      204.0,
+      205.0,
+      206.0,
+      207.0,
+      208.0,
+      209.0,
+      210.0,
+      211.0,
+      212.0,
+      213.0,
+      214.0,
+      215.0,
+      216.0,
+      217.0,
+      218.0,
+      219.0,
+      220.0,
+      221.0,
+      222.0,
+      223.0,
+      224.0,
+      225.0,
+      226.0,
+      227.0,
+      228.0,
+      229.0,
+      230.0,
+      231.0,
+      232.0,
+      233.0,
+      234.0,
+      235.0,
+      236.0,
+      237.0,
+      238.0,
+      239.0,
+      240.0,
+      241.0,
+      242.0,
+      243.0,
+      244.0,
+      245.0,
+      246.0,
+      247.0,
+      248.0,
+      249.0,
+      250.0
+    ],
+    "model_covariance_rgb": null,
+    "score_kind": "profile_minimum_over_nuisance",
+    "layer_assignment_allowed": false,
+    "material_identity_confirmed": false
+  },
+  "results": [
+    {
+      "name": "bright_bulk_reference",
+      "reference_role": "positive",
+      "observed_contrast_rgb": [
+        -0.781526505947113,
+        -0.6196567416191101,
+        -0.8006350994110107
+      ],
+      "descriptive_min_mahalanobis": 25.273144035913692,
+      "conditional_best_nm": 11.0,
+      "conditional_range_nm": [
+        11.0,
+        11.0
+      ],
+      "ambiguous": false,
+      "best_scenario": {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.0,
+        "gamma": 0.99,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "energy_response"
+      }
+    },
+    {
+      "name": "cyan_P1",
+      "reference_role": "positive",
+      "observed_contrast_rgb": [
+        0.32317298650741577,
+        -0.6160956025123596,
+        -0.36839160323143005
+      ],
+      "descriptive_min_mahalanobis": 0.9338848870253931,
+      "conditional_best_nm": 7.0,
+      "conditional_range_nm": [
+        6.0,
+        7.0
+      ],
+      "ambiguous": false,
+      "best_scenario": {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.4,
+        "gamma": 0.99,
+        "lamp": "equal_energy",
+        "response_interpretation": "energy_response"
+      }
+    },
+    {
+      "name": "cyan_P2",
+      "reference_role": "positive",
+      "observed_contrast_rgb": [
+        -0.07908038049936295,
+        -0.6132006645202637,
+        -0.545188307762146
+      ],
+      "descriptive_min_mahalanobis": 2.339869161486028,
+      "conditional_best_nm": 7.0,
+      "conditional_range_nm": [
+        7.0,
+        7.0
+      ],
+      "ambiguous": false,
+      "best_scenario": {
+        "oxide_nm": 285.0,
+        "illumination_na": 0.267,
+        "gamma": 0.99,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "photon_efficiency"
+      }
+    },
+    {
+      "name": "dust_haze_1",
+      "reference_role": "negative",
+      "observed_contrast_rgb": [
+        0.06821469057302204,
+        0.03057521221188739,
+        0.057545094264620046
+      ],
+      "descriptive_min_mahalanobis": 1.2462207451856107,
+      "conditional_best_nm": 0.0,
+      "conditional_range_nm": [
+        0.0,
+        0.1
+      ],
+      "ambiguous": false,
+      "best_scenario": {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.0,
+        "gamma": 1.0,
+        "lamp": "blackbody_6500K",
+        "response_interpretation": "photon_efficiency"
+      }
+    },
+    {
+      "name": "dust_haze_2",
+      "reference_role": "negative",
+      "observed_contrast_rgb": [
+        0.336501063755783,
+        0.23998129442451863,
+        0.2740005044399071
+      ],
+      "descriptive_min_mahalanobis": 1.9327793691768225,
+      "conditional_best_nm": 0.30000000000000004,
+      "conditional_range_nm": [
+        0.0,
+        1.0
+      ],
+      "ambiguous": false,
+      "best_scenario": {
+        "oxide_nm": 290.0,
+        "illumination_na": 0.0,
+        "gamma": 1.0,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "photon_efficiency"
+      }
+    },
+    {
+      "name": "dust_haze_3",
+      "reference_role": "negative",
+      "observed_contrast_rgb": [
+        0.6039435365830496,
+        0.6910394612444233,
+        0.6057971894739136
+      ],
+      "descriptive_min_mahalanobis": 4.44237223229105,
+      "conditional_best_nm": 0.5,
+      "conditional_range_nm": [
+        0.30000000000000004,
+        0.8
+      ],
+      "ambiguous": false,
+      "best_scenario": {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.4,
+        "gamma": 1.0,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "photon_efficiency"
+      }
+    },
+    {
+      "name": "substrate",
+      "reference_role": "background",
+      "observed_contrast_rgb": [
+        0.00911917444318533,
+        3.755110446945764e-05,
+        -0.0007830890826880932
+      ],
+      "descriptive_min_mahalanobis": 0.38195536776562516,
+      "conditional_best_nm": 0.0,
+      "conditional_range_nm": [
+        0.0,
+        0.0
+      ],
+      "ambiguous": false,
+      "best_scenario": {
+        "oxide_nm": 280.0,
+        "illumination_na": 0.267,
+        "gamma": 1.0,
+        "lamp": "blackbody_3000K",
+        "response_interpretation": "energy_response"
+      }
+    }
+  ]
+}

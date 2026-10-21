@@ -1,0 +1,30 @@
+PHOTOMETRIC + SPATIAL BRACKET PROTOTYPE V2 — OFFLINE ONLY
+
+Result
+19 representative saved raw fields replayed in12.38s with one OpenCV thread.16accepted:9 previously accepted edges retained unchanged,3 newly recovered lines independently confirmed,4 newly recovered lines refined from raw coordinates. Three rejected: false green-contamination013/probe21; wrong-orientation016/probe13; heavily occluded015/probe7. Candidate010 and015 each form four-line estimated outlines from accepted saved evidence; all registered substrate-patch checks pass. Candidate005 remains a four-line estimate with its four original edge measurements unchanged.7 focused tests passed in1.45s.
+
+Algorithm (photometric_validation.py)
+The old label-side support gates are unchanged. Each proposal is independently examined using60 normal profiles in raw RGB. A profile must show a localized dark transition stronger than measured derivative background and decreasing signal in all three channels, with spatial support across the field. Raw edge points must be sufficiently numerous and span the field; robust line scatter cannot exceed the measured transition width. Candidate direction/position must agree with measured raw support. A noisy set cannot earn arbitrarily broad acceptance tolerance.
+Previously accepted edges are not silently replaced. Only explicitly permitted NEW proposals can be refined from coherent raw transition coordinates, and the refined line must pass the original0.78 substrate/holder purity and side-area gates again. Attached debris made015/probe7 unreliable, so clean neighboring saved fields supply that side instead.
+Fitted half-planes are additionally checked against registered40um patches having>=90%substrate support. A line excluding at least3 independent observed substrate patches beyond its75um model margin is inconsistent. The false013line fails this independently of raw validation. A caller must reject a model if any registered consistency check fails; a mathematical polygon alone is not acceptance.
+
+Scope and limitations
+This raw step check is specific to the recorded dark holder versus exposed-substrate profile. It does not support bright/metallic holders without separate measured validation. Noise factors and support fractions are explicit quality heuristics, not calibrated statistical confidence intervals. It does not prove all chips found, validate an unseen corner, or make a focused field out of a blurred one. No hardware validation or production integration was done; the old Hough-only patch remains blocked. Dark residue adjacent to a physical edge is a residual ambiguity; raw-coordinate provenance and model uncertainty remain necessary.
+
+Spatial bracket correction
+spatial_bracket_evidence preserves original substrate/holder decisions. For unknown centres, it reuses90%whole-frame substrate with<=5%holder, or95%holder with<=5%substrate, then requires a single connected supporting component across all quadrants. It changes only the search bracket, never the original pixel/centre classification, chip identity, edge acceptance, or focus evidence.014/probe1 and013/probe11 become inferred inside. All-unknown and98%-substrate split by a thin holder seam remain unknown. The inference and original classification are both recorded.
+
+Staged source patches
+sparse-spatial-bracket.patch: standalone bracketing correction.
+sparse-gap-and-spatial-bracket.patch: combined angular-gap plus spatial correction for sparse_acquisition.py. Use this instead of separately stacking those two patches. Read-only git apply --check --ignore-space-change passes for each. These patches are NOT applied.
+The photometric extractor is an isolated research module, not an unchecked drop-in production patch. Integrating it requires supplying raw frames to candidate validation and enforcing registered model consistency. Do not deploy the Hough-only patch by itself. Existing source-transition/fingerprint/STOP/lease rules still apply, including the edge_model_sha256 resume limitation documented in DEPLOYMENT.txt.
+
+Reproduce
+.venv/Scripts/python.exe research/discovery-gap-repair/replay_photometric.py
+.venv/Scripts/python.exe -m pytest research/discovery-gap-repair/test_photometric_validation.py -q
+
+Archive/provenance
+archive-photometric-v2-20261009 contains the exact algorithm, proposed source, source patches, replay results and tests. archive-manifest.json records every file hash. photometric-representative-replay.json records source algorithm and discovery hashes plus original per-frame recorded hashes, raw support points and all decisions. photometric-v2-summary.json gives concise counts and unchanged production-source hashes.
+
+Acquisition status
+No hardware clients, motion, STOP creation/removal, pause, restart, production-module/configuration edits or acquisition-manifest changes occurred. Chip002 still requires its separate measured north-tip extension; none of these offline results changes its coverage status.

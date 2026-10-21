@@ -1,0 +1,33 @@
+PROJECT SIZE AUDIT — 9 OCTOBER 2026
+
+The migration inventory totals 225,559,931,839 bytes across 122,657 files.
+This is the entire historical working archive, not just the 1386 final fields.
+Newly generated Drive-primary analyses and review packages are additional.
+
+Final scan JPEG previews: 1,386 files; 952,272,812 bytes (0.952 GB).
+Final scan raw TIFFs: 1,386 files; 30,557,016,126 bytes (30.557 GB).
+Example tile000015: 2464x2056 RGB, 16 bits/channel container, TIFF LZW,
+22,227,066 bytes. The camera's 12-bit intensities are stored in 16-bit samples.
+
+ZEISS vendor capture folder: 140,573,735,312 bytes (140.574 GB), including
+4,524 CZI files totaling 139,592,464,224 bytes plus job metadata/previews.
+These include additional autofocus/probe captures and overlap with saved
+exported raw images; not every CZI is an independently useful final scan field.
+No pixel-level one-to-one deduplication audit has yet been completed.
+
+Current campaign discovery images: 15,461,835,753 bytes.
+Current campaign search images: 13,022,185,961 bytes.
+Current campaign complete folder: 64,880,759,421 bytes.
+Other historical runs, analyses, models and files account for the remainder.
+The detailed directory/extension breakdown is SIZE-BREAKDOWN.json.
+
+28,792 ordinary data/test-* outputs totaling 265,185,356 bytes remain in this
+mirror inventory. Their byte share is small but their file count adds transfer
+overhead. Explicit .test-* and cache exclusions do not cover all ordinary test
+outputs. Nothing was dropped from the inventory after this audit.
+
+No source, vendor, scientific or cache data has been deleted. A later retention
+policy should distinguish the primary lossless dataset from vendor duplicates
+and diagnostic focus/discovery history, with verified equivalence/provenance
+before deleting unique historical content. JPEG previews cannot replace raw
+quantitative contrast data.

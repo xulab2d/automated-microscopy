@@ -1,0 +1,181 @@
+[
+  {
+    "tile": "R2C1/tile_000000",
+    "branches": [
+      "bright_bulk_reference",
+      "cyan_P1",
+      "cyan_P2"
+    ],
+    "objective_position": 2,
+    "objective": {
+      "position": 2,
+      "name": "EC Epiplan 20x/0.4 HD M27",
+      "magnification": 20.0,
+      "na": 0.4,
+      "working_distance_um": 3300.0
+    },
+    "white_level": 4095.0,
+    "camera_job_template": "FlakeFinder Quantitative Camera",
+    "camera_resources": {
+      "ff_exposure_ms": 266.6015625,
+      "ff_white_balance": "0.25007564,1,2.61244442"
+    },
+    "pixel_size_um": [
+      0.1725,
+      0.1725
+    ],
+    "illumination_percent": 93.44422700587084
+  },
+  {
+    "tile": "R2C1/tile_000016",
+    "branches": [
+      "bright_bulk_reference"
+    ],
+    "objective_position": 2,
+    "objective": {
+      "position": 2,
+      "name": "EC Epiplan 20x/0.4 HD M27",
+      "magnification": 20.0,
+      "na": 0.4,
+      "working_distance_um": 3300.0
+    },
+    "white_level": 4095.0,
+    "camera_job_template": "FlakeFinder Quantitative Camera",
+    "camera_resources": {
+      "ff_exposure_ms": 266.6015625,
+      "ff_white_balance": "0.25007564,1,2.61244442"
+    },
+    "pixel_size_um": [
+      0.1725,
+      0.1725
+    ],
+    "illumination_percent": 93.44422700587084
+  },
+  {
+    "tile": "R2C1/tile_000019",
+    "branches": [
+      "bright_bulk_reference",
+      "bright_bulk_reference"
+    ],
+    "objective_position": 2,
+    "objective": {
+      "position": 2,
+      "name": "EC Epiplan 20x/0.4 HD M27",
+      "magnification": 20.0,
+      "na": 0.4,
+      "working_distance_um": 3300.0
+    },
+    "white_level": 4095.0,
+    "camera_job_template": "FlakeFinder Quantitative Camera",
+    "camera_resources": {
+      "ff_exposure_ms": 266.6015625,
+      "ff_white_balance": "0.25007564,1,2.61244442"
+    },
+    "pixel_size_um": [
+      0.1725,
+      0.1725
+    ],
+    "illumination_percent": 93.44422700587084
+  },
+  {
+    "tile": "R2C1/tile_000003",
+    "branches": [
+      "bright_bulk_reference",
+      "reviewed_dust_haze"
+    ],
+    "objective_position": 2,
+    "objective": {
+      "position": 2,
+      "name": "EC Epiplan 20x/0.4 HD M27",
+      "magnification": 20.0,
+      "na": 0.4,
+      "working_distance_um": 3300.0
+    },
+    "white_level": 4095.0,
+    "camera_job_template": "FlakeFinder Quantitative Camera",
+    "camera_resources": {
+      "ff_exposure_ms": 266.6015625,
+      "ff_white_balance": "0.25007564,1,2.61244442"
+    },
+    "pixel_size_um": [
+      0.1725,
+      0.1725
+    ],
+    "illumination_percent": 93.44422700587084
+  },
+  {
+    "tile": "R2C1/tile_000005",
+    "branches": [
+      "reviewed_dust_haze"
+    ],
+    "objective_position": 2,
+    "objective": {
+      "position": 2,
+      "name": "EC Epiplan 20x/0.4 HD M27",
+      "magnification": 20.0,
+      "na": 0.4,
+      "working_distance_um": 3300.0
+    },
+    "white_level": 4095.0,
+    "camera_job_template": "FlakeFinder Quantitative Camera",
+    "camera_resources": {
+      "ff_exposure_ms": 266.6015625,
+      "ff_white_balance": "0.25007564,1,2.61244442"
+    },
+    "pixel_size_um": [
+      0.1725,
+      0.1725
+    ],
+    "illumination_percent": 93.44422700587084
+  },
+  {
+    "tile": "R2C1/tile_000010",
+    "branches": [
+      "reviewed_dust_haze"
+    ],
+    "objective_position": 2,
+    "objective": {
+      "position": 2,
+      "name": "EC Epiplan 20x/0.4 HD M27",
+      "magnification": 20.0,
+      "na": 0.4,
+      "working_distance_um": 3300.0
+    },
+    "white_level": 4095.0,
+    "camera_job_template": "FlakeFinder Quantitative Camera",
+    "camera_resources": {
+      "ff_exposure_ms": 266.6015625,
+      "ff_white_balance": "0.25007564,1,2.61244442"
+    },
+    "pixel_size_um": [
+      0.1725,
+      0.1725
+    ],
+    "illumination_percent": 93.44422700587084
+  },
+  {
+    "tile": "R2C1/tile_000009",
+    "branches": [
+      "reviewed_dust_haze"
+    ],
+    "objective_position": 2,
+    "objective": {
+      "position": 2,
+      "name": "EC Epiplan 20x/0.4 HD M27",
+      "magnification": 20.0,
+      "na": 0.4,
+      "working_distance_um": 3300.0
+    },
+    "white_level": 4095.0,
+    "camera_job_template": "FlakeFinder Quantitative Camera",
+    "camera_resources": {
+      "ff_exposure_ms": 266.6015625,
+      "ff_white_balance": "0.25007564,1,2.61244442"
+    },
+    "pixel_size_um": [
+      0.1725,
+      0.1725
+    ],
+    "illumination_percent": 93.44422700587084
+  }
+]

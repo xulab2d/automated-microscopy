@@ -1,0 +1,204 @@
+{
+  "source_analysis_sha256": "5f8d64d1166c78a3a18a70b7521c781f5b0c6ce1566fe46b7a9269f2fbd51f50",
+  "source_analysis_state": "partial_with_errors",
+  "source_completed_tiles": 425,
+  "source_total_tiles": 474,
+  "failures": [
+    {
+      "tile_key": "chip001/tile_000000",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000001",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000003",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000004",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000005",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000006",
+      "error": "Not enough exposed substrate to normalize this tile."
+    },
+    {
+      "tile_key": "chip001/tile_000007",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000008",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000017",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000018",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000032",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000033",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000051",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000090",
+      "error": "Not enough exposed substrate to normalize this tile."
+    },
+    {
+      "tile_key": "chip001/tile_000130",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000150",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000169",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000170",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000180",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000189",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000190",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000229",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000250",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000272",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000292",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000293",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000313",
+      "error": "Too little exposed substrate in this field."
+    },
+    {
+      "tile_key": "chip001/tile_000333",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000354",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000393",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000394",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000414",
+      "error": "Not enough exposed substrate to normalize this tile."
+    },
+    {
+      "tile_key": "chip001/tile_000415",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000416",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000432",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000445",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000446",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000448",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000449",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000450",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000451",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000458",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000460",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000461",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000462",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000463",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000464",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000468",
+      "error": "Invalid fitted background; supply a substrate mask or flat field."
+    },
+    {
+      "tile_key": "chip001/tile_000469",
+      "error": "Not enough exposed substrate to normalize this tile."
+    }
+  ]
+}

@@ -1,0 +1,373 @@
+{
+  "schema": 1,
+  "kind": "independent_raw_edge_stage_background_v1",
+  "context": {
+    "camera_resources": {
+      "ff_exposure_ms": 116.78,
+      "ff_white_balance": "0.25007564,1,2.61244442"
+    },
+    "camera_job_template": "FlakeFinder Quantitative Camera",
+    "objective_position": 2,
+    "objective": {
+      "position": 2,
+      "name": "EC Epiplan 20x/0.4 HD M27",
+      "magnification": 20.0,
+      "na": 0.4,
+      "working_distance_um": 3300.0
+    },
+    "white_level": 4095.0,
+    "illumination_percent": 90.01956947162427
+  },
+  "pixel_size_um": [
+    0.1725,
+    0.1725
+  ],
+  "reference_pixels_sha256": "917b24c09c5f21ef7d18994fcc793464d024c6d043c1c8e0f240090efc73926d",
+  "reference_shape": [
+    2056,
+    2464,
+    3
+  ],
+  "reference_dtype": "uint16",
+  "edge_pixels_sha256": "75155a7e28e706e21c1991a047848f606d685515fbac20cef7561b643cbab57e",
+  "provenance": {
+    "edge_tiff_path": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261015-145135-db809db3\\autonomous-reference\\final-exposure-edge.tiff",
+    "edge_tiff_sha256": "eaaf0f3ffc43a6edfd661dd7344ab093b16546a36f810bcc203d66f0c67c942a",
+    "edge_metadata_sha256": "012cf2fdd377f15ac480f900817f4d92534fc4c0fbcc4c4b22df2038629b7d95"
+  },
+  "edge": {
+    "normal": [
+      0.9999438911793029,
+      0.010593134247922718
+    ],
+    "offset_um": 63013.71044721393
+  },
+  "raw_edge_validation": {
+    "accepted": true,
+    "candidate_unchanged": true,
+    "method": "raw_RGB_step_profiles",
+    "step_polarity": "outside_darker",
+    "profile_assumption": "Independent RGB transitions must share one polarity across the field; substrate side remains reference-bound.",
+    "tested_profiles": 60,
+    "supported_profiles": 59,
+    "raw_normal_image": [
+      0.9994118213653564,
+      -0.034293558448553085
+    ],
+    "candidate_normal_image": [
+      0.9994118034914928,
+      -0.03429354227666888
+    ],
+    "raw_working_shape": [
+      427,
+      512
+    ],
+    "raw_span_px": 399.1871888265114,
+    "raw_scatter_px": 1.0,
+    "orientation_drift_px": 6.2071268097113836e-06,
+    "allowed_orientation_drift_px": 6.0,
+    "median_candidate_displacement_px": 0.0,
+    "raw_transition_width_px_p90": 5.0,
+    "inlier_profiles": 57,
+    "median_inside_minus_outside_RGB": [
+      368.0863037109375,
+      744.2332153320312,
+      469.7286682128906
+    ],
+    "measured_raw_points_image": [
+      [
+        319.85252310216777,
+        13.558103066086188
+      ],
+      [
+        320.0845492459586,
+        20.320007827990946
+      ],
+      [
+        320.31657538974946,
+        27.081912589895733
+      ],
+      [
+        320.5486015335403,
+        33.843817351800496
+      ],
+      [
+        320.78062767733115,
+        40.605722113705255
+      ],
+      [
+        322.0120656246135,
+        47.33333333333334
+      ],
+      [
+        322.47611791219526,
+        60.85714285714286
+      ],
+      [
+        322.7081440559861,
+        67.61904761904762
+      ],
+      [
+        322.94017019977696,
+        74.38095238095238
+      ],
+      [
+        323.1721963435678,
+        81.14285714285714
+      ],
+      [
+        323.40422248735865,
+        87.9047619047619
+      ],
+      [
+        323.6362486311495,
+        94.66666666666667
+      ],
+      [
+        323.86827477494035,
+        101.42857142857143
+      ],
+      [
+        324.1003009187312,
+        108.19047619047619
+      ],
+      [
+        324.33232706252204,
+        114.95238095238095
+      ],
+      [
+        324.5643532063129,
+        121.71428571428571
+      ],
+      [
+        324.79637935010373,
+        128.47619047619048
+      ],
+      [
+        325.4924577814763,
+        148.76190476190476
+      ],
+      [
+        325.7244839252671,
+        155.52380952380952
+      ],
+      [
+        325.95651006905797,
+        162.28571428571428
+      ],
+      [
+        326.1885362128488,
+        169.04761904761904
+      ],
+      [
+        326.42056235663966,
+        175.8095238095238
+      ],
+      [
+        326.6525885004305,
+        182.57142857142856
+      ],
+      [
+        326.88461464422136,
+        189.33333333333334
+      ],
+      [
+        327.1166407880122,
+        196.0952380952381
+      ],
+      [
+        327.3486669318031,
+        202.85714285714286
+      ],
+      [
+        327.58069307559396,
+        209.61904761904762
+      ],
+      [
+        327.8127192193848,
+        216.38095238095238
+      ],
+      [
+        328.04474536317565,
+        223.14285714285714
+      ],
+      [
+        328.2767715069665,
+        229.9047619047619
+      ],
+      [
+        328.50879765075734,
+        236.66666666666666
+      ],
+      [
+        328.7408237945482,
+        243.42857142857142
+      ],
+      [
+        328.97284993833904,
+        250.1904761904762
+      ],
+      [
+        329.2048760821299,
+        256.95238095238096
+      ],
+      [
+        329.43690222592073,
+        263.7142857142857
+      ],
+      [
+        329.6689283697116,
+        270.4761904761905
+      ],
+      [
+        329.9009545135024,
+        277.2380952380953
+      ],
+      [
+        330.1329806572933,
+        284.0
+      ],
+      [
+        330.3650068010841,
+        290.7619047619048
+      ],
+      [
+        330.59703294487497,
+        297.5238095238095
+      ],
+      [
+        330.8290590886658,
+        304.28571428571433
+      ],
+      [
+        331.06108523245666,
+        311.04761904761904
+      ],
+      [
+        331.2931113762475,
+        317.80952380952385
+      ],
+      [
+        331.52513752003836,
+        324.57142857142856
+      ],
+      [
+        331.7571636638292,
+        331.33333333333337
+      ],
+      [
+        331.98918980762005,
+        338.0952380952381
+      ],
+      [
+        332.22121595141095,
+        344.8571428571429
+      ],
+      [
+        332.4532420952018,
+        351.6190476190476
+      ],
+      [
+        332.68526823899265,
+        358.3809523809524
+      ],
+      [
+        332.9172943827835,
+        365.1428571428571
+      ],
+      [
+        333.14932052657434,
+        371.9047619047619
+      ],
+      [
+        333.3813466703652,
+        378.66666666666674
+      ],
+      [
+        333.61337281415604,
+        385.42857142857144
+      ],
+      [
+        333.8453989579469,
+        392.19047619047626
+      ],
+      [
+        334.07742510173773,
+        398.95238095238096
+      ],
+      [
+        334.3094512455286,
+        405.7142857142858
+      ],
+      [
+        334.5414773893194,
+        412.4761904761905
+      ]
+    ],
+    "reason": "Label line independently supported by a coherent broadband step."
+  },
+  "reference_controls": {
+    "accepted": true,
+    "bright_control_rgb": [
+      411.0,
+      768.0,
+      481.0
+    ],
+    "dark_control_rgb": [
+      43.0,
+      47.0,
+      29.0
+    ],
+    "reference_median_rgb": [
+      413.0,
+      772.0,
+      486.0
+    ],
+    "bright_match_fraction": 0.8983429641411803,
+    "minimum_bright_match_fraction": 0.85,
+    "control_sampling_stride_px": 5,
+    "reference_sample_pixels": 99334,
+    "qualification": "Independent raw edge polarity and bright-side correspondence, not chemical identity."
+  },
+  "sampling": {
+    "stride_px": 5,
+    "minimum_outside_distance_um": 20.0,
+    "sample_count": 62935,
+    "core_count": 60852
+  },
+  "centre": [
+    -0.08408311721054144,
+    -0.49435737364285826
+  ],
+  "covariance": [
+    [
+      0.09682952510505803,
+      0.006460833905303306
+    ],
+    [
+      0.006460833905303306,
+      0.014462562472853194
+    ]
+  ],
+  "dark_control_rgb": [
+    44.0,
+    48.0,
+    29.0
+  ],
+  "bright_control_rgb": [
+    411.0,
+    768.0,
+    481.0
+  ],
+  "rgb_upper": [
+    172.45,
+    300.0,
+    187.2
+  ],
+  "rgb_lower_exclusive": 4.0,
+  "mahalanobis_max": 3.5,
+  "substrate_chromatic_exclusion_max": 3.5,
+  "white_level": 4095.0,
+  "qualification": "Measured stage-side chromatic compatibility below 35% of the independently measured bright-dark separation; brightness may vary. Substrate-colored shadows excluded. Not chemical identity or a confidence bound.",
+  "model_sha256": "96e8ba675ad638dc0b2c5ae1756dcd543973c48610b5384eb22a7dfe4981d465"
+}

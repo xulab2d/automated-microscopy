@@ -1,0 +1,20 @@
+{
+  "donor": "scan-20261013-215137-c4f3127d",
+  "saved_manifest_preflight": "passed exact focus/seed/plan/config/reference/source transition verification",
+  "saved_options_normalized": true,
+  "prepared_focus_retry_chips": [
+    {
+      "chip_id": "chip001",
+      "manifest_sha256": "592cc051046ad13c1955efcfe4ad6753f5cbd246fa27fc98c39b615757cbf0c2",
+      "plan_sha256": "94325c7b322f26ecc3482d9d0d2a2c9f5e29d8817c26c28cb137b0a145a9201a",
+      "prepared_focus_points_retained": 4,
+      "completed_tiles_retained": 0,
+      "seed_focus_provenance_unchanged": true,
+      "previous_algorithm_source_sha256": "cafc4da1d7d33a60f46ed00daaff6acbb4d2ab067c8a88db81e2a8d2ca61cd03",
+      "upgrade_algorithm_source_sha256": "dfd2ea9ea03ef93c76a1d126b6d9beaf3c34d1ce7fd9b6fe984fb2262a07c8ab",
+      "reason": "Explicit new algorithm invocation repairs the prepared edge-plane extrapolation refusal; reuse existing anchors and tiles."
+    }
+  ],
+  "donor_manifest_unchanged": true,
+  "hardware_connections": 0
+}

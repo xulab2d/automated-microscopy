@@ -1,0 +1,4 @@
+{
+  "error": "<_MultiThreadedRendezvous of RPC that terminated with:\n\tstatus = StatusCode.ABORTED\n\tdetails = \"Job execution has failed.\"\n\tdebug_error_string = \"ABORTED:Job execution has failed.\"\n>",
+  "frames_completed": 0
+}

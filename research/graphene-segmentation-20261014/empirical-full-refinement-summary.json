@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "regions": 53513,
+  "states": {
+    "review_required": 15047,
+    "accepted": 36937,
+    "unresolved": 1529
+  },
+  "likely_artifacts": 94,
+  "source_fields": 942,
+  "elapsed_seconds": 931.390000000014,
+  "index_sha256": "660b3f23f3b45421afaee43690b3adb4024c29ceb6582b0ad9187ee69bf0472e"
+}

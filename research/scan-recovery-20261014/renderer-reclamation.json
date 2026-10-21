@@ -1,0 +1,37 @@
+{
+  "scope": "One identity-checked renderer working-set reclamation pass; no application termination or hardware access.",
+  "before_available_bytes": 1351778304,
+  "actions": [
+    {
+      "pid": 22892,
+      "state": "trimmed",
+      "resident_before_bytes": 1026052096,
+      "name": "ChatGPT",
+      "path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1002.7124.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "ticks": 639270820231764575,
+      "before_bytes": 1026052096,
+      "process_terminated": false
+    },
+    {
+      "pid": 1836,
+      "state": "trimmed",
+      "resident_before_bytes": 540831744,
+      "name": "ChatGPT",
+      "path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1002.7124.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "ticks": 639270822292432989,
+      "before_bytes": 540831744,
+      "process_terminated": false
+    },
+    {
+      "pid": 15460,
+      "state": "trimmed",
+      "resident_before_bytes": 506699776,
+      "name": "ChatGPT",
+      "path": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1002.7124.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe",
+      "ticks": 639270822806251844,
+      "before_bytes": 506699776,
+      "process_terminated": false
+    }
+  ],
+  "after_available_bytes": 1599029248
+}

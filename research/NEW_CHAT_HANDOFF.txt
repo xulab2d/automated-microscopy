@@ -1,0 +1,70 @@
+MICROSCOPY HANDOFF — 11 October 2026, prepared after 21:31 UTC
+
+Read this document first, then inspect current state. Do not import the old conversation or the archived heartbeat history into your context unless a specific missing fact requires it.
+
+OBJECTIVE AND AUTHORIZATION
+Complete the fresh October 11 placement session: discover and scan 16 graphene-on-90-nm-SiO2 chips at 20x, analyze committed frames, and prepare a separate manual 100x revisit stage. The human confirmed chips returned to the platform and explicitly authorized autonomous acquisition, corrective software recovery, normal ZEN API-mode entry, and now specialist agents with one coordinator. Existing placement authorization persists. Do not ask again about obsolete +/-25 um or -25/+150 um limits. Do not count optical candidates as confirmed graphene or monolayers.
+
+The latest human request is to move to a fresh conversation using this handoff. No fresh specialist agents have been launched yet. Three old agents (acquisition_audit, detector_research, viewer) are completed; do not assume they are current owners. This old chat is relinquishing mutations for transfer. Its recurring monitor stays ACTIVE but must obey the ownership record described below.
+
+PATHS
+Workspace W = C:\Users\STM\Documents\ChatGPT\Automated Microscopy
+Production source S = W\research\software-next-20261009
+Scientific data and reports D = G:\Shared drives\Xu Lab - Microscopy and Instruments\Automated Microscopy
+Exact current pointer = D\scan-control\current.json
+Run directories = D\data\<run-id>
+Handoff/ownership directory = D\research\session-20261011-handoff
+Viewer = http://127.0.0.1:8770/scan
+Automation = overnight-chip-scan, name Autonomous microscopy supervision
+Old coordinator chat = 01a11cde-1282-7510-967b-808ff3bd83a9
+
+TAKE OWNERSHIP BEFORE ACTION
+Read handoff-directory\coordination.json. The old chat will not mutate hardware, source, requests or ownership after preparing this transfer. Verify no unexpected active acquisition/agent owner, then claim coordination.json for this new chat and record the sole acquisition owner. This is a coordination record, not a replacement for the application's hardware lease. Retarget the EXISTING heartbeat to this new chat using automation_update, preserving ACTIVE status and its compact prompt; do not create a competing automation. Resolve your actual chat ID from trusted app/environment state. If retargeting is unsupported, report that exact limitation; do not guess success or silently create duplicate monitors. Old-chat heartbeats check ownership and stay read-only. The new chat is explicitly authorized by the pasted user request to take over.
+
+RECOMMENDED AGENT SPLIT
+Use fresh contexts (spawn_agent fork_turns="none"), short role briefs and paths, not full history. The root chat is coordinator. Spawn at most three specialists:
+1. Acquisition/recovery: sole production writer and hardware owner after a recorded coordinator grant; diagnose current failure, test repairs offline, then resume through verified continuation. Until granted, inspect only.
+2. Geometry/focus: offline raw-image/control replay and algorithm review in its own staging directory. No hardware, live-source edits, request changes or launches.
+3. Analysis/verification: audit manifests, independent controls, memory/progress evidence, later graphene analysis and 100x handoff. No hardware; heavy analysis yields to acquisition.
+Assign disjoint writable files. Review/integrate one repair at a time; freeze all production source while any worker runs. Agents report only outcome, evidence paths, risks and next action (roughly 200 words); retain detailed logs on Drive. Persist current state, ownership and open issues separately from append-only history. Do not append historical repair narratives to every heartbeat.
+
+LATEST VERIFIED STATE — RECHECK, NEVER TRUST AN OLD PID
+At 21:31:21 UTC current.json pointed to scan-20261011-142544-dd41625e.
+Request SHA256: 58eec3862626b14708b6eedcdcbf0bea73078de41d12152e560ec684d5f8259f.
+Worker 22432 failed at 21:27:54 UTC during reference_exposure, exposure attempt 1, 401.774 ms.
+AcquisitionError: "Unacknowledged vendor output limit: 4 jobs, 123428288 bytes. Persist/review pending work before another capture; no files were deleted."
+Hardware_closed=true, stop_errors=[], watchdog_reason=null, recovery_state=needs_repair. Native identity check confirmed worker absent at 21:31. Launcher was 19984, guard 26936, wrapper 25428; verify all absent before edits/relaunch. Guard recorded worker_exited_or_unreadable. Physical available ~2.48 GB; no RAM-capacity error. No live reference-correction acceptance, geometry import or new batch yet. There are ZERO accepted complete chip outlines and ZERO committed raster tiles across this fresh session. Prior line observations are not chip coverage.
+
+IMMEDIATE RECOVERY TARGET
+Inspect current scan-request.json, session-instruction.json, status, heartbeat, recovery-needed.json, launch, worker log, motion log, vendor jobs/receipts and source hashes. Failure is in S\flakefinder\vendor_lifecycle.py::check_pending. It snapshots prior-session CZI backlog, adds unacknowledged jobs, and stops at four jobs or an estimated 512 MiB pending total. Do not merely increase the bound, delete unknown jobs, or mark evidence acknowledged without proof. Identify each retained job and whether a durable raw/observation receipt exists; preserve pending output and repair missing acknowledgement/continuation logic with validated provenance. The old detector_research agent reported staged acknowledgement fixes for exposure/calibration/objective flows in W\research\revisit-next-20261009\HANDOFF.txt; inspect relevance rather than blindly copying older source. That is a lead, not a verified cause of this failure.
+
+Then resume the existing same-placement session through S\scripts\resume_adaptive_focus.py and the source-bound continuation machinery. The current failure is not yet a demonstrated eligible continuation case; inspect/extend exact typed eligibility with tests if necessary, retaining original frame, deadlines, data and reference correction. Never rerun old one-off start scripts blindly, bypass guards or launch a second worker. Prior continuation receipts are exclusive. W\research\plan_geometry_continuation.py and start_geometry_continuation.py are historical examples hardcoded to the previous transition, NOT commands to rerun.
+
+CURRENT REFERENCE / GEOMETRY REPAIR (OFFLINE TESTED, LIVE NOT YET VERIFIED)
+Parent run scan-20261011-140151-bdf8664e was cooperatively stopped at 21:14:59 after candidates002/003 ended registered_substrate_contradicts_halfplanes. Hardware closed 21:15:00; all owner processes exited before edits. Exact supervisor STOP cancelled a capture with FutureCancelledError, matched by request hash, PID and timestamps. Do not generalize this exception to operator STOP.
+Root cause diagnosed: the original mixed-boundary reference was defocused at Z15611.015. Its model labelled dark backing as substrate and the bright flake-bearing chip as holder. Proposed correction uses previously independently focused full field XYZ4997.503,-18262.863,15674.687. Two independent chip-interior and two backing controls are hash-pinned; offline replay classified 92.3%/97.1% chip pixels and rejected 100% backing. Material identity remains optical only.
+New reference_repair.py requires a NEW field at that exact XYZ/optics/scale, passing independent controls and >=95% same-ROI prior focus score before campaign. Do not claim it worked without reference-correction-verification.json accepted. No original image/request overwritten. Thirteen preserved seed captures are reclassified; four historical wrong-label boundary attempts become superseded_reference_labels; 772 unvisited lattice locations remain. Corrected reference queues candidate005. Read progress-reused.json and reference-reclassified-progress.json after successful startup.
+Spatial autofocus now permits up to four separated local attempts, nearest successful focus used as a starting estimate, within existing 600-second/64-capture/32-geometric-probe budget. No validation gate relaxed. Correction files: reference_repair.py, scan_continuation.py, scan_worker.py, chip_campaign.py, memory_progress.py, sparse_acquisition.py. Report/backups/control replay: D\research\session-20261011-geometry-continuity\repair-report.json and before/. 96 integrated tests and 34 overlapping follow-up tests passed; do not sum as unique. Report still says recovery_starting and needs the latest failure recorded separately.
+
+NON-NEGOTIABLE CURRENT POLICIES
+One hardware client. Never edit production source or immutable request beneath a live worker. Preserve committed images, manifests, hashes, frame, checkpoints and same-placement lineage. Old placement evidence before October11 is invalid.
+Frame: f32a3bfc-d8e5-4ae9-8218-6d57fa670104.
+Binding deadline: epoch1791825855.8789244 = 2026-10-12T17:24:15.878924Z (earlier than nominal session17:24:24). No silent extension or calling expiry completion.
+Native XY envelope: x[-25539.534,30460.466], y[-43151.752,12848.248] um. Verify authoritative request. Latest transition's old stationary checkpoint was (-2724.719,-39003.604,15701.561); do not assume this is current hardware position after the failed reference startup. Use saved motion evidence and five stationary readbacks through the continuation procedure.
+Autofocus: adaptive coarse-to-fine, doubled spacing to bracket then refine and independently confirm; controller physical Z travel bounds only, never alter controller settings. Artificial +/-25 um and pending focus-expansion permission are obsolete.
+RAM: old 1/1.5 GiB free-physical thresholds are obsolete. memory_capacity.py uses process commit/address capacity against incremental operation allocations +25% uncertainty. Actual RGB16 frame30395904 bytes; typical staging249484288, commit requirement311855360. Physical available is telemetry; normal paging is allowed. No arbitrary reservations. Native stdlib/ctypes watcher ~20 MB; optional verified allowlisted utility cleanup below512 MiB physical and renderer working-set reclamation below256 MiB, max3 and20-minute PID/start cooldown. Never kill Codex/ZEN/Drive/AnyDesk/OS/security or trim protected processes. No PowerShell/WMI resident watcher. RAM policy was live-verified across dozens of captures with zero waits after repair. Report D\research\session-20261011-native-memory\repair-report.json.
+Honor actual operator STOP/new holds/objective/sample changes. Three unchanged October9 holds have hash c74e736c5752647b9589d8f9d438e5cf61a1f447fe7ff58095e6a19de0a97522 and are superseded only by October11 placement/start authorization. Verify per-run authorization receipts; never clear a new/changed hold.
+API-mode recovery authorized after owner exit/closure: read D\research\session-20261011-startup-recovery\api-mode-recovery.json. Use Computer Use skill and observed normal Home > API Mode controls. Verify CompletedSuccessfully, application ready, API control allowed True. If already ready leave it; no Unsupervised API Mode, security changes or blind app restart. Last observed ready ~21:24.
+
+SUPERVISION / ANALYSIS
+Judge accepted corrected boundaries, outlines and manifest-committed tiles; liveness/capture counts alone are not success. Repeated unresolved geometry, overdue saved operation budgets or process exit require diagnosis and recovery. Keep repair status truthful and visible. Notify meaningful failure/recovery/coverage/candidates/completion; quiet unchanged healthy.
+Adaptive heartbeat:1 minute startup/failure/recovery/uncertainty;5 minutes verified advancing bounded mapping;10 minutes after two productive checks with new accepted boundaries or committed tiles;15 minutes sustained stable raster. Return1 on meaningful loss of progress; do not use the obsolete physical RAM floor. Record interval changes and reason; keep ACTIVE except user pause or actual completion. During this requested transfer old-chat heartbeat is read-only until new owner claims and retargets it.
+Analyze only manifest-committed20x frames via scripts/watch_graphene_scan.py, no duplicate analysis worker; yield resources to acquisition. Keep substrate/false-positive controls and source/implementation hashes. 100x is separate, manual objective change needs measured scale/offset/frame verification and fresh focus.
+
+LOW-MEMORY STATUS COMMAND
+Use exec_command with shell C:\Windows\System32\cmd.exe, workdir W:
+C:\Users\STM\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe research\scan_supervision_snapshot.py --record
+This file/process-only reader uses ~20 MB. Drive and native process identity inspection may require require_escalated; absence from a sandbox-denied process query is not proof of exit. Parse output to selected fields; do not dump all source hashes. Use W\.venv\Scripts\python.exe for scientific code/tests. Windows pytest may need an approved fresh unique --basetemp because default-temp permission failures are environmental.
+
+HISTORY ON DEMAND
+Full old heartbeat configuration/prompt and latest snapshot are archived beside this handoff. Do not treat archived historical restrictions as current. Other repair reports under D\research: session-20261011-autofocus-repair, edge-diagnosis, memory-continuation, memory-footprint, progress-continuation, native-memory, geometry-continuity. Load only the narrow evidence needed for the current issue.

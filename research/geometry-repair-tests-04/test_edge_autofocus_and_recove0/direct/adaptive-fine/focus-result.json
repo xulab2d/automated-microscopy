@@ -1,0 +1,72 @@
+{
+  "success": true,
+  "z_um": 100.0,
+  "score": 0.18087482452392578,
+  "prominence": 0.24936185483573323,
+  "reason": "Quick quadratic focus verified by a confirmation image.",
+  "samples": [
+    {
+      "z_um": 98.0,
+      "phase": "quick",
+      "score": 0.13577154278755188,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 99.0,
+      "phase": "quick",
+      "score": 0.16552820801734924,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 100.0,
+      "phase": "quick",
+      "score": 0.18087482452392578,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1549.9998779296875,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 101.0,
+      "phase": "quick",
+      "score": 0.16552820801734924,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 102.0,
+      "phase": "quick",
+      "score": 0.13577154278755188,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 100.0,
+      "phase": "confirmation",
+      "score": 0.18087482452392578,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1549.9998779296875,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    }
+  ],
+  "outcome": "resolved_peak",
+  "budget": {
+    "max_seconds": 120.0,
+    "max_captures": 40,
+    "captures_started": 14,
+    "elapsed_seconds": 0.09399999998277053,
+    "completed_actions": 29,
+    "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline"
+  }
+}

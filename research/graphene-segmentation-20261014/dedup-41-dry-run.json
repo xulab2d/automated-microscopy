@@ -1,0 +1,1329 @@
+{
+  "schema": 1,
+  "method": "same_frame_polygon_overlap_color_complete_link_v1",
+  "context": {
+    "run_id": "scan-20261013-221727-131d9ced",
+    "chip_id": "chip001",
+    "coordinate_frame_id": "518a7b77-8496-4835-bb50-55ec87456364"
+  },
+  "transform_sha256": "203df52b0e7a1613b6db3fcc7db5875eebe2f28e59cd6e5458200b5833e60847",
+  "options": {
+    "minimum_overlap_fraction": 0.65,
+    "minimum_iou": 0.35,
+    "maximum_color_delta": 0.08,
+    "maximum_color_mahalanobis2": 11.35,
+    "color_systematic_sigma": 0.01,
+    "raster_step_um": 0.25,
+    "maximum_raster_step_um": 0.5,
+    "maximum_raster_pixels": 262144,
+    "spatial_cell_um": 100.0,
+    "maximum_spatial_cells_per_observation": 4096,
+    "diagnostic_pair_limit": 256
+  },
+  "groups": [
+    {
+      "id": "graphene-group-8c528a2da170035375da",
+      "representative_id": "chip001/tile_000632/181",
+      "observation_ids": [
+        "chip001/tile_000632/181"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 139.4098718658265,
+        "contrast_covariance_trace": 3.6253467760502774e-06,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 839.7213749999999
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-5b173b2ea49dc18877fd",
+      "representative_id": "chip001/tile_000660/167",
+      "observation_ids": [
+        "chip001/tile_000660/167"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 31.468523952397447,
+        "contrast_covariance_trace": 7.648993483616987e-06,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 982.4323499999998
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-ab87c798f8f459d8211c",
+      "representative_id": "chip001/tile_000215/36",
+      "observation_ids": [
+        "chip001/tile_000215/36"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 22.502150004317077,
+        "contrast_covariance_trace": 9.676489673779713e-06,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 474.3146249999999
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-f13ece0a1ccd3e86d0ed",
+      "representative_id": "chip001/tile_000656/104",
+      "observation_ids": [
+        "chip001/tile_000656/104"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 104.23409714643428,
+        "contrast_covariance_trace": 1.1841313584724504e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 271.61504999999994
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-0994b526d253f37b8656",
+      "representative_id": "chip001/tile_000660/176",
+      "observation_ids": [
+        "chip001/tile_000660/176"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 45.95266648391189,
+        "contrast_covariance_trace": 1.3485959463312515e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 438.9641999999999
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-c88d9b29a5ca13e77a40",
+      "representative_id": "chip001/tile_000547/176",
+      "observation_ids": [
+        "chip001/tile_000547/176"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 70.78262510936521,
+        "contrast_covariance_trace": 1.4340024460881073e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 121.88159999999998
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-24383dd82c679476db89",
+      "representative_id": "chip001/tile_000079/169",
+      "observation_ids": [
+        "chip001/tile_000079/169"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 23.191871077246336,
+        "contrast_covariance_trace": 1.4649242784018321e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 124.26209999999998
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-0b683a318fac9902665f",
+      "representative_id": "chip001/tile_000640/157",
+      "observation_ids": [
+        "chip001/tile_000639/121",
+        "chip001/tile_000640/157"
+      ],
+      "observation_count": 2,
+      "status": "possible_same_object",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 67.67888028118355,
+        "contrast_covariance_trace": 1.5598670042886784e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 177.70432499999995
+      },
+      "ineligible_reason": null,
+      "pair_evidence": [
+        {
+          "observation_ids": [
+            "chip001/tile_000639/121",
+            "chip001/tile_000640/157"
+          ],
+          "accepted": true,
+          "reason": "overlapping_polygons",
+          "overlap_fraction": 0.774357116986599,
+          "iou": 0.6264989763088622,
+          "raster_step_um": 0.25,
+          "grid_phase_measurements": [
+            {
+              "intersection_um2": 133.875,
+              "overlap_fraction": 0.7766497461928934,
+              "iou": 0.6264989763088622
+            },
+            {
+              "intersection_um2": 133.625,
+              "overlap_fraction": 0.774357116986599,
+              "iou": 0.6271633910237606
+            }
+          ],
+          "maximum_color_delta": 0.006977180369669822,
+          "color_mahalanobis2": 0.7171653627033538
+        }
+      ]
+    },
+    {
+      "id": "graphene-group-fb01008d534c257bb9a8",
+      "representative_id": "chip001/tile_000269/104",
+      "observation_ids": [
+        "chip001/tile_000269/104"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 105.95839982875744,
+        "contrast_covariance_trace": 2.0774147948189996e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 310.53622499999994
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-4d9e4c54f5c3943c33d5",
+      "representative_id": "chip001/tile_000374/47",
+      "observation_ids": [
+        "chip001/tile_000374/47"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 128.37433469895836,
+        "contrast_covariance_trace": 2.101155946385639e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 235.55047499999995
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-272abe45da54faf000c1",
+      "representative_id": "chip001/tile_000626/42",
+      "observation_ids": [
+        "chip001/tile_000626/42",
+        "chip001/tile_000627/26"
+      ],
+      "observation_count": 2,
+      "status": "possible_same_object",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 32.84796609825597,
+        "contrast_covariance_trace": 2.260929532419268e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 93.43462499999998
+      },
+      "ineligible_reason": null,
+      "pair_evidence": [
+        {
+          "observation_ids": [
+            "chip001/tile_000626/42",
+            "chip001/tile_000627/26"
+          ],
+          "accepted": true,
+          "reason": "overlapping_polygons",
+          "overlap_fraction": 0.7172995780590717,
+          "iou": 0.5422647527910686,
+          "raster_step_um": 0.25,
+          "grid_phase_measurements": [
+            {
+              "intersection_um2": 63.75,
+              "overlap_fraction": 0.7172995780590717,
+              "iou": 0.5422647527910686
+            },
+            {
+              "intersection_um2": 63.25,
+              "overlap_fraction": 0.7254480286738352,
+              "iou": 0.5464362850971922
+            }
+          ],
+          "maximum_color_delta": 0.010179317155256898,
+          "color_mahalanobis2": 0.8707791480010849
+        }
+      ]
+    },
+    {
+      "id": "graphene-group-0fd47a314a573696c3db",
+      "representative_id": "chip001/tile_000457/101",
+      "observation_ids": [
+        "chip001/tile_000457/101"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 116.30421592269632,
+        "contrast_covariance_trace": 2.2823400632953843e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 247.57199999999995
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-6e19b07b7e247740e9c3",
+      "representative_id": "chip001/tile_000368/77",
+      "observation_ids": [
+        "chip001/tile_000368/77",
+        "chip001/tile_000369/60"
+      ],
+      "observation_count": 2,
+      "status": "possible_same_object",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 52.50501667673985,
+        "contrast_covariance_trace": 2.4924091703857758e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 157.35104999999996
+      },
+      "ineligible_reason": null,
+      "pair_evidence": [
+        {
+          "observation_ids": [
+            "chip001/tile_000368/77",
+            "chip001/tile_000369/60"
+          ],
+          "accepted": true,
+          "reason": "overlapping_polygons",
+          "overlap_fraction": 0.677109440267335,
+          "iou": 0.5084692597239648,
+          "raster_step_um": 0.25,
+          "grid_phase_measurements": [
+            {
+              "intersection_um2": 102.3125,
+              "overlap_fraction": 0.6835073068893528,
+              "iou": 0.5146180446400503
+            },
+            {
+              "intersection_um2": 101.3125,
+              "overlap_fraction": 0.677109440267335,
+              "iou": 0.5084692597239648
+            }
+          ],
+          "maximum_color_delta": 0.00836708978915282,
+          "color_mahalanobis2": 0.5443721711456435
+        }
+      ]
+    },
+    {
+      "id": "graphene-group-e37742994efd88aa97e2",
+      "representative_id": "chip001/tile_000656/71",
+      "observation_ids": [
+        "chip001/tile_000656/71"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 94.57800212542466,
+        "contrast_covariance_trace": 2.5649097788168105e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 182.94142499999995
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-e6cf58902d45873d35ef",
+      "representative_id": "chip001/tile_000329/153",
+      "observation_ids": [
+        "chip001/tile_000329/153"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 116.30421592269632,
+        "contrast_covariance_trace": 2.6429707562622246e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 47.25292499999999
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-b38a8a87449e29778bf7",
+      "representative_id": "chip001/tile_000602/74",
+      "observation_ids": [
+        "chip001/tile_000602/74"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 78.02469637512243,
+        "contrast_covariance_trace": 3.1956997230853806e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 288.5165999999999
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-0f115375be2858afea6f",
+      "representative_id": "chip001/tile_000943/224",
+      "observation_ids": [
+        "chip001/tile_000943/224"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 84.5770465679504,
+        "contrast_covariance_trace": 3.7396601650756016e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 219.72014999999996
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-e845680b5eb37edd4527",
+      "representative_id": "chip001/tile_000372/34",
+      "observation_ids": [
+        "chip001/tile_000372/34"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 30.08908180653893,
+        "contrast_covariance_trace": 3.988256022353529e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 34.63627499999999
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-c696b32a0b3e3c317b9e",
+      "representative_id": "chip001/tile_000656/68",
+      "observation_ids": [
+        "chip001/tile_000656/68"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 93.19855997956614,
+        "contrast_covariance_trace": 4.4343389208894984e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 117.59669999999998
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-a93c31495f7bd0091b20",
+      "representative_id": "chip001/tile_000244/51",
+      "observation_ids": [
+        "chip001/tile_000244/51"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 65.26485652593114,
+        "contrast_covariance_trace": 4.632884480323434e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 120.57232499999998
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-19ad123104b7447355e8",
+      "representative_id": "chip001/tile_000425/141",
+      "observation_ids": [
+        "chip001/tile_000425/141"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 106.99298143815132,
+        "contrast_covariance_trace": 4.8147768069994275e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 35.350424999999994
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-1d6f0c56c923082e0cc7",
+      "representative_id": "chip001/tile_000586/181",
+      "observation_ids": [
+        "chip001/tile_000586/181"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 93.19855997956614,
+        "contrast_covariance_trace": 4.8497914576541466e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 74.27159999999999
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-f9fbd04ca51a7c13545b",
+      "representative_id": "chip001/tile_000469/20",
+      "observation_ids": [
+        "chip001/tile_000469/20"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 5.2591231810856005,
+        "contrast_covariance_trace": 6.198641152825959e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 105.33712499999999
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-0bff1e20ef1a1c388bdb",
+      "representative_id": "chip001/tile_000690/437",
+      "observation_ids": [
+        "chip001/tile_000690/437"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 33.882547707649856,
+        "contrast_covariance_trace": 6.503402638014891e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 54.51344999999999
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-f970aed53078f29bebb8",
+      "representative_id": "chip001/tile_000495/339",
+      "observation_ids": [
+        "chip001/tile_000495/339"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 39.745176827548555,
+        "contrast_covariance_trace": 6.657211979980817e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 73.91452499999998
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-e31140e2c621d138c0b5",
+      "representative_id": "chip001/tile_000691/277",
+      "observation_ids": [
+        "chip001/tile_000691/277"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 32.50310556179134,
+        "contrast_covariance_trace": 7.528241422078774e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 52.72807499999999
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-47cfc3d6f723f67e9f53",
+      "representative_id": "chip001/tile_000374/60",
+      "observation_ids": [
+        "chip001/tile_000374/60"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 143.54819830340205,
+        "contrast_covariance_trace": 7.556649278269932e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 103.07564999999998
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-3063c594e02f02872ce9",
+      "representative_id": "chip001/tile_000457/157",
+      "observation_ids": [
+        "chip001/tile_000457/157"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 117.33879753209021,
+        "contrast_covariance_trace": 7.871687996955238e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 120.09622499999998
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-4999f63a050f14c15e98",
+      "representative_id": "chip001/tile_000713/40",
+      "observation_ids": [
+        "chip001/tile_000713/40"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 15.949799811489116,
+        "contrast_covariance_trace": 9.363632220820622e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 55.94174999999999
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-9c23a2d1a196f22cf7e3",
+      "representative_id": "chip001/tile_000457/112",
+      "observation_ids": [
+        "chip001/tile_000457/112"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 100.44063124532336,
+        "contrast_covariance_trace": 0.00011112626794009507,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 55.94174999999999
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-c3f2f7860179a8d9440a",
+      "representative_id": "chip001/tile_000269/50",
+      "observation_ids": [
+        "chip001/tile_000269/50"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 114.9247737768378,
+        "contrast_covariance_trace": 0.00016208888989245173,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 27.732824999999995
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-051097c13e953775443c",
+      "representative_id": "chip001/tile_000632/170",
+      "observation_ids": [
+        "chip001/tile_000632/170"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": true,
+        "image_border_margin_um": 135.27154542825093,
+        "contrast_covariance_trace": 0.00017779460308839937,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 28.208924999999994
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-6e28400bec53f412e968",
+      "representative_id": "chip001/tile_000635/1537",
+      "observation_ids": [
+        "chip001/tile_000635/1537"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": false,
+        "image_border_margin_um": 0.08621513411615739,
+        "contrast_covariance_trace": 1.585421042541127e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 742.7159999999999
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-8c9b5f0c230843da82f0",
+      "representative_id": "chip001/tile_000635/1546",
+      "observation_ids": [
+        "chip001/tile_000635/1546"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": false,
+        "image_border_margin_um": 0.08621513411615739,
+        "contrast_covariance_trace": 3.995800758591642e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 123.90502499999998
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-239c4d80ea0850287d00",
+      "representative_id": "chip001/tile_000296/6",
+      "observation_ids": [
+        "chip001/tile_000296/6"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": false,
+        "image_border_margin_um": 0.08621513411615739,
+        "contrast_covariance_trace": 7.611368895983866e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 93.79169999999998
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-04d2a82ff8d0845d345a",
+      "representative_id": "chip001/tile_000659/168",
+      "observation_ids": [
+        "chip001/tile_000659/168"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": false,
+        "image_border_margin_um": 0.08621513411615739,
+        "contrast_covariance_trace": 8.531628562671992e-05,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 110.45519999999998
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-8ce9e7e72da3b6de27fa",
+      "representative_id": "chip001/tile_000712/10",
+      "observation_ids": [
+        "chip001/tile_000712/10"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": false,
+        "image_border_margin_um": 0.08621513411615739,
+        "contrast_covariance_trace": 0.00012967524798863342,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 53.08514999999999
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    },
+    {
+      "id": "graphene-group-3715d8d616de454ebadb",
+      "representative_id": "chip001/tile_000656/4",
+      "observation_ids": [
+        "chip001/tile_000656/4"
+      ],
+      "observation_count": 1,
+      "status": "single_observation",
+      "representative_quality": {
+        "has_measured_interior": true,
+        "clear_of_image_border": false,
+        "image_border_margin_um": 0.08621513411615739,
+        "contrast_covariance_trace": 0.00016029301337409945,
+        "material_pixel_fraction": 1.0,
+        "area_um2": 46.06267499999999
+      },
+      "ineligible_reason": null,
+      "pair_evidence": []
+    }
+  ],
+  "observation_count": 41,
+  "group_count": 38,
+  "merged_observation_count": 3,
+  "ineligible_observations": {},
+  "pair_diagnostics": [
+    {
+      "observation_ids": [
+        "chip001/tile_000660/167",
+        "chip001/tile_000660/176"
+      ],
+      "accepted": false,
+      "reason": "same_source_field"
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000639/121",
+        "chip001/tile_000640/157"
+      ],
+      "accepted": true,
+      "reason": "overlapping_polygons",
+      "overlap_fraction": 0.774357116986599,
+      "iou": 0.6264989763088622,
+      "raster_step_um": 0.25,
+      "grid_phase_measurements": [
+        {
+          "intersection_um2": 133.875,
+          "overlap_fraction": 0.7766497461928934,
+          "iou": 0.6264989763088622
+        },
+        {
+          "intersection_um2": 133.625,
+          "overlap_fraction": 0.774357116986599,
+          "iou": 0.6271633910237606
+        }
+      ],
+      "maximum_color_delta": 0.006977180369669822,
+      "color_mahalanobis2": 0.7171653627033538
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000656/104",
+        "chip001/tile_000656/71"
+      ],
+      "accepted": false,
+      "reason": "same_source_field"
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000368/77",
+        "chip001/tile_000369/60"
+      ],
+      "accepted": true,
+      "reason": "overlapping_polygons",
+      "overlap_fraction": 0.677109440267335,
+      "iou": 0.5084692597239648,
+      "raster_step_um": 0.25,
+      "grid_phase_measurements": [
+        {
+          "intersection_um2": 102.3125,
+          "overlap_fraction": 0.6835073068893528,
+          "iou": 0.5146180446400503
+        },
+        {
+          "intersection_um2": 101.3125,
+          "overlap_fraction": 0.677109440267335,
+          "iou": 0.5084692597239648
+        }
+      ],
+      "maximum_color_delta": 0.00836708978915282,
+      "color_mahalanobis2": 0.5443721711456435
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000626/42",
+        "chip001/tile_000627/26"
+      ],
+      "accepted": true,
+      "reason": "overlapping_polygons",
+      "overlap_fraction": 0.7172995780590717,
+      "iou": 0.5422647527910686,
+      "raster_step_um": 0.25,
+      "grid_phase_measurements": [
+        {
+          "intersection_um2": 63.75,
+          "overlap_fraction": 0.7172995780590717,
+          "iou": 0.5422647527910686
+        },
+        {
+          "intersection_um2": 63.25,
+          "overlap_fraction": 0.7254480286738352,
+          "iou": 0.5464362850971922
+        }
+      ],
+      "maximum_color_delta": 0.010179317155256898,
+      "color_mahalanobis2": 0.8707791480010849
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000656/104",
+        "chip001/tile_000656/68"
+      ],
+      "accepted": false,
+      "reason": "same_source_field"
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000656/68",
+        "chip001/tile_000656/71"
+      ],
+      "accepted": false,
+      "reason": "same_source_field"
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000690/437",
+        "chip001/tile_000691/277"
+      ],
+      "accepted": false,
+      "reason": "insufficient_polygon_overlap",
+      "overlap_fraction": 0.30875,
+      "iou": 0.1791153009427121,
+      "raster_step_um": 0.25,
+      "grid_phase_measurements": [
+        {
+          "intersection_um2": 16.0,
+          "overlap_fraction": 0.3224181360201511,
+          "iou": 0.18754578754578755
+        },
+        {
+          "intersection_um2": 15.4375,
+          "overlap_fraction": 0.30875,
+          "iou": 0.1791153009427121
+        }
+      ],
+      "maximum_color_delta": 0.01069366413876735,
+      "color_mahalanobis2": 0.7695745368346948
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000374/47",
+        "chip001/tile_000374/60"
+      ],
+      "accepted": false,
+      "reason": "same_source_field"
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000457/101",
+        "chip001/tile_000457/157"
+      ],
+      "accepted": false,
+      "reason": "same_source_field"
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000690/437",
+        "chip001/tile_000713/40"
+      ],
+      "accepted": false,
+      "reason": "insufficient_polygon_overlap",
+      "overlap_fraction": 0.3054545454545455,
+      "iou": 0.17647058823529413,
+      "raster_step_um": 0.25,
+      "grid_phase_measurements": [
+        {
+          "intersection_um2": 15.75,
+          "overlap_fraction": 0.3054545454545455,
+          "iou": 0.17647058823529413
+        },
+        {
+          "intersection_um2": 16.125,
+          "overlap_fraction": 0.30714285714285716,
+          "iou": 0.17954070981210857
+        }
+      ],
+      "maximum_color_delta": 0.0081231227395821,
+      "color_mahalanobis2": 0.47977714105224833
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000691/277",
+        "chip001/tile_000713/40"
+      ],
+      "accepted": false,
+      "reason": "insufficient_polygon_overlap",
+      "overlap_fraction": 0.36034912718204487,
+      "iou": 0.2101818181818182,
+      "raster_step_um": 0.25,
+      "grid_phase_measurements": [
+        {
+          "intersection_um2": 18.0625,
+          "overlap_fraction": 0.36034912718204487,
+          "iou": 0.2101818181818182
+        },
+        {
+          "intersection_um2": 18.9375,
+          "overlap_fraction": 0.37875,
+          "iou": 0.22578241430700446
+        }
+      ],
+      "maximum_color_delta": 0.00257054139918525,
+      "color_mahalanobis2": 0.04543158621024386
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000457/101",
+        "chip001/tile_000457/112"
+      ],
+      "accepted": false,
+      "reason": "same_source_field"
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000457/112",
+        "chip001/tile_000457/157"
+      ],
+      "accepted": false,
+      "reason": "same_source_field"
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000632/170",
+        "chip001/tile_000632/181"
+      ],
+      "accepted": false,
+      "reason": "same_source_field"
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000635/1537",
+        "chip001/tile_000660/167"
+      ],
+      "accepted": false,
+      "reason": "insufficient_polygon_overlap",
+      "overlap_fraction": 0.6464709004068636,
+      "iou": 0.39041717856952085,
+      "raster_step_um": 0.25,
+      "grid_phase_measurements": [
+        {
+          "intersection_um2": 456.8125,
+          "overlap_fraction": 0.6464709004068636,
+          "iou": 0.39041717856952085
+        },
+        {
+          "intersection_um2": 458.1875,
+          "overlap_fraction": 0.6499113475177305,
+          "iou": 0.39285140131825735
+        }
+      ],
+      "maximum_color_delta": 0.013929012681752728,
+      "color_mahalanobis2": 4.150645455048774
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000635/1537",
+        "chip001/tile_000660/176"
+      ],
+      "accepted": false,
+      "reason": "color_disagreement",
+      "maximum_color_delta": 0.11649609292220198,
+      "color_mahalanobis2": 320.8755362928709
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000635/1546",
+        "chip001/tile_000660/167"
+      ],
+      "accepted": false,
+      "reason": "color_disagreement",
+      "maximum_color_delta": 0.10712357797678715,
+      "color_mahalanobis2": 251.53968712033588
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000635/1546",
+        "chip001/tile_000660/176"
+      ],
+      "accepted": false,
+      "reason": "insufficient_polygon_overlap",
+      "overlap_fraction": 0.5560821484992101,
+      "iou": 0.13999734853506562,
+      "raster_step_um": 0.25,
+      "grid_phase_measurements": [
+        {
+          "intersection_um2": 66.75,
+          "overlap_fraction": 0.5683874401277275,
+          "iou": 0.14245698279311725
+        },
+        {
+          "intersection_um2": 66.0,
+          "overlap_fraction": 0.5560821484992101,
+          "iou": 0.13999734853506562
+        }
+      ],
+      "maximum_color_delta": 0.005410898780608991,
+      "color_mahalanobis2": 0.3755711202458249
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000635/1537",
+        "chip001/tile_000635/1546"
+      ],
+      "accepted": false,
+      "reason": "same_source_field"
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000244/51",
+        "chip001/tile_000296/6"
+      ],
+      "accepted": false,
+      "reason": "insufficient_polygon_overlap",
+      "overlap_fraction": 0.1103448275862069,
+      "iou": 0.05157962604771115,
+      "raster_step_um": 0.25,
+      "grid_phase_measurements": [
+        {
+          "intersection_um2": 10.0,
+          "overlap_fraction": 0.1103448275862069,
+          "iou": 0.05157962604771115
+        },
+        {
+          "intersection_um2": 10.5,
+          "overlap_fraction": 0.1154639175257732,
+          "iou": 0.0535202293724116
+        }
+      ],
+      "maximum_color_delta": 0.03173798414514657,
+      "color_mahalanobis2": 8.149613339249052
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000659/168",
+        "chip001/tile_000660/167"
+      ],
+      "accepted": false,
+      "reason": "insufficient_polygon_overlap",
+      "overlap_fraction": 0.5382165605095541,
+      "iou": 0.05473861501587096,
+      "raster_step_um": 0.25,
+      "grid_phase_measurements": [
+        {
+          "intersection_um2": 53.75,
+          "overlap_fraction": 0.5491698595146871,
+          "iou": 0.05573558003888529
+        },
+        {
+          "intersection_um2": 52.8125,
+          "overlap_fraction": 0.5382165605095541,
+          "iou": 0.05473861501587096
+        }
+      ],
+      "maximum_color_delta": 0.007926175275539807,
+      "color_mahalanobis2": 1.2681239327586677
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000659/168",
+        "chip001/tile_000660/176"
+      ],
+      "accepted": false,
+      "reason": "color_disagreement",
+      "maximum_color_delta": 0.11085716465766006,
+      "color_mahalanobis2": 186.5820278649439
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000690/437",
+        "chip001/tile_000712/10"
+      ],
+      "accepted": false,
+      "reason": "insufficient_polygon_overlap",
+      "overlap_fraction": 0.1273644388398487,
+      "iou": 0.06657877389584707,
+      "raster_step_um": 0.25,
+      "grid_phase_measurements": [
+        {
+          "intersection_um2": 6.3125,
+          "overlap_fraction": 0.1273644388398487,
+          "iou": 0.06657877389584707
+        },
+        {
+          "intersection_um2": 7.1875,
+          "overlap_fraction": 0.1393939393939394,
+          "iou": 0.0740979381443299
+        }
+      ],
+      "maximum_color_delta": 0.004763247997470618,
+      "color_mahalanobis2": 0.2562999674528839
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000691/277",
+        "chip001/tile_000712/10"
+      ],
+      "accepted": false,
+      "reason": "insufficient_polygon_overlap",
+      "overlap_fraction": 0.31625,
+      "iou": 0.18685376661742983,
+      "raster_step_um": 0.25,
+      "grid_phase_measurements": [
+        {
+          "intersection_um2": 15.8125,
+          "overlap_fraction": 0.31625,
+          "iou": 0.18685376661742983
+        },
+        {
+          "intersection_um2": 15.9375,
+          "overlap_fraction": 0.32734274711168165,
+          "iou": 0.19187358916478556
+        }
+      ],
+      "maximum_color_delta": 0.006613318765301593,
+      "color_mahalanobis2": 0.651002956583869
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000712/10",
+        "chip001/tile_000713/40"
+      ],
+      "accepted": false,
+      "reason": "insufficient_polygon_overlap",
+      "overlap_fraction": 0.31313131313131315,
+      "iou": 0.17765042979942694,
+      "raster_step_um": 0.25,
+      "grid_phase_measurements": [
+        {
+          "intersection_um2": 15.5,
+          "overlap_fraction": 0.31313131313131315,
+          "iou": 0.17765042979942694
+        },
+        {
+          "intersection_um2": 15.8125,
+          "overlap_fraction": 0.31625,
+          "iou": 0.18253968253968253
+        }
+      ],
+      "maximum_color_delta": 0.006131674718540495,
+      "color_mahalanobis2": 0.4620696166325553
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000640/157",
+        "chip001/tile_000656/4"
+      ],
+      "accepted": false,
+      "reason": "insufficient_polygon_overlap",
+      "overlap_fraction": 1.0,
+      "iou": 0.25262395946435034,
+      "raster_step_um": 0.25,
+      "grid_phase_measurements": [
+        {
+          "intersection_um2": 43.625,
+          "overlap_fraction": 1.0,
+          "iou": 0.25262395946435034
+        },
+        {
+          "intersection_um2": 45.0,
+          "overlap_fraction": 1.0,
+          "iou": 0.2597402597402597
+        }
+      ],
+      "maximum_color_delta": 0.013576070140826402,
+      "color_mahalanobis2": 0.7263439284589444
+    },
+    {
+      "observation_ids": [
+        "chip001/tile_000639/121",
+        "chip001/tile_000656/4"
+      ],
+      "accepted": false,
+      "reason": "insufficient_polygon_overlap",
+      "overlap_fraction": 0.8252427184466019,
+      "iou": 0.20314100375554797,
+      "raster_step_um": 0.25,
+      "grid_phase_measurements": [
+        {
+          "intersection_um2": 37.1875,
+          "overlap_fraction": 0.8252427184466019,
+          "iou": 0.20314100375554797
+        },
+        {
+          "intersection_um2": 38.625,
+          "overlap_fraction": 0.8385345997286295,
+          "iou": 0.21273666092943203
+        }
+      ],
+      "maximum_color_delta": 0.00659888977115658,
+      "color_mahalanobis2": 0.49630405647940706
+    }
+  ],
+  "pair_comparison_count": 28,
+  "pair_reason_counts": {
+    "same_source_field": 10,
+    "overlapping_polygons": 3,
+    "insufficient_polygon_overlap": 12,
+    "color_disagreement": 3
+  },
+  "pair_diagnostics_truncated": false,
+  "qualification": "Reversible spatial/optical grouping proposals, not confirmed unique flakes or layers. Raster overlap and Gaussian color gates are engineering settings, not validated probabilities. Saved registration uncertainty is not a measured bound; no polygon dilation or centroid-only merge is used.",
+  "seconds": 0.012472599977627397
+}

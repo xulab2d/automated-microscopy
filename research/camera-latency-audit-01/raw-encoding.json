@@ -1,0 +1,32 @@
+{
+  "source": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\chip001\\tiles\\tile_000181.tiff",
+  "shape": [
+    2056,
+    2464,
+    3
+  ],
+  "dtype": "uint16",
+  "raw_bytes": 30395904,
+  "repetitions": 3,
+  "results": [
+    {
+      "compression": "lzw",
+      "bytes": 21956670,
+      "encode_median_s": 0.30330160000448814,
+      "decode_s": 0.10344349999650149,
+      "pixels_identical": true
+    },
+    {
+      "compression": "deflate",
+      "bytes": 20081968,
+      "encode_median_s": 0.9622983999943244,
+      "decode_s": 0.21378269999695476,
+      "pixels_identical": true
+    },
+    {
+      "compression": "zstd",
+      "error": "Encoder returned failure"
+    }
+  ],
+  "qualification": "In-memory encoding of one saved frame; excludes filesystem and hardware. No acquisition settings changed."
+}

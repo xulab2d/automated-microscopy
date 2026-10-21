@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Job Version="1.1">
+  <Metadata>
+    <Title>FlakeFinder Experimental Stationary Snap 20261014</Title>
+    <Description>Disabled experimental request-driven stationary snapshots. No stage commands. Requires an explicit bounded session and verified camera readback profile.</Description>
+    <CreationDate>2019-06-07T12:16:39.454809Z</CreationDate>
+    <Keywords />
+    <Comment />
+    <Job.Status>Draft</Job.Status>
+    <CustomAttributes>
+      <Category>Demo examples</Category>
+      <Status>Draft</Status>
+      <AccessControlList>*</AccessControlList>
+      <SystemAccessControlList>*</SystemAccessControlList>
+    </CustomAttributes>
+  </Metadata>
+  <OrganizationalStructure />
+  <Items>
+    <JobItem Id="ScriptingTask">
+      <Tasks>
+        <Task Id="ScriptingTask" UniqueId="422abc26-3582-4581-b091-368ca43d4a2d" TypeKey="Task.Common.Macro" LocalizeId="ScriptingTask">
+          <OperatorHelperImages />
+          <Tools>
+            <Tool Id="Macro" UniqueId="40b510e7-1850-45dc-9b49-d24f92a3e460" TypeKey="Tool.Common.Macro" LocalizeId="ScriptTool">
+              <Parameters>
+                <Parameter Id="MacroName" UniqueId="e1e60df4-5a46-494a-950b-18a3c711d94f" LocalizeId="ScriptTool_MacroName">
+                  <Metadata>
+                    <Parameter Id="OperatorRestriction" DataType="string">
+                      <Value>Locked</Value>
+                    </Parameter>
+                  </Metadata>
+                  <Value>FlakeFinder Experimental Stationary Snap 20261014</Value>
+                </Parameter>
+              </Parameters>
+              <Inputs />
+              <Outputs />
+            </Tool>
+          </Tools>
+          <Parameters />
+          <Inputs>
+            <Parameter Id="in" />
+          </Inputs>
+          <Outputs />
+        </Task>
+      </Tasks>
+      <Children />
+    </JobItem>
+  </Items>
+  <Resources />
+</Job>

@@ -1,0 +1,9 @@
+{
+  "read_at": 1791999420.9736826,
+  "source": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-221727-131d9ced\\chip001\\tiles\\tile_000917.tiff",
+  "sha256": "c6b4fc0e86de6f6cf33575ab55c4aab74a7453b8d38125188050e2ff7a24ca0b",
+  "expected": "c6b4fc0e86de6f6cf33575ab55c4aab74a7453b8d38125188050e2ff7a24ca0b",
+  "matches": true,
+  "failed_run_partial_bytes": 0,
+  "original_bytes": 20362082
+}

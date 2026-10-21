@@ -1,0 +1,27 @@
+{
+  "state": "frozen",
+  "tests": "65 passed: test_locked_hashes, test_vendor_backlog, test_zen_vendor_retention",
+  "source_sha256": {
+    "flakefinder/locked_hashes.py": "d3af0cfabace27f4cabcbf9fcede1787581eb7193ab59e93ddcfb14e0314e492",
+    "flakefinder/vendor_lifecycle.py": "d035b40b7888275cd1e60274dea2af46ffe1c0c159ee6bc33562a8ce49e74544",
+    "flakefinder/vendor_backlog.py": "f812b149c2976525b0994cd1d380b6b3fcb0e725395088a6ec07a5bf8fe2590f",
+    "flakefinder/zen.py": "49f828adbfa9254eb88f4599f9a5239fc9ef3760aebd7fcb302f81d50cddbfea",
+    "tests/test_locked_hashes.py": "6c42f6c5dcdc011defdd05ee683d5c225ab0cefd2c99069cc4ce34895016302c",
+    "tests/test_vendor_backlog.py": "3e3190f61279d48ae08dacf0e8f4b37db8c87f93820c2667d7afb863f655b322"
+  },
+  "closure_run": "capture-benchmark-20261014-211621-92092b86",
+  "hardware_closed": true,
+  "holds_unchanged": true,
+  "persistent_backend": "experimental only, not enabled",
+  "cache": "enabled conservative locked verified bytes; full semantic validators unchanged",
+  "quiet_processing": "resumed offline batch; no PAUSE left by experiment",
+  "prior_source_sha256_before_initial_cache_fallback": {
+    "flakefinder/locked_hashes.py": "fd2a4f9261f07616f66cccb527517f77fdb201182838e079650aee1707c582b0",
+    "flakefinder/vendor_lifecycle.py": "d035b40b7888275cd1e60274dea2af46ffe1c0c159ee6bc33562a8ce49e74544",
+    "flakefinder/vendor_backlog.py": "f812b149c2976525b0994cd1d380b6b3fcb0e725395088a6ec07a5bf8fe2590f",
+    "flakefinder/zen.py": "49f828adbfa9254eb88f4599f9a5239fc9ef3760aebd7fcb302f81d50cddbfea",
+    "tests/test_locked_hashes.py": "26e2a0b581f6bc58cb2b78a1d10ebaf9b393020dc62e05d80b2ad37fe5ee69df",
+    "tests/test_vendor_backlog.py": "3e3190f61279d48ae08dacf0e8f4b37db8c87f93820c2667d7afb863f655b322"
+  },
+  "initial_cache_eligibility": "Initial identity OSError/SafetyError closes the new handle and falls back to baseline hashing. Original direct-path validation unchanged. Mid-hash and cached identity mutations still fail."
+}

@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "backend": "zen",
+  "zen": {
+    "job_template": "FlakeFinder Camera",
+    "timeout_s": 30,
+    "settle_s": 0.5,
+    "xy_backlash_um": 30
+  },
+  "limits": {
+    "x_min": 46700,
+    "x_max": 49000,
+    "y_min": 29000,
+    "y_max": 31000,
+    "z_min": 15590,
+    "z_max": 15640,
+    "max_xy_step_um": 100,
+    "max_z_step_um": 10
+  },
+  "focus": {
+    "half_range_um": 12,
+    "coarse_step_um": 3,
+    "fine_step_um": 0.5
+  },
+  "initial_focus": {
+    "low": 15594,
+    "high": 15630,
+    "coarse_step_um": 3,
+    "fine_step_um": 0.5
+  },
+  "survey": {
+    "bounds_um": [
+      46800,
+      48900,
+      29100,
+      30900
+    ],
+    "autofocus_every": 3,
+    "focus_half_range_um": 9,
+    "focus_step_um": 3,
+    "mode": "survey"
+  },
+  "grid": {
+    "expected_count": null,
+    "grid_shape": null,
+    "polarity": "bright"
+  },
+  "detail": {
+    "autofocus_every": 3,
+    "focus_half_range_um": 12,
+    "focus_step_um": 3,
+    "edge_margin_um": 15
+  },
+  "context": {
+    "sample_id": "MoTe2-2026-10-08",
+    "material": "MoTe2",
+    "substrate": "SiO2/Si",
+    "oxide_nm": 285,
+    "oxide_process": "wet",
+    "objective": "EC Epiplan 10x/0.25 HD M27",
+    "camera": "Axiocam 305 color",
+    "exposure_ms": 253.613,
+    "illumination": "reflected brightfield"
+  },
+  "material_model": null,
+  "notes": "Nine-field acquisition validation; positions and initial Z range based on current instrument readback.",
+  "camera_transform": {
+    "matrix": [
+      [
+        0.34300157499271916,
+        -0.015586530619522967
+      ],
+      [
+        0.014270199181424087,
+        0.3432684232570782
+      ]
+    ],
+    "pixel_size_um": [
+      0.345,
+      0.345
+    ],
+    "calibrated": true
+  },
+  "calibration_quality": {
+    "responses": [
+      0.9166666666666666,
+      0.8222222222222222,
+      0.9148936170212766,
+      0.8936170212765957
+    ],
+    "feature_shifts_px": [
+      [
+        -145.3936767578125,
+        5.834991455078125
+      ],
+      [
+        -6.5672607421875,
+        -144.0506591796875
+      ],
+      [
+        145.6004638671875,
+        -6.2620849609375
+      ],
+      [
+        6.64569091796875,
+        146.71726989746094
+      ]
+    ],
+    "max_fit_error_um": 0.4582998690367947,
+    "return_error_um": 0.20609517587755405,
+    "return_response": 0.7149623992241754
+  },
+  "calibration_step_um": 50
+}

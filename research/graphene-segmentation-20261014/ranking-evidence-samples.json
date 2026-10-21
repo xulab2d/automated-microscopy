@@ -1,0 +1,466 @@
+[
+  {
+    "id": "chip001/tile_000849/175",
+    "area": 951.9619499999998,
+    "optical": 0.0,
+    "geometry": 3.023202720238401,
+    "evidence": {
+      "name": "material_color_population",
+      "status": "unknown",
+      "support_fraction": 0.0,
+      "reference_distance": 23.813392639160156,
+      "log_likelihood_ratio_vs_substrate": 97.85052175017981
+    },
+    "contrast": [
+      -1.680226407445841,
+      -1.4079753202054455,
+      -0.7825953363334515
+    ],
+    "refinement_metrics": {
+      "original_area_um2": 951.9619499999998,
+      "refined_area_um2": 567.392175,
+      "area_ratio": 0.5960240060015004,
+      "boundary_support_fraction": 1.0,
+      "median_boundary_transition": 1.011596441268921,
+      "domain_near_fraction": 0.0,
+      "nearby_dark_feature_fraction": 0.004433833560709414,
+      "original_retained_fraction": 0.5958989747436859,
+      "background_pixels": 9040,
+      "noise_rgb_relative": [
+        0.05172818641328472,
+        0.01714243642712952,
+        0.021514090630052666
+      ],
+      "measured_boundary_profiles": 340,
+      "camera_boundary_excluded": true,
+      "extent_incomplete": false,
+      "geometric_area_um2": 951.9619499999998,
+      "inscribed_diameter_um": 22.27321710036518,
+      "bounding_box_occupancy": 0.680222602739726,
+      "edge_quality_rank": 3.023202720238401,
+      "optical_class_used_for_ranking": false,
+      "old_size_flag_removed": true
+    },
+    "measurement": {
+      "contrast_basis": "eroded_interior",
+      "interior_erosion_um": 0.3,
+      "interior_pixels": 7440,
+      "contrast_measurement_pixels": 7440,
+      "edge_pixels_excluded": 558,
+      "non_interior_pixels": 558,
+      "interior_measurement_available": true,
+      "spatial_patch_count": 253,
+      "patch_um": 2.0,
+      "background_sample_count": 993778,
+      "background_systematic_supplied": false,
+      "background_uncertainty_not_divided_by_region_area": true,
+      "qualification": "Patch means account for spatially correlated variation but are not validated independent samples; missing normalization systematic uncertainty is unquantified."
+    }
+  },
+  {
+    "id": "chip001/tile_000639/121",
+    "area": 179.48969999999997,
+    "optical": 179.48969999999997,
+    "geometry": 1.3235120958454731,
+    "evidence": {
+      "name": "material_color_population",
+      "status": "compatible",
+      "support_fraction": 1.0,
+      "reference_distance": 3.4679300785064697,
+      "log_likelihood_ratio_vs_substrate": 7450.331153611123
+    },
+    "contrast": [
+      0.2636330260979154,
+      0.19916260752872775,
+      0.12265315240036104
+    ],
+    "refinement_metrics": {
+      "original_area_um2": 179.48969999999997,
+      "refined_area_um2": 238.16902499999995,
+      "area_ratio": 1.3269230769230769,
+      "boundary_support_fraction": 0.9609375,
+      "median_boundary_transition": 0.850841760635376,
+      "domain_near_fraction": 0.0,
+      "nearby_dark_feature_fraction": 0.0,
+      "original_retained_fraction": 1.0,
+      "background_pixels": 4673,
+      "noise_rgb_relative": [
+        0.0511310604002945,
+        0.017013588242875653,
+        0.021365059373718145
+      ],
+      "measured_boundary_profiles": 256,
+      "camera_boundary_excluded": true,
+      "extent_incomplete": false,
+      "geometric_area_um2": 179.48969999999997,
+      "inscribed_diameter_um": 13.11,
+      "bounding_box_occupancy": 0.58,
+      "edge_quality_rank": 1.3235120958454731,
+      "optical_class_used_for_ranking": false,
+      "old_size_flag_removed": false
+    },
+    "measurement": {
+      "contrast_basis": "eroded_interior",
+      "interior_erosion_um": 0.3,
+      "interior_pixels": 1312,
+      "contrast_measurement_pixels": 1312,
+      "edge_pixels_excluded": 196,
+      "non_interior_pixels": 196,
+      "interior_measurement_available": true,
+      "spatial_patch_count": 54,
+      "patch_um": 2.0,
+      "background_sample_count": 1159001,
+      "background_systematic_supplied": false,
+      "background_uncertainty_not_divided_by_region_area": true,
+      "qualification": "Patch means account for spatially correlated variation but are not validated independent samples; missing normalization systematic uncertainty is unquantified."
+    }
+  },
+  {
+    "id": "chip001/tile_000639/23",
+    "area": 838.4120999999999,
+    "optical": 0.0,
+    "geometry": 2.2353421963162905,
+    "evidence": {
+      "name": "material_color_population",
+      "status": "unknown",
+      "support_fraction": 0.0,
+      "reference_distance": 16.29002571105957,
+      "log_likelihood_ratio_vs_substrate": 353.1498973449541
+    },
+    "contrast": [
+      -1.0547800590477154,
+      -1.3255927608709133,
+      -1.0034694636373733
+    ],
+    "refinement_metrics": {
+      "original_area_um2": 838.4120999999999,
+      "refined_area_um2": 484.6697999999999,
+      "area_ratio": 0.5780806360022714,
+      "boundary_support_fraction": 1.0,
+      "median_boundary_transition": 1.0871042013168335,
+      "domain_near_fraction": 0.0,
+      "nearby_dark_feature_fraction": 0.0031146707348080347,
+      "original_retained_fraction": 0.576519023282226,
+      "background_pixels": 11007,
+      "noise_rgb_relative": [
+        0.0511310604002945,
+        0.017013588242875653,
+        0.021365059373718145
+      ],
+      "measured_boundary_profiles": 427,
+      "camera_boundary_excluded": true,
+      "extent_incomplete": false,
+      "geometric_area_um2": 838.4120999999999,
+      "inscribed_diameter_um": 13.272415002553227,
+      "bounding_box_occupancy": 0.3982785602503912,
+      "edge_quality_rank": 2.2353421963162905,
+      "optical_class_used_for_ranking": false,
+      "old_size_flag_removed": true
+    },
+    "measurement": {
+      "contrast_basis": "eroded_interior",
+      "interior_erosion_um": 0.3,
+      "interior_pixels": 6474,
+      "contrast_measurement_pixels": 6474,
+      "edge_pixels_excluded": 570,
+      "non_interior_pixels": 570,
+      "interior_measurement_available": true,
+      "spatial_patch_count": 221,
+      "patch_um": 2.0,
+      "background_sample_count": 1159001,
+      "background_systematic_supplied": false,
+      "background_uncertainty_not_divided_by_region_area": true,
+      "qualification": "Patch means account for spatially correlated variation but are not validated independent samples; missing normalization systematic uncertainty is unquantified."
+    }
+  },
+  {
+    "id": "chip001/tile_000660/167",
+    "area": 982.4323499999998,
+    "optical": 982.4323499999998,
+    "geometry": 0.006839398594368681,
+    "evidence": {
+      "name": "material_color_population",
+      "status": "compatible",
+      "support_fraction": 1.0,
+      "reference_distance": 1.6878330707550049,
+      "log_likelihood_ratio_vs_substrate": 5336.118611995316
+    },
+    "contrast": [
+      0.12189218877400974,
+      0.12523201539734186,
+      0.1279268425904316
+    ],
+    "refinement_metrics": {
+      "original_area_um2": 982.4323499999998,
+      "refined_area_um2": 1707.7706999999996,
+      "area_ratio": 1.7383086988126968,
+      "boundary_support_fraction": 0.3798496240601504,
+      "median_boundary_transition": 0.22093185782432556,
+      "domain_near_fraction": 0.0,
+      "nearby_dark_feature_fraction": 0.21622315224257738,
+      "original_retained_fraction": 0.9629270656651321,
+      "background_pixels": 20062,
+      "noise_rgb_relative": [
+        0.052038808686810004,
+        0.017442811748110597,
+        0.02168005701695447
+      ],
+      "measured_boundary_profiles": 3325,
+      "camera_boundary_excluded": true,
+      "extent_incomplete": false,
+      "geometric_area_um2": 982.4323499999998,
+      "inscribed_diameter_um": 10.909857927580907,
+      "bounding_box_occupancy": 0.11508644729503625,
+      "edge_quality_rank": 0.006839398594368681,
+      "optical_class_used_for_ranking": false,
+      "old_size_flag_removed": false
+    },
+    "measurement": {
+      "contrast_basis": "eroded_interior",
+      "interior_erosion_um": 0.3,
+      "interior_pixels": 5989,
+      "contrast_measurement_pixels": 5989,
+      "edge_pixels_excluded": 2265,
+      "non_interior_pixels": 2265,
+      "interior_measurement_available": true,
+      "spatial_patch_count": 349,
+      "patch_um": 2.0,
+      "background_sample_count": 888858,
+      "background_systematic_supplied": false,
+      "background_uncertainty_not_divided_by_region_area": true,
+      "qualification": "Patch means account for spatially correlated variation but are not validated independent samples; missing normalization systematic uncertainty is unquantified."
+    }
+  },
+  {
+    "id": "chip001/tile_000773/72",
+    "area": 465.2687249999999,
+    "optical": 465.2687249999999,
+    "geometry": 0.010524558327479444,
+    "evidence": {
+      "name": "material_color_population",
+      "status": "compatible",
+      "support_fraction": 1.0,
+      "reference_distance": 2.741891860961914,
+      "log_likelihood_ratio_vs_substrate": 9658.268575686456
+    },
+    "contrast": [
+      0.1298852547773284,
+      0.1375804759844929,
+      0.13724993057197443
+    ],
+    "refinement_metrics": {
+      "original_area_um2": 465.2687249999999,
+      "refined_area_um2": 1105.2661499999997,
+      "area_ratio": 2.3755436172934252,
+      "boundary_support_fraction": 0.48826507132995856,
+      "median_boundary_transition": 0.44072866439819336,
+      "domain_near_fraction": 0.0,
+      "nearby_dark_feature_fraction": 0.2789997994250184,
+      "original_retained_fraction": 0.9897672038884625,
+      "background_pixels": 21902,
+      "noise_rgb_relative": [
+        0.051468050795919415,
+        0.01739088551365616,
+        0.021916882792915218
+      ],
+      "measured_boundary_profiles": 2173,
+      "camera_boundary_excluded": true,
+      "extent_incomplete": false,
+      "geometric_area_um2": 465.2687249999999,
+      "inscribed_diameter_um": 2.76,
+      "bounding_box_occupancy": 0.06298844647835125,
+      "edge_quality_rank": 0.010524558327479444,
+      "optical_class_used_for_ranking": false,
+      "old_size_flag_removed": true
+    },
+    "measurement": {
+      "contrast_basis": "eroded_interior",
+      "interior_erosion_um": 0.3,
+      "interior_pixels": 2420,
+      "contrast_measurement_pixels": 2420,
+      "edge_pixels_excluded": 1489,
+      "non_interior_pixels": 1489,
+      "interior_measurement_available": true,
+      "spatial_patch_count": 203,
+      "patch_um": 2.0,
+      "background_sample_count": 1058961,
+      "background_systematic_supplied": false,
+      "background_uncertainty_not_divided_by_region_area": true,
+      "qualification": "Patch means account for spatially correlated variation but are not validated independent samples; missing normalization systematic uncertainty is unquantified."
+    }
+  },
+  {
+    "id": "chip001/tile_000216/39",
+    "area": 394.3298249999999,
+    "optical": 394.3298249999999,
+    "geometry": 0.7456728430653429,
+    "evidence": {
+      "name": "material_color_population",
+      "status": "unknown",
+      "support_fraction": 1.0,
+      "reference_distance": 4.240566730499268,
+      "log_likelihood_ratio_vs_substrate": 2590.141536551501
+    },
+    "contrast": [
+      0.08890113436357638,
+      0.08049342251131597,
+      0.06992118387097089
+    ],
+    "refinement_metrics": {
+      "original_area_um2": 394.3298249999999,
+      "refined_area_um2": 569.6536499999999,
+      "area_ratio": 1.4446121340175069,
+      "boundary_support_fraction": 0.6187335092348285,
+      "median_boundary_transition": 0.7446017861366272,
+      "domain_near_fraction": 0.0,
+      "nearby_dark_feature_fraction": 0.270434705934221,
+      "original_retained_fraction": 0.9993963175369756,
+      "background_pixels": 3947,
+      "noise_rgb_relative": [
+        0.05140028393186996,
+        0.017030273126529903,
+        0.021343439357521074
+      ],
+      "measured_boundary_profiles": 758,
+      "camera_boundary_excluded": true,
+      "extent_incomplete": false,
+      "geometric_area_um2": 394.3298249999999,
+      "inscribed_diameter_um": 14.555565945712999,
+      "bounding_box_occupancy": 0.5414027149321267,
+      "edge_quality_rank": 0.7456728430653429,
+      "optical_class_used_for_ranking": false,
+      "old_size_flag_removed": true
+    },
+    "measurement": {
+      "contrast_basis": "eroded_interior",
+      "interior_erosion_um": 0.3,
+      "interior_pixels": 2348,
+      "contrast_measurement_pixels": 2348,
+      "edge_pixels_excluded": 965,
+      "non_interior_pixels": 965,
+      "interior_measurement_available": true,
+      "spatial_patch_count": 122,
+      "patch_um": 2.0,
+      "background_sample_count": 325026,
+      "background_systematic_supplied": false,
+      "background_uncertainty_not_divided_by_region_area": true,
+      "qualification": "Patch means account for spatially correlated variation but are not validated independent samples; missing normalization systematic uncertainty is unquantified."
+    }
+  },
+  {
+    "id": "chip001/tile_000041/339",
+    "area": 373.73849999999993,
+    "optical": 373.73849999999993,
+    "geometry": 0.004976557086717371,
+    "evidence": {
+      "name": "material_color_population",
+      "status": "compatible",
+      "support_fraction": 1.0,
+      "reference_distance": 0.9510775804519653,
+      "log_likelihood_ratio_vs_substrate": 1557.0797271583624
+    },
+    "contrast": [
+      0.11421017900662331,
+      0.1251094768246224,
+      0.12395081035770553
+    ],
+    "refinement_metrics": {
+      "original_area_um2": 373.73849999999993,
+      "refined_area_um2": 629.6422499999999,
+      "area_ratio": 1.6847133757961783,
+      "boundary_support_fraction": 0.3055555555555556,
+      "median_boundary_transition": 0.3389902114868164,
+      "domain_near_fraction": 0.0,
+      "nearby_dark_feature_fraction": 0.24611080496799628,
+      "original_retained_fraction": 0.982484076433121,
+      "background_pixels": 11988,
+      "noise_rgb_relative": [
+        0.052124414204491695,
+        0.017295217435892494,
+        0.021395053441878725
+      ],
+      "measured_boundary_profiles": 1116,
+      "camera_boundary_excluded": true,
+      "extent_incomplete": false,
+      "geometric_area_um2": 373.73849999999993,
+      "inscribed_diameter_um": 4.14,
+      "bounding_box_occupancy": 0.10619588744588744,
+      "edge_quality_rank": 0.004976557086717371,
+      "optical_class_used_for_ranking": false,
+      "old_size_flag_removed": true
+    },
+    "measurement": {
+      "contrast_basis": "eroded_interior",
+      "interior_erosion_um": 0.3,
+      "interior_pixels": 2418,
+      "contrast_measurement_pixels": 2418,
+      "edge_pixels_excluded": 722,
+      "non_interior_pixels": 722,
+      "interior_measurement_available": true,
+      "spatial_patch_count": 131,
+      "patch_um": 2.0,
+      "background_sample_count": 810808,
+      "background_systematic_supplied": false,
+      "background_uncertainty_not_divided_by_region_area": true,
+      "qualification": "Patch means account for spatially correlated variation but are not validated independent samples; missing normalization systematic uncertainty is unquantified."
+    }
+  },
+  {
+    "id": "chip001/tile_000743/74",
+    "area": 292.8014999999999,
+    "optical": 292.8014999999999,
+    "geometry": 0.00719512121660279,
+    "evidence": {
+      "name": "material_color_population",
+      "status": "unknown",
+      "support_fraction": 1.0,
+      "reference_distance": 3.9451465606689453,
+      "log_likelihood_ratio_vs_substrate": 104654.50268096234
+    },
+    "contrast": [
+      -0.39066140137716915,
+      -0.9630179489518094,
+      -0.8554269682530757
+    ],
+    "refinement_metrics": {
+      "original_area_um2": 292.8014999999999,
+      "refined_area_um2": 579.1756499999999,
+      "area_ratio": 1.9780487804878049,
+      "boundary_support_fraction": 0.14454976303317535,
+      "median_boundary_transition": 0.004932582378387451,
+      "domain_near_fraction": 0.0,
+      "nearby_dark_feature_fraction": 0.002485043718361712,
+      "original_retained_fraction": 1.0,
+      "background_pixels": 659,
+      "noise_rgb_relative": [
+        0.051711127476349934,
+        0.01716793131921156,
+        0.02158163885732547
+      ],
+      "measured_boundary_profiles": 422,
+      "camera_boundary_excluded": true,
+      "extent_incomplete": false,
+      "geometric_area_um2": 292.8014999999999,
+      "inscribed_diameter_um": 6.795711883239311,
+      "bounding_box_occupancy": 0.3917821309125657,
+      "edge_quality_rank": 0.00719512121660279,
+      "optical_class_used_for_ranking": false,
+      "old_size_flag_removed": false
+    },
+    "measurement": {
+      "contrast_basis": "eroded_interior",
+      "interior_erosion_um": 0.3,
+      "interior_pixels": 1634,
+      "contrast_measurement_pixels": 1634,
+      "edge_pixels_excluded": 826,
+      "non_interior_pixels": 826,
+      "interior_measurement_available": true,
+      "spatial_patch_count": 100,
+      "patch_um": 2.0,
+      "background_sample_count": 1057145,
+      "background_systematic_supplied": false,
+      "background_uncertainty_not_divided_by_region_area": true,
+      "qualification": "Patch means account for spatially correlated variation but are not validated independent samples; missing normalization systematic uncertainty is unquantified."
+    }
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "flakes": [],
+  "quality": {
+    "raw_acquisition_only": true,
+    "full_chip_focus": {
+      "method": "in_field_substrate_roi_autofocus",
+      "focus_verified": true,
+      "extrapolated": false,
+      "focus_point_xy_um": [
+        229.375,
+        229.5
+      ],
+      "roi_source_px": [
+        40,
+        40,
+        80,
+        80
+      ],
+      "substrate_fraction": 1.0,
+      "result": {
+        "success": true,
+        "z_um": 100,
+        "score": 1.0,
+        "prominence": 0.2,
+        "reason": "Synthetic measured focus",
+        "samples": [],
+        "outcome": "resolved_peak",
+        "budget": null
+      },
+      "plane_prediction_rejection": "Field exceeds the bounded focus-plane extrapolation distance.",
+      "local_focus_verified": true,
+      "thin_flake_focus_validated": false,
+      "capture_z_target_tolerance_um": 0.25
+    }
+  }
+}

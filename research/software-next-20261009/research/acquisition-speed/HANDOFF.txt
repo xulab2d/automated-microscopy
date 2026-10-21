@@ -1,0 +1,81 @@
+STAGED ACQUISITION CHANGES — OFFLINE ONLY, NO MICROSCOPE CONNECTION
+
+Implemented
+1. Integrated vendor retention v2. Saved AF score/preview/metadata receipts and
+   selected raw readback precede CZI release. Probe TIFFs/resume identities stay
+   intact. Four pending outputs/512MiB threshold stops further captures; existing
+   old/unpersisted jobs are retained. Root integrated the campaign seed hook.
+2. FocusResult now includes outcome and budget. Focus routines accept keyword
+   max_elapsed_s/max_captures; nested quick/fine fallback shares its caller budget.
+   Default local AF is120s/40 images; recovery180s/48. A focus-surface anchor
+   shares180s/48 across local+recovery, plus at most one selection and one final
+   verified-anchor capture. Options max_anchor_elapsed_s/max_anchor_captures tune
+   this measured-focus budget. A late last frame can be saved but never accepted
+   as a valid focus result. Budget failures retain saved curve samples and update
+   focus-result/recovery status explicitly. STOP and camera exceptions propagate.
+3. Sparse discovery defaults to240s/64 total capture attempts, including nested
+   focus, plus the existing32 geometric-probe lifetime cap. New keyword controls
+   are max_elapsed_s/max_total_captures. Time/capture exhaustion is unresolved,
+   with no invented outline/final image. Limits are cooperative; an in-flight
+   RPC/cleanup may overrun, so these are not hard realtime motion deadlines.
+4. After a resolved coarse focus bracket, a five-point local quadratic plus an
+   independent confirmation may replace a longer fine sweep. Unresolved fits
+   fall back to the original fine sweep under the same total budget. Short
+   fine sweeps of6 or fewer images are unchanged. adaptive_fine=False disables
+   this conditional optimization. No peak/texture thresholds were relaxed.
+5. ZenMicroscope.capture_with_processing(processor) can run pure CPU work on
+   the first raw frame while RunJob finishes. It still returns NOTHING before
+   successful RunJob completion and job unload. Pixels are read-only during
+   processing. Late errors, STOP and processor exceptions preserve cancellation
+   and cleanup; processor-thread hardware calls are rejected without blocking
+   external STOP. Focus metrics use this capability when qualified. Default is
+   sequential; processing_overlap=True requires exact-source/profile stationary
+   acceptance via processing_overlap_acceptance. No asynchronous motion pipeline
+   or unverifiable persistent camera binding was introduced.
+
+Future stationary acceptance (NOT EXECUTED)
+scripts/qualify_capture_overlap.py defaults to a no-client dry run. Its explicit
+--execute mode checks operator hold and lease, performs3..6 stationary pairs,
+keeps raw TIFFs, validates same-frame metric equivalence, complete/unloaded jobs,
+fixed optical metadata, <=0.3um movement and <=3% RGB repeat variation. It writes
+an acceptance only on success.3% is an engineering stability gate, not material
+calibration. It requires matching-source offline-protocol-verification.json.
+Do not execute while the microscope is being used by someone else.
+
+Evidence and realistic speed expectation
+report.json and scripts/benchmark_acquisition_offline.py reproduce the saved-data
+analysis. Three old rasters consumed129.55minutes across1386 tiles, with median
+interfield intervals5.14,5.68,6.08s. Failed discovery attempts consumed102.06min
+of saved elapsed intervals, which may include pauses. Saved first-frame tails
+are0.111s median and0.230s p90: this is the CPU-overlap ceiling, not0.54s.
+
+Fifteen eligible saved fine curves all pass the five-measured-point fit and an
+INTERPOLATED confirmation check, reducing modeled fine-stage images by69.
+Independent live confirmation remains mandatory. report.json applies historical
+elapsed per recorded edge-focus sample as a conditional time estimate. This
+does not establish hardware speedup or a global scan multiplier. The existing
+LZW quantitative TIFF format and every planned raster image are retained.
+
+Validation
+40 focused offline tests passed in6.67s: focus recovery/surface/edge-focus
+regressions, nested/late budgets, operator STOP priority, and mocked installed
+RPC completion/unload/late-error protocol. Initial fixtures were rerun with
+storage routing disabled ONLY in the test process; production storage policy
+was not modified. No hardware client was constructed.
+
+Primary contract/evidence sources
+- Original generated/zen_api/workflows/v3beta/workflow_service_pb2_grpc.py:
+  RunJob is a unary RPC; a streamed image is not its completion result.
+- Original generated/zen_api/acquisition/v1beta/experiment_streaming_service_pb2_grpc.py:
+  MonitorAllExperiments is a separate server stream.
+- Original research/camera-latency-audit-01/measured-stream-arrival.json:
+ 60 recorded200ms captures, direct image-arrival/completion split.
+- Original research/restart-speed-audit/timing.json and saved focus-curve JSONs;
+ report.json records input hashes. These are empirical local evidence, not a
+ manufacturer claim or a guarantee on a new microscope placement.
+
+Deployment
+All changes live only in research/software-next-20261009. Original C source,
+analysis process and acquisition records remain unchanged. Keep OPERATOR-HOLD.
+Before promotion, review staged source/config diffs and preserve provenance.
+Fresh sample placement still requires fresh coordinate/frame verification.

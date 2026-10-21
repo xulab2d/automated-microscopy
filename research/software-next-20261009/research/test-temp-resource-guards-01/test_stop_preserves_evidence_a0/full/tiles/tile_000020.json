@@ -1,0 +1,88 @@
+{
+  "position": {
+    "x": 269.375,
+    "y": 639.9,
+    "z": 100
+  },
+  "pixel_size_um": [
+    1.0,
+    1.0
+  ],
+  "sequence": 94,
+  "acquired_at": 1791598432.9441547,
+  "metadata": {
+    "white_level": 4095,
+    "source": "TEST",
+    "objective_position": 2,
+    "camera_resources": {
+      "fixed": 1
+    },
+    "full_chip_focus": {
+      "method": "measured_surface_interpolation",
+      "predicted_z_um": 100.00000000000001,
+      "focus_verified": false,
+      "local_focus_verified": false,
+      "plane_prediction_accepted": true,
+      "extrapolated": false,
+      "extrapolation_distance_um": 0.0,
+      "extrapolation_limit_um": 0,
+      "anchor_count": 9,
+      "anchor_points_um": [
+        [
+          229.375,
+          229.5,
+          100.0
+        ],
+        [
+          232.5,
+          237.5,
+          100.0
+        ],
+        [
+          237.5,
+          767.5,
+          100.0
+        ],
+        [
+          342.6875,
+          215.5,
+          100.0
+        ],
+        [
+          458.0,
+          215.5,
+          100.0
+        ],
+        [
+          573.3125,
+          215.5,
+          100.0
+        ],
+        [
+          762.5,
+          232.5,
+          100.0
+        ],
+        [
+          767.5,
+          762.5,
+          100.0
+        ],
+        [
+          770.625,
+          229.5,
+          100.0
+        ]
+      ],
+      "sample_rms_um": 1.4210854715202004e-14,
+      "max_anchor_residual_um": 1.4210854715202004e-14,
+      "residual_standard_error_um": 1.7404671430534633e-14,
+      "measurement_floor_um": 0.5,
+      "prediction_leverage": 0.4155826479378061,
+      "conditional_prediction_sigma_um": 0.3223285001119999,
+      "uncertainty_kind": "Mean-plane standard-error estimate conditional on a planar chip; not a bound on unmeasured warp or material focus.",
+      "thin_flake_focus_validated": false,
+      "capture_z_target_tolerance_um": 0.25
+    }
+  }
+}

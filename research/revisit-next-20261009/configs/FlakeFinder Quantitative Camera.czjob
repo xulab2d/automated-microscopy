@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Job Version="1.1">
+  <Metadata>
+    <Title>FlakeFinder Quantitative Camera</Title>
+    <Description>Camera-only fixed acquisition; ff_exposure_ms (double) and ff_white_balance (string). Initial Axiocam305c.Default T-5500K vendor preset. Auto exposure, auto white balance and HDR disabled. No motion tools.</Description>
+    <Job.Status>Draft</Job.Status>
+    <CustomAttributes>
+      <Category>FlakeFinder</Category>
+    </CustomAttributes>
+  </Metadata>
+  <OrganizationalStructure />
+  <Items>
+    <JobItem Id="Capture" UniqueId="195eb7b3-6776-4c02-8e92-a18fd9cb1432">
+      <Tasks>
+        <Task Id="SnapAcquisitionTask" UniqueId="bd15cbe9-5929-4154-b74d-026d93e1db27" TypeKey="Task.LM.SnapAcquisition" LocalizeId="SnapAcquisitionTask" Version="1.1">
+          <OperatorHelperImages />
+          <Tools>
+            <Tool Id="CameraTool" UniqueId="4c44ba86-e72b-4b43-bd55-c844fd2289dc" TypeKey="Tool.LM.Camera" LocalizeId="CameraTool" Version="3.0">
+              <DisplayGroup>Acquisition</DisplayGroup>
+              <SuppressSingleExecution>false</SuppressSingleExecution>
+              <Parameters>
+                <Parameter Id="AutoExposure" UniqueId="7eb29519-17d3-4e3b-abbb-2dd76e3e07a2">
+                  <Metadata>
+                    <Parameter Id="SuppressExecution" UniqueId="c71b95ee-289b-483e-8298-900f5f25bd98" DataType="boolean">
+                      <Value>False</Value>
+                    </Parameter>
+                  </Metadata>
+                  <Value>false</Value>
+                </Parameter>
+                <Parameter Id="AutoExposureFrame" UniqueId="e0227e4f-7917-4bf8-abd8-ee46a11733fb">
+                  <Metadata>
+                    <Parameter Id="SuppressExecution" UniqueId="f427777b-9b7f-4829-b5a6-e116d3dec007" DataType="boolean">
+                      <Value>False</Value>
+                    </Parameter>
+                  </Metadata>
+                  <Value>Empty</Value>
+                </Parameter>
+                <Parameter Id="ExposureTime" UniqueId="f9163c9b-0bba-4bb9-a137-bae719b211c5" ResourceId="ff_exposure_ms" DataType="double">
+                  <Metadata>
+                    <Parameter Id="SuppressExecution" UniqueId="a9a72994-c7fa-4425-9ae3-f66d51abfb2d" DataType="boolean">
+                      <Value>False</Value>
+                    </Parameter>
+                    <Parameter Id="Minimum" UniqueId="0f61bf93-6517-4e81-be9c-e118faf229de" DataType="double">
+                      <Value>1</Value>
+                    </Parameter>
+                  </Metadata>
+                  <Value>200</Value>
+                </Parameter>
+                <Parameter Id="Adjust" UniqueId="6d813436-7327-4f23-89bc-ee71ef730de9">
+                  <Metadata>
+                    <Parameter Id="SuppressExecution" UniqueId="17aa2cb3-5baa-4e44-8227-4a4e246e0556" DataType="boolean">
+                      <Value>False</Value>
+                    </Parameter>
+                  </Metadata>
+                  <Value>1</Value>
+                </Parameter>
+                <Parameter Id="CalculateExposureMode" UniqueId="cc9fa4ea-cc8f-45b3-bd5a-a64eb8959822">
+                  <Metadata>
+                    <Parameter Id="SuppressExecution" UniqueId="1e73fcc2-0ff7-4170-b36c-89ac93fbb8d9" DataType="boolean">
+                      <Value>False</Value>
+                    </Parameter>
+                  </Metadata>
+                  <Value />
+                </Parameter>
+                <Parameter Id="Luminosity" UniqueId="9986a26c-1592-419a-ae4e-37795f74130a">
+                  <Metadata>
+                    <Parameter Id="SuppressExecution" UniqueId="38232d71-6302-413a-ad6d-f01b3a6e0b5d" DataType="boolean">
+                      <Value>False</Value>
+                    </Parameter>
+                  </Metadata>
+                  <Value />
+                </Parameter>
+                <Parameter Id="EnableHDR" UniqueId="a72deb08-0cf1-4768-9a00-ea91679f7227">
+                  <Metadata>
+                    <Parameter Id="SuppressExecution" UniqueId="63369286-f8fc-4adc-adc6-44c49e5a8b3b" DataType="boolean">
+                      <Value>False</Value>
+                    </Parameter>
+                  </Metadata>
+                  <Value>false</Value>
+                </Parameter>
+                <Parameter Id="ColorMode" UniqueId="874ad0b9-324a-43be-9fa9-cb1d904ad864">
+                  <Metadata>
+                    <Parameter Id="SuppressExecution" UniqueId="61172b65-8398-4b31-8da8-14a9a5b077f7" DataType="boolean">
+                      <Value>False</Value>
+                    </Parameter>
+                  </Metadata>
+                  <Value>1</Value>
+                </Parameter>
+                <Parameter Id="WhiteBalance" UniqueId="4db2f40d-46e5-4a1b-942d-3b508d0dd7e4" ResourceId="ff_white_balance" DataType="string">
+                  <Metadata>
+                    <Parameter Id="SuppressExecution" UniqueId="2b667f03-7d09-47b5-85bb-cd73c5e2981b" DataType="boolean">
+                      <Value>False</Value>
+                    </Parameter>
+                  </Metadata>
+                  <Value>0.45050752,1,0.571064</Value>
+                </Parameter>
+                <Parameter Id="WhiteBalanceOffset" UniqueId="780ecee2-eb47-4284-9696-196554f49744">
+                  <Metadata>
+                    <Parameter Id="SuppressExecution" UniqueId="80f0b1d1-02f3-4ba9-a041-1904068731a4" DataType="boolean">
+                      <Value>False</Value>
+                    </Parameter>
+                  </Metadata>
+                  <Value>0</Value>
+                </Parameter>
+                <Parameter Id="ExposureModeRestriction" UniqueId="74a851ae-92d4-40bf-87cc-fa26ddef7cff" DataType="boolean">
+                  <Value>False</Value>
+                </Parameter>
+                <Parameter Id="ExposureTimeRestriction" UniqueId="8dd5c663-0356-4efb-88a2-cdfa4a8560f7" DataType="boolean">
+                  <Value>False</Value>
+                </Parameter>
+                <Parameter Id="ExposureLuminosityRestriction" UniqueId="a2746fc7-677f-4f74-9e74-3c2b2b16497d" DataType="boolean">
+                  <Value />
+                </Parameter>
+                <Parameter Id="ExposureIntensityRestriction" UniqueId="062792cd-753c-41c7-94fd-e6abfd6cd909" DataType="boolean">
+                  <Value>False</Value>
+                </Parameter>
+                <Parameter Id="MeasureExposureRestriction" UniqueId="58b49577-2f66-4b2a-938c-f8c954e8b03a" DataType="boolean">
+                  <Value>False</Value>
+                </Parameter>
+                <Parameter Id="UseROIForAutoExposureRestriction" UniqueId="fe4a33ff-190d-41d5-bc01-9da77289ee9f" DataType="boolean">
+                  <Value>False</Value>
+                </Parameter>
+                <Parameter Id="EnableHDRRestriction" UniqueId="80101ada-d560-4c10-a2dd-e7e5c3e30449" DataType="boolean">
+                  <Value>False</Value>
+                </Parameter>
+                <Parameter Id="ColorModeRestriction" UniqueId="f6213636-e288-4ed9-acf6-3f8bbeedfbc6" DataType="boolean">
+                  <Value />
+                </Parameter>
+                <Parameter Id="WhiteBalanceRestriction" UniqueId="918d0dd6-cc01-4ffc-b220-e1f6b74cf5b3" DataType="boolean">
+                  <Value>False</Value>
+                </Parameter>
+              </Parameters>
+            </Tool>
+          </Tools>
+          <Parameters>
+            <Parameter Id="AutoExposureAutoWhiteBalance" DataType="boolean">
+              <Value>false</Value>
+            </Parameter>
+          </Parameters>
+          <Inputs />
+          <Outputs>
+            <Parameter Id="out" UniqueId="3c67f5f0-833c-4a11-80d9-51cc7406acfa" />
+          </Outputs>
+        </Task>
+      </Tasks>
+      <Children />
+    </JobItem>
+  </Items>
+  <Resources>
+    <Parameter Id="ff_exposure_ms" UniqueId="5f56e039-7405-4589-9ef9-abf618a79001" DataType="double">
+      <Value>200</Value>
+    </Parameter>
+    <Parameter Id="ff_white_balance" UniqueId="35b5f8e0-c9d0-4d50-8323-cba44036e7be" DataType="string">
+      <Value>0.45050752,1,0.571064</Value>
+    </Parameter>
+  </Resources>
+</Job>

@@ -1,0 +1,170 @@
+{
+  "schema": 2,
+  "algorithm": "sparse_photometric_halfplanes_v3",
+  "algorithm_source_sha256": "511b88d7670816fe1a6ceada8da5e8199cad10df491c916aecc4fade6acf26ad",
+  "edge_model_sha256": "f40b469916bab2edf5c24134865955dd5d4154c6c742a30ab172ed89f9adc1a3",
+  "photometric_model_sha256": "ae55b093b5f5b4f68b02c7f8fe8f918de5a150aa1bfab64a70c794e7ead2d361",
+  "edge_validation_profile": {
+    "schema": 1,
+    "profile_id": "synthetic20x-dark-holder",
+    "holder_model": "dark_holder_all_rgb_v1",
+    "manual_objective": true,
+    "objective_position": 2,
+    "objective_magnification": 20,
+    "optical_context": {
+      "camera_resources": {
+        "fixed": 1
+      },
+      "camera_job_template": "synthetic fixed20x",
+      "objective_position": 2,
+      "objective": {
+        "magnification": 20
+      },
+      "white_level": 4095,
+      "illumination_percent": 90
+    }
+  },
+  "seed_xy_um": [
+    500.0,
+    500.0
+  ],
+  "options": {
+    "search_bounds_um": [
+      20.0,
+      1200.0,
+      20.0,
+      1100.0
+    ],
+    "coarse_step_um": 400,
+    "max_probes": 32,
+    "cell_um": 5,
+    "dark_holder_ratio": 0.15,
+    "margin_um": 20,
+    "focus_policy_id": "unchanged height; geometric evidence only"
+  },
+  "context": {},
+  "transform": {
+    "matrix": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "pixel_size_um": [
+      1.0,
+      1.0
+    ],
+    "calibrated": true
+  },
+  "source_shape": [
+    128,
+    160,
+    3
+  ],
+  "reference": {
+    "features": [
+      "log(R/G)",
+      "log(B/G)"
+    ],
+    "centre": [
+      0.18232160806655884,
+      0.2623642086982727
+    ],
+    "covariance": [
+      [
+        0.0006250001000000002,
+        0.0
+      ],
+      [
+        0.0,
+        0.0001440001
+      ]
+    ],
+    "white_level": 4095.0,
+    "context": {
+      "camera_resources": {
+        "fixed": 1
+      },
+      "camera_job_template": "synthetic fixed20x",
+      "objective_position": 2,
+      "objective": {
+        "magnification": 20
+      },
+      "white_level": 4095,
+      "illumination_percent": 90
+    },
+    "pixel_size_um": [
+      1.0,
+      1.0
+    ],
+    "working_max_dimension": 768,
+    "substrate_mahalanobis_max": 3.5,
+    "mismatch_mahalanobis_min": 6.0,
+    "interpretation": "Reference colour match; neither chemical identity nor proof of chip continuity."
+  },
+  "reference_rgb": [
+    1800.0,
+    1500.0,
+    1950.0
+  ],
+  "reference_pixels_sha256": "28112d13480d9ad3c329b5ea22c5d0c803e078aa2eef90c53687a9b0eaeae018",
+  "limits": {
+    "x_min": 0,
+    "x_max": 1600,
+    "y_min": 0,
+    "y_max": 1200,
+    "z_min": 50,
+    "z_max": 150,
+    "max_xy_step_um": 300,
+    "max_z_step_um": 10
+  },
+  "field_rectangle_um": [
+    158.75,
+    127.0
+  ],
+  "assumption": "One separated convex chip with approximately straight edges. Coarse hops may cross unobserved gaps.",
+  "coverage_kind": "estimated_boundary_not_full_interior_acquisition",
+  "all_chips_found": false,
+  "coverage_requirement": "Validate extent from scientific-raster border images; expand or replan if substrate reaches its perimeter.",
+  "fingerprint": "65bd23d0b43cdcc1446f9597d200fe949e61c9109e7f531d9194bcbefef968e4",
+  "state": "failed",
+  "started_at": 1791753750.3694644,
+  "records": [],
+  "rays": {},
+  "error": "camera transport failure",
+  "estimated_outline": {
+    "status": "unresolved",
+    "reason": "Fewer than three coherent edge directions.",
+    "lines": [],
+    "algorithm": "sparse_photometric_halfplanes_v3",
+    "registered_consistency": {
+      "accepted": true,
+      "observation_count": 0,
+      "line_checks": [],
+      "qualification": "Same separated convex chip hypothesis; not proof of unsampled gaps or complete coverage."
+    },
+    "outcome": "edge_not_found",
+    "evidence": {
+      "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\geometry-repair-tests-02\\test_actual_capture_failure_st0",
+      "images": 0,
+      "new_probe_images": 0,
+      "imported_probe_images": 0,
+      "coherent_edge_images": 0
+    },
+    "acquisition_assumption": "One separated convex chip with approximately straight edges. Coarse hops may cross unobserved gaps.",
+    "all_chips_found": false
+  },
+  "updated_at": 1791753750.3843632,
+  "operation_budget": {
+    "max_seconds": 600.0,
+    "max_captures": 64,
+    "captures_started": 1,
+    "elapsed_seconds": 0.01600000000325963,
+    "completed_actions": 1,
+    "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline"
+  }
+}

@@ -1,0 +1,52 @@
+POST-TRANSFER CLEANUP PLAN — ROOT OWNER ONLY
+
+No cleanup is implemented or performed by the transfer worker. All originals remain.
+
+1. Finish the baseline inventory plus explicit deltas/refreshes. Reconcile the latest
+   canonical refresh receipt for a source path before considering its earlier upload
+   receipt: code/config destinations may now legitimately contain a newer version.
+   source_changed/source_missing/conflict/content_matched states are not deletion gates.
+
+2. Wait for the final strong client audit: exact shared-drive path/cloud identity,
+   size and cached MD5 equal the file's source digest in two stable snapshots; no
+   relevant unresolved operation (the current implementation conservatively requires
+   an empty global queue). Observe Drive's supported Up to date/Done status. Preserve
+   the canary independent-download SHA256 receipt and the per-file qualification that
+   DriveFS field48 is an empirically identified checksum, not a documented public API.
+
+3. Write an immutable final relocation manifest to Drive containing each original
+   absolute path, canonical Drive-relative path, size, source SHA256/MD5, cloud ID,
+   verification timestamps, and latest revision lineage. Export/checkpoint OUR SQLite
+   transfer journal using SQLite's backup facility; never copy a live WAL database
+   alone. Copy the complete receipt/report directory after freezing it.
+
+4. Confirm viewers and analyses resolve relocated paths and that the local microscope
+   operator hold remains active. Preserve local virtual environments/dependencies that
+   were explicitly excluded; they are not scientific data and were not transferred.
+   Do not turn an entire still-running checkout into a junction or remove its runtime.
+
+5. If space is needed before the whole migration finishes, first consider the already
+   verified generated Laptop Review.zip duplicate (1.07 GB) or confirmed vendor files,
+   after matching current source SHA256 to their receipt. A copy verified only under
+   transfer-verification is not a substitute for the canonical scientific target.
+   Cross-ledger copies (initial vendor batch/package/refresh) must be reconciled with
+   the main journal before removal so the later worker does not encounter an unexplained
+   missing source. Never manually delete DriveFS cache or mounted G: content to free C:.
+
+6. Remove only exact individually verified local source files, journaling each outcome.
+   Resolve and check every absolute source stays inside the authorized project root;
+   reject junctions/reparse redirection or changed size/hash. Use native PowerShell
+   -LiteralPath operations if executing on Windows. Do not recursively delete a tree
+   merely because many of its files are verified. Stop on changed source or unresolved
+   destination evidence. Keep logs/manifests and report exclusions/remaining files.
+
+Read-only progress:
+  .venv\Scripts\python.exe research/drive-relocation/transfer_status.py --journal research/drive-relocation/workspace-state/progress.sqlite
+
+New/changed source audit (proposal only):
+  .venv\Scripts\python.exe research/drive-relocation/refresh_plan.py --journal research/drive-relocation/workspace-state/progress.sqlite --output research/drive-relocation/workspace-state/refresh-proposal-N.json
+
+Still-editing files must be excluded explicitly until their owner declares readiness.
+Canonical refresh archives prior verified bytes and receipt under transfer-revisions,
+stages/checks new bytes, atomically replaces the destination, and records lineage. An
+unexpected destination hash is preserved as a conflict, never silently overwritten.

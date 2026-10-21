@@ -1,0 +1,2046 @@
+{
+  "donor_discovery": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\discovery.json",
+  "donor_discovery_sha256": "f595eb3a3b0be4e50d36a4fb6ae83d6c57c8a0386dbc7e8fa8e40ea1241aa1a6",
+  "source_hashes": {
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000000.tiff": "9524053a405b6c1a8bc747fc396c3d8b16931e593bc46a39801e1ff37a299710",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000000.json": "bbc0324f966d5a0a1483ba6cb6cc53195913a66177939464dd0effc116be8c66",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000000.npz": "6566294882b722eca6c146112dcd25316a799b5b0c67bb0cf146691c09521bc7",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000001.tiff": "326c90dbca770e6efac9464680736e990e4ede2172523ae545823d4472d5e7c7",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000001.json": "233e71852f99e9a841f683819330fab56cf4e8c047b419e59e47e926f2e91b14",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000001.npz": "c2f92c2a52bb33f3862cce271a76b35e15453870687db443a6ffa883ca0b2eef",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000002.tiff": "a851251b5c03c5869116c5c6ffe34ce8350fd7df114f099a0beb02459b0e3985",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000002.json": "d6b157f61b2ed3bfab3a329a991b1d4fcf42239ad2907be7511a4dcf4e8dc4a4",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000002.npz": "88ee3c696dac1d7a4950e7df1c539fc3c16e2911a98ed67070ce5f47503595a9",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000003.tiff": "ebd60510bcd1029373af470dc9f38fd4c1f92ad5dedc6d2f6cb0e5455ed65a33",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000003.json": "ecad293d2008fd3bc14da4ade7e1261c8311d5e467b58b1b2f757c9838b14e99",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000003.npz": "d248a8388cfdf3ae9040e162ae4c431f917f99c8e45cf9731eb8d6710d05378f",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000004.tiff": "0347048b93a29088e31f41bc11487c54c740419f616d833e02b368ca1f2faecf",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000004.json": "e78942170e8e0cf26de6bfe7df8194becf65da04fdddcddac07b35801047fbe5",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000004.npz": "d248a8388cfdf3ae9040e162ae4c431f917f99c8e45cf9731eb8d6710d05378f",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000005.tiff": "8e7122c9fef9b8097eaa0f72d728cd19f5f8a62afe4b44a9308d89e42c225fb5",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000005.json": "9d5a9e18c12f537100611e66c7d33c20787ac7934d8165d1acf14c74ad55c9d8",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000005.npz": "ef25187e8aa070956947e762aa87ddb3c206b553c119595e26d7e00f7b082ed0",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000006.tiff": "81098208da0aa073c813097bc713ad10456336b6f691fc4c7af081a62df11677",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000006.json": "3f6ba8cda7f1891c97673a402ebe16cc0f8e1fe9474f6b82f7e54768c96d9405",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000006.npz": "b2de1029c2409ad207520560a9d56fa300972a49eb6e299fab5d1d9343f13634",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000007.tiff": "8e55eb9cc0c1dc9399097632303deb34414aca77c93fc65328eff5cfa98381cc",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000007.json": "729b08ff8746173d4fe63dfb9552811d33f84f2462d4702e01f3792f4919ccf6",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000007.npz": "3930f28981a4160899ce7392ae542f0a2f01502d1e7ba23fa4ced9524e650b92",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000008.tiff": "b1830eb9bce2e290e1701b873f39a02e5fd5d47c125824202cfca13f457f4c4c",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000008.json": "170d06b9b0425d51a0e218f6d3004ba6188ce0d1fe09391906f5e423e787f2f0",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000008.npz": "b80211602b440ac1554d73f1ce7dabd3206be139c5317b056bd4c60f05146543",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000009.tiff": "0622cd2300d0838fc93836a5fa36d7519a93cd85a70b201235529859d613ecbf",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000009.json": "dda915b238d7ba256cde73ddd76223a045629c385a242455be933c139f5d9d42",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000009.npz": "645b84afe6a016f2a05a59589c607e3c553608b29fa73b6de915e0fa4be14b19",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000010.tiff": "1cae7c1c87aff5f7a37c3baaf4dc019d648189e0d5a6ae3faaadcba3115a8b19",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000010.json": "d088646d44109cd5c6f41b37e1ac29b63c3d3eaca12e0a897cbae434241f73a1",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000010.npz": "2cc11ed9ff1d60d13405353306619b051c7f5192fe649a01063986c2e14a9f2b",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000011.tiff": "d379d01e62c59384fd7e7af94507f683f9842f25e784283a787a438603e3eb9a",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000011.json": "bd5d3d8633fc696f8b23a8cabc6829c89e7efe8dc04d5cbfdb225caeb07ac9b4",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000011.npz": "740d8917916779c8f8410c4176073df8e8501f93df2dd362825b17872c0a7c00",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000012.tiff": "d301782d7851d10e28333a62608d6c5c023d0ed1b7706b7e0ef5c7602b698c9f",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000012.json": "9c8e328f39366cac9f9ece3db6fe3f376744010e5ab0bef7edc0414860acd93f",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000012.npz": "ae9db91fa58494e88cd1cf14101eae1c1eee75177087aad9507fa502f3b15973",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000013.tiff": "570751438fc92afd9abf3599cb39f0f689abc5a2b1be58fa515b9e587994c120",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000013.json": "32588ef3314cd1c7d55d4e0bb9ed30626824a20e30dc06ad204b9fc0868fda65",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000013.npz": "a7f273b10c931e6151efc699b4dc54b5e1d111c63e1866f98ee05ac7da5fda43",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000014.tiff": "41b637e51d63b2037ae1303f5a84b17ad9128e8b5ba3f2683b986bddd6ea841e",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000014.json": "d07d653249773a20dfba24bf4e9bf815bfb3d3259ef61844c42049879e160f8d",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000014.npz": "4cf82868b15188484a7da3cf086a5360b873b3c90c57d4d59ae46ad3b43c9a2b",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000015.tiff": "636f854ba04eaacb8d18b99b34fe7a17a9103c395c88fbf0eacf25527160234c",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000015.json": "21f3f6e38d56aac4454f117e04cd83b47e04a5d83c97e0535f3e1173cfd1b214",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000015.npz": "36cefe18a3bb610122a718de715242754dc4f7ae34a1c6ae6a6344c2abe5adea",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000016.tiff": "bd650cd59f54325db294005870a401eaef82125bfbe669ff1137d4b99dfd513c",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000016.json": "e8230c2b4ea4d5d5831d0533163d6be11f1190f33709573d160d0978348a9aa4",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000016.npz": "d248a8388cfdf3ae9040e162ae4c431f917f99c8e45cf9731eb8d6710d05378f",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000017.tiff": "9ccf46a61b1e18b42a899e0f26471339f315be9428077b4b4300f5c17e1ea3fb",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000017.json": "17394a4a9a22fa1ba4631ac14b80babc4a51ca6c68d220410b00f9393204f25e",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000017.npz": "cff0e220d43d00a8e2d71304cf332ea168e88034898d162a278d00bf8701d3fc",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000018.tiff": "6f6cde380c2ff197cf86dd7d78f8c0e0f8a9bc2ea8591ae511b5846aaea62533",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000018.json": "a69bd938215b4ffaae55c794437ac6dee331e8a084e581055aadeca697eb41ec",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000018.npz": "ae80279cdafbd5df270cea7ee6791504d2654a1c3985c1a51acda393f672f900",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000019.tiff": "c271ddcb09d6c59ceab0cd74285cb74ef425d6d50d68a28582d2315f201eec47",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000019.json": "8a2ff6bda9aa26201c76ff0a0efddcc941c501b0103d6cbba232df7ffd0318f5",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000019.npz": "aee49d939c89da0bbaeb0a0bffe52fdec9962ded7d9130270423e399e1d3096a",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000020.tiff": "17f6c7448c9fa28ea8e51f03c979d0518cd54ef72e88d55dc11fc7001d04f8b6",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000020.json": "5f42f6e646c1341ba3251de896ba7e07ab5599336a8dac8f1893d19b43fd98d2",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000020.npz": "4abaedc88480408c572878332f085625a216236ad1e5e12d496cb2c3020165cc",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000021.tiff": "b204e9a0d4e3aed85f729e95943a2f432567ec41e2a8720d842f8fd0de093edd",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000021.json": "3296f4569b43d28e1e445236a33a867c62964d9db94a8f977b7ce50593b784d7",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000021.npz": "5406b3183ae237f1eff03b398a6071c7bafb599964810fce5309a89243c834f2",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000022.tiff": "4a83ba51bace33f4c119107df2d623948f6b96c08f40f51392bbfdf889964caf",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000022.json": "1c4af2344244154f517f65a6b5c474b39a6e012286090de6e3d78d314247459c",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000022.npz": "a11e43ae63575e5787851b8858a4ec4b5ca7d6a68370998967ea894b84ee7da3",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000023.tiff": "2c854ea87d840c16d50fb0d6574081575ad803d442aa5b0fe21fc71d59015eff",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000023.json": "0439ba55430f808505a69ccd03e922b9a03e6e5bec946e6649b0c3234e9a2ff6",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000023.npz": "55d0cf05696d9123c08ab4a2afc615c4c873b29d623840d2c7c11daca9247b80",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000024.tiff": "3c518bcc3bcc0cd582e305bdee8712c101b177e082d76c5d9fd2421b0c3296b0",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000024.json": "b084caf27e3f6cd706f00cfbe523cd6dce6d6a2f74422154fac7fe26cde8e429",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000024.npz": "29a7f553325e03ce1be485c226816546b69c5c808b3aac1cebf788888f6fe2f3",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000025.tiff": "dfa1205ea83476d69d5f192aac79ae3da523fe683228841d397b25e322a944ae",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000025.json": "c7f827fd9782c88aea82a7320ba45e14ac6ff77c08ce045a0b702abc86701215",
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000025.npz": "4a19ea55fe186edad713e27635be275b55ec1f2bce76abf43d5c1c62d5e9330d"
+  },
+  "new_captures": 0,
+  "new_motion": false,
+  "estimated_outline": {
+    "status": "estimated",
+    "method": "measured_sides_shared_rectangle_orientation",
+    "polygon_um": [
+      [
+        40696.28507397988,
+        20511.35403765615
+      ],
+      [
+        30872.488859880086,
+        20382.033529880147
+      ],
+      [
+        30940.530615143794,
+        15213.26061632118
+      ],
+      [
+        40764.32682924359,
+        15342.581124097187
+      ]
+    ],
+    "lines": [
+      {
+        "normal": [
+          0.9999133657386287,
+          0.013162865085061573
+        ],
+        "offset_um": 40801.22200505561,
+        "source_images": [
+          "frames/probe_000005.tiff"
+        ],
+        "edge_point_count": 87,
+        "measured_points_um": [
+          [
+            40539.41281914184,
+            19954.668273419287
+          ],
+          [
+            40539.23393702534,
+            19958.647746394945
+          ],
+          [
+            40539.05505490884,
+            19962.6272193706
+          ],
+          [
+            40538.876172792334,
+            19966.606692346253
+          ],
+          [
+            40538.69729067583,
+            19970.58616532191
+          ],
+          [
+            40538.51840855933,
+            19974.565638297565
+          ],
+          [
+            40538.339526442825,
+            19978.545111273223
+          ],
+          [
+            40538.16064432632,
+            19982.524584248877
+          ],
+          [
+            40539.30992766225,
+            19986.564381112727
+          ],
+          [
+            40539.13104554574,
+            19990.54385408838
+          ],
+          [
+            40538.95216342924,
+            19994.523327064035
+          ],
+          [
+            40538.77328131274,
+            19998.502800039692
+          ],
+          [
+            40538.594399196234,
+            20002.482273015346
+          ],
+          [
+            40538.41551707973,
+            20006.461745991004
+          ],
+          [
+            40539.56480041566,
+            20010.50154285485
+          ],
+          [
+            40539.38591829916,
+            20014.481015830504
+          ],
+          [
+            40539.207036182655,
+            20018.460488806162
+          ],
+          [
+            40539.02815406615,
+            20022.439961781816
+          ],
+          [
+            40538.84927194964,
+            20026.419434757474
+          ],
+          [
+            40538.67038983314,
+            20030.398907733128
+          ],
+          [
+            40538.49150771664,
+            20034.378380708786
+          ],
+          [
+            40539.64079105257,
+            20038.418177572632
+          ],
+          [
+            40539.461908936064,
+            20042.397650548286
+          ],
+          [
+            40539.28302681956,
+            20046.377123523944
+          ],
+          [
+            40539.10414470306,
+            20050.356596499598
+          ],
+          [
+            40540.25342803899,
+            20054.396393363448
+          ],
+          [
+            40538.74638047005,
+            20058.31554245091
+          ],
+          [
+            40539.89566380598,
+            20062.35533931476
+          ],
+          [
+            40539.71678168948,
+            20066.334812290414
+          ],
+          [
+            40539.53789957297,
+            20070.314285266068
+          ],
+          [
+            40539.35901745647,
+            20074.293758241725
+          ],
+          [
+            40539.180135339964,
+            20078.27323121738
+          ],
+          [
+            40539.00125322346,
+            20082.252704193037
+          ],
+          [
+            40540.15053655939,
+            20086.292501056883
+          ],
+          [
+            40539.97165444289,
+            20090.27197403254
+          ],
+          [
+            40539.792772326386,
+            20094.251447008195
+          ],
+          [
+            40539.61389020988,
+            20098.23091998385
+          ],
+          [
+            40540.76317354581,
+            20102.2707168477
+          ],
+          [
+            40540.58429142931,
+            20106.250189823353
+          ],
+          [
+            40539.07724386037,
+            20110.16933891082
+          ],
+          [
+            40538.898361743864,
+            20114.148811886473
+          ],
+          [
+            40540.047645079794,
+            20118.188608750323
+          ],
+          [
+            40539.86876296329,
+            20122.168081725977
+          ],
+          [
+            40539.68988084679,
+            20126.14755470163
+          ],
+          [
+            40539.510998730286,
+            20130.12702767729
+          ],
+          [
+            40539.33211661378,
+            20134.106500652942
+          ],
+          [
+            40539.15323449728,
+            20138.0859736286
+          ],
+          [
+            40540.30251783321,
+            20142.125770492446
+          ],
+          [
+            40540.12363571671,
+            20146.105243468104
+          ],
+          [
+            40539.9447536002,
+            20150.08471644376
+          ],
+          [
+            40539.765871483694,
+            20154.064189419412
+          ],
+          [
+            40539.58698936719,
+            20158.04366239507
+          ],
+          [
+            40540.73627270312,
+            20162.083459258916
+          ],
+          [
+            40540.55739058662,
+            20166.062932234574
+          ],
+          [
+            40540.378508470116,
+            20170.042405210228
+          ],
+          [
+            40540.19962635361,
+            20174.021878185886
+          ],
+          [
+            40540.02074423711,
+            20178.00135116154
+          ],
+          [
+            40539.84186212061,
+            20181.980824137194
+          ],
+          [
+            40539.6629800041,
+            20185.96029711285
+          ],
+          [
+            40539.484097887595,
+            20189.939770088506
+          ],
+          [
+            40539.30521577109,
+            20193.919243064163
+          ],
+          [
+            40540.45449910702,
+            20197.95903992801
+          ],
+          [
+            40540.27561699052,
+            20201.938512903667
+          ],
+          [
+            40540.096734874016,
+            20205.91798587932
+          ],
+          [
+            40541.246018209946,
+            20209.957782743168
+          ],
+          [
+            40541.06713609344,
+            20213.937255718825
+          ],
+          [
+            40540.88825397694,
+            20217.91672869448
+          ],
+          [
+            40540.70937186044,
+            20221.896201670137
+          ],
+          [
+            40540.53048974393,
+            20225.87567464579
+          ],
+          [
+            40540.351607627425,
+            20229.85514762145
+          ],
+          [
+            40540.17272551092,
+            20233.834620597103
+          ],
+          [
+            40539.99384339442,
+            20237.814093572757
+          ],
+          [
+            40541.14312673035,
+            20241.853890436607
+          ],
+          [
+            40540.964244613846,
+            20245.83336341226
+          ],
+          [
+            40540.78536249734,
+            20249.81283638792
+          ],
+          [
+            40541.93464583327,
+            20253.852633251765
+          ],
+          [
+            40541.75576371677,
+            20257.83210622742
+          ],
+          [
+            40540.248716147835,
+            20261.751255314884
+          ],
+          [
+            40540.069834031325,
+            20265.73072829054
+          ],
+          [
+            40541.219117367255,
+            20269.77052515439
+          ],
+          [
+            40541.04023525075,
+            20273.749998130043
+          ],
+          [
+            40540.86135313425,
+            20277.7294711057
+          ],
+          [
+            40540.682471017746,
+            20281.708944081354
+          ],
+          [
+            40541.831754353676,
+            20285.7487409452
+          ],
+          [
+            40541.65287223717,
+            20289.72821392086
+          ],
+          [
+            40540.14582466824,
+            20293.64736300832
+          ],
+          [
+            40539.966942551735,
+            20297.626835983978
+          ]
+        ],
+        "residual_um_p95": 3.5081335666829547,
+        "local_uncertainty_um": 3.5081335666829547,
+        "margin_um": 161.52556223592902,
+        "expanded_offset_um": 40962.74756729154
+      },
+      {
+        "normal": [
+          -0.013162865085061499,
+          0.9999133657386287
+        ],
+        "offset_um": 19811.46854054033,
+        "source_images": [
+          "frames/probe_000014.tiff"
+        ],
+        "edge_point_count": 57,
+        "measured_points_um": [
+          [
+            32820.618393117045,
+            20242.575225428605
+          ],
+          [
+            32813.87483802996,
+            20243.441352112502
+          ],
+          [
+            32807.11669316406,
+            20241.81660909135
+          ],
+          [
+            32800.368274817374,
+            20241.852445873566
+          ],
+          [
+            32793.62471973028,
+            20242.718572557467
+          ],
+          [
+            32786.881164643186,
+            20243.584699241368
+          ],
+          [
+            32780.1230197773,
+            20241.959956220217
+          ],
+          [
+            32773.3746014306,
+            20241.995793002432
+          ],
+          [
+            32766.626183083914,
+            20242.031629784648
+          ],
+          [
+            32759.877764737223,
+            20242.067466566863
+          ],
+          [
+            32753.129346390528,
+            20242.103303349082
+          ],
+          [
+            32746.380928043836,
+            20242.139140131298
+          ],
+          [
+            32739.632509697145,
+            20242.174976913513
+          ],
+          [
+            32732.884091350454,
+            20242.21081369573
+          ],
+          [
+            32726.135673003762,
+            20242.246650477944
+          ],
+          [
+            32719.38239139747,
+            20241.452197358478
+          ],
+          [
+            32712.643699569977,
+            20243.14861394406
+          ],
+          [
+            32705.890417963685,
+            20242.354160824594
+          ],
+          [
+            32699.141999616993,
+            20242.38999760681
+          ],
+          [
+            32692.398444529903,
+            20243.256124290707
+          ],
+          [
+            32685.65488944281,
+            20244.122250974608
+          ],
+          [
+            32678.901607836517,
+            20243.32779785514
+          ],
+          [
+            32672.148326230224,
+            20242.53334473567
+          ],
+          [
+            32665.395044623932,
+            20241.738891616205
+          ],
+          [
+            32658.64662627724,
+            20241.77472839842
+          ],
+          [
+            32651.90307119015,
+            20242.64085508232
+          ],
+          [
+            32645.15465284346,
+            20242.676691864537
+          ],
+          [
+            32638.406234496764,
+            20242.712528646753
+          ],
+          [
+            32631.657816150073,
+            20242.748365428968
+          ],
+          [
+            32624.90453454378,
+            20241.953912309502
+          ],
+          [
+            32618.16097945669,
+            20242.820038993403
+          ],
+          [
+            32611.417424369596,
+            20243.6861656773
+          ],
+          [
+            32604.669006022905,
+            20243.722002459515
+          ],
+          [
+            32597.920587676213,
+            20243.757839241734
+          ],
+          [
+            32584.42375098283,
+            20243.829512806165
+          ],
+          [
+            32577.665606116938,
+            20242.204769785014
+          ],
+          [
+            32557.439804115264,
+            20245.633439738398
+          ],
+          [
+            32550.68165924937,
+            20244.008696717246
+          ],
+          [
+            32543.93324090268,
+            20244.044533499462
+          ],
+          [
+            32537.184822555988,
+            20244.080370281677
+          ],
+          [
+            32530.441267468894,
+            20244.94649696558
+          ],
+          [
+            32523.6879858626,
+            20244.15204384611
+          ],
+          [
+            32516.93956751591,
+            20244.187880628324
+          ],
+          [
+            32510.19114916922,
+            20244.223717410543
+          ],
+          [
+            32503.442730822528,
+            20244.25955419276
+          ],
+          [
+            32496.694312475836,
+            20244.295390974974
+          ],
+          [
+            32489.941030869544,
+            20243.500937855508
+          ],
+          [
+            32483.20233904205,
+            20245.19735444109
+          ],
+          [
+            32476.44905743576,
+            20244.40290132162
+          ],
+          [
+            32469.700639089067,
+            20244.43873810384
+          ],
+          [
+            32462.952220742376,
+            20244.474574886055
+          ],
+          [
+            32456.20380239568,
+            20244.51041166827
+          ],
+          [
+            32449.45538404899,
+            20244.546248450486
+          ],
+          [
+            32442.7069657023,
+            20244.5820852327
+          ],
+          [
+            32435.958547355607,
+            20244.617922014917
+          ],
+          [
+            32429.210129008916,
+            20244.653758797136
+          ],
+          [
+            32422.461710662225,
+            20244.68959557935
+          ]
+        ],
+        "residual_um_p95": 4.411372547796781,
+        "local_uncertainty_um": 4.411372547796781,
+        "margin_um": 162.42880121704286,
+        "expanded_offset_um": 19973.897341757372
+      },
+      {
+        "normal": [
+          -0.9999133657386287,
+          -0.01316286508506166
+        ],
+        "offset_um": -31302.183324674566,
+        "source_images": [
+          "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000019.tiff"
+        ],
+        "edge_point_count": 37,
+        "measured_points_um": [
+          [
+            31042.976608309364,
+            20084.10611595197
+          ],
+          [
+            31038.857894724053,
+            20078.38845285317
+          ],
+          [
+            31043.87934285497,
+            20072.733302003846
+          ],
+          [
+            31040.771079945105,
+            20038.57507963707
+          ],
+          [
+            31042.468832906485,
+            20032.89719706066
+          ],
+          [
+            31042.61245441293,
+            20010.14020330087
+          ],
+          [
+            31040.986512204774,
+            20004.43958899738
+          ],
+          [
+            31042.684265166157,
+            19998.761706420973
+          ],
+          [
+            31039.396475373233,
+            19993.04972625394
+          ],
+          [
+            31044.41792350415,
+            19987.394575404614
+          ],
+          [
+            31039.6119076329,
+            19958.91423561425
+          ],
+          [
+            31044.633355763817,
+            19953.259084764926
+          ],
+          [
+            31043.838337348046,
+            19947.564153393207
+          ],
+          [
+            31042.320111269724,
+            19924.79579376987
+          ],
+          [
+            31044.089674984327,
+            19907.739414313564
+          ],
+          [
+            31042.463732776174,
+            19902.038800010076
+          ],
+          [
+            31044.197391114165,
+            19890.67166899372
+          ],
+          [
+            31043.40237269839,
+            19884.976737622
+          ],
+          [
+            31043.438278075002,
+            19879.287489182054
+          ],
+          [
+            31044.305107244,
+            19873.603923673872
+          ],
+          [
+            31041.84824124346,
+            19867.897626438615
+          ],
+          [
+            31045.20784178961,
+            19862.231109725748
+          ],
+          [
+            31042.750975789066,
+            19856.524812490487
+          ],
+          [
+            31043.617804958063,
+            19850.84124698231
+          ],
+          [
+            31043.653710334675,
+            19845.151998542362
+          ],
+          [
+            31045.351463296054,
+            19839.474115965953
+          ],
+          [
+            31040.473636671584,
+            19822.372273055484
+          ],
+          [
+            31041.34046584058,
+            19816.688707547306
+          ],
+          [
+            31041.376371217193,
+            19810.99945910736
+          ],
+          [
+            31041.412276593805,
+            19805.31021066741
+          ],
+          [
+            31041.448181970416,
+            19799.620962227462
+          ],
+          [
+            31041.484087347028,
+            19793.93171378751
+          ],
+          [
+            31043.25365106163,
+            19776.87533433121
+          ],
+          [
+            31040.79678506109,
+            19771.169037095948
+          ],
+          [
+            31045.85413856862,
+            19759.824637806672
+          ],
+          [
+            31045.89004394523,
+            19754.135389366726
+          ],
+          [
+            31041.771330359923,
+            19748.417726267922
+          ]
+        ],
+        "residual_um_p95": 3.272916895511297,
+        "local_uncertainty_um": 6.065693881290091,
+        "margin_um": 164.08312255053616,
+        "expanded_offset_um": -31138.10020212403
+      },
+      {
+        "normal": [
+          0.0131628650850616,
+          -0.9999133657386287
+        ],
+        "offset_um": -14970.169775804778,
+        "source_images": [
+          "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000022.tiff"
+        ],
+        "edge_point_count": 16,
+        "measured_points_um": [
+          [
+            36940.69227945623,
+            15449.781340322214
+          ],
+          [
+            36947.43658984752,
+            15450.644373820785
+          ],
+          [
+            36954.18448781081,
+            15450.67711548146
+          ],
+          [
+            36960.932385774104,
+            15450.709857142136
+          ],
+          [
+            36967.67669616539,
+            15451.572890640708
+          ],
+          [
+            37156.58555098955,
+            15459.96228368068
+          ],
+          [
+            37163.33344895284,
+            15459.995025341355
+          ],
+          [
+            37170.07775934413,
+            15460.858058839927
+          ],
+          [
+            37176.825657307425,
+            15460.890800500601
+          ],
+          [
+            37183.57355527071,
+            15460.923542161278
+          ],
+          [
+            37190.31786566201,
+            15461.78657565985
+          ],
+          [
+            37197.065763625294,
+            15461.819317320524
+          ],
+          [
+            37203.81007401659,
+            15462.682350819096
+          ],
+          [
+            37237.54597626105,
+            15463.676350960368
+          ],
+          [
+            37251.03818461563,
+            15464.572126119614
+          ],
+          [
+            37271.2782909335,
+            15465.500642939536
+          ]
+        ],
+        "residual_um_p95": 7.475750558252912,
+        "local_uncertainty_um": 7.475750558252912,
+        "margin_um": 165.49317922749898,
+        "expanded_offset_um": -14804.67659657728
+      }
+    ],
+    "orientation": {
+      "status": "estimated",
+      "orientation_deg": 0.7541983956069089,
+      "normals": [
+        [
+          0.9999133657386287,
+          0.013162865085061573
+        ],
+        [
+          -0.013162865085061499,
+          0.9999133657386287
+        ],
+        [
+          -0.9999133657386287,
+          -0.01316286508506166
+        ],
+        [
+          0.0131628650850616,
+          -0.9999133657386287
+        ]
+      ],
+      "measured_orientation_count": 5,
+      "angular_scatter_deg": 1.9055388089093417,
+      "qualification": "Shared rectangular orientation only; no missing side location inferred."
+    },
+    "all_chips_found": false,
+    "assumption": "Approximately rectangular chip; unobserved corners inferred from four measured sides.",
+    "measured_dimensions_um": [
+      9499.038680381047,
+      4841.298764735551
+    ],
+    "uncertainty_um": 165.49317922749898,
+    "uncertainty_kind": "Measured local scatter plus shared-orientation corner allowance; not a confidence bound.",
+    "outcome": "estimated_boundary",
+    "evidence": {
+      "folder": "C:\\Users\\STM\\AppData\\Local\\Temp\\pytest-of-STM\\pytest-168\\test_saved_lab_second_candidat0",
+      "images": 26,
+      "new_probe_images": 26,
+      "imported_probe_images": 0,
+      "coherent_edge_images": 5,
+      "discovery_sha256": "4ec73677d63d3bf3cc93ded491585618bf89bfb49b3d257d1b6ed3c31f48af3b"
+    },
+    "acquisition_assumption": "One separated convex chip with approximately straight edges. Coarse hops may cross unobserved gaps."
+  },
+  "work_budget": {
+    "method": "remaining_rectangle_ray_and_quick_focus_work_v1",
+    "refinement_um": 100.0,
+    "missing_sides": [
+      "south"
+    ],
+    "side_allowances": [
+      {
+        "side": "south",
+        "coarse_captures": 6,
+        "bisection_captures": 7,
+        "centering_lateral_captures": 3,
+        "capture_allowance": 16
+      }
+    ],
+    "gap_ray_capture_allowance": 19,
+    "geometry_capture_allowance": 35,
+    "maximum_total_geometry_frames": 61,
+    "remaining_focus_attempts": 0,
+    "focus_captures_per_attempt": 8,
+    "max_total_captures": 35,
+    "max_elapsed_s": 7200.0,
+    "previous_captures_started": 3,
+    "saved_geometry_frames": 26,
+    "saved_focus_attempts": 2,
+    "time_policy": "remaining_user_campaign_deadline",
+    "legacy_additional_probes": 4,
+    "qualification": "Fresh operation allowance only; saved geometry, attempts and earlier operation reports remain consumed historical work.",
+    "previous_frames": 26,
+    "explicit_additional_probes": 4,
+    "maximum_total_frames": 61,
+    "previous_operation_budget": {
+      "max_seconds": 600.0,
+      "max_captures": 64,
+      "captures_started": 3,
+      "elapsed_seconds": 40.34399999998277,
+      "completed_actions": 10,
+      "deadline_kind": "cooperative; bounded vendor call/cleanup may finish after deadline"
+    }
+  },
+  "reanalysis": {
+    "frames/probe_000019.tiff": {
+      "edge": {
+        "normal": [
+          -0.999999880618874,
+          -0.0004886330296103424
+        ],
+        "offset_um": -31052.44982374716,
+        "points_um": [
+          [
+            31042.976608309364,
+            20084.10611595197
+          ],
+          [
+            31038.857894724053,
+            20078.38845285317
+          ],
+          [
+            31043.87934285497,
+            20072.733302003846
+          ],
+          [
+            31040.771079945105,
+            20038.57507963707
+          ],
+          [
+            31042.468832906485,
+            20032.89719706066
+          ],
+          [
+            31042.61245441293,
+            20010.14020330087
+          ],
+          [
+            31040.986512204774,
+            20004.43958899738
+          ],
+          [
+            31042.684265166157,
+            19998.761706420973
+          ],
+          [
+            31039.396475373233,
+            19993.04972625394
+          ],
+          [
+            31044.41792350415,
+            19987.394575404614
+          ],
+          [
+            31039.6119076329,
+            19958.91423561425
+          ],
+          [
+            31044.633355763817,
+            19953.259084764926
+          ],
+          [
+            31043.838337348046,
+            19947.564153393207
+          ],
+          [
+            31042.320111269724,
+            19924.79579376987
+          ],
+          [
+            31044.089674984327,
+            19907.739414313564
+          ],
+          [
+            31042.463732776174,
+            19902.038800010076
+          ],
+          [
+            31044.197391114165,
+            19890.67166899372
+          ],
+          [
+            31043.40237269839,
+            19884.976737622
+          ],
+          [
+            31043.438278075002,
+            19879.287489182054
+          ],
+          [
+            31044.305107244,
+            19873.603923673872
+          ],
+          [
+            31041.84824124346,
+            19867.897626438615
+          ],
+          [
+            31045.20784178961,
+            19862.231109725748
+          ],
+          [
+            31042.750975789066,
+            19856.524812490487
+          ],
+          [
+            31043.617804958063,
+            19850.84124698231
+          ],
+          [
+            31043.653710334675,
+            19845.151998542362
+          ],
+          [
+            31045.351463296054,
+            19839.474115965953
+          ],
+          [
+            31040.473636671584,
+            19822.372273055484
+          ],
+          [
+            31041.34046584058,
+            19816.688707547306
+          ],
+          [
+            31041.376371217193,
+            19810.99945910736
+          ],
+          [
+            31041.412276593805,
+            19805.31021066741
+          ],
+          [
+            31041.448181970416,
+            19799.620962227462
+          ],
+          [
+            31041.484087347028,
+            19793.93171378751
+          ],
+          [
+            31043.25365106163,
+            19776.87533433121
+          ],
+          [
+            31040.79678506109,
+            19771.169037095948
+          ],
+          [
+            31045.85413856862,
+            19759.824637806672
+          ],
+          [
+            31045.89004394523,
+            19754.135389366726
+          ],
+          [
+            31041.771330359923,
+            19748.417726267922
+          ]
+        ],
+        "uncertainty_um": 6.065693881290091,
+        "proposal_method": "rectangle_prior_trimmed_RGB_profiles",
+        "rectangle_orientation_prior": [
+          -0.9999800856467872,
+          -0.006310967425386043
+        ],
+        "raw_support_profiles": 37,
+        "raw_support_span_um": 335.6877606705748,
+        "local_residual_px_p95": 3.7654203365761125,
+        "image": "frames/probe_000019.tiff",
+        "phase": "focused_lateral_west",
+        "position_um": [
+          31125.508999999995,
+          19922.52,
+          15578.280999999999
+        ]
+      },
+      "validation": {
+        "accepted": true,
+        "method": "rectangle_prior_trimmed_RGB_profiles",
+        "step_polarity": "outside_darker",
+        "location_source": "measured_raw_RGB_points",
+        "focus_needed": false,
+        "focus_qualification": "Geometry rejection alone is not evidence that autofocus is needed.",
+        "offset_bracket_um": [
+          -32826.863345175676,
+          -29676.923088235315
+        ],
+        "tested_profiles": 64,
+        "candidate_points": 145,
+        "raw_working_shape": [
+          427,
+          512
+        ],
+        "reason": "Distributed local RGB transitions support a measured rectangle side.",
+        "supported_profiles": 37,
+        "raw_span_um": 335.6877606705748,
+        "uncertainty_um": 6.065693881290091,
+        "measured_orientation_difference_deg": 0.3335975869848597,
+        "measured_raw_points_image": [
+          [
+            165.0106209009337,
+            411.9254842119986
+          ],
+          [
+            159.75005461777232,
+            405.2712446638393
+          ],
+          [
+            165.48130337365592,
+            398.1927385162114
+          ],
+          [
+            159.8985594033394,
+            357.2644892648755
+          ],
+          [
+            161.6327845086612,
+            350.34026188069083
+          ],
+          [
+            160.57563762882472,
+            322.95190987083816
+          ],
+          [
+            158.3128390835847,
+            316.18196125009644
+          ],
+          [
+            160.04706418890646,
+            309.2577338659118
+          ],
+          [
+            155.78575381838556,
+            302.5649246268917
+          ],
+          [
+            161.51700257426913,
+            295.4864184792639
+          ],
+          [
+            154.20003349863086,
+            261.48239661211267
+          ],
+          [
+            159.93128225451443,
+            254.40389046448485
+          ],
+          [
+            158.66773962191485,
+            247.59537215288248
+          ],
+          [
+            155.61208091679748,
+            220.28415952475132
+          ],
+          [
+            156.81773258220105,
+            199.66575613564027
+          ],
+          [
+            154.55493403696101,
+            192.89580751489862
+          ],
+          [
+            156.02487242232368,
+            179.12449212825072
+          ],
+          [
+            154.7613297897241,
+            172.31597381664835
+          ],
+          [
+            154.497043069765,
+            165.46888581418514
+          ],
+          [
+            155.23201226244632,
+            158.58322812086126
+          ],
+          [
+            151.96995780456587,
+            151.85184919098037
+          ],
+          [
+            155.70269473516854,
+            144.8504824250741
+          ],
+          [
+            152.44064027728808,
+            138.11910349519326
+          ],
+          [
+            153.1756094699694,
+            131.2334458018693
+          ],
+          [
+            152.9113227500103,
+            124.38635779940616
+          ],
+          [
+            154.64554785533207,
+            117.46213041522142
+          ],
+          [
+            147.857152219612,
+            97.15228455299652
+          ],
+          [
+            148.59212141229335,
+            90.26662685967261
+          ],
+          [
+            148.32783469233422,
+            83.41953885720942
+          ],
+          [
+            148.06354797237512,
+            76.57245085474628
+          ],
+          [
+            147.799261252416,
+            69.72536285228308
+          ],
+          [
+            147.53497453245689,
+            62.87827484981989
+          ],
+          [
+            148.74062619786042,
+            42.25987146070888
+          ],
+          [
+            145.47857173997994,
+            35.528492530828
+          ],
+          [
+            150.9455337759044,
+            21.602898380737035
+          ],
+          [
+            150.6812470559453,
+            14.75581037827384
+          ],
+          [
+            145.42068077278392,
+            8.101570830114557
+          ]
+        ],
+        "orientation_prior": {
+          "status": "estimated",
+          "orientation_deg": 0.36159419842722273,
+          "normals": [
+            [
+              0.9999800856467871,
+              0.006310967425386219
+            ],
+            [
+              -0.006310967425386104,
+              0.9999800856467871
+            ],
+            [
+              -0.9999800856467871,
+              -0.006310967425386042
+            ],
+            [
+              0.0063109674253864255,
+              -0.9999800856467871
+            ]
+          ],
+          "measured_orientation_count": 3,
+          "angular_scatter_deg": 1.592026043178691,
+          "qualification": "Shared rectangular orientation only; no missing side location inferred."
+        },
+        "search_direction": [
+          -1.0,
+          0.0
+        ],
+        "measured_bracket_um": [
+          -32826.863345175676,
+          -29676.923088235315
+        ],
+        "bracket_allowance_um": 75.0
+      },
+      "source_hashes": {
+        "frames/probe_000019.tiff": "c271ddcb09d6c59ceab0cd74285cb74ef425d6d50d68a28582d2315f201eec47",
+        "frames/probe_000019.json": "8a2ff6bda9aa26201c76ff0a0efddcc941c501b0103d6cbba232df7ffd0318f5",
+        "labels/probe_000019.npz": "aee49d939c89da0bbaeb0a0bffe52fdec9962ded7d9130270423e399e1d3096a"
+      },
+      "rectangle_model_sha256": "f5d22a9186cc47cee50a63b3311132fc6ea6cdaf287f43fe48d372449b671660",
+      "new_capture": false,
+      "new_focus": false
+    },
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000019.tiff": {
+      "edge": {
+        "normal": [
+          -0.999999880618874,
+          -0.0004886330296103424
+        ],
+        "offset_um": -31052.44982374716,
+        "points_um": [
+          [
+            31042.976608309364,
+            20084.10611595197
+          ],
+          [
+            31038.857894724053,
+            20078.38845285317
+          ],
+          [
+            31043.87934285497,
+            20072.733302003846
+          ],
+          [
+            31040.771079945105,
+            20038.57507963707
+          ],
+          [
+            31042.468832906485,
+            20032.89719706066
+          ],
+          [
+            31042.61245441293,
+            20010.14020330087
+          ],
+          [
+            31040.986512204774,
+            20004.43958899738
+          ],
+          [
+            31042.684265166157,
+            19998.761706420973
+          ],
+          [
+            31039.396475373233,
+            19993.04972625394
+          ],
+          [
+            31044.41792350415,
+            19987.394575404614
+          ],
+          [
+            31039.6119076329,
+            19958.91423561425
+          ],
+          [
+            31044.633355763817,
+            19953.259084764926
+          ],
+          [
+            31043.838337348046,
+            19947.564153393207
+          ],
+          [
+            31042.320111269724,
+            19924.79579376987
+          ],
+          [
+            31044.089674984327,
+            19907.739414313564
+          ],
+          [
+            31042.463732776174,
+            19902.038800010076
+          ],
+          [
+            31044.197391114165,
+            19890.67166899372
+          ],
+          [
+            31043.40237269839,
+            19884.976737622
+          ],
+          [
+            31043.438278075002,
+            19879.287489182054
+          ],
+          [
+            31044.305107244,
+            19873.603923673872
+          ],
+          [
+            31041.84824124346,
+            19867.897626438615
+          ],
+          [
+            31045.20784178961,
+            19862.231109725748
+          ],
+          [
+            31042.750975789066,
+            19856.524812490487
+          ],
+          [
+            31043.617804958063,
+            19850.84124698231
+          ],
+          [
+            31043.653710334675,
+            19845.151998542362
+          ],
+          [
+            31045.351463296054,
+            19839.474115965953
+          ],
+          [
+            31040.473636671584,
+            19822.372273055484
+          ],
+          [
+            31041.34046584058,
+            19816.688707547306
+          ],
+          [
+            31041.376371217193,
+            19810.99945910736
+          ],
+          [
+            31041.412276593805,
+            19805.31021066741
+          ],
+          [
+            31041.448181970416,
+            19799.620962227462
+          ],
+          [
+            31041.484087347028,
+            19793.93171378751
+          ],
+          [
+            31043.25365106163,
+            19776.87533433121
+          ],
+          [
+            31040.79678506109,
+            19771.169037095948
+          ],
+          [
+            31045.85413856862,
+            19759.824637806672
+          ],
+          [
+            31045.89004394523,
+            19754.135389366726
+          ],
+          [
+            31041.771330359923,
+            19748.417726267922
+          ]
+        ],
+        "uncertainty_um": 6.065693881290091,
+        "proposal_method": "rectangle_prior_trimmed_RGB_profiles",
+        "rectangle_orientation_prior": [
+          -0.9999800856467872,
+          -0.006310967425386043
+        ],
+        "raw_support_profiles": 37,
+        "raw_support_span_um": 335.6877606705748,
+        "local_residual_px_p95": 3.7654203365761125,
+        "image": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000019.tiff",
+        "phase": "focused_lateral_west",
+        "position_um": [
+          31125.508999999995,
+          19922.52,
+          15578.280999999999
+        ]
+      },
+      "validation": {
+        "accepted": true,
+        "method": "rectangle_prior_trimmed_RGB_profiles",
+        "step_polarity": "outside_darker",
+        "location_source": "measured_raw_RGB_points",
+        "focus_needed": false,
+        "focus_qualification": "Geometry rejection alone is not evidence that autofocus is needed.",
+        "offset_bracket_um": [
+          -32826.863345175676,
+          -29676.923088235315
+        ],
+        "tested_profiles": 64,
+        "candidate_points": 145,
+        "raw_working_shape": [
+          427,
+          512
+        ],
+        "reason": "Distributed local RGB transitions support a measured rectangle side.",
+        "supported_profiles": 37,
+        "raw_span_um": 335.6877606705748,
+        "uncertainty_um": 6.065693881290091,
+        "measured_orientation_difference_deg": 0.3335975869848597,
+        "measured_raw_points_image": [
+          [
+            165.0106209009337,
+            411.9254842119986
+          ],
+          [
+            159.75005461777232,
+            405.2712446638393
+          ],
+          [
+            165.48130337365592,
+            398.1927385162114
+          ],
+          [
+            159.8985594033394,
+            357.2644892648755
+          ],
+          [
+            161.6327845086612,
+            350.34026188069083
+          ],
+          [
+            160.57563762882472,
+            322.95190987083816
+          ],
+          [
+            158.3128390835847,
+            316.18196125009644
+          ],
+          [
+            160.04706418890646,
+            309.2577338659118
+          ],
+          [
+            155.78575381838556,
+            302.5649246268917
+          ],
+          [
+            161.51700257426913,
+            295.4864184792639
+          ],
+          [
+            154.20003349863086,
+            261.48239661211267
+          ],
+          [
+            159.93128225451443,
+            254.40389046448485
+          ],
+          [
+            158.66773962191485,
+            247.59537215288248
+          ],
+          [
+            155.61208091679748,
+            220.28415952475132
+          ],
+          [
+            156.81773258220105,
+            199.66575613564027
+          ],
+          [
+            154.55493403696101,
+            192.89580751489862
+          ],
+          [
+            156.02487242232368,
+            179.12449212825072
+          ],
+          [
+            154.7613297897241,
+            172.31597381664835
+          ],
+          [
+            154.497043069765,
+            165.46888581418514
+          ],
+          [
+            155.23201226244632,
+            158.58322812086126
+          ],
+          [
+            151.96995780456587,
+            151.85184919098037
+          ],
+          [
+            155.70269473516854,
+            144.8504824250741
+          ],
+          [
+            152.44064027728808,
+            138.11910349519326
+          ],
+          [
+            153.1756094699694,
+            131.2334458018693
+          ],
+          [
+            152.9113227500103,
+            124.38635779940616
+          ],
+          [
+            154.64554785533207,
+            117.46213041522142
+          ],
+          [
+            147.857152219612,
+            97.15228455299652
+          ],
+          [
+            148.59212141229335,
+            90.26662685967261
+          ],
+          [
+            148.32783469233422,
+            83.41953885720942
+          ],
+          [
+            148.06354797237512,
+            76.57245085474628
+          ],
+          [
+            147.799261252416,
+            69.72536285228308
+          ],
+          [
+            147.53497453245689,
+            62.87827484981989
+          ],
+          [
+            148.74062619786042,
+            42.25987146070888
+          ],
+          [
+            145.47857173997994,
+            35.528492530828
+          ],
+          [
+            150.9455337759044,
+            21.602898380737035
+          ],
+          [
+            150.6812470559453,
+            14.75581037827384
+          ],
+          [
+            145.42068077278392,
+            8.101570830114557
+          ]
+        ],
+        "orientation_prior": {
+          "status": "estimated",
+          "orientation_deg": 0.36159419842722273,
+          "normals": [
+            [
+              0.9999800856467871,
+              0.006310967425386219
+            ],
+            [
+              -0.006310967425386104,
+              0.9999800856467871
+            ],
+            [
+              -0.9999800856467871,
+              -0.006310967425386042
+            ],
+            [
+              0.0063109674253864255,
+              -0.9999800856467871
+            ]
+          ],
+          "measured_orientation_count": 3,
+          "angular_scatter_deg": 1.592026043178691,
+          "qualification": "Shared rectangular orientation only; no missing side location inferred."
+        },
+        "search_direction": [
+          -1.0,
+          0.0
+        ],
+        "measured_bracket_um": [
+          -32826.863345175676,
+          -29676.923088235315
+        ],
+        "bracket_allowance_um": 75.0
+      },
+      "source_hashes": {
+        "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000019.tiff": "c271ddcb09d6c59ceab0cd74285cb74ef425d6d50d68a28582d2315f201eec47",
+        "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000019.json": "8a2ff6bda9aa26201c76ff0a0efddcc941c501b0103d6cbba232df7ffd0318f5",
+        "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000019.npz": "aee49d939c89da0bbaeb0a0bffe52fdec9962ded7d9130270423e399e1d3096a"
+      },
+      "rectangle_model_sha256": "f5d22a9186cc47cee50a63b3311132fc6ea6cdaf287f43fe48d372449b671660",
+      "new_capture": false,
+      "new_focus": false
+    },
+    "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000022.tiff": {
+      "edge": {
+        "normal": [
+          0.04640450089450697,
+          -0.9989227308940024
+        ],
+        "offset_um": -13719.133513866338,
+        "points_um": [
+          [
+            36940.69227945623,
+            15449.781340322214
+          ],
+          [
+            36947.43658984752,
+            15450.644373820785
+          ],
+          [
+            36954.18448781081,
+            15450.67711548146
+          ],
+          [
+            36960.932385774104,
+            15450.709857142136
+          ],
+          [
+            36967.67669616539,
+            15451.572890640708
+          ],
+          [
+            37156.58555098955,
+            15459.96228368068
+          ],
+          [
+            37163.33344895284,
+            15459.995025341355
+          ],
+          [
+            37170.07775934413,
+            15460.858058839927
+          ],
+          [
+            37176.825657307425,
+            15460.890800500601
+          ],
+          [
+            37183.57355527071,
+            15460.923542161278
+          ],
+          [
+            37190.31786566201,
+            15461.78657565985
+          ],
+          [
+            37197.065763625294,
+            15461.819317320524
+          ],
+          [
+            37203.81007401659,
+            15462.682350819096
+          ],
+          [
+            37237.54597626105,
+            15463.676350960368
+          ],
+          [
+            37251.03818461563,
+            15464.572126119614
+          ],
+          [
+            37271.2782909335,
+            15465.500642939536
+          ]
+        ],
+        "uncertainty_um": 1.660598942763699,
+        "proposal_method": "rectangle_prior_trimmed_RGB_profiles",
+        "rectangle_orientation_prior": [
+          0.004852070294979148,
+          -0.9999882286376438
+        ],
+        "raw_support_profiles": 16,
+        "raw_support_span_um": 330.9593277726017,
+        "local_residual_px_p95": 0.6019387706982151,
+        "image": "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000022.tiff",
+        "phase": "coarse_south",
+        "position_um": [
+          37125.50899999999,
+          15624.368,
+          15578.280999999999
+        ]
+      },
+      "validation": {
+        "accepted": true,
+        "method": "rectangle_prior_trimmed_RGB_profiles",
+        "step_polarity": "outside_darker",
+        "location_source": "measured_raw_RGB_points",
+        "focus_needed": false,
+        "focus_qualification": "Geometry rejection alone is not evidence that autofocus is needed.",
+        "tested_profiles": 64,
+        "candidate_points": 96,
+        "raw_working_shape": [
+          427,
+          512
+        ],
+        "reason": "Distributed local RGB transitions support a measured rectangle side.",
+        "supported_profiles": 16,
+        "raw_span_um": 330.9593277726017,
+        "uncertainty_um": 1.660598942763699,
+        "measured_orientation_difference_deg": 2.3817329638828246,
+        "measured_raw_points_image": [
+          [
+            23.875782783296955,
+            13.042406151750756
+          ],
+          [
+            32.030531101510654,
+            13.712226989456397
+          ],
+          [
+            40.14472264787936,
+            13.382870591503863
+          ],
+          [
+            48.258914194248064,
+            13.05351419355133
+          ],
+          [
+            56.413662512461755,
+            13.723335031256974
+          ],
+          [
+            283.97603675739043,
+            13.493951009509624
+          ],
+          [
+            292.0902283037591,
+            13.164594611557092
+          ],
+          [
+            300.24497662197285,
+            13.834415449262735
+          ],
+          [
+            308.3591681683415,
+            13.505059051310203
+          ],
+          [
+            316.4733597147102,
+            13.175702653357668
+          ],
+          [
+            324.6281080329239,
+            13.84552349106331
+          ],
+          [
+            332.7422995792926,
+            13.516167093110775
+          ],
+          [
+            340.89704789750624,
+            14.18598793081642
+          ],
+          [
+            381.5085624011948,
+            13.53838317671193
+          ],
+          [
+            397.77750226577723,
+            13.878847616465038
+          ],
+          [
+            422.16063367672837,
+            13.889955658265613
+          ]
+        ],
+        "orientation_prior": {
+          "status": "estimated",
+          "orientation_deg": 0.27800424063353696,
+          "normals": [
+            [
+              0.9999882286376438,
+              0.004852070294979642
+            ],
+            [
+              -0.004852070294979492,
+              0.9999882286376438
+            ],
+            [
+              -0.9999882286376438,
+              -0.0048520702949796535
+            ],
+            [
+              0.004852070294979148,
+              -0.9999882286376438
+            ]
+          ],
+          "measured_orientation_count": 4,
+          "angular_scatter_deg": 1.6756160009723788,
+          "qualification": "Shared rectangular orientation only; no missing side location inferred."
+        },
+        "search_direction": [
+          0.0,
+          -1.0
+        ],
+        "measured_bracket_um": null,
+        "bracket_allowance_um": null
+      },
+      "source_hashes": {
+        "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000022.tiff": "4a83ba51bace33f4c119107df2d623948f6b96c08f40f51392bbfdf889964caf",
+        "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\frames\\probe_000022.json": "1c4af2344244154f517f65a6b5c474b39a6e012286090de6e3d78d314247459c",
+        "G:\\Shared drives\\Xu Lab - Microscopy and Instruments\\Automated Microscopy\\data\\scan-20261013-215137-c4f3127d\\discovery\\candidate002\\labels\\probe_000022.npz": "a11e43ae63575e5787851b8858a4ec4b5ca7d6a68370998967ea894b84ee7da3"
+      },
+      "rectangle_model_sha256": "f5d22a9186cc47cee50a63b3311132fc6ea6cdaf287f43fe48d372449b671660",
+      "new_capture": false,
+      "new_focus": false
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "status": "estimated",
+  "method": "coherent_halfplane_edges_with_robust_line_fit",
+  "polygon_um": [
+    [
+      12007.693383440635,
+      -7136.072488888334
+    ],
+    [
+      11632.597008100181,
+      -1036.827934229712
+    ],
+    [
+      6238.299092912063,
+      -1353.67781511393
+    ],
+    [
+      6683.1047197757,
+      -7373.866791401629
+    ]
+  ],
+  "uncertainty_um": 75.0,
+  "uncertainty_kind": "planning margin, not a statistical confidence bound",
+  "lines": [
+    {
+      "normal": [
+        0.998114287853241,
+        0.06138285622000694
+      ],
+      "offset_um": 11472.017818611945,
+      "expanded_offset_um": 11547.017818611945,
+      "residual_um_p95": 5.9153464590477585,
+      "margin_um": 75.0,
+      "source_images": [
+        "frames/probe_000005.tiff",
+        "frames/probe_000006.tiff",
+        "frames/probe_000008.tiff",
+        "frames/probe_000009.tiff",
+        "frames/probe_000010.tiff"
+      ],
+      "edge_point_count": 475
+    },
+    {
+      "normal": [
+        -0.0586368627846241,
+        0.9982793927192688
+      ],
+      "offset_um": -1792.1429551300098,
+      "expanded_offset_um": -1717.1429551300098,
+      "residual_um_p95": 3.352392013454232,
+      "margin_um": 75.0,
+      "source_images": [
+        "frames/probe_000012.tiff"
+      ],
+      "edge_point_count": 80
+    },
+    {
+      "normal": [
+        -0.997281551361084,
+        -0.07368480414152145
+      ],
+      "offset_um": -6196.595112556394,
+      "expanded_offset_um": -6121.595112556394,
+      "residual_um_p95": 3.1834691321272652,
+      "margin_um": 75.0,
+      "source_images": [
+        "frames/probe_000016.tiff",
+        "frames/probe_000017.tiff"
+      ],
+      "edge_point_count": 167
+    },
+    {
+      "normal": [
+        0.044615186750888824,
+        -0.9990042448043823
+      ],
+      "offset_um": 7589.692190380836,
+      "expanded_offset_um": 7664.692190380836,
+      "residual_um_p95": 2.7236716037956286,
+      "margin_um": 75.0,
+      "source_images": [
+        "frames/probe_000025.tiff"
+      ],
+      "edge_point_count": 100
+    }
+  ],
+  "assumption": "Convex chip with approximately straight edges; unobserved corners are inferred.",
+  "coverage_requirement": "Check substrate at raster perimeter and expand/replan if it reaches that perimeter.",
+  "evidence": {
+    "folder": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\data\\whole-chip-standardized-01\\discovery\\candidate010",
+    "discovery_sha256": "e7ff4857b6a9425f7c36993468409ad36532cd780f706376cb6eef32f9dc01ed",
+    "inspected_images": 26,
+    "coherent_edge_images": 9,
+    "cardinal_only": false
+  },
+  "processing_seconds": 0.31181730000389507
+}

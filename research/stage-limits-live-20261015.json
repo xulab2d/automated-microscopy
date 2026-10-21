@@ -1,0 +1,35 @@
+{
+  "position": {
+    "x": 42743.769,
+    "y": 0.0,
+    "z": 19074.218
+  },
+  "axes": {
+    "x": {
+      "nominal_min_um": -85000.0,
+      "nominal_max_um": 85000.0,
+      "HasSWLimit": "Upper, Lower",
+      "IsOnSWLimit": "None",
+      "CalibrationMode": "OnLowerLimit",
+      "CoordinateDirection": "Positive",
+      "IsOnHWLimit": "None",
+      "lower_enabled": true,
+      "lower_position_um": -34268.98,
+      "upper_enabled": true,
+      "upper_position_um": 135731.02
+    },
+    "y": {
+      "nominal_min_um": -65000.0,
+      "nominal_max_um": 65000.0,
+      "HasSWLimit": "Upper, Lower",
+      "IsOnSWLimit": "None",
+      "CalibrationMode": "OnLowerLimit",
+      "CoordinateDirection": "Positive",
+      "IsOnHWLimit": "Upper",
+      "lower_enabled": true,
+      "lower_position_um": -39726.15,
+      "upper_enabled": true,
+      "upper_position_um": 90273.85
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "kind": "offline synthetic performance check, not microscope data or detection validation",
+  "pixel_count": 262144,
+  "curve_points": 33984,
+  "first_call_seconds": 0.22142390000226442,
+  "cached_call_seconds": 0.2139387000061106,
+  "chunk_size": 65536,
+  "threads": 1,
+  "per_pixel_intervals": false,
+  "conditional_label_only": true
+}

@@ -1,0 +1,10 @@
+{
+  "success": false,
+  "z_um": 100,
+  "score": 0,
+  "prominence": 0,
+  "reason": "No peak",
+  "samples": [],
+  "outcome": "non_peak",
+  "budget": null
+}

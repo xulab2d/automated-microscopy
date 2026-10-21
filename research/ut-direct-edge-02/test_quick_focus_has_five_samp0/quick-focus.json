@@ -1,0 +1,175 @@
+{
+  "schema": 1,
+  "state": "focused",
+  "initial_position_um": {
+    "x": 0,
+    "y": 0,
+    "z": 15376.405999999999
+  },
+  "quick_bounds_um": [
+    15374.609,
+    15378.202999999998
+  ],
+  "fallback_bounds_um": null,
+  "quick_samples": [
+    {
+      "z_um": 15374.609,
+      "phase": "quick",
+      "score": 0.0305899456143426,
+      "texture": 1.2,
+      "noise": 0.008,
+      "mean": 1176.0
+    },
+    {
+      "z_um": 15375.5075,
+      "phase": "quick",
+      "score": 0.03284225206555832,
+      "texture": 1.2,
+      "noise": 0.008,
+      "mean": 1176.0
+    },
+    {
+      "z_um": 15376.405999999999,
+      "phase": "quick",
+      "score": 0.03377023711800387,
+      "texture": 1.2,
+      "noise": 0.008,
+      "mean": 1176.0
+    },
+    {
+      "z_um": 15377.304499999998,
+      "phase": "quick",
+      "score": 0.032076390203975014,
+      "texture": 1.2,
+      "noise": 0.008,
+      "mean": 1176.0
+    },
+    {
+      "z_um": 15378.202999999998,
+      "phase": "quick",
+      "score": 0.02764451503753662,
+      "texture": 1.2,
+      "noise": 0.008,
+      "mean": 1176.0
+    }
+  ],
+  "quick_path_image_budget": 6,
+  "fitted_quick_result": {
+    "success": true,
+    "z_um": 15376.14416792806,
+    "score": 0.03377023711800387,
+    "prominence": 0.11161833438868286,
+    "reason": "Quick quadratic focus peak; confirmation image still required.",
+    "samples": [
+      {
+        "z_um": 15374.609,
+        "phase": "quick",
+        "score": 0.0305899456143426,
+        "texture": 1.2,
+        "noise": 0.008,
+        "mean": 1176.0
+      },
+      {
+        "z_um": 15375.5075,
+        "phase": "quick",
+        "score": 0.03284225206555832,
+        "texture": 1.2,
+        "noise": 0.008,
+        "mean": 1176.0
+      },
+      {
+        "z_um": 15376.405999999999,
+        "phase": "quick",
+        "score": 0.03377023711800387,
+        "texture": 1.2,
+        "noise": 0.008,
+        "mean": 1176.0
+      },
+      {
+        "z_um": 15377.304499999998,
+        "phase": "quick",
+        "score": 0.032076390203975014,
+        "texture": 1.2,
+        "noise": 0.008,
+        "mean": 1176.0
+      },
+      {
+        "z_um": 15378.202999999998,
+        "phase": "quick",
+        "score": 0.02764451503753662,
+        "texture": 1.2,
+        "noise": 0.008,
+        "mean": 1176.0
+      }
+    ],
+    "outcome": "resolved_peak",
+    "budget": null
+  },
+  "confirmation": {
+    "z_um": 15376.14416792806,
+    "phase": "confirmation",
+    "score": 0.033499812800796586,
+    "texture": 1.2,
+    "noise": 0.008,
+    "mean": 1176.0
+  },
+  "result": {
+    "success": true,
+    "z_um": 15376.14416792806,
+    "score": 0.033499812800796586,
+    "prominence": 0.11161833438868286,
+    "reason": "Quick quadratic focus verified by a confirmation image.",
+    "samples": [
+      {
+        "z_um": 15374.609,
+        "phase": "quick",
+        "score": 0.0305899456143426,
+        "texture": 1.2,
+        "noise": 0.008,
+        "mean": 1176.0
+      },
+      {
+        "z_um": 15375.5075,
+        "phase": "quick",
+        "score": 0.03284225206555832,
+        "texture": 1.2,
+        "noise": 0.008,
+        "mean": 1176.0
+      },
+      {
+        "z_um": 15376.405999999999,
+        "phase": "quick",
+        "score": 0.03377023711800387,
+        "texture": 1.2,
+        "noise": 0.008,
+        "mean": 1176.0
+      },
+      {
+        "z_um": 15377.304499999998,
+        "phase": "quick",
+        "score": 0.032076390203975014,
+        "texture": 1.2,
+        "noise": 0.008,
+        "mean": 1176.0
+      },
+      {
+        "z_um": 15378.202999999998,
+        "phase": "quick",
+        "score": 0.02764451503753662,
+        "texture": 1.2,
+        "noise": 0.008,
+        "mean": 1176.0
+      },
+      {
+        "z_um": 15376.14416792806,
+        "phase": "confirmation",
+        "score": 0.033499812800796586,
+        "texture": 1.2,
+        "noise": 0.008,
+        "mean": 1176.0
+      }
+    ],
+    "outcome": "resolved_peak",
+    "budget": null
+  }
+}

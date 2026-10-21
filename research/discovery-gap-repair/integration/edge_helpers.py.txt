@@ -1,0 +1,49 @@
+def coherent_edge(labels, position_um, source_shape, matrix):
+    """Legacy label-only API: its proposal behavior is deliberately unchanged."""
+    return _label_edge(labels, position_um, source_shape, matrix)
+
+
+def validated_coherent_edge(frame, labels, matrix, profile):
+    """Propose from labels, then require independent raw photometric support.
+
+    Only when the original HoughP path yields no label candidate are up to 12
+    standard Hough peaks considered. Only a new fallback proposal may be refined
+    to measured raw coordinates. A previously accepted fast-path candidate is
+    either retained at exactly its original coordinates or rejected.
+    """
+    from .photometric_edges import assess_edge_profile, supported_edge
+    contract = assess_edge_profile(profile, frame)
+    if not contract['supported']:
+        return None, {'accepted': False, 'reason': contract['reason'], 'profile': contract}
+    position = [frame.position.x, frame.position.y]
+    candidate = _label_edge(labels, position, frame.rgb.shape, matrix)
+    fallback = candidate is None
+    if fallback:
+        candidate = _label_edge(labels, position, frame.rgb.shape, matrix, standard_fallback=True)
+    if candidate is None:
+        return None, {'accepted': False, 'reason': 'No label-side-supported line proposal.', 'profile': contract}
+    edge, report = supported_edge(frame, labels, candidate, matrix, allow_raw_refinement=fallback)
+    report.update(profile=contract, proposal_path='bounded_standard_hough' if fallback else 'legacy_hough_p',
+                  original_label_proposal=candidate, raw_refinement_permitted=fallback)
+    return edge, report
+
+
+def fit_validated_outline(edges, seed, bounds, margin, observations, matrix, source_shape):
+    """Reject a fitted polygon contradicting registered substrate observations.
+
+    Rejection retains the measured lines and their diagnostics for further
+    probing, but removes the polygon. No line is discarded just to force closure.
+    """
+    from .photometric_edges import registered_substrate_consistency, ALGORITHM_VERSION
+    result = fit_outline(edges, seed, bounds, margin)
+    checks = [registered_substrate_consistency(line, observations, matrix, source_shape,
+              margin_um=max(float(margin), float(line.get('margin_um', margin))))
+              for line in result.get('lines', [])]
+    result['algorithm'] = ALGORITHM_VERSION
+    result['registered_consistency'] = {'accepted': all(item['accepted'] for item in checks),
+        'observation_count': len(observations), 'line_checks': checks,
+        'qualification': 'Same separated convex chip hypothesis; not proof of unsampled gaps or complete coverage.'}
+    if not result['registered_consistency']['accepted']:
+        result.update(status='unresolved', reason='registered_substrate_contradicts_halfplanes', polygon_um=[])
+    return result
+

@@ -1,0 +1,9 @@
+{
+  "source": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\software-next-20261009\\flakefinder\\material_terraces.py",
+  "sha256": "2e781be6bef437e0cb624b811f6c8cca1c1adccf2a8ddc6ba15373b64248c5b3",
+  "integration_status": "separate_offline_stage_not_active",
+  "watcher": {
+    "source": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\software-next-20261009\\scripts\\watch_graphene_scan.py",
+    "sha256": "831cebece035deda0d8cc9d514c13d2d935968ddbeef9fdc929b9c889b333eca"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "state": "stopped",
+  "initial_position_um": {
+    "x": 0,
+    "y": 0,
+    "z": 100.0
+  },
+  "quick_bounds_um": [
+    98.0,
+    102.0
+  ],
+  "fallback_bounds_um": null,
+  "quick_samples": [
+    {
+      "z_um": 98.0,
+      "phase": "quick",
+      "score": 0.13577154278755188,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    },
+    {
+      "z_um": 99.0,
+      "phase": "quick",
+      "score": 0.16552820801734924,
+      "texture": 1.8697617053985596,
+      "noise": 1.1920928955078125e-07,
+      "mean": 1550.0,
+      "focus_metric": "chip_edge_mean_gradient_energy"
+    }
+  ],
+  "quick_path_image_budget": 6
+}

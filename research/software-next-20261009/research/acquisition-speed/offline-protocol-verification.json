@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "backend": "zen_camera_job_processor_overlap_v1",
+  "source_sha256": {
+    "zen.py": "3b31969462ff830a9e7fb2df8659ff418c0e3bc524df37617bc636fa79fb5968",
+    "capture_overlap.py": "9ac40d674ecd7f49c5ad069b1866bfaf3188c36100fa46dcdc1d79aa7c26838c"
+  },
+  "late_error_tests_passed": true,
+  "focused_tests_passed": 33,
+  "elapsed_seconds": 35.21,
+  "no_hardware_clients": true,
+  "verification_update": {
+    "report": "research/acquisition-robustness-20261009/report.json",
+    "protocol_tests_rechecked": true,
+    "hardware_validation": false
+  }
+}

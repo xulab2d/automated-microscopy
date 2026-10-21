@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "verified_at": 1791538657.7509232,
+  "scope": "Isolated review only. No hardware, production mutation, or migration.",
+  "production_baselines_unchanged": {
+    "flakefinder/sparse_edges.py": true,
+    "flakefinder/sparse_acquisition.py": true,
+    "flakefinder/chip_campaign.py": true,
+    "scripts/scan_chip_campaign.py": true,
+    "scripts/discover_chip_boundaries.py": true,
+    "tests/test_sparse_acquisition.py": true,
+    "tests/test_sparse_edge_focus.py": true,
+    "tests/test_chip_campaign_continuation.py": true
+  },
+  "staged_source_hashes_match": {
+    "flakefinder/sparse_edges.py": true,
+    "flakefinder/sparse_acquisition.py": true,
+    "flakefinder/chip_campaign.py": true,
+    "scripts/scan_chip_campaign.py": true,
+    "scripts/discover_chip_boundaries.py": true,
+    "tests/test_sparse_acquisition.py": true,
+    "tests/test_sparse_edge_focus.py": true,
+    "tests/test_chip_campaign_continuation.py": true,
+    "flakefinder/photometric_edges.py": true,
+    "tests/sparse_profile_fixture.py": true,
+    "tests/test_sparse_cli_profile.py": true
+  },
+  "read_only_patch_check": {
+    "exit_code": 0,
+    "stderr": ""
+  },
+  "replay": {
+    "frames": 19,
+    "accepted": 16,
+    "old_accepted_geometry_unchanged": 9,
+    "raw_refined_new_proposals": 4,
+    "rejected": [
+      "candidate015/probe_000007",
+      "candidate013/probe_000021",
+      "candidate016/probe_000013"
+    ],
+    "fits": {
+      "candidate010": {
+        "status": "estimated",
+        "lines": 4,
+        "registered_consistency": true
+      },
+      "candidate015": {
+        "status": "estimated",
+        "lines": 4,
+        "registered_consistency": true
+      },
+      "candidate005": {
+        "status": "estimated",
+        "lines": 4,
+        "registered_consistency": true
+      }
+    },
+    "runtime_s": 12.801111299995682
+  },
+  "patch_sha256": "4c68e0aa0ce8570a573595e820ea2df66c2277e88957c78b6f4e30404e716880",
+  "replay_sha256": "1a16c5aa882e21c47409644118ffb9f054fc4c6b7762d7e03b8579450d7c996d",
+  "replay_algorithm_hashes_unchanged": {
+    "flakefinder/sparse_edges.py": true,
+    "flakefinder/photometric_edges.py": true,
+    "flakefinder/sparse_acquisition.py": true
+  },
+  "compatibility_followup": {
+    "existing_tests_passed_with_explicit_v2_fixtures": 44,
+    "new_cli_tests_passed": 8,
+    "new_legacy_identity_test_passed": 1,
+    "remaining_failures": 0,
+    "unmodified_existing_coverage": [
+      "campaign envelope/storage preflight",
+      "legacy known-chip resume",
+      "edge focus anchors"
+    ],
+    "intentional_contract_changes": [
+      "Explicit20x dark-holder profile required",
+      "Focus tests mock validated_coherent_edge",
+      "Legacy v1 discovery continuation and seed recovery rejected before connection"
+    ],
+    "qualification": "Completed bounded test invocations; CLI fixture schema typo corrected and all8 CLI tests rerun. No additional raw-image replay."
+  },
+  "focused_tests_recorded": {
+    "passed": 10,
+    "seconds": 1.77,
+    "command": ".venv/Scripts/python.exe -m pytest research/discovery-gap-repair/integration/tests/test_integration.py -q --basetemp data/test-temp-integration-v2-isolated-02",
+    "qualification": "Result recorded from the completed focused test invocation; this verification script does not rerun tests."
+  },
+  "migration": "Legacy in-place discovery continuation deliberately incompatible; reviewed new lineage or separately implemented migration required."
+}

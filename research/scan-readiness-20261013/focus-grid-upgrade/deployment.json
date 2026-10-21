@@ -1,0 +1,87 @@
+{
+  "donor_run": "scan-20261013-215137-c4f3127d",
+  "files": [
+    {
+      "path": "flakefinder/chip_campaign.py",
+      "before_sha256": "8f5109f0708e39b9687a230e4ea7c2d844c38578bef8c6bc1f265e1364f81dc5",
+      "after_sha256": "877748f27134616de120a0f99bff096f0a29f9b37d7961f8242f9844d7de8505"
+    },
+    {
+      "path": "flakefinder/edge_focus_reuse.py",
+      "before_sha256": null,
+      "after_sha256": "e37381eeb2397ec18d405d8b2ef3f20892928c49ffcf3b3d9a039ba39c33c48a"
+    },
+    {
+      "path": "flakefinder/full_chip.py",
+      "before_sha256": "cafc4da1d7d33a60f46ed00daaff6acbb4d2ab067c8a88db81e2a8d2ca61cd03",
+      "after_sha256": "dfd2ea9ea03ef93c76a1d126b6d9beaf3c34d1ce7fd9b6fe984fb2262a07c8ab"
+    },
+    {
+      "path": "flakefinder/grid_search.py",
+      "before_sha256": "983bbe79fc5d5ca0f55b5bc659903f8288412339515267dc340f01995353faba",
+      "after_sha256": "117093240411d2ce604ff7d735c989eaf328942509f6b7fb889be88faf8e9f38"
+    },
+    {
+      "path": "flakefinder/rectangle_handoff.py",
+      "before_sha256": "543946d6eb416c4d43c92689cc1910c2569e149cfa2bb1f7a6f07ac5ddc841aa",
+      "after_sha256": "8662341e0168fc96e86833b647c4b17bc4b12f281524e7e05c776eb249a648e4"
+    },
+    {
+      "path": "flakefinder/sparse_acquisition.py",
+      "before_sha256": "33b742562ce12fc922d51b0cd364af68803620e633119a76d3ca1d17398804d1",
+      "after_sha256": "a0f4dfd783544597b6f2e20662dd48be153dedbd2e611dffb97283c11035ae59"
+    },
+    {
+      "path": "tests/test_campaign_grid_prior.py",
+      "before_sha256": "6eec787678551c1451322716c5af29c2c35ce84acd777dda8b3dffe97001f476",
+      "after_sha256": "40eb4e17df9cf14462761f187c59a9c51abea80e1738d22b624909c6e0d04f73"
+    },
+    {
+      "path": "tests/test_chip_campaign_continuation.py",
+      "before_sha256": "5d241ba201c68f09fde0037bdc5532bcca963b2e211c60340104170dbcf6f675",
+      "after_sha256": "324b9fda7f8a2a984cc197cea64506be1b0ce85a9b44d5f56869ca83a66495a9"
+    },
+    {
+      "path": "tests/test_chip_campaign_resume.py",
+      "before_sha256": "6a586f7259b14227c077491b5b6c609fe531b26a9ac99f6c1988ef611b0ab599",
+      "after_sha256": "3c8d9c7dfeadb620d3deb62053cc69bf11740f69d0e4090dca6567204d189e32"
+    },
+    {
+      "path": "tests/test_edge_focus_reuse.py",
+      "before_sha256": null,
+      "after_sha256": "7905c6593af76660a68926077bfd4a686f6f4a9741e2ff2e6c6043e6b22b3295"
+    },
+    {
+      "path": "tests/test_focus_surface.py",
+      "before_sha256": "92bf5a5d7d0ee021c9002c1f26c59f9cbcc9686e955be3f431d129fd5caa55e6",
+      "after_sha256": "88c04ca1d1ac86e096e0caf9153c19f4176d91f01ea53c37eddf9ced11f620a1"
+    },
+    {
+      "path": "tests/test_grid_search.py",
+      "before_sha256": "839080c64ed9533cc58b5b5d04d9f48f5c955d8204e31e5b610e8237cd4b7ddf",
+      "after_sha256": "cccb4339e596f09091f0474de44936b0b5336e9b47d03cdbecc42ba8a957f2d3"
+    },
+    {
+      "path": "tests/test_rectangle_focus_domain.py",
+      "before_sha256": null,
+      "after_sha256": "32ae8e9a7a6d2a23e0faa10e06e0ade1bfbdb0cf6a177fc26a53db218c200465"
+    },
+    {
+      "path": "tests/test_rectangle_handoff.py",
+      "before_sha256": "4167d5a8a64ab3dff5d6c17cfa57ed3a1c4f534a6d4a6aca3985e6d9165ff3e0",
+      "after_sha256": "63788ba9738427dbff759854f8ddace0904b279684c297014ae7a0398ecd3664"
+    },
+    {
+      "path": "tests/test_rectangle_work_budget.py",
+      "before_sha256": null,
+      "after_sha256": "a37e317ae61df336fa6f144aac8bfde541a71632f17e69ab75efb25e13800bad"
+    },
+    {
+      "path": "tests/test_sparse_acquisition.py",
+      "before_sha256": "d254da230c5ae88a597628a21fe62a84f8fae8262b32a302c6699f0b014ac3c9",
+      "after_sha256": "2ccebcdbfabe801d80919597a9a8e4cb72c25799978a0e3f11210f51e6f0971a"
+    }
+  ],
+  "deployed": true,
+  "backup": "C:\\Users\\STM\\Documents\\ChatGPT\\Automated Microscopy\\research\\scan-readiness-20261013\\focus-grid-upgrade\\production-before"
+}

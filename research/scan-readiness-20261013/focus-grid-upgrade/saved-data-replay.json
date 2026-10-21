@@ -1,0 +1,43 @@
+{
+  "run": "scan-20261013-215137-c4f3127d",
+  "hardware_access": false,
+  "reused_edge_points_um": [
+    [
+      50674.53164269223,
+      23558.438552578245,
+      15627.421999999999
+    ],
+    [
+      47384.574576431085,
+      21725.621616598088,
+      15622.11
+    ]
+  ],
+  "plane_tile_count": 999,
+  "maximum_conditional_sigma_um": 0.6817301991916341,
+  "maximum_anchor_residual_um": 0.10517558258106874,
+  "grid_status": "one_anchor_proposals",
+  "grid_search_anchors": 1,
+  "grid_measured_enclosures": 0,
+  "grid_first_chip_slot_hypotheses": 16,
+  "grid_pending_retained": true,
+  "grid_order_seconds": 0.09399999998277053,
+  "next_proposed_baseline_sites_um": [
+    [
+      47384.114083333334,
+      16672.47269230769
+    ],
+    [
+      43964.579,
+      16672.47269230769
+    ],
+    [
+      50803.64916666667,
+      16672.47269230769
+    ],
+    [
+      54223.18425,
+      20124.3675
+    ]
+  ]
+}

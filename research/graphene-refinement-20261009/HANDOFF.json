@@ -1,0 +1,13 @@
+{
+  "integration_status": "Analysis source integrated; no acquisition changes",
+  "files": {
+    "flakefinder/material_terraces.py": "ae4cd3d76d3eb695a2267a2b14f952894e3c448a05e63c57ed303ce01ca9926a",
+    "scripts/watch_graphene_scan.py": "d551a02cfa03fcc8d4cfbde20e7a31ee79f7865eb04427c834b251caaa0a027b",
+    "tests/test_interior_contrast.py": "485331f55a1eb187403efd9c25f9574a72326d5693c7b68449de1844146a6584",
+    "BASELINE.json": "01bbe5006bb473a8a7a6750b2a4d79c1432637bd32248afede83e71d65df1d75",
+    "PATCH.diff": "d54c29840bbbc3e4004ea677fb18f92936ac086d48080f2dd22699fdcf3f244c",
+    "HANDOFF.txt": "e82c887e7deb44d934b4d86df959bbc9b686aa69a7ace5cc92188c1572c452a8"
+  },
+  "tests_unique_passed": 25,
+  "hardware_accessed": false
+}
